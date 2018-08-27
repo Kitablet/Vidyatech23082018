@@ -1,0 +1,288 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model SchoolDetails
+
+@{
+    ViewBag.Title = "StudentList";
+}
+@{
+    ViewBag.Title = "SchoolHomePage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <h4 class="page-title">@Model.SchoolDetail.SchoolName</h4>
+
+    <style>
+        .grade {
+            background: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .grade-active {
+            border-bottom: solid black;
+            COLOR: BLACK;
+        }
+
+        #partialview {
+            border: solid;
+        }
+
+        table td, table th {
+            min-width: 100px;
+            border: solid 1px black;
+        }
+
+        #partialview {
+            border: none;
+            z-index: 99999;
+            position: absolute;
+            background: white;
+            opacity: 1;
+            top: 13%;
+            left: 31%;
+            padding: 10px 40px;
+            display: none;
+            max-height: 300px;
+            max-width: 512px;
+        }
+
+        .modal1 {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+    </style>
+   
+</div>
+<hr />
+
+<div class="row">
+    @Html.Hidden("SchoolUId", Model.SchoolDetail.SchoolUId)
+
+    <div class="col-xs-12 content_bold info-section">
+        @*@Model.SchoolDetail.AddressLine1*@
+        @Html.Raw(Model.SchoolDetail.AddressLine1 + (String.IsNullOrEmpty(Model.SchoolDetail.AddressLine2) ? "" : ", " + Model.SchoolDetail.AddressLine2))
+    </div>
+    <div>
+        <span class="info-section">
+            <label class="">ID:</label>
+            <span class="list-item-sub">@Model.SchoolDetail.SchoolUId</span>
+        </span>
+    </div>
+    <div class="row">
+        <span class="info-section">
+            <label class="">Principal:</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalName</span>
+        </span>
+        <span class="info-section">
+            <label class="">Email:</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalEmail</span>
+        </span>
+        <span class="info-section">
+            <label class="">School Phone:</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PhoneNumber</span>
+        </span>
+        <span class="info-section">
+            <label class="">Status:</label>
+            <span class="list-item-sub">
+                @if (!Model.SchoolDetail.IsActive)
+                {
+                    @Html.Raw("Disabled");
+                }
+                else if (Model.SchoolDetail.IsActive && Model.SchoolDetail.IsEmailVerified)
+                {
+                    @Html.Raw("Active");
+                }
+                else if (Model.SchoolDetail.IsActive && !Model.SchoolDetail.IsEmailVerified)
+                {
+                    @Html.Raw("Created");
+                }
+            </span>
+        </span>
+    </div>
+</div>
+
+
+<div class="row">
+
+</div>
+@using (Ajax.BeginForm("SchoolHomePage", "School", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "SchoolStudentsContainer" }, new { id = "searchForm" }))
+{
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            @Html.RenderBootstrapTabHeader("tab-students", @TabStudentsHeader(),true)
+        </ul>
+        <div class="tab-content">
+            @Html.RenderBootstrapTabContent("tab-students", @TabStudents())
+        </div>
+    </div>
+
+    @helper TabStudentsHeader()
+{
+    <div>
+        <span>STUDENTS (@Model.SchoolDetail.StudentCount)</span>
+        @*<div class="float-right">
+                <input type="button" value="+" name="add-new-students" class="btn btn-default btn-rect add-new-students" onclick="window.location.href = '@Url.Action("AddNewStudents", "School")';" />
+            </div>*@
+    </div>
+}
+
+    @helper TabStudents()
+{
+    <div class="grade-selector">
+        <input type="hidden" value="@Model.Grades[0].Name" id="hdnGrade" name="Grade" />
+        GRADE
+        @foreach (Grade grade in Model.Grades)
+        {
+            <input type="submit" value="@grade.Name" class="grade" />
+        }
+    </div>
+    <div id="SchoolStudentsContainer">
+        @Html.Partial("_StudentListPost", Model.Students)
+    </div>
+}
+
+    @section scripts {
+        @{ Html.RegisterMvcPagerScriptResource(); }
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+        <script type="text/javascript">
+
+                function AddNewStudents() {
+                    $.ajax({
+                        url: '/School/ImportExportStudents',
+                        type: 'Get',
+                        async: false,
+                        success: function (result) {
+                            $('#partialview').html(result);
+                            $('#partialview').show();
+                            $('.popup_background').css('display', 'block');
+                        },
+                        error: function (jqXHR, textStatus, err) {
+                            alert(textStatus);
+                        }
+                    });
+                    return false;
+                }
+
+
+                $('.grade:first').addClass('grade-active')
+                $('.grade').click(function () {
+                    $('.grade-active').removeClass('grade-active');
+                    $(this).addClass('grade-active');
+                    $('#hdnGrade').val($(this).val());
+                });
+                $(function () {
+                    // Javascript to enable link to tab
+                    var hash = GetTab();
+                    if (hash) {
+                        $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+                    }
+                    // Change hash for page-reload
+                    $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                        // window.location.hash = e.target.hash;
+                    });
+                });
+                function GetTab() {
+                    var hash = document.location.hash;
+                    if (hash.indexOf("tab-students") >= 0) {
+                        return "tab-students";
+                    }
+                    else if (hash.indexOf("tab-admins") >= 0) {
+                        return "tab-admins";
+                    }
+                    else {
+                        return "";
+                    }
+                }
+
+                function confirmDisable(SchoolId, elemid) {
+                    //var SchoolId = Model.SchoolDetail.SchoolId;
+                    //alert("disable"+SchoolId);
+
+                    var status = false;
+                    //alert(elemid);
+                    jsondata = { "schoolid": SchoolId };
+                    if ($("#" + elemid).val().toLowerCase() == "disable") {
+                        var result = confirm("Are you sure you want to disable?");
+                    }
+                    else {
+                        var result = confirm("Are you sure you want to enable?");
+                    }
+
+                    if (result) {
+                        $.ajax({
+                            url: '@Url.Action("DisableSchool", "School")',
+                            type: 'POST',
+                            async: false,
+                            data: jsondata,
+                            dataType: 'json',
+                            success: function (result) {
+                                if (result.Status === true) {
+                                    status = true;
+                                    //window.location.href = 'Url.RouteUrl("SchoolList")';
+                                    window.location.href = window.location.href;
+                                }
+
+                            },
+                            error: function (jqXHR, textStatus, err) {
+                                alert(textStatus);
+                            }
+                        });
+                        return status;
+                    }
+                    else {
+                        return false;
+                    }
+                }
+
+                function resendvermail(schoolid) {
+                    jsondata = { "schoolid": schoolid };
+                    $.ajax({
+                        url: '@Url.Action("ResendVerificationMail", "School")',
+                        type: 'POST',
+                        async: false,
+                        data: jsondata,
+                        dataType: 'json',
+                        success: function (result) {
+                            if (result.Status == 1) {
+                                alert("Verification mail was sent successfully!");
+                            }
+                            else if (result.Status == 2) {
+                                alert("No such school exists.");
+                            }
+                            else {
+                                alert("Error! Mail could not be sent.")
+                            }
+                        },
+                        error: function (jqXHR, textStatus, err) {
+                            alert(textStatus);
+                        }
+                    });
+                }
+
+        </script>
+    }
+
+
+}
+
+

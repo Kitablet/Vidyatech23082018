@@ -1,0 +1,92 @@
+﻿@using FISE_Browser.Models
+@model User
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/MainPageLayout.cshtml";
+    //int genersCount = Model.Genres.Genre.Count;
+    int subsection = 3;
+    User userobj = (User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+@if (subsection == 1)
+{
+    <link href="~/Css/home1.css" rel="stylesheet" />
+}
+else if (subsection == 2)
+{
+    <link href="~/Css/home2.css" rel="stylesheet" />
+}
+else
+{
+    <link href="~/Css/home3.css" rel="stylesheet" />
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/linq.js"></script>
+<script src="~/Scripts/home.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        windowWidth =$('body').width(); //window.innerWidth ? window.innerWidth : $(window).width();
+        home_windowHeight =$('body').height(); //window.innerHeight ? window.innerHeight : $(window).height();
+        ModelObject = @Html.Raw(Json.Encode(Model));
+        bookModel = ModelObject.AllBooks;
+        userBook=ModelObject.UserDetails.UserBooks;
+        if (ModelObject.SubSectionId <= 0)
+            currentGrade = "3";
+        else
+            currentGrade = ModelObject.SubSectionId.toString();
+        $(".Category").on("click",function(){
+            GetTabs($(this).attr("id"));
+        });
+        PaintSubSection();
+        GetTabs("allbooks");
+    });
+</script>
+<div>
+    <div id="MainContainer">
+        <div id="secondaryNavigation" class="secondaryNavigation">
+            <div id="CategoryFilter" class="CategoryFilter">
+                <div id="allbooks" class="Category Selected">
+                    <div id="img-allbooks" style="width:150px;text-align:center">
+                        <div></div>
+                        
+                    </div>
+                    <div id="text-allbooks" class="TabText"><div style="padding:0 45px">All Books</div></div>
+                </div>
+                <div id="availablebooks" class="Category" style="display:none">
+                    <div id="img-availablebooks" style="width:150px;text-align:center">
+                        <img alt="offlinebooks" src="~/Content/Images/available_offline_1.png" />
+                    </div>
+                    <div id="text-availablebooks" class="TabText"><div style="padding:0 45px">Available Offline</div></div>
+                </div>
+                <div id="newbooks" class="Category" style="display:none">
+                    <div id="img-newbooks" style="width:150px;text-align:center">
+                        <img alt="allbooks" src="~/Content/Images/all_books_1.png" />
+                    </div>
+                    <div id="text-newbooks" class="TabText"><div style="padding:0 45px"></div></div>
+                </div>
+                <div id="recommendedbooks" class="Category" style="display:none">
+                    <div id="img-recommendedbooks" style="width:150px;text-align:center">
+                        <img alt="offlinebooks" src="~/Content/Images/available_offline_1.png" />
+                    </div>
+                    <div id="text-recommendedbooks" class="TabText"><div style="padding:0 45px"></div></div>
+                </div>
+                <div id="comingbooks" class="Category" style="display:none">
+                    <div id="img-comingbooks" style="width:150px;text-align:center">
+                        <img alt="offlinebooks" src="~/Content/Images/available_offline_1.png" />
+                    </div>
+                    <div id="text-comingbooks" class="TabText"><div style="padding:0 45px"></div></div>
+                </div>
+            </div>
+            <div>
+                @{Html.RenderAction("GetUAC", "Main");}
+            </div>
+        </div>
+        <div id="BooksWrapper" style="padding-left:20px">
+            <div id="ButtonPanel" style="width:150px;float:left;padding-top:10px">
+            </div>
+            <div id="BooksContainer">
+            </div>
+        </div>
+    </div>    
+</div>

@@ -1,0 +1,135 @@
+﻿@using FISE_Browser.Models
+@model List<UserEvent>
+@{
+    ViewBag.Title = "Announcements";
+    Layout = "~/Views/Shared/MainPageLayout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/jgestures.js"></script>
+<script src="~/Scripts/linq.js"></script>
+<link href="~/Css/Announcement.css" rel="stylesheet" />
+<script type="text/javascript">
+    var currentNavPage = -1, totalPages = 0;
+    var flag = 1;
+    var interval;
+    $(document).ready(function () {
+        $("#Main_Header").height(81);
+        $(".siteLogo").css('top', '9px');
+        $("#header_title").text("ANNOUNCEMENTS");
+        ModelObject = @Html.Raw(Json.Encode(Model));
+        var output = "";
+        if(ModelObject.length > 0)
+        {
+            totalPages = ModelObject.length;
+            output = "";
+            for (i = 0; i < ModelObject.length; i++)
+            {
+                output += "<img src='/Content/Images/nav_dot.png' class='partialVisible' id='indicator_"+ModelObject[i].EventId+"' onClick='IndicatorClicked("+i+")' />";                
+                $('.frames').append("<iframe id='frame_"+ModelObject[i].EventId+"' class='hideFrame' marginwidth='0' marginheight='0' hspace='0' vspace='0' frameborder='0' scrolling='no'/>");     
+                $('#frame_' + ModelObject[i].EventId).contents().find('body').append(ModelObject[i].Description);
+                $('#frame_' + ModelObject[i].EventId).load(function() {
+                    var eventId = $(this).attr('id').split('_')[1];
+                    var m_obj = ModelObject.filter(function (x) { return x.EventId == eventId });                       
+                    $(this).contents().find('body').append(m_obj[0].Description);
+                });
+            }
+            $(".page-indicators").append(output);
+            output = "<div class='iframe_cover'></div>";
+            $(".secondayNav").append(output);
+            IndicatorClicked(0);
+        }
+        else
+        {
+    
+        }
+
+        $(".secondayNav").bind('swipeone',handleSwipe);
+
+        $('.iframe_cover,#Main_Header').on('click', (function (e) {
+            HideHeaderFooter();
+        }));
+
+        $('.iframe_cover').click();
+        
+    });
+
+    function HideHeaderFooter() {
+       
+        if (flag == 1) {
+            flag = 2;
+            $('.page-indicators').show();
+            interval = setInterval(function () { flag = 1; $('.page-indicators').hide(); clearInterval(interval); }, 5000);
+        }
+        else {
+            flag = 1;
+            $('.page-indicators').hide();
+            clearInterval(interval);
+        }
+    }
+
+    function handleSwipe(event,obj)
+    {
+        obj.originalEvent.preventDefault();
+        var swipeDirection = obj.description.split(':')[2];
+        if(swipeDirection==="left")
+        {
+            if (currentNavPage < totalPages - 1)
+            {
+                currentNavPage++;
+                NavClicked();
+            }
+        }
+        else if(swipeDirection==="right")
+        {
+            if (currentNavPage > 0)
+            {
+                currentNavPage--;
+                NavClicked();
+            }
+        }
+    }
+
+    function UpdateEventStatusFunction()
+    {
+        $.ajax({
+            type: "POST",
+            url: "@Url.Action("UpdateEventStatus", "Main")",
+            contentType: "application/json",
+            data: JSON.stringify(ModelObject[currentNavPage]),
+            dataType: "json",
+            success:function(result)
+            {
+                console.log(result);
+            },
+            error: function (result) {
+                console.log(result);
+            }
+        });
+    }
+
+        @*function showAnnouncementCount()
+        {
+            $.ajax(
+            {
+                type: "GET",
+                url: "@Url.Action("AnnouncementCount?Update=0", "Main")",
+                contentType: "application/json",
+                dataType: "json",
+                success:function(result)
+                {
+                    console.log( 'showAnnouncementCount '+result);
+                    $("#AnnouncementCount").text(result.Count);
+                },
+                error: function (result) {
+                    console.log('showAnnouncementCount error '+result);
+                }
+            });
+        }*@
+</script>
+<body>
+    <section class="secondayNav">
+        <div class="frames"></div>
+        <div class="page-indicators"></div>
+    </section>
+</body>
+<script src="~/Scripts/Announcement.js"></script>

@@ -1,0 +1,62 @@
+﻿@using FISE_Cloud.Models.School
+@model Book
+
+@{
+    ViewBag.Title = "Book Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Books";
+}
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <h4 class="page-title">@Model.Title</h4>
+</div>
+<hr />
+@Html.Partial("_BookInfo", Model)
+@section scripts {
+    <script type="text/javascript">
+        function confirmDisable(bookid, elemid) {
+            var status = false;
+            var jsondata = { "bookid": bookid };
+            if ($("#" + elemid).val().toLowerCase() == "disable") {
+                var result = confirm("@Resource.Disable_ConfirmMsg");
+            }
+            else {
+                var result = confirm("@Resource.Enable_ConfirmMsg");
+            }
+            if (result) {
+                $.ajax({
+
+                    url: '@Url.Action("DisableBook", "Books")',
+                    type: 'POST',
+                    async: false,
+                    dataType: 'json',
+                    data: jsondata,
+
+                    success: function (result) {
+                        if (result.Status === true) {
+                            status = true;
+                            window.location.href = window.location.href;
+                        }
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            //refresh the page, as we are not longer authorized
+                            location.reload();
+                        }
+                    }
+                });
+                return status;
+            }
+            else {
+                return false;
+            }
+        }
+    </script>
+}

@@ -1,0 +1,11 @@
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\FISE.WinPhone.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\App.g.i.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\App.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\MainPage.g.i.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\MainPage.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\XamlTypeInfo.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\App.xaml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\MainPage.xaml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\App.xbf
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\MainPage.xbf
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.WinPhone\obj\x86\Debug\XamlSaveStateFile.xml

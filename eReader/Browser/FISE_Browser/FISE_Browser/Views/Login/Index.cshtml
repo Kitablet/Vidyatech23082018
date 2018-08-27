@@ -1,0 +1,93 @@
+﻿@model FISE_Browser.Models.UserBase
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<link href="~/Css/Login.css" rel="stylesheet" />
+<script src="~/Scripts/utils.js"></script>
+
+<div class="mainContainer">
+    @using (Ajax.BeginForm("Index", "Login", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "LoginEnvironment" }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+        <div id="LoginEnvironment">
+            <p class="kitabletText">@Resource.IdentifyYourself</p>
+            <div class="userNameFields partialOpacity">
+                @Html.TextBoxFor(m => m.Username, new { @class = "inputField", autofocus = "autofocus", @placeholder = "My Name" })
+                @Html.ValidationMessageFor(m => m.Username, "", new { @class = "errorLabel", @id = "UsernameLbl" })
+            </div>
+            <div class="passwordFields partialOpacity">
+                @Html.PasswordFor(m => m.Password, new { @class = "inputField", autofocus = "autofocus", @placeholder = "My Secret Code" })
+                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "errorLabel", @id = "PasswordLbl" })
+            </div>
+            @if (ViewBag.RememberMe)
+            {
+                <div style="padding-bottom:15px;"><input type="checkbox" checked name="RememberMe" value="1" id="RememberMe" style=" display:none" /><label class="remember-me checked" for="RememberMe">REMEMBER ME</label> </div>
+            }
+            else
+            {<div style="padding-bottom:15px;"><input type="checkbox" name="RememberMe" id="RememberMe" value="0" style=" display:none" /><label class="remember-me unchecked" for="RememberMe">REMEMBER ME</label> </div>
+            }
+            <input type="submit" title="Enter" value="@Resource.EnterButtonText" id="SubmitBtnAdmin" name="SubmitBtnAdmin" class="enterbtn" onclick="return ValiadteLogin();" />
+            <div> <a class="links" href="javascript:void(0);" id="ForgotIdLink">@Resource.ForgotId</a></div>
+            <div> <a class="links" href="javascript:void(0);" id="ForgotPasswordLink">@Resource.ForgotPassword</a></div>
+        </div>
+    }
+</div>
+
+<script src="~/Scripts/Login.js"></script>
+<script>
+    
+    function ValiadteLogin() {
+        if ($.trim($('#Username').val()).length == 0) {
+            $('#UsernameLbl').text('@Resource.UsernameRequired');
+            $('.userNameFields').addClass('fullOpacity').removeClass('partialOpacity');
+            $('#Username').focus();
+            return false;
+        }
+        else if ($.trim($('#Password').val()).length == 0) {
+            $('#PasswordLbl').text('@Resource.PasswordRequired');
+            $('.passwordFields').addClass('fullOpacity').removeClass('partialOpacity');
+            $('#Password').focus();
+            return false;
+        }
+    }
+
+    $(document).ready(function () {
+        CompatibleBrowser();
+        $('#RememberMe').click(function () {
+            if ($(this).prop("checked")) {
+                $(this).val('1');
+                $('label[for=' + $(this).attr('id') + ']').removeClass('unchecked').addClass('checked');
+            }
+            else {
+                $(this).val('0');
+                $('label[for=' + $(this).attr('id') + ']').removeClass('checked').addClass('unchecked');
+            }
+        });
+
+        setTimeout(function () {
+            if ($.trim($('#Username').val()).length == 0 || $('#Username').hasClass('input-validation-error')) {
+                $('#Username').focus();
+            }
+            else {
+                if ($.trim($('#Password').val()).length == 0) {
+                    $('#Password').focus();
+                }
+            }
+            if ($('#Username').hasClass("input-validation-error")) {
+                $('.userNameFields').removeClass("partialOpacity").addClass("fullOpacity");
+            }
+            if ($('#Password').hasClass("input-validation-error")) {
+                $('.passwordFields').removeClass("partialOpacity").addClass("fullOpacity");
+            }
+        }, 50);
+
+        $('#pageContainer input,a').on('click focus', function () {
+            if (ispopupopen == true) {
+                $('.modal-content input[type=text]').focus();
+            }
+        });
+    });
+</script>

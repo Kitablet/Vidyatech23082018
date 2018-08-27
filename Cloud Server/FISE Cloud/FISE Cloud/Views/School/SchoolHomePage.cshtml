@@ -1,0 +1,565 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model SchoolDetails
+@{
+    ViewBag.Title = "School Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+<script src="~/Scripts/jquery.form.js?v=1"></script>
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+    <div class="header col-xs-6">
+        <h4 class="page-title-wrap">@Model.SchoolDetail.SchoolName
+            <a id="exportschool" class="exporttoexcel" title="@Resource.Export_ExportSchoolDetails"></a>
+        </h4>
+
+    </div>
+    <style>
+        #partialviewmail h5.page-title {
+            max-width: none !important;
+            padding-top: 22px !important;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+
+        #popupdesc1 {
+        padding:12px 0;
+        }
+         .grade {
+            background: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .grade-active {
+            border-bottom: solid black;
+            COLOR: BLACK;
+        }
+
+        #partialview, #partialviewmail {
+            border: solid;
+        }
+
+        table td, table th {
+            min-width: 100px;
+            border: solid 1px black;
+        }
+
+        #partialview, #partialviewmail {
+            border: none;
+            z-index: 99999;
+            position: absolute;
+            background: white;
+            opacity: 1;
+            top: 13%;
+            /*left: 31%;*/ left: 23%;
+            padding: 10px 40px;
+            display: none;
+            width: 512px;
+            font-size: 14px;
+            font-family: Roboto-Regular;
+        }
+
+        .modal1 {
+            position: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0,0,0,0.8);
+            z-index: 99999;
+            opacity: 0;
+            -webkit-transition: opacity 400ms ease-in;
+            -moz-transition: opacity 400ms ease-in;
+            transition: opacity 400ms ease-in;
+            pointer-events: none;
+        }
+        .progress {
+            position: relative;
+            width: 400px;
+            border: 1px solid #ddd;
+            padding: 1px;
+            border-radius: 3px;
+        }
+
+        .bar {
+            background-color: #B4F5B4;
+            width: 0%;
+            height: 20px;
+            border-radius: 3px;
+        }
+
+        .percent {
+            position: absolute;
+            display: inline-block;
+            top: 3px;
+            left: 48%;
+        }
+        #divclose {
+            float: right;
+            cursor: pointer;
+            color: #FC654C;
+            width: 4px;
+            font-size: 30px;
+        }
+
+        .popup-desc {
+            margin-top: -8px;
+            font-size: 14px;
+        }
+
+        table.addnewstudents {
+            margin-top: 10px;
+            font-size: 12px;
+            font-family: Roboto-Regular;
+            width: 100%;
+        }
+
+            table.addnewstudents td {
+                min-width: 100px;
+                border-width: 2px 0px 0px 0px;
+                border-color: #bababa;
+                border-style: solid;
+            }
+
+            table.addnewstudents th {
+                text-transform: uppercase;
+                font-family: Roboto-Bold;
+                padding-bottom: 4px;
+                padding-right: 17px;
+                border-width: 0px;
+            }
+
+                table.addnewstudents th:first-child, table.addnewstudents td:first-child {
+                    width: 100px;
+                }
+        #errortable {
+            height: 200px;
+            overflow-y: scroll;
+            width: 472px;
+            padding-right: 30px;
+        }
+            #errortable::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            #errortable::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 8px rgba(0,0,0,0.3);
+            }
+
+            #errortable::-webkit-scrollbar-thumb {
+                background-color: #FC654C;
+                outline: 1px solid slategrey;
+            }
+        .bar {
+            background-color: #FC654C !important;
+        }
+        #partialviewmail {
+        width: 350px !important;
+        left:30%;
+        }
+    </style>
+    <div class="popup_background"></div>
+    <div id="partialview"></div>
+    <div id="partialviewmail">
+        <div class="form-group">
+            <div id="divclose" onclick="return ClosePoUp1()">X</div>
+        </div>
+
+        <h5 class="page-title">@Resource.Btn_ResendVerificationMail</h5>
+        <hr>
+        <div class="popup-desc" id="popupdesc1">@Resource.ResendEmailMessage1  <span id="lastsenddate"></span></div>
+        <div class="popup-desc" id="popupdesc2">@Resource.ResendEmailMessage2&nbsp;@Resource.Btn_ResendVerificationMail.ToLower()?</div>
+        <div class="form-group buttons" style="margin-top:10px;">
+            <a class="btn btn-default btn-rect" onclick="resendvermail(@Model.SchoolDetail.SchoolId)">YES</a>
+            <a class="btn btn-default btn-rect" onclick="return ClosePoUp1();">NO</a>
+        </div>
+
+    </div>
+
+
+    <div class="header-btns float-right">
+        @if (!Model.SchoolDetail.IsTrashed)
+        {
+            <input type="button" value="@Resource.Btn_ADDLIBRARIAN" name="add-new-admin" class="btn btn-default btn-rect" onclick="window.location.href = '@Url.RouteUrl("CreateSchoolAdmin", new { schooluid = @Model.SchoolDetail.SchoolUId })'" />
+            <a name="add-new-students" class="btn btn-default btn-rect remove-btn-space" onclick="return AddNewStudents();">@Resource.Btn_ADDSTUDENTS</a>
+            <a name="add-new-children" class="btn btn-default btn-rect remove-btn-space" style="margin-left:16px" onclick="return AddNewChildren();">@Resource.Btn_ADDCHILDREN</a>
+        }
+    </div>
+</div>
+<hr />
+
+<div class="row">
+    @Html.Hidden("SchoolUId", Model.SchoolDetail.SchoolUId)
+    @using (Html.BeginForm("ExportSchoolAdminstoExcel", "School", new { schooluid = Model.SchoolDetail.SchoolUId }, FormMethod.Post, new { id = "export-schooladmins-toexcel-form" }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="hidden" id="schooluid_ofadmins" name="schooluid_ofadmins" value="" />
+    }
+    @using (Html.BeginForm("ExportSchoolStudentstoExcel", "School", new { schooluid = Model.SchoolDetail.SchoolUId }, FormMethod.Post, new { id = "export-schoolstudents-toexcel-form" }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="hidden" id="schooluid_ofstudents" name="schooluid_ofstudents" value="" />
+    }
+    @using (Html.BeginForm("ExportSchoolHomePageDetailstoExcel", "School", new { schooluid = Model.SchoolDetail.SchoolUId }, FormMethod.Post, new { id = "export-school-details-toexcel-form" }))
+    {
+        <input type="hidden" id="schooluid_toexportschool" name="schooluid_toexportschool" value="" /> 
+    }
+    <div class="col-xs-12 info-section">
+        @Html.Raw(Model.SchoolDetail.AddressLine1 + (String.IsNullOrEmpty(Model.SchoolDetail.AddressLine2) ? "" : ", " + Model.SchoolDetail.AddressLine2))
+        @Html.Raw(String.IsNullOrEmpty(Model.SchoolDetail.City) ? "" : ", " + Model.SchoolDetail.City) @Html.Raw(String.IsNullOrEmpty(Model.SchoolDetail.State) ? "" : ", " + Model.SchoolDetail.State) @Html.Raw(Model.SchoolDetail.PinCode <= 0 ? "" : ", " + Model.SchoolDetail.PinCode)
+    </div>
+    <div>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_ID</label>
+            <span class="list-item-sub">@Model.SchoolDetail.SchoolUId</span>
+        </span>
+    </div>
+    <div class="row">
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_Principal</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalName</span>
+        </span>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_Email</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalEmail</span>
+        </span>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_SchoolPhone</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PhoneNumber</span>
+        </span>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_Status</label>
+            <span class="list-item-sub">
+                @if (Model.SchoolDetail.IsTrashed)
+                {
+                    @Html.Raw(Resource.Status_Disabled);
+                }
+                else if (!Model.SchoolDetail.IsTrashed && Model.SchoolDetail.IsEmailVerified)
+                {
+                    @Html.Raw(Resource.Status_Active);
+                }
+                else if (!Model.SchoolDetail.IsActive && !Model.SchoolDetail.IsEmailVerified)
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+                else
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+            </span>
+        </span>
+    </div>
+    <div>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_IsEmailVerified</label>
+            @if (Model.SchoolDetail.IsEmailVerified)
+            {
+                <span class="verified"></span>
+            }
+            else
+            {
+                <span class="notverified"></span>
+            }
+        </span>
+    </div>
+</div>
+<div class="row btns-left">
+    <div class="float-left">
+        <input type="submit" class="btn btn-default btn-rect btn-space" name="edit-school" value="@Resource.Btn_Modify" onclick="window.location.href = '@Url.RouteUrl("EditSchool", new { schooluid=@Model.SchoolDetail.SchoolUId})';" />
+        <input type="button" id="disable-school" class="btn btn-default btn-rect btn-space" name="remove-school" value="@(Model.SchoolDetail.IsTrashed ? @Resource.Btn_Enable : @Resource.Btn_Disable )" onclick="confirmDisable(@Model.SchoolDetail.SchoolId, this.id)" />
+        @if (!(Model.SchoolDetail.IsEmailVerified))
+{
+    <input type="submit" class="btn btn-default btn-rect" name="resend-mail" value="@Resource.Btn_ResendVerificationMail" onclick="OpenPopUp(@Model.SchoolDetail.SchoolId)" />
+}
+    </div>
+</div>
+
+<div class="row">
+
+</div>
+@using (Ajax.BeginForm("SchoolHomePage", "School", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "SchoolStudentsContainer" }, new { id = "searchForm" }))
+{
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            @Html.RenderBootstrapTabHeader("tab-admins", @TabAdminsHeader(), true)
+            @Html.RenderBootstrapTabHeader("tab-students", @TabStudentsHeader())
+        </ul>
+        <div class="tab-content">
+            @Html.RenderBootstrapTabContent("tab-admins", @TabAdmins(), true)
+            @Html.RenderBootstrapTabContent("tab-students", @TabStudents())
+        </div>
+    </div>
+    @helper TabAdminsHeader()
+{
+    <div>
+        <span>@Resource.Tab_Title_LIBRARIANS (@Model.SchoolDetail.SchoolAdminCount)</span>
+            <input type="button" id="exportschooladmins" class="exporttoexcel_white" title="@Resource.Export_ExportSchoolLibrarians"/>
+        
+    </div>
+}
+
+    @helper TabStudentsHeader()
+{
+    <div>
+        <span>@Resource.Tab_Title_STUDENTS (@Model.SchoolDetail.StudentCount)</span>
+        <input type="button" id="exportschoolstudents" class="exporttoexcel_white" title="@Resource.Export_ExportSchoolStudents"/>
+        @if (!Model.SchoolDetail.IsTrashed && Model.SchoolDetail.StudentCount>0)
+        {
+          <input type="button" id="exportbutton" class="renewstudent float-right" value="Renew" onclick="return BulkUpdate('export');"/>
+        }
+
+    </div>
+}
+
+    @helper TabAdmins()
+{
+    <div id="SchoolAdminsContainer">
+        @Html.Partial("_SchoolAdminListPost", Model.Admins)
+    </div>
+}
+
+    @helper TabStudents()
+{
+    <div class="grade-selector">
+        <input type="hidden" value="@Model.Grades[0].Name" id="hdnGrade" name="Grade" />
+        <span class="grade-selector-title">@Resource.Selector_GRADE</span>
+        @foreach (Grade grade in Model.Grades)
+        {
+            <input type="submit" value="@grade.Name" class="grade" />
+        }
+    </div>
+    <div id="SchoolStudentsContainer">
+        @Html.Partial("_StudentListPost", Model.Students)
+    </div>
+}
+
+    @section scripts {
+<script src="~/Scripts/MvcPager.js?v=1"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+        <script type="text/javascript">
+            function ClosePoUp1() {
+                $('#partialviewmail').hide();
+                $('.popup_background').css('display', 'none');
+                return false;
+            }
+            function OpenPopUp(UserId) {
+                $.ajax({
+                    url: '@Url.Action("GetLastEmailSendDate", "School")?UserId=' + UserId + '&Type=schoolregistration',
+                    type: 'Get',
+                    async: false,
+                    success: function (result) {
+                        if (result == '') {
+                            $('#popupdesc1').hide();
+                        }
+                        else {
+                            $('#lastsenddate').text(result);
+                            $('#popupdesc1').show();
+                        }
+                        $('#partialviewmail').show();
+                        $('.popup_background').css('display', 'block');
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            location.reload();
+                        }
+                    }
+                });
+            }
+            function AddNewStudents() {
+                //alert('');
+                $.ajax({
+                    url: '@Url.RouteUrl("ImportStudents")',
+                    type: 'Get',
+                    async: false,
+                    success: function (result) {
+                        $('#partialview').html(result);
+                        $('#partialview').show();
+                        $('.popup_background').css('display', 'block');
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            //refresh the page, as we are not longer authorized
+                            location.reload();
+                        }
+                    }
+                });
+                return false;
+            }
+            function AddNewChildren() {
+                //alert('');
+                $.ajax({
+                    url: '@Url.RouteUrl("ImportChildren")',
+                    type: 'Get',
+                    async: false,
+                    success: function (result) {
+                        $('#partialview').html(result);
+                        $('#partialview').show();
+                        $('.popup_background').css('display', 'block');
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            //refresh the page, as we are not longer authorized
+                            location.reload();
+                        }
+                    }
+                });
+                return false;
+            }
+            function BulkUpdate(type) {
+                $.ajax({
+                    url: '@Url.RouteUrl("BulkUpdateStudents")',
+                    type: 'Get',
+                    async: false,
+                    success: function (result) {
+                        $('#partialview').html(result);
+                        $('#partialview').show();
+                        $('.popup_background').css('display', 'block');
+                        if (type == 'upload')
+                            ShowUpload();
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            //refresh the page, as we are not longer authorized
+                            location.reload();
+                        }
+                    }
+                });
+                return false;
+            }
+
+
+            $('.grade:first').addClass('grade-active')
+            $('.grade').click(function () {
+                $('.grade-active').removeClass('grade-active');
+                $(this).addClass('grade-active');
+                $('#hdnGrade').val($(this).val());
+            });
+            $(function () {
+                // Javascript to enable link to tab
+                var hash = GetTab();
+                if (hash) {
+                    $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+                }
+                // Change hash for page-reload
+                $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                    // window.location.hash = e.target.hash;
+                });
+            });
+            function GetTab() {
+                var hash = document.location.hash;
+                if (hash.indexOf("tab-students") >= 0) {
+                    return "tab-students";
+                }
+                else if (hash.indexOf("tab-admins") >= 0) {
+                    return "tab-admins";
+                }
+                else {
+                    return "";
+                }
+            }
+
+            function confirmDisable(SchoolId, elemid) {
+                var status = false;
+                jsondata = { "schoolid": SchoolId };
+                if ($("#" + elemid).val().toLowerCase() == "disable") {
+                    var result = confirm("@Resource.Disable_ConfirmMsg");
+                }
+                else {
+                    var result = confirm("@Resource.Enable_ConfirmMsg");
+                }
+
+                if (result) {
+                    $.ajax({
+                        url: '@Url.Action("DisableSchool", "School")',
+                        type: 'POST',
+                        async: false,
+                        data: jsondata,
+                        dataType: 'json',
+                        success: function (result) {
+                            if (result.Status === 1) {
+                                status = true;
+                                window.location.href = window.location.href;
+                            }
+                            else  if (result.Status === 2) {
+                                alert("@Resource.Schooldisable_NoSchool");
+                            }
+                            else if (result.Status === 3) {
+                                alert("@Resource.Schooldisable_NotAllowed");
+                            }
+                            else {
+                                alert("@Resource.Schooldisable_Error");
+                            }
+
+                        },
+                        error: function (jqXHR, textStatus, err) {
+                            if (jqXHR.status == 401) {
+                                //refresh the page, as we are not longer authorized
+                                location.reload();
+                            }
+                        }
+                    });
+                    return status;
+                }
+                else {
+                    return false;
+                }
+            }
+
+            function resendvermail(schoolid) {
+                jsondata = { "schoolid": schoolid };
+                $.ajax({
+                    url: '@Url.Action("ResendVerificationMail", "School")',
+                    type: 'POST',
+                    async: false,
+                    data: jsondata,
+                    dataType: 'json',
+                    success: function (result) {
+                        ClosePoUp1();
+                        if (result.Status == 1) {
+                            alert("@Resource.VerificationMail_Success");
+                        }
+                        else if (result.Status == 2) {
+                            alert("@Resource.VerificationMail_NoSchool");
+                        }
+                        else {
+                            alert("@Resource.VerificationMail_ErrorMailNotSent");
+                        }
+                    },
+                    error: function (jqXHR, textStatus, err) {
+                        if (jqXHR.status == 401) {
+                            //refresh the page, as we are not longer authorized
+                            location.reload();
+                        }
+                    }
+                });
+            }
+
+            $('#exportschooladmins').on('click', function () {
+                $('#schooluid_ofadmins').val($('#SchoolUId').val())
+                $('#export-schooladmins-toexcel-form').submit();
+
+            });
+
+            $('#exportschoolstudents').on('click', function () {
+                $('#schooluid_ofstudents').val($('#SchoolUId').val())
+                $('#export-schoolstudents-toexcel-form').submit();
+
+            });
+
+            $('#exportschool').on('click', function () {
+                $('#schooluid_toexportschool').val($('#SchoolUId').val())
+                $('#export-school-details-toexcel-form').submit();
+            });
+        </script>
+    }
+
+
+}

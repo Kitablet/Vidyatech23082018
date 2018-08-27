@@ -1,0 +1,432 @@
+﻿@using FISE_Cloud.Models;
+@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model Report2FilterModel
+@{
+    ViewBag.Title = "Report 2";
+    ViewBag.HeaderPageTitle = "Reports";
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<script src="~/Scripts/d3.min.js?v=1"></script>
+<script src="~/Scripts/d3pie.js?v=1"></script>
+<script src="~/Scripts/CreateDonut.js?v=1"></script>
+<style>
+    .nav-tabs > li {
+        width: 33.333%!important
+    }
+
+    .grade1 {
+        background: transparent;
+        border: 0;
+        color: white;
+            padding: 0px 16px;
+    }
+
+    .grade-active {
+        border-bottom: solid black;
+        COLOR: BLACK;
+    }
+
+    .report-error {
+        right: 0;
+        top: 7px;
+        z-index: 100;
+        color: #FC654C;
+        font-size: 12px;
+        display: none;
+    }
+    .field-validation-error {
+        display:none;
+        position:static;
+    }
+    .nav-tabs li:last-of-type a:last-of-type {
+        margin-right: -1px !important;
+    }
+</style>
+<style>   
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 12px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+</style>
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+        @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-12">
+        <h4 class="page-title">
+            @Resource.Reports_Report2_Title <span id="selected-duration"></span>
+        <a class="exporttoexcel" id="report2_exptoexcel" onclick="return ExportReport2();" title="@Resource.Export_Reports_Report2"></a>
+     </h4>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("ExportReport2", "Report", FormMethod.Post, new { id = "filter-selected-items-toexport-form" }))
+{
+    <input type="hidden" id="schoolsexport" name="schoolsexport" value="" />
+    <input type="hidden" id="gradesexport" name="gradesexport" value="" />
+    <input type="hidden" id="durationexport" name="durationexport" value="" />
+    <input type="hidden" id="cityexport" name="cityexport" value="" />
+    <input type="hidden" id="monthexport" name="monthexport" value="" />
+    <input type="hidden" id="yearexport" name="yearexport" value="" />
+}
+
+@using (Ajax.BeginForm("Report2", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "data", OnBegin = "onBegin", OnComplete = "onComplete" }, new { id = "filterForm" }))
+{
+    <span id="modifyfilter_link" class="accordion_plus">@Resource.Reports_ModifyFiltersandRegenerateReport</span>
+
+    <div id="filter_accordion" class="collapse in">
+        <div class="row reportfilter-row">
+            <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectDuration</p></div>
+            <div class="col-xs-12 reportfilter_radio">
+                <div class="col-xs-2">
+                    <input type="radio" id="duration" name="duration" value="a-month" dropdown="amonth" />
+                    <label class="report-radio-label">@Resource.Reports_SelectDuration_Amonth</label>
+                </div>
+                <div class="col-xs-2">
+                    @Html.DropDownList("year",
+                Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                "Select Year", new { @class = "amonth", id = "myear" })
+                    <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+                </div>
+                <div class="col-xs-offset-1 col-xs-2">
+                    @{IEnumerable<Month>
+                month = Enum.GetValues(typeof(Month)).Cast<Month>();
+                    }
+                    @Html.DropDownList("month",
+                month.Select(i => new SelectListItem { Value = ((int)i).ToString(), Text = i.ToString() }),
+                "Select Month", new { @class = "amonth", id = "mmonth" })
+                    <span class="report-error" data-valmsg-replace="true">@Resource.Report_MonthReq_Error</span>
+                </div>
+            </div>
+            <div class="col-xs-12 reportfilter_radio">
+                <div class="col-xs-2">
+                    <input type="radio" id="duration" name="duration" value="a-quarter" dropdown="aquarter" />
+                    <label class="report-radio-label">@Resource.Reports_SelectDuration_Aquarter</label>
+                </div>
+                <div class="col-xs-2">
+                    @Html.DropDownList("year",
+                Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                         "Select Year", new { @class = "aquarter", id = "qyear" })
+                    <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+                </div>
+                <div class="col-xs-offset-1 col-xs-2">
+                    @{IEnumerable<Quarter>
+                quarter = Enum.GetValues(typeof(Quarter)).Cast<Quarter>();
+                    }
+                    @Html.DropDownList("month",
+                         quarter.Select(i => new SelectListItem { Value = ((int)i).ToString(), Text = i.ToString() }),
+                         "Select Month", new { @class = "aquarter", id = "qmonth" })
+                    <span class="report-error" data-valmsg-replace="true">@Resource.Report_MonthReq_Error</span>
+                </div>
+            </div>
+            <div class="col-xs-12 reportfilter_radio">
+                <div class="col-xs-2">
+                    <input type="radio" id="duration" name="duration" value="a-year" dropdown="ayear"  />
+                    <label class="report-radio-label">@Resource.Reports_SelectDuration_Ayear</label>
+                </div>
+                <div class="col-xs-2">
+                    @Html.DropDownList("year",
+                Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                         "Select Year", new { @class = "ayear", id = "ayear" })
+                    <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-2">
+                    <input type="radio" id="duration" name="duration" value="a-year-to-date" dropdown="tilldate" checked />
+                    <label class="report-radio-label">@Resource.Reports_SelectDuration_Ayeartodate</label>
+                    <span class="field-validation-error">@Resource.Reports_SelectDuration_ValidationErrMsg</span>
+                </div>
+                
+            </div>
+        </div>
+        @if (_Userdata != null && !_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+        {
+        <div class="row reportfilter-row">
+            <div class="col-xs-2"><p class="report_subtitle">@Resource.Reports_SelectLocation</p></div>
+            <div class="col-xs-2">
+                @Html.DropDownList("city",
+                                     Model.Cities.
+                                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                                     "All Cities")
+            </div>
+        </div>
+
+        <div class="row reportfilter-row">
+            <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectSchools</p></div>
+            <div class="col-xs-12">
+                <div class="col-xs-12">
+                    <input type="checkbox" id="selectall_school" value="All" checked />
+                    <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+                </div>
+                <hr class="hr_report" />
+
+                @foreach (var item in Model.Schools)
+                {
+                    <div class="col-xs-12 reportfilter_check school" city="@item.City.Replace(" ",string.Empty)">
+                        <input type="checkbox" id="" name="SchoolIds" value="@item.SchoolId" chcity="@item.City.Replace(" ",string.Empty)" />
+                        <span class="filter_checkboxlabel2">@item.SchoolName</span>
+                    </div>
+                }
+            </div>
+            <div class="col-xs-12 seeallschools">
+                <a id="seeall_school">@Resource.Reports_link_Seeallschools</a>
+            </div>
+        </div>
+        }
+        else
+        {
+            <div style="display:none;">
+                @Html.DropDownList("city", Model.Cities.
+                                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }))
+            </div>
+        <div class="col-xs-12" style="display:none;">
+                    <input type="checkbox" id="selectall_school" value="All" />
+                    <span class="filter_checkboxlabel2">All</span>
+                </div>
+
+                foreach (var item in Model.Schools)
+                {
+                    <div class="col-xs-12 reportfilter_check school" city="@item.City.Replace(" ",string.Empty)" style="display:none">
+                        <input type="checkbox" id="" name="SchoolIds" value="@item.SchoolId" chcity="@item.City.Replace(" ",string.Empty)" checked />
+                        <span class="filter_checkboxlabel2">@item.SchoolName</span>
+                    </div>
+                }
+        }
+        <div class="row reportfilter-row">
+            <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectGrades</p></div>
+            <div class="col-xs-12">
+                <div class="col-xs-12">
+                    <input type="checkbox" id="selectall_grade" value="All" checked />
+                    <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+                </div>
+                <hr class="hr_report" />
+                @foreach (var item in Model.Grades)
+                {
+                    <div class="col-xs-12 reportfilter_check">
+                        <input type="checkbox" name="grade" value="@item.Id" class="grade" />
+                        <span class="filter_checkboxlabel2">Grade @item.Name</span>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+        <div class="buttons">
+            <input type="submit" class="btn btn-default btn-rect" value="@Resource.Reports_btn_GenerateReport" data-toggle="collapse" data-target="#filter_accordion" id="btn_GenerateReport" />
+        </div>
+    </div>
+
+    <div id="data">
+    </div>
+}
+
+<script src="~/Scripts/d3.v3.min.js?v=1"></script>
+@section scripts {
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.ayear,.amonth,.aquarter').attr('disabled', true);
+            $('.school').slice(10, $('.school').length).hide();
+            $('#seeall_school').click(function () {
+                $('.school').show();
+                $(this).hide();
+            });
+
+            $('#city').change(function () {
+                var val = $(this).val().replace(/ /g, '');
+                $('.school').hide();
+                if (val == '')
+                    $('.school').show();
+                else {
+                    $('[city=' + val + ']').show();
+                    $('.school [chcity!=' + val + '][type=checkbox]').prop('checked', false);
+                }
+                $('#seeall_school').hide();
+                $('#selectall_school').prop('checked', true);
+            });
+
+            $('[name=SchoolIds]').click(function () {
+                var val = $('#city').val().replace(/ /g, '');
+                if (val == '') {
+                    if ($('[name=SchoolIds]').length == $('[name=SchoolIds]:checked').length) {
+                        $('[name=SchoolIds]').prop('checked', false);
+                        $('#selectall_school').prop('checked', true);
+                    }
+                    else if ($('[name=SchoolIds]:checked').length == 0)
+                        $('#selectall_school').prop('checked', true);
+                    else {
+                        $('#selectall_school').prop('checked', false);
+                    }
+                }
+                else {
+                    if ($('[chcity=' + val + ']').length == $('[chcity=' + val + ']:checked').length) {
+                        $('[chcity=' + val + ']').prop('checked', false);
+                        $('#selectall_school').prop('checked', true);
+                    }
+                    else if ($('[name=SchoolIds]:checked').length == 0)
+                        $('#selectall_school').prop('checked', true);
+                    else {
+                        $('#selectall_school').prop('checked', false);
+                    }
+                }
+            });
+
+            $('.grade').click(function () {
+
+                if ($('input:checkbox[class=grade]').length == $('input:checkbox[class=grade]:checked').length) {
+                    $('.grade').prop('checked', false);
+                    $('#selectall_grade').prop('checked', true);
+                }
+                else if ($('input:checkbox[class=grade]:checked').length == 0)
+                    $('#selectall_grade').prop('checked', true);
+                else
+                    $('#selectall_grade').prop('checked', false);
+            });
+
+            $('[name$=duration]').click(function () {
+                $('.ayear,.amonth,.aquarter').attr('disabled', true);
+                $('.ayear,.amonth,.aquarter').css('opacity', 0.5);
+                $('.' + $(this).attr('dropdown')).attr('disabled', false);
+                $('.' + $(this).attr('dropdown')).css('opacity', 1);
+                $('span.field-validation-error').css('display', 'none');
+            });
+
+            $('#btn_GenerateReport').click(function () {
+                var result = true;
+                if ($('[name$=duration]:checked').length == 0) {
+                    $('span.field-validation-error').css('display', 'block');
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                    return false;
+                }
+                else {
+                    var attr = $('[name$=duration]:checked').attr('dropdown');
+                    $('.report-error').hide();
+                    $('.' + attr).each(function () {
+                        if ($(this).val() == '') {
+                            $(this).siblings('.report-error').show();
+                            result = false;
+                        }
+                    });
+                }
+                if (result == false) {
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                }
+                return result;
+            });
+        });
+
+        $('#selectall_school').click(function () {
+            $(this).prop('checked', true)
+            $('[name=SchoolIds]').prop('checked', false);
+        });
+
+        $('#selectall_grade').click(function () {
+                $('.grade').prop('checked', false);
+                $(this).prop('checked',true)
+        });
+
+        function ExportReport2() {
+            var attr = $('[name$=duration]:checked').attr('dropdown');
+            var val = $('[name$=duration]:checked').val();
+            var time = [{ time: '0' }, { time: '0' }]
+            $('.' + attr).each(function (index, value) {
+                time[index].time = $(this).val();
+            });
+
+            var schoolids = [];
+            $('[name=SchoolIds]:checked').each(function () {
+                schoolids.push($(this).val());
+            });
+
+            var gradeids = [];
+            $('[name=grade]:checked').each(function () {
+                gradeids.push($(this).val());
+            });
+
+            $('#schoolsexport').val(schoolids.join(','));
+            $('#gradesexport').val(gradeids.join(','));
+            $('#durationexport').val(val);
+            $('#monthexport').val(time[1].time);
+            $('#yearexport').val(time[0].time);
+            $('#cityexport').val($('#city').val());
+            $('#filter-selected-items-toexport-form').submit();
+            return false;
+        }
+
+
+        var report_Timeline = "";
+        $('#filter_accordion').on('hidden.bs.collapse', function () {
+            $('span#modifyfilter_link').show();
+            $('#data').addClass("in");
+            //$("#data").show();
+            //$('#accordion_group').show();
+            $('#report2_exptoexcel').css('display', 'inline-flex');
+            var attr = $('[name$=duration]:checked').attr('dropdown');
+            if (attr == "amonth")
+                report_Timeline = "For " + $('#mmonth').children(':selected').text().substring(0, 3) + " " + $('#myear').val().toString();
+            else if (attr == "aquarter") {
+                var quarter = $('#qmonth').children(':selected').text();
+                var Q = 0;
+                if (quarter.toLowerCase() == "first") { Q = 1; } else if (quarter.toLowerCase() == "second") { Q = 2; } else if (quarter.toLowerCase() == "third") { Q = 3; } else if (quarter.toLowerCase() == "fourth") { Q = 4; }
+                report_Timeline = "For Q" + Q + " " + $('#qyear').val().toString();
+            }
+            else if (attr == "ayear")
+                report_Timeline = "For " + $('#ayear').val().toString();
+            else if (attr == "tilldate")
+                report_Timeline = "For " + "@Resource.Reports_Ayeartodate";
+            $("span#selected-duration").html("");
+            $("span#selected-duration").html(report_Timeline);            
+        });
+
+        $('span#modifyfilter_link').click(function () {
+            $('span#modifyfilter_link').hide();
+            $('#filter_accordion').addClass("in");
+            $('#filter_accordion').css('height', 'auto');
+        });
+
+        function onBegin() {
+            displayAjaxLoading(true);
+        }
+        function onComplete(jqXHR, textStatus, err) {
+            
+                if (jqXHR.status == 401) {
+                    location.reload();
+                }                
+                $('[href*=gradewise]').first().click();
+                displayAjaxLoading(false);
+                $('html, body').animate({ scrollTop: 0 }, 500);
+        }
+    </script>
+
+}
+

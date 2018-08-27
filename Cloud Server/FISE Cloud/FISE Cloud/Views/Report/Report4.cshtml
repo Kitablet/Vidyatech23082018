@@ -1,0 +1,484 @@
+﻿@using FISE_Cloud.Models;
+@model Report4FilterModel
+@{
+    ViewBag.Title = Resource.Reports_Report4_Title;
+    ViewBag.HeaderPageTitle = "Reports";
+}
+<script src="~/Scripts/Chart.bundle.min.js?v=1"></script>
+<script>  
+    function RenderHalfPi(id, data) {        
+        var ctx = document.getElementById(id);
+        Chart.defaults.global.legend.display = false;
+        Chart.defaults.global.tooltips.enabled = false;
+        // And for a doughnut chart
+        var myDoughnutChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: {
+                rotation: 1 * Math.PI,
+                circumference: 1 * Math.PI
+            }
+        });
+    }
+
+</script>
+<style>
+   
+
+    path.slice {
+        stroke-width: 2px;
+    }
+
+    polyline {
+        opacity: .7;
+        stroke: black;
+        stroke-width: 1.5px;
+        fill: none;
+    }
+
+    .labelValue {
+        font-family: "segoe UI";
+        font-size: 16px;
+        opacity: 1;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .labelName {
+        font-family: "segoe UI";
+        font-size: 12px;
+        opacity: 1;
+        text-align: center;
+    }
+
+    .toolTip {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        position: absolute;
+        display: none;
+        width: auto;
+        height: auto;
+        background: none repeat scroll 0 0 white;
+        border: 0 none;
+        border-radius: 8px 8px 8px 8px;
+        box-shadow: -3px 3px 15px #888888;
+        color: black;
+        font: 12px sans-serif;
+        padding: 5px;
+        text-align: center;
+    }
+
+    text {
+        font: 12px sans-serif;
+    }
+    .field-validation-error {
+        display:none;
+        position:static;
+    }
+</style>
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-12">
+        <h4 class="page-title">@Resource.Reports_Report4_Title <span id="selected-duration"></span>
+            <a class="exporttoexcel" id="report4_exptoexcel" onclick="return ExportReport4();" title="@Resource.Export_Reports_Report4"></a>
+        </h4>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("ExportReport4", "Report", FormMethod.Post, new { id = "filter-selected-items-toexport-form" }))
+{
+    <input type="hidden" id="publisherexport" name="publisherexport" value="" />
+    <input type="hidden" id="languageexport" name="languageexport" value="" />
+    <input type="hidden" id="subsectionexport" name="subsectionexport" value="" />
+    <input type="hidden" id="durationexport" name="durationexport" value="" />
+    <input type="hidden" id="cityexport" name="cityexport" value="" />
+    <input type="hidden" id="monthexport" name="monthexport" value="" />
+    <input type="hidden" id="yearexport" name="yearexport" value="" />
+}
+@using (Ajax.BeginForm("Report4", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "data", OnBegin = "onBegin", OnComplete = "onComplete" }, new { id = "filterForm" }))
+{
+<span id="modifyfilter_link" class="accordion_plus">@Resource.Reports_ModifyFiltersandRegenerateReport</span>
+
+<div id="filter_accordion" class="collapse in">
+    <div class="row reportfilter-row">
+        <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectDuration</p></div>
+        <div class="col-xs-12 reportfilter_radio">
+            <div class="col-xs-2">
+                <input type="radio" id="duration" name="duration" value="a-month" dropdown="amonth" />
+                <label class="report-radio-label">@Resource.Reports_SelectDuration_Amonth</label>
+            </div>
+            <div class="col-xs-2">
+                @Html.DropDownList("year",
+                Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                "Select Year", new { @class = "amonth", id = "myear" })
+                <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+            </div>
+            <div class="col-xs-offset-1 col-xs-2">
+                @{IEnumerable<Month>
+                month = Enum.GetValues(typeof(Month)).Cast<Month>();
+                }
+                @Html.DropDownList("month",
+            month.Select(i => new SelectListItem { Value = ((int)i).ToString(), Text = i.ToString() }),
+            "Select Month", new { @class = "amonth", id = "mmonth" })
+                <span class="report-error" data-valmsg-replace="true">@Resource.Report_MonthReq_Error</span>
+            </div>
+        </div>
+        <div class="col-xs-12 reportfilter_radio">
+            <div class="col-xs-2">
+                <input type="radio" id="duration" name="duration" value="a-quarter" dropdown="aquarter" />
+                <label class="report-radio-label">@Resource.Reports_SelectDuration_Aquarter</label>
+            </div>
+            <div class="col-xs-2">
+                @Html.DropDownList("year",
+                    Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+         "Select Year", new { @class = "aquarter", id = "qyear" })
+                <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+            </div>
+            <div class="col-xs-offset-1 col-xs-2">
+                @{IEnumerable<Quarter>
+                quarter = Enum.GetValues(typeof(Quarter)).Cast<Quarter>();
+                }
+
+                @Html.DropDownList("month",
+                quarter.
+                Select(i => new SelectListItem { Value = ((int)i).ToString(), Text = i.ToString() }),
+                "Select Month", new { @class = "aquarter", id = "qmonth" })
+                <span class="report-error" data-valmsg-replace="true">@Resource.Report_MonthReq_Error</span>
+            </div>
+        </div>
+        <div class="col-xs-12 reportfilter_radio">
+            <div class="col-xs-2">
+                <input type="radio" id="duration" name="duration" value="a-year" dropdown="ayear" />
+                <label class="report-radio-label">@Resource.Reports_SelectDuration_Ayear</label>
+            </div>
+            <div class="col-xs-2">
+                @Html.DropDownList("year",
+                Enumerable.Range(2010, DateTime.Now.Year + 1 - 2010).
+                Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                "Select Year", new { @class = "ayear", id = "ayear" })
+                <span class="report-error" data-valmsg-replace="true">@Resource.Report_YearReq_Error</span>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="col-xs-2">
+                <input type="radio" id="duration" name="duration" value="a-year-to-date" dropdown="tilldate" checked />
+                <label class="report-radio-label">@Resource.Reports_SelectDuration_Ayeartodate</label>
+                <span class="field-validation-error">@Resource.Reports_SelectDuration_ValidationErrMsg</span>
+            </div>
+        </div>
+    </div>
+    <div class="row reportfilter-row">
+        <div class="col-xs-2"><p class="report_subtitle">@Resource.Reports_SelectLocation</p></div>
+        <div class="col-xs-2">
+            @Html.DropDownList("city",
+            Model.Cities.
+            Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+            "All Cities")
+        </div>
+    </div>
+
+    <div class="row reportfilter-row">
+        <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectLibrarySubsections</p></div>
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <input type="checkbox" id="selectall_section" value="All" checked />
+                <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+            </div>
+            <hr class="hr_report" />
+            @foreach (var item in Model.SubSections)
+            {
+                <div class="col-xs-12 reportfilter_check">
+                    <input type="checkbox" name="subsection" value="@item.Id" class="section" />
+                    <span class="filter_checkboxlabel2">@item.Name</span>
+                </div>
+            }
+
+        </div>
+    </div>
+
+    <div class="row reportfilter-row">
+        <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectLanguages</p></div>
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <input type="checkbox" id="selectall_language" value="All" checked />
+                <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+            </div>
+            <hr class="hr_report" />
+            @foreach (var item in Model.Languages)
+            {
+                <div class="col-xs-12 reportfilter_check">
+                    <input type="checkbox" name="language" value="@item.Id" class="language" />
+                    <span class="filter_checkboxlabel2">@item.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+
+    <div class="row reportfilter-row">
+        <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectPublishers</p></div>
+        <div class="col-xs-12">
+            <div class="col-xs-12">
+                <input type="checkbox" id="selectall_publisher" value="All" checked />
+                <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+            </div>
+            <hr class="hr_report" />
+            @foreach (var item in Model.Publishers)
+            {
+                <div class="col-xs-12 reportfilter_check publisher" lang="@item.Language" section="@item.SubSection">
+                    <input type="checkbox" name="publisher" value="@item.Publisher" />
+                    <span class="filter_checkboxlabel2">@item.Publisher</span>
+                </div>
+            }
+
+        </div>
+        @if (Model.Publishers.Count() > 10)
+        {
+            <div class="col-xs-12" id="seeall_publisher">
+                <a>@Resource.Reports_link_Seeallpublishers</a>
+            </div>
+        }
+    </div>
+
+    <div class="buttons">
+        <input type="submit" class="btn btn-default btn-rect" value="@Resource.Reports_btn_GenerateReport" data-toggle="collapse" data-target="#filter_accordion" id="btn_GenerateReport" />
+    </div>
+</div>
+
+<div id="data">
+</div>
+}
+@section scripts {
+
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script>
+
+        $(document).ready(function () {
+            $('.ayear,.amonth,.aquarter').attr('disabled', true);
+            $('.publisher').slice(10, $('.publisher').length).hide();
+
+            $('#seeall_publisher').click(function () {
+                $('.publisher').show();
+                $(this).hide();
+            });
+
+            $('#selectall_section').click(function () {
+                $('.section').prop('checked', false);
+                $('#selectall_section').prop('checked', true);
+
+                FilterBooks();
+            });
+
+            $('#selectall_language').click(function () {
+                $('.language').prop('checked', false);
+                $('#selectall_language').prop('checked', true);
+
+                FilterBooks();
+            });
+
+            $('.section').click(function () {
+
+                if ($('input:checkbox[class=section]').length == $('input:checkbox[class=section]:checked').length) {
+                    $('.section').prop('checked', false);
+                    $('#selectall_section').prop('checked', true);
+                }
+                else if ($('input:checkbox[class=section]:checked').length == 0) {
+                    $('#selectall_section').prop('checked', true);
+                }
+                else {
+                    $('#selectall_section').prop('checked', false);
+                }
+                FilterBooks();
+            });
+
+            $('.language').click(function () {
+
+                if ($('input:checkbox[class=language]').length == $('input:checkbox[class=language]:checked').length) {
+                    $('.language').prop('checked', false);
+                    $('#selectall_language').prop('checked', true);
+                }
+                else if ($('input:checkbox[class=language]:checked').length == 0) {
+                    $('#selectall_language').prop('checked', true);
+                }
+                else {
+                    $('#selectall_language').prop('checked', false);
+                }
+                FilterBooks();
+            });
+
+            $('#selectall_publisher').click(function () {
+                $('[name=publisher]').prop('checked', false);
+                $('#selectall_publisher').prop('checked', true);
+            });
+
+            $('[name=publisher]').click(function () {
+
+                if ($('input:checkbox[name=publisher]').length == $('input:checkbox[name=publisher]:checked').length) {
+                    $('[name=publisher]').prop('checked', false);
+                    $('#selectall_publisher').prop('checked', true);
+                }
+                else if ($('input:checkbox[name=publisher]:checked').length == 0) {
+                    $('#selectall_publisher').prop('checked', true);
+                }
+                else {
+                    $('#selectall_publisher').prop('checked', false);
+                }
+            });
+
+            $('[name$=duration]').click(function () {
+                $('.ayear,.amonth,.aquarter').attr('disabled', true);
+                $('.ayear,.amonth,.aquarter').css('opacity', 0.5);
+                $('.' + $(this).attr('dropdown')).attr('disabled', false);
+                $('.' + $(this).attr('dropdown')).css('opacity', 1);
+                $('span.field-validation-error').css('display', 'none');
+            });
+
+            $('#btn_GenerateReport').click(function () {
+                var result = true;
+                if ($('[name$=duration]:checked').length == 0) {
+                    $('span.field-validation-error').css('display', 'block');
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                    return false;
+                }
+                else {
+                    var attr = $('[name$=duration]:checked').attr('dropdown');
+                    $('.report-error').hide();
+                    $('.' + attr).each(function () {
+                        if ($(this).val() == '') {
+                            $(this).siblings('.report-error').show();
+                            result = false;
+                            $('html, body').animate({ scrollTop: 0 }, 500);
+                        }
+                    });
+                }
+                
+                return result;
+            });
+        });
+
+        function FilterBooks() {
+            var secids = [];
+            var section = '';
+            var lang = '';
+            var langids = [];
+            $('input:checkbox[class=section]:checked').each(function () {
+                secids.push($(this).val());
+            });
+
+            $('input:checkbox[class=language]:checked').each(function () {
+                langids.push($(this).val());
+            });
+            section = secids.join('_');
+            lang = langids.join('_');
+
+            $('#selectall_publisher').prop('checked', true);
+            $('[name=publisher]').prop('checked', false);
+            $('.publisher').hide();
+
+            if (lang == '' && section == '')
+                $('.publisher').show();
+
+            else {
+                if (lang == '') {
+                    $.each(secids, function (index, value) {
+                        $('[section*=' + value + ']').show();
+                    });
+                }
+                else if (section == '') {
+                    $.each(langids, function (index, value) {
+                        $('[lang*=' + value + ']').show();
+                    });
+                }
+                else {
+                    $.each(secids, function (ind, val) {
+                        $.each(langids, function (index, value) {
+                            $('[lang*=' + value + '][section*=' + val + ']').show();
+                        });
+                    });
+                }
+            }
+        }
+
+
+        var report_Timeline = "";
+    $('#filter_accordion').on('hidden.bs.collapse', function () {
+        $('span#modifyfilter_link').show();
+        $('#data').addClass("in");
+                    $('#report4_exptoexcel').css('display', 'inline-flex');
+                    var attr = $('[name$=duration]:checked').attr('dropdown');
+                    if (attr == "amonth")
+                        report_Timeline = "For " + $('#mmonth').children(':selected').text().substring(0, 3) + " " + $('#myear').val().toString();
+                    else if (attr == "aquarter") {
+                        var quarter = $('#qmonth').children(':selected').text();
+                        var Q = 0;
+                        if (quarter.toLowerCase() == "first") { Q = 1; } else if (quarter.toLowerCase() == "second") { Q = 2; } else if (quarter.toLowerCase() == "third") { Q = 3; } else if (quarter.toLowerCase() == "fourth") { Q = 4; }
+                        report_Timeline = "For Q" + Q + " " + $('#qyear').val().toString();
+                    }
+                    else if (attr == "ayear")
+                        report_Timeline = "For " + $('#ayear').val().toString();
+                    else if (attr == "tilldate")
+                        report_Timeline = "For " + "@Resource.Reports_Ayeartodate";
+                    $("span#selected-duration").html("");
+                    $("span#selected-duration").html(report_Timeline);                    
+                });
+
+                $('span#modifyfilter_link').click(function () {
+                    $('span#modifyfilter_link').hide();
+                    $('#filter_accordion').addClass("in");
+                    $('#filter_accordion').css('height', 'auto');
+                });
+                function onBegin() {
+                    displayAjaxLoading(true);
+                }
+                function onComplete(jqXHR, textStatus, err) {
+                    
+                    if (jqXHR.status == 401) {
+                        //refresh the page, as we are not longer authorized
+                        location.reload();
+                    }
+                    ChartCheck($('div.openchart').first());
+                    displayAjaxLoading(false);
+                    $('html, body').animate({ scrollTop: 0 }, 500);
+                }
+
+                function ExportReport4() {
+                    var attr = $('[name$=duration]:checked').attr('dropdown');
+                    var val = $('[name$=duration]:checked').val();
+                    var time = [{ time: '0' }, { time: '0' }]
+                    $('.' + attr).each(function (index, value) {
+                        time[index].time = $(this).val();
+                    });
+
+                    var languageids = [];
+                    $('[name=language]:checked').each(function () {
+                        languageids.push($(this).val());
+                    });
+
+                    var subsectionids = [];
+                    $('[name=subsection]:checked').each(function () {
+                        subsectionids.push($(this).val());
+                    });
+
+                    var publisherids = [];
+                    $('[name=publisher]:checked').each(function () {
+                        publisherids.push($(this).val());
+                    });
+
+                    $('#publisherexport').val(publisherids.join(','));
+                    $('#languageexport').val(languageids.join(','));
+                    $('#subsectionexport').val(subsectionids.join(','));
+                    $('#durationexport').val(val);
+                    $('#monthexport').val(time[1].time);
+                    $('#yearexport').val(time[0].time);
+                    $('#cityexport').val($('#city').val());
+                    $('#filter-selected-items-toexport-form').submit();
+                    return false;
+                }
+    </script>
+}

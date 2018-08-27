@@ -1,0 +1,190 @@
+﻿@model FISE_Cloud.Models.StudentProfile
+
+@{
+    ViewBag.Title = "Student Registration";
+    ViewBag.HeaderPageTitle = "New User Activation";
+}
+
+@if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+{
+    @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row title-section">
+
+        <h4 class="page-title">@Model.FirstName @Model.LastName</h4>
+    </div>
+    <hr />
+    if (!ViewData.ModelState.IsValid)
+    {
+        <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+    }
+    <div class="form-horizontal">
+        <div class="form-group col-xs-12">
+            @Html.HiddenFor(model => model.UserId)
+            @Html.LabelFor(model => model.FirstName, "First Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="control-label col-xs-9">
+                @Model.FirstName
+                @Html.HiddenFor(model => model.FirstName)
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+
+            @Html.LabelFor(model => model.LastName, "Last Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="control-label col-xs-9">
+                @Model.LastName
+                @Html.HiddenFor(model => model.LastName)
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.Grade, "Grade:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="control-label col-xs-9">
+                @Model.Grade
+                @Html.HiddenFor(model => model.Grade)
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.SchoolName, "School:", htmlAttributes: new { @class = "control-label col-md-3" })
+            <span class="control-label col-md-9">
+                @Html.DisplayFor(model => model.SchoolName)
+
+            </span>
+        </div>
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.SubscriptionStartDate, "Subscription Start Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="control-label col-xs-9">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionStartDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionStartDate))
+                @Html.HiddenFor(model => model.SubscriptionStartDate)
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.SubscriptionEndDate, "Subscription End Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="control-label col-xs-9">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionEndDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionEndDate))
+                @Html.HiddenFor(model => model.SubscriptionEndDate)
+            </span>
+        </div>
+        @if (!Model.Status)
+        {
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.Username, "User Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+
+                <span id="div_user" class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "txt_userid" } })
+                    @Html.ValidationMessageFor(model => model.Username)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.Password, "Password:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "" } })
+                    @Html.ValidationMessageFor(model => model.Password)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.ConfirmPassword, "Repeat Password:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                </span>
+            </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-offset-3 buttons">
+                        <input type="submit" value="@Resource.Btn_Activate" class="btn btn-default btn-rect" />
+                    </div>
+                </div>
+        }
+        else
+        {
+            ViewBag.HeaderPageTitle = "Home";
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.Username, "User Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9">
+                    @Model.Username
+                    @Html.HiddenFor(model => model.Username)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+                @Html.LabelFor(model => model.HomeDevices, "Active Home Devices:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9">
+                    @Model.HomeDevices
+                    @Html.HiddenFor(model => model.HomeDevices)
+                </span>
+            </div>
+        }
+    </div>
+}
+@section scripts {
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script src="~/Scripts/jquery.validate.min.js?v=1"></script>
+    <script type="text/javascript">
+        $.fn.allchange = function (callback) {
+            var me = this;
+            var last = "";
+            var infunc = function () {
+                var text = $(me).val();
+                if (text != last) {
+                    last = text;
+                    callback();
+                }
+                setTimeout(infunc, 100);
+            }
+            setTimeout(infunc, 100);
+        };
+        $(document).ready(function () {
+            $("#@Html.FieldIdFor(model => model.Username)").allchange(function () {
+                var userName = $("#@Html.FieldIdFor(model => model.Username)").val();
+                if (!(userName == '')) {
+                    var isUsernameUnique = fnValidateUsername(userName);
+                    if (isUsernameUnique === false) {
+                        $("#div_user").removeClass("div_userclassunique");
+                        $("#div_user").addClass("div_userclassnonunique");
+                    } else {
+                        $("#div_user").addClass("div_userclassunique");
+                        $("#div_user").removeClass("div_userclassnonunique");
+                    }
+                }
+                else {
+                    $("#div_user").removeClass("div_userclassunique");
+                    $("#div_user").removeClass("div_userclassnonunique");
+                }
+            });
+        });
+
+        function fnValidateUsername(userName) {
+            var status = false;
+            jsondata = '{ "Username" : "' + userName + '" }',
+
+            $.ajax({
+                url: '@Url.Action("IsUsernameUnique", "User")' + '?Username=' + userName,
+                type: 'GET',
+                async: false,
+                data: JSON.stringify(jsondata),
+                dataType: 'json',
+                success: function (result) {
+                    if (result.Status === true)
+                        status = true;
+
+                },
+                error: function (jqXHR, textStatus, err) {
+                    alert(textStatus);
+                }
+            });
+            return status;
+        }
+    </script>
+}

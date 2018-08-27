@@ -1,0 +1,413 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model BooksListResult
+
+@{
+    ViewBag.Title = "Books List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Books";
+}
+<style>
+    #BooksContainer .row .col-xs-2 {
+        width: 20.666667%;
+        margin-right: 5px;
+    }
+
+    #BooksContainer .row div.col-xs-2:nth-child(5n) {
+        width: 14.666667%;
+    }
+
+        #BooksContainer .row div.col-xs-2:nth-child(5n) > .book_div_landscape {
+            margin-right: 0px;
+        }
+</style>
+
+<div class="row title-section">
+    <div class="col-xs-6 remove_padding">
+        <h4 class="page-title">
+            @Resource.Tab_Title_BOOKS (@Model.Books.TotalItemCount)
+            <a id="exportbutton" class="exporttoexcel" title="@Resource.Export_ExportBooks" onclick="javascript:void(0);">
+            </a>
+        </h4>
+    </div>
+</div>
+<hr />
+
+<div class="filter_title">
+    <span>@Resource.books_FILTERBY</span>
+</div>
+
+@using (Ajax.BeginForm("BooksList", "Books", new RouteValueDictionary { { "pageno", "" } }, new AjaxOptions { UpdateTargetId = "BooksContainer", HttpMethod = "POST" }, new { id = "filterForm" }))
+{
+    <div class="row filter-list">
+        <div>
+
+            <input type="hidden" id="selectedSubSectionIds" name="selectedSubSectionIds" value="" />
+            <input type="hidden" id="selectedLanguageIds" name="selectedLanguageIds" value="" />
+            <input type="hidden" id="selectedBookTypeIds" name="selectedBookTypeIds" value="" />
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_subtitle">@Resource.Filter_Title_LIBRARYSUBSECTION </div>
+            <div class="filters">
+                <input type="checkbox" id="subsection_all" value="" onclick="FilterItems.selectSubSectionAll(this, event)" checked="checked" /><span class="filter_checkboxlabel">@Resource.checkbox_SelectAll</span><br />
+                @foreach (var subsection in Model.SubSection)
+                {
+                    <input type="checkbox" class="subsec_chkbx" id="@subsection.Id" value="@subsection.Id" onclick="FilterItems.selectSubSection(this, event)" /><span class="filter_checkboxlabel">@subsection.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_subtitle">@Resource.Filter_Title_LANGUAGE</div>
+            <div class="filters">
+                <input type="checkbox" id="language_all" value="" onclick="FilterItems.selectLanguageAll(this, event)" checked="checked" /><span class="filter_checkboxlabel">@Resource.checkbox_SelectAll</span><br />
+                @foreach (var language in Model.Language)
+                {
+                    <input type="checkbox" class="lang_chkbx" id="@language.Id" value="@language.Id" onclick="FilterItems.selectLanguage(this, event)" /><span class="filter_checkboxlabel">@language.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_subtitle">@Resource.Filter_Title_TYPE</div>
+            <div class="filters">
+                <input type="checkbox" id="type_all" value="" onclick="FilterItems.selectBookTypeAll(this, event)" checked="checked" /><span class="filter_checkboxlabel">@Resource.checkbox_SelectAll</span><br />
+                @foreach (var booktype in Model.BookType)
+                {
+                    <input type="checkbox" class="booktype_chkbx" id="@booktype.Id" value="@booktype.Id" onclick="FilterItems.selectBookType(this, event)" /><span class="filter_checkboxlabel">@booktype.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_subtitle">@Resource.Filter_Title_SPECIALS</div>
+            <div class="filters">
+                @Html.CheckBox("specials_HasAll", new { @checked = "checked", @id = "specials_HasAll", @onclick = "FilterItems.selectSpecialsAll(this, event)" })
+                <span class="filter_checkboxlabel">@Resource.checkbox_SelectAll</span><br />
+                @Html.CheckBox("HasActivity", new { @class = "specials_chkbx", @onclick = "FilterItems.selectSpecial(this, event)" })
+                <span class="filter_checkboxlabel1">@Resource.books_filter_checkbox_SelectActivities</span><br />
+                @Html.CheckBox("HasAnimation", new { @class = "specials_chkbx", @onclick = "FilterItems.selectSpecial(this, event)" })
+                <span class="filter_checkboxlabel1">@Resource.books_filter_checkbox_SelectAnimations</span><br />
+                @Html.CheckBox("HasReadAloud", new { @class = "specials_chkbx", @onclick = "FilterItems.selectSpecial(this, event)" })
+                <span class="filter_checkboxlabel1">@Resource.books_filter_checkbox_SelectRead_aloud</span><br />
+            </div>
+        </div>
+    </div>
+}
+<div id="BooksContainer">
+    @Html.Partial("_BooksListPost", Model.Books)
+</div>
+
+@using (Html.BeginForm("ExportSelectedBookstoExcel", "Books", FormMethod.Post, new { id = "filter-selected-items-toexport-form" }))
+{
+    <input type="hidden" id="selectedSubSectionIds" name="selectedSubSectionIds" value="" />
+    <input type="hidden" id="selectedLanguageIds" name="selectedLanguageIds" value="" />
+    <input type="hidden" id="selectedBookTypeIds" name="selectedBookTypeIds" value="" />
+
+    <div class="popup_background"></div>
+    <div id="filterbooks_popup">
+        <span class="popup-close">X</span>
+        @Html.Partial("_ExportBooksToExcel", Model)
+    </div>
+}
+@section scripts {
+    <script src="~/Scripts/MvcPager.js?v=1"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+        var arraySubSection = [];
+        var arrayLanguage = [];
+        var arrayBookType = [];
+        var arrayBookSpecials = [];
+        var arraySubSection_export = [];
+        var arrayLanguage_export = [];
+        var arrayBookType_export = [];
+        var FilterItems = {
+            selectSubSection: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#subsection_all").prop('checked', false);
+                    if ($('.subsec_chkbx:checked').length == $('.subsec_chkbx').length) {
+                        $("#subsection_all").prop('checked', true);
+                        arraySubSection = [];
+                        $('.subsec_chkbx').prop('checked', false);
+                    }
+                    else {
+                        if (!($.inArray(id, arraySubSection) > -1)) {
+                            arraySubSection.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.subsec_chkbx:checked').length == 0) {
+                        $("#subsection_all").prop('checked', true);
+                    }
+                    if ($.inArray(id, arraySubSection) > -1) {
+                        index = $.inArray(id, arraySubSection);
+                        arraySubSection.splice(index, 1);
+                    }
+                }
+                FilterItems.filterItems();
+            },
+            selectSubSectionAll: function (checkbox, event) {
+                arraySubSection = [];
+                $("#subsection_all").prop('checked', true);
+                $('.subsec_chkbx').prop('checked', false);
+                FilterItems.filterItems();
+            },
+            /************ Language   ************/
+            selectLanguage: function (checkbox, event) {
+
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#language_all").prop('checked', false);
+                    if ($('.lang_chkbx:checked').length == $('.lang_chkbx').length) {                       
+                        if (!($.inArray(id, arrayLanguage) > -1)) {
+                            arrayLanguage.push(id);
+                        }
+                    }
+                    else {
+                        if (!($.inArray(id, arrayLanguage) > -1)) {
+                            arrayLanguage.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.lang_chkbx:checked').length == 0) {
+                        $("#language_all").prop('checked', true);
+                    }
+                    if ($.inArray(id, arrayLanguage) > -1) {
+                        index = $.inArray(id, arrayLanguage);
+                        arrayLanguage.splice(index, 1);
+                    }
+                }
+                FilterItems.filterItems();
+            },
+
+            selectLanguageAll: function (checkbox, event) {
+                arrayLanguage = [];
+                $("#language_all").prop('checked', true);
+                $('.lang_chkbx').prop('checked', false);
+                FilterItems.filterItems();
+            },
+            /********************************/
+            selectBookType: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#type_all").prop('checked', false);
+                    if ($('.booktype_chkbx:checked').length == $('.booktype_chkbx').length) {
+                        $("#type_all").prop('checked', true);
+                        arrayBookType = [];
+                        $('.booktype_chkbx').prop('checked', false);
+                    }
+                    else {
+                        if (!($.inArray(id, arrayBookType) > -1)) {
+                            arrayBookType.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.booktype_chkbx:checked').length == 0) {
+                        $("#type_all").prop('checked', true);
+                    }
+                    if ($.inArray(id, arrayBookType) > -1) {
+                        index = $.inArray(id, arrayBookType);
+                        arrayBookType.splice(index, 1);
+                    }
+                }
+                FilterItems.filterItems();
+            },
+
+            selectBookTypeAll: function (checkbox, event) {
+                arrayBookType = [];
+                $("#type_all").prop('checked', true);
+                $('.booktype_chkbx').prop('checked', false);
+                FilterItems.filterItems();
+            },
+
+            /*********** Speacial   *************/
+            selectSpecial: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#specials_HasAll").prop('checked', false);
+                    if ($('.specials_chkbx:checked').length == $('.specials_chkbx').length) {
+                        $("#specials_HasAll").prop('checked', true);
+                        $('.specials_chkbx').prop('checked', false);
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.specials_chkbx:checked').length == 0) {
+                        $("#specials_HasAll").prop('checked', true);
+                    }
+                }
+                FilterItems.filterItems();
+            },
+
+            selectSpecialsAll: function (checkbox, event) {
+                $("#specials_HasAll").prop('checked', true);
+                $('.specials_chkbx').prop('checked', false);
+                FilterItems.filterItems();
+            },
+
+            filterItems: function () {
+                $('#filterForm #selectedSubSectionIds').val(arraySubSection.join(","));
+                $('#filterForm #selectedLanguageIds').val(arrayLanguage.join(","));
+                $('#filterForm #selectedBookTypeIds').val(arrayBookType.join(","));
+                $('#filterForm').submit();
+                return false;
+            },
+
+
+            //////// Expppport books---------------------
+            selectSubSection_export: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#subsection_all_export").prop('checked', false);
+                    if ($('.subsec_chkbx_export:checked').length == $('.subsec_chkbx_export').length) {
+                        $("#subsection_all_export").prop('checked', true);
+                        arraySubSection_export = [];
+                        $('.subsec_chkbx_export').prop('checked', false);
+                    }
+                    else {
+                        if (!($.inArray(id, arraySubSection_export) > -1)) {
+                            arraySubSection_export.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.subsec_chkbx_export:checked').length == 0) {
+                        $("#subsection_all_export").prop('checked', true);
+                    }
+                    if ($.inArray(id, arraySubSection_export) > -1) {
+                        index = $.inArray(id, arraySubSection_export);
+                        arraySubSection_export.splice(index, 1);
+                    }
+                }
+            },
+
+            selectSubSectionAll_export: function (checkbox, event) {
+                arraySubSection_export = [];
+                $("#subsection_all_export").prop('checked', true);
+                $('.subsec_chkbx_export').prop('checked', false);
+            },
+            /************************/
+            selectLanguage_export: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#language_all_export").prop('checked', false);
+                    if ($('.lang_chkbx_export:checked').length == $('.lang_chkbx_export').length) {
+                        $("#language_all_export").prop('checked', true);
+                        arrayLanguage_export = [];
+                        $('.lang_chkbx_export').prop('checked', false);
+                    }
+                    else {
+                        if (!($.inArray(id, arrayLanguage_export) > -1)) {
+                            arrayLanguage_export.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.lang_chkbx_export:checked').length == 0) {
+                        $("#language_all_export").prop('checked', true);
+                    }
+                    if ($.inArray(id, arrayLanguage_export) > -1) {
+                        index = $.inArray(id, arrayLanguage_export);
+                        arrayLanguage_export.splice(index, 1);
+                    }
+                }
+            },
+
+            selectLanguageAll_export: function (checkbox, event) {
+                arrayLanguage_export = [];
+                $("#language_all_export").prop('checked', true);
+                $('.lang_chkbx_export').prop('checked', false);
+            },
+            /********************************/
+            selectBookType_export: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#type_all_export").prop('checked', false);
+                    if ($('.booktype_chkbx_export:checked').length == $('.booktype_chkbx_export').length) {
+                        $("#type_all_export").prop('checked', true);
+                        arrayBookType_export = [];
+                        $('.booktype_chkbx_export').prop('checked', false);
+                    }
+                    else {
+                        if (!($.inArray(id, arrayBookType_export) > -1)) {
+                            arrayBookType_export.push(id);
+                        }
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.booktype_chkbx_export:checked').length == 0) {
+                        $("#type_all_export").prop('checked', true);
+                    }
+                    if ($.inArray(id, arrayBookType_export) > -1) {
+                        index = $.inArray(id, arrayBookType_export);
+                        arrayBookType_export.splice(index, 1);
+                    }
+                }
+            },
+
+            selectBookTypeAll_export: function (checkbox, event) {
+                arrayBookType_export = [];
+                $("#type_all_export").prop('checked', true);
+                $('.booktype_chkbx_export').prop('checked', false);
+            },
+
+            /************************/
+            selectSpecial_export: function (checkbox, event) {
+                var id = $(checkbox).val();
+                if ($(checkbox).is(":checked")) {
+                    $("#specials_HasAll_export").prop('checked', false);
+                    if ($('.specials_chkbx_export:checked').length == $('.specials_chkbx_export').length) {
+                        $("#specials_HasAll_export").prop('checked', true);
+                        $('.specials_chkbx_export').prop('checked', false);
+                    }
+                }
+                else if (!($(checkbox).is(":checked"))) {
+                    if ($('.specials_chkbx_export:checked').length == 0) {
+                        $("#specials_HasAll_export").prop('checked', true);
+                    }
+                }
+            },
+
+            selectSpecialsAll_export: function (checkbox, event) {
+                $("#specials_HasAll_export").prop('checked', true);
+                $('.specials_chkbx_export').prop('checked', false);
+            },
+
+            exportItems: function () {
+                $('#filter-selected-items-toexport-form #selectedSubSectionIds_export').val(arraySubSection_export.join(","));
+                $('#filter-selected-items-toexport-form #selectedLanguageIds_export').val(arrayLanguage_export.join(","));
+                $('#filter-selected-items-toexport-form #selectedBookTypeIds_export').val(arrayBookType_export.join(","));
+                $('#filter-selected-items-toexport-form').submit();
+                $('.popup_background').css('display', 'none');
+                $('#filterbooks_popup').css('display', 'none');
+                return false;
+            }
+        }
+
+        $('#exportbutton').on('click', function () {
+            $('#filter-selected-items-toexport-form #selectedSubSectionIds_export').val(arraySubSection.join(","));
+            $('#filter-selected-items-toexport-form #selectedLanguageIds_export').val(arrayLanguage.join(","));
+            $('#filter-selected-items-toexport-form #selectedBookTypeIds_export').val(arrayBookType.join(","));
+
+            if (!$("#specials_HasAll").prop('checked')) {
+                $("#HasActivity_export").prop('checked', $("#HasActivity").prop('checked'));
+                $("#HasAnimation_export").prop('checked', $("#HasAnimation").prop('checked'));
+                $("#HasReadAloud_export").prop('checked', $("#HasReadAloud").prop('checked'));
+            }
+            else {
+                $("#HasActivity_export").prop('checked', false);
+                $("#HasAnimation_export").prop('checked', false);
+                $("#HasReadAloud_export").prop('checked', false);
+            }
+            $('#filter-selected-items-toexport-form').submit();            
+            return false;
+        });
+        $('.popup-close').on('click', function () {
+            $('.popup_background').css('display', 'none');
+            $('#filterbooks_popup').css('display', 'none');
+        });
+        $('.subsec_chkbx, .booktype_chkbx, .lang_chkbx, .specials_chkbx').prop('checked', false);
+        $('#subsection_all, #language_all, #type_all, #specials_HasAll').prop('checked', true);
+    </script>
+}
+

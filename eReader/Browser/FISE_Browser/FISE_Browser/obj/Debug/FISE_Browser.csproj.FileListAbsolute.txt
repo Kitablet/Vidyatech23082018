@@ -1,0 +1,647 @@
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Owin.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Owin.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+C:\Users\Sonali\Downloads\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Owin.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+D:\Xamarin\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Owin.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\PagedList.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\PagedList.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+E:\FISE\FISE_Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Owin.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\PagedList.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\PagedList.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+E:\TFS\FISE\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\ApplicationInsights.config
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\csc.exe
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Collections.Immutable.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\System.Reflection.Metadata.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\vbc.exe
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\roslyn\VBCSCompiler.exe.config
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FluentValidation.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Agent.Intercept.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Owin.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\PagedList.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FluentValidation.pdb
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FluentValidation.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.DependencyCollector.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.Web.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AI.WindowsServer.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.ApplicationInsights.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\PagedList.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\PagedList.Mvc.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\EntityFramework.SqlServer.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Core.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Facebook.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Cookies.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.OAuth.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Google.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.Twitter.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\cs\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\da\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\de\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\es\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\fa\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\fi\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\fr\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\it\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\ko\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\mk\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\nl\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\pl\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\pt\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\ru\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\sv\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\tr\FluentValidation.resources.dll
+D:\_FISE\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\zh-CN\FluentValidation.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll.config
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FISE_Browser.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FluentValidation.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Microsoft.Web.Infrastructure.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\WebGrease.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Antlr3.Runtime.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\FluentValidation.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\Newtonsoft.Json.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Helpers.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Mvc.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Optimization.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.Razor.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Deployment.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\bin\System.Web.WebPages.Razor.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.Resource.resources
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.csproj.GenerateResource.Cache
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Browser\FISE_Browser\FISE_Browser\obj\Debug\FISE_Browser.pdb

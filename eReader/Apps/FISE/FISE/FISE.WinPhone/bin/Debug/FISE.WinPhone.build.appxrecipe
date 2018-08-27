@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>SONALI</Machine>
+    <WindowsUser>Sonali</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows Phone 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>749715cc-80a4-4890-b32e-85e517fea659</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Sonali</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\FISE.WinPhone.exe">
+      <PackagePath>FISE.WinPhone.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\FISE.WinPhone.exe.config">
+      <PackagePath>FISE.WinPhone.exe.config</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\wpa81\DeviceInfo.Plugin.Abstractions.dll">
+      <PackagePath>DeviceInfo.Plugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\wpa81\DeviceInfo.Plugin.dll">
+      <PackagePath>DeviceInfo.Plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE\bin\Debug\FISE.dll">
+      <PackagePath>FISE.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\a1.png">
+      <PackagePath>a1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\a2.png">
+      <PackagePath>a2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Content\XamarinLogo.png">
+      <PackagePath>Content\XamarinLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\activity_complete.png">
+      <PackagePath>Images\activity_complete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\avatar_1.png">
+      <PackagePath>Images\avatar_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\avatar_2.png">
+      <PackagePath>Images\avatar_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\avatar_3.png">
+      <PackagePath>Images\avatar_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\avatar_4.png">
+      <PackagePath>Images\avatar_4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\avatar_5.png">
+      <PackagePath>Images\avatar_5.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\book.png">
+      <PackagePath>Images\book.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\books_read.png">
+      <PackagePath>Images\books_read.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\favourite.png">
+      <PackagePath>Images\favourite.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\home.png">
+      <PackagePath>Images\home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\home_env.png">
+      <PackagePath>Images\home_env.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\home_select.png">
+      <PackagePath>Images\home_select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\minus.png">
+      <PackagePath>Images\minus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\notification.png">
+      <PackagePath>Images\notification.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\plus.png">
+      <PackagePath>Images\plus.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\power.png">
+      <PackagePath>Images\power.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\rated.png">
+      <PackagePath>Images\rated.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\school_env.png">
+      <PackagePath>Images\school_env.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\search.png">
+      <PackagePath>Images\search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\search_select.png">
+      <PackagePath>Images\search_select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\setting.png">
+      <PackagePath>Images\setting.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\setting_select.png">
+      <PackagePath>Images\setting_select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\timespent.png">
+      <PackagePath>Images\timespent.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\user.png">
+      <PackagePath>Images\user.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Images\user_select.png">
+      <PackagePath>Images\user_select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Toolkit.Content\ApplicationBar.Add.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Add.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Toolkit.Content\ApplicationBar.Cancel.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Cancel.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Toolkit.Content\ApplicationBar.Check.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Check.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Toolkit.Content\ApplicationBar.Delete.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Delete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Toolkit.Content\ApplicationBar.Select.png">
+      <PackagePath>Toolkit.Content\ApplicationBar.Select.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Assets\Field.jpg">
+      <PackagePath>Assets\Field.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Field.jpg">
+      <PackagePath>Field.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\DeviceInfoReadme.txt">
+      <PackagePath>DeviceInfoReadme.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\README_FIRST.txt">
+      <PackagePath>README_FIRST.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE\DeviceInfoReadme.txt">
+      <PackagePath>FISE\DeviceInfoReadme.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Content\default.css">
+      <PackagePath>Content\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\Content\local.html">
+      <PackagePath>Content\local.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\FISE.WinPhone.xr.xml">
+      <PackagePath>FISE.WinPhone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone\FormsTextBoxStyle.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone\FormsTextBoxStyle.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone\PhoneResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone\PhoneResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone\SearchBox.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone\SearchBox.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\packages\Xamarin.Forms.2.3.2.127\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone\Xamarin.Forms.Platform.WinRT.Phone.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Phone\Xamarin.Forms.Platform.WinRT.Phone.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

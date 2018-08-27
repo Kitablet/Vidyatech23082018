@@ -1,0 +1,298 @@
+﻿@model FISE_Browser.Models.UserAvatar
+@{
+    ViewBag.Title = "Profile";
+    Layout = "~/Views/Shared/MainPageLayout.cshtml";
+    string avatarImage = Model.userObject.AvatarImage;
+    avatarImage = avatarImage.Replace("#size#", "180X180");
+    int subsection = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+
+@if (subsection == 1)
+{
+    @Styles.Render("~/Css/home1.css")
+    @Styles.Render("~/Css/Profilepage1.css")
+}
+else if (subsection == 2)
+{
+    @Styles.Render("~/Css/home2.css")
+    @Styles.Render("~/Css/Profilepage2.css")
+}
+else
+{
+    @Styles.Render("~/Css/home3.css")
+    @Styles.Render("~/Css/Profilepage3.css")
+}
+
+
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/linq.js"></script>
+<script src="~/Scripts/user.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        windowWidth =$('body').width(); //window.innerWidth ? window.innerWidth : $(window).width();
+        windowHeight =$('body').height(); //window.innerHeight ? window.innerHeight : $(window).height();
+        UserModel = @Html.Raw(Json.Encode(Model));
+        AllBooksModel = UserModel.userObject.AllBooks;
+        
+        $(".Category").on("click",function(){
+            IsSessionTimeOut();
+            if (IsSessionTimeOut1==1) {
+                GetTab($(this).attr("id"));
+            }
+            else if (IsSessionTimeOut1 == 2)
+                Logout();
+
+        });
+        UserDashBoard();
+        $(".bookImage img").on("click", function () {
+            var bookId = $(this).attr("id").substring(5);
+            OpenBookRead(bookId);
+        });
+    });
+    function OpenBookRead(bookId) {
+        $('#loading').show();
+        localStorage.removeItem("from");
+        localStorage.setItem("from", '@Url.RouteUrl("Profile")');
+        syncbeforeunload = false;
+        window.location = "@Url.Action("BookRead","Book")/"+bookId;
+    }
+</script>
+
+<div>
+    <div id="MainContainer">
+        <div id="secondaryNavigation" class="secondaryNavigation">
+            <div id="CategoryFilter" class="CategoryFilter">
+                <div id="booksread" class="Category Selected">
+                    <div id="img-booksread" style="width:150px;text-align:center">
+                        <div></div>
+                    </div>
+                    <div id="text-booksread" class="TabText"><div style="padding:0 45px">Books Read</div></div>
+                </div>
+                <div id="readlater" class="Category">
+                    <div id="img-readlater" style="width:150px;text-align:center">
+                        <div></div>
+                    </div>
+                    <div id="text-readlater" class="TabText"><div style="padding:0 45px">Read Later</div></div>
+                </div>
+                <div id="myprofile" class="Category">
+                    <div id="img-myprofile" style="width:150px;text-align:center">
+                        <div></div>
+                    </div>
+                    <div id="text-myprofile" class="TabText"><div style="padding:0 45px">My Profile</div></div>
+                </div>
+            </div>
+            <div>
+                @Html.Action("GetUAC", "Main")
+            </div>
+        </div>
+        <div id="BooksWrapper" style="padding-left:20px">
+            <div id="ButtonPanel" style="width:150px;float:left;padding-top:10px">
+            </div>
+            <div id="BooksContainer">
+            </div>
+        </div>
+        <div id="UserProfileWrapper" style="display:none;padding-top:15px;">
+            <div id="myprofilediv">
+                <div id="UpperPortion">
+                    <div class="leftportion">
+                        <div style="align-self: center;margin-top: 35px;">
+                            <img src="@avatarImage" class="currentAvatarImage" />
+                            <label class="currentAvatarImageLabel">CURRENT AVATAR</label>
+                        </div>
+                    </div>
+                    <div class="rightportion">
+                        <div id="changePassword">
+                            <p class="changePasswordHeading">CHANGE PASSWORD:</p>
+                            <div>
+                                <input type="password" id="currentPassword" placeholder="Your current secret code" class="inputField partialOpacity" />
+                                <p id="currentPasswordErrorLabel" class="errorMessageLabel"></p>
+                            </div>
+                            <div>
+                                <input type="password" id="newPassword" placeholder="Enter new secret code" class="inputField partialOpacity" />
+                                <p id="newPasswordErrorLabel" class="errorMessageLabel"></p>
+                            </div>
+                            <div>
+                                <input type="password" id="confirmNewPassword" placeholder="Enter new secret code again" class="inputField partialOpacity" />
+                                <p id="confirmNewPasswordErrorLabel" class="errorMessageLabel"></p>
+                            </div>
+                        </div>
+
+                        <div id="changeAvatar">
+                            <div>
+                                <p class="changeAvatarHeading">CHANGE AVATAR:</p>
+                                @{
+                                    int count = 1;
+                                    foreach (var item in Model.avatars)
+                                    {
+                                        if (item.AvatarId != Model.userObject.AvatarId && count <= 4)
+                                        {
+                                            count++;
+                                <img src="@item.ImagePath" data-id="@item.AvatarId" alt="@item.Name" class="avatarImage" />
+                                        }
+                                        else
+                                        {
+                                <img src="@item.ImagePath" data-id="@item.AvatarId" alt="@item.Name" class="avatarImage" style="display:none" />
+                                        }
+                                    }
+                                }
+                            </div>
+                        </div>
+
+                        <div id="profileDetails">
+                            <div>
+                                <p class="HeaderText">NAME:</p>
+                                <p id="userName" class="WhiteLabelText">@Model.userObject.FirstName @Model.userObject.LastName</p>
+                            </div>
+
+                            <div id="divgrade">
+                                <span class="HeaderText">GRADE: <span id="userGrade" class="WhiteLabelText">@Model.userObject.Grade</span></span>
+                                <span class="HeaderText" style="margin-left: 25px;">SUB-SECTION: <span id="userSubsection" class="WhiteLabelText">@Model.userObject.SubSection.ToUpper()</span></span>
+                            </div>
+
+                            <div>
+                                <p class="HeaderText">SCHOOL:</p>
+                                <p id="userSchool" class="WhiteLabelText">@Model.userObject.SchoolName</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="LowerPortion">
+                    <div class="leftportion">
+                        <input type="button" value="CHANGE AVATAR" class="profileButtons" id="changeAvatarButton" onclick="showChangeAvatar();" />
+                    </div>
+                    <div class="rightportion">
+                        @{
+                            if (Model.userObject.Role.ToLower() == "student")
+                            {
+                                <input type="button" value="CHANGE PASSWORD" class="profileButtons" id="changePasswordButton" onclick="showChangePassword();" />
+                            }
+                        }
+                        <div class="AvatarButtons">
+                            <input type="button" value="SAVE" class="profileButtons" id="saveAvatarButton" onclick="changeAvatar();" />
+                            <input type="button" value="CANCEL" class="profileButtons" id="cancelAvatarButton" onclick="showProfile();" />
+                        </div>
+                        <div class="PasswordButtons">
+                            <input type="button" value="SAVE" class="profileButtons disable" id="savePasswordButton" onclick="PostChangePassword();" />
+                            <input type="button" value="CANCEL" class="profileButtons" id="cancelPasswordButton" onclick="showProfile();" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function postPassword(passwordObject) {
+        $.ajax({
+            url: "@Url.Action("ChangePassword","User")",
+            contentType: "application/json",
+            data: JSON.stringify(passwordObject),
+            dataType: "json",
+            type: "POST",
+            success: function (result) {
+                switch (parseInt(result)) {
+                    case 1:
+                        showCommonPopup("@Resource.PasswordChanged");
+                        showProfile();
+                        break;
+                    case 4:
+                        $("#currentPasswordErrorLabel").text('@Resource.WrongCredentials');
+                        $('#currentPassword').focus();
+                        break;
+                    case 0:
+                        showCommonPopup("@Resource.PasswordNotChanged");
+                        showProfile();
+                        break;
+                };
+            },
+            error: function (result) {
+
+            }
+        });
+    }
+
+    function postAvatar(avatarObject) {
+        $.ajax({
+            url: "@Url.Action("ChangeAvatar","User")",
+            contentType: "application/json",
+            data: JSON.stringify(avatarObject),
+            dataType: "json",
+            type: "POST",
+            success: function (result) {
+                if (result) {
+                    showCommonPopup("@Resource.Avatarchanged");
+                    $("#AvatarImage").attr("src", selectedAvatarUrl);
+                    selectedAvatarUrl = selectedAvatarUrl.replace("90X90", "180X180");
+                    $(".currentAvatarImage").attr("src", selectedAvatarUrl);
+                    $('#changeAvatar img').hide();
+                    $('#changeAvatar img[data-id!='+selectedAvatarId+']').show();
+                    showProfile();
+                } else {
+                    showCommonPopup("@Resource.AvatarNotChanged");
+                }
+            },
+            error: function (result) {
+
+            }
+        });
+    }
+
+    function changeAvatar() {
+        IsSessionTimeOut();
+        if (IsSessionTimeOut1 == 1) {
+            if (selectedAvatarId != 0) {
+                var avatarObject = {
+                    "AvatarId": selectedAvatarId,
+                    "UserId": "@Model.userObject.UserId",
+                    "AvatarUrl": selectedAvatarUrl
+                };
+                postAvatar(avatarObject);
+            } else {
+                showCommonPopup("@Resource.SelectOneAvatar");
+            }
+        }
+        else if (IsSessionTimeOut1 == 2)
+            Logout();
+    }
+
+    function PostChangePassword() {
+        if($.trim($('#currentPassword').val())==''||$.trim($('#newPassword').val())==''||$.trim($('#confirmNewPassword').val())=='')
+            return false;
+        IsSessionTimeOut();
+        if (IsSessionTimeOut1 == 1) {
+            $("#currentPasswordErrorLabel").text('');
+            $("#newPasswordErrorLabel").text('');
+            $("#confirmNewPasswordErrorLabel").text('');
+
+            if ($("#newPassword").val().trim() != $("#currentPassword").val().trim()) {
+                if ($("#newPassword").val().trim() == $("#confirmNewPassword").val().trim()) {
+                    if ($("#newPassword").val().length >= 6) {
+                        var passwordObject = {
+                            "NewPassword": $("#newPassword").val().trim(),
+                            "OldPassword": $("#currentPassword").val().trim(),
+                            "UserId": "@Model.userObject.UserId"
+                        };
+                        postPassword(passwordObject);
+                    } else {
+                        $("#newPasswordErrorLabel").html("@Resource.PasswordStrength");
+                        $('#newPassword').focus();
+                    }
+                } else {
+                    $("#confirmNewPasswordErrorLabel").html("@Resource.NewReNewDontMatch");
+                    $('#confirmNewPassword').focus();
+                }
+            } else {
+                $("#newPasswordErrorLabel").html("@Resource.CurrentNewPasswordSame");
+                $('#newPassword').focus();
+            }
+        }
+        else if (IsSessionTimeOut1 == 2)
+            Logout();
+    }
+
+</script>

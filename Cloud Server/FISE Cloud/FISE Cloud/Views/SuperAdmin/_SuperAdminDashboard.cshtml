@@ -1,0 +1,94 @@
+﻿
+@model FISE_Cloud.Models.School.ElibSuperAdminDashboardResult
+@{
+    ViewBag.Title = "Super Admin Dashboard";
+
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<div class="row title-section">
+    <div class="title-section-subcontent">@Resource.Welcome @_Userdata.DisplayName</div>
+
+    
+</div>
+
+<div class="row sadmin_dash1">
+    <div class="col-xs-2">
+        <div><h1 class="dashboard-item-count">@Model.CitieCount</h1></div>
+        <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_CITIES</div>
+    </div>
+    <div class="col-xs-2">
+        <div><h1 class="dashboard-item-count">@Model.SchoolCount</h1></div>
+        <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_SCHOOLS</div>
+    </div>
+    <div class="col-xs-2">
+        <div><h1 class="dashboard-item-count">@Model.LibrarianCount</h1></div>
+        <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_LIBRARIANS</div>
+    </div>
+    <div class="col-xs-2">
+        <div><h1 class="dashboard-item-count">@Model.StudentCount</h1></div>
+        <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_STUDENTS</div>
+    </div>
+
+</div>
+
+<hr />
+<div class="row sadmin_dash2">
+    <div class="col-xs-2">
+
+        <div><h1 class="dashboard-item-count">@Model.BookCount</h1></div>
+        <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_BOOKS</div>
+    </div>
+
+    @foreach (var item in Model.SubSections)
+    {
+        <div class="col-xs-2">
+            <div><h1 class="dashboard-item-count">@item.BooksCount</h1></div>
+            <div class="dashboard-item-count-title">@item.Name.ToString() @Resource.SuperAdmin_Dashboard_BOOKS</div>
+        </div>
+
+    }
+
+    
+        <div class="col-xs-1">
+            <div><h1 class="dashboard-item-count">@Model.HindiBookCount  </h1></div>
+            <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_HINDIBOOKS</div>
+        </div>
+        <div class="col-xs-1">
+            <div><h1 class="dashboard-item-count">@Model.EnglishBookCount  </h1></div>
+            <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_EnglishBOOKS</div>
+        </div>
+        <div class="col-xs-1">
+            <div><h1 class="dashboard-item-count">@Model.BilingualBookCount  </h1></div>
+            <div class="dashboard-item-count-title">@Resource.SuperAdmin_Dashboard_BILINGUALBOOKS</div>
+        </div>
+
+</div>
+
+
+@if (Model.Schools != null && Model.Schools.Count > 0)
+{
+    <p class="space-bottom">@Resource.SuperAdmin_Dashboard_SchoolsLastAdded</p>
+    foreach (var item in Model.Schools)
+    {
+        <a class="a_link_list-item" href="@Url.RouteUrl("SchoolHomePage",new { schooluid=item.SchoolUId,pagesize = string.Empty, pageindex = string.Empty })">
+            <div class="row list-item">
+                <div class="col-xs-12 list-item-name"> @item.SchoolName</div>
+                <div class="col-xs-12">
+                    <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_ID </span><span>@item.SchoolUId</span></span>
+                    <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_Librarians </span><span>@item.SchoolAdminCount </span></span>
+                    <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_Students </span><span>@item.StudentCount</span></span>
+                </div>
+            </div>
+        </a>
+    }
+}
+else
+{
+    <p class="space-bottom">@Resource.SuperAdmin_Dashboard_SchoolsLastAdded <br/> None</p>
+}

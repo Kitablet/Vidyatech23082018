@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/MainPageLayout.cshtml";
+    int subsection = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+@if (subsection == 1)
+{
+    @Styles.Render("~/Css/home1.css")
+}
+else if (subsection == 2)
+{
+    @Styles.Render("~/Css/home2.css")
+}
+else
+{
+    @Styles.Render("~/Css/home3.css")
+}
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/linq.js"></script>
+<script src="~/Scripts/search.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        windowWidth = window.innerWidth ? window.innerWidth : $(window).width();
+        windowHeight = window.innerHeight ? window.innerHeight : $(window).height();
+        $("#SearchText > input").focus();
+        bookModel = @Html.Raw(Json.Encode(Model));
+        searchString = '@Html.Raw(ViewBag.SearchString.ToLower().Contains("</script>") ? HttpUtility.UrlEncode(ViewBag.SearchString.ToString()).Replace("\\", "\\\\").Replace("'", "!**!quot!**!") : ViewBag.SearchString.ToString().Replace("\\", "\\\\").Replace("'", "!**!quot!**!"))';
+
+        $("#SubSection_Dropdown").hide();
+        $("#header_title").text("SEARCH");
+        var remainingHeight = windowHeight - (prNavHeight + secNavHeight + 10);
+        var searchStartPage = $('<div id="searchStartDiv"></div>');
+        $("#SearchBooksContainer").append(searchStartPage);
+        $("#searchStartDiv").append('<div class="SearchStartText"><p>What are you </p><p> looking for today ?</p></div>');
+        if(searchString)
+        {
+            searchString=searchString.replace(/!\*\*!quot!\*\*!/g,"'").replace(/%26/g,'&').replace(/%2B/g,'+');
+            if (searchString.toLowerCase().indexOf('%3c%2fscript%3e') != -1) {
+                searchString = decodeURI(searchString);
+                var splitURL = window.location.href.split('=');
+                if (splitURL.length == 2 && splitURL[1].toLowerCase().indexOf('%2f') == -1) {
+                    searchString = searchString.replace('%2f', '/');
+                }
+            }
+            SearchBooks();
+        }
+
+        $(function(){
+            var inputs = $(":input").not(":button");
+            inputs.each(function (event) {
+                $(this).keydown(function (event) {
+                    if (event.keyCode == 13 || event.which == 13) {
+                        $('#SearchButton').click();
+                    }
+                });
+            });
+        });
+    });
+    function SearchClicked()
+    {
+        searchString = $.trim($("#SearchText>input").val());
+        if(searchString.length > 0){
+            if(encodeURI(searchString).toLowerCase().indexOf('%3c/script%3e') != -1){
+                searchString = encodeURI(searchString);
+            }
+            searchString = searchString.replace(/&/g,'%26').replace(/\+/g,'%2B');
+            syncbeforeunload = false;
+            window.location.href = '/Search/?query='+searchString;
+        }
+        else
+            return false;
+    }
+    function OpenBookRead(bookId) {
+        $('#loading').show();
+        localStorage.removeItem("from");
+        localStorage.setItem("from", "@Url.RouteUrl("Search")/?query=" + $("#SearchText>input").val().trim());
+        syncbeforeunload = false;
+        window.location = "@Url.Action("BookRead","Book")/"+bookId;
+    }
+</script>
+<div id="SearchContainer">
+    <div id="SearchNavigation" class="SearchNavigation">
+        <div id="SearchLable" class="SearchLable">
+            <div id="searchicon" style="float:left;"></div>
+            <div class="SearchLabel">SEARCH &gt;</div>
+        </div>
+        <div id="SearchText" class="SearchText">
+            <input class="SearchInput partialOpacity" placeholder="Search for Title, Author or anything else" type="text"/>
+        </div>
+        <div style="padding-top:30px;">
+            <input id="SearchButton" class="partialOpacity" onclick="SearchClicked();" type="button" value="GO">
+        </div>
+    </div>
+    <div id="SearchBooksContainer">
+    </div>
+</div>
+

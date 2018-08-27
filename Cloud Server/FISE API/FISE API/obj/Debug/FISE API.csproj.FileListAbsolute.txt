@@ -1,0 +1,325 @@
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\obj\Debug\FISE API.csprojResolveAssemblyReference.cache
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\FISE_API.dll.config
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\FISE_API.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\FISE_API.pdb
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\Newtonsoft.Json.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Cors.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Helpers.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Mvc.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Razor.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\Newtonsoft.Json.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Helpers.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Mvc.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.Razor.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\obj\Debug\FISE_API.dll
+D:\Work Area\External\Tata ETrust\Code\FISE API\FISE API\obj\Debug\FISE_API.pdb
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\FISE_API.dll.config
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\FISE_API.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\FISE_API.pdb
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\Microsoft.WindowsAzure.StorageClient.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\Newtonsoft.Json.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Cors.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Helpers.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Mvc.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Razor.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\Newtonsoft.Json.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Helpers.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Mvc.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.Razor.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+E:\Vikas_Dagar\For Home\FISE API\FISE API\obj\Debug\FISE API.csprojResolveAssemblyReference.cache
+E:\Vikas_Dagar\For Home\FISE API\FISE API\obj\Debug\FISE_API.dll
+E:\Vikas_Dagar\For Home\FISE API\FISE API\obj\Debug\FISE_API.pdb
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll.config
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.pdb
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Cors.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.dll
+D:\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.pdb
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\FISE_API.dll.config
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\FISE_API.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\FISE_API.pdb
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Azure.KeyVault.Core.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.Edm.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.OData.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.Services.Client.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Newtonsoft.Json.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Spatial.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Cors.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Helpers.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Mvc.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Razor.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.Edm.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.OData.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.Data.Services.Client.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Newtonsoft.Json.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Spatial.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Helpers.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Mvc.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.Razor.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\de\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\es\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\fr\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\it\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ja\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ko\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ru\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\de\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\es\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\fr\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\it\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ja\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ko\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ru\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\de\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\es\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\fr\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\it\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ja\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ko\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ru\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\de\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\es\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\fr\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\it\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ja\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ko\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\ru\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hans\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\zh-Hant\System.Spatial.resources.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\obj\Debug\FISE API.csprojResolveAssemblyReference.cache
+F:\DAGAR\FISE TFS\FISE API\FISE API\obj\Debug\FISE_API.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\obj\Debug\FISE_API.pdb
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.dll
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.pdb
+F:\DAGAR\FISE TFS\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll.config
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.pdb
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Edm.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.OData.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Services.Client.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Spatial.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Cors.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Edm.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.OData.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Services.Client.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Spatial.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\de\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\es\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\it\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\System.Spatial.resources.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.dll
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.pdb
+D:\Local_Data\Work Area\External\Tata ETrust\Code\TFS\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE API.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll.config
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\FISE_API.pdb
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Edm.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.OData.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Services.Client.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Web.Infrastructure.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Spatial.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Cors.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Edm.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.OData.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Microsoft.Data.Services.Client.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\Newtonsoft.Json.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Net.Http.Formatting.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Spatial.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Helpers.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.Cors.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Http.WebHost.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Mvc.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.Razor.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Deployment.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\System.Web.WebPages.Razor.xml
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\de\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\es\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\fr\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\it\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ja\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ko\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\ru\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hans\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\bin\zh-Hant\System.Spatial.resources.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE API.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.dll
+D:\Satish\Code - 14Aug18\Main Branch\Cloud Server\FISE API\FISE API\obj\Debug\FISE_API.pdb

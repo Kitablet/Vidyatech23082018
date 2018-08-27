@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>System.Web.Helpers.Crypto</id>
+    <version>3.2.3</version>
+    <title>System.Web.Helpers.Crypto</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://www.microsoft.com/web/webpi/eula/net_library_eula_ENU.htm</licenseUrl>
+    <projectUrl>http://www.asp.net/web-pages</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288859</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Crypto class from System.Web.Helpers</description>
+    <summary />
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <language>en-US</language>
+    <tags>Crypto</tags>
+  </metadata>
+</package>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+             xmlns:me="clr-namespace:Kitablet.CustomControls;assembly=Kitablet"
+             xmlns:mr="clr-namespace:MR.Gestures;assembly=MR.Gestures"
+             xmlns:button="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             x:Class="Kitablet.BookDisplay">
+  <!--<ScrollView Orientation="Both">-->
+    <AbsoluteLayout x:Name="BookDisplayLayout" BackgroundColor="{DynamicResource Secondary1Color}">        
+      <!--<mr:Grid Pinching="OnMrPinching" Swiped="OnMrSwiped" Panning="OnMrPanning" Pinched="OnMrPinched" Tapped="OnMrTapped" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" x:Name="WebViewGrid" Padding="30,0,30,0" ColumnSpacing="0" RowSpacing="5">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+          --><!--<RowDefinition Height="Auto" />--><!--
+        </Grid.RowDefinitions>
+        --><!--<StackLayout Grid.Row="0" Grid.Column="0" x:Name="WebViewWrapper" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">--><!--
+          <StackLayout Grid.Row="0" Grid.Column="0" x:Name="WebViewContainer" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Start" Spacing="0" Padding="0,0,0,0">
+          </StackLayout>
+        --><!--</StackLayout>--><!--        
+        --><!--<Grid Grid.Row="1" Grid.Column="0" x:Name="BookPager" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="Center">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+        </Grid>--><!--
+      </mr:Grid>-->
+
+      <AbsoluteLayout x:Name="WebViewAbsolute" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+        <AbsoluteLayout x:Name="WebViewContainer" AbsoluteLayout.LayoutFlags="None"></AbsoluteLayout>
+      </AbsoluteLayout>
+
+      <!--<Frame AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" x:Name="giframe" BackgroundColor="Transparent"></Frame>-->
+      
+
+      <Grid x:Name="PaddingTop" BackgroundColor="{DynamicResource Secondary1Color}" ColumnSpacing="0" RowSpacing="0" AbsoluteLayout.LayoutBounds="0,0,1,15" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">
+      </Grid>
+
+      <Grid x:Name="PaddingBottom" BackgroundColor="{DynamicResource Secondary1Color}" ColumnSpacing="0" RowSpacing="0" AbsoluteLayout.LayoutBounds="0,1,1,15" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">
+      </Grid>
+      <mr:Frame AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" x:Name="giframe" BackgroundColor="Transparent" Pinching="OnMrPinching" Swiped="OnMrSwiped" Panning="OnMrPanning" Pinched="OnMrPinched" Tapped="OnMrTapped"></mr:Frame>
+      <Grid AbsoluteLayout.LayoutBounds="0,0,1,60" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" RowSpacing="0" ColumnSpacing="0" x:Name="HeaderControls" IsVisible="false">
+        <BoxView Color="{DynamicResource HeaderColor}" Opacity="0.5"></BoxView>
+        <Grid BackgroundColor="Transparent" Padding="30,0,20,0" ColumnSpacing="0" RowSpacing="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+
+          <StackLayout Spacing="15" HorizontalOptions="Start" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+            <Image Source="{DynamicResource AppTextImage}" HeightRequest="50" Margin="0,10,0,0" />
+            <Label x:Name="lbl1" Text="" FontSize="40" FontAttributes="Bold" TextColor="Red"></Label>
+          </StackLayout>
+          <StackLayout Spacing="15" HorizontalOptions="End" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource ReadAloudMuteImageBlack}" x:Name="AutoPlayBtn" BackgroundColor="Transparent" Clicked="AutoPlayBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="39" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource DoublePagerImage}" x:Name="doublePagerBtn" BackgroundColor="Transparent" Clicked="doublePagerBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="66" Windows="66" Win8X="81" iOS="66" />
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="39" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource SinglePagerImage}" x:Name="singlePagerBtn" BackgroundColor="Transparent" Clicked="singlePagerBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="39" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource ZoomInImage}" x:Name="ZoomInBtn" BackgroundColor="Transparent" Clicked="ZoomInBtn_Clicked" IsEnabled="True">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="39" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource ZoomOutDeactiveImage}" x:Name="ZoomOutBtn" BackgroundColor="Transparent" Clicked="ZoomOutBtn_Clicked" IsEnabled="False">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="39" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" x:Name="closeBtn" Margin="0,10,0,0" Image="{DynamicResource CloseImage}" BackgroundColor="Transparent" Clicked="closeBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+          </StackLayout>
+        </Grid>
+      </Grid>
+      
+      <Grid x:Name="NavigationControls" AbsoluteLayout.LayoutBounds="0,0.5,1,37" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <RelativeLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" VerticalOptions="Center">
+          <button:MyButton Image="{DynamicResource PreviousImage}" x:Name="PreviousBtn" BackgroundColor="Transparent" Clicked="PreviousBtn_Clicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+        </RelativeLayout>
+        <RelativeLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="End" VerticalOptions="Center">
+          <button:MyButton Image="{DynamicResource NextImage}" x:Name="NextBtn" BackgroundColor="Transparent" Clicked="NextBtn_Clicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+        </RelativeLayout>
+      </Grid>
+      
+      <Grid x:Name="ScrollControls" AbsoluteLayout.LayoutBounds="1,1,1,AutoSize" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" Padding="0,0,0,50" IsVisible="False">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <RelativeLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="End">
+          <!--<mr:Button Image="{DynamicResource PreviousImage}" x:Name="UpBtn" BackgroundColor="Transparent" Clicked="ScrollUpBtn_Clicked">-->
+          <mr:Button Image="up.png" x:Name="UpBtn" BackgroundColor="Transparent" Down="UpPressing" Up="UpPressed">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </mr:Button>
+        </RelativeLayout>
+        <RelativeLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="End">
+          <mr:Button Image="down.png" x:Name="DownBtn" BackgroundColor="Transparent" Down="DownPressing" Up="DownPressed">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </mr:Button>
+        </RelativeLayout>
+      </Grid>
+
+      <Grid x:Name="ScrollAnimationControls" AbsoluteLayout.LayoutBounds="1,1,1,AutoSize" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" IsVisible="False">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <RelativeLayout Grid.Row="0" Grid.Column="0" HorizontalOptions="End">
+          <RelativeLayout.WidthRequest>
+            <local:OnPlatform2 x:TypeArguments="x:Double" Android="34" Windows="34" Win8X="49" iOS="34"/>
+          </RelativeLayout.WidthRequest>
+          <local:ArrowWithFlow x:Name="ScrollAnimation"></local:ArrowWithFlow>
+        </RelativeLayout>
+      </Grid>
+        
+      <Grid x:Name="BookPagerContainer" IsVisible="false" ColumnSpacing="0" RowSpacing="0" AbsoluteLayout.LayoutBounds="0,1,1,AutoSize" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional">
+        <BoxView Color="{DynamicResource HeaderColor}" Opacity="0.5"></BoxView>
+        <Grid x:Name="BookPager" ColumnSpacing="0" RowSpacing="0" HorizontalOptions="Center" Padding="0,5,0,5">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+          </Grid.RowDefinitions>
+        </Grid>
+      </Grid>
+                
+      <local:PageLoader AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" x:Name="PageLoader" IsVisible="False"></local:PageLoader>
+         
+  </AbsoluteLayout>
+  <!--</ScrollView>-->
+</ContentPage>

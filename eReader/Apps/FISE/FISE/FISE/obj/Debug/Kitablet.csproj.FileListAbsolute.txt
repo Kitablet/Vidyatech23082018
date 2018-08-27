@@ -1,0 +1,122 @@
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Kitablet.dll.config
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Kitablet.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Kitablet.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Mono.Android.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\MR.Gestures.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Newtonsoft.Json.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Plugin.Settings.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\System.Net.Http.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Windows.winmd
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\System.Net.Primitives.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Mono.Android.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Mono.Android.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\MR.Gestures.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Newtonsoft.Json.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Plugin.Settings.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\System.Net.Http.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Debug\System.Net.Primitives.xml
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.App.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.UserDashboard.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.AdminLogin.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.UserLogin.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.BookRead.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.BookSearch.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.Notification.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.Setting.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ActionTabPage.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ChangeAvatar.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.BookDisplay.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.BookCompleted.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ActivityIndicatorLoader.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.BookActivity.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.HomePage.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.LoginPage.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.Popup.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ForgotPopup.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ReleaseDevicePopup.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.PageLoader.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.SmallBookView.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.ArrowWithFlow.xaml.g.cs
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.dll
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.pdb
+D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\obj\Debug\Kitablet.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Kitablet.dll.config
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Kitablet.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Kitablet.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Mono.Android.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\MR.Gestures.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Newtonsoft.Json.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Plugin.Settings.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\System.Net.Http.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Windows.winmd
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\System.Net.Primitives.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Mono.Android.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Mono.Android.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\MR.Gestures.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Newtonsoft.Json.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Plugin.Settings.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\System.Net.Http.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Core.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Platform.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Debug\System.Net.Primitives.xml
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.csprojResolveAssemblyReference.cache
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.App.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.UserDashboard.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.AdminLogin.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.UserLogin.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.BookRead.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.BookSearch.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.Notification.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.Setting.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ActionTabPage.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ChangeAvatar.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.BookDisplay.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.BookCompleted.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ActivityIndicatorLoader.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.BookActivity.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.HomePage.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.LoginPage.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.Popup.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ForgotPopup.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ReleaseDevicePopup.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.PageLoader.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.SmallBookView.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.ArrowWithFlow.xaml.g.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.dll
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\obj\Debug\Kitablet.pdb

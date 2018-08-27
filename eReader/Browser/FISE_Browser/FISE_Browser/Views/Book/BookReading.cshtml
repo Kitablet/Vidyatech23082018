@@ -1,0 +1,113 @@
+﻿@model FISE_Browser.Models.Opf
+@{
+    Layout = null;
+    var basepath = System.Configuration.ConfigurationManager.AppSettings["proxypath"].ToString();
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jgestures.js"></script>
+    <script src="~/Scripts/bookreading.js"></script>
+    <link href="~/Css/BookReading.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>BookReading</title>
+</head>
+<body id="body">
+    <div id="header">
+        <div class="left" id="logo"><img src="~/Content/Images/kitablet_logo.png" /></div>
+
+        <div class="right active action" id="close" onclick="javascript: window.location.href = '/BookRead/@Model.BookId'">
+            <img src="~/Content/Images/close.png" />
+        </div>
+
+        @*@if (Model.book.isPagerAllowed)*@
+        @if (true)
+        {
+            if (Model.book.PageDisplay.ToLower() == "single")
+            {
+                <div class="right disabled action" id="singlepager" onclick="return showsinglepager();">
+                    <img src="~/Content/Images/single_pager.png" />
+                </div>
+                <div class="right active  action" id="doublepager" onclick="return showtwopager();">
+                    <img src="~/Content/Images/double_pager.png" />
+                </div>
+            }
+            else
+            {
+                <div class="right active  action" id="singlepager" onclick="return showsinglepager();">
+                    <img src="~/Content/Images/single_pager.png" />
+                </div>
+                <div class="right disabled  action" id="doublepager" onclick="return showtwopager();">
+                    <img src="~/Content/Images/double_pager.png" />
+                </div>
+            }
+        }
+        @if (Model.book.HasReadAloud.ToLower() == "true")
+        {
+            <div class="right active action" id="readaloud" onclick="playreadaloud();">
+                <img id="readaloudimage" src="~/Content/Images/read_aloud_mute.png" />
+            </div>
+        }
+    </div>
+    <button id="previous">
+        <img src="~/Content/Images/previous.png" />
+    </button>
+    <button id="next">
+        <img src="~/Content/Images/next.png" />
+    </button>
+    <div id="container1" style="display:flex">
+
+
+        <div id="displayarea">
+            <div id="iframecover" ></div>
+            <iframe id="page1"></iframe>
+
+            <iframe id="page2"></iframe>
+        </div>
+
+    </div>
+
+    <div id="footer" style="">
+        <div id="pageno" style="margin:auto;">
+            <div id="pageno1" class="pageno"></div>
+            <div id="pageno2" class="pageno"></div>
+        </div>
+    </div>
+    <div id="loading">
+        <div style="margin:auto;color:#fff;width:100px;height:20px;"> Please wait...</div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        basepath = '@basepath';
+        bookid='@Model.BookId';
+        function CreateJson() {
+            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  Model }));
+        }
+        json = CreateJson();
+        currentpage = parseInt(json.Model.bookmark);
+        showpage();
+
+        $("#container1").bind('swipeone', handleSwipe);
+
+        function handleSwipe(event, obj)
+        {
+            obj.originalEvent.preventDefault();
+            var swipeDirection = obj.description.split(':')[2];
+            if (swipeDirection === "left") {
+                nextClick();
+            }
+            else if (swipeDirection === "right") {
+                previousClick();
+            }
+        }       
+    });
+</script>

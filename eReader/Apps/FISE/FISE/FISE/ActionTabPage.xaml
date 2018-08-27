@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kitablet.ActionTabPage"
+             xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+             xmlns:button="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:extScroll="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             x:Title="KITABLET">
+  <ContentPage.Content>
+    <extScroll:ExtendedScrollView Orientation="Both"> <!--Remove For Android & IOS-->
+    <AbsoluteLayout x:Name="ActionTabLayout">
+      <!--Remove For Android & IOS-->
+      <AbsoluteLayout.WidthRequest>
+        <local:OnPlatform2 x:TypeArguments="x:Double" Windows="1000" Win8X="1000" />
+      </AbsoluteLayout.WidthRequest>
+      <AbsoluteLayout.HeightRequest>
+        <local:OnPlatform2 x:TypeArguments="x:Double" Windows="650" Win8X="650" />
+      </AbsoluteLayout.HeightRequest>
+      <Grid x:Name="ActionTabContentLayout" RowSpacing="0" ColumnSpacing="0" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="XProportional,WidthProportional,HeightProportional" Padding="0,70,0,0" BackgroundColor="{DynamicResource TextWhiteColor}">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+      </Grid>
+
+      <Grid x:Name="ActionTabHeaderLayout" AbsoluteLayout.LayoutBounds="0,0,1,80" AbsoluteLayout.LayoutFlags="XProportional,YProportional,WidthProportional" BackgroundColor="{DynamicResource PrimaryColor}" RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Grid.Row="0" Grid.Column="0" Spacing="20" VerticalOptions="Start" Orientation="Horizontal" Padding="330,25,0,0">
+          <Label x:Name="TabHeader" FontSize="14"  Style="{DynamicResource LabelNormal1Bold}" FontAttributes="Bold" TextColor="{DynamicResource TabTitleColor}" Margin="-10,10,0,0"  VerticalOptions="Center" IsVisible="false"></Label>
+        </StackLayout>
+        <Grid RowSpacing="0" ColumnSpacing="15" Padding="0,0,15,0" VerticalOptions="Center" HorizontalOptions="End" Grid.Row="0" Grid.Column="1">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+          </Grid.ColumnDefinitions>
+          <RelativeLayout Grid.Row="0" Grid.Column="3" WidthRequest="50" HeightRequest="41">
+            <Label x:Name="NotificationText" Text="" WidthRequest="80" FontSize="{DynamicResource SmallFontSize}" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0, Constant = 0}">
+              <Label.Margin>
+                <local:OnPlatform2 x:TypeArguments="Thickness" Android="37,0,0,0" Windows="37,0,0,0" Win8X="47,10,0,0" iOS="37,0,0,0" />
+              </Label.Margin>
+            </Label>
+          </RelativeLayout>
+          <!--<button:MyButton Image="{DynamicResource HomeImage}" BorderWidth="0" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" x:Name="userhome" StyleId="userhome" HorizontalOptions="Center" Clicked="TabClicked"> </button:MyButton>-->
+          <button:MyButton Image="{DynamicResource HomeImage}" BorderWidth="0" Grid.Row="0" Grid.Column="0" BackgroundColor="Transparent" x:Name="userhome" StyleId="userhome" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent" />
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+          <button:MyButton Image="{DynamicResource SearchImage}" Grid.Row="0" Grid.Column="1" BackgroundColor="Transparent" x:Name="booksearch" StyleId="booksearch" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+          <button:MyButton Image="{DynamicResource ProfileImage}" Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" x:Name="dashboard" StyleId="dashboard" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+          <button:MyButton Image="{DynamicResource AnnouncementImage}" Grid.Row="0" Grid.Column="3" BackgroundColor="Transparent" x:Name="notifications" StyleId="notifications" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+          <button:MyButton Image="{DynamicResource SettingImage}" Grid.Row="0" Grid.Column="4" BackgroundColor="Transparent" x:Name="setting" StyleId="setting" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+          <button:MyButton Image="{DynamicResource LogoutImage}" Grid.Row="0" Grid.Column="5" BackgroundColor="Transparent" x:Name="poweroff" StyleId="poweroff" HorizontalOptions="Center" Clicked="TabClicked">
+            <button:MyButton.WidthRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="50" Windows="50" Win8X="65" iOS="50" />
+            </button:MyButton.WidthRequest>
+            <button:MyButton.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="41" Windows="41" Win8X="56" iOS="41" />
+            </button:MyButton.HeightRequest>
+            <button:MyButton.BorderColor>
+              <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+            </button:MyButton.BorderColor>
+          </button:MyButton>
+        </Grid>
+
+      </Grid>
+
+      <StackLayout Orientation="Vertical" Spacing="0" AbsoluteLayout.LayoutBounds="1,80, -1, -1" AbsoluteLayout.LayoutFlags="XProportional" x:Name="CurrentBookDashboard" IsVisible="false">
+        <StackLayout Orientation="Horizontal" Spacing="0">
+          <BoxView Color="{DynamicResource TextBlackColor}" HeightRequest="150" WidthRequest="6" Opacity="0.2"></BoxView>
+          <extScroll:ExtendedScrollView HeightRequest="150" WidthRequest="284" x:Name="CurrentBookDashboardScroll"> <!--Use ScrollView For Android & IOS-->
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" WidthRequest="284" BackgroundColor="{DynamicResource Secondary2Color}" VerticalOptions="Fill">
+              <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="0,10,0,10" VerticalOptions="Start" Spacing="0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Start" Padding="32,10,0,0">
+                  <!--<controls:CircleImage Source="{DynamicResource AvatarSmallImage}" HeightRequest="64" WidthRequest="64" HorizontalOptions="Start" VerticalOptions="Start" x:Name="CurentAvatarImage"/>-->
+                  <!--<Image Source="{DynamicResource AvatarSmallImage}" HeightRequest="64" WidthRequest="64" HorizontalOptions="Start" VerticalOptions="Start" x:Name="CurentAvatarImage"/>-->
+                  <Grid RowSpacing="0" ColumnSpacing="0">
+                    <Image Source="{DynamicResource AvatarSmallImage}" HeightRequest="64" WidthRequest="64" HorizontalOptions="Start" VerticalOptions="Start"/>
+                    <Image HeightRequest="64" WidthRequest="64" HorizontalOptions="Start" VerticalOptions="Start" x:Name="CurentAvatarImage"/>
+                  </Grid>
+                  <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="0">
+                    <Label Text="UserName1" HorizontalTextAlignment="Start" Style="{DynamicResource LabelNormal1Regular}"  FontSize="16" VerticalTextAlignment="Center" TextColor="{DynamicResource TextWhiteColor}" x:Name="UserNameDashboardPopup1"></Label>
+                    <Label Text="UserName2" HorizontalTextAlignment="Start"  Style="{DynamicResource LabelNormal1Regular}" FontSize="16" VerticalTextAlignment="Center" TextColor="{DynamicResource TextWhiteColor}" x:Name="UserNameDashboardPopup2"></Label>
+                  </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="0" Margin="0,-10,0,0" x:Name="BookmarkRow">
+                  <Image Source="{DynamicResource BookmarkRibbon}" x:Name="BookmarkRibbon" HorizontalOptions="Start"></Image>
+                  <Grid HorizontalOptions="Start" RowSpacing="0" ColumnSpacing="0">
+                    <BoxView x:Name="bookborder" IsVisible="False" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" BackgroundColor="#FC654C" WidthRequest="6" Margin="30,0,0,0" />
+                    <Image x:Name="book_cover" IsVisible="False" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" Margin="36,0,0,0" Source="{DynamicResource BookThumbnailImage}" Aspect="AspectFit"></Image>
+                    <Grid x:Name="NoBookThumbnail" BackgroundColor="{DynamicResource SmallMediumBookBG}"  HorizontalOptions="Start" WidthRequest="198" HeightRequest="260" Grid.Row="0" Grid.Column="0" Margin="36,0,0,0">
+                      <Image HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="{DynamicResource BookThumbnailImage}" Aspect="AspectFit"></Image>
+                      <Image x:Name="DownloadedImage" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="{DynamicResource BookThumbnailImage}" Aspect="AspectFit"></Image>
+                      <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"></Label>
+                      <Image x:Name="isOfflineBook" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="0" Grid.Column="0" Source="{DynamicResource CurledCornerSmall}"></Image>
+                    </Grid>
+                  </Grid>
+                </StackLayout>
+                <StackLayout Spacing="80" HorizontalOptions="Start" Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Margin="30,10,0,0" WidthRequest="198">
+                  <StackLayout Spacing="15" HorizontalOptions="Start" Orientation="Horizontal">
+                    <Image x:Name="ReadAloudSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ReadAloudImage}" HorizontalOptions="Start"></Image>
+                    <Image x:Name="AnimationSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource AnimationImage}" HorizontalOptions="Start"></Image>
+                    <Image x:Name="ActivitySmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ActivityImage}" HorizontalOptions="Start"></Image>
+                  </StackLayout>
+                  <StackLayout Spacing="0" HorizontalOptions="End" Orientation="Horizontal">
+                    <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="End">
+                      <Image x:Name="RatingSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingImage}"></Image>
+                      <Label Text="" x:Name="RatingofBook" TextColor="{DynamicResource Secondary2Color}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Margin="1, 0, 1, 4" FontSize="12"></Label>
+                    </Grid>
+                  </StackLayout>
+                </StackLayout>
+                <Label Text="" x:Name="DefaultText"  Style="{DynamicResource LabelNormal1Regular}"  FontSize="16" HorizontalTextAlignment="Start" Margin="30,10,0,0" WidthRequest="198" TextColor="{DynamicResource TextWhiteColor}" LineBreakMode="WordWrap"></Label>
+              </StackLayout>
+              <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="End" Padding="0,5,0,30">
+                <Grid HorizontalOptions="Center" WidthRequest="240" RowSpacing="20" ColumnSpacing="20">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                  </Grid.ColumnDefinitions>
+                  <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" Spacing="0">
+                    <Label Text="0" FontSize="36"   Style="{DynamicResource LabelNormal1Regular}"  TextColor="{DynamicResource TextWhiteColor}" x:Name="BooksReadCount"></Label>
+                    <Label Text="Books&#10;Read"   Style="{DynamicResource LabelNormal1Regular}" FontAttributes="None" FontSize="16" TextColor="{DynamicResource TextWhiteColor}"></Label>
+                  </StackLayout>
+                  <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" Spacing="0">
+                    <Label Text="0" FontSize="36"   Style="{DynamicResource LabelNormal1Regular}" TextColor="{DynamicResource TextWhiteColor}" x:Name="BooksRatedCount"></Label>
+                    <Label Text="Books&#10;Rated"  Style="{DynamicResource LabelNormal1Regular}" FontSize="16"  TextColor="{DynamicResource TextWhiteColor}"></Label>
+                  </StackLayout>
+                  <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" Spacing="0">
+                    <Label Text="0" FontSize="36"   Style="{DynamicResource LabelNormal1Regular}"  TextColor="{DynamicResource TextWhiteColor}" x:Name="ActivitiesCompletedCount"></Label>
+                    <Label Text="Activities&#10;Completed"   Style="{DynamicResource LabelNormal1Regular}"  FontSize="16" TextColor="{DynamicResource TextWhiteColor}"></Label>
+                  </StackLayout>
+                  <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="1" Spacing="0">
+                    <Label Text="00:00" Style="{DynamicResource LabelNormal1Regular}"  TextColor="{DynamicResource TextWhiteColor}" FontSize="36" x:Name="HoursSpentReading"></Label>
+                    <Label Text="Time&#10;Spent&#10;Reading"  Style="{DynamicResource LabelNormal1Regular}" FontSize="16"  TextColor="{DynamicResource TextWhiteColor}"></Label>
+                  </StackLayout>
+                </Grid>
+              </StackLayout>
+            </StackLayout>
+          </extScroll:ExtendedScrollView>
+        </StackLayout>
+        <Image Source="{DynamicResource ExpandButton}" HorizontalOptions="Center" x:Name="ExpandDashboard"></Image>
+      </StackLayout>
+
+
+      <StackLayout Orientation="Horizontal" HeightRequest="17" WidthRequest="46" x:Name="CollapseDashboard" IsVisible="false"  Margin="0,0,119,0" AbsoluteLayout.LayoutBounds="1, 1, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+        <Image Source="{DynamicResource CollapseButton}" HorizontalOptions="Center" VerticalOptions="End"></Image>
+      </StackLayout>
+
+
+
+      <Image Source="{DynamicResource AppImage}"  AbsoluteLayout.LayoutBounds="10,10,AutoSize,50" AbsoluteLayout.LayoutFlags="None"> </Image>
+
+      <AbsoluteLayout x:Name="DropDown" AbsoluteLayout.LayoutBounds="310,20,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="None">
+        <StackLayout Orientation="Horizontal"  Spacing="0" VerticalOptions="Start" AbsoluteLayout.LayoutBounds="0,0,-1,-1" AbsoluteLayout.LayoutFlags="XProportional" >
+          <BoxView Color="{DynamicResource TextBlackColor}" Opacity="0.1" x:Name="DropDownOutline" WidthRequest="6"/>
+          <StackLayout Orientation="Vertical" VerticalOptions="Start" Padding="5,5,0,0" BackgroundColor="{DynamicResource PrimaryColor}" WidthRequest="145" Spacing="0" x:Name="DropDownContent">
+          </StackLayout>
+        </StackLayout>
+      </AbsoluteLayout>
+
+      <Label Text="OFFLINE" AbsoluteLayout.LayoutBounds="10,85,AutoSize,AutoSize" AbsoluteLayout.LayoutFlags="None" Style="{DynamicResource LabelNormal6}" x:Name="IsOfflineText" IsVisible="false"> </Label>
+      <!-- For POPUP BLACK FADEOUT -->
+      <StackLayout Padding="6" Orientation="Horizontal" BackgroundColor="{DynamicResource TextBlackColor}" Opacity="0.5" AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All" x:Name="PopWindowFadeout" IsVisible="false">
+      </StackLayout>
+
+      <!-- FOR HI USER POPUP -->
+      <StackLayout Style="{DynamicResource hiUserPopup}" Orientation="Vertical" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" x:Name="PopWindow" IsVisible="false">
+        <Grid RowSpacing="0" ColumnSpacing="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="15"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="15"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="15" />
+          </Grid.ColumnDefinitions>
+          <Image Source="{DynamicResource TopLeftCornerFilled}" Aspect="Fill" Grid.Row="0" Grid.Column="0"></Image>
+          <Image Source="{DynamicResource TopRightCornerFilled}" Aspect="Fill"  Grid.Row="0" Grid.Column="2">
+            <Image.Margin>
+              <local:OnPlatform2 x:TypeArguments="Thickness" Win8X="-1,0,0,0"/>
+            </Image.Margin>
+          </Image>
+          <Image Source="{DynamicResource BottomRightCornerFilled}"  Aspect="Fill" Grid.Row="2" Grid.Column="2">
+            <Image.Margin>
+              <local:OnPlatform2 x:TypeArguments="Thickness" Win8X="-1,0,0,0"/>
+            </Image.Margin>
+          </Image>
+          <Image Source="{DynamicResource BottomLeftCornerFilled}" Aspect="Fill"  Grid.Row="2" Grid.Column="0"></Image>
+
+          <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="0" Grid.Column="1"></BoxView>
+          <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="2" Grid.Column="1"></BoxView>
+
+          <!--USER POPUP-->
+          <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="{DynamicResource PrimaryColor}" IsVisible="false" x:Name="hiUserPopup">
+            <button:MyButton HorizontalOptions="End" Image="{DynamicResource CloseImage}" x:Name="closeBtn" BackgroundColor="{DynamicResource TransparentColor}" Clicked="closeBtn_Clicked" StyleId="1"/>
+            <Grid VerticalOptions="Center" BackgroundColor="{DynamicResource PrimaryColor}" HeightRequest="300" HorizontalOptions="Center">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+              </Grid.ColumnDefinitions>
+              <StackLayout x:Name="layout" Spacing="10" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Padding="0,0,0,20" HorizontalOptions="Center" Orientation="Vertical">
+                <controls:CircleImage Source="{DynamicResource AvatarBigImage}" Aspect="AspectFill" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120" x:Name="CurrentAvatarImage">
+                </controls:CircleImage>
+                <!--<Image Source="{DynamicResource AvatarBigImage}" HorizontalOptions="Center" AbsoluteLayout.LayoutBounds="1,0,-1,-1" AbsoluteLayout.LayoutFlags="PositionProportional"></Image>-->
+                <Label Text="Hi User" x:Name="userText" FontSize="30" HorizontalOptions="Center" TextColor="{DynamicResource TextWhiteColor}"/>
+                <Label Text="Good to see you again!" FontSize="20" HorizontalOptions="Center" TextColor="{DynamicResource TextWhiteColor}"></Label>
+                <StackLayout HorizontalOptions="Center" Padding="0,10,0,10">
+                  <Label x:Name="someoneElseLink" Text="OH, BUT I'M SOMEONE ELSE!" TextColor="{DynamicResource TextBlackColor}" HorizontalOptions="Center"></Label>
+                  <BoxView Color="{DynamicResource TextBlackColor}" HeightRequest="1" Margin="0,-8,0,0"/>
+                </StackLayout>
+              </StackLayout>
+            </Grid>
+          </StackLayout>
+
+          <!--Common Popup-->
+          <StackLayout Orientation="Vertical" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="{DynamicResource PrimaryColor}" x:Name="commonPopup" IsVisible="false">
+            <Grid VerticalOptions="Center" BackgroundColor="{DynamicResource PrimaryColor}"  HorizontalOptions="Center">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300" />
+              </Grid.ColumnDefinitions>
+              <StackLayout Spacing="20" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" Padding="0,0,0,10" HorizontalOptions="Center" Orientation="Vertical">
+                <Label  Style="{DynamicResource LabelNormal1Regular}" FontAttributes="None" FontSize="18" HorizontalTextAlignment="Center" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et metus nec mauris laoreet finibus. Fusce odio enim, luctus eget sollicitudin quis, consectetur vel mauris. Quisque ac scelerisque leo." x:Name="CommonTextMessage"></Label>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="20">
+
+                  <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" x:Name="OkBtn_CommonPopup" StyleId="Password">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="8" />
+                      <RowDefinition Height="*" />
+                      <RowDefinition Height="8" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="8" />
+                      <ColumnDefinition Width="*" />
+                      <ColumnDefinition Width="8" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                    <Label Text="OK" Style="{DynamicResource LabelNormal1Bold}" FontAttributes="Bold" FontSize="16" x:Name="OkBtn_CommonPopupTxt" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="15,10"></Label>
+                    <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+                  </Grid>
+                  <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HorizontalOptions="Center" x:Name="CancelBtn_CommonPopup" StyleId="Password">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="8" />
+                      <RowDefinition Height="*" />
+                      <RowDefinition Height="8" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="8" />
+                      <ColumnDefinition Width="*" />
+                      <ColumnDefinition Width="8" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                    <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                    <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                    <Label Text="CANCEL" Style="{DynamicResource LabelNormal1Bold}" FontAttributes="Bold" FontSize="16"  x:Name="CancelBtn_CommonPopupTxt" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="15,10"></Label>
+                    <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+                  </Grid>
+
+                  <!--<button:MyButton TextColor="{DynamicResource TextWhiteColor}" Text="OK" HorizontalOptions="Center"></button:MyButton>
+                  <button:MyButton TextColor="{DynamicResource TextWhiteColor}" Text="CANCEL" x:Name="CancelBtn_CommonPopup" HorizontalOptions="Center" Clicked="closeBtn_Clicked" StyleId="0"></button:MyButton>-->
+                </StackLayout>
+              </StackLayout>
+            </Grid>
+          </StackLayout>
+        </Grid>
+      </StackLayout>
+
+      <Grid RowSpacing="0" ColumnSpacing="0" AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional" x:Name="selectMore" IsVisible="false">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="15"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="15" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="15" />
+        </Grid.ColumnDefinitions>
+
+        <Image Source="{DynamicResource TopLeftWhiteCornerFilled}" Aspect="Fill" Grid.Row="0" Grid.Column="0"></Image>
+        <Image Source="{DynamicResource TopRightWhiteCornerFilled}" Aspect="Fill"  Grid.Row="0" Grid.Column="2"></Image>
+        <Image Source="{DynamicResource BottomRightWhiteCornerFilled}"  Aspect="Fill" Grid.Row="2" Grid.Column="2"></Image>
+        <Image Source="{DynamicResource BottomLeftWhiteCornerFilled}" Aspect="Fill"  Grid.Row="2" Grid.Column="0"></Image>
+
+        <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1"></BoxView>
+        <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0"></BoxView>
+        <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2"></BoxView>
+        <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1"></BoxView>
+
+
+        <Grid Grid.ColumnSpacing="0" Grid.RowSpacing="0" Grid.Row="1" Grid.Column="1" BackgroundColor="#FFFFFF">
+          <Grid.WidthRequest>
+            <local:OnPlatform2 x:TypeArguments="x:Double" Android="750" Windows="750" Win8X="753" iOS="750" />
+          </Grid.WidthRequest>
+          <Grid.HeightRequest>
+            <local:OnPlatform2 x:TypeArguments="x:Double" Android="450" Windows="450" Win8X="453" iOS="450" />
+          </Grid.HeightRequest>
+          <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>          
+          <extScroll:ExtendedScrollView Orientation="Horizontal" Grid.Column="0" Grid.Row="1" HorizontalOptions="Center"> <!--Use ScrollView For Android & IOS-->
+            <Grid HorizontalOptions="Center">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+              </Grid.ColumnDefinitions>
+              <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center">
+                <Label Text="CATEGORIES" Style="{DynamicResource LabelNormalBold}" Margin="25,0,0,0"></Label>
+                <StackLayout Orientation="Horizontal" x:Name="Categories" Margin="0,15,0,0">
+                  <StackLayout Orientation="Vertical" x:Name="CategoriesPart1" WidthRequest="140">
+                  </StackLayout>
+                  <StackLayout Orientation="Vertical" x:Name="CategoriesPart2" WidthRequest="140">
+                  </StackLayout>
+                </StackLayout>
+              </StackLayout>
+              <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" HorizontalOptions="Center">
+                <Label Text="SPECIALS" Style="{DynamicResource LabelNormalBold}" HorizontalTextAlignment="Center"></Label>
+                <StackLayout Orientation="Vertical" x:Name="Specials" WidthRequest="140" Margin="0,15,0,0">
+                </StackLayout>
+              </StackLayout>
+              <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center">
+                <Label Text="LANGUAGE" Style="{DynamicResource LabelNormalBold}" HorizontalTextAlignment="Center"></Label>
+                <StackLayout Orientation="Vertical" x:Name="Languages" WidthRequest="140" Margin="0,15,0,0">
+                </StackLayout>
+              </StackLayout>
+              <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="3" HorizontalOptions="Center">
+                <Label Text="TYPE" Style="{DynamicResource LabelNormalBold}" HorizontalTextAlignment="Center"></Label>
+                <StackLayout Orientation="Vertical" x:Name="BookTypes" WidthRequest="140" Margin="0,15,0,0">
+                </StackLayout>
+              </StackLayout>
+            </Grid>
+          </extScroll:ExtendedScrollView>
+          <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HorizontalOptions="Center" x:Name="OkBtn_CommonPopup1" Grid.Row="2" Grid.Column="0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="8" />
+              <RowDefinition Height="*" />
+              <RowDefinition Height="8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="8" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{DynamicResource TopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource TopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource BottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource BottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+            <Label Style="{DynamicResource LabelNormal3}" Text="DONE" FontAttributes="Bold" FontSize="14" x:Name="OkBtn_CommonPopup1Txt" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="15,10"></Label>
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+          </Grid>
+          <StackLayout Grid.Row="0" Grid.Column="0">
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,0,0,0" Image="{DynamicResource CloseImage}" x:Name="BackBtn" BackgroundColor="Transparent" Clicked="BackBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46" />
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37" />
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+          </StackLayout>
+        </Grid>
+
+      </Grid>
+      <local:ActivityIndicatorLoader x:Name="loader" IsVisible="False"  AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All"></local:ActivityIndicatorLoader>
+      <local:Popup x:Name="ActionTabPopup" IsVisible="False"  AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All"></local:Popup>
+
+      <local:PageLoader AbsoluteLayout.LayoutBounds="0,0,1,1"  AbsoluteLayout.LayoutFlags="All" x:Name="Page_Loader" IsVisible="True"></local:PageLoader>
+      
+    </AbsoluteLayout>
+    </extScroll:ExtendedScrollView>
+  </ContentPage.Content>
+</ContentPage>

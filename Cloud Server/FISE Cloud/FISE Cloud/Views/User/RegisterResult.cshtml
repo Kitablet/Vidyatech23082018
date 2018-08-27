@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Student Registration";
+}
+<div class="row title-section">
+    <h4 class="page-title">@Resource.StudentRegistration_RegistrationSuccess_Title</h4>
+</div>
+<hr />
+<div class="row">
+    @Resource.StudentCreation_createstudent_success
+    <br />
+    <br />
+    <input type="button" class="btn btn-default btn-rect" onclick="location.href = '@Url.RouteUrl("HomePage")'" value="@Resource.btn_Continue" />
+</div>

@@ -1,0 +1,145 @@
+﻿@using FISE_Cloud.Models;
+@using CaptchaMvc.HtmlHelpers
+@using CaptchaMvc.Models
+@model LoginModel
+@{
+    ViewBag.Title = "Login";
+    ViewBag.HeaderPageTitle = "Login";
+    var captcha = Html.Captcha(Resource.CaptchaTryAnother, Resource.CaptchaLable, 5, Resource.CaptchaReqError, true);
+}
+
+
+<div class="row title-section">
+    @if (Model.ShowRegMsg)
+    {
+        <div class="desc">
+            @Resource.Login_DescriptionText
+        </div>
+    }
+
+
+    <h4 class="page-title">@Resource.Login_pageTitle</h4>
+
+</div>
+<hr />
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="message-error">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div>@Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString()))</div>
+            }
+        </div>
+        @Html.HiddenFor(model => model.AttemptCount)
+        <div class="form-group col-xs-12">
+            <div class="col-xs-3">
+                @Html.LabelFor(m => m.Username, new { }, ":")
+            </div>
+            <span class="col-xs-9 inline2">
+                @Html.TextBoxFor(m => m.Username, new { @class = "username", autofocus = "autofocus", @id = "PopUpUserName" })
+                @Html.ValidationMessageFor(m => m.Username)
+            </span>
+        </div>
+                        <div class="form-group col-xs-12">
+                            <div class="col-xs-3">
+                                @Html.LabelFor(m => m.Password, new { }, ":")
+                            </div>
+                            <span class="col-xs-9 inline2">
+                                @Html.PasswordFor(m => m.Password, new { @class = "password" })
+                                @Html.ValidationMessageFor(m => m.Password)
+                            </span>
+                        </div>                       
+                        <div class="form-group col-xs-12">
+                            <div id="rememberme" class="col-xs-offset-3 col-xs-3">
+                                <input type="checkbox" id="login_rememberme" name="rememberme" value="rememberme" />
+                                <span class="align-rememberme">@Resource.Login_RememberMe</span>
+                            </div>
+                            <div class="col-xs-6 text-right">
+                                <span>@Html.RouteLink("FORGOT USERNAME?", "UsernameRecovery", null, new { @class = "login_a" })</span>
+
+                            </div>
+                            <div class="col-xs-12 text-right">
+                                <span>@Html.RouteLink("FORGOT PASSWORD?", "PasswordRecovery", null, new { @class = "login_a" })</span>
+                            </div>
+
+                            @if (Model.AttemptCount > 1)
+                            {
+                                <div class="form-group col-xs-12">
+                                    <div class="col-xs-offset-3 captcha">
+                                        @captcha
+                                        @Html.ValidationMessage(@captcha.BuildInfo.InputElementId)
+                                    </div>
+                                </div>
+                            }
+                            <div class="col-xs-offset-3 login_btn">
+                                <input type="submit" class="btn btn-default btn-rect" value="@Resource.Login_signIn" name="login-button" />
+                            </div>
+                        </div>
+    }
+</div>
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+</style>
+<script src="~/Scripts/jquery.validate.js?v=1"></script>
+<script>
+    $(document).ready(function () {
+        $.validator.addMethod('validatepassowrd', function (value, element) {
+            var expr = /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*?[!@@#$%^&*()])(?!.* )(?!.*?[></?';:}{\\|\"`~]).{8,100}/;
+            return expr.test(value);
+        }, '@Resource.UserRegistration_PwdValidator');
+
+        $.validator.addMethod('validateusername', function (value, element) {
+            var expr = /^[A-Za-z0-9-@@_.]{5,25}$/;
+            return expr.test(value);
+        }, '@Resource.UserRegistration_UsernameLength');
+    });
+    $("form").validate({
+        rules: {
+            Username: {
+                rangelength: [0, 25],
+                required: true
+            },
+            Password: {
+                required: true,
+                rangelength: [0,100]
+            },
+            CaptchaInputText: {
+                required: true
+            }
+        },
+
+        messages: {
+            Username: {
+                required: "@Resource.PopupLogin_UsernameReqError",
+                rangelength: "@Resource.Login_UsernameLength"
+            },
+            Password: {
+                required: "@Resource.PopupLogin_PasswordReqError",
+                rangelength: "@Resource.Login_Passwordlength"
+            },
+            CaptchaInputText: {
+                required: "@Resource.CaptchaReqError"
+            }
+        },
+        submitHandler: function (form) {
+            $(form).find("input[type='submit']").attr('disabled', true);
+            $(form).find("input[type='button']").attr('disabled', true);
+            form.submit();
+        },
+        invalidHandler: function (event, validator) {
+            $('span[data-valmsg-for=CaptchaInputText]').hide();       
+        }
+    });
+</script>
+

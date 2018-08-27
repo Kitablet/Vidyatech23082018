@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+             xmlns:local1="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             xmlns:button="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             xmlns:extScroll="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             x:Class="Kitablet.BookRead"
+             x:Title="KITABLET">
+  <ContentPage.Content>
+    <extScroll:ExtendedScrollView Orientation="Both"><!--Remove For Android & IOS-->
+      <Grid x:Name="BookReadLayout" ColumnSpacing="0" RowSpacing="0" BackgroundColor="{DynamicResource Secondary1Color}">
+        <!--Remove For Android & IOS-->
+        <Grid.WidthRequest>
+          <local:OnPlatform2 x:TypeArguments="x:Double" Windows="1000" Win8X="1000"/>
+        </Grid.WidthRequest>
+        <Grid.HeightRequest>
+          <local:OnPlatform2 x:TypeArguments="x:Double" Windows="650" Win8X="650"/>
+        </Grid.HeightRequest>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="80" />
+          <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.Row="0" Grid.Column="0" Padding="30,0,20,0" ColumnSpacing="0" RowSpacing="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+
+          <StackLayout Spacing="15" HorizontalOptions="Start" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+            <Image Source="{DynamicResource AppTextImage}" HeightRequest="50" VerticalOptions="Center"/>
+          </StackLayout>
+          <StackLayout Spacing="15" HorizontalOptions="End" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+            <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="0,10,0,0" Image="{DynamicResource CloseImage}" x:Name="BackBtn" BackgroundColor="Transparent" Clicked="BackBtn_Clicked">
+              <button:MyButton.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+              </button:MyButton.WidthRequest>
+              <button:MyButton.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+              </button:MyButton.HeightRequest>
+              <button:MyButton.BorderColor>
+                <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+              </button:MyButton.BorderColor>
+            </button:MyButton>
+          </StackLayout>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0" Padding="30,0,30,20" ColumnSpacing="10" RowSpacing="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+          </Grid.ColumnDefinitions>
+          <RelativeLayout Grid.Row="0" Grid.Column="0">
+            <StackLayout Spacing="20" Orientation="Horizontal" RelativeLayout.XConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0}"
+              RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = 1,Constant = -67}">
+              <AbsoluteLayout WidthRequest="52" HeightRequest="52" Opacity="0.5">
+                  <Image BackgroundColor="Transparent" x:Name="ratingBigBtn"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"/>
+                  <Label x:Name="bigRatingText" TextColor="#FFFFFF" FontSize="14" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center"
+                        AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All"></Label>
+              </AbsoluteLayout>
+              <Image WidthRequest="52" HeightRequest="52" Opacity="0.5" BackgroundColor="Transparent" x:Name="activityBigBtn"/>
+            </StackLayout>
+            <Grid x:Name="bookInfoGrid" VerticalOptions="Fill" IsVisible="true" RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 1}" RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = 0, Constant = 45}"  RelativeLayout.HeightConstraint="{ConstraintExpression
+            Type=RelativeToParent,Property=Height,Factor=1,Constant=-130}">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+                <StackLayout Spacing="20" Orientation="Horizontal" HorizontalOptions="Start">
+                  <StackLayout x:Name="AverageRating" Orientation="Horizontal" Spacing="7" VerticalOptions="Center">
+                    <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                    <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                    <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                    <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                    <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                  </StackLayout>
+                  <StackLayout x:Name="ratingLabel" Orientation="Vertical" Spacing="0" VerticalOptions="Center" Padding="10,10,10,10" BackgroundColor="Transparent">
+                    <Label Text="RATING BREAK-UP" FontSize="14" FontAttributes="Bold" Style="{DynamicResource LabelNormalBold}"></Label>
+                      <BoxView BackgroundColor="{DynamicResource TextNormalColor}" HeightRequest="1" Margin="0,-2,0,0" />                      
+                  </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" x:Name="bookDetailSection" Margin="0,10,0,0">
+                  <local1:CustomBookTitle Text="Book Name" x:Name="bookTitle" FontSize="30" FontAttributes="Bold" Style="{DynamicResource LabelNormalBold}" Margin="0,5,0,10"/>
+                  <local1:CustomBookTitle Text="Book Name" x:Name="bookTitle_Android" FontSize="30" FontAttributes="None" Style="{DynamicResource LabelNormalRegular}" Margin="0,5,0,10"/>
+                  <BoxView x:Name="UpperBox" IsVisible="False" Color="{DynamicResource PrimaryColor}" HeightRequest="1" Margin="0,10,0,0"></BoxView>
+                  <Grid RowSpacing="0" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="AUTHOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="author_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </Grid>
+                  <Grid RowSpacing="0" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="ILLUSTRATOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="illustrator_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </Grid>
+                  <Grid RowSpacing="0" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="TRANSLATOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="translator_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </Grid>
+                  <Grid RowSpacing="0" ColumnSpacing="5">
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="Auto"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Row="0" Grid.Column="0" Text="PUBLISHER:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label Grid.Row="0" Grid.Column="1" x:Name="publisher_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </Grid>
+
+                  <!--<StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label Text="AUTHOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label x:Name="author_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label Text="ILLUSTRATOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label x:Name="illustrator_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label Text="TRANSLATOR:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label x:Name="translator_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" Spacing="5">
+                    <Label Text="PUBLISHER:" TextColor="{DynamicResource TextNormalColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormalBold}"/>
+                    <Label x:Name="publisher_Name" TextColor="{DynamicResource PrimaryColor}" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"/>
+                  </StackLayout>-->
+                  <BoxView x:Name="LowerBox" IsVisible="False" Color="{DynamicResource PrimaryColor}" HeightRequest="1" Margin="0,0,0,10"></BoxView>
+                </StackLayout>
+               
+              </StackLayout>
+              <extScroll:ExtendedScrollView Orientation="Vertical" Margin="0,5,0,0" VerticalOptions="Fill"  Grid.Row="1" Grid.Column="0" Padding="10"> <!--Use ScrollView For Android & IOS-->
+                <local1:CustomLabel LineSpacing="25" Text="Description" x:Name="book_description" FontAttributes="None" FontSize="16" Style="{DynamicResource LabelNormalRegular}"/>
+              </extScroll:ExtendedScrollView>
+            </Grid>
+            <StackLayout Orientation="Vertical" Spacing="0"
+              RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0, Constant = 0}" 
+              RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = 0, Constant = 80}">
+              <Image x:Name="PopArrowImg" IsVisible="False" WidthRequest="18" HeightRequest="12" Source="{DynamicResource TopArrowWhiteFilled}" Margin="208,0,0,0" HorizontalOptions="Start"></Image>
+              <StackLayout Orientation="Vertical" Spacing="0" x:Name="PopWindow" IsVisible="false" AbsoluteLayout.LayoutBounds="0.2, 0.2, -1, -1" AbsoluteLayout.LayoutFlags="PositionProportional">
+                <Grid RowSpacing="0" ColumnSpacing="0" Margin="0">
+                  <Grid.RowDefinitions>
+                    <RowDefinition Height="16" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="15" />
+                  </Grid.RowDefinitions>
+                  <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="16" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="16" />
+                  </Grid.ColumnDefinitions>
+                  <Image Source="{DynamicResource TopLeftWhiteCornerFilled}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                  <Image Source="{DynamicResource TopRightWhiteCornerFilled}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit">
+                    <Image.Margin>
+                      <local:OnPlatform2 x:TypeArguments="Thickness" Win8X="-1,0,0,0"/>
+                    </Image.Margin>
+                  </Image>
+                  <Image Source="{DynamicResource BottomRightWhiteCornerFilled}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit">
+                    <Image.Margin>
+                      <local:OnPlatform2 x:TypeArguments="Thickness" Windows="0,-1,0,0" Win8X="-1,0,0,0" iOS="-1,0,0,0"/>
+                    </Image.Margin>
+                  </Image>
+                  <Image Source="{DynamicResource BottomLeftWhiteCornerFilled}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit" Margin="0,-1,0,0"></Image>
+                  <BoxView Color="#FFFFFF" Grid.Row="0" Grid.Column="1" HeightRequest="16" VerticalOptions="Start"></BoxView>
+                  <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="0" WidthRequest="16" HorizontalOptions="Start"></BoxView>
+                  <BoxView Color="#FFFFFF" Grid.Row="1" Grid.Column="2" HorizontalOptions="Start">
+                    <BoxView.WidthRequest>
+                      <local:OnPlatform2 x:TypeArguments="x:Double" Android="16" Windows="16" Win8X="15" iOS="16" />
+                    </BoxView.WidthRequest>
+                  </BoxView>
+                  <BoxView Color="#FFFFFF" Grid.Row="2" Grid.Column="1" HeightRequest="16" VerticalOptions="Start"></BoxView>
+
+                  <Grid x:Name="layout" Padding="6" Grid.Row="1" Grid.Column="1" RowSpacing="0" ColumnSpacing="0" BackgroundColor="#FFFFFF">
+                    <Grid.Margin>
+                      <local:OnPlatform2 x:TypeArguments="Thickness" Win8X="0,0,-1,0"/>
+                    </Grid.Margin>
+                    <Grid.RowDefinitions>
+                      <RowDefinition Height="202" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                      <ColumnDefinition Width="138"/>
+                      <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid RowSpacing="15" ColumnSpacing="0" Grid.Row="0" Grid.Column="0">
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                      </Grid.RowDefinitions>
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                      </Grid.ColumnDefinitions>
+                      <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Spacing="7">
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                      </StackLayout>
+                      <StackLayout Orientation="Horizontal" Grid.Row="1" Grid.Column="0" Spacing="7">
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                      </StackLayout>
+                      <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Spacing="7">
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                      </StackLayout>
+                      <StackLayout Orientation="Horizontal" Grid.Row="3" Grid.Column="0" Spacing="7">
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                      </StackLayout>
+                      <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.Column="0" Spacing="7">
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayCompletedImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                        <Image WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                      </StackLayout>
+                    </Grid>
+
+                    <Grid Padding="20,3,0,0" x:Name="RatingCountDisplayGrid" RowSpacing="23" ColumnSpacing="10" Grid.Row="0" Grid.Column="1">
+                      <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                      </Grid.RowDefinitions>
+                      <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                      </Grid.ColumnDefinitions>
+
+                      <local1:CustomProgressbar Grid.Row="0" Grid.Column="0" HeightRequest="20" x:Name="fiveStarRating" />
+                      <Label x:Name="fiveStarRatingCount" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"></Label>
+                      <local1:CustomProgressbar Grid.Row="1" Grid.Column="0" HeightRequest="20" x:Name="fourStarRating"/>
+                      <Label x:Name="fourStarRatingCount" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"></Label>
+                      <local1:CustomProgressbar Grid.Row="2" Grid.Column="0"  HeightRequest="20" x:Name="threeStarRating"/>
+                      <Label x:Name="threeStarRatingCount" Grid.Row="2" Grid.Column="1" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"></Label>
+                      <local1:CustomProgressbar Grid.Row="3" Grid.Column="0" HeightRequest="20" x:Name="twoStarRating"/>
+                      <Label x:Name="twoStarRatingCount" Grid.Row="3" Grid.Column="1" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"></Label>
+                      <local1:CustomProgressbar Grid.Row="4" Grid.Column="0" HeightRequest="20" x:Name="oneStarRating"/>
+                      <Label x:Name="oneStarRatingCount" Grid.Row="4" Grid.Column="1" FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal3}"></Label>
+                    </Grid>
+
+                  </Grid>
+
+                </Grid>
+              </StackLayout>
+            </StackLayout>
+          </RelativeLayout>
+          <Grid Grid.Row="0" Grid.Column="1" ColumnSpacing="0" RowSpacing="15" VerticalOptions="Center" HorizontalOptions="Start" Padding="0,10,0,0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="35" />
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid RowSpacing="0" ColumnSpacing="0" Grid.Row="0" Grid.Column="0" Margin="30,0,0,0" StyleId="0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="Auto" />
+                  <ColumnDefinition Width="*" />                  
+                </Grid.ColumnDefinitions>              
+              <Grid x:Name="readLaterBtn" RowSpacing="0" ColumnSpacing="0" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start" StyleId="0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Image Grid.Row="0" Grid.Column="0" Source="{DynamicResource RoundedTransparentButton}" WidthRequest="136" HeightRequest="32"  HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Label Grid.Row="0" Grid.Column="0" Style="{DynamicResource LabelNormal3}" Text="READ LATER" FontAttributes="Bold" FontSize="14"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+              </Grid>
+              <StackLayout x:Name="releaseBook" IsVisible="False" Grid.Row="0" Grid.Column="1" Orientation="Vertical" Spacing="0" HorizontalOptions="End" VerticalOptions="Center">
+                <Label Text="RELEASE THIS BOOK" FontSize="14" FontAttributes="Bold" Style="{DynamicResource LabelNormalBold}"></Label>
+                <BoxView BackgroundColor="{DynamicResource TextNormalColor}" HeightRequest="1" Margin="0,-2,0,0" />
+              </StackLayout>
+            </Grid>
+
+            <Grid x:Name="BookDetailArea" HorizontalOptions="Start" Grid.Row="1" Grid.Column="0" RowSpacing="0" ColumnSpacing="0">
+              <Grid x:Name="bookSubsectionImage" IsVisible="False" Grid.Row="0" Grid.Column="0" RowSpacing="0" ColumnSpacing="0" WidthRequest="30" HorizontalOptions="Start">
+                <Image Grid.Row="0" Grid.Column="0" x:Name="SubsectionImage" Source="{DynamicResource BookSubSectionLeft}" VerticalOptions="Center"/>
+              </Grid>
+              <Grid Margin="-42,0,0,0" x:Name="bookSubsectionText" IsVisible="False" Grid.Row="0" Grid.Column="0" RowSpacing="0" ColumnSpacing="0" WidthRequest="111" HorizontalOptions="Start">
+                <Label Grid.Row="0" Grid.Column="0" x:Name="SubsectionText"  FontAttributes="Bold" FontSize="14" Style="{DynamicResource LabelNormal1Bold}" VerticalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+              </Grid>
+              <BoxView x:Name="bookborder" IsVisible="False" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" BackgroundColor="#FC654C" WidthRequest="6" Margin="30,0,0,0" />
+
+              <Grid x:Name="NoBookThumbnail" BackgroundColor="#999999" HorizontalOptions="Start" WidthRequest="445" HeightRequest="585" Grid.Row="0" Grid.Column="0" Margin="36,0,0,0">
+                <Image HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Source="{DynamicResource BookThumbnailImage}" Aspect="AspectFit"></Image>
+                <Image x:Name="DownloadedImage" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"></Label>
+              </Grid> 
+              <Image x:Name="isOfflineBook" IsVisible="False" VerticalOptions="Start" HorizontalOptions="End" Grid.Row="0" Grid.Column="0" Source="{DynamicResource CurledCornerGig}"></Image>
+              <!--<local:ActivityIndicatorLoader x:Name="ProgressLoader" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill" Margin="36,0,0,0" IsVisible="False"></local:ActivityIndicatorLoader>-->
+            </Grid>
+
+            <!--<StackLayout Spacing="15" HorizontalOptions="Start" Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Margin="30,0,0,0">
+              <Image x:Name="ReadAloudSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ReadAloudGrayImage}"></Image>
+              <Image x:Name="AnimationSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource AnimationGrayImage}"></Image>
+              <Image x:Name="ActivitySmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ActivityGrayImage}"></Image>
+              <Grid RowSpacing="0" ColumnSpacing="0">
+                <Image x:Name="RatingSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                <Label x:Name="AvgRatingofBook" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="12"></Label>
+              </Grid>
+            </StackLayout>-->
+            <!--<StackLayout Spacing="320" HorizontalOptions="Start" Grid.Row="2" Grid.Column="0" Orientation="Horizontal" Margin="30,0,0,0">
+              <StackLayout Spacing="15" HorizontalOptions="Start" Orientation="Horizontal">
+                <Image x:Name="ReadAloudSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ReadAloudGrayImage}" HorizontalOptions="Start"></Image>
+                <Image x:Name="AnimationSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource AnimationGrayImage}" HorizontalOptions="Start"></Image>
+                <Image x:Name="ActivitySmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ActivityGrayImage}" HorizontalOptions="Start"></Image>
+              </StackLayout>
+              <StackLayout Spacing="0" HorizontalOptions="End" Orientation="Horizontal">
+                <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="End">
+                  <Image x:Name="RatingSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                  <Label x:Name="AvgRatingofBook" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="12"></Label>
+                </Grid>
+              </StackLayout>
+            </StackLayout>-->             
+            <Grid RowSpacing="0" ColumnSpacing="0" Grid.Row="2" Grid.Column="0" Margin="30,0,0,0">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+              </Grid.ColumnDefinitions>
+              <StackLayout Spacing="15" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                <Image x:Name="ReadAloudSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ReadAloudGrayImage}" HorizontalOptions="Start"></Image>
+                <Image x:Name="AnimationSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource AnimationGrayImage}" HorizontalOptions="Start"></Image>
+                <Image x:Name="ActivitySmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource ActivityGrayImage}" HorizontalOptions="Start"></Image>
+              </StackLayout>
+              <StackLayout Spacing="0" HorizontalOptions="End" Grid.Row="0" Grid.Column="1" Orientation="Horizontal" Margin="0,0,10,0">
+                <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="End">
+                  <Image x:Name="RatingSmall" WidthRequest="22" HeightRequest="24" Source="{DynamicResource RatingGrayImage}"></Image>
+                  <Label x:Name="AvgRatingofBook" TextColor="#FFFFFF" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="12"></Label>
+                </Grid>
+              </StackLayout>
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <!--<local:ActivityIndicatorLoader x:Name="ProgressLoader" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" IsVisible="False"></local:ActivityIndicatorLoader>-->
+        <local:Popup x:Name="BookPagePopUp" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" IsVisible="False"></local:Popup>
+
+        <local:PageLoader Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" x:Name="Page_Loader" IsVisible="False"></local:PageLoader>
+        
+      </Grid>
+    </extScroll:ExtendedScrollView>
+  </ContentPage.Content>
+</ContentPage>

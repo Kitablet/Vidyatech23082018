@@ -1,0 +1,247 @@
+﻿<html lang="en">
+<head>
+    <title>Activity</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="css/jquery-ui.css">
+	 <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/data.js"></script>
+    <link href="css/BookActivity.css" rel="stylesheet" />
+   <style>
+       * {
+       border:0px;
+       }
+   </style>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="result" style="background: url(images/message-badge.png);display:none;">
+            <p>WELL DONE</p>
+        </div>
+        <div class="header">
+            <div class="headerIcon">
+                <img src="images/logo.png">
+            </div>
+            <div class="headerCloseIcon" style="display:none">
+                <img id="close" src="images/close-button-white.png">
+            </div>
+        </div>
+      
+        
+        <div class="col-left" id="left-part-desc">
+            <div style="width:100%; float:left;margin-bottom:20px;">
+                <img id="book">
+                <div class="ThumbNailIcons">
+                    <div class="activity-attr">
+                        <img id="readaloud" src="images/Read-aloud-white.png">
+                    </div>
+                    <div class="activity-attr">
+                        <img id="animation" src="images/Animation-white.png">
+                    </div>
+                    <div class="activity-attr">
+                        <img id="activity">
+                    </div>
+                    <div class="activity-attr" style="position:relative">
+                        <img id="rating" style="margin-right:6px;">
+                        <span class="rating"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="DoActivity">
+                Yay! Let's do an activity!
+            </div>
+            <div id="templatedescription" class="description-style">
+                Loading...
+            </div>
+        </div>
+
+            <!-- multiple choice question -->
+            <div class="questionblock mcq-any col-right">
+                <div class="questext">
+
+                </div>
+                <div class="optiondata optiondatamcq">
+
+                </div>
+                <div class="mcqresult-any display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+            </div>
+
+            <!-- multiple choice question -->
+            <div class="questionblock mcq col-right">
+                <div class="questext">
+
+                </div>
+                <div class="optiondata optiondatamcq">
+
+                </div>
+                <div class="mcqresult display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+            </div>
+
+            <!-- boink  -->
+            <div class="questionblock boink col-right">
+                <div class="col1 boinkcol1">
+                    <div id="draggable">
+                        <p></p>
+                        <img />
+                    </div>
+                </div>
+                <div class="col2 boinkcol2">
+                    <div class="optiondata boinkoptiondata">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- character map  -->
+            <div class="questionblock charactermap col-right">
+                <div class="container">
+                    <div class="col">
+                        <div class="character">
+
+                        </div>
+                        <div class="characterresult display-center" style="background: url(images/message-badge.png)">
+
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="questext question-style">
+
+                        </div>
+                        <div class="optiondata">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Best suite -->
+            <div class="questionblock bestsuite col-right">
+                <div class="questext">
+
+                </div>
+                <div id="draggabletextparent">
+                    <div id="draggabletext">
+
+                    </div>
+                </div>
+                <div class="optiondata">
+                    <div class="options">
+
+                    </div>
+                </div>
+                <div class="bestsuiteresult display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+            </div>
+
+            <!--Best suite Image -->
+            <div class="questionblock bestsuite-image col-right">
+                <div class="questext">
+
+                </div>
+                <div id="draggableimageparent">
+                    <div id="draggableimage">
+                    </div>
+                </div>
+                <div class="optiondata">
+                    <div class="options">
+
+                    </div>
+                </div>
+                <div class="bestsuiteresult display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+            </div>
+
+            <!--matching -->
+            <div class="questionblock matching col-right">
+                <div class="questext">
+                </div>
+
+                <div class="optiondata">
+                    <div class="col-a">
+                        <div id="colatext"></div>
+                        <div class="cola-option">aaaa</div>
+                        <div class="cola-option">bbbbb</div>
+                    </div>
+                    <div class="col-b">
+                        <div id="colbtext"></div>
+                        <div class="colb-option">cccc</div>
+                        <div class="colb-option">dddd</div>
+                    </div>
+                </div>
+                <div class="matchingresult display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+
+            </div>
+
+            <!--picture description -->
+            <div class="questionblock picturedescription col-right">
+                <div class="questext">
+                </div>
+
+                <div class="optiondata">
+
+                </div>
+                <div class="picturedescritiongresult display-center" style="background: url(images/message-badge.png)">
+
+                </div>
+            </div>
+
+            <!-- text question -->
+            <div class="questionblock textquestion col-right">
+                <div class="questext">
+                    Use the span tag with display:inline-block, You can then use CSS and manipulate it like a div in lots of ways but if you don't include a width or height.
+                </div>
+                <div class="optiondata">
+                    <textarea></textarea>
+                </div>
+                <div class="textquestionresult welldone" style="background: url(images/message-badge.png)">
+                    <p>WELL DONE</p>
+                </div>
+            </div>
+
+            <!--arrange-->
+        <div class="questionblock arrange col-right">
+            <div class="questext">
+            </div>
+
+            <div class="optiondata">
+                <div class="col-b">
+                    <div id="colbtext"></div>
+
+                </div>
+            </div>
+            <div class="arrangeresult display-center" style="background: url(images/message-badge.png)">
+            </div>
+        </div>
+
+        <div id="actionbuttoncontainer" style="float: left; width: 100%; padding-bottom: 2px;">
+            <div id="divstartskip" class="col-left" style="margin-bottom:13px;display:none">
+                <button type="submit" id="btnstart">Start</button>
+                <button type="submit" id="btnskip">Skip</button>
+            </div>
+            <div class="button-container" style="margin-bottom:13px">
+                <a id="showcorrectmatching" style="display:none">SHOW ME CORRECT ANSWERS</a>
+                <button type="submit" value="Back" id="btnback">Back</button>
+                <button type="submit" value="Next" id="btnsubmit">Done</button>
+                <button type="submit" id="btnend" onclick="return Endactivity();">FINISH</button>
+            </div>
+        </div>
+
+        <div class="popup_background"></div>
+        <div id="popup">
+          <div id="popupnote"></div>
+        <div style="margin-top:30px;text-align:center"><input id="btnok" type="button" value="OK" class="btnok"/></div>
+        </div>
+        </div>
+</body>
+</html>

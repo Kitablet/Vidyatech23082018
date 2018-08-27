@@ -1,0 +1,136 @@
+﻿
+@{
+    ViewBag.Title = "Report7b";
+}
+
+<style>
+    .nav-tabs > li {
+        width: 33.25% !important;
+    }
+</style>
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-10">
+        <h4 class="page-title">
+            Report 7 : Kitablet usage across platforms and environments for Mar 2016
+            <a id="exportbutton" class="" onclick="javascript:void(0);">
+                <img src="" class="exporttoexcel" />
+            </a>
+        </h4>
+    </div>
+</div>
+<hr />
+
+<span class="accordion_plus" id="modifyfilter_link"> Modify filters and regenerate report</span>
+
+<div id="product-edit" class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+
+        @Html.RenderBootstrapTabHeader("tab-overall", @TabOverallHeader(), true)
+
+
+        @Html.RenderBootstrapTabHeader("tab-citywise", @TabCityWiseHeader())
+
+
+        @Html.RenderBootstrapTabHeader("tab-schoolwise", @TabSchoolWiseHeader())
+
+    </ul>
+    <div class="tab-content">
+
+        @Html.RenderBootstrapTabContent("tab-overall", @TabOverall(), true)
+
+        @Html.RenderBootstrapTabContent("tab-citywise", @TabCityWise())
+
+        @Html.RenderBootstrapTabContent("tab-schoolwise", @TabSchoolWise())
+
+    </div>
+</div>
+
+@helper TabOverallHeader()
+{
+    <div>
+        <span>Overall</span>
+    </div>
+}
+
+@helper TabCityWiseHeader()
+{
+    <div>
+        <span>City wise</span>
+    </div>
+}
+
+@helper TabSchoolWiseHeader()
+{
+    <div>
+        <span>School wise</span>
+
+    </div>
+}
+
+@helper TabOverall()
+{
+    <div id="OverallContainer">
+        @Html.Partial("_partialReport7b")
+    </div>
+}
+
+@helper TabCityWise()
+{
+    <div id="CitywiseContainer">
+        <div class="row">
+            <div class="col-xs-2"><p class="report_subtitle">Select a city:</p></div>
+            <div class="col-xs-2">
+                @{
+                    List<SelectListItem> listLocation = new List<SelectListItem>();
+                    listLocation.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                    listLocation.Add(new SelectListItem { Text = "Male", Value = "Male" });
+                }
+                @Html.DropDownList("all-cities", listLocation, "Select a City")
+            </div>
+        </div>
+
+
+        @Html.Partial("_partialReport7b")
+    </div>
+}
+
+@helper TabSchoolWise()
+{
+    <div id="SchoolwiseContainer">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="col-xs-2"><p class="report_subtitle">Select a city:</p></div>
+                <div class="col-xs-2">
+                    @{
+                        List<SelectListItem> listLocation = new List<SelectListItem>();
+                        listLocation.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                        listLocation.Add(new SelectListItem { Text = "Male", Value = "Male" });
+                    }
+                    @Html.DropDownList("all-cities", listLocation, "Select a City")
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-2"><p class="report_subtitle">Select a School:</p></div>
+                <div class="col-xs-2">
+                    @{
+                        List<SelectListItem> listSchool = new List<SelectListItem>();
+                        listSchool.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                        listSchool.Add(new SelectListItem { Text = "Male", Value = "Male" });
+                    }
+                    @Html.DropDownList("all-schools", listSchool, "Select a School")
+                </div>
+            </div>
+        </div>
+
+
+        @Html.Partial("_partialReport7b")
+    </div>
+}

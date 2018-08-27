@@ -1,0 +1,58 @@
+﻿@using FISE_Cloud.Models;
+@model Report6
+
+@{ var i = 0;
+    var j = 0;
+    var k = 0;
+}
+<div class="row" id="accordion_group">
+
+    <div class="panel-group" id="filter-result">
+
+        @foreach (var item in Model._ReportSubsections)
+        {
+            i++;
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#@item.Name.GetNormalized()@i" data-parent="#filter-result" class="level-subsection" aria-expanded="@(i==1 ? "true" : "false")">@item.Name</a>
+                </div>
+
+                <div class="panel-collapse @(i == 1 ? "collapse in" : "collapse")" id="@item.Name.GetNormalized()@i" aria-expanded="@(i==1 ? "true" : "false")">
+
+                    <div class="panel-group" id="@item.Name.GetNormalized()@i-Subsection">
+                        @foreach (var item1 in item._ReportLanguages)
+                        {
+                            k++;
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#@item.Name.GetNormalized()@i-Subsection" href="#@item1.Name.GetNormalized()@i" class="level-language" aria-expanded="@(i==1 && k==1 ? "true" : "false")">@item1.Name</a>
+                                </div>
+                                <div id="@item1.Name.GetNormalized()@i" class="panel-collapse @(i == 1 && k==1? "collapse in" : "collapse")" aria-expanded="@(i==1 && k==1 ? "true" : "false")">
+                                    <div class="panel-group" id="@item1.Name.GetNormalized()@i-Languagegp">
+                                        @foreach (var item2 in item1.Books)
+                                        {
+                                            j++;
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#@item2.BookId@j" data-parent="#@item1.Name.GetNormalized()@i-Languagegp" data-toggle="collapse" class="level-booktitle" aria-expanded="@(i == 1 && j==1 && k==1 ? "true" : "false")">@item2.Title</a>
+                                                </div>
+                                                <div id="@item2.BookId@j" class="panel-collapse @(i == 1 && j==1 && k==1 ? "collapse in" : "collapse")" aria-expanded="@(i == 1 && j==1 && k==1 ? "true" : "false")">
+                                                    <hr class="blue-line" />
+                                                    @Html.Partial("~/Views/Books/_BookInfo.cshtml", item2)
+                                                    <hr class="blue-line" />
+                                                </div>
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @if (Model._ReportSubsections.Count.Equals(0))
+    { <div>@Resource.Reports_NoDataFound</div>}
+</div>

@@ -1,0 +1,1 @@
+MainPackage=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\x86\Debug\Kitablet.UWP_1.1.9.0_x86_Debug.appx

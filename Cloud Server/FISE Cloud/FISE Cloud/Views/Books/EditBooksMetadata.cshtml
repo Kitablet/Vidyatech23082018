@@ -1,0 +1,473 @@
+﻿@using FISE_Cloud.Models.School
+@model BooksListResult
+
+@{
+    ViewBag.Title = "Edit Books Metadata";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Books";
+}
+
+<style>
+span#edit_specials .input-validation-error {
+        border-color: #333333 !important;
+}
+
+span#edit_category .field-validation-error {
+    margin-top: 8px;
+        float: left;
+    margin-right: 50%;
+}
+</style>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="row title-section">
+    <div>
+    @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+    {
+        @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+    }
+        </div>
+    
+        <h4 class="page-title">@Model.Book.Title</h4>
+        </div>
+        <hr />
+        if (!ViewData.ModelState.IsValid)
+        {
+            <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+        }
+    <div class="form-horizontal">
+        @if (Model.Book.ViewMode.ToLower() == "portrait")
+        {
+            <div class="book_img">
+                @if (Model.Book.SubSection.Trim() == "Junior 1")
+                { <div class="book_subsection_colorband colorband_Subsection_Junior1"></div>}
+                else if (Model.Book.SubSection.Trim() == "Junior 2")
+                { <div class="book_subsection_colorband colorband_Subsection_Junior2"></div>}
+                else if (Model.Book.SubSection.Trim() == "Middle")
+                { <div class="book_subsection_colorband colorband_Subsection_Middle"></div>}
+                <img src="@Model.Book.Thumbnail1" alt="@Model.Book.Title" />
+                <div class="row rating_row">
+                    <div>
+
+                        @if (Model.Book.Rating == 0)
+                    {
+                            <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                        }
+                        else
+                        {
+                            <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(Model.Book.Rating, 1).ToString()</span>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="book_img_landscape">
+                @if (Model.Book.SubSection.Trim() == "Junior 1" || Model.Book.SubSection == "1")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior1"></div>}
+                else if (Model.Book.SubSection.Trim() == "Junior 2" || Model.Book.SubSection == "2")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior2"></div>}
+                else if (Model.Book.SubSection.Trim() == "Middle" || Model.Book.SubSection == "3")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Middle"></div>}
+                <img src="@Model.Book.Thumbnail1" alt="@Model.Book.Title" />
+                <div class="row rating_row">
+                    <div>
+
+                        @if (Model.Book.Rating == 0)
+                    {
+                            <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                        }
+                        else
+                        {
+                            <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(Model.Book.Rating, 1).ToString()</span>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        }
+        
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Title, "Title:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.Book.Title, new { htmlAttributes = new { @class = "" } })
+
+                @Html.ValidationMessageFor(model => model.Book.Title, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Author, "Author:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.Book.Author, new { htmlAttributes = new { @class = "" } })
+                @Html.ValidationMessageFor(model => model.Book.Author, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Illustrator, "Illustrator (Optional):", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.Book.Illustrator, new { htmlAttributes = new { @class = "" } })
+                @Html.ValidationMessageFor(model => model.Book.Illustrator)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Translator, "Translator (Optional):", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.Book.Translator, new { htmlAttributes = new { @class = "" } })
+                @Html.ValidationMessageFor(model => model.Book.Translator)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Publisher, "Publisher:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.Book.Publisher, new { htmlAttributes = new { @class = "" } })
+                @Html.ValidationMessageFor(model => model.Book.Publisher)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Language, "Language:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2" id="edit_language">
+
+                @foreach (Language language in Model.Language)
+                {
+                    <span id="language" class="col-xs-2">
+                    <span class=""><input type="checkbox" id="SelectedLanguageIds" name="SelectedLanguageIds" checked="@language.IsSelected" value="@language.Id" /></span>
+                    <span class="filter_checkboxlabel2">@Html.Label(language.Name.ToString(), new { @class = "" })  </span>
+                    </span>
+                }
+                <br /><br />
+                @Html.ValidationMessageFor(model => model.Book.Language)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Genre, "Categories:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2" id="edit_category">
+                @foreach (Genre genre in Model.Genre)
+                {
+                    <span id="genre" class="col-xs-2">
+                        <span class=""><input type="checkbox" id="SelectedGenreIds" name="SelectedGenreIds" checked="@genre.IsSelected" value="@genre.Id" /></span>
+                        <span class="filter_checkboxlabel2">@Html.Label(genre.Name.ToString())</span>
+                    </span>
+                }
+                <br /><br />
+                @Html.ValidationMessageFor(model => model.Book.Genre)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.SubSection, "Sub-section:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2" id="edit_subsection">
+                @foreach (SubSection subsection in Model.SubSection)
+                {
+                    <span id="sub-section" class="col-xs-2">
+                    <span class=""><input type="checkbox" id="SelectedSubSectionIds" name="SelectedSubSectionIds" checked="@subsection.IsSelected" value="@subsection.Id" /></span>
+                    <span class="filter_checkboxlabel2">@Html.Label(subsection.Name.ToString())</span>
+                    </span>
+                }
+                <br />
+                @Html.ValidationMessageFor(model => model.Book.SubSection)
+            </span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.Type, "Type:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2" id="edit_booktype">
+                @foreach (BookType booktype in Model.BookType)
+                {
+                    <span id="booktype" class="col-xs-2">
+                    <span class=""><input type="checkbox" id="SelectedTypeIds" name="SelectedTypeIds" checked="@booktype.IsSelected" value="@booktype.Id" /></span>
+                    <span class="filter_checkboxlabel2">@Html.Label(booktype.Name.ToString())</span>
+                    </span>
+                }
+                <br /><br />
+                @Html.ValidationMessageFor(model => model.Book.Type)
+            </span>
+        </div>
+        <div class="form-group">
+            
+            @Html.Label("Specials (Optional):", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2" id="edit_specials">
+                <span class="col-xs-2 books_checkboxes">
+                    <span class="">@Html.CheckBox("Book.HasActivity", Model.Book.HasActivity ? true : false)</span>
+                    <span class="filter_checkboxlabel2">@Html.Label(Resource.books_filter_checkbox_SelectActivities)</span>
+                </span>
+                <span class="col-xs-2 books_checkboxes">
+                    <span class="">@Html.CheckBox("Book.HasAnimation", Model.Book.HasAnimation ? true : false)</span>
+                    <span class="filter_checkboxlabel2">@Html.Label(Resource.books_filter_checkbox_SelectAnimations)</span>
+                </span>
+                <span class="col-xs-2 books_checkboxes">
+                    <span class="">@Html.CheckBox("Book.HasReadAloud", Model.Book.HasReadAloud ? true : false)</span>
+                    <span class="filter_checkboxlabel2">@Html.Label(Resource.books_filter_checkbox_SelectRead_aloud)</span>
+                </span>
+                    <br />
+
+                    @{
+                        if (!Model.Book.HasActivity && !Model.Book.HasAnimation && !Model.Book.HasReadAloud)
+                        {
+                            if (!Model.Book.HasActivity)
+                            {
+                                @Html.ValidationMessageFor(model => model.Book.HasActivity)
+                            }
+                            else if (!Model.Book.HasAnimation)
+                            {
+                                @Html.ValidationMessageFor(model => model.Book.HasAnimation)
+                            }
+                            else if (!Model.Book.HasReadAloud)
+                            {
+                                @Html.ValidationMessageFor(model => model.Book.HasReadAloud)
+                            }
+                        }
+                    }
+</span>
+        </div>
+
+        <div class="form-group">
+            
+            @Html.LabelFor(model => model.Book.ShortDescription, "Synopsis:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2">
+                @Html.TextAreaFor(model => model.Book.ShortDescription, new { @class = "", @id = "synopsis" })
+                @Html.ValidationMessageFor(model => model.Book.ShortDescription)
+            </span>
+        </div>
+
+        
+
+        
+            <div class="col-xs-offset-3 buttons">
+                <input type="button" value="@Resource.EditSchool_btnSave" class="btn btn-default btn-rect" onclick="return Validate();" />
+                <input type="button" value="CANCEL" class="btn btn-default btn-rect" onclick="window.location='@Url.RouteUrl("BookInfo", new { bookid = Model.Book.BookId})'" />
+
+                @Html.HiddenFor(model => model.Book.BookId)
+            </div>
+        
+    </div>
+                    }
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+</style>
+<script>
+
+    $(document).ready(function () {
+        $("input[name=SelectedSubSectionIds]").click(function () {
+            var checked = $(this).is(':checked');
+            $("input[name=SelectedSubSectionIds]").prop('checked', false);
+            $(this).prop('checked', true);
+        });
+
+        $('#SelectedGenreIds').click(function () {
+            $('#edit_category .field-validation-valid').hide();
+        });
+
+        $('#SelectedLanguageIds').click(function () {
+            $('#edit_language .field-validation-valid').hide();
+        });
+
+        $('#SelectedTypeIds').click(function () {
+            $('#edit_booktype .field-validation-valid').hide();
+        });
+
+        $('input').on('blur change focusout', function () {            
+            if ($.trim($('#Book_Title').val()) == '') {
+                $('#Book_Title').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_TitleReqError').show();
+            }
+            else if (!validateLength($.trim($('#Book_Title').val()))) {
+                $('#Book_Title').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_TitleLength').show();
+            }
+            else {
+                $('#Book_Title').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+            }
+            if ($.trim($('#Book_Author').val()) == '') {
+                $('#Book_Author').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_AuthorReqError').show();
+            }
+            else if (!validateLength($.trim($('#Book_Author').val()))) {
+                $('#Book_Author').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_AuthorLength').show();
+            }
+            else {
+                $('#Book_Author').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+            }
+
+            if (!validateLength($.trim($('#Book_Illustrator').val()))) {
+                $('#Book_Illustrator').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_IllustratorLength').show();
+            }
+            else {
+                $('#Book_Illustrator').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+            }
+
+            if (!validateLength($.trim($('#Book_Translator').val()))) {
+                $('#Book_Translator').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_TranslatorLength').show();
+            }
+            else {
+                $('#Book_Translator').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+            }
+            if ($.trim($('#Book_Publisher').val()) == '') {
+                $('#Book_Publisher').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_PublisherReqerror').show();
+            }
+            else if (!validateLength($.trim($('#Book_Publisher').val()))) {
+                $('#Book_Publisher').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_PublisherLength').show();
+            }
+            else {
+                $('#Book_Publisher').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+            }
+
+            if ($.trim($('#synopsis').val()) == '') {
+                $('#synopsis').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_ShortDescriptionReqerror').show();
+            }
+            else if ($.trim($('#synopsis').val()).length > 1000) {
+                $('#synopsis').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_ShorDesc').show();
+            }
+            else {
+                $('#synopsis').removeClass('input-validation-error').siblings('.field-validation-error ').text('');
+            }
+
+            if ($('#SelectedLanguageIds:checked').length == 0) {
+                $('#edit_language .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_LanguageReqerror').show();
+            }
+            else {
+                $('#edit_language .field-validation-valid').addClass('field-validation-error').text('');
+            }
+
+            if ($('#SelectedGenreIds:checked').length == 0) {
+                $('#edit_category .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_CategoryReqerror').show();
+            }
+            else {
+                $('#edit_category .field-validation-valid').addClass('field-validation-error').text('');
+            }
+
+            if ($('#SelectedTypeIds:checked').length == 0) {
+                $('#edit_booktype .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_BookTypeReqerror').show();
+            }
+            else {
+                $('#edit_booktype .field-validation-valid').addClass('field-validation-error').text('');
+            }
+
+        });
+
+    });
+
+    function validateLength(text) {
+        if (text.length > 255)
+            return false;
+        return true;
+
+    }
+
+    function Validate() {
+        var flag = true;
+        if ($('#Book_Title').val().replace(/\s/g, '') == '') {
+            $('#Book_Title').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_TitleReqError').show();
+            flag = false;
+        }
+        else if (!validateLength($('#Book_Title').val().replace(/\s/g, ''))) {
+            $('#Book_Title').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_TitleLength').show();
+            flag = false;
+        }
+        else {
+            $('#Book_Title').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+        }
+        if ($('#Book_Author').val().replace(/\s/g, '') == '') {
+            $('#Book_Author').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_AuthorReqError').show();
+            flag = false;
+        }
+        else if (!validateLength($('#Book_Author').val().replace(/\s/g, ''))) {
+            $('#Book_Author').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_AuthorLength').show();
+            flag = false;
+        }
+        else {
+            $('#Book_Author').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+        }
+
+        if (!validateLength($('#Book_Illustrator').val().replace(/\s/g, ''))) {
+            $('#Book_Illustrator').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_IllustratorLength').show();
+            flag = false;
+        }
+        else {
+            $('#Book_Illustrator').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+        }
+
+        if (!validateLength($('#Book_Translator').val().replace(/\s/g, ''))) {
+            $('#Book_Translator').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_TranslatorLength').show();
+            flag = false;
+        }
+        else {
+            $('#Book_Translator').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+        }
+
+        if ($('#Book_Publisher').val().replace(/\s/g, '') == '') {
+            $('#Book_Publisher').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_PublisherReqerror').show();
+            flag = false;
+        }
+        else if (!validateLength($('#Book_Publisher').val().replace(/\s/g, ''))) {
+            $('#Book_Publisher').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_PublisherLength').show();
+            flag = false;
+        }
+        else {
+            $('#Book_Publisher').removeClass('input-validation-error').siblings('.field-validation-error').text('');
+        }
+
+        if ($('#synopsis').val().replace(/\s/g, '') == '') {
+            $('#synopsis').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_ShortDescriptionReqerror').show();
+            flag = false;
+        }
+        else if ($('#synopsis').val().replace(/\s/g, '').length > 1000) {
+            $('#synopsis').addClass('input-validation-error').siblings('.field-validation-valid').addClass('field-validation-error').text('@Resource.Book_ShorDesc').show();
+            flag = false;
+        }
+        else {
+            $('#synopsis').removeClass('input-validation-error').siblings('.field-validation-error ').text('');
+        }
+
+        if ($('#SelectedLanguageIds:checked').length == 0) {
+            $('#edit_language .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_LanguageReqerror').show();
+            flag = false;
+        }
+        else {
+            $('#edit_language .field-validation-valid').addClass('field-validation-error').text('');
+        }
+
+        if ($('#SelectedGenreIds:checked').length == 0) {
+            $('#edit_category .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_CategoryReqerror').show();
+            flag = false;
+        }
+        else {
+            $('#edit_category .field-validation-valid').addClass('field-validation-error').text('');
+        }
+
+        if ($('#SelectedTypeIds:checked').length == 0) {
+            $('#edit_booktype .field-validation-valid').addClass('field-validation-error').text('@Resource.EditBook_BookTypeReqerror').show();
+            flag = false;
+        }
+        else {
+            $('#edit_booktype .field-validation-valid').addClass('field-validation-error').text('');
+        }
+
+        if (flag)
+            $('form').submit();
+    }
+</script>

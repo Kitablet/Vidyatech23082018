@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @*@Scripts.Render("~/bundles/jquery")*@
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <link href="~/Css/_LoginLayout.css" rel="stylesheet" />
+    <script src="~/Scripts/Login.js"></script>
+</head>
+<script>
+    function showCommonPopup(msg) {
+        OpenCommonPopup(msg);
+    }
+   
+    var IsSessionTimeOut1 = 2;
+    
+    function IsSessionTimeOut() {
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("IsSessionTimeOut", "User")',
+                type: 'Get',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+                    if (data == true)
+                        IsSessionTimeOut1 = 2;
+                    else
+                        IsSessionTimeOut1 = 1;
+                },
+                error: function (xhr, status, error) {
+
+                    if (xhr.readyState == 0)
+                        showCommonPopup('@System.Web.HttpUtility.HtmlDecode(Resource.NoInternet)');
+                    IsSessionTimeOut1 = 0;
+                }
+            });
+        }
+        else {
+            showCommonPopup('@System.Web.HttpUtility.HtmlDecode(Resource.NoInternet)');
+            IsSessionTimeOut1 = 0;
+        }
+        return IsSessionTimeOut1;
+    }
+    
+    function Logout() {
+        window.location.href = '@Url.RouteUrl("LoginPage")';
+    }
+</script>
+<body>
+    @* Modal Black Fallout *@
+    <div class="modal"> </div>
+    <div class="flex">
+        <div class="modal-content forgotId" style="display:none;">
+            <input type="text" class="inputField" id="forgotIdInput" placeholder="Enter Email ID" />
+            <label id="forgotIdLbl" class="errorLabel" style="color:#fff;"></label>
+            <div style="text-align: center;">
+                <input type="button" value="RECOVER" id="RecoverId" class="btn" />
+                <input type="button" value="CANCEL" id="RecoverIdCancel1" class="btn" />
+            </div>
+        </div>
+        <div class="modal-content forgotPassword" style="display:none;">
+            <input type="text" class="inputField" id="passwordIdInput" placeholder="Enter Username" />
+            <label id="passwordIdLbl" class="errorLabel" style="color:#fff;"></label>
+            <div style="text-align: center;">
+                <input type="button" value="RECOVER" id="Recoverpassword" class="btn" />
+                <input type="button" value="CANCEL" id="RecoverIdCancel2" class="btn" />
+            </div>
+        </div>
+        <div class="modal-content commonpopup" style="display:none;">
+            <p id="CommonPopupText"></p>
+            <div style="text-align: center;">
+                <input type="button" value="OK" id="OkayBtn" class="btn" />
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header id="MainHeader" class="header">
+            <img src="~/Content/Images/kitablet_logo_2.png" class="headerlogo" />
+            <a class="kitabletLabel" href="@Resource.KitabletLink" target="_blank">@Resource.KitabletIn</a>
+        </header>
+        <div id="pageContainer" class="header">
+            @RenderBody()
+            <div class="bottomLabel">
+                <div>@Resource.InitiativeText</div>
+                <div style="font-size:13px">@Resource.CopyRightText</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="~/Scripts/_LoginLayout.js" type="text/javascript"></script>
+

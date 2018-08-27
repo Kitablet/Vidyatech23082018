@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ExploreText" xml:space="preserve">
+    <value>JUST EXPLORING?</value>
+  </data>
+  <data name="ForgotLinkText" xml:space="preserve">
+    <value>Forgot login ID or Password</value>
+  </data>
+  <data name="LoginBtn" xml:space="preserve">
+    <value>ENTER</value>
+  </data>
+  <data name="LoginFailed" xml:space="preserve">
+    <value>Login Failed</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Enter Secret Code</value>
+  </data>
+  <data name="PasswordText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PopupLogin_NoAccountError" xml:space="preserve">
+    <value>Wrong user name or password - try again.</value>
+  </data>
+  <data name="PopUpLogin_unknownError" xml:space="preserve">
+    <value>Oops! I was unable to log you in - can you try again?</value>
+  </data>
+  <data name="UserIDText" xml:space="preserve">
+    <value>Admin ID</value>
+  </data>
+  <data name="UsernameRequired" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="ChangePasswordTitle" xml:space="preserve">
+    <value>CHANGE PASSWORD</value>
+  </data>
+  <data name="ChangePassword_submit" xml:space="preserve">
+    <value>ENTER</value>
+  </data>
+  <data name="Customer_ChangePassword_error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Customer_ChangePassword_oldPwdIncorrect" xml:space="preserve">
+    <value>Old password is incorrect.</value>
+  </data>
+  <data name="Customer_ChangePassword_success" xml:space="preserve">
+    <value>Password changed successfully.</value>
+  </data>
+  <data name="AccountHasDisabled" xml:space="preserve">
+    <value>This user account has been disabled.</value>
+  </data>
+  <data name="AccountNotActive" xml:space="preserve">
+    <value>Registration pending – complete that first</value>
+  </data>
+  <data name="NotAllowedToLogin" xml:space="preserve">
+    <value>Parent log-in don’t work on Reader App</value>
+  </data>
+  <data name="PopUpLogin_subscriptionExpired" xml:space="preserve">
+    <value>Subscription expired.</value>
+  </data>
+  <data name="AvatarCompanyLine" xml:space="preserve">
+    <value>Select a cool looking avatar to keep you company</value>
+  </data>
+  <data name="DoneButtonText" xml:space="preserve">
+    <value>DONE</value>
+  </data>
+  <data name="EnterButtonText" xml:space="preserve">
+    <value>ENTER</value>
+  </data>
+  <data name="ForgotId" xml:space="preserve">
+    <value>FORGOT LOGIN NAME</value>
+  </data>
+  <data name="ForgotPassword" xml:space="preserve">
+    <value>FORGOT SECRET CODE</value>
+  </data>
+  <data name="HiText" xml:space="preserve">
+    <value>Hi</value>
+  </data>
+  <data name="IdentifyYourself" xml:space="preserve">
+    <value>IDENTIFY YOURSELF!</value>
+  </data>
+  <data name="KitabletLink" xml:space="preserve">
+    <value>http://www.kitablet.in/</value>
+  </data>
+  <data name="CopyRightText" xml:space="preserve">
+    <value>Copyright © 2017 Parag</value>
+  </data>
+  <data name="InitiativeText" xml:space="preserve">
+    <value>A Parag Initiative</value>
+  </data>
+  <data name="KitabletIn" xml:space="preserve">
+    <value>www.kitablet.in</value>
+  </data>
+  <data name="HelpTabText" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="PrivacyPolicyText" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="CurrentNewPasswordSame" xml:space="preserve">
+    <value>Current &amp; New Password cannot be same.</value>
+  </data>
+  <data name="NewReNewDontMatch" xml:space="preserve">
+    <value>The two secret codes do not match - try again.</value>
+  </data>
+  <data name="PasswordChanged" xml:space="preserve">
+    <value>Password changed!</value>
+  </data>
+  <data name="PasswordNotChanged" xml:space="preserve">
+    <value>Unable to change password - please try again after sometime</value>
+  </data>
+  <data name="PasswordStrength" xml:space="preserve">
+    <value>Password must have atleast 6 characters.</value>
+  </data>
+  <data name="WrongCredentials" xml:space="preserve">
+    <value>Doesn’t seem like your secret code - try again</value>
+  </data>
+  <data name="Avatarchanged" xml:space="preserve">
+    <value>Avatar changed!</value>
+  </data>
+  <data name="AvatarNotChanged" xml:space="preserve">
+    <value>Unable to change avatar - please try again after some time</value>
+  </data>
+  <data name="SelectOneAvatar" xml:space="preserve">
+    <value>Please select an Avatar</value>
+  </data>
+  <data name="ThankYouForFeedback" xml:space="preserve">
+    <value>Thanks for your email - we will reply soon.</value>
+  </data>
+  <data name="HelpHeading1" xml:space="preserve">
+    <value>Directly</value>
+  </data>
+  <data name="HelpHeading2" xml:space="preserve">
+    <value>Through email</value>
+  </data>
+  <data name="HelpPara1" xml:space="preserve">
+    <value>Please write your question here and hit send. Our Support team will respond soon by sending an email to the email id given for this account.</value>
+  </data>
+  <data name="HelpPara2Part1" xml:space="preserve">
+    <value>If you would like to send your question over an email, you can write to us at</value>
+  </data>
+  <data name="HelpPara2Part2" xml:space="preserve">
+    <value>support@kitablet.in</value>
+  </data>
+  <data name="PolicyPart1" xml:space="preserve">
+    <value>The following privacy policy forms part of the binding terms and conditions of use between FISE and administrator(s) of the Kitablet Digital Library. FISE shall not use any personal data except for the limited purpose of (i) performing their obligations under this agreement; (ii) improving the services provided hereunder; (iii) updating administrators and user members of the latest offerings available in the digital library. FISE shall have complete ownership of and unfettered discretion to use any and all statistical and analytical data.</value>
+  </data>
+  <data name="PolicyPart2" xml:space="preserve">
+    <value>Shall mean and include persons who can form legally binding contracts and registered as administrators having single or multiple user member account subscriptions to the Digital Library and who shall be wholly responsible and liable for all use of all such user accounts. All references to Administrator(s) in these terms and conditions shall mean and include the respective user members registered through such administrator.</value>
+  </data>
+  <data name="ActivityReviewMessage" xml:space="preserve">
+    <value>Hey! You have already attempted this activity! Would you like to see how it went last time?</value>
+  </data>
+  <data name="UACBookReadText" xml:space="preserve">
+    <value>No books to show here - select a book to read!</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Cannot connect to the Server. Check your Internet Connection.</value>
+  </data>
+</root>

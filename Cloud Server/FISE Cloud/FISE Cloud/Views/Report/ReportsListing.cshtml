@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewBag.Title = "Reports";
+    ViewBag.HeaderPageTitle = "Reports";
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<div class="row title-section">
+   
+    <div class="col-xs-8">
+        @if (_Userdata != null && (_Userdata.Role.Equals("parent", StringComparison.InvariantCultureIgnoreCase)))
+        {<h4 class="page-title">@Resource.Reports_ListingPage_Title (1)</h4>}
+        else if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+        {<h4 class="page-title">@Resource.Reports_ListingPage_Title (5)</h4>}
+        else
+        { <h4 class="page-title">@Resource.Reports_ListingPage_Title (7)</h4>}
+    </div>
+</div>
+<hr />
+@if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+{
+    if (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+    { <a class="a_link_list-item" href="@Url.RouteUrl("Report1SchoolAdmin", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report1_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">@Resource.Reports_Schooladmin_Report1_DescriptiveText</span>
+        </div>
+    </div>
+</a>}
+    else { 
+<a class="a_link_list-item" href="@Url.RouteUrl("Report1", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report1_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">@Resource.Reports_Report1_DescriptiveText</span>
+        </div>
+    </div>
+</a>
+}
+<a class="a_link_list-item" href="@Url.RouteUrl("Report2", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report2_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">
+                @if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+                {
+                    @Resource.Reports_Schooladmin_Report2_DescriptiveText
+                }
+                else
+                {
+                    @Resource.Reports_Report2_DescriptiveText
+                }
+                
+            </span>
+        </div>
+    </div>
+</a>
+
+<a class="a_link_list-item" href="@Url.RouteUrl("Report3", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report3_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">
+               @if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+                {
+                @Resource.Reports_Schooladmin_Report3_DescriptiveText
+               }
+               else
+               {
+                @Resource.Reports_Report3_DescriptiveText
+               }
+            </span>
+        </div>
+    </div>
+</a>
+    if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase)))
+    {
+<a class="a_link_list-item" href="@Url.RouteUrl("Report4", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report4_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">              
+                @Resource.Reports_Report4_DescriptiveText
+            </span>
+        </div>
+    </div>
+</a>
+    }
+    <a class="a_link_list-item" href="@Url.RouteUrl("Report5", new { })">
+        <div class="row list-item">
+            @if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+            {  <div class="col-xs-12 list-item-name">@Resource.Reports_Schooladmin_Report4_Title</div> }
+            else
+            {  <div class="col-xs-12 list-item-name">@Resource.Reports_Report5_Title</div> }
+            <div class="col-xs-12">
+                <span class="list-item-reportcontent">
+                   @if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+                   {
+                    @Resource.Reports_Schooladmin_Report4_DescriptiveText
+                   }
+                   else
+                   {
+                    @Resource.Reports_Report5_DescriptiveText
+                   }
+                </span>
+            </div>
+        </div>
+    </a>
+
+<a class="a_link_list-item" href="@Url.RouteUrl("Report6", new { })">
+    <div class="row list-item">
+        @if (_Userdata != null && (_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase)))
+        {  <div class="col-xs-12 list-item-name">@Resource.Reports_Schooladmin_Report5_Title</div> }
+        else
+        {  <div class="col-xs-12 list-item-name">@Resource.Reports_Report6_Title</div> }
+        
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">
+                @Resource.Reports_Report6_DescriptiveText
+            </span>
+        </div>
+    </div>
+</a>
+    if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase)))
+    {
+<a class="a_link_list-item" href="@Url.RouteUrl("Report7", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Reports_Report7_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">
+                @Resource.Reports_Report7_DescriptiveText
+            </span>
+        </div>
+    </div>
+</a>
+    }
+}
+@if (_Userdata != null && ( _Userdata.Role.Equals("parent", StringComparison.InvariantCultureIgnoreCase)))
+{
+<a class="a_link_list-item" href="@Url.RouteUrl("Report8", new { })">
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@Resource.Parent_Reports_Report1_Title</div>
+        <div class="col-xs-12">
+            <span class="list-item-reportcontent">
+                @Resource.Reports_Report8_DescriptiveText
+            </span>
+        </div>
+    </div>
+</a>
+}

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+             x:Class="Kitablet.LoginPage"
+             Title="Login">
+  <ContentPage.Content>
+    <!--<ScrollView Orientation="Both">-->
+      <Grid x:Name="LoginPageLayout" RowSpacing="0" ColumnSpacing="0" BackgroundColor="#FFFFFF">
+        <Grid.RowDefinitions>
+          <RowDefinition>
+            <RowDefinition.Height>
+              <OnPlatform x:TypeArguments="GridLength" iOS="25*"  Android="25*" WinPhone="35*" />
+            </RowDefinition.Height>
+          </RowDefinition>
+          <RowDefinition>
+            <RowDefinition.Height>
+              <OnPlatform x:TypeArguments="GridLength" iOS="75*"  Android="75*" WinPhone="65*" />
+            </RowDefinition.Height>
+          </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <RelativeLayout Grid.Row="0" Grid.Column="0" BackgroundColor="{DynamicResource LoginBGColor}">
+          <Image Source="kitablet_logo_3.png"
+            RelativeLayout.XConstraint ="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=0,Constant=260}"
+            RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=-72}"></Image>
+          <Label Text="{DynamicResource AppLink}" FontSize="{DynamicResource SmallFontSize}" Style="{DynamicResource LabelNormalRegular}" x:Name="AppLink" TextColor="{DynamicResource TextNormalColor}"
+            RelativeLayout.XConstraint ="{ConstraintExpression Type=RelativeToParent,Property=Width,Factor=1,Constant=-150}"
+            RelativeLayout.YConstraint ="{ConstraintExpression Type=RelativeToParent,Property=Height,Factor=1,Constant=-25}"></Label>
+        </RelativeLayout>
+
+        <Grid x:Name="LoginContainer" Grid.Row="1" Grid.Column="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="230" />
+          </Grid.ColumnDefinitions>
+
+          <StackLayout Grid.Row="0" Grid.Column="1" MinimumWidthRequest="150" VerticalOptions="End" HorizontalOptions="End" Spacing="0" Orientation="Vertical">
+            <Label Text="{DynamicResource AppOrganization}" Style="{DynamicResource LabelNormalRegular}" FontSize="16" TextColor="{DynamicResource TextNormalColor}"></Label>
+            <Label Text="{DynamicResource AppCopyRight}" Style="{DynamicResource LabelNormalRegular}" FontSize="12" TextColor="{DynamicResource TextNormalColor}"></Label>
+          </StackLayout>
+
+          <StackLayout x:Name="EnvironmentContainer" Grid.Row="0" Grid.Column="0" VerticalOptions="Start" HorizontalOptions="Start" Orientation="Vertical" Spacing="0" Margin="230,0,0,0">
+            <Label Text="KITABLET WILL BE USED IN:" FontSize="14" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold"></Label>
+            <StackLayout x:Name="schoolEnv" Orientation="Vertical" Spacing="0" WidthRequest="160" Margin="0,25,0,0" HeightRequest="52" Opacity="0.5" StyleId="0">
+              <Grid RowSpacing="0" ColumnSpacing="20" Padding="20,0,0,0" HeightRequest="50">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource SchoolEnvImage}" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"></Image>
+                <Label Text="SCHOOL" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" Style="{DynamicResource LabelNormalBold}" FontSize="16" VerticalOptions="Center" HorizontalOptions="Start"></Label>
+                <Image Source="{DynamicResource ArrowRightGray}" Grid.Row="0" Grid.Column="2"  VerticalOptions="Center" HorizontalOptions="End" IsVisible="False"></Image>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></Label>
+              </Grid>
+              <BoxView BackgroundColor="{DynamicResource TransparentBorderColor}" HeightRequest="2"></BoxView>
+            </StackLayout>
+            <StackLayout x:Name="homeEnv" Orientation="Vertical" Spacing="0" WidthRequest="160" HeightRequest="52" Opacity="0.5" StyleId="1">
+              <Grid RowSpacing="0" ColumnSpacing="20" Padding="20,0,0,0" HeightRequest="50">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="auto" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="auto" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource HomeEnvImage}" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Start"></Image>
+                <Label Text="HOME" Grid.Row="0" Grid.Column="1" FontAttributes="Bold" Style="{DynamicResource LabelNormalBold}" FontSize="16"  VerticalOptions="Center" HorizontalOptions="Start"></Label>
+                <Image Source="{DynamicResource ArrowRightGray}" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="End" IsVisible="False"></Image>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"></Label>
+              </Grid>
+              <BoxView BackgroundColor="{DynamicResource TransparentBorderColor}" HeightRequest="2"></BoxView>
+            </StackLayout>
+            <StackLayout x:Name="changeAvatar" Spacing="0" Opacity="0" StyleId="2" IsVisible="False"></StackLayout>
+          </StackLayout>
+          <local:AdminLogin x:Name="AdminPage" Grid.Row="0" Grid.Column="0" IsVisible="False" Margin="230,0,0,0"></local:AdminLogin>
+          <local:UserLogin x:Name="UserPage" Grid.Row="0" Grid.Column="0" IsVisible="False" Margin="230,0,0,0"></local:UserLogin>
+        </Grid>
+        <local:ReleaseDevicePopup x:Name="ReleaseDevicePopup" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" IsVisible="False"></local:ReleaseDevicePopup>
+        <local:Popup x:Name="LoginPopUp" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" IsVisible="False"></local:Popup>
+        <local:ForgotPopup x:Name="ForgotPopUp" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" IsVisible="False"></local:ForgotPopup>          
+        <local:PageLoader Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" x:Name="Page_Loader" IsVisible="False"></local:PageLoader>
+
+      </Grid>
+    <!--</ScrollView>-->
+  </ContentPage.Content>
+
+</ContentPage>

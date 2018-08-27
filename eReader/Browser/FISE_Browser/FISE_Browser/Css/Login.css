@@ -1,0 +1,107 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#MainHeader {
+    height: 35%;
+    top: 0;
+    background-color: #FFCC33;
+    z-index: 1;
+}
+
+.header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    min-width: 1024px;
+}
+
+#pageContainer {
+    height: 65%;
+    bottom: 0;
+    background-color: #FFFFFF;
+}
+
+.headerlogo {
+    position: absolute;
+    bottom: -27px;
+    left: 300px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.kitabletLabel {
+    position: absolute;
+    right: 25px;
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+    font-family: 'Quicksand-Regular';
+    text-decoration: none;
+}
+
+.bottomLabel {
+    display: block;
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+    font-family: 'Quicksand-Regular';
+    font-size: 17px;
+}
+
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../Css/Fonts/Quicksand-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../Css/Fonts/Quicksand-Bold.otf') format('opentype');
+}
+
+.btn {
+    padding: 15px 20px;
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    border: 2px solid #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: Quicksand-Bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.partialOpacity {
+    opacity: 0.5;
+}
+
+.fullOpacity {
+    opacity: 1;
+}
+
+.remember-me {
+    font-family: Quicksand-Bold;
+    font-size: 14px;
+    padding-left: 25px;
+    height:18px;
+    background-repeat:no-repeat;
+    background-size:auto;
+    padding-bottom:5px;
+}
+
+.checked {
+    background-image: url('../Content/Images/checkbox_black_selected.png');
+}
+
+.unchecked {
+    background-image: url('../Content/Images/checkbox_black.png');
+}

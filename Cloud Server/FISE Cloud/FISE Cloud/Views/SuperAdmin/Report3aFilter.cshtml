@@ -1,0 +1,200 @@
+﻿
+@{
+    ViewBag.Title = "Report3aFilter";
+}
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-8">
+        <h4 class="page-title">Report 3 : Book wise usage of kitablet by students</h4>
+    </div>
+</div>
+<hr />
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Duration:</p></div>
+    <div class="col-xs-12 reportfilter_radio">
+        <div class="col-xs-2">
+            <input type="radio" id="select-duration" name="select-duration" value="a-month" />
+            <label class="report-radio-label">A Month</label>
+        </div>
+        <div class="col-xs-2">
+            @{
+                List<SelectListItem> listYears = new List<SelectListItem>();
+                listYears.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                listYears.Add(new SelectListItem { Text = "Male", Value = "Male" });
+            }
+            @Html.DropDownList("a-month-year", listYears, "Select Year")
+        </div>
+        <div class="col-xs-offset-1 col-xs-2">
+            @{
+                List<SelectListItem> listMonths = new List<SelectListItem>();
+                listMonths.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                listMonths.Add(new SelectListItem { Text = "Male", Value = "Male" });
+            }
+            @Html.DropDownList("a-month-month", listMonths, "Select Month")
+        </div>
+    </div>
+    <div class="col-xs-12 reportfilter_radio">
+        <div class="col-xs-2">
+            <input type="radio" id="select-duration" name="select-duration" value="a-quarter" />
+            <label class="report-radio-label">A Quarter</label>
+        </div>
+        <div class="col-xs-2">
+            @{
+                List<SelectListItem> listYearsQ = new List<SelectListItem>();
+                listYearsQ.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                listYearsQ.Add(new SelectListItem { Text = "Male", Value = "Male" });
+            }
+            @Html.DropDownList("a-month-year", listYearsQ, "Select Year")
+        </div>
+        <div class="col-xs-offset-1 col-xs-2">
+            @{
+                List<SelectListItem> listMonthsQ = new List<SelectListItem>();
+                listMonthsQ.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                listMonthsQ.Add(new SelectListItem { Text = "Male", Value = "Male" });
+            }
+            @Html.DropDownList("a-month-month", listMonthsQ, "Select Month")
+        </div>
+    </div>
+    <div class="col-xs-12 reportfilter_radio">
+        <div class="col-xs-2">
+            <input type="radio" id="select-duration" name="select-duration" value="a-year" />
+            <label class="report-radio-label">A Year</label>
+        </div>
+        <div class="col-xs-2">
+            @{
+                List<SelectListItem> listYearsY = new List<SelectListItem>();
+                listYearsY.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                listYearsY.Add(new SelectListItem { Text = "Male", Value = "Male" });
+            }
+            @Html.DropDownList("a-month-year", listYearsY, "Select Year")
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="col-xs-2">
+            <input type="radio" id="select-duration" name="select-duration" value="a-year-to-date" />
+            <label class="report-radio-label">A Year to date</label>
+        </div>
+    </div>
+</div>
+<div class="row reportfilter-row">
+    <div class="col-xs-2"><p class="report_subtitle">Select Location:</p></div>
+    <div class="col-xs-2">
+        @{
+            List<SelectListItem> listLocation = new List<SelectListItem>();
+            listLocation.Add(new SelectListItem { Text = "Female", Value = "Female" });
+            listLocation.Add(new SelectListItem { Text = "Male", Value = "Male" });
+        }
+        @Html.DropDownList("all-cities", listLocation, "All Cities")
+    </div>
+</div>
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Library Sub-sections:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Junior1" />
+            <span class="filter_checkboxlabel">Junior 1</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Junior2" />
+            <span class="filter_checkboxlabel">Junior 2</span>
+        </div>
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="Middle" />
+            <span class="filter_checkboxlabel">Middle</span>
+        </div>
+    </div>
+</div>
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Languages:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Hindi" />
+            <span class="filter_checkboxlabel">Hindi</span>
+        </div>
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="English" />
+            <span class="filter_checkboxlabel">English</span>
+        </div>
+    </div>
+</div>
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Books:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel">Lorem ipsum</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel">Conidmentum school</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel">Lorem ipsum</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel">Conidmentum school</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel">Lorem ipsum</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel">Conidmentum school</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel">Lorem ipsum</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel">Conidmentum school</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel">Lorem ipsum</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel">Conidmentum school</span>
+        </div>
+    </div>
+    <div class="col-xs-12 seeallschools">
+        <a href="#">See all Books</a>
+    </div>
+</div>
+
+<div class="buttons">
+    <input type="button" class="btn btn-default btn-rect" value="Generate Report" />
+</div>
+
+
+

@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "New User Activation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "New User Activation";
+    ViewBag.HideHomeIcon = Model.Type!=null && Model.Type.ToLower() == "schoolregistration" ? "true" : "";
+}
+
+<style>
+    span#error_mob {
+        color: #FC654C;
+        font-size: 12px;
+    }
+</style>
+
+<div id="divContainer">
+    @Html.Partial("UserValidation")
+</div>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            check();
+        });
+
+        $(document).ajaxComplete(function () {
+            check();
+        });
+    </script>
+}

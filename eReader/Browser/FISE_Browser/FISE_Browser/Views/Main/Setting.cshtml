@@ -1,0 +1,136 @@
+﻿@{
+    ViewBag.Title = "Settings | Info";
+    Layout = "~/Views/Shared/MainPageLayout.cshtml";
+    int subsection = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+
+@if (subsection == 1)
+{
+    <link href="~/Css/HelpPage1.css" rel="stylesheet" />
+}
+else if (subsection == 2)
+{
+    <link href="~/Css/HelpPage2.css" rel="stylesheet" />
+}
+else
+{
+    <link href="~/Css/HelpPage3.css" rel="stylesheet" />
+}
+
+
+<div class="secondaryNavigation">
+    <div class="CategoryFilter tabs">
+        <ul class="tab-links">
+            <li class="active">
+                <a href="#help" class="Category selected">
+                    <div id="helpimage" class="CategoryImage">
+                        <div></div>
+                    </div>
+                    <div class="CategoryText"><div>@Resource.HelpTabText</div></div>
+                </a>
+            </li>
+            <li>
+                <a href="#privacy" class="Category">
+                    <div id="privacyimage" class="CategoryImage">
+                        <div></div>
+                    </div>
+                    <div class="CategoryText"><div>@Resource.PrivacyPolicyText</div></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="contentArea">
+    <div class="tab-content">
+        <div id="help" class="tab active">
+            <div class="accordion">
+                <div class="mainHeading">
+                    Contact Us
+                </div>
+                <div class="accordion-section">
+                    <a class="accordion-section-title active" href="#accordion-5">@Resource.HelpHeading1</a>
+                    <div id="accordion-5" class="accordion-section-content open">
+                        <p>
+                            @Resource.HelpPara1
+                        </p>
+                        <form action="/Main/PostQuestion" id="ContactUsForm">
+                            <div>
+                                <textarea id="contactusText"></textarea>
+                            </div>
+                            <div>
+                                <input type="button" value="SEND" id="sendBtn" onclick="javascript: invokeCSCode($('#contactusText').val());" />
+                            </div>
+                            <input type="hidden" id="ContactUsQuestion" name="ContactUsQuestion" />
+                        </form>
+                    </div>
+                </div>
+                <div class="accordion-section">
+                    <a class="accordion-section-title" href="#accordion-4">@Resource.HelpHeading2</a>
+                    <div id="accordion-4" class="accordion-section-content">
+                        <p>@Resource.HelpPara2Part1 <a href="mailto:support@kitablet.in" target="_top">@Resource.HelpPara2Part2</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="privacy" class="tab">
+            <div>
+                <div>
+                    <div class="desc">@Resource.PolicyPart1</div>
+                    <div class="desc"><span class="BoldText">Administrator:</span> @Resource.PolicyPart2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/HelpScript.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#header_title").text("SETTINGS | INFO");
+        $('.tabs .tab-links a').on('click', function (e) {
+            IsSessionTimeOut();
+            if (IsSessionTimeOut1 == 1) {
+                $('.tabs .tab-links a').removeClass("selected");
+                $(this).addClass("selected");
+                var currentAttrValue = jQuery(this).attr('href');
+                $(currentAttrValue).show().siblings().hide();
+                $(this).parent('li').addClass('active').siblings().removeClass('active');
+                e.preventDefault();
+            }
+            else if (IsSessionTimeOut1 == 2)
+                Logout();
+        });
+    });
+    function invokeCSCode(data) {
+        try {
+            IsSessionTimeOut();
+            if (IsSessionTimeOut1 == 1) {
+                if (!isEmpty(data.trim())) {
+                    $('#ContactUsQuestion').val(data);
+                    $.ajax({
+                        type: "POST",
+                        url: "@Url.Action("PostQuestion", "Main")",
+                        contentType: "application/json",
+                        data: JSON.stringify({ 'ContactUsQuestion': $("#contactusText").val() }),
+                        dataType: "json",
+                        success: function (result) {
+                            if (result.Result == true) {
+                                showCommonPopup("@Resource.ThankYouForFeedback");
+                                $("#contactusText").val('').removeAttr('style');
+                                $("#sendBtn").css('opacity', 0.5).css('pointer-events', 'none');;
+                            }
+                        },
+                        error: function (result) {
+                            console.log(result);
+                        }
+                    });
+                }
+            }
+            else if (IsSessionTimeOut1 == 2)
+                Logout();
+        }
+        catch (err) { }
+    }
+</script>

@@ -1,0 +1,135 @@
+﻿<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>PK.Common</name>
+  </assembly>
+  <members>
+    <member name="T:PK.Common.Enumerated`2">
+      <summary>
+            Base class for an enumerated type, this implements a generic descriptor pattern
+            </summary>
+      <typeparam name="TEnumerated">The type that is enumerated</typeparam>
+      <typeparam name="TValue">The value of the enumerated type</typeparam>
+    </member>
+    <member name="T:PK.Common.IEnumerated`2">
+      <summary>
+            A generic interface for an enumerated type
+            </summary>
+      <typeparam name="TEnumerated">The type that is enumerated</typeparam>
+      <typeparam name="TValue">The value of the enumerated type</typeparam>
+    </member>
+    <member name="P:PK.Common.IEnumerated`2.Value">
+      <summary>
+            The value of the enumerated type
+            </summary>
+      <remarks>
+            Usually this will be an identifier of the enumerated type
+            </remarks>
+    </member>
+    <member name="M:PK.Common.Enumerated`2.#ctor(`1)">
+      <summary>
+            Initializes a new instance of the Enumerated class with a value indicated by a TValue
+            </summary>
+      <param name="value">The value if the enumerated instance to create</param>
+    </member>
+    <member name="M:PK.Common.Enumerated`2.GetAll">
+      <summary>
+            Get all defined enumerated items
+            </summary>
+      <returns>All defined enumerated items</returns>
+    </member>
+    <member name="M:PK.Common.Enumerated`2.Get(`1)">
+      <summary>
+            Gets the enumerated item with the specified value
+            </summary>
+      <param name="value">The value of the enumerated to get</param>
+      <returns>The enumerated item with the specified value</returns>
+      <exception cref="T:System.InvalidOperationException">If no enumerated item with the specified value exists</exception>
+      <ensures csharp="(object)result != null" vb="((Object)result) &lt;&gt; Nothing">(object)result != null</ensures>
+    </member>
+    <member name="M:PK.Common.Enumerated`2.GetOrDefault(`1)">
+      <summary>
+            Gets the only enumerated item with the specified value or a default value if none exists
+            </summary>
+      <param name="value">The value of the enumerated to get</param>
+      <returns>The enumerated item with the specified value or null if none exists</returns>
+    </member>
+    <member name="P:PK.Common.Enumerated`2.Value">
+      <summary>
+            The value of the enumerated type
+            </summary>
+      <remarks>
+            Usually this will be an identifier of the enumerated type
+            </remarks>
+    </member>
+    <member name="T:PK.Common.Reflection.ObjectExtensions">
+      <summary>
+            Contains static methods for retrieving propertyInfo from an <see cref="T:System.Object" /></summary>
+    </member>
+    <member name="M:PK.Common.Reflection.ObjectExtensions.GetPropertyInfo``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+      <summary>
+            Retrieves the PropertyInfo of a MemberExpression which represents a property
+            </summary>
+      <typeparam name="T">The type of the object which contains the property</typeparam>
+      <typeparam name="Tvalue">The return type of the property</typeparam>
+      <param name="object">An instance of T to get the PropertyInfo from</param>
+      <param name="propertySelector">An MemberExpression which represents the property</param>
+      <returns />
+      <requires description="propertySelector" exception="T:System.ArgumentNullException" csharp="propertySelector != null" vb="propertySelector &lt;&gt; Nothing">propertySelector != null</requires>
+      <exception cref="T:System.ArgumentNullException">propertySelector == null</exception>
+      <requires description="propertySelector is not a member expression" exception="T:System.ArgumentException" csharp="propertySelector.Body is System.Linq.Expressions.MemberExpression" vb="propertySelector.Body Is System.Linq.Expressions.MemberExpression">propertySelector.Body is System.Linq.Expressions.MemberExpression</requires>
+      <exception cref="T:System.ArgumentException">!(propertySelector.Body is System.Linq.Expressions.MemberExpression)</exception>
+    </member>
+    <member name="T:PK.Common.Reflection.MemberInfoExtensions">
+      <summary>
+            Contains static methods for retrieving custom attributes of <see cref="T:System.Reflection.MemberInfo" /> types
+            </summary>
+    </member>
+    <member name="M:PK.Common.Reflection.MemberInfoExtensions.GetCustomAttribute``1(System.Reflection.MemberInfo,System.Boolean)">
+      <summary>
+            Retrieves a custom attribute of a specified type that is applied to a specified element, and optionally inspects the ancestors of that element.
+            </summary>
+      <remarks>This function is only usefull when targeting .Net 4.0. These functions are added to the .Net 4.5 CLR</remarks>
+      <typeparam name="TAttribute">The type of attribute to search for</typeparam>
+      <param name="element">The element to inspect</param>
+      <param name="inherit">true to inspect the ancestors of element; otherwise, false</param>
+      <returns>A custom attribute that matches TAttribute, or null if no such attribute is found</returns>
+      <requires description="element" exception="T:System.ArgumentNullException" csharp="element != null" vb="element &lt;&gt; Nothing">element != null</requires>
+      <exception cref="T:System.ArgumentNullException">element == null</exception>
+    </member>
+    <member name="M:PK.Common.Reflection.MemberInfoExtensions.GetCustomAttribute``1(System.Reflection.MemberInfo)">
+      <summary>
+            Retrieves a custom attribute of a specified type that is applied to a specified member
+            </summary>
+      <remarks>This function is only usefull when targeting .Net 4.0. These functions are added to the .Net 4.5 CLR</remarks>
+      <typeparam name="TAttribute">The type of attribute to search for</typeparam>
+      <param name="element"> The member to inspect</param>
+      <returns>A custom attribute that matches T, or null if no such attribute is found</returns>
+      <requires description="element" exception="T:System.ArgumentNullException" csharp="element != null" vb="element &lt;&gt; Nothing">element != null</requires>
+      <exception cref="T:System.ArgumentNullException">element == null</exception>
+    </member>
+    <member name="M:PK.Common.Reflection.MemberInfoExtensions.GetCustomAttributes``1(System.Reflection.MemberInfo,System.Boolean)">
+      <summary>
+            Retrieves a collection of custom attributes that are applied to a specified element, and optionally inspects the ancestors of that element.
+            </summary>
+      <remarks>This function is only usefull when targeting .Net 4.0. These functions are added to the .Net 4.5 CLR</remarks>
+      <typeparam name="TAttribute">The type of attribute to search for</typeparam>
+      <param name="element">The element to inspect</param>
+      <param name="inherit">true to inspect the ancestors of element; otherwise, false</param>
+      <returns>A collection of the custom attributes that are applied to element and that match TAttribute, or an empty collection if no such attributes exist</returns>
+      <requires description="element" exception="T:System.ArgumentNullException" csharp="element != null" vb="element &lt;&gt; Nothing">element != null</requires>
+      <exception cref="T:System.ArgumentNullException">element == null</exception>
+    </member>
+    <member name="M:PK.Common.Reflection.MemberInfoExtensions.GetCustomAttributes``1(System.Reflection.MemberInfo)">
+      <summary>
+            Retrieves a collection of custom attributes of a specified type that are applied to a specified member
+            </summary>
+      <remarks>This function is only usefull when targeting .Net 4.0. These functions are added to the .Net 4.5 CLR</remarks>
+      <typeparam name="TAttribute">The type of attribute to search for</typeparam>
+      <param name="element">The member to inspect</param>
+      <returns>A collection of the custom attributes that are applied to element and that match T, or an empty collection if no such attributes exist</returns>
+      <requires description="element" exception="T:System.ArgumentNullException" csharp="element != null" vb="element &lt;&gt; Nothing">element != null</requires>
+      <exception cref="T:System.ArgumentNullException">element == null</exception>
+    </member>
+  </members>
+</doc>

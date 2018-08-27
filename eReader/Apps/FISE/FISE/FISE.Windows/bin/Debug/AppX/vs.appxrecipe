@@ -1,0 +1,1349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>UPENDRAP</Machine>
+    <WindowsUser>Upendra</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>FoundationforInnovationSo.Kitablet</PackageIdentityName>
+    <PackageIdentityPublisher>CN=7D443F70-B540-410E-A7B4-6C04B314EEB6</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <RegisteredManifestChecksum>547E71EACF64FFC0F2D35BE0D3E90075D25F5429B73F3A6FE3D180AF7D2700E4</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>FoundationforInnovationSo.Kitablet_1.1.0.35_neutral__nhw3byqx0t7y0</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>FoundationforInnovationSo.Kitablet_nhw3byqx0t7y0!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>FoundationforInnovationSo.Kitablet</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=7D443F70-B540-410E-A7B4-6C04B314EEB6</RegisteredPackagePublisher>
+    <RegisteredVersion>1.1.0.35</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-06-07T11:18:47.705</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\Kitablet.Windows.exe">
+      <PackagePath>Kitablet.Windows.exe</PackagePath>
+      <Modified>2017-06-07T11:18:42.267</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\win8\DeviceInfo.Plugin.Abstractions.dll">
+      <PackagePath>DeviceInfo.Plugin.Abstractions.dll</PackagePath>
+      <Modified>2014-12-19T05:42:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\win8\DeviceInfo.Plugin.dll">
+      <PackagePath>DeviceInfo.Plugin.dll</PackagePath>
+      <Modified>2014-12-19T05:42:06.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\win81\ImageCircle.Forms.Plugin.Abstractions.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.Abstractions.dll</PackagePath>
+      <Modified>2017-01-06T16:08:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\win81\ImageCircle.Forms.Plugin.WindowsStore.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.WindowsStore.dll</PackagePath>
+      <Modified>2017-01-06T16:08:04.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Release\Kitablet.dll">
+      <PackagePath>Kitablet.dll</PackagePath>
+      <Modified>2017-06-07T10:55:09.358</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.dll">
+      <PackagePath>MR.Gestures.dll</PackagePath>
+      <Modified>2016-12-14T08:37:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.WinRT.dll">
+      <PackagePath>MR.Gestures.WinRT.dll</PackagePath>
+      <Modified>2016-12-14T08:37:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.WinRT.Tablet.dll">
+      <PackagePath>MR.Gestures.WinRT.Tablet.dll</PackagePath>
+      <Modified>2016-12-14T08:37:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll">
+      <PackagePath>PCLStorage.Abstractions.dll</PackagePath>
+      <Modified>2015-01-18T05:06:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.dll">
+      <PackagePath>PCLStorage.dll</PackagePath>
+      <Modified>2015-01-18T05:06:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Release\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+      <Modified>2016-06-13T17:36:14.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Release\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+      <Modified>2016-09-25T01:37:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE\bin\Release\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+      <Modified>2016-09-25T01:37:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\a1.png">
+      <PackagePath>a1.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.185</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\a2.png">
+      <PackagePath>a2.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity.png">
+      <PackagePath>activity.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.748</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_1.png">
+      <PackagePath>activity_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_2.png">
+      <PackagePath>activity_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_3.png">
+      <PackagePath>activity_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_1.png">
+      <PackagePath>activity_big_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.654</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_2.png">
+      <PackagePath>activity_big_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_3.png">
+      <PackagePath>activity_big_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.701</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_complete_1.png">
+      <PackagePath>activity_big_complete_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_complete_2.png">
+      <PackagePath>activity_big_complete_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_big_complete_3.png">
+      <PackagePath>activity_big_complete_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.888</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_complete.png">
+      <PackagePath>activity_complete.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_complete_1.png">
+      <PackagePath>activity_complete_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_complete_2.png">
+      <PackagePath>activity_complete_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.029</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\activity_complete_3.png">
+      <PackagePath>activity_complete_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:06.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\all_books_1.png">
+      <PackagePath>all_books_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\all_books_2.png">
+      <PackagePath>all_books_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.091</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\all_books_3.png">
+      <PackagePath>all_books_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.154</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\animation.png">
+      <PackagePath>animation.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.122</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\animation_1.png">
+      <PackagePath>animation_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\animation_2.png">
+      <PackagePath>animation_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.154</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\animation_3.png">
+      <PackagePath>animation_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.154</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\announcements.png">
+      <PackagePath>announcements.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\announcements_selected.png">
+      <PackagePath>announcements_selected.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.294</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\1116x540.png">
+      <PackagePath>Assets\1116x540.png</PackagePath>
+      <Modified>2017-02-07T04:26:48.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\620x300.png">
+      <PackagePath>Assets\620x300.png</PackagePath>
+      <Modified>2017-02-07T04:26:48.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\868x420.png">
+      <PackagePath>Assets\868x420.png</PackagePath>
+      <Modified>2017-02-07T04:26:48.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+      <Modified>2017-02-07T04:26:49.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-140.png">
+      <PackagePath>Assets\BadgeLogo.scale-140.png</PackagePath>
+      <Modified>2017-02-07T04:26:48.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-180.png">
+      <PackagePath>Assets\BadgeLogo.scale-180.png</PackagePath>
+      <Modified>2017-02-07T04:26:48.737</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-31T10:22:08.830</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Logo.scale-140.png">
+      <PackagePath>Assets\Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Logo.scale-180.png">
+      <PackagePath>Assets\Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Logo.scale-80.png">
+      <PackagePath>Assets\Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-31T10:22:24.755</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-140.png">
+      <PackagePath>Assets\SmallLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-180.png">
+      <PackagePath>Assets\SmallLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.721</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-80.png">
+      <PackagePath>Assets\SmallLogo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-16.png">
+      <PackagePath>Assets\SmallLogo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-256.png">
+      <PackagePath>Assets\SmallLogo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-32.png">
+      <PackagePath>Assets\SmallLogo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.174</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-48.png">
+      <PackagePath>Assets\SmallLogo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-31T10:22:25.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:48.971</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-140.png">
+      <PackagePath>Assets\Square310x310Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.299</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-180.png">
+      <PackagePath>Assets\Square310x310Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-80.png">
+      <PackagePath>Assets\Square310x310Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-140.png">
+      <PackagePath>Assets\Square70x70Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-180.png">
+      <PackagePath>Assets\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-80.png">
+      <PackagePath>Assets\Square70x70Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.471</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-01-31T10:22:25.629</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-140.png">
+      <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-180.png">
+      <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-140.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-180.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-80.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-02-07T04:26:49.674</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\available_offline_1.png">
+      <PackagePath>available_offline_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\available_offline_2.png">
+      <PackagePath>available_offline_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\available_offline_3.png">
+      <PackagePath>available_offline_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\avatar_large.png">
+      <PackagePath>avatar_large.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\avatar_medium.png">
+      <PackagePath>avatar_medium.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\avatar_small.png">
+      <PackagePath>avatar_small.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bgImage_1.png">
+      <PackagePath>bgImage_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bgImage_2.png">
+      <PackagePath>bgImage_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bgImage_3.png">
+      <PackagePath>bgImage_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.497</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bookmark_1.png">
+      <PackagePath>bookmark_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.638</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bookmark_2.png">
+      <PackagePath>bookmark_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bookmark_3.png">
+      <PackagePath>bookmark_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\books_read_1.png">
+      <PackagePath>books_read_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\books_read_2.png">
+      <PackagePath>books_read_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\books_read_3.png">
+      <PackagePath>books_read_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_landscape_1.png">
+      <PackagePath>Book_landscape_1.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_landscape_2.png">
+      <PackagePath>Book_landscape_2.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_landscape_3.png">
+      <PackagePath>Book_landscape_3.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.711</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_portrait_1.png">
+      <PackagePath>Book_portrait_1.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_portrait_2.png">
+      <PackagePath>Book_portrait_2.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.715</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Book_portrait_3.png">
+      <PackagePath>Book_portrait_3.png</PackagePath>
+      <Modified>2017-02-15T05:41:28.893</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\book_subsection_left_1.png">
+      <PackagePath>book_subsection_left_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.544</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\book_subsection_left_2.png">
+      <PackagePath>book_subsection_left_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\book_subsection_left_3.png">
+      <PackagePath>book_subsection_left_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\book_thumbnail.png">
+      <PackagePath>book_thumbnail.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.560</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner.png">
+      <PackagePath>bottom_left_corner.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_1.png">
+      <PackagePath>bottom_left_corner_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_2.png">
+      <PackagePath>bottom_left_corner_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_3.png">
+      <PackagePath>bottom_left_corner_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_filled.png">
+      <PackagePath>bottom_left_corner_filled.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_filled_1.png">
+      <PackagePath>bottom_left_corner_filled_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.919</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_filled_2.png">
+      <PackagePath>bottom_left_corner_filled_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_left_corner_filled_3.png">
+      <PackagePath>bottom_left_corner_filled_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:07.951</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner.png">
+      <PackagePath>bottom_right_corner.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_1.png">
+      <PackagePath>bottom_right_corner_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_2.png">
+      <PackagePath>bottom_right_corner_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_3.png">
+      <PackagePath>bottom_right_corner_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_filled.png">
+      <PackagePath>bottom_right_corner_filled.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_filled_1.png">
+      <PackagePath>bottom_right_corner_filled_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_filled_2.png">
+      <PackagePath>bottom_right_corner_filled_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bottom_right_corner_filled_3.png">
+      <PackagePath>bottom_right_corner_filled_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.232</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_1.png">
+      <PackagePath>checkbox_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_2.png">
+      <PackagePath>checkbox_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_3.png">
+      <PackagePath>checkbox_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.294</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_black.png">
+      <PackagePath>checkbox_black.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.373</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_black_selected.png">
+      <PackagePath>checkbox_black_selected.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.341</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_selected_1.png">
+      <PackagePath>checkbox_selected_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_selected_2.png">
+      <PackagePath>checkbox_selected_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.388</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\checkbox_selected_3.png">
+      <PackagePath>checkbox_selected_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.435</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\close.png">
+      <PackagePath>close.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.513</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\close_1.png">
+      <PackagePath>close_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.498</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\close_2.png">
+      <PackagePath>close_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.529</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\close_3.png">
+      <PackagePath>close_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.576</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\collapseBtn_1.png">
+      <PackagePath>collapseBtn_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\collapseBtn_2.png">
+      <PackagePath>collapseBtn_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\collapseBtn_3.png">
+      <PackagePath>collapseBtn_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.591</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\coming_soon_1.png">
+      <PackagePath>coming_soon_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.623</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\coming_soon_2.png">
+      <PackagePath>coming_soon_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\coming_soon_3.png">
+      <PackagePath>coming_soon_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:08.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_1.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_1.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.132</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_2.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_2.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_3.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_3.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.191</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_1.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_1.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_2.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_2.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_3.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_3.png</PackagePath>
+      <Modified>2017-03-23T09:33:40.192</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\double_pager_disable.png">
+      <PackagePath>double_pager_disable.png</PackagePath>
+      <Modified>2017-03-17T06:24:55.049</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\down.png">
+      <PackagePath>down.png</PackagePath>
+      <Modified>2017-04-10T04:35:36.959</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\HTMLContent\XamarinLogo.png">
+      <PackagePath>HTMLContent\XamarinLogo.png</PackagePath>
+      <Modified>2016-11-18T09:50:45.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\kitablet_logo.png">
+      <PackagePath>kitablet_logo.png</PackagePath>
+      <Modified>2017-02-06T04:48:05.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\kitablet_logo_1.png">
+      <PackagePath>kitablet_logo_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:05.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\kitablet_logo_2.png">
+      <PackagePath>kitablet_logo_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\kitablet_logo_3.png">
+      <PackagePath>kitablet_logo_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\logout.png">
+      <PackagePath>logout.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.009</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\logout_selected.png">
+      <PackagePath>logout_selected.png</PackagePath>
+      <Modified>2017-02-06T04:48:05.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\my_profile_1.png">
+      <PackagePath>my_profile_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:05.915</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\my_profile_2.png">
+      <PackagePath>my_profile_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.150</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\my_profile_3.png">
+      <PackagePath>my_profile_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.118</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\nav_dot.png">
+      <PackagePath>nav_dot.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.212</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\nav_dot_anim.png">
+      <PackagePath>nav_dot_anim.png</PackagePath>
+      <Modified>2017-04-10T04:35:36.957</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\new_books_1.png">
+      <PackagePath>new_books_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.243</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\new_books_2.png">
+      <PackagePath>new_books_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.321</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\new_books_3.png">
+      <PackagePath>new_books_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\next.png">
+      <PackagePath>next.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\next_1.png">
+      <PackagePath>next_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.509</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\next_2.png">
+      <PackagePath>next_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.400</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\next_3.png">
+      <PackagePath>next_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.493</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\no_books.png">
+      <PackagePath>no_books.png</PackagePath>
+      <Modified>2017-02-06T04:48:06.478</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\up.png">
+      <PackagePath>up.png</PackagePath>
+      <Modified>2017-04-10T04:35:36.958</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_out_disable.png">
+      <PackagePath>zoom_out_disable.png</PackagePath>
+      <Modified>2017-03-17T06:24:55.048</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\previous.png">
+      <PackagePath>previous.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\previous_1.png">
+      <PackagePath>previous_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\previous_2.png">
+      <PackagePath>previous_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\previous_3.png">
+      <PackagePath>previous_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\privacy_policy_1.png">
+      <PackagePath>privacy_policy_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\privacy_policy_2.png">
+      <PackagePath>privacy_policy_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\privacy_policy_3.png">
+      <PackagePath>privacy_policy_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\profile.png">
+      <PackagePath>profile.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\profile_1.png">
+      <PackagePath>profile_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\profile_2.png">
+      <PackagePath>profile_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\profile_3.png">
+      <PackagePath>profile_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\profile_selected.png">
+      <PackagePath>profile_selected.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\progress_done.png">
+      <PackagePath>progress_done.png</PackagePath>
+      <Modified>2017-04-15T12:26:55.173</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\progress_pending.png">
+      <PackagePath>progress_pending.png</PackagePath>
+      <Modified>2017-04-15T12:26:55.239</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating.png">
+      <PackagePath>rating.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_1.png">
+      <PackagePath>rating_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.518</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_2.png">
+      <PackagePath>rating_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_3.png">
+      <PackagePath>rating_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_1.png">
+      <PackagePath>rating_big_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_2.png">
+      <PackagePath>rating_big_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_3.png">
+      <PackagePath>rating_big_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_complete_1.png">
+      <PackagePath>rating_big_complete_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_complete_2.png">
+      <PackagePath>rating_big_complete_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.003</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_big_complete_3.png">
+      <PackagePath>rating_big_complete_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_complete.png">
+      <PackagePath>rating_complete.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_complete_1.png">
+      <PackagePath>rating_complete_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:24.987</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_complete_2.png">
+      <PackagePath>rating_complete_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rating_complete_3.png">
+      <PackagePath>rating_complete_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud.png">
+      <PackagePath>read_aloud.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_1.png">
+      <PackagePath>read_aloud_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.222</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_2.png">
+      <PackagePath>read_aloud_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_3.png">
+      <PackagePath>read_aloud_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.237</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_mute.png">
+      <PackagePath>read_aloud_mute.png</PackagePath>
+      <Modified>2017-03-15T10:08:28.585</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_mute_1.png">
+      <PackagePath>read_aloud_mute_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_mute_2.png">
+      <PackagePath>read_aloud_mute_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_mute_3.png">
+      <PackagePath>read_aloud_mute_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.253</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_sound.png">
+      <PackagePath>read_aloud_sound.png</PackagePath>
+      <Modified>2017-03-15T10:08:29.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_sound_1.png">
+      <PackagePath>read_aloud_sound_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_sound_2.png">
+      <PackagePath>read_aloud_sound_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_aloud_sound_3.png">
+      <PackagePath>read_aloud_sound_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.440</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_later_1.png">
+      <PackagePath>read_later_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_later_2.png">
+      <PackagePath>read_later_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\read_later_3.png">
+      <PackagePath>read_later_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\recommended_books_1.png">
+      <PackagePath>recommended_books_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\recommended_books_2.png">
+      <PackagePath>recommended_books_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\recommended_books_3.png">
+      <PackagePath>recommended_books_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\releaseArrow_asc.png">
+      <PackagePath>releaseArrow_asc.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.768</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\releaseArrow_desc.png">
+      <PackagePath>releaseArrow_desc.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\release_books_1.png">
+      <PackagePath>release_books_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.612</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\release_books_2.png">
+      <PackagePath>release_books_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\release_books_3.png">
+      <PackagePath>release_books_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rounded_transparent_button_1.png">
+      <PackagePath>rounded_transparent_button_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rounded_transparent_button_2.png">
+      <PackagePath>rounded_transparent_button_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\rounded_transparent_button_3.png">
+      <PackagePath>rounded_transparent_button_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.862</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\school_env.png">
+      <PackagePath>school_env.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\search.png">
+      <PackagePath>search.png</PackagePath>
+      <Modified>2017-02-06T04:48:25.972</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\searchdiscover_happy.png">
+      <PackagePath>searchdiscover_happy.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.034</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\searchdiscover_unhappy.png">
+      <PackagePath>searchdiscover_unhappy.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\search_1.png">
+      <PackagePath>search_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\search_2.png">
+      <PackagePath>search_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\search_3.png">
+      <PackagePath>search_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\search_selected.png">
+      <PackagePath>search_selected.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\selectedButton_1.png">
+      <PackagePath>selectedButton_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.081</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\selectedButton_2.png">
+      <PackagePath>selectedButton_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\selectedButton_3.png">
+      <PackagePath>selectedButton_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\settings.png">
+      <PackagePath>settings.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\settings_selected.png">
+      <PackagePath>settings_selected.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.300</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\single_pager.png">
+      <PackagePath>single_pager.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\single_pager_1.png">
+      <PackagePath>single_pager_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\single_pager_2.png">
+      <PackagePath>single_pager_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.284</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\single_pager_3.png">
+      <PackagePath>single_pager_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\single_pager_disable.png">
+      <PackagePath>single_pager_disable.png</PackagePath>
+      <Modified>2017-03-17T06:24:55.050</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_arrow_filled.png">
+      <PackagePath>top_arrow_filled.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.362</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner.png">
+      <PackagePath>top_left_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.565</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_1.png">
+      <PackagePath>top_left_corner_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.472</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_2.png">
+      <PackagePath>top_left_corner_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.628</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_3.png">
+      <PackagePath>top_left_corner_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.487</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_filled.png">
+      <PackagePath>top_left_corner_filled.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_filled_1.png">
+      <PackagePath>top_left_corner_filled_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.550</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_filled_2.png">
+      <PackagePath>top_left_corner_filled_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.534</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_left_corner_filled_3.png">
+      <PackagePath>top_left_corner_filled_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.597</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner.png">
+      <PackagePath>top_right_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.675</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_1.png">
+      <PackagePath>top_right_corner_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.706</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_2.png">
+      <PackagePath>top_right_corner_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.722</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_3.png">
+      <PackagePath>top_right_corner_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.753</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_filled.png">
+      <PackagePath>top_right_corner_filled.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_filled_1.png">
+      <PackagePath>top_right_corner_filled_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.800</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_filled_2.png">
+      <PackagePath>top_right_corner_filled_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\top_right_corner_filled_3.png">
+      <PackagePath>top_right_corner_filled_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.847</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\unselectedButton_1.png">
+      <PackagePath>unselectedButton_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.909</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\unselectedButton_2.png">
+      <PackagePath>unselectedButton_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.878</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\unselectedButton_3.png">
+      <PackagePath>unselectedButton_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.972</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\white_bottom_left_corner.png">
+      <PackagePath>white_bottom_left_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\white_bottom_right_corner.png">
+      <PackagePath>white_bottom_right_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\white_top_left_corner.png">
+      <PackagePath>white_top_left_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:26.987</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\white_top_right_corner.png">
+      <PackagePath>white_top_right_corner.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_in.png">
+      <PackagePath>zoom_in.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.175</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_in_1.png">
+      <PackagePath>zoom_in_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.065</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_in_2.png">
+      <PackagePath>zoom_in_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.190</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_in_3.png">
+      <PackagePath>zoom_in_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_in_disable.png">
+      <PackagePath>zoom_in_disable.png</PackagePath>
+      <Modified>2017-03-17T06:24:55.051</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_out.png">
+      <PackagePath>zoom_out.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_out_1.png">
+      <PackagePath>zoom_out_1.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.425</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_out_2.png">
+      <PackagePath>zoom_out_2.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\zoom_out_3.png">
+      <PackagePath>zoom_out_3.png</PackagePath>
+      <Modified>2017-02-06T04:48:27.315</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\curled_corner_big.png">
+      <PackagePath>curled_corner_big.png</PackagePath>
+      <Modified>2017-02-06T04:47:09.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\curled_corner_small.png">
+      <PackagePath>curled_corner_small.png</PackagePath>
+      <Modified>2017-02-06T04:47:09.872</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\discover_1.png">
+      <PackagePath>discover_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.060</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\discover_2.png">
+      <PackagePath>discover_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\discover_3.png">
+      <PackagePath>discover_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\double_pager.png">
+      <PackagePath>double_pager.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.123</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\double_pager_1.png">
+      <PackagePath>double_pager_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\double_pager_2.png">
+      <PackagePath>double_pager_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.279</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\double_pager_3.png">
+      <PackagePath>double_pager_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\DownArrowImage.png">
+      <PackagePath>DownArrowImage.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.310</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\expandBtn_1.png">
+      <PackagePath>expandBtn_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\expandBtn_2.png">
+      <PackagePath>expandBtn_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.357</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\expandBtn_3.png">
+      <PackagePath>expandBtn_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:10.404</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\help_1.png">
+      <PackagePath>help_1.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\help_2.png">
+      <PackagePath>help_2.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\help_3.png">
+      <PackagePath>help_3.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\home.png">
+      <PackagePath>home.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\home_env.png">
+      <PackagePath>home_env.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\home_selected.png">
+      <PackagePath>home_selected.png</PackagePath>
+      <Modified>2017-02-06T04:47:47.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Fonts\Quicksand-Bold.otf">
+      <PackagePath>Assets\Fonts\Quicksand-Bold.otf</PackagePath>
+      <Modified>2017-02-06T04:49:17.540</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Assets\Fonts\Quicksand-Regular.otf">
+      <PackagePath>Assets\Fonts\Quicksand-Regular.otf</PackagePath>
+      <Modified>2017-02-06T04:49:17.571</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Fonts\Quicksand-Bold.otf">
+      <PackagePath>Content\PrivacyPolicy\Fonts\Quicksand-Bold.otf</PackagePath>
+      <Modified>2017-01-05T04:17:20.752</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Fonts\Quicksand-Regular.otf">
+      <PackagePath>Content\PrivacyPolicy\Fonts\Quicksand-Regular.otf</PackagePath>
+      <Modified>2017-01-05T04:17:20.764</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_1.html">
+      <PackagePath>Content\PrivacyPolicy\help_1.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.902</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_2.html">
+      <PackagePath>Content\PrivacyPolicy\help_2.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_3.html">
+      <PackagePath>Content\PrivacyPolicy\help_3.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.895</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_1.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_1.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_2.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_2.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.966</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_3.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_3.html</PackagePath>
+      <Modified>2017-04-19T10:47:03.965</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\HTMLContent\local.html">
+      <PackagePath>HTMLContent\local.html</PackagePath>
+      <Modified>2016-11-19T08:22:05.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Scripts\jquery-1.11.3.js">
+      <PackagePath>Content\PrivacyPolicy\Scripts\jquery-1.11.3.js</PackagePath>
+      <Modified>2016-12-12T09:54:12.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Scripts\script.js">
+      <PackagePath>Content\PrivacyPolicy\Scripts\script.js</PackagePath>
+      <Modified>2017-04-12T06:42:25.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\style\style.css">
+      <PackagePath>Content\PrivacyPolicy\style\style.css</PackagePath>
+      <Modified>2017-04-19T10:47:03.970</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\HTMLContent\default.css">
+      <PackagePath>HTMLContent\default.css</PackagePath>
+      <Modified>2016-11-18T09:50:45.407</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\DeviceInfoReadme.txt">
+      <PackagePath>DeviceInfoReadme.txt</PackagePath>
+      <Modified>2016-12-02T04:57:26.437</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\Kitablet.Windows.xr.xml">
+      <PackagePath>Kitablet.Windows.xr.xml</PackagePath>
+      <Modified>2017-06-01T06:18:17.586</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+      <Modified>2017-06-01T06:42:54.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+      <Modified>2017-06-01T06:42:54.673</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+      <Modified>2016-09-13T04:53:46.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-06-07T11:18:46.814</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

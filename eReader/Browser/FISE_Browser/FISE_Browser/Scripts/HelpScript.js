@@ -1,0 +1,54 @@
+$(document).ready(function () {
+    function close_accordion_section() {
+        $('.accordion .accordion-section-title').removeClass('active');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+    }
+
+    $("#contactusText").on('change keyup', function () {
+        if (isEmpty($('#contactusText').val())) {
+            $('#sendBtn').css('opacity', '0.5').css('pointer-events', 'none');;
+        }
+        else {
+            $('#sendBtn').css('opacity', '1').css('pointer-events', 'auto');;
+        }
+    });
+
+  
+
+    $('.accordion-section-title').click(function (e) {
+        var currentAttrValue = $(this).attr('href');
+
+        if ($(e.target).is('.active')) {
+            close_accordion_section();
+        } else {
+            close_accordion_section();
+            $(this).addClass('active');
+            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+        }
+
+        e.preventDefault();
+    });
+
+
+
+});
+
+function isEmpty(value) {
+    return (value == null || value === '');
+}
+
+$(function () {
+    $('textarea').on('keyup paste', function () {
+        var $el = $(this),
+            offset = $el.innerHeight() - $el.height();
+
+        if ($el.innerHeight < this.scrollHeight) {
+            //Grow the field if scroll height is smaller
+            $el.height(this.scrollHeight - offset);
+        } else {
+            //Shrink the field and then re-set it to the scroll height in case it needs to shrink
+            $el.height(1);
+            $el.height(this.scrollHeight - offset);
+        }
+    });
+});

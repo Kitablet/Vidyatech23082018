@@ -1,0 +1,96 @@
+﻿@using FISE_Cloud.Models.School;
+@using FISE_Cloud.Models;
+@model UsageModel
+<div class="partialContainer">
+    <div class="row" style="height:542px;">
+        <div class="col-xs-6 tablet-half">
+            <div class="section-title">
+                @Resource.Reports_Report7_UsageofKitabletonvariousplatforms
+            </div>
+@if (Model.Palteforms!=null&&Model.Palteforms.Count() > 0)
+{
+            <div class="tablet_border">
+                <div class="tablet_content">
+                    
+                    @foreach (var item in Model.Palteforms) {
+
+                    <div class="platform_div" style="width: @item.Percent%">
+                        <div class="platform_bar">
+                        @if (item.Name.ToLower() == "android")
+                        {   <div class="platform_color" style="background-color: #FC654C"></div>  }
+                        else if (item.Name.ToLower() == "browser")
+                        {   <div class="platform_color" style="background-color:#14b4b4"></div>  }
+                        else if (item.Name.ToLower() == "ios")
+                        {   <div class="platform_color" style="background-color:#f4bc1c"></div>  }
+                        else if (item.Name.ToLower() == "windows")
+                        {   <div class="platform_color" style="background-color:#9da503"></div>  }
+                        </div>
+                        @if (item.Name.ToLower() == "android")
+                        {   <div class="stats" style="color:#FC654C">@Math.Round((double)item.Percent, 1)%</div>  }
+                        else if (item.Name.ToLower() == "browser")
+                        {   <div class="stats" style="color:#14b4b4;margin-bottom:12px;">@Math.Round((double)item.Percent, 1)%</div>  }
+                        else if (item.Name.ToLower() == "ios")
+                        {   <div class="stats" style="color:#f4bc1c">@Math.Round((double)item.Percent, 1)%</div>  }
+                        else if (item.Name.ToLower() == "windows")
+                        {   <div class="stats" style="color:#9da503">@Math.Round((double)item.Percent,1)%</div>  }
+
+                        <div class="bar-title"><div class="vertical-text">@item.Name</div></div>
+                        </div>
+                    }
+                   
+                </div>
+
+                <img class="tablet_border1" src="~/Content/Images/FiseIconsAssets/Tablet.png" />
+                     
+            </div>
+}
+else
+{
+    <div class="nodata">@Resource.Report7_Nodata</div>
+}
+        </div>
+        <div class="col-xs-6 tablet-half">
+            <div class="section-title">
+                @Resource.Reports_Report7_UsageofKitabletinvariousenvironments
+            </div>
+@if (Model.Environment !=null&&Model.Environment.Count() > 0)
+{
+            <div class="tablet_border">
+                <div class="tablet_content">
+                   
+                    @foreach (var item in Model.Environment)
+                   {
+                     <div class="platform_div" style="width: @item.Percent%">
+                         <div class="platform_bar">
+                             @if (item.Name.ToLower() == "home")
+                             {    <div class="platform_color" style="background-color:#538dbc"></div>  }
+                             else if (item.Name.ToLower() == "school")
+                             {    <div class="platform_color" style="background-color:#cc76a6"></div>  }
+                          </div>
+                             @if (item.Name.ToLower() == "home")
+                             {    <div class="stats" style="color:#538dbc">@Math.Round((double)item.Percent,1)%</div>  }
+                             else if (item.Name.ToLower() == "school")
+                             {    <div class="stats" style="color:#cc76a6">@Math.Round((double)item.Percent, 1)%</div>  }
+                             <div class="bar-title"><div class="vertical-text">@item.Name</div></div>
+                         
+                    </div>
+                   }
+                   
+                </div>
+
+                <img class="tablet_border2" src="~/Content/Images/FiseIconsAssets/Tablet.png" />
+
+            </div>
+}
+else
+{
+    <div class="nodata">@Resource.Report7_Nodata</div>
+}
+        </div>
+    </div>
+</div>
+<style>
+    .nodata {
+    padding:10px 0;
+    }
+</style>

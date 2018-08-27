@@ -1,0 +1,40 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<School>
+@{
+    ViewBag.Title = "Schools List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+<div class="row title-section">
+    <div class="header col-xs-6">
+        <h4 class="page-title">@Resource.Tab_Title_SCHOOLS (@Model.TotalItemCount)
+            <a id="exportschools" class="exporttoexcel" title="@Resource.Export_ExportSchools" ></a>
+        </h4>
+    </div>
+    <input type="submit" value="@Resource.Btn_ADDSCHOOL" class="btn btn-default btn-rect remove-btn-space float-right" onclick="window.location='@Url.RouteUrl("CreateSchool")'"/>  
+</div>
+
+<hr />
+
+
+    @using (Html.BeginForm("ExportSchoolstoExcel", "School", FormMethod.Post, new { id = "export-schools-toexcel-form" }))
+    {
+        @Html.AntiForgeryToken()
+        <input type="hidden" id="schoolitemstoexport" name="schoolitemstoexport" value="" />
+    }   
+    <div id="SchoolContainer">
+        @Html.Partial("_SchoolListPost", Model)
+    </div>
+@section scripts {   
+    
+    <script src="~/Scripts/MvcPager.js?v=1"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+        $('#exportschools').on('click', function () {
+            $('#export-schools-toexcel-form').submit();
+        });
+</script>
+}
+
+

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScheduleTasks>
+  <ScheduleTask ScheduleType="FISE_API.Tasks.EmailTask">
+    <Name>FISE Email Task</Name>
+    <Seconds>10</Seconds>
+    <Enabled>false</Enabled>
+    <StopOnError>false</StopOnError>
+  </ScheduleTask>
+  <ScheduleTask ScheduleType="FISE_API.Tasks.UserTokenTask">
+    <Name>FISE User Token Email Task</Name>
+    <Seconds>15</Seconds>
+    <Enabled>true</Enabled>
+    <StopOnError>false</StopOnError>
+  </ScheduleTask>
+  <ScheduleTask ScheduleType="FISE_API.Tasks.UserDataSyncTask">
+    <Name>FISE User Data Sync Task</Name>
+    <Seconds>15</Seconds>
+    <Enabled>false</Enabled>
+    <StopOnError>false</StopOnError>
+  </ScheduleTask>
+  <ScheduleTask ScheduleType="FISE_API.Tasks.SyncUserDataBackLogTask">
+    <Name>Move User Sync Data in BackLog Task</Name>
+    <Seconds>86400</Seconds>
+    <Enabled>false</Enabled>
+    <StopOnError>false</StopOnError>
+  </ScheduleTask>
+</ScheduleTasks>
+

@@ -1,0 +1,439 @@
+﻿@using FISE_Cloud.Models;
+@using CaptchaMvc.HtmlHelpers
+@model UserRegistrationModel
+@{
+    ViewBag.Title = "New User Activation";
+    ViewBag.HeaderPageTitle = "New User Activation";
+    var captcha = Html.Captcha(Resource.CaptchaTryAnother, Resource.CaptchaLable, 5, Resource.CaptchaReqError, true);
+}
+
+@{
+    AjaxOptions options = new AjaxOptions();
+    options.HttpMethod = "POST";
+    options.InsertionMode = InsertionMode.Replace;
+    options.UpdateTargetId = "divContainer";
+}
+@if (!Model.IsInvalidToken)
+{
+    using (Ajax.BeginForm("UserRegistrationForm", "User", options))
+    {
+        @Html.AntiForgeryToken()
+        <div class="row title-section">
+            <div class="desc">
+                @Html.Raw(HttpUtility.HtmlDecode(@Resource.UserRegistration_DescriptiveText))
+            </div>
+            @if (Model.Type.ToLower() == "parentregistration")
+            {
+                <h4 class="page-title">@Resource.UserValidation_title_ParentActivation</h4>
+            }
+            else if (Model.Type.ToLower() == "schooladminregistration")
+            {
+                <h4 class="page-title">@Resource.UserValidation_title_SchooladminActivation</h4>
+            }
+            else if (Model.Type.ToLower() == "elibadminregistration")
+            {
+                <h4 class="page-title">@Resource.UserValidation_title_ElibadminActivation</h4>
+            }
+            else
+            {
+                <h4 class="page-title">@Resource.UserValidation_title</h4>
+            }
+        </div>
+        <hr />
+        if (!ViewData.ModelState.IsValid)
+        {
+            <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+        }
+        @Html.HiddenFor(model => model.Type)
+        @Html.HiddenFor(model => model.Token)
+        @Html.HiddenFor(model => model.Type)
+        <div class="form-horizontal">
+
+            <div class="form-group col-xs-12">
+                @Html.LabelFor(model => model.Email, "Email:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "prefilled_text", @readonly = "readonly" } })
+                    @Html.ValidationMessageFor(model => model.Email)
+                </span>
+            </div>
+            <div class="form-group col-xs-12">
+                @Html.LabelFor(model => model.MobileNumber, "Mobile:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="control-label col-xs-9">
+                    @Html.DisplayFor(model => model.MobileNumber, new { @style = "opacity:0.5" })
+                    @Html.HiddenFor(model => model.MobileNumber)
+                    <span class="verified" style="padding-left:80px;"></span>
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.FirstName, "First Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.FirstName)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.LastName, "Last Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.LastName)
+                </span>
+            </div>
+            <div class="form-group col-xs-12">
+                @Html.LabelFor(model => model.Gender, "Gender:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 control-label gender_radio">
+                    @Html.RadioButtonFor(model => model.Gender, "Male", Model.Gender == "Male" ? new { Checked = "checked", @class = "" } : null) <span class="">Male</span>
+                    @Html.RadioButtonFor(model => model.Gender, "Female", Model.Gender == "Female" ? new { Checked = "checked" } : null) <span>Female</span>
+                    @Html.ValidationMessageFor(model => model.Gender)
+                </span>
+            </div>
+            <div class="form-group col-xs-12 hidden">
+                @Html.LabelFor(model => model.DateOfBirth, "Date of Birth:", htmlAttributes: new { @class = "control-label col-xs-3 hidden" })
+                <div class="col-xs-9 inline2 hidden">
+                    <div class="col-xs-3 remove_padding hidden">
+                        @Html.DropDownListFor(model => model.DobDate,
+                     Enumerable.Range(1, 31).
+                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                     "--Day--", new { @class = "inpselect hidden" })
+
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-4">
+                        @Html.DropDownListFor(model => model.DobMonth,
+                     Enumerable.Range(1, 12).
+                     Select(r => new SelectListItem { Text = new DateTime(2000, r, 1).ToString("MMMMMMMM"), Value = r.ToString() }),
+                     "--Month--", new { @class = "hidden" })
+
+                    </div>
+                    <div class="col-xs-offset-1 col-xs-3 dob">
+
+                        @Html.DropDownListFor(model => model.DobYear,
+                     Enumerable.Range(1900, DateTime.Now.Year + 1 - 1900).
+                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                     "--Year--", new { @class = "hidden" })
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.Username, Model.Type.ToLower() == "parentregistration" ? "Parent User Name:" : "User Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span id="div_user" class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "txt_userid", autocomplete = "off" } })
+                    @Html.ValidationMessageFor(model => model.Username)
+                    <label id="uniquusername-error" style="display: none; color: #FC654C; font-size: 12px; text-transform: none;">@Resource.UniqueUserName</label>
+                </span>
+            </div>
+            <div class="form-group col-xs-12" style="position:relative;">
+
+                @Html.LabelFor(model => model.Password, "Password:", htmlAttributes: new { @class = "control-label col-xs-3" })
+
+
+                <div style="display:inline-block;padding-left:30px;" class="col-xs-9 inline2 reposition-validationerr">
+                    <div class="pswd-tooltip">
+                        <div class="pswd-tooltiptext">
+                            <div class="pswd-arrow-side"></div>
+                            <p>@Resource.UserRegistration_PwdValidator_Msg</p>
+                        </div>
+                    </div>
+                    @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "pswd-quesmark_img", autocomplete = "off" } })
+                    @Html.ValidationMessageFor(model => model.Password)
+                </div>
+
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.ConfirmPassword, "Repeat Password:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.ConfirmPassword, new { htmlAttributes = new { @class = "", autocomplete = "off" } })
+                    @Html.ValidationMessageFor(model => model.ConfirmPassword)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+                <div class="col-xs-offset-3 captcha">
+                    @captcha
+                    @Html.ValidationMessage(@captcha.BuildInfo.InputElementId)
+                </div>
+            </div>
+            <div class="form-group col-xs-12">
+                <div class="col-xs-offset-3 termandcon">
+                    <span class="termandcontext">@Html.Raw(HttpUtility.HtmlDecode(@Resource.ActivationTermsAndCondition)) </span>
+                    @Html.CheckBox("IsTermAndConditionAccepted", Model.IsTermAndConditionAccepted ? true : false)
+                    @Html.ValidationMessageFor(model => model.IsTermAndConditionAccepted)
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-offset-3 buttons">
+                    <input type="submit" value="@Resource.Btn_Submit" class="btn btn-default btn-rect" id="btnsubmit" disabled />
+                </div>
+            </div>
+
+        </div>
+        <style>
+            .error {
+                color: #FC654C;
+                font-size: 12px;
+            }
+
+            label.error {
+                text-transform: none;
+            }
+
+            #Gender-error {
+                position: absolute;
+                top: 30px;
+            }
+        </style>
+        <script src="~/Scripts/jquery.validate.js?v=1"></script>
+        <script>
+            var IsValidUserName = false;
+            $(document).ready(function () {
+                $('footer').css('display', 'none');
+
+                if ($('#FirstName').val().trim() != '')
+                    $('#FirstName').addClass('valid');
+
+                if ($('#LastName').val().trim() != '')
+                    $('#LastName').addClass('valid');
+
+                if ($('#Username').val().trim() != '')
+                    $('#Username').addClass('valid');
+
+                if ($('#Password').val().trim() != '')
+                    $('#Password').addClass('valid');
+
+                if ($('#ConfirmPassword').val().trim() != '')
+                    $('#ConfirmPassword').addClass('valid');
+
+                if ($('input[name=CaptchaInputText]').val().trim() != '')
+                    $('input[name=CaptchaInputText]').addClass('valid');
+
+                if ($('input[name=Gender]:checked').length > 0) {
+                    $('input[name=Gender]').addClass('valid');
+                }
+                if ($('input[name=IsTermAndConditionAccepted]:checked').length > 0) {
+                    $('input[name=IsTermAndConditionAccepted]').addClass('valid');
+                }
+
+                $.validator.addMethod('validatefirstname', function (value, element) {
+                    var expr = /^[ A-Za-z0-9.']{1,50}$/;
+                    return expr.test(value);
+                }, '@Resource.Firstname_LengthandnospecialcharValidation');
+
+                $.validator.addMethod('validatelastname', function (value, element) {
+                    var expr = /^[ A-Za-z0-9.']{1,50}$/;
+                    return expr.test(value);
+                }, '@Resource.Lastname_LengthandnospecialcharValidation');
+
+                $.validator.addMethod('validateusername', function (value, element) {
+                    var expr = /^[a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~@@]+([.][a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~@@]+)*$/
+                    return expr.test(value);
+                }, '@Resource.UserRegistration_UsernameLength');
+
+                $.validator.addMethod('validatepassword', function (value, element) {
+                    var expr = /(?=.*[a-zA-Z])(?=.*[0-9])(?=.*?[!@@#$%^&*()])(?!.* )(?!.*?[></?';:}{\\|\"`~]).{8,100}/;
+                    return expr.test(value);
+                }, '@Resource.UserRegistration_PwdValidator');
+
+                var thevalidator = $.data($('form')[0], 'validator');
+                $("input").on("input blur change keyup", function () {
+                    $(this).valid();
+                    if (($('.valid').length > 0 && $('.valid').length < 9) || $('input.error').length > 0 || !IsValidUserName)
+                        $('#btnsubmit').attr('disabled', true);
+                    else
+                        $('#btnsubmit').attr('disabled', false);
+                    $('span[data-valmsg-for=CaptchaInputText]').hide();
+                });
+
+                $("#@Html.FieldIdFor(model => model.Username)").on("input blur change keyup", function () {
+
+                    var userName = $("#@Html.FieldIdFor(model => model.Username)").val();
+
+                    if (!(userName == '')) {
+                        var isUsernameUnique = fnValidateUsername(userName);
+
+                        if (isUsernameUnique === false) {
+                            $("#div_user").removeClass("div_userclassunique");
+                            $("#div_user").addClass("div_userclassnonunique");
+                            $('#uniquusername-error').show();
+                            IsValidUserName = false;
+                        } else {
+                            $("#div_user").addClass("div_userclassunique");
+                            $("#div_user").removeClass("div_userclassnonunique");
+                            $('#uniquusername-error').hide();
+                            IsValidUserName = true;
+                        }
+                    }
+                    else {
+                        $("#div_user").removeClass("div_userclassunique");
+                        $("#div_user").removeClass("div_userclassnonunique");
+                        $('#uniquusername-error').hide();
+                        IsValidUserName = false;
+                    }
+                });
+
+                $('#Username_').on('keypress', function (event) {
+                    if (event.charCode == 32)
+                        return false;
+                    var regex = new RegExp("^[a-zA-Z0-9]+$");
+                    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                    if (!regex.test(key) && event.charCode != 46 && event.charCode != 95 && event.charCode != 45 && event.charCode != 64) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                        event.preventDefault();
+                        return false;
+                    }
+                });
+                $('#FirstName_,#LastName_').keypress(function () {
+                    var regex = new RegExp("^[a-zA-Z0-9]+$");
+                    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                    if (!regex.test(key) && event.charCode != 46 && event.charCode != 39 && event.charCode != 32) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                        event.preventDefault();
+                        return false;
+                    }
+                });
+            });
+
+            $('input[type=text]').keyup(function () {
+                $(this).siblings('span.field-validation-error').hide();
+                $(this).removeClass('input-validation-error');
+            })
+            $('input[type=radio]').click(function () {
+                $(this).siblings('span.field-validation-error').hide();
+                $(this).removeClass('input-validation-error');
+            })
+
+            $('input[type=password]').keyup(function (ev) {
+                $(this).siblings('span.field-validation-error').hide();
+                $(this).removeClass('input-validation-error');
+            })
+
+
+            function fnValidateUsername(userName) {
+                var status = false;
+                var expr = /^[a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~@@]+([.][a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~@@]+)*$/;
+                if (expr.test(userName)) {
+                    jsondata = '{ "Username" : "' + userName + '" }',
+
+                    $.ajax({
+                        url: '@Url.Action("IsUsernameUnique", "User")' + '?Username=' + userName,
+                        type: 'GET',
+                        async: false,
+                        data: JSON.stringify(jsondata),
+                        dataType: 'json',
+                        success: function (result) {
+                            if (result.Status === true)
+                                status = true;
+
+                        },
+                        error: function (jqXHR, textStatus, err) {
+                            alert(textStatus);
+                        }
+                    });
+                    return status;
+                }
+                else {
+                    $('#Username').addClass('input-validation-error').siblings('.field-validation-error').text('@Resource.UserRegistration_UsernameLength');
+                }
+            }
+            $("form").validate({
+                rules: {
+                    FirstName: {
+                        required: true,
+                        rangelength: [1, 50],
+                        validatefirstname: true
+                    },
+                    LastName: {
+                        required: true,
+                        rangelength: [1, 50],
+                        validatelastname: true
+                    },
+                    Gender: { required: true },
+                    Username: {
+                        rangelength: [5, 25],
+                        required: true,
+                        validateusername: true
+                    },
+                    Password: {
+                        rangelength: [8, 100],
+                        required: true,
+                        validatepassword: true
+                    },
+                    ConfirmPassword: {
+                        required: true,
+                        equalTo: "#Password"
+                    },
+                    CaptchaInputText: { required: true },
+                    IsTermAndConditionAccepted: {
+                        required: true
+                    }
+                },
+
+                messages: {
+                    FirstName: {
+                        required: "@Resource.UserRegistration_FirstnameReqError",
+                        rangelength: "@Resource.Firstname_LengthandnospecialcharValidation",
+                    },
+                    LastName: {
+                        required: "@Resource.UserRegistration_LastnameReqError",
+                        rangelength: "@Resource.Lastname_LengthandnospecialcharValidation",
+                    },
+                    Gender: { required: "@Resource.UserCreation_GenderReqError" },
+                    Username: {
+                        required: "@Resource.UserRegistration_UsernameReqError",
+                        rangelength: "@Resource.UserRegistration_UsernameLength"
+
+                    },
+                    Password: {
+                        required: "@Resource.UserRegistration_PasswordReqError",
+                        rangelength: "@Resource.UserRegistration_PwdValidator"
+
+                    },
+                    ConfirmPassword: {
+                        required: "@Resource.UserRegistration_ConfirmPasswordReqError",
+                        equalTo: "@Resource.UserRegistration_Password_Confirm_Match"
+                    },
+                    CaptchaInputText: { required: "@Resource.CaptchaReqError" },
+                    IsTermAndConditionAccepted: {
+                        required: "@Resource.TermAndConditionError"
+                    }
+                },
+                submitHandler: function (form) {
+                    $(form).find("input[type='submit']").attr('disabled', true);
+                    $(form).find("input[type='button']").attr('disabled', true);
+                    return true;
+                },
+                invalidHandler: function (event, validator) {
+                }
+            });
+        </script>
+
+    }
+}
+else
+{
+    <div class="row title-section">
+        <h4 class="page-title">@Resource.UserValidation_title</h4>
+    </div>
+    <hr />
+    <div style="margin:20px 0px">@Html.Raw(HttpUtility.HtmlDecode(@Resource.UserValidation_InvalidorExpiredToken_ErrMsg))</div>
+    <div class="buttons">
+        <input type="button" class="btn btn-default btn-rect" onclick="location.href = '@Url.RouteUrl("HomePage")'" value="@Resource.btn_Continue" />
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('footer').css('display', 'block');
+        });
+    </script>
+}
+
+
+
+

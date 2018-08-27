@@ -1,0 +1,22 @@
+﻿@model FISE_Cloud.Models.UserCreationModel
+
+@{
+    ViewBag.Title = "Create School Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+    <h4 class="page-title">@Resource.Btn_ADDLIBRARIAN</h4>
+</div>
+@using (Html.BeginForm())
+{
+    <div id="divPartial">
+        @Html.Partial("~/Views/User/UserCreationForm.cshtml")
+    </div>
+}

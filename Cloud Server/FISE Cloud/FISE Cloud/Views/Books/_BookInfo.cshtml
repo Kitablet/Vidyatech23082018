@@ -1,0 +1,158 @@
+﻿@using FISE_Cloud.Models.School
+@model Book
+
+@{
+    var controllerName = HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("controller");
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<div class="form-horizontal">
+    @if (Model.ViewMode.ToLower() == "portrait")
+    {
+        <div class="book_img">
+            @if (Model.SubSection.Trim() == "Junior 1")
+                { <div class="book_subsection_colorband colorband_Subsection_Junior1"></div>}
+                else if (Model.SubSection.Trim() == "Junior 2")
+                { <div class="book_subsection_colorband colorband_Subsection_Junior2"></div>}
+                else if (Model.SubSection.Trim() == "Middle")
+                { <div class="book_subsection_colorband colorband_Subsection_Middle"></div>}
+            <img src="@Model.Thumbnail1" alt="@Model.Title" />
+            <div class="row rating_row">
+                <div>
+
+                    @if (Model.Rating == 0)
+                    {
+                        <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                    }
+                    else
+                    {
+                        <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(Model.Rating, 1).ToString()</span>
+                    }
+
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="book_img_landscape">
+            @if (Model.SubSection.Trim() == "Junior 1")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior1"></div>}
+                else if (Model.SubSection.Trim() == "Junior 2")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior2"></div>}
+                else if (Model.SubSection.Trim() == "Middle")
+                { <div class="book_subsection_colorband_landscape colorband_Subsection_Middle"></div>}
+            <img src="@Model.Thumbnail1" alt="@Model.Title" />
+            <div class="row rating_row">
+                <div>
+
+                    @if (Model.Rating == 0)
+                    {
+                        <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                    }
+                    else
+                    {
+                        <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(Model.Rating, 1).ToString()</span>
+                    }
+
+                </div>
+            </div>
+        </div>
+    }
+
+    @Html.HiddenFor(model => model.BookId, new { id = "" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Title, "Title:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Title)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Author, "Author:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Author)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Illustrator, "Illustrator:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Illustrator)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Translator, "Translator:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Translator)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Publisher, "Publisher:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Publisher)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Language, "Language:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Language)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Genre, "Categories:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.Genre)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubSection, "Library Sub-section:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.SubSection)
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Type, "Type:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.Label(@Model.Type.ToString())
+        </span>
+    </div>
+    <div class="form-group">
+        @Html.Label("Specials:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.Label("HasActivity", Model.HasActivity ? "Activities" : "", new { @class = "" })
+            @Html.Label("HasAnimation", Model.HasAnimation ? "Animation" : "", new { @class = "" })
+            @Html.Label("HasReadAloud", Model.HasReadAloud ? "Read-aloud" : "", new { @class = "" })
+
+
+        </span>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.ShortDescription, "Short Description:", htmlAttributes: new { @class = "control-label col-xs-3" })
+        <span class="col-xs-9 control-label">
+            @Html.DisplayFor(model => model.ShortDescription)
+        </span>
+    </div>
+</div>
+<div class="col-xs-offset-3 buttons">
+
+    @if (controllerName != null && !controllerName.Equals("report", StringComparison.InvariantCultureIgnoreCase) && _Userdata != null && _Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <input type="button" class="btn btn-default btn-rect" name="edit" value="@Resource.Btn_Modify" onclick="window.location.href = '@Url.RouteUrl("EditBooksMetadata", new { bookid = Model.BookId })';" />
+
+        <input type="button" id="disable-book" class="btn btn-default btn-rect" name="remove" value="@(Model.IsTrashed ? @Resource.Btn_Enable : @Resource.Btn_Disable )" onclick="confirmDisable(@Model.BookId, this.id)" />
+    }
+
+</div>

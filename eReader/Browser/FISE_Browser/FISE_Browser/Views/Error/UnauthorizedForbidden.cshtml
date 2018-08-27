@@ -1,0 +1,36 @@
+﻿@using FISE_Browser.Models
+@{
+    Layout = null;
+    int subsection = 3;
+    User userobj = (User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kitablet</title>
+    <meta charset="utf-8" />
+    @if (subsection == 1)
+    {
+        <link href="~/Css/error1.css" rel="stylesheet" />
+    }
+    else if (subsection == 2)
+    {
+        <link href="~/Css/error2.css" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="~/Css/error3.css" rel="stylesheet" />
+    }
+</head>
+<body>
+    <div id="Main_Header">
+        <div class="siteLogo"></div>
+    </div>
+    <div id="wrapper">
+        <header>Sorry, you are not authorized to access the page.</header>
+        <a href="/Home">Click here to visit Home Page.</a>
+    </div>  
+</body>
+</html>

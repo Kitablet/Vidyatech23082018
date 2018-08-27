@@ -1,0 +1,355 @@
+﻿@model FISE_Browser.Models.BookDisplay
+@{
+    Layout = null;
+    var basepath = System.Configuration.ConfigurationManager.AppSettings["proxypath"].ToString().Replace("#kitabletid#", Model.KitabletID);
+    int subsection1 = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection1 = userobj != null ? userobj.SubSectionId : subsection1;
+    int UserId = userobj.UserId;
+    int sessiontime = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["sessiontimeout"]) * 60 * 1000;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/utils.js"></script>
+    <script src="~/Scripts/ifvisible.min.js"></script>
+    <script src="~/Scripts/jgestures.js"></script>
+    <script src="~/Scripts/BookDisplay.js"></script>
+    <link href="~/Css/BookDisplay.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <style>
+        #scroolanimation img {
+            display: inline-block;
+        }
+
+        @@keyframes animation {
+            0% {
+                opacity: .15;
+            }
+
+            100% {
+                opacity: 1;
+                display: none;
+            }
+        }
+
+        #scroolanimation img:first-child {
+            animation-name: animation 1s infinite;
+            -webkit-animation: animation 1s infinite;
+            animation-delay: 0s;
+            padding-left: 7px;
+        }
+
+        #scroolanimation img:nth-child(2) {
+            animation-name: animation 1s infinite;
+            -webkit-animation: animation 1s infinite;
+            animation-delay: .25s;
+            padding-left: 7px;
+        }
+
+        #scroolanimation img:nth-child(3) {
+            animation-name: animation 1s infinite;
+            -webkit-animation: animation 1s infinite;
+            animation-delay: .5s;
+            padding-left: 7px;
+        }
+
+        #scroolanimation img:last-child {
+            animation-name: animation 1s infinite;
+            -webkit-animation: animation 1s infinite;
+            animation-delay: .75s;
+        }
+    </style>
+    <title>Book Display</title>
+</head>
+<body id="body">
+    <div class="commonmodal">
+        <div class="modal-content">
+            <p id="Poptext">@Resource.NoInternet</p>
+            <div id="modelbtn">
+                <input type="button" value="OK" id="Closebtn" />
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div class="left" id="logo"><img src="~/Content/Images/kitablet_logo.png" /></div>
+
+        <div class="right active action" id="close" onclick="SetBookReading(false);">
+            <img src="~/Content/Images/close.png" />
+        </div>
+
+        @if (Model.isPagerAllowed)
+        {
+            if (Model.PageDisplay.ToLower() == "single")
+            {
+                <div class="right disabled action" id="singlepager" onclick="return showsinglepager();">
+                    <img src="~/Content/Images/single_pager.png" />
+                </div>
+                <div class="right active  action" id="doublepager" onclick="return showtwopager();">
+                    <img src="~/Content/Images/double_pager.png" />
+                </div>
+            }
+            else
+            {
+                <div class="right active  action" id="singlepager" onclick="return showsinglepager();">
+                    <img src="~/Content/Images/single_pager.png" />
+                </div>
+                <div class="right disabled  action" id="doublepager" onclick="return showtwopager();">
+                    <img src="~/Content/Images/double_pager.png" />
+                </div>
+            }
+        }
+        @if (Model.HasReadAloud.ToLower() == "true")
+        {
+            <div class="right active action" id="readaloud" onclick="playreadaloud();">
+                <img id="readaloudimage" src="~/Content/Images/read_aloud_mute.png" />
+            </div>
+        }
+    </div>
+
+    <button id="previous">
+        <img src="~/Content/Images/previous.png" />
+    </button>
+    <button id="next">
+        <img src="~/Content/Images/next.png" />
+    </button>
+    <div id="container1">
+        <div id="displayarea">
+            <div id="iframecover"></div>
+            <iframe id="page1"></iframe>
+
+            <iframe id="page2"></iframe>
+        </div>
+
+        <div id="scroolanimation" style="position:absolute;padding-right :15px;bottom:50px; right:10px;width:12px; ">
+            <img src="~/Content/Images/nav_dot_anim.png" /> <img src="~/Content/Images/nav_dot_anim.png" /><img src="~/Content/Images/nav_dot_anim.png" />
+            <img src="~/Content/Images/down.png" />
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="pageno">
+            <div id="pageno1" class="pageno"></div>
+            <div id="pageno2" class="pageno"></div>
+        </div>
+    </div>
+    <div id="loading">
+        <div style="margin:auto;color:#fff;width:100px;height:20px;"> Please Wait...</div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    var swap = true;
+    var IsBackgroundSync = false;
+    var starttime = '@DateTime.UtcNow';
+    var UserId = '@UserId';
+    var SessionOutTime =parseInt('@sessiontime');
+    var IsDataSync = false;
+    var interval;
+    var IsSessionOut = false;
+    $(document).ready(function () {
+        checkIsLogout();
+        var subsection = '@subsection1';
+        if (subsection == '1')
+            $('.commonmodal .modal-content').css('background-color', '#FC654C');
+        else if (subsection == '2')
+            $('.commonmodal .modal-content').css('background-color', '#9DA503');
+        else
+            $('.commonmodal .modal-content').css('background-color', '#14B4B4');
+        $('#Closebtn').click(function () {
+            $('.commonmodal').hide();
+        });
+        basepath = '@basepath';
+        bookid = '@Model.BookId';
+        function CreateJson() {
+            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  Model }));
+        }
+        json = CreateJson();
+        //console.log(json);
+        currentpage = parseInt(json.Model.CurrentPage);
+        currentpage = json.Model.OpfSpine.length < currentpage ? 0 : currentpage;
+        currentpage = currentpage == 0 ? currentpage : currentpage - 1;
+
+        //json.Model.PageDisplay= 'single'
+        //currentpage = 0;
+        showpage();
+
+        $("#container1").bind('swipeone', handleSwipe);
+
+        function handleSwipe(event, obj) {
+            obj.originalEvent.preventDefault();
+
+            var swipeDirection = obj.description.split(':')[2];
+            if (swap) {
+                swap = false;
+                var lastX = obj.delta[0].lastX;
+                var lastY = obj.delta[0].lastY;
+                if (Math.abs(lastX) <= Math.abs(lastY)) {
+                    swap = true;
+                    swipeDirection = "";
+                }
+                if (swipeDirection === "left") {
+                    nextClick();
+                }
+                else if (swipeDirection === "right") {
+                    previousClick();
+                }
+            }
+        }
+
+        OnSessionOut();
+    });
+
+    function SetBookReading(status) {
+        if (!jQuery.isEmptyObject(timelist)) {
+            if (index1.toString() != '') {
+                timelist[index1].EndTime = new Date();
+            }
+            if (index2.toString() != '') {
+                timelist[index2].EndTime = new Date();
+            }
+        }
+        //console.log(status);
+        //(int BookId, bool IsCompleted, int CurrentPage, List<Page> page)
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("SetBookReading", "Book")',
+                type: 'Post',
+                data: { 'BookId': bookid, 'IsCompleted': status, 'CurrentPage': status ? 0 : currentpage + 1, 'page1': JSON.stringify(timelist), 'starttime': starttime, 'IsautoSync': IsBackgroundSync, 'UserId': UserId,'IsSessionOut':IsSessionOut },
+                dataType: 'json',
+                async: false,
+                error: function (xhr, status, error) {
+                    if (xhr.readyState == 0)
+                        showCommonPopup('@Resource.NoInternet');
+                    IsSessionTimeOut1 = 0;
+                },
+                success: function (data) {
+                    if (!IsBackgroundSync) {
+                        if (data == "logout")
+                            window.parent.location.href = '@Url.RouteUrl("LoginPage")';
+                        else if (status)
+                            window.parent.location.href = '@Url.RouteUrl("BookCompleted", new { id = Model.BookId })';
+                        else
+                            window.parent.location.href = '@Url.RouteUrl("BookRead", new { id = Model.BookId })';
+                    }
+                    else {
+                        timelist = [];
+                        starttime = data;
+                        IsDataSync = true;
+                    }
+                    IsBackgroundSync = false;
+                    syncbeforeunload = false;
+                }
+            });
+        }
+        else {
+            $('.commonmodal').show();
+        }
+    }
+
+    var IsSessionTimeOut1 = 2;
+    function IsSessionTimeOut() {
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("IsSessionTimeOut1", "User")',
+                type: 'Get',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+                    data = JSON.parse(data);
+                    if (data.status == true)
+                        IsSessionTimeOut1 = 2;
+                    else
+                        IsSessionTimeOut1 = 1;
+                    if (IsDataSync == true) {
+                        IsDataSync = false;
+                        starttime = data.starttime;
+                    }
+                    IsSessionOut = false;
+                },
+                error: function (xhr, status, error) {
+                    if (xhr.readyState == 0)
+                        $('.commonmodal').show();
+                    IsSessionTimeOut1 = 0;
+                }
+            });
+        }
+        else {
+            $('.commonmodal').show();
+            IsSessionTimeOut1 = 0;
+        }
+        return IsSessionTimeOut1;
+    }
+    function Logout() {
+        window.location.href = '@Url.RouteUrl("LoginPage")';
+    }
+
+    window.addEventListener('beforeunload', function () {
+        if (syncbeforeunload) {
+            clearTimeout(interval);
+            if (IsDataSync == false) {
+                IsBackgroundSync = true;
+                SetBookReading(false);
+            }
+        }
+    });
+
+    $(window).on("blur focus", function (e) {
+        var prevType = $(this).data("prevType");
+        if (prevType != e.type) {   //  reduce double fire issues
+            switch (e.type) {
+                case "blur":
+                    clearTimeout(interval);
+                    if (IsDataSync == false) {
+                        IsBackgroundSync = true;
+                        SetBookReading(false);
+                    }
+                    break;
+                case "focus":
+                    console.log("!!focus!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusIn", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                            console.log(data);
+                            starttime = data;
+                            IsDataSync = false;
+                            OnSessionOut();
+                            IsSessionOut = false;
+                            syncbeforeunload = true;
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+                    break;
+            }
+        }
+
+        $(this).data("prevType", e.type);
+    });
+
+    function OnSessionOut() {
+        clearTimeout(interval);
+        interval = setTimeout(function () {
+            if (IsDataSync == false) {
+                IsBackgroundSync = true;
+                SetBookReading(false);
+                IsSessionOut = true;
+            }
+        }, SessionOutTime);
+    }
+</script>
+

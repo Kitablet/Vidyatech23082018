@@ -1,0 +1,32 @@
+﻿@model FISE_Cloud.Models.HeaderLinksModel
+
+@{
+    ViewBag.Title = "Header Links";
+}
+
+<style>
+    li {
+        display: inline-block;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-2">
+            @if (Model.IsAuthenticated)
+            {
+                <ul style="text-align:right; list-style:none">
+                    <li><a href="*"><p>@Model.UserEmailUsername</p></a></li>
+                    <li>|</li>
+                    <li><a href="@Url.Action("Login","User")"><p>Logout</p></a></li>
+                </ul>
+            }
+            else
+            {
+                <ul style="text-align:right; list-style:none">
+                    <li><a href="@Url.Action("Login","User")"><p>Login</p></a></li>
+                </ul>
+            }
+        </div>
+    </div>
+</div>

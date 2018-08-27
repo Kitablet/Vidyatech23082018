@@ -1,0 +1,133 @@
+﻿@Model FISE_Browser.Models.Books
+@{ 
+    Layout = null;
+}
+<link href="~/Content/userbooks.css" rel="stylesheet" />
+<link href="~/Content/dashboard.css" rel="stylesheet" />
+<link href="~/Content/changeavatarpopup.css" rel="stylesheet" />
+<link href="~/Content/changepassword.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/userbooks.js"></script>
+<script src="~/Scripts/changepassword.js"></script>
+<script src="~/Scripts/bookdetails.js"></script>
+<script src="~/Scripts/changeavatarpopup.js"></script>
+
+<div class="user-profile-right">
+    <div id="partialDiv">
+        @Html.Partial("_Header")
+    </div>
+@using (Html.BeginForm())
+{
+    <div class="tabs-user">
+        <div id="_change_avatar">
+            <div class="read-button"><a href="#" class="avatar-change" onclick="ChangeAvatarPopup()">Change avatar</a>
+            <a href="#" class="password-change" onclick="ChangePasswordPopup()">Change password</a></div>
+        </div>
+       
+        @{ 
+            string str = Model.UserFilterData;
+            string tabone = "";
+            string tabtwo = "";
+            string tabthree = "";
+
+            if (Model.UserFilterData == "")
+            {
+                tabone = "current";
+            }
+            else
+            {
+
+                if (str == "tab-1")
+                {
+                    tabone = "current";
+                }
+
+                else if (str == "tab-2")
+                {
+                    tabtwo = "current";
+                }
+
+                else if (str == "tab-3")
+                {
+                    tabthree = "current";
+                }
+            }
+        }
+
+            <div>
+                @*<ul class="tabs-input">
+                    <li class="tab-link-input current" data-tab="tab-1">READ LATER</li>
+                    <li class="tab-link-input" data-tab="tab-2">BOOKS READ</li>
+                    <li class="tab-link-input" data-tab="tab-3">BOOKS RATED</li>
+                </ul>*@
+
+                <input type="submit" class="tabs-submit @tabone"  id="tab-1"value="READ LATER" onclick="FilterUserBooks(this.id)" />
+                <input type="submit" class="tabs-submit @tabtwo"   id="tab-2"value="BOOKS READ" onclick="FilterUserBooks(this.id)" />
+                <input type="submit"  class="tabs-submit @tabthree"  id="tab-3" value="BOOKS RATED" onclick="FilterUserBooks(this.id)" />
+                <input type="hidden" class="hidden-user-filter" name="userfilter" value="@Model.UserFilterData" />
+            </div>
+        
+
+    </div>
+
+    @*  change avatar pop up*@
+
+
+    <div class="popup-fallback"></div>
+    <div class="popup-content-avatar">
+        <span class="popup-close-avatar">X</span>
+        <div>
+
+            <iframe frameborder="0" src="@Url.Action("ChangeAvatar", "User")" class="_avatar-iframe"></iframe>
+        </div>
+
+    </div>
+
+
+    @* Change password*@
+
+
+            <div class="popup-fallback"></div>
+            <div class="popup-content-change-password">
+                <span class="popup-close-change-password">X</span>
+                <div>
+
+                    <iframe frameborder="0" src="@Url.Action("ChangePassword", "User")" class="_changepassword-iframe"></iframe>
+                </div>
+
+            </div>
+
+
+    <div id="tab-2" class="tab-content @tabtwo">
+        @{
+            foreach (var item in Model.Books)
+            {
+                if (item.booktype == "soon")
+                {
+                    var ctr = item.rating;
+                    <div style="float:left">
+                    <div class="section">
+                        <img src="../../Content/Images/book.jpg" class="img-book" />
+                        <div class="author">Author name: @item.authorname</div>
+                        <div class="illustrator">Illustrator name: @item.illustratorname</div>
+                        <div class="rating">Rating: @item.rating</div>
+                        <div class="description">Description: @item.bookdescription</div>
+                        <div class="bookname">Name: @item.bookname</div>
+                        <div class="read-button"><a href="javascript:void(0);" class="button readbutton">Read</a></div>
+                    </div>
+                                        
+                        <div id="_rate_books_read">
+                            @for(int count=1;count<=ctr;count++)
+                            {
+                        <img src="../../Content/Images/rated-black.png" id="rate-right-bottom" />
+                             }
+                        
+                    </div>
+                        </div>
+                }
+            }
+        }
+    </div>
+            }
+    </div>
+

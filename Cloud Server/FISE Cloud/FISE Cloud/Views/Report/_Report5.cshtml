@@ -1,0 +1,98 @@
+﻿@using FISE_Cloud.Models;
+@model Report5
+@{
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<style>
+    .nodata {
+        padding: 10px 0;
+    }
+</style>
+<div class="report-stats-section-double-border row">
+    @if (Model.BookRead != null && Model.BookRead.Count() > 1)
+    {
+        <div class="col-xs-12" id="columnBookRead1" style="position:relative;">
+            <div style="position: absolute;border-bottom: 2px solid #14B4B4;width: 100%; bottom: 64px;"></div>
+        </div>
+        <div class="col-xs-12 report5_bargraphtitle" style="text-align:left">@Resource.Reports_Report5_Noofbooksreadbyastudent</div>
+        <div class="col-xs-2" style="line-height:25px;">
+            <div style="width: 10px; height: 10px; background-color: #FC654C; margin-top: 7px; float: left;"></div>
+            @if (_Userdata != null && !_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+            {
+                <div> @Resource.Reports_Report5_SelectedSchool</div>
+            }
+            else
+            {
+                <div> @Resource.Reports_Report5_YourSchool</div>
+            }
+        </div>
+
+        <div class="col-xs-2" style="line-height:25px;"><div style="width: 10px; height: 10px; background-color: #CCC; margin-top: 7px; float: left;"></div>@Resource.Reports_Report5_AllSchoolAverage</div>
+
+        <script>
+            function CreateTableBookRead() {
+                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new { Model.BookRead }));
+            }
+            var data = CreateTableBookRead();
+            var datastring = "Grade,Your School,Other School";
+            $.each(data.BookRead, function (index, value) {
+                datastring += "\n" + value.GradeName + "," + value.School + "," + value.OverAll
+            });
+            RenderBarChart('columnBookRead1', datastring, '#FC654C', '#CCCCCC');
+        </script>
+    }
+    else
+    {
+        <div class="nodata">@Resource.Report5_Nodata</div>
+    }
+</div>
+
+<div class="report-stats-section row">
+    @if (Model.TimeSpent != null && Model.TimeSpent.Count() > 1)
+    {
+        <div class="col-xs-12" id="columnTimeSpent" style="position:relative;">
+            <div style="position: absolute;border-bottom: 2px solid #14B4B4;width: 100%; bottom: 64px;"></div>
+        </div>
+        <div class="col-xs-12 report5_bargraphtitle" style="text-align:left">@Resource.Reports_Report5_TimeSpentinweekbyastudent&nbsp;<span class="report5_hours">(@Resource.Report5_hours)</span></div>
+        <div class="col-xs-2" style="line-height:25px;">
+            <div style="width: 10px; height: 10px; background-color: #14B4B4; margin-top: 7px; float: left; "></div>
+            @if (_Userdata != null && !_Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+            {
+                <div> @Resource.Reports_Report5_SelectedSchool</div>
+            }
+            else
+            {
+                <div> @Resource.Reports_Report5_YourSchool</div>
+            }
+        </div>
+
+        <div class="col-xs-2" style="line-height:25px;"><div style="width: 10px; height: 10px; background-color: #CCCCCC; margin-top: 7px; float: left;"></div>@Resource.Reports_Report5_AllSchoolAverage</div>
+
+        <script>
+            function CreateTableTimeSpent() {
+                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new { Model.TimeSpent }));
+            }
+            var data = CreateTableTimeSpent();
+            var datastring = "Grade,Your School,Other School";
+            $.each(data.TimeSpent, function (index, value) {
+                datastring += "\n" + value.GradeName + "," + value.School + "," + value.OverAll
+            });
+            RenderBarChart('columnTimeSpent', datastring, '#14B4B4', '#CCCCCC');
+        </script>
+
+    }
+    else
+    {
+        <div class="nodata">@Resource.Report5_Nodata</div>
+    }
+</div>
+<div class="row footnotes">
+    <div class="" style="padding-bottom:16px;">@Resource.Reports_footnotes_NOTE</div>
+    <ul>@Html.Raw(HttpUtility.HtmlDecode(@Resource.Reports_footnotes_NOTE_note2))</ul>
+</div>

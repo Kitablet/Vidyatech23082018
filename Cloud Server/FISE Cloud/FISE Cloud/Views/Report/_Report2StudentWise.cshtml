@@ -1,0 +1,412 @@
+﻿@using FISE_Cloud.Models;
+@model Report2School
+<style>
+    .select {
+        color: #333;
+        border-bottom: 3px solid #333333;
+    }
+
+    .chart {
+        padding: 10px 0;
+    }
+</style>
+
+
+<div class="row" style="padding-top:15px;">
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-tab-name="tab-gradewise-@Model.SchoolId" data-toggle="tab" href="#tab-gradewise-@Model.SchoolId" onclick="ChartCheckTab(this);">
+                    <div>
+                        <span>@Resource.Tab_Title_GradeWise</span>
+                    </div>
+                </a>
+            </li>
+            <li class="">
+                <a data-tab-name="tab-subsectionwise-@Model.SchoolId" data-toggle="tab" href="#tab-subsectionwise-@Model.SchoolId" onclick="ChartCheckTab(this);">
+                    <div>
+                        <span>@Resource.Tab_Title_SUBSECTIONWISE</span>
+
+                    </div>
+                </a>
+            </li>
+            @Html.RenderBootstrapTabHeader("tab-studentwise" + Model.SchoolId, @TabStudentWiseHeader())
+        </ul>
+        <div class="tab-content">
+            @Html.RenderBootstrapTabContent("tab-gradewise-" + Model.SchoolId, @TabGradeWise(), true)
+
+            @Html.RenderBootstrapTabContent("tab-subsectionwise-" + Model.SchoolId, @TabSubsectionWise())
+            @Html.RenderBootstrapTabContent("tab-studentwise" + Model.SchoolId, @TabStudentWise())
+        </div>
+    </div>
+
+    @helper TabStudentWiseHeader()
+{
+    <div onclick="ClickSection(@Model.SchoolId);">
+        <span>@Resource.Tab_Title_STUDENTWISE</span>
+
+    </div>
+}
+
+    @helper TabGradeWise()
+    {
+
+int cid = 0;
+string[] colors = new string[] { "#fb654c", "#14b4b4", "#9da502", "#f3bc1b", "#51cea4", "#538dbb", "#cc76a7", "#ffd4db", "#adcdef" };
+Dictionary<string, string> activity = new Dictionary<string, string>();
+activity.Add("activity", "Hours spent/doing activities");
+activity.Add("bookreading", "Hours spent/reading");
+activity.Add("browsing", "Hours spent/browsing");
+    <div id="GradeWiseContainer" class="NoChartRendered" data-parent="#tab-gradewise-@Model.SchoolId" tab-select="tab-gradewise-@Model.SchoolId">
+        <div class="row">
+            <div class="row report-stats-section">
+                <div class="col-xs-12"><div class="report-stats-title">@Resource.Tab_Title_OVERALL</div></div>
+                <div class="col-xs-12">
+                    <div class="report-stats-count" style="text-align:center">@Model.OverAllAvgBookRead </div>
+                </div>
+
+                <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Reports_AvgNumberofBooksRead</div></div>
+                <div class="col-xs-12">
+                    <div class="col-xs-6 books-read-section">
+                        <div id="OverAllStudentschart_@Model.SchoolId" class="chart chartforrender"></div>
+                    </div>
+                    <div class="col-xs-6 ">
+                        <div id="OverAllActivitiesGradechart_@Model.SchoolId" class="chart chartforrender"></div>
+                    </div>
+                </div>
+                <script>
+                    $(document).ready(function () {
+
+                        function CreateTableOverAllStudents() {
+                            @{
+                                List<ChartModel> model = new List<ChartModel>();
+                                cid = 0;
+                                foreach (var chart in @Model.OverAllStudents)
+                                {
+                                    cid = int.Parse(chart.Name);
+                                    cid = cid - 1;
+                                    model.Add(new ChartModel() { label = "Gr. "+ chart.Name, value = chart.Count, color = colors[cid] });
+                                    //cid++;
+                                }
+                             }
+                            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model }));
+                        }
+
+                        function CreateTableOverAllActivitiesGrade() {
+                            @{
+                                float sum1 = 0;
+                                List<ChartModel> model1 = new List<ChartModel>();
+                                cid = 0;
+                                foreach (var chart in @Model.OverAllActivitiesGrade)
+                                {
+                                    sum1 += (float)Math.Round(((double)chart.Count / 60), 1);
+                                    model1.Add(new ChartModel() { label =activity[chart.Name.ToLower()], value = (float) Math.Round(((double)chart.Count / 60), 1),color= colors[cid] });
+                                    cid++;
+                                }
+                             }
+                            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model1 }));
+                        }
+
+                        var model = CreateTableOverAllStudents();
+                        var model1 = CreateTableOverAllActivitiesGrade();
+
+                        var FinalContent = {};
+                        FinalContent.Content = model.model;
+                        FinalContent.HeadTitile = '@Model.OverAllTotalStudents';
+                        FinalContent.SubTitile = 'Students/using/Kitablet';
+                        localStorage.removeItem('OverAllStudentschart_@Model.SchoolId');
+                        if (model.model.length > 0)
+                            localStorage.setItem("OverAllStudentschart_@Model.SchoolId", JSON.stringify(FinalContent));
+
+                        var FinalContent1 = {};
+                        FinalContent1.Content = model1.model1;
+                        FinalContent1.HeadTitile = '@sum1';
+                        FinalContent1.SubTitile = 'Hours/spent on/Kitablet';
+                        localStorage.removeItem('OverAllActivitiesGradechart_@Model.SchoolId');
+                        if (model1.model1.length > 0 && parseFloat(FinalContent1.HeadTitile) > 0)
+                            localStorage.setItem("OverAllActivitiesGradechart_@Model.SchoolId", JSON.stringify(FinalContent1));
+                        else {
+                            $("#OverAllActivitiesGradechart_@Model.SchoolId").removeClass('chartforrender').text('@Resource.Reports_NoDataFound');
+                        }
+                    });
+                </script>
+            </div>
+            @foreach (var item in @Model.GradeWise)
+            {
+                <div class="row report-stats-section">
+                    @{
+                        var id = "gradeactivity_" + @item.Id + "_" + Model.SchoolId;
+                    }
+                    <div class="col-xs-12"><div class="report-stats-title">Grade @item.Name</div></div>
+                    <div class="col-xs-12">
+                        <div class="report-stats-count" style="text-align:center">@item.AvgBookRead</div>
+                    </div>
+
+                    <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Reports_AvgNumberofBooksRead</div></div>
+
+                    <div class="col-xs-12"> <div id="@id" class="chart chartforrender" style="margin:auto"></div></div>
+                    <script>
+
+                        function CreateTableGrade() {
+                            @{
+                float sum2 = 0; cid = 0;
+                    List<ChartModel> model4 = new List<ChartModel>();
+                    foreach (var chart in item.Activities)
+                    {
+                        sum2 += (float)Math.Round(((double)chart.Count / 60), 1);
+                        model4.Add(new ChartModel() { label =activity[ chart.Name.ToLower()], value = (float)Math.Round(((double)chart.Count / 60), 1), color = colors[cid] });
+                        cid++;
+                }
+            }
+                            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new { model4 }));
+                        }
+                        var model4 = CreateTableGrade();
+                        var FinalContent = {};
+                        FinalContent.Content = model4.model4;
+                        FinalContent.HeadTitile = '@sum2';
+                        FinalContent.SubTitile = 'Hours/spent on/Kitablet';
+                        localStorage.removeItem('@id');
+                        if (model4.model4.length > 0 && parseFloat(FinalContent.HeadTitile) > 0)
+                            localStorage.setItem("@id", JSON.stringify(FinalContent));
+                        else {
+                            $("#@id").removeClass('chartforrender').text('@Resource.Reports_NoDataFound');
+                        }
+                    </script>
+                </div>
+    }
+        </div>
+        <div class="row footnotes">
+            <div class="" style="padding-bottom:16px;">@Resource.Reports_footnotes_NOTE</div>
+            <ul>@Html.Raw(HttpUtility.HtmlDecode(@Resource.Reports_footnotes_NOTE_note1))</ul>
+        </div>
+    </div>
+
+}
+
+    @helper TabSubsectionWise()
+    {
+int cid = 0;
+string[] colors = new string[] { "#fb654c", "#14b4b4", "#9da502", "#f3bc1b", "#51cea4", "#538dbb", "#cc76a7", "#ffd4db", "#adcdef" };
+Dictionary<string, string> activity = new Dictionary<string, string>();
+activity.Add("activity", "Hours spent/doing activities");
+activity.Add("bookreading", "Hours spent/reading");
+activity.Add("browsing", "Hours spent/browsing");
+    <div id="SubsectionWiseContainer" class="NoChartRendered" data-parent="#tab-subsectionwise-@Model.SchoolId" tab-select="tab-subsectionwise-@Model.SchoolId">
+        <div class="row">
+            <div class="row report-stats-section">
+                <div class="col-xs-12">
+                    <div class="report-stats-title">@Resource.Tab_Title_OVERALL</div>
+                </div>
+                <div class="col-xs-12">
+                    <div id="section_@Model.SchoolId" class="chart chartforrender" style="margin:auto;"></div>
+                </div>
+                <script>
+                    function CreateTableOverAllActivitiesSubsection() {
+                        @{
+                            cid = 0;
+                                            List<ChartModel> model = new List<ChartModel>();
+                                            foreach (var chart in @Model.OverAllActivitiesSubsection)
+                                            {
+                                                model.Add(new ChartModel() { label =chart.Name.ToLower(), value = chart.Count, color = colors[cid] });
+                                                cid++;
+                                            }
+                                                        }
+                        return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model }));
+                    }
+
+                    var model = CreateTableOverAllActivitiesSubsection();
+                    var FinalContent = {};
+                    FinalContent.Content = model.model;
+                    FinalContent.HeadTitile = '@Model.OverAllTotalStudents';
+                    FinalContent.SubTitile = 'Students/using/Kitablet';
+                    localStorage.removeItem('section_@Model.SchoolId');
+                    if (model.model.length > 0)
+                        localStorage.setItem("section_@Model.SchoolId", JSON.stringify(FinalContent));
+                </script>
+            </div>
+            @foreach (var item in @Model.SubSectionWise)
+            {
+                <div class="row report-stats-section">
+                    <div style="margin:auto;">
+                        @{
+                            var id = "sectioneactivity_" + @item.Id + "_" + Model.SchoolId;
+                        }
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="report-stats-title">@item.Name</div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="report-stats-count">@item.AvgBookRead</div>
+                            </div>
+                            <div class="col-xs-12">
+                                <div class="report-stats-count-title">@Resource.Reports_AvgNumberofBooksRead</div>
+                            </div>
+                        </div>
+                        @if (@item.AvgBookRead > 0)
+                        {
+                            <div id="@id" class="chart chartforrender"></div>
+                        }
+                        <script>
+
+                            function CreateTableSection() {
+                                @{
+                        float sum3 = 0; cid = 0;
+                    List<ChartModel> model2 = new List<ChartModel>();
+                    foreach (var chart in item.Activities)
+                    {
+                        sum3 += (float)Math.Round(((double)chart.Count / 60), 1);
+                        model2.Add(new ChartModel() { label =activity[chart.Name.ToLower()], value = (float)Math.Round(((double)chart.Count / 60), 1),color=colors[cid] });
+                        cid++;
+                }
+            }
+                                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new { model2 }));
+                            }
+                            var model2 = CreateTableSection();
+                            var FinalContent = {};
+                            FinalContent.Content = model2.model2;
+                            FinalContent.HeadTitile = '@sum3';
+                            FinalContent.SubTitile = 'Hours/spent on/Kitablet';
+                            localStorage.removeItem('@id');
+
+                            if (model2.model2.length > 0 && parseFloat(FinalContent.HeadTitile) > 0)
+                                localStorage.setItem("@id", JSON.stringify(FinalContent));
+                            else {
+                                $("#@id").removeClass('chartforrender').text('@Resource.Reports_NoDataFound');
+                            }
+                        </script>
+                    </div>
+                </div>
+    }
+        </div>
+        <div class="row footnotes">
+            <div class="" style="padding-bottom:16px;">@Resource.Reports_footnotes_NOTE</div>
+            <ul>@Html.Raw(HttpUtility.HtmlDecode(@Resource.Reports_footnotes_NOTE_note1))</ul>
+        </div>
+    </div>
+}
+    @helper TabStudentWise()
+    {
+    <div id="@Model.SchoolId">
+        <div class="grade-selector" id="gr-@Model.SchoolId">
+            <span class="grade-selector-title">@Resource.Selector_GRADE </span>
+            @foreach (var grade in Model.Grade)
+            {
+                if (Model.Grade[0].Id == grade.Id)
+                {
+                    <a val="@grade.Id" class="grade1 select" parent="@Model.SchoolId" onclick="gradeclick(this);">@grade.Name</a>
+                }
+                else
+                {
+                    <a val="@grade.Id" class="grade1" parent="@Model.SchoolId" onclick="gradeclick(this);">@grade.Name</a>
+                }
+
+            }
+        </div>
+
+        <div class="section-selector" id="sec-@Model.SchoolId">
+
+            <span class="section-selector-title">@Resource.Selector_SECTION</span>
+
+            @foreach (var section1 in Model.Section)
+            {
+                if (Model.Section[0] == section1)
+                {
+                    <a val="@section1" class="section select" parent="@Model.SchoolId" onclick="sectionclick(this);">@section1</a>
+                }
+                else
+                {
+                    <a val="@section1" class="section" parent="@Model.SchoolId" onclick="sectionclick(this);">@section1</a>
+                }
+            }
+        </div>
+
+    </div>
+    <div id="StudentWiseContainer" schoolid="@Model.SchoolId">
+
+        @Html.Partial("_Report2StudentWise1", Model.StudentWise, new ViewDataDictionary { { "schoolid", @Model.SchoolId } })
+
+    </div>
+}
+</div>
+
+
+<script>
+
+
+    $('.section-selector .section:first').addClass('select');
+    $('.grade-selector .grade1:first').addClass('select');
+    function gradeclick(ctrl) {
+        var parent = $(ctrl).attr('parent');
+        $('#gr-' + parent + ' .grade1').removeClass('select');
+        $(ctrl).addClass('select');
+        var section = $('#sec-' + parent + ' .select').attr('val');
+
+        LoadstudentDetails(section, $(ctrl).attr('val'), parent, 'details', 0,'grade')
+    }
+
+    function sectionclick(ctrl) {
+        var parent = $(ctrl).attr('parent');
+        $('#sec-' + parent + ' .section').removeClass('select');
+        $(ctrl).addClass('select');
+        var grade = $('#gr-' + parent + ' .select').attr('val');
+        LoadstudentDetails($(ctrl).attr('val'), grade, parent, 'details', 0,'')
+    }
+
+    function ChangeStudent(schoolid, ctrl) {
+        var section = $('#sec-' + schoolid + ' .select').attr('val');
+        var grade = $('#gr-' + schoolid + ' .select').attr('val');
+        LoadstudentDetails(section, grade, schoolid, 'report', $(ctrl).val(),'');
+    }
+    function LoadstudentDetails(section, grade, schoolid, type, userid,isgrade) {
+        var attr = $('[name$=duration]:checked').attr('dropdown');
+        var val = $('[name$=duration]:checked').val();
+        var time = [{ time: '0' }, { time: '0' }]
+        $('.' + attr).each(function (index, value) {
+            time[index].time = $(this).val();
+        });
+        if (type == 'report') {
+            $.ajax({
+                url: '@Url.Action("Report2StudentWise", "Report")'+'/?schoolid=' + schoolid + '&section=' + section + '&grade=' + grade + '&duration=' + val + '&month=' + time[1].time + '&year=' + time[0].time + '&type=' + type + '&userid=' + userid + '&callfrom=' + isgrade,
+                cache: false,
+                type: "Get",
+                dataType: "html",
+                success: function (data) {
+                    $("div[schoolid=" + schoolid + "] .divStudentReport").html(data);
+                },
+                error: function (jqXHR, textStatus, err) {
+                    if (jqXHR.status == 401) {
+                        //refresh the page, as we are not longer authorized
+                        location.reload();
+                    }
+                }
+            });
+        }
+        else {
+            $.ajax({
+                url: '@Url.Action("Report2StudentWise", "Report")'+'/?schoolid=' + schoolid + '&section=' + section + '&grade=' + grade + '&duration=' + val + '&month=' + time[1].time + '&year=' + time[0].time + '&type=' + type + '&userid=' + userid + '&callfrom=' + isgrade,
+                cache: false,
+                type: "Get",
+                dataType: "html",
+                success: function (data) {
+                    $("div[schoolid=" + schoolid + "]").html(data);
+                },
+                error: function (jqXHR, textStatus, err) {
+                    if (jqXHR.status == 401) {
+                        //refresh the page, as we are not longer authorized
+                        location.reload();
+                    }
+                }
+            });
+        }
+    }
+    function ChartCheckTab(ctrl) {
+        ChartCheck($('[tab-select=' + $(ctrl).attr('href').replace('#', '') + ']'));
+    }
+
+    function ClickSection(schoolid)
+    {
+        $('div[id=tab-studentwise' + schoolid + '] .section-selector > .section.select').click();
+    }
+</script>
+
+

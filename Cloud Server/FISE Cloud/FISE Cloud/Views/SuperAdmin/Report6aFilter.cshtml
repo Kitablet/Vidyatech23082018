@@ -1,0 +1,63 @@
+﻿
+@{
+    ViewBag.Title = "Report6aFilter";
+}
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-8">
+        <h4 class="page-title">Report 6 : Active books in kitablet</h4>
+    </div>
+</div>
+<hr />
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Library Sub-sections:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Junior1" />
+            <span class="filter_checkboxlabel">Junior 1</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Junior2" />
+            <span class="filter_checkboxlabel">Junior 2</span>
+        </div>
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="Middle" />
+            <span class="filter_checkboxlabel">Middle</span>
+        </div>
+    </div>
+</div>
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Languages:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Hindi" />
+            <span class="filter_checkboxlabel">Hindi</span>
+        </div>
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="English" />
+            <span class="filter_checkboxlabel">English</span>
+        </div>
+    </div>
+</div>
+
+<div class="buttons">
+    <input type="button" class="btn btn-default btn-rect" value="Generate Report" />
+</div>

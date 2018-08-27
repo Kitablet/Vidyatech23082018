@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kitablet</title>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Scripts/utils.js"></script>
+    <script>
+        $(document).ready(function () {
+            var OSName = getOSName();
+            // var browserName = getBrowserName();
+            if (OSName == "Windows") {
+                $('.safari').hide();
+            }
+            else if (OSName == "MacOS") {
+                $('.firefox').hide();
+            }
+        });
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Quicksand-Regular';
+            src: url('css/Fonts/Quicksand-Regular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Quicksand-Bold';
+            src: url('css/Fonts/Quicksand-Bold.otf') format('opentype');
+        }
+        body {
+            /*background: url("images/login-form-bg.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);*/
+            font-family: Quicksand-Regular;
+            margin-bottom: 0;
+            
+        }
+
+        .upgrade-container {
+            background: none repeat scroll 0 0 #000000;
+            margin: 100px auto 100px;
+            position: relative;
+            text-align: center;
+            width: 80%;
+            text-align: center;
+        }
+
+            .upgrade-container .header {
+                color: #ffffff;
+                padding-top: 20px;
+                padding-bottom:20px;
+
+            }
+
+                .upgrade-container .header h2 {
+                    font-size: 30px;
+                }
+
+            .upgrade-container .browser-list::after {
+                clear: both;
+                content: "";
+                display: block;
+                height: 0;
+                line-height: 0;
+            }
+
+            .upgrade-container .browser-list {
+                list-style: outside none none;
+                margin: 0;
+                padding: 0px 0;
+            }
+
+                .upgrade-container .browser-list li {
+                    /*float: left;*/
+                    display: inline-block;
+                    text-align: center;
+                    width: 33.33%;
+                    list-style:none;
+                }
+
+                    .upgrade-container .browser-list li a {
+                        text-decoration: none;
+                    }
+
+                        .upgrade-container .browser-list li a img {
+                            border: none;
+                        }
+
+                    .upgrade-container .browser-list li p {
+                        color: #ffffff;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+        td, th {
+            border: solid 1px #FFF;
+            border-collapse: collapse;
+            padding:5px 0;
+        }
+        .body {
+            padding-bottom: 20px;
+        }
+        li img {
+        height:100px;
+        width:100px;
+        }
+    </style>
+    <script type="text/javascript">
+
+    </script>
+</head>
+<body style="min-width:1024px;">
+    <div id="intro">
+        <section>
+            <div class="row main-section" style="padding:0;">
+                <div class="upgrade-container">
+                    <div class="header">
+                        <h3>Sorry, we don’t support this browser/device. Right now, we support only the following browsers and devices:</h3>
+                    </div>
+                    <div class="body">
+                        <table style="color: #fff; width: 60%; margin: auto;padding-bottom:20px; border-collapse:collapse" cellpadding="0" cellspacing="0">
+                            <thead><tr><th>Devices</th><th>Browser</th></tr></thead>
+                            <tr>
+                                <td>Windows</td>
+                                <td>
+                                    <ul class="browser-list">
+                                        <li>
+                                            <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank">
+                                                <p>Chrome</p>
+                                                <img alt="Chrome" src="Content/Images/upgrade-chrome.png" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Mozilla Firefox" href="http://www.firefox.com/" target="_blank">
+                                                <p>Firefox</p>
+                                                <img alt="Firefox" src="Content/Images/upgrade-firefox.png" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>MAC</td>
+                                <td>
+                                    <ul class="browser-list">
+                                        <li>
+                                            <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank">
+                                                <p>Chrome</p>
+                                                <img alt="Chrome" src="Content/Images/upgrade-chrome.png" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a title="Apple Safari" href="http://www.apple.com/safari/" target="_blank">
+                                                <p>Safari</p>
+                                                <img alt="Safari" src="Content/Images/upgrade-safari.png" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                        <ul class="browser-list" style="display:none">
+                            <li class="chrome">
+                                <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank">
+                                    <p>Chrome</p>
+                                    <img alt="Chrome" src="Content/Images/upgrade-chrome.png" />
+                                </a>
+                            </li>
+                            <li class="firefox">
+                                <a title="Mozilla Firefox" href="http://www.firefox.com/" target="_blank">
+                                    <p>Firefox</p>
+                                    <img alt="Firefox" src="Content/Images/upgrade-firefox.png" />
+                                </a>
+                            </li>
+                            <li class="safari">
+                                <a title="Apple Safari" href="http://www.apple.com/safari/" target="_blank">
+                                    <p>Safari</p>
+                                    <img alt="Safari" src="Content/Images/upgrade-safari.png" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

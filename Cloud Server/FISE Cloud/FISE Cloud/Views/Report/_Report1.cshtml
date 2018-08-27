@@ -1,0 +1,97 @@
+﻿@using FISE_Cloud.Models.School;
+@using FISE_Cloud.Models;
+@using Webdiyer.WebControls.Mvc;
+@model RegistrationAndLogin
+
+@{
+    ViewBag.Title = "Student List";
+}
+<div id="filter_result" class="row">
+<div id="product-edit" class="nav-tabs-custom">
+    <ul class="nav nav-tabs">
+        @Html.RenderBootstrapTabHeader("tab-created", @TabCreatedStudentsHeader(), true)
+        @Html.RenderBootstrapTabHeader("tab-registered", @TabRegisteredStudentsHeader())
+        @Html.RenderBootstrapTabHeader("tab-active", @TabActiveStudentsHeader())
+    </ul>
+    <div class="tab-content">
+        @Html.RenderBootstrapTabContent("tab-created", @TabCreatedStudents(), true)
+        @Html.RenderBootstrapTabContent("tab-registered", @TabRegisteredStudents())
+        @Html.RenderBootstrapTabContent("tab-active", @TabActiveStudents())
+    </div>
+</div>
+@helper TabCreatedStudentsHeader()
+{
+    <div class="report1" id="tab1">
+        <span>@Resource.Reports_Report1_Tab_title_CREATEDBUTYETTOREGISTER (@Model.Created.TotalItemCount)
+        <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('created');" title="@Resource.Export_Reports_Report1_CreatedButYetToReg"/>            
+        </span>
+    </div>
+}
+
+@helper TabRegisteredStudentsHeader()
+{
+    <div class="report1" id="tab2">
+        <span>@Resource.Reports_Report1_Tab_title_REGISTEREDBUTYETTOLOGIN (@Model.Registered.TotalItemCount)
+        <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('registered');" title="@Resource.Export_Reports_Report1_RegedButYetToLogin"/>
+            
+        </span>
+    </div>
+}
+@helper TabActiveStudentsHeader()
+{
+    <div class="report1" id="tab3">
+        <span>@Resource.Reports_Report1_Tab_title_ACTIVEUSERS (@Model.Active.TotalItemCount)
+        <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('active');" title="@Resource.Export_Reports_Report1_ActiveUsers"/>
+            
+        </span>
+    </div>
+}
+
+@helper TabCreatedStudents()
+{
+    <div id="CreatedContainer">
+        @Html.Partial("_Report1ListPost", Model.Created)
+    </div>
+}
+
+@helper TabRegisteredStudents()
+{
+    <div id="RegisteredContainer">
+        @Html.Partial("_Report1ListPost2", Model.Registered)
+    </div>
+}
+@helper TabActiveStudents()
+{
+    <div id="ActiveContainer">
+        @Html.Partial("_Report1ListPost3", Model.Active)
+    </div>
+}
+</div>
+@section scripts {
+   
+    <script type="text/javascript">
+
+                $(function () {
+                    // Javascript to enable link to tab
+                    var hash = GetTab();
+                    if (hash) {
+                        $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+                    }
+                });
+                function GetTab() {
+                    var hash = document.location.hash;
+                    if (hash.indexOf("tab-students") >= 0) {
+                        return "tab-students";
+                    }
+                    else if (hash.indexOf("tab-admins") >= 0) {
+                        return "tab-admins";
+                    }
+                    else {
+                        return "";
+                    }
+                }
+    </script>
+}
+
+
+

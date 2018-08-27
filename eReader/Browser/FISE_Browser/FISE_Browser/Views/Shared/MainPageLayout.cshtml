@@ -1,0 +1,293 @@
+﻿@{
+    // ViewBag.Title = "KITABLET";
+    Layout = null;
+    var controllerName = HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("controller");
+    var actionName = HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("action");
+    int subsection = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection = userobj != null ? userobj.SubSectionId : subsection;
+}
+
+
+
+@if (subsection == 1)
+{
+    @Styles.Render("~/Css/MainPageStyle1.css")
+}
+else if (subsection == 2)
+{
+    @Styles.Render("~/Css/MainPageStyle2.css")
+}
+else
+{
+    @Styles.Render("~/Css/MainPageStyle3.css")
+}
+<head>
+    <title> @ViewBag.Title</title>
+    <script src="~/Scripts/utils.js"></script>
+</head>
+<script>
+    var IsSessionTimeOut1 = 2;
+
+    function IsSessionTimeOut() {
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("IsSessionTimeOut", "User")',
+                type: 'Get',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+
+                    if (data == true)
+                        IsSessionTimeOut1 = 2;
+                    else
+                        IsSessionTimeOut1 = 1;
+                },
+                error: function (xhr, status, error) {
+
+                    if (xhr.readyState == 0)
+                        showCommonPopup('@System.Web.HttpUtility.HtmlDecode(Resource.NoInternet)');
+                    IsSessionTimeOut1 = 0;
+                }
+            });
+        }
+        else {
+            showCommonPopup('@System.Web.HttpUtility.HtmlDecode(Resource.NoInternet)');
+            IsSessionTimeOut1 = 0;
+        }
+        return IsSessionTimeOut1;
+    }
+
+    function Logout() {
+        window.location.href = '@Url.RouteUrl("LoginPage")';
+    }
+</script>
+<div id="Main_Header">
+    @* SELECT MORE POP-UP START *@
+    <div class="modal">
+        <div class="modal-content" id="SelectMore">
+            <a class="closeButton"><img src="~/Content/Images/close.png" /></a>
+            <div id="Categories" style="display: inline-block;">
+                <p class="SelectMoreText" style="text-align: left;padding-left: 35px;">CATEGORIES</p>
+                <div id="CategoriesButtons1" class="selectMoreButtonDiv">
+
+                </div>
+                <div id="CategoriesButtons2" class="selectMoreButtonDiv">
+
+                </div>
+            </div>
+            <div id="Specials" class="selectMoreButtonDiv">
+                <p class="SelectMoreText">SPECIALS</p>
+                <div id="SpecialsButtons">
+
+                </div>
+            </div>
+            <div id="Language" class="selectMoreButtonDiv">
+                <p class="SelectMoreText">LANGUAGE</p>
+                <div id="LanguageButtons">
+
+                </div>
+            </div>
+            <div id="Type" class="selectMoreButtonDiv">
+                <p class="SelectMoreText">TYPE</p>
+                <div id="TypeButtons">
+
+                </div>
+            </div>
+            <div>
+                <input type="button" value="DONE" id="donebtn" />
+            </div>
+        </div>
+    </div>
+
+
+    <div class="commonmodal">
+        <div class="modal-content">
+            <p id="Poptext"></p>
+            <div>
+                <input type="button" value="OK" id="Okbtn" onclick="closeCommonPopup();" />
+            </div>
+        </div>
+    </div>
+
+
+    @* SELECT MORE POP-UP END *@
+    <div class="siteLogo"></div>
+    <span id="header_title"></span>
+    <div id="SubSection_Dropdown"></div>
+
+    <ul id="Main_Header_Nav">
+        @if (controllerName.Equals("Main", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Home", StringComparison.InvariantCultureIgnoreCase))
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Home")" title="Home"><img src="~/Content/Images/home_selected.png" /></a></li>
+        }
+        else
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Home")" title="Home"><img src="~/Content/Images/home.png" /></a></li>
+        }
+        @if (controllerName.Equals("Main", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Search", StringComparison.InvariantCultureIgnoreCase))
+        {
+            <li class="Main_Header_Nav_Items" id="SearchTab"><a href="@Url.RouteUrl("Search")" title="Search"><img src="~/Content/Images/search_selected.png" /></a></li>
+        }
+        else
+        {
+            <li class="Main_Header_Nav_Items" id="SearchTab"><a href="@Url.RouteUrl("Search")" title="Search"><img src="~/Content/Images/search.png" /></a></li>
+        }
+        @if (controllerName.Equals("User", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Index", StringComparison.InvariantCultureIgnoreCase))
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Profile")" title="Profile"><img src="~/Content/Images/profile_selected.png" /></a></li>
+        }
+        else
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Profile")" title="Profile"><img src="~/Content/Images/profile.png" /></a></li>
+        }
+        @if (controllerName.Equals("Main", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Announcements", StringComparison.InvariantCultureIgnoreCase))
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Announcements")" title="Announcements"><div style="width:30px;"><img src="~/Content/Images/announcements_selected.png" /><p id="AnnouncementCount"></p></div></a></li>
+        }
+        else
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Announcements")" title="Announcements"><div style=" height: 30px; width: 30px;"><img src="~/Content/Images/announcements.png" /><p id="AnnouncementCount"></p></div></a></li>
+        }
+        @if (controllerName.Equals("Main", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Setting", StringComparison.InvariantCultureIgnoreCase))
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Setting")" title="Settings"><img src="~/Content/Images/settings_selected.png" /></a></li>
+        }
+        else
+        {
+            <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Setting")" title="Settings"><img src="~/Content/Images/settings.png" /></a></li>
+        }
+        <li class="Main_Header_Nav_Items"><a href="@Url.RouteUrl("Logout")" title="Logout" id="LogoutButton"><img src="~/Content/Images/logout.png" /></a></li>
+    </ul>
+
+
+    @*@if ((controllerName.Equals("Main", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Home", StringComparison.InvariantCultureIgnoreCase)) || (controllerName.Equals("User", StringComparison.InvariantCultureIgnoreCase) && actionName.Equals("Index", StringComparison.InvariantCultureIgnoreCase)))
+        {
+           @Html.Action("GetUAC", "Main")
+        }*@
+</div>
+<div id="loading">
+    <div style="margin:auto;color:#fff;width:100px;height:20px;"> Please Wait...</div>
+</div>
+<div id="Main_Content">
+    @RenderBody()
+</div>
+<script src="~/Scripts/MainPageLayout.js"></script>
+<script>
+    $(document).ready(function () {
+        checkIsLogout();
+        $('#loading').hide();
+        $('.Main_Header_Nav_Items a').click(function () {
+           syncbeforeunload = false;
+        });
+
+        ////Disable mouse right click
+        //$("body").on("contextmenu", function (e) {
+        //    return false;
+        //});
+        //$('body').css('user-select', 'none');
+        //document.onkeydown = function (e) {
+        //    if (event.keyCode == 123) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //}
+    });
+    function showAnnouncementCount() {
+        $.ajax(
+        {
+            type: "GET",
+            url: "@Url.Action("AnnouncementCount", "Main")",
+            contentType: "application/json",
+            dataType: "json",
+            success: function (result) {
+                $("#AnnouncementCount").text(result.Count);
+            },
+            error: function (result) {
+                console.log(result);
+            }
+        });
+    }
+    window.addEventListener('beforeunload', function () {
+        if(syncbeforeunload)
+        {
+            $.ajax({
+                url: '@Url.Action("FocusOut", "Main")',
+                type: 'Get',
+                dataType: 'json',
+                async: true,
+                success: function (data) {
+                },
+                error: function (xhr, status, error) {
+                }
+            });
+        }
+    });
+
+    $(window).on("blur focus", function (e) {
+        console.log('blur focus');
+        var prevType = $(this).data("prevType");
+
+        if (prevType != e.type) {   //  reduce double fire issues
+            switch (e.type) {
+                case "blur":
+                    console.log("!!blur!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusOut", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+
+                    break;
+                case "focus":
+                    console.log("!!focus!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusIn", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+                    break;
+            }
+        }
+
+        $(this).data("prevType", e.type);
+    });
+</script>
+@*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+
+<style>
+    #loading {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        background: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-family: 'Quicksand-Regular';
+        font-size: 14px;
+    }
+</style>

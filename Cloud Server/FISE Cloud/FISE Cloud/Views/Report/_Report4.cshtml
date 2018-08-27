@@ -1,0 +1,283 @@
+﻿@using FISE_Cloud.Models;
+@model Report4
+
+@{ var i = 0;
+    var j = 0;
+    var k = 0;
+    var l = 0;
+    int cid = 0;
+    string[] colors = new string[] { "#fb654c", "#14b4b4", "#9da502", "#f3bc1b", "#51cea4", "#538dbb", "#cc76a7", "#ffd4db", "#adcdef" };
+}
+<script src="~/Scripts/d3.min.js?v=1"></script>
+<script src="~/Scripts/d3pie.js?v=1"></script>
+<script src="~/Scripts/CreateDonut.js?v=1"></script>
+<div class="row" id="accordion_group">
+    <div class="panel-group" id="filter-result">
+        @foreach (var item in Model.Publisher)
+        {
+            i++;
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#@item.Name.GetNormalized()@i" data-parent="#filter-result" class="acc-rootlevel" aria-expanded="@(i==1 ? "true" : "false")">@item.Name</a>
+                </div>
+                <div class="panel-collapse @(i == 1 ? "collapse in" : "collapse")" id="@item.Name.GetNormalized()@i" aria-expanded="@(i==1 ? "true" : "false")">
+                    <div class="panel-group" id="@item.Name.GetNormalized()@i-Subsection">
+                        @foreach (var item1 in item.SubSection)
+                        {
+                            k++;
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" href="#@item1.Name.GetNormalized()@i" data-parent="#@item.Name.GetNormalized()@i-Subsection" class="acc-childlevel-1" aria-expanded="@(i==1 && k==1 ? "true" : "false")">@item1.Name</a>
+                                </div>
+                                <div class="panel-collapse @(i == 1 && k==1 ? "collapse in" : "collapse")" id="@item1.Name.GetNormalized()@i" aria-expanded="@(i==1 && k==1 ? "true" : "false")">
+                                    <div class="panel-group" id="@item1.Name.GetNormalized()@i-Languagegp">
+                                        @foreach (var item2 in item1.Language)
+                                        {
+                                            j++;
+                                            if (item2.ReportBook.Count() > 0)
+                                            {
+                                                <div class="panel panel-default">
+
+                                                    <div class="panel-heading">
+                                                        <a data-toggle="collapse" href="#@item2.Name.GetNormalized()-@j" data-parent="#@item1.Name.GetNormalized()@i-Languagegp" class="acc-childlevel-2" aria-expanded="@(i==1 && k==1 && j==1 ? "true" : "false")">@item2.Name </a>
+                                                    </div>
+
+                                                    <div class="panel-collapse @(i == 1 && k==1 && j==1 ? "collapse in" : "collapse")" id="@item2.Name.GetNormalized()-@j" aria-expanded="@(i==1 && k==1 && j==1 ? "true" : "false")">
+                                                        <div class="panel-group" id="@item2.Name.GetNormalized()-@j-@j">
+
+                                                            @foreach (var item3 in item2.ReportBook)
+                                                            {
+                                                                l++;
+                                                                <div class="panel panel-default">
+                                                                    <div class="panel-heading">
+                                                                        <a data-toggle="collapse" href="#@item3.BookId-@i-@j" data-parent="#@item2.Name.GetNormalized()-@j-@j" class="acc-childlevel-3 NoChartRendered" onclick="ChartCheck(this);" aria-expanded="@(i==1 && k==1 && j==1 && l==1 ? "true" : "false")">@item3.Title</a>
+                                                                    </div>
+                                                                    <div class="panel-collapse @(i == 1 && k==1 && j==1 && l==1 ? "collapse in" : "collapse") openchart" id="@item3.BookId-@i-@j" data-parent="#@item2.Name.GetNormalized()-@j-@j" aria-expanded="@(i==1 && k==1 && j==1 && l==1 ? "true" : "false")">
+
+                                                                        <div class="report-stats-section-double-border row">
+                                                                            @if (item3.ViewMode.ToLower() == "portrait")
+                                                                            {
+                                                                                <div class="col-xs-offset-5 col-xs-2 reports_book_img">
+                                                                                    @if (item3.SubSection.Trim() == "J1")
+                                                                                    { <div class="book_subsection_colorband colorband_Subsection_Junior1"></div>}
+                                                                                    else if (item3.SubSection.Trim() == "J2")
+                                                                                    { <div class="book_subsection_colorband colorband_Subsection_Junior2"></div>}
+                                                                                    else if (item3.SubSection.Trim() == "M")
+                                                                                    { <div class="book_subsection_colorband colorband_Subsection_Middle"></div>}
+                                                                                    <img src="@item3.Thumbnail" alt="@item3.Title" />
+                                                                                    <div class="row rating_row">
+                                                                                        <div>
+
+                                                                                            @if (item3.AvgRating == 0)
+                                                                                            {
+                                                                                                <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(item3.AvgRating, 1).ToString()</span>
+                                                                                            }
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            }
+                                                                            else
+                                                                            {
+                                                                                <div class="col-xs-offset-5 col-xs-2 reports_book_img_landscape">
+                                                                                    @if (item3.SubSection.Trim() == "J1")
+                                                                                    { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior1"></div>}
+                                                                                    else if (item3.SubSection.Trim() == "J2")
+                                                                                    { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior2"></div>}
+                                                                                    else if (item3.SubSection.Trim() == "M")
+                                                                                    { <div class="book_subsection_colorband_landscape colorband_Subsection_Middle"></div>}
+                                                                                    <img src="@item3.Thumbnail" alt="@item3.Title" />
+                                                                                    <div class="row rating_row">
+                                                                                        <div>
+
+                                                                                            @if (item3.AvgRating == 0)
+                                                                                            {
+                                                                                                <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                                                                                            }
+                                                                                            else
+                                                                                            {
+                                                                                                <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(item3.AvgRating, 1).ToString()</span>
+                                                                                            }
+
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            }
+                                                                            <div class="col-xs-12"><div class="report-stats-count">@Math.Round((double)@item3.AvgReadingTime, 1) <span class="mins">@Resource.Reports_mins</span></div></div>
+                                                                            <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Report4_AvgTimeSpentReading</div></div>
+                                                                            <div class="col-xs-12">
+                                                                                @if (item3.ReadComplete > 0)
+                                                                                {
+
+                                                                                    <div class="col-xs-6 books-read-section">
+                                                                                        <div id="bookread_@item3.BookId@item2.Name.GetNormalized()" class="chart chartforrender"></div>
+                                                                                    </div>
+                                                                                }
+                                                                                else
+                                                                                {
+                                                                                    <div class="col-xs-6 class_reports_nographdata books-read-section">@Resource.Reports_NoDataMsg_NoBookReadingDataFound</div>
+                                                                                }
+                                                                                @if (item3.TotalRating > 0)
+                                                                                {
+                                                                                    <div class="col-xs-6">
+                                                                                        <div id="bookrating_@item3.BookId@item2.Name.GetNormalized()" class="chart chartforrender"></div>
+                                                                                    </div>
+                                                                                }
+                                                                                else
+                                                                                {
+
+                                                                                    <div class="col-xs-6 class_reports_nographdata">@Resource.Reports_NoDataMsg_NoBookRatingDataFound</div>
+                                                                                }
+
+                                                                            </div>
+                                                                            <script>
+                                                                                function CreateTableBookRead() {
+                                                                                    @{
+                                                                                        cid = 0;
+                                                                                        List<ChartModel> model = new List<ChartModel>();
+                                                                                        foreach (var chart in item3.Reading)
+                                                                                        {
+                                                                                            cid = int.Parse(chart.Name);
+                                                                                            cid = cid - 1;
+                                                                                            model.Add(new ChartModel() { label = "Gr. " + chart.Name, value = chart.Count, color = colors[cid] });
+                                                                                            //cid++;
+                                                                                        }
+                                                                                     }
+                                                                                    return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model }));
+                                                                                }
+
+
+                                                                                function CreateTableBookRating() {
+                                                                                    @{
+                                                                                        cid = 0;
+                                                                                        List<ChartModel> model2 = new List<ChartModel>();
+                                                                                        foreach (var chart in item3.Rating)
+                                                                                        {
+                                                                                            model2.Add(new ChartModel() { label = chart.Name+" star", value = chart.Count, color = colors[cid] });
+                                                                                            cid++;
+                                                                                        }
+                                                                                    }
+                                                                                    return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model2 }));
+                                                                                }
+
+                                                                                var model = CreateTableBookRead();
+                                                                                var model2 = CreateTableBookRating();
+                                                                                var FinalContent = {};
+                                                                                FinalContent.Content = model.model;
+                                                                                FinalContent.HeadTitile = '@item3.ReadComplete';
+                                                                                FinalContent.SubTitile = 'Students/read this/book';
+                                                                                localStorage.removeItem('bookread_@item3.BookId@item2.Name.GetNormalized()');
+                                                                                if (model.model.length > 0)
+                                                                                    localStorage.setItem("bookread_@item3.BookId@item2.Name.GetNormalized()", JSON.stringify(FinalContent));
+
+                                                                                var FinalContent1 = {};
+                                                                                FinalContent1.Content = model2.model2;
+                                                                                FinalContent1.HeadTitile = '@item3.TotalRating';
+                                                                                FinalContent1.SubTitile = 'Ratings/received for/this book';
+                                                                                localStorage.removeItem('bookrating_@item3.BookId@item2.Name.GetNormalized()');
+                                                                                if (model2.model2.length > 0)
+                                                                                    localStorage.setItem("bookrating_@item3.BookId@item2.Name.GetNormalized()", JSON.stringify(FinalContent1));
+
+                                                                            </script>
+
+                                                                            @if (item3.TotalRead > 0)
+                                                                            {
+                                                                                <div>
+                                                                                    <div class="col-xs-12" style="height: 150px;width:300px;position: relative;left: 34%;">
+                                                                                        <div>
+                                                                                            <canvas id="halgpi_@item3.BookId@item2.Name.GetNormalized()"></canvas>
+                                                                                        </div>
+                                                                                        <img src='~/Content/Images/Line.png' style="width: 300px; position: absolute; bottom: -92px;left:0" />
+                                                                                    </div>
+
+                                                                                    <script>
+                                                                                        var data = {
+                                                                                            @{
+                                                                int read = item3.TotalRead - item3.ReadComplete;
+                                                                                    }
+                                                                                            labels: [
+                                                                                                "Completed",
+                                                                                                "Not Completed"
+                                                                                            ],
+                                                                                            datasets: [
+                                                                                                {
+                                                                                                    data: [ @item3.ReadComplete,@read],
+                                                                                                    backgroundColor: [
+                                                                                                        "#14B4B4",
+                                                                                                        "#CCCCCC",
+                                                                                                    ]
+                                                                                                }]
+                                                                                        };
+                                                                                        RenderHalfPi('halgpi_@item3.BookId@item2.Name.GetNormalized()', data);
+                                                                                    </script>
+                                                                                    <div class="col-xs-12" style="margin-top:85px;"><div class="report-stats-count">@Html.Raw(@item3.ReadComplete * 100 / (@item3.TotalRead == 0 ? 1 : @item3.TotalRead)) <span>%</span></div></div>
+
+
+                                                                                    <div class="col-xs-12">
+                                                                                        @Resource.Report4_StudentsWhoStartedReadingThisBookReadItTillTheEnd
+                                                                                    </div>
+                                                                                    <div class="col-xs-12">
+                                                                                        <div class="col-xs-2" style="line-height:25px;">
+                                                                                            <div style="width: 10px; height: 10px; background-color: #14B4B4; margin-top: 7px; float: left; "></div>
+                                                                                            Completed
+                                                                                        </div>
+                                                                                        <div class="col-xs-2" style="line-height:25px;">
+                                                                                            <div style="width: 10px; height: 10px; background-color: #CCCCCC; margin-top: 7px; float: left; "></div>
+                                                                                            Not Completed
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+    }
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+    }
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+        }
+    }
+                                    </div>
+                                </div>
+                            </div>
+
+    }
+                    </div>
+                </div>
+            </div>
+    }
+    </div>
+    @if (Model.Publisher.Count.Equals(0))
+    { <div>@Resource.Reports_NoDataFound</div>}
+</div>
+<script>
+    function ChartCheck(e) {
+        setTimeout(function () {
+            var isDone = false;
+            if ($(e).hasClass("NoChartRendered")) {
+                isDone = ReadyCharts(e);
+                if (isDone)
+                    $(this).removeClass('NoChartRendered');
+            }
+        }, 300);
+    }
+
+    function ReadyCharts(e) {
+        var parentid = $(e).attr("data-parent");
+        $(parentid).find('.chartforrender').each(function () {
+            var id = $(this).attr("id");
+            $("#" + id).html("");
+            var content = JSON.parse(localStorage.getItem(id));
+
+            RenderDonutChart(id, content.Content, content.HeadTitile, content.SubTitile);
+        });
+        return true;
+    }
+</script>

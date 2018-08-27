@@ -1,0 +1,54 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<Student> 
+
+@{
+    ViewBag.Title = "Student List";
+}
+
+<h2>Student List For Parent</h2>
+
+<div class="container">
+ 
+        <div>Search Students:</div>
+        @using (Ajax.BeginForm("Parent_StudentList", "Parent", new RouteValueDictionary { { "pageno", "" } }, new AjaxOptions { UpdateTargetId = "StudentsContainer", InsertionMode = InsertionMode.Replace, HttpMethod = "POST"}, new RouteValueDictionary { { "id", "searchForm" }, { "class", "form-inline well well-sm" } }))
+        {
+            <span>Student Name (Like):</span>
+            <input type="text" name="emp"  id="emp" style="width: 180px" class="form-control" />
+            <input type="submit" value="Search(S)" accesskey="S" class="btn btn-default" />
+        }
+     
+    <div id="StudentsContainer">
+        @Html.Partial("_StudentListOfParent", Model)
+    </div>
+</div>    
+
+@section scripts
+{
+    @{Html.RegisterMvcPagerScriptResource();}
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+
+///////////////////////////////////////////
+    $("#chk_select_all").change(function () {  //"select all" change
+        var status = this.checked; // "select all" checked status
+        $('.chkbox').each(function () { //iterate all listed checkbox items
+            this.checked = status; //change ".checkbox" checked status
+        });
+    });
+
+    $('.chkbox').change(function () { //".checkbox" change
+        //uncheck "select all", if one of the listed checkbox item is unchecked
+        if (this.checked == false) { //if this item is unchecked
+            $("#chk_select_all")[0].checked = false; //change "select all" checked status to false
+        }
+
+        //check "select all" if all checkbox items are checked
+        if ($('.chkbox:checked').length == $('.chkbox').length) {
+            $("#chk_select_all")[0].checked = true; //change "select all" checked status to true
+        }
+    });
+
+    </script>
+
+}

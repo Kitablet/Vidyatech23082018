@@ -1,0 +1,2 @@
+D:\Xamarin\FISE\FISE\FISE\FISE.WinPhone\FISE.WinPhone.csproj;arm
+D:\Xamarin\FISE\FISE\FISE\FISE\FISE.csproj;neutral

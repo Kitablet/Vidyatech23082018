@@ -1,0 +1,344 @@
+﻿@using FISE_Cloud.Models.School;
+@using FISE_Cloud.Models;
+@using Webdiyer.WebControls.Mvc;
+@model Report1SchoolAdmin
+
+@{
+    ViewBag.Title = Resource.Reports_Report1_Title;
+    ViewBag.HeaderPageTitle = "Reports";
+}
+<style>
+    .nav-tabs > li {
+        width: 33.33334% !important;
+    }
+
+    #filter_result {
+        margin-top: 50px;
+    }
+
+    .select {
+        color: #333;
+        border-bottom: 3px solid #333333 !important;
+        padding-bottom: 1px !important;
+    }
+
+    #report1schooladmin_exptoexcel {
+        display: inline-flex;
+    }
+
+    div#tab1.report1 {
+        width: 54%;
+    }
+
+    div#tab2.report1 {
+        width: 61%;
+    }
+
+    div#tab3.report1 {
+        width: 61%;
+    }
+
+    .nav.nav-tabs > li > a {
+        height: 53px !important;
+    }
+
+    .grade1 {
+        background: transparent;
+        /*border: 0;*/
+        color: white;
+        padding-left: 16px;
+        padding-right: 16px;
+        border:none;
+    }
+
+    .grade-active {
+        border-bottom: solid black;
+        COLOR: BLACK;
+    }
+
+    .section-selector {
+        margin-bottom: 2px !important;
+    }
+</style>
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-12">
+        <h4 class="page-title">@Resource.Reports_Report1_Title</h4>
+        <a class="exporttoexcel" id="report1schooladmin_exptoexcel" onclick="return ExportStudents('all');" title="@Resource.Export_Reports_Report1"></a>
+    </div>
+</div>
+<hr />
+
+@using (Html.BeginForm("ExportReport1SchoolAdmin", "Report", FormMethod.Post, new { id = "filter-selected-items-toexport-form" }))
+{
+    <input type="hidden" id="typeexport" name="typeexport" value="" />
+}
+
+
+
+
+<div id="filter_result" class="row">
+
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a data-tab-name="tab-created" data-toggle="tab" href="#tab-created">
+                    <div class="report1" id="tab1">
+                        <span>
+                            @Resource.Reports_Report1_Tab_title_CREATEDBUTYETTOREGISTER (@Model.CreatedTotal)
+                            <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('created');" title="@Resource.Export_Reports_Report1_CreatedButYetToReg" />
+
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="">
+                <a data-tab-name="tab-registered" data-toggle="tab" href="#tab-registered">
+
+                    <div class="report1" id="tab2">
+                        <span>
+                            @Resource.Reports_Report1_Tab_title_REGISTEREDBUTYETTOLOGIN (@Model.RegisteredTotal)
+                            <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('registered');" title="@Resource.Export_Reports_Report1_RegedButYetToLogin" />
+
+                        </span>
+                    </div>
+                </a>
+            </li>
+            <li class="">
+                <a data-tab-name="tab-active" data-toggle="tab" href="#tab-active">
+
+                    <div class="report1" id="tab3">
+                        <span>
+                            @Resource.Reports_Report1_Tab_title_ACTIVEUSERS (@Model.ActiveTotal)
+                            <input type="button" id="" class="exporttoexcel_white" onclick="return ExportStudents('active');" title="@Resource.Export_Reports_Report1_ActiveUsers" />
+
+                        </span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab-created">
+                @using (Ajax.BeginForm("Report1SchoolAdmin", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "CreatedContainer", OnBegin = "onBegin", OnComplete = "onComplete" }, new { id = "filterForm1" }))
+                {
+                <div class="grade-selector" id="gr-created">
+                    <span class="grade-selector-title">@Resource.Selector_GRADE </span>
+                    @foreach (var grade in Model.Grade)
+                    {
+                        if (Model.Grade[0].Id == grade.Id)
+                        {
+                        <input type="submit" val="@grade.Id" class="grade1 select" parent="gr-created" onclick="gradeclick(this, 'created');" value="@grade.Name" />
+                        }
+                        else
+                        {
+                        <input type="submit" val="@grade.Id" class="grade1" parent="gr-created" onclick="gradeclick(this, 'created');" value="@grade.Name" />
+                        }
+                    }
+                    <input type="hidden" name="cgradeid" class="gvalue" value="@Model.Grade[0].Id" />
+                </div>
+
+                <div class="section-selector" id="sec-created">
+
+                    <span class="section-selector-title">@Resource.Selector_SECTION</span>
+
+                    @foreach (var section1 in Model.Section)
+                    {
+                        if (Model.Section[0] == section1)
+                        {
+                        <input type="submit" val="@section1" class="section select" parent="sec-created" onclick="sectionclick(this, 'created');" value="@section1" />
+                        }
+                        else
+                        {
+                        <input type="submit" val="@section1" class="section" parent="sec-created" onclick="sectionclick(this, 'created');" value="@section1" />
+                        }
+                    }
+                    <input type="hidden" name="csection" class="cvalue" value="@Model.Section[0]" />
+                </div>                
+                }
+                <div id="CreatedContainer">
+                    @Html.Partial("_Report1SchoolAdminList1", Model.Created)
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-registered">
+                @using (Ajax.BeginForm("Report1SchoolAdmin", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "RegisteredContainer" }, new { id = "filterForm2" }))
+                {
+                    <div class="grade-selector" id="gr-registered">
+                        <span class="grade-selector-title">@Resource.Selector_GRADE </span>
+                        @foreach (var grade in Model.Grade)
+                        {
+                            if (Model.Grade[0].Id == grade.Id)
+                            {
+                                <input type="submit" value="@grade.Name" val="@grade.Id" class="grade1 select" parent="gr-registered" onclick="gradeclick(this, 'registered');" />
+                            }
+                            else
+                            {
+                                <input type="submit" val="@grade.Id" value="@grade.Name" class="grade1" parent="gr-registered" onclick="gradeclick(this, 'registered');" />
+                            }
+                        }
+                        <input type="hidden" name="rgradeid" class="gvalue" value="@Model.Grade[0].Id" />
+                    </div>
+
+                    <div class="section-selector" id="sec-registered">
+
+                        <span class="section-selector-title">@Resource.Selector_SECTION</span>
+
+                                                @foreach (var section1 in Model.Section)
+                        {
+                            if (Model.Section[0] == section1)
+                            {
+                                <input type="submit" val="@section1" class="section select" parent="sec-registered" onclick="sectionclick(this, 'registered');" value="@section1"/>
+                            }
+                            else
+                            {
+                                <input type="submit" val="@section1" class="section" parent="sec-registered" onclick="sectionclick(this, 'registered');" value="@section1"/>
+                            }
+                        }
+                        <input type="hidden" name="rsection" class="cvalue" value="@Model.Section[0]" />
+                    </div>                  
+                }
+
+                <div id="RegisteredContainer">
+                    @Html.Partial("_Report1SchoolAdminList2", Model.Registered)
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-active">
+                @using (Ajax.BeginForm("Report1SchoolAdmin", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "ActiveContainer" }, new { id = "filterForm3" }))
+                {
+                    <div class="grade-selector" id="gr-active">
+                        <span class="grade-selector-title">@Resource.Selector_GRADE </span>
+                                                @foreach (var grade in Model.Grade)
+                        {
+                            if (Model.Grade[0].Id == grade.Id)
+                            {
+                                <input type="submit" val="@grade.Id" class="grade1 select" parent="gr-active" onclick="gradeclick(this, 'active');" value="@grade.Name"/>
+                            }
+                            else
+                            {
+                                <input type="submit" val="@grade.Id" class="grade1" parent="gr-active" onclick="gradeclick(this, 'active');" value="@grade.Name"/>
+                            }
+                        }
+                        <input type="hidden" name="agradeid" class="gvalue" value="@Model.Grade[0].Id " />
+                    </div>
+
+                    <div class="section-selector" id="sec-active">
+
+                        <span class="section-selector-title">@Resource.Selector_SECTION</span>
+
+                                                @foreach (var section1 in Model.Section)
+                        {
+                            if (Model.Section[0] == section1)
+                            {
+                                <input type="submit" val="@section1" class="section select" parent="sec-active" onclick="sectionclick(this, 'active');" value="@section1"/>
+                            }
+                            else
+                            {
+                                <input type="submit" value="@section1" val="@section1" class="section" parent="sec-active" onclick="sectionclick(this, 'active');" />
+                            }
+                        }
+                        <input type="hidden" name="asection" class="cvalue" value="@Model.Section[0]" />
+                    </div>                    
+                }
+                <div id="ActiveContainer">
+                    @Html.Partial("_Report1SchoolAdminList3", Model.Active)
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section scripts {
+    <script src="~/Scripts/MvcPager.js?v=1"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+
+        $('.section-selector .section:first').addClass('select');
+        $('.grade-selector .grade1:first').addClass('select');
+        function gradeclick(ctrl, id) {
+
+            var parent = $(ctrl).attr('parent');
+            $('#' + parent + ' .grade1').removeClass('select');
+            $(ctrl).addClass('select');
+            $('#gr-' + id + ' .gvalue').val($(ctrl).attr('val'));
+            $('#sec-' + id + ' .cvalue').val($('#sec-' + id + ' .select').attr('val'));
+            return true;
+        }
+
+        function sectionclick(ctrl, id) {
+            var parent = $(ctrl).attr('parent');
+            $('#' + parent + ' .section').removeClass('select');
+            $(ctrl).addClass('select');
+            $('#gr-' + id + ' .gvalue').val($('#gr-' + id + ' .select').attr('val'));
+            $('#sec-' + id + ' .cvalue').val($(ctrl).attr('val'));
+            return true
+        }
+
+        function LoadstudentDetails(section, grade, target, pagesize) {
+            console.log(section + ', ' + grade + ', ' + target + ', ' + pagesize + ', ');
+            if (target == "created")
+                $("#CreatedContainer").load("/Report/Report1SchoolAdminListAjax",
+               { gradeid: grade, section: section, pagesize: pagesize, target: target });
+
+            else if (target == "registered")
+                $("#RegisteredContainer").load("/Report/Report1SchoolAdminListAjax",
+                 { gradeid: grade, section: section, pagesize: pagesize, target: target });
+
+            if (target == "active")
+                $("#ActiveContainer").load("/Report/Report1SchoolAdminListAjax",
+               { gradeid: grade, section: section, pagesize: pagesize, target: target });
+
+        }
+
+        function ExportStudents(type) {
+            $('#typeexport').val(type);
+            $('#filter-selected-items-toexport-form').submit();
+            return false;
+        }
+
+
+
+        $(function () {
+            // Javascript to enable link to tab
+            var hash = GetTab();
+            if (hash) {
+                $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+            }
+            // Change hash for page-reload
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                // window.location.hash = e.target.hash;
+            });
+        });
+        function GetTab() {
+            var hash = document.location.hash;
+            if (hash.indexOf("tab-students") >= 0) {
+                return "tab-students";
+            }
+            else if (hash.indexOf("tab-admins") >= 0) {
+                return "tab-admins";
+            }
+            else {
+                return "";
+            }
+        }
+        function onBegin() {
+        }
+        function onComplete(jqXHR, textStatus, err) {
+            
+            if (jqXHR.status == 401) {
+                //refresh the page, as we are not longer authorized
+                location.reload();
+            }
+            $('html, body').animate({ scrollTop: 0 }, 500);
+        }
+    </script>
+}
+
+
+

@@ -1,0 +1,375 @@
+﻿@model FISE_Cloud.Models.UserRegistrationModel
+
+@{
+    ViewBag.Title = "Edit School Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+@{
+    var SchoolUId = ViewContext.RouteData.Values["schooluid"];
+}
+
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+</style>
+<script src="~/Scripts/jquery.validate.js?v=1"></script>
+@if (!string.IsNullOrWhiteSpace(Model.RegistrationDate.ToString()))
+{
+    <div>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="row title-section">
+                <div>
+                    @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+                    {
+                        @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+                    }
+                </div>
+
+                <h4 class="page-title">@Model.FirstName @Model.LastName</h4>
+                <div class="float-right">
+                    <h4 class="role-title">@Resource.Schooladmin_schooladmin</h4>
+                </div>
+
+            </div>
+            <hr />
+            if (!ViewData.ModelState.IsValid)
+            {
+                <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+            }
+
+            <div class="form-horizontal">
+                @Html.HiddenFor(model => model.SchoolName)
+                @Html.HiddenFor(model => model.UserId)
+                <div class="form-group col-xs-12">
+
+                    @Html.LabelFor(model => model.FirstName, htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 inline2 reposition-validationerr">
+                        @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "" } })
+
+                        @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "" })
+                    </span>
+                </div>
+
+                <div class="form-group col-xs-12">
+
+                    @Html.LabelFor(model => model.LastName, htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 inline2 reposition-validationerr">
+                        @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "" } })
+
+                        @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "" })
+                    </span>
+                </div>
+
+
+                <div class="form-group col-xs-12">
+
+                    @Html.LabelFor(model => model.MobileNumber, htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 inline2">
+                        @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "" } })
+
+                        @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "" })
+                    </span>
+                </div>
+                <div class="form-group prefilled_text">
+
+                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 inline2">
+                        @Model.Email
+                        @Html.HiddenFor(model => model.Email)
+                    </span>
+                </div>
+                <div class="form-group">
+
+                    @Html.LabelFor(model => model.Gender, htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 control-label gender_radio">
+                        @Html.RadioButtonFor(m => m.Gender, "Male", Model.Gender == "Male" ? new { Checked = "checked", @class = "" } : null) <span class="">Male</span>
+                        @Html.RadioButtonFor(m => m.Gender, "Female", Model.Gender == "Female" ? new { Checked = "checked" } : null) <span>Female</span>
+                        @Html.ValidationMessageFor(model => model.Gender, "", new { @class = "" })
+                    </span>
+                </div>
+                <div class="form-group prefilled_text">
+                    @Html.LabelFor(model => model.CreationDate, "Creation Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 control-label">
+                        @Model.CreationDate.ToString("dd.MM.yyyy")
+                    </span>
+                </div>
+
+                <div class="form-group prefilled_text">
+                    @Html.LabelFor(model => model.RegistrationDate, "Registration Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 control-label">
+                        @Html.HiddenFor(model => model.RegistrationDate)
+                        @(string.IsNullOrWhiteSpace(Model.RegistrationDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.RegistrationDate))
+                    </span>
+                </div>
+
+                <div class="form-group prefilled_text">
+                    @Html.LabelFor(model => model.Status, "Status:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 control-label">
+                        @Html.HiddenFor(model => model.Status)
+                        @if (!(Model.Status) && Model.IsTrashed)
+                        {
+                            @Html.Raw(Resource.Status_Disabled);
+                        }
+                        else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate !=null)
+                        {
+                            @Html.Raw(Resource.Status_Active);
+                        }
+                        else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                        {
+                            @Html.Raw(Resource.Status_Registered);
+                        }
+                        else if (!(Model.Status) && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                        {
+                            @Html.Raw(Resource.Status_Created);
+                        }
+                    </span>
+                </div>
+
+                <div class="form-group prefilled_text">
+                    @Html.LabelFor(model => model.Username, "UserName:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                    <span class="col-xs-9 control-label">
+                        @Model.Username
+                        @Html.HiddenFor(model => model.Username)
+                    </span>
+                </div>
+
+
+                <div class="col-xs-offset-3 buttons">
+
+                    <input type="submit" class="btn btn-default btn-rect" name="save" value="@Resource.Btn_Save" id="btnsubmit" disabled />
+                    <input type="button" class="btn btn-default btn-rect" name="cancel" value="@Resource.Btn_Cancel" onclick="window.location='@Url.RouteUrl("SchoolAdminInfo", new { schooluid = SchoolUId, adminid = Model.UserId })'" />
+                </div>
+
+                @{TempData.Keep("schooluID");
+                }
+            </div>
+                    }
+
+        <script>
+            $(document).ready(function () {
+                $("input[name=Gender]").change(function () {
+                    if ($('input.error').length > 0)
+                        $('#btnsubmit').attr('disabled', true);
+                    else
+                        $('#btnsubmit').attr('disabled', false);
+                });
+                $('#MobileNumber_').on('keypress', function (event) {
+                    var _element = $(this), keyCode = event.keyCode || event.which, keysAllowed = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 0];
+
+                    if (event.charCode == 8 || event.charCode == 0) {
+                        return true;
+                    }
+                    else if ($.inArray(keyCode, keysAllowed) === -1 && event.ctrlKey === false)
+                    { event.preventDefault(); }
+                });
+
+                $('#FirstName_,#LastName_').keypress(function () {
+                    var regex = new RegExp("^[a-zA-Z0-9]+$");
+                    var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                    if (!regex.test(key) && event.charCode != 46 && event.charCode != 39 && event.charCode != 32) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                        event.preventDefault();
+                        return false;
+                    }
+                });
+                $.validator.addMethod('validatefirstname', function (value, element) {
+                    var expr = /^[ A-Za-z0-9.']{1,50}$/;
+                    return expr.test(value);
+                }, '@Resource.Firstname_LengthandnospecialcharValidation');
+
+                $.validator.addMethod('validatelastname', function (value, element) {
+                    var expr = /^[ A-Za-z0-9.']{1,50}$/;
+                    return expr.test(value);
+                }, '@Resource.Lastname_LengthandnospecialcharValidation');
+
+                var thevalidator = $.data($('form')[0], 'validator');
+                $("input").on("input blur change keyup", function () {
+                    $(this).valid();
+                    if ($('input.error').length > 0)
+                        $('#btnsubmit').attr('disabled', true);
+                    else
+                        $('#btnsubmit').attr('disabled', false);
+                });
+            });
+            $("form").validate({
+                rules: {
+                    FirstName: {
+                        required: true,
+                        rangelength: [1, 50],
+                        validatefirstname: true
+                    },
+                    LastName: {
+                        required: true,
+                        rangelength: [1, 50],
+                        validatelastname: true
+                    },
+                    MobileNumber: {
+                        rangelength: [10, 10],
+                        required: true,
+                        digits: true
+                    }
+                },
+
+                messages: {
+                    FirstName: {
+                        required: "@Resource.UserRegistration_FirstnameReqError",
+                        rangelength: "@Resource.Firstname_LengthandnospecialcharValidation",
+                    },
+                    LastName: {
+                        required: "@Resource.UserRegistration_LastnameReqError",
+                        rangelength: "@Resource.Lastname_LengthandnospecialcharValidation",
+                    },
+                    MobileNumber:
+                        {
+                            required: "@Resource.UserCreation_MobileNoReqError",
+                            rangelength: "@Resource.UserCreation_InvalidMobileNo"
+                        }
+                },
+                submitHandler: function (form) {
+                    $(form).find("input[type='submit']").attr('disabled', true);
+                    $(form).find("input[type='button']").attr('disabled', true);
+                    form.submit();
+                },
+                invalidHandler: function (event, validator) {
+
+                }
+            });
+        </script>
+    </div>
+                    }
+                    else
+                    {
+                        <div>
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="row title-section">
+                                    <div>
+                                        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+                    {
+                                            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+                                        }
+                                    </div>
+
+                                    <h4 class="page-title">@Model.FirstName @Model.LastName</h4>
+                                    <div class="float-right">
+                                        <h4 class="role-title">@Resource.Schooladmin_schooladmin</h4>
+                                    </div>
+
+                                </div>
+                                <hr />
+                                if (!ViewData.ModelState.IsValid)
+                                {
+                                    <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+                                }
+
+                                <div class="form-horizontal">
+                                    @Html.HiddenFor(model => model.SchoolName)
+                                    @Html.Hidden("created", "created")
+                                    @Html.HiddenFor(model => model.UserId)
+
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-xs-3" })
+                                        <span class="col-xs-9 inline2">
+
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "" } })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "" })
+                                        </span>
+                                    </div>
+
+                                    <div class="form-group col-xs-12">
+                                        @Html.LabelFor(model => model.MobileNumber, htmlAttributes: new { @class = "control-label col-xs-3" })
+                                        <span class="col-xs-9 inline2">
+                                            @Html.EditorFor(model => model.MobileNumber, new { htmlAttributes = new { @class = "" } })
+
+                                            @Html.ValidationMessageFor(model => model.MobileNumber, "", new { @class = "" })
+                                        </span>
+                                    </div>
+
+                                    <div class="col-xs-offset-3 buttons">
+
+                                        <input type="submit" class="btn btn-default btn-rect" name="save" value="@Resource.Btn_Save" id="btnsubmit" disabled />
+                                        <input type="button" class="btn btn-default btn-rect" name="cancel" value="@Resource.Btn_Cancel" onclick="window.location='@Url.RouteUrl("SchoolAdminInfo", new { schooluid = SchoolUId, adminid = Model.UserId })'" />
+                                    </div>
+
+                                    @{TempData.Keep("schooluID");
+                                    }
+                                </div>
+                                        }
+
+                            <script>
+                                $(document).ready(function () {
+                                    $('#MobileNumber_').on('keypress', function (event) {
+                                        var _element = $(this), keyCode = event.keyCode || event.which, keysAllowed = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 0];
+
+                                        if (event.charCode == 8 || event.charCode == 0) {
+                                            return true;
+                                        }
+                                        else if ($.inArray(keyCode, keysAllowed) === -1 && event.ctrlKey === false)
+                                        { event.preventDefault(); }
+                                    });
+
+                                    $.validator.addMethod('validateemail', function (value, element) {
+                                        var expr = /^[a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+([.][a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                                        return expr.test(value);
+                                    }, '@Resource.UserCreation_InvalidEmail');
+
+                                    var thevalidator = $.data($('form')[0], 'validator');
+                                    $("input").on("input blur change keyup", function () {
+                                        $(this).valid();
+                                        if ($('input.error').length > 0)
+                                            $('#btnsubmit').attr('disabled', true);
+                                        else
+                                            $('#btnsubmit').attr('disabled', false);
+                                    });
+                                });
+
+                                $("form").validate({
+                                    rules: {
+                                        Email: {
+                                            required: true,
+                                            rangelength: [1, 100],
+                                            validateemail: true
+                                        },
+                                        MobileNumber: {
+                                            rangelength: [10, 10],
+                                            required: true,
+                                            digits: true
+                                        }
+                                    },
+
+                                    messages: {
+                                        Email: {
+                                            required: "@Resource.UserCreation_EmailReqError",
+                                            rangelength: "@Resource.User_EmailLength"
+                                        },
+
+                                        MobileNumber:
+                                            {
+                                                required: "@Resource.UserCreation_MobileNoReqError",
+                                                rangelength: "@Resource.UserCreation_InvalidMobileNo"
+                                            }
+                                    },
+                                    submitHandler: function (form) {
+                                        $(form).find("input[type='submit']").attr('disabled', true);
+                                        $(form).find("input[type='button']").attr('disabled', true);
+                                        form.submit();
+                                    },
+                                    invalidHandler: function (event, validator) {
+
+                                    }
+                                });
+                            </script>
+                        </div>
+                                        }

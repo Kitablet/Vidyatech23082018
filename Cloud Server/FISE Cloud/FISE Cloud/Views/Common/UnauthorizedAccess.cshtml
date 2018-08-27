@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewBag.Title = "Unauthorized Access";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="text-align:center">@Resource.UnauthorizedAccess</h2>
+
+<div style="text-align:center">
+    @Html.Raw(@HttpUtility.HtmlDecode(@Resource.UnauthorizedAccess_YouAreNotAuthorisedToAccessPage))
+</div>
+

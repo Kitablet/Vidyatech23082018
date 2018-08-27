@@ -1,0 +1,1019 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DEVTEMP</Machine>
+    <WindowsUser>VT</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>FoundationforInnovationSo.Kitablet</PackageIdentityName>
+    <PackageIdentityPublisher>CN=7D443F70-B540-410E-A7B4-6C04B314EEB6</PackageIdentityPublisher>
+    <IntermediateOutputPath>D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\obj\x86\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\Kitablet.Windows.exe">
+      <PackagePath>Kitablet.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\win8\DeviceInfo.Plugin.Abstractions.dll">
+      <PackagePath>DeviceInfo.Plugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xam.Plugin.DeviceInfo.1.0.0.2\lib\win8\DeviceInfo.Plugin.dll">
+      <PackagePath>DeviceInfo.Plugin.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\win81\ImageCircle.Forms.Plugin.Abstractions.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xam.Plugins.Forms.ImageCircle.1.8.1\lib\win81\ImageCircle.Forms.Plugin.WindowsStore.dll">
+      <PackagePath>ImageCircle.Forms.Plugin.WindowsStore.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Release\Kitablet.dll">
+      <PackagePath>Kitablet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.dll">
+      <PackagePath>MR.Gestures.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.WinRT.dll">
+      <PackagePath>MR.Gestures.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\MR.Gestures.1.4.1\lib\win81\MR.Gestures.WinRT.Tablet.dll">
+      <PackagePath>MR.Gestures.WinRT.Tablet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.Abstractions.dll">
+      <PackagePath>PCLStorage.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\PCLStorage.1.0.2\lib\portable-win8+wpa81\PCLStorage.dll">
+      <PackagePath>PCLStorage.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Release\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Release\Plugin.Settings.Abstractions.dll">
+      <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE\bin\Release\Plugin.Settings.dll">
+      <PackagePath>Plugin.Settings.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\a1.png">
+      <PackagePath>a1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\a2.png">
+      <PackagePath>a2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity.png">
+      <PackagePath>activity.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_1.png">
+      <PackagePath>activity_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_2.png">
+      <PackagePath>activity_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_3.png">
+      <PackagePath>activity_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_1.png">
+      <PackagePath>activity_big_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_2.png">
+      <PackagePath>activity_big_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_3.png">
+      <PackagePath>activity_big_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_complete_1.png">
+      <PackagePath>activity_big_complete_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_complete_2.png">
+      <PackagePath>activity_big_complete_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_big_complete_3.png">
+      <PackagePath>activity_big_complete_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_complete.png">
+      <PackagePath>activity_complete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_complete_1.png">
+      <PackagePath>activity_complete_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_complete_2.png">
+      <PackagePath>activity_complete_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\activity_complete_3.png">
+      <PackagePath>activity_complete_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\all_books_1.png">
+      <PackagePath>all_books_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\all_books_2.png">
+      <PackagePath>all_books_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\all_books_3.png">
+      <PackagePath>all_books_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\animation.png">
+      <PackagePath>animation.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\animation_1.png">
+      <PackagePath>animation_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\animation_2.png">
+      <PackagePath>animation_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\animation_3.png">
+      <PackagePath>animation_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\announcements.png">
+      <PackagePath>announcements.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\announcements_selected.png">
+      <PackagePath>announcements_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\1116x540.png">
+      <PackagePath>Assets\1116x540.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\620x300.png">
+      <PackagePath>Assets\620x300.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\868x420.png">
+      <PackagePath>Assets\868x420.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-100.png">
+      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-140.png">
+      <PackagePath>Assets\BadgeLogo.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\BadgeLogo.scale-180.png">
+      <PackagePath>Assets\BadgeLogo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Logo.scale-140.png">
+      <PackagePath>Assets\Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Logo.scale-180.png">
+      <PackagePath>Assets\Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Logo.scale-80.png">
+      <PackagePath>Assets\Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-140.png">
+      <PackagePath>Assets\SmallLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-180.png">
+      <PackagePath>Assets\SmallLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.scale-80.png">
+      <PackagePath>Assets\SmallLogo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-16.png">
+      <PackagePath>Assets\SmallLogo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-256.png">
+      <PackagePath>Assets\SmallLogo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-32.png">
+      <PackagePath>Assets\SmallLogo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SmallLogo.targetsize-48.png">
+      <PackagePath>Assets\SmallLogo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\SplashScreen.scale-180.png">
+      <PackagePath>Assets\SplashScreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-140.png">
+      <PackagePath>Assets\Square310x310Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-180.png">
+      <PackagePath>Assets\Square310x310Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square310x310Logo.scale-80.png">
+      <PackagePath>Assets\Square310x310Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-100.png">
+      <PackagePath>Assets\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-140.png">
+      <PackagePath>Assets\Square70x70Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-180.png">
+      <PackagePath>Assets\Square70x70Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Square70x70Logo.scale-80.png">
+      <PackagePath>Assets\Square70x70Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-140.png">
+      <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\StoreLogo.scale-180.png">
+      <PackagePath>Assets\StoreLogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-140.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-180.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Wide310x150Logo.scale-80.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\available_offline_1.png">
+      <PackagePath>available_offline_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\available_offline_2.png">
+      <PackagePath>available_offline_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\available_offline_3.png">
+      <PackagePath>available_offline_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\avatar_large.png">
+      <PackagePath>avatar_large.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\avatar_medium.png">
+      <PackagePath>avatar_medium.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\avatar_small.png">
+      <PackagePath>avatar_small.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bgImage_1.png">
+      <PackagePath>bgImage_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bgImage_2.png">
+      <PackagePath>bgImage_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bgImage_3.png">
+      <PackagePath>bgImage_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bookmark_1.png">
+      <PackagePath>bookmark_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bookmark_2.png">
+      <PackagePath>bookmark_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bookmark_3.png">
+      <PackagePath>bookmark_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\books_read_1.png">
+      <PackagePath>books_read_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\books_read_2.png">
+      <PackagePath>books_read_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\books_read_3.png">
+      <PackagePath>books_read_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_landscape_1.png">
+      <PackagePath>Book_landscape_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_landscape_2.png">
+      <PackagePath>Book_landscape_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_landscape_3.png">
+      <PackagePath>Book_landscape_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_portrait_1.png">
+      <PackagePath>Book_portrait_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_portrait_2.png">
+      <PackagePath>Book_portrait_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Book_portrait_3.png">
+      <PackagePath>Book_portrait_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\book_subsection_left_1.png">
+      <PackagePath>book_subsection_left_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\book_subsection_left_2.png">
+      <PackagePath>book_subsection_left_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\book_subsection_left_3.png">
+      <PackagePath>book_subsection_left_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\book_thumbnail.png">
+      <PackagePath>book_thumbnail.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner.png">
+      <PackagePath>bottom_left_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_1.png">
+      <PackagePath>bottom_left_corner_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_2.png">
+      <PackagePath>bottom_left_corner_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_3.png">
+      <PackagePath>bottom_left_corner_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_filled.png">
+      <PackagePath>bottom_left_corner_filled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_filled_1.png">
+      <PackagePath>bottom_left_corner_filled_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_filled_2.png">
+      <PackagePath>bottom_left_corner_filled_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_left_corner_filled_3.png">
+      <PackagePath>bottom_left_corner_filled_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner.png">
+      <PackagePath>bottom_right_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_1.png">
+      <PackagePath>bottom_right_corner_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_2.png">
+      <PackagePath>bottom_right_corner_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_3.png">
+      <PackagePath>bottom_right_corner_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_filled.png">
+      <PackagePath>bottom_right_corner_filled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_filled_1.png">
+      <PackagePath>bottom_right_corner_filled_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_filled_2.png">
+      <PackagePath>bottom_right_corner_filled_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bottom_right_corner_filled_3.png">
+      <PackagePath>bottom_right_corner_filled_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_1.png">
+      <PackagePath>checkbox_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_2.png">
+      <PackagePath>checkbox_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_3.png">
+      <PackagePath>checkbox_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_black.png">
+      <PackagePath>checkbox_black.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_black_selected.png">
+      <PackagePath>checkbox_black_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_selected_1.png">
+      <PackagePath>checkbox_selected_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_selected_2.png">
+      <PackagePath>checkbox_selected_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\checkbox_selected_3.png">
+      <PackagePath>checkbox_selected_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\close.png">
+      <PackagePath>close.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\close_1.png">
+      <PackagePath>close_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\close_2.png">
+      <PackagePath>close_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\close_3.png">
+      <PackagePath>close_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\collapseBtn_1.png">
+      <PackagePath>collapseBtn_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\collapseBtn_2.png">
+      <PackagePath>collapseBtn_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\collapseBtn_3.png">
+      <PackagePath>collapseBtn_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\coming_soon_1.png">
+      <PackagePath>coming_soon_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\coming_soon_2.png">
+      <PackagePath>coming_soon_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\coming_soon_3.png">
+      <PackagePath>coming_soon_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_1.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_2.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\minus_3.png">
+      <PackagePath>Content\PrivacyPolicy\Images\minus_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_1.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_2.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Images\plus_3.png">
+      <PackagePath>Content\PrivacyPolicy\Images\plus_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\double_pager_disable.png">
+      <PackagePath>double_pager_disable.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\down.png">
+      <PackagePath>down.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\HTMLContent\XamarinLogo.png">
+      <PackagePath>HTMLContent\XamarinLogo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\kitablet_logo.png">
+      <PackagePath>kitablet_logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\kitablet_logo_1.png">
+      <PackagePath>kitablet_logo_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\kitablet_logo_2.png">
+      <PackagePath>kitablet_logo_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\kitablet_logo_3.png">
+      <PackagePath>kitablet_logo_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\logout.png">
+      <PackagePath>logout.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\logout_selected.png">
+      <PackagePath>logout_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\my_profile_1.png">
+      <PackagePath>my_profile_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\my_profile_2.png">
+      <PackagePath>my_profile_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\my_profile_3.png">
+      <PackagePath>my_profile_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\nav_dot.png">
+      <PackagePath>nav_dot.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\nav_dot_anim.png">
+      <PackagePath>nav_dot_anim.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\new_books_1.png">
+      <PackagePath>new_books_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\new_books_2.png">
+      <PackagePath>new_books_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\new_books_3.png">
+      <PackagePath>new_books_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\next.png">
+      <PackagePath>next.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\next_1.png">
+      <PackagePath>next_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\next_2.png">
+      <PackagePath>next_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\next_3.png">
+      <PackagePath>next_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\no_books.png">
+      <PackagePath>no_books.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\up.png">
+      <PackagePath>up.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_out_disable.png">
+      <PackagePath>zoom_out_disable.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\previous.png">
+      <PackagePath>previous.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\previous_1.png">
+      <PackagePath>previous_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\previous_2.png">
+      <PackagePath>previous_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\previous_3.png">
+      <PackagePath>previous_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\privacy_policy_1.png">
+      <PackagePath>privacy_policy_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\privacy_policy_2.png">
+      <PackagePath>privacy_policy_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\privacy_policy_3.png">
+      <PackagePath>privacy_policy_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\profile.png">
+      <PackagePath>profile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\profile_1.png">
+      <PackagePath>profile_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\profile_2.png">
+      <PackagePath>profile_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\profile_3.png">
+      <PackagePath>profile_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\profile_selected.png">
+      <PackagePath>profile_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\progress_done.png">
+      <PackagePath>progress_done.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\progress_pending.png">
+      <PackagePath>progress_pending.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating.png">
+      <PackagePath>rating.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_1.png">
+      <PackagePath>rating_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_2.png">
+      <PackagePath>rating_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_3.png">
+      <PackagePath>rating_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_1.png">
+      <PackagePath>rating_big_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_2.png">
+      <PackagePath>rating_big_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_3.png">
+      <PackagePath>rating_big_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_complete_1.png">
+      <PackagePath>rating_big_complete_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_complete_2.png">
+      <PackagePath>rating_big_complete_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_big_complete_3.png">
+      <PackagePath>rating_big_complete_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_complete.png">
+      <PackagePath>rating_complete.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_complete_1.png">
+      <PackagePath>rating_complete_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_complete_2.png">
+      <PackagePath>rating_complete_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rating_complete_3.png">
+      <PackagePath>rating_complete_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud.png">
+      <PackagePath>read_aloud.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_1.png">
+      <PackagePath>read_aloud_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_2.png">
+      <PackagePath>read_aloud_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_3.png">
+      <PackagePath>read_aloud_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_mute.png">
+      <PackagePath>read_aloud_mute.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_mute_1.png">
+      <PackagePath>read_aloud_mute_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_mute_2.png">
+      <PackagePath>read_aloud_mute_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_mute_3.png">
+      <PackagePath>read_aloud_mute_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_sound.png">
+      <PackagePath>read_aloud_sound.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_sound_1.png">
+      <PackagePath>read_aloud_sound_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_sound_2.png">
+      <PackagePath>read_aloud_sound_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_aloud_sound_3.png">
+      <PackagePath>read_aloud_sound_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_later_1.png">
+      <PackagePath>read_later_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_later_2.png">
+      <PackagePath>read_later_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\read_later_3.png">
+      <PackagePath>read_later_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\recommended_books_1.png">
+      <PackagePath>recommended_books_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\recommended_books_2.png">
+      <PackagePath>recommended_books_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\recommended_books_3.png">
+      <PackagePath>recommended_books_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\releaseArrow_asc.png">
+      <PackagePath>releaseArrow_asc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\releaseArrow_desc.png">
+      <PackagePath>releaseArrow_desc.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\release_books_1.png">
+      <PackagePath>release_books_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\release_books_2.png">
+      <PackagePath>release_books_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\release_books_3.png">
+      <PackagePath>release_books_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rounded_transparent_button_1.png">
+      <PackagePath>rounded_transparent_button_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rounded_transparent_button_2.png">
+      <PackagePath>rounded_transparent_button_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\rounded_transparent_button_3.png">
+      <PackagePath>rounded_transparent_button_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\school_env.png">
+      <PackagePath>school_env.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\search.png">
+      <PackagePath>search.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\searchdiscover_happy.png">
+      <PackagePath>searchdiscover_happy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\searchdiscover_unhappy.png">
+      <PackagePath>searchdiscover_unhappy.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\search_1.png">
+      <PackagePath>search_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\search_2.png">
+      <PackagePath>search_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\search_3.png">
+      <PackagePath>search_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\search_selected.png">
+      <PackagePath>search_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\selectedButton_1.png">
+      <PackagePath>selectedButton_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\selectedButton_2.png">
+      <PackagePath>selectedButton_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\selectedButton_3.png">
+      <PackagePath>selectedButton_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\settings.png">
+      <PackagePath>settings.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\settings_selected.png">
+      <PackagePath>settings_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\single_pager.png">
+      <PackagePath>single_pager.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\single_pager_1.png">
+      <PackagePath>single_pager_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\single_pager_2.png">
+      <PackagePath>single_pager_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\single_pager_3.png">
+      <PackagePath>single_pager_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\single_pager_disable.png">
+      <PackagePath>single_pager_disable.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_arrow_filled.png">
+      <PackagePath>top_arrow_filled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner.png">
+      <PackagePath>top_left_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_1.png">
+      <PackagePath>top_left_corner_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_2.png">
+      <PackagePath>top_left_corner_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_3.png">
+      <PackagePath>top_left_corner_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_filled.png">
+      <PackagePath>top_left_corner_filled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_filled_1.png">
+      <PackagePath>top_left_corner_filled_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_filled_2.png">
+      <PackagePath>top_left_corner_filled_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_left_corner_filled_3.png">
+      <PackagePath>top_left_corner_filled_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner.png">
+      <PackagePath>top_right_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_1.png">
+      <PackagePath>top_right_corner_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_2.png">
+      <PackagePath>top_right_corner_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_3.png">
+      <PackagePath>top_right_corner_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_filled.png">
+      <PackagePath>top_right_corner_filled.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_filled_1.png">
+      <PackagePath>top_right_corner_filled_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_filled_2.png">
+      <PackagePath>top_right_corner_filled_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\top_right_corner_filled_3.png">
+      <PackagePath>top_right_corner_filled_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\unselectedButton_1.png">
+      <PackagePath>unselectedButton_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\unselectedButton_2.png">
+      <PackagePath>unselectedButton_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\unselectedButton_3.png">
+      <PackagePath>unselectedButton_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\white_bottom_left_corner.png">
+      <PackagePath>white_bottom_left_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\white_bottom_right_corner.png">
+      <PackagePath>white_bottom_right_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\white_top_left_corner.png">
+      <PackagePath>white_top_left_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\white_top_right_corner.png">
+      <PackagePath>white_top_right_corner.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_in.png">
+      <PackagePath>zoom_in.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_in_1.png">
+      <PackagePath>zoom_in_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_in_2.png">
+      <PackagePath>zoom_in_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_in_3.png">
+      <PackagePath>zoom_in_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_in_disable.png">
+      <PackagePath>zoom_in_disable.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_out.png">
+      <PackagePath>zoom_out.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_out_1.png">
+      <PackagePath>zoom_out_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_out_2.png">
+      <PackagePath>zoom_out_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\zoom_out_3.png">
+      <PackagePath>zoom_out_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\curled_corner_big.png">
+      <PackagePath>curled_corner_big.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\curled_corner_small.png">
+      <PackagePath>curled_corner_small.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\discover_1.png">
+      <PackagePath>discover_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\discover_2.png">
+      <PackagePath>discover_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\discover_3.png">
+      <PackagePath>discover_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\double_pager.png">
+      <PackagePath>double_pager.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\double_pager_1.png">
+      <PackagePath>double_pager_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\double_pager_2.png">
+      <PackagePath>double_pager_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\double_pager_3.png">
+      <PackagePath>double_pager_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\DownArrowImage.png">
+      <PackagePath>DownArrowImage.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\expandBtn_1.png">
+      <PackagePath>expandBtn_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\expandBtn_2.png">
+      <PackagePath>expandBtn_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\expandBtn_3.png">
+      <PackagePath>expandBtn_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\help_1.png">
+      <PackagePath>help_1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\help_2.png">
+      <PackagePath>help_2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\help_3.png">
+      <PackagePath>help_3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\home.png">
+      <PackagePath>home.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\home_env.png">
+      <PackagePath>home_env.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\home_selected.png">
+      <PackagePath>home_selected.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Fonts\Quicksand-Bold.otf">
+      <PackagePath>Assets\Fonts\Quicksand-Bold.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Assets\Fonts\Quicksand-Regular.otf">
+      <PackagePath>Assets\Fonts\Quicksand-Regular.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Fonts\Quicksand-Bold.otf">
+      <PackagePath>Content\PrivacyPolicy\Fonts\Quicksand-Bold.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Fonts\Quicksand-Regular.otf">
+      <PackagePath>Content\PrivacyPolicy\Fonts\Quicksand-Regular.otf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_1.html">
+      <PackagePath>Content\PrivacyPolicy\help_1.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_2.html">
+      <PackagePath>Content\PrivacyPolicy\help_2.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\help_3.html">
+      <PackagePath>Content\PrivacyPolicy\help_3.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_1.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_1.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_2.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_2.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\privacy_3.html">
+      <PackagePath>Content\PrivacyPolicy\privacy_3.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\HTMLContent\local.html">
+      <PackagePath>HTMLContent\local.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Scripts\jquery-1.11.3.js">
+      <PackagePath>Content\PrivacyPolicy\Scripts\jquery-1.11.3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\Scripts\script.js">
+      <PackagePath>Content\PrivacyPolicy\Scripts\script.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\Content\PrivacyPolicy\style\style.css">
+      <PackagePath>Content\PrivacyPolicy\style\style.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\HTMLContent\default.css">
+      <PackagePath>HTMLContent\default.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\DeviceInfoReadme.txt">
+      <PackagePath>DeviceInfoReadme.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\Kitablet.Windows.xr.xml">
+      <PackagePath>Kitablet.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\packages\Xamarin.Forms.2.3.2.127\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Windows\bin\x86\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

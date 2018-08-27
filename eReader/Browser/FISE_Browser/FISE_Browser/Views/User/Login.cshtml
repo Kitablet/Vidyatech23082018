@@ -1,0 +1,60 @@
+﻿
+@using FISE_Browser.Models;
+@model UserLogin
+@{
+    ViewBag.Title = "Login";
+}
+<link href="~/Content/dashboard.css" rel="stylesheet" />
+<link href="~/Content/LoginPage.css" rel="stylesheet" />
+<div class="page login-page">
+    <div  class="page-title bt">
+        @*<h1>@Resource.Login_pageTitle</h1>*@
+        <p id="kitablet-url">www.Kitablet.com</p>
+    </div>
+    <div class="bt">
+        <div class="bt">
+
+            <div class="returning-wrapper bt">                @*<div class="title">
+                        <strong>@Resource.Login_fieldTitle</strong>
+                    </div>*@
+                <div class="form-fields">
+                   
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+                        <div class="message-error">
+                            @Html.ValidationSummary(true)
+                        </div>
+                        <div id="login">
+                            <p class="inputs">IDENTIFY YOURSELF!</p>
+                            <div class="inputs">
+                                @*@Html.LabelFor(m => m.Username)*@
+                                @Html.TextBoxFor(m => m.Username, new { @class = "username", autofocus = "autofocus", @id = "PopUpUserName", placeholder = "My Name" })
+                                @Html.ValidationMessageFor(m => m.Username)
+                            </div>
+                            <div class="inputs">
+                                @*@Html.LabelFor(m => m.Password)*@
+                                @Html.PasswordFor(m => m.Password, new { @class = "password", placeholder = "My Secret Code" })
+                                @Html.ValidationMessageFor(m => m.Password)
+                            </div>
+                            @*<div class="inputs">
+                                    @Html.EditorFor(model=>model.IsAdmin)
+                                    @Html.LabelFor(model=>model.IsAdmin)
+                                </div>*@
+
+                            <div id="login-btn" class="inputs">
+                                <input id="enter-button" type="submit" value="@Resource.LoginBtn" name="login-button" />
+                            </div>
+
+                            <span class="inputs">
+                                    @*@Html.RouteLink("Forgot Password?", "PasswordRecovery")*@
+                                @Html.ActionLink("FORGOT lOGIN NAME OR SECRET CODE?","ForgotPassword","User", new { @class = "Forgot-password", @style = "text-decoration:underline!important;color:black!important; " })
+                            </span>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

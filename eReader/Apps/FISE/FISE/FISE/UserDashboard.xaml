@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid RowSpacing="0" ColumnSpacing="0"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  x:Class="Kitablet.UserDashboard"
+  xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+   xmlns:local="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+   xmlns:local1="clr-namespace:Kitablet;assembly=Kitablet"
+   xmlns:extScroll="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+  x:Title="KITABLET">
+  
+  <Grid.RowDefinitions>
+    <RowDefinition Height="160"/>
+    <RowDefinition Height="*"/>
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+  
+    <Grid Grid.Row="0" Grid.Column="0" RowSpacing="0" ColumnSpacing="0" Padding="20,20,20,0" BackgroundColor="{DynamicResource Secondary1Color}">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+      <extScroll:ExtendedScrollView BackgroundColor="{DynamicResource Secondary1Color}" HeightRequest="160"><!--Use ScrollView For Android & IOS-->
+        <StackLayout Orientation="Horizontal">
+          <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="End" HorizontalOptions="Start" x:Name="booksread" StyleId="readbook">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="136" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{DynamicResource ReadBooksImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+            <Label Text="BOOKS&#10;READ"  Grid.Row="1" Grid.Column="0" Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="100" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+            <BoxView Grid.Row="2" Grid.Column="0" x:Name="booksreadl" />
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+          </Grid>
+          <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="End"  HorizontalOptions="Start" x:Name="readlater" StyleId="readlater">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="136" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{DynamicResource ReadLaterBooksImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+            <Label Grid.Row="1" Grid.Column="0" Text="READ&#10;LATER"  Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="100" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+            <BoxView Grid.Row="2" Grid.Column="0" x:Name="readlaterl"/>
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+          </Grid>
+          <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="End" HorizontalOptions="Start" x:Name="myprofile" StyleId="myprofile">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="Auto"/>
+              <RowDefinition Height="2"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{DynamicResource MyProfileImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+            <Label Grid.Row="1" Grid.Column="0" Text="MY&#10;PROFILE"  Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="100" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+            <BoxView Grid.Row="2" Grid.Column="0" x:Name="myprofilel"/>
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+          </Grid>
+        </StackLayout>
+      </extScroll:ExtendedScrollView>
+    </StackLayout>
+  </Grid>
+    <Grid RowSpacing="0" ColumnSpacing="0" Padding="0, 30, 0, 0" Grid.Row="1" Grid.Column="0" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="180" x:Name="Column1"/>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <StackLayout x:Name="ButtonPanel" Grid.Row="0" Grid.Column="0">
+    </StackLayout>
+    <StackLayout x:Name="BooksContainer" Grid.Row="0" Grid.Column="1">
+      <Grid x:Name="NoBooksContainer" RowSpacing="0" ColumnSpacing="0" IsVisible="False">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Source="{DynamicResource NoBookImage}" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+        <StackLayout Grid.Row="0" Grid.Column="0" x:Name="NoBooksTextContainer" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Vertical">
+          <Label x:Name="NoBooksText1Container" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Style="{DynamicResource LabelNormal2}"></Label>
+          <Label x:Name="NoBooksText2Container" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Style="{DynamicResource LabelNormal2}"></Label>
+        </StackLayout>
+
+      </Grid>
+    </StackLayout>
+  </Grid>
+    <Grid RowSpacing="0" ColumnSpacing="0" x:Name="myprofiles" Padding="0,30,0,0"  IsVisible="false" Grid.Row="1" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <extScroll:ExtendedScrollView HeightRequest="230"><!--Use ScrollView For Android & IOS-->
+        <Grid>
+          <Image Source="{DynamicResource MyProfileBackgroundImage}" HorizontalOptions="Center" VerticalOptions="Start" Aspect="AspectFit" Grid.Row="0" Grid.Column="0"></Image>
+          <Grid RowSpacing="0" Margin="0,12,0,0" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="Start" Grid.Row="0" Grid.Column="0" HeightRequest="230">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+              <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="140" />
+              <ColumnDefinition Width="310" />
+            </Grid.ColumnDefinitions>
+            <StackLayout x:Name="CurrentAvatarImageStack" VerticalOptions="Center" Orientation="Vertical" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" Margin="0,45,0,0" Spacing="0">
+              <!--<controls:CircleImage Source="{DynamicResource AvatarBigImage}" HeightRequest="130" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center" x:Name="CurentAvatarImage"/>-->
+              <Grid RowSpacing="0" ColumnSpacing="0">
+                <Image Source="{DynamicResource AvatarBigImage}" HeightRequest="130" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center"/>
+                <Image HeightRequest="130" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center" x:Name="CurentAvatarImage"/>
+              </Grid>
+              <!--<Image Source="{DynamicResource AvatarBigImage}" HeightRequest="130" WidthRequest="130" HorizontalOptions="Center" VerticalOptions="Center" x:Name="CurentAvatarImage"/>-->
+              <Label Text="CURRENT AVATAR" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14" TextColor="{DynamicResource TextBlackColor}" HorizontalOptions="Center" Margin="0,3,0,0" VerticalOptions="Center" x:Name="CurentAvatarLabel"/>
+            </StackLayout>
+
+            <StackLayout x:Name="ChangePasswordStack" Spacing="10" VerticalOptions="Center" Orientation="Vertical" Grid.Row="0" Grid.Column="1" Padding="10,0,0,0">
+              <StackLayout Padding="0,0,0,0">
+                <Label Text="CHANGE PASSWORD:" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14"  Margin="8,0,0,0" TextColor="{DynamicResource TextBlackColor}"></Label>
+              </StackLayout>
+              <StackLayout VerticalOptions="Start" Grid.Row="0" Grid.Column="0" Spacing="0">
+                <AbsoluteLayout Opacity="0.5">
+                  <local:MyEntry x:Name="CurrentPassword" Style="{DynamicResource LabelNormal4}" TextColor="{DynamicResource TextWhiteColor}" PlaceholderColor="{DynamicResource TextWhiteColor}" HorizontalOptions="Fill" Placeholder="Your current secret code"  IsPassword="True" AbsoluteLayout.LayoutBounds="0,0,280,40" AbsoluteLayout.LayoutFlags="None" TextChanged="OnTextChanged"/>
+                  <Label x:Name="errorCurrentPassword"  Style="{DynamicResource LabelNormal1Regular}"  FontAttributes="None" FontSize="12" TextColor="{DynamicResource TextWhiteColor}" AbsoluteLayout.LayoutBounds="1,1,AutoSize,32" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="Center" HorizontalOptions="End">
+
+                  </Label>
+                </AbsoluteLayout>
+                <BoxView HeightRequest="2" Margin="0,-2,0,0" Color="{DynamicResource TextWhiteColor}" Opacity="0.5" x:Name="CurrentPasswordBoxView"></BoxView>
+              </StackLayout>
+              <StackLayout VerticalOptions="Start"  Grid.Row="0" Grid.Column="0" Spacing="0">
+                <AbsoluteLayout Opacity="0.5">
+                  <local:MyEntry x:Name="NewPassword" Style="{DynamicResource LabelNormal4}" TextColor="{DynamicResource TextWhiteColor}" PlaceholderColor="{DynamicResource TextWhiteColor}" HorizontalOptions="Fill" Placeholder="Enter new secret code" IsPassword="True" AbsoluteLayout.LayoutBounds="0,0,280,40" AbsoluteLayout.LayoutFlags="None" TextChanged="OnTextChanged"/>
+                  <Label x:Name="errorNewPassword"  Style="{DynamicResource LabelNormal1Regular}" FontAttributes="None" FontSize="12" TextColor="{DynamicResource TextWhiteColor}"  AbsoluteLayout.LayoutBounds="1,1,AutoSize,32" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="Center" HorizontalOptions="End">
+
+                  </Label>
+                </AbsoluteLayout>
+                <BoxView HeightRequest="2" Margin="0,-2,0,0" Color="{DynamicResource TextWhiteColor}" Opacity="0.5" x:Name="NewPasswordBoxView"></BoxView>
+              </StackLayout>
+              <StackLayout VerticalOptions="Start"  Grid.Row="0" Grid.Column="0" Spacing="0">
+                <AbsoluteLayout Opacity="0.5">
+                  <local:MyEntry x:Name="ReNewPassword" Style="{DynamicResource LabelNormal4}" TextColor="{DynamicResource TextWhiteColor}" PlaceholderColor="{DynamicResource TextWhiteColor}" HorizontalOptions="Fill" Placeholder="Enter new secret code again" IsPassword="True"  AbsoluteLayout.LayoutBounds="0,0,280,40" AbsoluteLayout.LayoutFlags="None" TextChanged="OnTextChanged"/>
+                  <Label x:Name="errorReNewPassword"  Style="{DynamicResource LabelNormal1Regular}" FontAttributes="None" FontSize="12" TextColor="{DynamicResource TextWhiteColor}" AbsoluteLayout.LayoutBounds="1,1,AutoSize,32" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="Center" HorizontalOptions="End">
+
+                  </Label>
+                </AbsoluteLayout>
+                <BoxView HeightRequest="2" Margin="0,-2,0,0" Color="{DynamicResource TextWhiteColor}" Opacity="0.5" x:Name="ReNewPasswordBoxView"></BoxView>
+              </StackLayout>
+            </StackLayout>
+
+            <StackLayout x:Name="ChangeAvatarImageStack" VerticalOptions="Center" Orientation="Vertical" Grid.Row="0" Grid.Column="1" Padding="10,0,0,0">
+              <StackLayout Padding="0,0,0,10">
+                <Label Text="CHANGE AVATAR:" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14" Margin="15,0,0,0" TextColor="{DynamicResource TextBlackColor}" ></Label>
+              </StackLayout>
+              <StackLayout Orientation="Horizontal" x:Name="ChangeAvatarImages">
+              </StackLayout>
+            </StackLayout>
+
+            <StackLayout x:Name="UserDetailStack" VerticalOptions="Center" Orientation="Vertical" Grid.Row="0" Grid.Column="1" Padding="10,0,0,0">
+              <Label Text="NAME:"  Style="{DynamicResource LabelNormalBold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextBlackColor}"/>
+              <Label Text="" x:Name="userName" TextColor="{DynamicResource TextWhiteColor}" Style="{DynamicResource LabelNormal1Bold}" FontSize="18" FontAttributes="Bold"/>
+              <StackLayout Orientation="Vertical" Padding="0,5,0,5">
+                <BoxView Color="White" HeightRequest="1"/>
+                <StackLayout Orientation="Horizontal">
+                  <StackLayout Orientation="Horizontal" Padding="0,0,5,0">
+                    <Label Text="GRADE:" Style="{DynamicResource LabelNormalBold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextBlackColor}" />
+                    <Label Text="" x:Name="gradeName" Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" />
+                  </StackLayout>
+                  <StackLayout Orientation="Horizontal" Padding="5,0,0,0">
+                    <Label Text="SUB-SECTION:" Style="{DynamicResource LabelNormalBold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextBlackColor}"/>
+                    <Label Text="" x:Name="subsectionName" Style="{DynamicResource LabelNormal1Bold}" FontSize="14" TextColor="{DynamicResource TextWhiteColor}" FontAttributes="Bold"/>
+                  </StackLayout>
+                </StackLayout>
+                <BoxView Color="White" HeightRequest="1"/>
+              </StackLayout>
+              <Label Text="SCHOOL:" Style="{DynamicResource LabelNormalbold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextBlackColor}"/>
+              <Label Text="" x:Name="schoolName" Style="{DynamicResource LabelNormal1Regular}" FontSize="18" FontAttributes="None" TextColor="{DynamicResource TextWhiteColor}"/>
+            </StackLayout>
+
+            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="End" HeightRequest="35" Grid.Row="1" Grid.Column="0" x:Name="ChangeAvatar_Show">
+              <Grid.RowDefinitions>
+                <RowDefinition Height="8" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="8" />
+              </Grid.RowDefinitions>
+              <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="8" />
+              </Grid.ColumnDefinitions>
+              <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+              <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+              <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+              <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+              <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+              <Label Text="CHANGE AVATAR"  Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+              <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+            </Grid>
+            <!--<Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="End" HeightRequest="35" Grid.Row="1" Grid.Column="0" x:Name="ChangeAvatar_Show">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Image Source="change_avt_blank.png" Aspect="Fill" Grid.Row="0" Grid.Column="0" HeightRequest="52" WidthRequest="171"></Image>
+         <Label Text="CHANGE AVATAR"  Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"></Label>
+          <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0"></Label>
+        </Grid>-->
+            <!--<Button Text="CHANGE AVATAR" TextColor="{DynamicResource TextWhiteColor}" FontAttributes="Bold"  Clicked="ChangeAvatar_Clicked"/>-->
+
+            <StackLayout Orientation="Horizontal"  Grid.Row="1" Grid.Column="1" Padding="15,5,0,0">
+              <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HeightRequest="35" x:Name="ChangePassword_Show" Padding="5,0,0,0">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="8" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="8" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="8" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                <Label Text="CHANGE PASSWORD" Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center"   HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+              </Grid>
+              <!--<Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HeightRequest="35" x:Name="ChangePassword_Show" Padding="5,0,0,0">
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="change_pass_blank.png" Aspect="Fill" Grid.Row="0" Grid.Column="0" ></Image>
+            <Label Text="CHANGE PASSWORD" Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center"   HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"></Label>
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" ></Label>
+          </Grid>-->
+              <!--<Button Text="CHANGE PASSWORD" TextColor="{DynamicResource TextWhiteColor}" HorizontalOptions="Start"  FontAttributes="Bold" VerticalOptions="End" Clicked="ChangePassword_Clicked"/>-->
+              <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HeightRequest="35"  x:Name="SaveBtn_Avatar" StyleId="Avatar">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="8" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="8" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="8" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                <Label Text="SAVE"  Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center"   HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+              </Grid>
+
+              <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HeightRequest="35"  x:Name="SaveBtn_Password" StyleId="Password" Opacity="0.5">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="8" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="8" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="8" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                <Label Text="SAVE"  Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+              </Grid>
+
+              <Grid RowSpacing="0" ColumnSpacing="0" VerticalOptions="Center" HeightRequest="35"   x:Name="CancelBtn" StyleId="Cancel">
+                <Grid.RowDefinitions>
+                  <RowDefinition Height="8" />
+                  <RowDefinition Height="*" />
+                  <RowDefinition Height="8" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="8" />
+                  <ColumnDefinition Width="*" />
+                  <ColumnDefinition Width="8" />
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource WhiteTopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteTopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+                <Image Source="{DynamicResource WhiteBottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+                <BoxView Color="{DynamicResource TextWhiteColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+                <Label Text="CANCEL" Style="{DynamicResource LabelNormal1Bold}" FontSize="14" FontAttributes="Bold" TextColor="{DynamicResource TextWhiteColor}" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+                <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+              </Grid>
+            </StackLayout>
+          </Grid>
+        </Grid>
+      </extScroll:ExtendedScrollView>
+    </Grid>
+</Grid>

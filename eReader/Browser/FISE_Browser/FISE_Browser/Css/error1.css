@@ -1,0 +1,61 @@
+﻿@font-face {
+font-family: 'Quicksand-Regular';
+src: url('../Css/Fonts/Quicksand-Regular.otf') format('opentype');
+}
+@font-face {
+font-family: 'Quicksand-Bold';
+src: url('../Css/Fonts/Quicksand-Bold.otf') format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Quicksand-Bold';
+    font-size: 1.25em;
+    text-align: center;
+}
+
+#wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#wrapper > header {
+    margin-bottom: 10px;
+}
+
+#wrapper > a {
+    font-size: 0.8em;
+}
+
+#Main_Header {
+    height: 80px;
+    background-color: #FC654C;
+}
+
+.siteLogo {
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+    top: 8px;
+    background: url(/Content/Images/kitablet_logo_1.png);
+    height: 98px;
+    width: 285px;
+}

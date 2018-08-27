@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid ColumnSpacing="0" RowSpacing="0" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             x:Class="Kitablet.AdminLogin"
+             x:Title="KITABLET">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="*" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>      
+  
+  <StackLayout Orientation="Vertical" Spacing="0" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0" x:Name="loginElements">
+    <Label Text="WELCOME SCHOOL ADMINS" FontAttributes="Bold" FontSize="14"  Style="{DynamicResource LabelNormalBold}"  TextColor="{DynamicResource TextNormalColor}"></Label>
+    <AbsoluteLayout Margin="0,37,0,0" Opacity="0.5">
+      <local:MyEntry x:Name="usernameEntry" Style="{DynamicResource LabelNormal4}" TextColor="{DynamicResource TextNormalColor}" Placeholder="Admin ID" PlaceholderColor="{DynamicResource TextNormalColor}" BackgroundColor="Transparent" TextChanged="OnTextChanged"
+          AbsoluteLayout.LayoutBounds="0,0,420,40" AbsoluteLayout.LayoutFlags="None"/>
+      <Label x:Name="errorAdminName" Style="{DynamicResource LabelNormalRegular}" FontSize="14" TextColor="{DynamicResource TextNormalColor}"
+          AbsoluteLayout.LayoutBounds="1,1,AutoSize,40" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="Center" HorizontalOptions="End"></Label>
+    </AbsoluteLayout>   
+    <BoxView x:Name="borderAdminName" Opacity="0.5" BackgroundColor="{DynamicResource ActiveBorderColor}" Margin="0,-2,0,12" WidthRequest="420" HeightRequest="2"></BoxView>
+    <AbsoluteLayout Opacity="0.5">
+      <local:MyEntry x:Name="passwordEntry"  Style="{DynamicResource LabelNormal4}" IsPassword="true" TextColor="{DynamicResource TextNormalColor}" Placeholder="Password" PlaceholderColor="{DynamicResource TextNormalColor}" BackgroundColor="Transparent" TextChanged="OnTextChanged"
+             AbsoluteLayout.LayoutBounds="0,0,420,40" AbsoluteLayout.LayoutFlags="None"/>
+      <Label x:Name="errorAdminPassword"  Style="{DynamicResource LabelNormalRegular}" FontSize="14" TextColor="{DynamicResource TextNormalColor}"
+           AbsoluteLayout.LayoutBounds="1,1,AutoSize,40" AbsoluteLayout.LayoutFlags="PositionProportional" VerticalOptions="Center" HorizontalOptions="End"></Label>
+    </AbsoluteLayout>
+    <BoxView x:Name="borderAdminPass" Opacity="0.5" BackgroundColor="{DynamicResource ActiveBorderColor}" Margin="0,-2,0,25" WidthRequest="420" HeightRequest="2"></BoxView>
+    <!--<Button x:Name="buttonLogin" Text="ENTER" TextColor="{DynamicResource TextNormalColor}" Clicked="OnLoginButtonClicked" Margin="0,0,0,25" HorizontalOptions="Start" BorderColor="{DynamicResource TextNormalColor}"/>-->
+
+    <StackLayout Orientation="Horizontal" Spacing="20">
+      <Grid RowSpacing="0" ColumnSpacing="0" x:Name="buttonLogin" Margin="0,0,0,25" WidthRequest="95" HorizontalOptions="Start">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="8" />
+          <RowDefinition Height="*" />
+          <RowDefinition Height="8" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="8" />
+          <ColumnDefinition Width="*" />
+          <ColumnDefinition Width="8" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource TopLeftGrayCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+        <Image Source="{DynamicResource TopRightGrayCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+        <Image Source="{DynamicResource BottomRightGrayCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+        <Image Source="{DynamicResource BottomLeftGrayCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+        <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+        <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+        <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+        <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+        <Label Text="ENTER" Style="{DynamicResource LabelNormalBold}" FontSize="14" FontAttributes="Bold" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="15,0"></Label>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+      </Grid>
+
+      <Label x:Name="LoadingText" Text="Logging in..." IsVisible="false" FontSize="14" Style="{DynamicResource LabelNormalBold}"  TextColor="{DynamicResource TextNormalColor}" VerticalTextAlignment="Center"  HorizontalTextAlignment="Center"></Label>
+      
+    </StackLayout>
+    
+
+    <StackLayout HorizontalOptions="Start" Margin="0,0,0,10">
+     
+      <StackLayout HorizontalOptions="Start">
+      <Label x:Name="forgotId" Text="FORGOT ADMIN ID" Style="{DynamicResource LabelNormalBold}"  FontAttributes="Bold" FontSize="14" TextColor="{DynamicResource TextNormalColor}"></Label>
+      <BoxView BackgroundColor="{DynamicResource TextNormalColor}" HeightRequest="1" Margin="0,-8,0,0" />
+    </StackLayout>
+     <StackLayout HorizontalOptions="Start">
+      <Label x:Name="forgotSecretCode" Text="FORGOT PASSWORD" Style="{DynamicResource LabelNormalBold}"  FontAttributes="Bold" FontSize="14" TextColor="{DynamicResource TextNormalColor}"></Label>
+      <BoxView BackgroundColor="{DynamicResource TextNormalColor}" HeightRequest="1" Margin="0,-8,0,0" />
+    </StackLayout>
+    <StackLayout HorizontalOptions="Start">
+      <Label x:Name="justExplore" Text="JUST EXPLORING?" FontAttributes="Bold"  Style="{DynamicResource LabelNormalBold}" FontSize="14"  TextColor="{DynamicResource TextNormalColor}"></Label>
+      <BoxView BackgroundColor="{DynamicResource TextNormalColor}" HeightRequest="1" Margin="0,-8,0,0" />
+    </StackLayout>
+    </StackLayout>
+  </StackLayout>
+
+</Grid>

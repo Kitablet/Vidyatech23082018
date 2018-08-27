@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid RowSpacing="0" ColumnSpacing="0"
+      xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:extScroll="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+      x:Class="Kitablet.HomePage"
+      x:Title="KITABLET">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="160"/>
+    <RowDefinition Height="*"/>
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+  <extScroll:ExtendedScrollView Grid.Row="0" Grid.Column="0" BackgroundColor="{DynamicResource Secondary1Color}" HeightRequest="160" Orientation="Horizontal" x:Name="HomePageTabs" WidthRequest="200"><!--Use ScrollView For Android & IOS-->
+    <StackLayout Orientation="Horizontal" Spacing="0">
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="allbook" StyleId="allbooks">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource AllBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="ALL&#10;BOOKS" Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0" x:Name="allbookl"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0"  VerticalOptions="End"  x:Name="newbook" StyleId="newbooks" IsVisible="false">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource NewBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="NEW&#10;BOOKS"  Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0" x:Name="newbookl"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="offbook" StyleId="availablebooks">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource AvailableOfflineBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="AVAILABLE&#10;OFFLINE"  Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0" x:Name="offbookl"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="recommend" StyleId="recommendedbooks" IsVisible="false">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource RecommendedBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="RECOMMENDED&#10;BOOKS" Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60"  VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0" x:Name="recommendl"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="comingsoon" StyleId="comingbooks" IsVisible="false">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource ComingSoonBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="COMING&#10;SOON" Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0" x:Name="comingsoonl"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+      <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="End" Margin="20,0,0,0" VerticalOptions="End" WidthRequest="284" Opacity="0">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="2"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="136" />
+        </Grid.ColumnDefinitions>
+        <Image Source="{DynamicResource ComingSoonBooksImage}" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"></Image>
+        <Label Grid.Row="1" Grid.Column="0" Text="NEW&#10;BOOKS"  Style="{DynamicResource LabelNormalBold}" FontSize="16" FontAttributes="Bold" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <BoxView Grid.Row="2" Grid.Column="0"/>
+        <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+      </Grid>
+    </StackLayout>
+  </extScroll:ExtendedScrollView>
+  <Grid RowSpacing="0" ColumnSpacing="0" Padding="0,30,0,0" Grid.Row="1" Grid.Column="0" >
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="180" x:Name="Column1"/>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <StackLayout x:Name="ButtonPanel" Grid.Row="0" Grid.Column="0">
+    </StackLayout>
+    <StackLayout x:Name="BooksContainer" Grid.Row="0" Grid.Column="1">
+      <Grid x:Name="NoBooksContainer" RowSpacing="0" ColumnSpacing="0" IsVisible="False">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0" Source="{DynamicResource NoBookImage}" VerticalOptions="Center" HorizontalOptions="Center"></Image>
+        <StackLayout Grid.Row="0" Grid.Column="0" x:Name="NoBooksTextContainer" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Vertical">
+          <Label x:Name="NoBooksText1Container" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Style="{DynamicResource LabelNormal2}"></Label>
+          <Label x:Name="NoBooksText2Container" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Style="{DynamicResource LabelNormal2}"></Label>
+        </StackLayout>    
+        
+      </Grid>
+    </StackLayout>
+  </Grid>
+
+</Grid>

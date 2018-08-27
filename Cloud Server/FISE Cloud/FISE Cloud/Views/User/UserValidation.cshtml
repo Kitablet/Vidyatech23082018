@@ -1,0 +1,152 @@
+﻿@model FISE_Cloud.Models.UserCreationModel
+
+@{
+    AjaxOptions options = new AjaxOptions();
+    options.HttpMethod = "POST";
+    options.InsertionMode = InsertionMode.Replace;
+    options.UpdateTargetId = "divContainer";
+    ViewBag.HeaderPageTitle = "New User Activation";
+}
+@if (!Model.IsInvalidToken)
+{
+    if (!Model.AccountIsDisabled)
+    {
+        using (Ajax.BeginForm("UserValidation", "User", options))
+        {
+            <div class="row title-section">
+
+                <div class="desc">
+                    @Html.Raw(HttpUtility.HtmlDecode(@Resource.UserValidation_DescriptiveText))
+                </div>
+                @if (Model.Type.ToLower() == "schoolregistration")
+                {
+                    <h4 class="page-title">@Resource.Principal_Email_Verification</h4>
+
+                }
+                else if (Model.Type.ToLower() == "useremailchange")
+                {
+                    <h4 class="page-title">@Resource.User_Email_Verification</h4>
+                }
+
+                else if (Model.Type.ToLower() == "parentregistration")
+                {
+                    <h4 class="page-title">@Resource.UserValidation_title_ParentActivation</h4>
+                }
+                else if (Model.Type.ToLower() == "schooladminregistration")
+                {
+                    <h4 class="page-title">@Resource.UserValidation_title_SchooladminActivation</h4>
+                }
+                else if (Model.Type.ToLower() == "elibadminregistration")
+                {
+                    <h4 class="page-title">@Resource.UserValidation_title_ElibadminActivation</h4>
+                }
+                else
+                {
+                    <h4 class="page-title">@Resource.UserValidation_title</h4>
+                }
+            </div>
+            <hr />
+            @Html.HiddenFor(model => model.Type)
+            @Html.HiddenFor(model => model.GivenMobileNo)
+            @Html.HiddenFor(model => model.Token)
+            @Html.HiddenFor(model => model.UserId)
+            <div class="form-horizontal">
+                <div class="form-group prefilled_text">
+                    @Html.LabelFor(model => model.Email, new { @class = "control-label col-xs-3" }, ":")
+                    <span class="col-xs-9 control-label">
+                        @Html.TextBoxFor(model => model.Email, new { @class = "prefilled_text", @id = "emailid", @readonly = "readonly" })
+                    </span>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.MobileNo, "Mobile:", htmlAttributes: new { @class = "control-label col-xs-3" })
+
+                    <span class="col-xs-9">
+
+                        @Html.EditorFor(model => model.MobileNo, new { htmlAttributes = new { @class = "valid_mobile", size = "6", @id = "txt_mobileno6" } })
+                        <span class="">@Html.Raw(Model.GivenMobileNo) </span>
+                        <span><em>Enter first @Html.Raw(Model.MobileNumber.Length - 4) digits of your mobile number to proceed</em></span>
+                        @Html.ValidationMessageFor(model => model.MobileNo, "", new { @class = "display_block", @id = "error_mob", @style = "" })
+                        @Html.HiddenFor(model => model.MobileNo)
+                        @Html.HiddenFor(model => model.MobileNumber)
+                    </span>
+                </div>
+
+
+                <div class="col-xs-offset-3 buttons">
+                    <input type="submit" value="@Resource.Btn_NEXT" class="btn btn-default btn-rect" />
+                </div>
+
+            </div>
+        }
+        <script type="text/javascript">
+            $('#txt_mobileno6').on('keypress', function (event) {
+
+                var _element = $(this), keyCode = event.keyCode || event.which, keysAllowed = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 0];
+
+                if (event.charCode == 8 || event.charCode == 0) {
+                    return true;
+                }
+                else if ($.inArray(keyCode, keysAllowed) === -1 && event.ctrlKey === false)
+                { event.preventDefault(); }
+            });
+
+            function check() {
+                @{ var length = @Html.Raw(Model.MobileNumber.Length - 4);};
+                var mobile = null;
+                $("#txt_mobileno6").on("input blur change keyup", function () {
+                    mobile = $("#txt_mobileno6").val();
+                    if(mobile.length > @length)
+                    {
+                        $("span#error_mob").html('@Resource.UserRegistration_EnterOnly6digits.Replace("#", length.ToString())');
+                    mobile = mobile.substr(0, @length);
+                    $("#txt_mobileno6").val(mobile);
+                }
+                else if(mobile.length == 0)
+                {
+                    $("span#error_mob").html('@Resource.UserRegistration_MobileNoReqError');
+                    $("#txt_mobileno6").addClass('input-validation-error');
+                }
+            else if(mobile.length < @length && mobile.length > 0)
+                {
+                    $("span#error_mob").html('@Resource.UserValidation_Mobileno_6digit_Error.Replace("#", length.ToString())');
+                    $("#txt_mobileno6").addClass('input-validation-error');
+                }
+
+            });
+            $("#txt_mobileno6").on("focusout", function () {
+                mobile = $("#txt_mobileno6").val();
+                if (mobile.length ==  @length) {
+                    $("span#error_mob").html(' ');
+                $("#txt_mobileno6").removeClass('input-validation-error');
+            }
+            });
+            }
+        </script>
+    }
+    else
+    {
+        <div class="row title-section">
+            <h4 class="page-title">@Resource.UserValidation_title</h4>
+        </div>
+        <hr />
+        <div style="margin:20px 0px">@Html.Raw(HttpUtility.HtmlDecode(@Resource.UsernameRecovery_msguseraccdisabled))</div>
+        <div class="buttons">
+            <input type="button" class="btn btn-default btn-rect" onclick="location.href ='@Url.RouteUrl("HomePage")'" value="@Resource.btn_Continue" />
+        </div>
+
+        }
+    }
+    else
+    {
+        <div class="row title-section">
+            <h4 class="page-title">@Resource.UserValidation_title</h4>
+        </div>
+        <hr />
+        <div style="margin:20px 0px">@Html.Raw(HttpUtility.HtmlDecode(@Resource.UserValidation_InvalidorExpiredToken_ErrMsg))</div>
+        <div class="buttons">
+            <input type="button" class="btn btn-default btn-rect" onclick="location.href ='@Url.RouteUrl("HomePage")'" value="@Resource.btn_Continue" />
+        </div>
+
+    }
+

@@ -1,0 +1,4 @@
+MainPackage=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Release\Kitablet.Windows_1.1.0.40_AnyCPU.appx
+SymbolPackage=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\AppPackages\Kitablet.Windows_1.1.0.40_Test\Kitablet.Windows_1.1.0.40_AnyCPU.appxsym
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Release\Kitablet.Windows_1.1.0.40_scale-140.appx
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Windows\bin\Release\Kitablet.Windows_1.1.0.40_scale-180.appx

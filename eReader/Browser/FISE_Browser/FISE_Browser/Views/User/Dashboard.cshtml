@@ -1,0 +1,112 @@
+﻿@model FISE_Browser.Models.BooksModel
+
+@{
+    
+
+}
+<link href="~/Content/dashboard.css" rel="stylesheet" />
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/dashboard.js"></script>
+<script src="~/Scripts/changeavatarpopup.js"></script>
+<link href="~/Content/changeavatarpopup.css" rel="stylesheet" />
+<script src="~/Scripts/feedback.js"></script>
+<link href="~/Content/feedback.css" rel="stylesheet" />
+<link href="~/Content/LoginPage.css" rel="stylesheet" />
+
+
+
+<div class="profile-page"  style="position:relative;">
+   
+
+<div id="user-profile-changed">
+    
+    <div class="user-after-change">
+        <p id="book-name">BOOK NAME</p>
+        <div id="avatar">
+        </div>
+        <h1 class="user"> @Session["user"].ToString()</h1>
+        <h3 >School name</h3>
+    </div>
+    <div id="submit">
+        <p>
+            <input type="submit" value="CHANGE" onclick="changediv()" />
+        </p>
+    </div>
+
+    <div id="part1">
+    <span id="span-data">15</span>
+        <img src="../../Content/Images/read.png" id="img" />
+        <p class="para-data">BOOKS <br>READ</p>
+
+    </div>
+
+    <div id="part2">
+        <span id="span-data">15</span>
+        <img src="../../Content/Images/hours.png" id="img" />
+        <p class="para-data">ACTIVITIES <br> COMPLETED</p>
+
+    </div>
+
+    <div id="part3">
+        <span id="span-data">3</span>
+        <img src="../../Content/Images/rated.png" id="img" />
+        <p class="para-data">BOOKS <br>RATED</p>
+
+    </div>
+
+    <div id="part4">
+        <span id="span-data">5</span>
+        <img src="../../Content/Images/favourited.png" id="img" />
+        <p class="para-data">FAVOURITED</p>
+
+    </div>
+
+    <div id="part5">
+        <span id="span-data">8</span>
+        <img src="../../Content/Images/hours.png" id="img" />
+        <p class="para-data">HOURS <br> SPENT <br> READING</p>
+
+    </div>
+    <div id="submit">
+        @Html.ActionLink("Book Details", "BookDetails", "Book")
+    </div>
+    <div id="submit">
+        <div class="_feddback-link"><a href="javascript:void(0);" class="feedback">Feedback details</a></div>
+    </div>
+</div>
+
+
+@*<div id="partialDiv">
+    @Html.Partial("_Bookdetails")
+</div>*@
+
+
+@* After login popup *@
+
+<div class="popup-fallback"></div>
+<div class="popup-content-login">
+    <span class="popup-close-login">X</span>
+    <div>
+        <div style="width:100%;float:left;text-align:center">
+            <div id="newavatar" tabindex="-1">
+            </div>
+        </div>
+        <h1 class="newuser"> Hi @Session["user"].ToString()</h1>
+        <p class="afterlogin"> Good to see u again!</p>
+        <a class="afterlogin_a"> Oh, but am some one else</a>
+    </div>
+
+</div>
+
+@* Feedback popup*@
+
+<div class="popup-fallback"></div>
+<div class="popup-content-feedback">
+    <span class="popup-close-feedback">X</span>
+    <iframe frameborder="0" src="@Url.Action("Feedback","user")" class="iframe_feedback_popup"></iframe>
+
+</div>
+
+    
+   </div>
+

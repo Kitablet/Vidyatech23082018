@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid ColumnSpacing="0" RowSpacing="0" xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+      xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+      x:Class="Kitablet.ChangeAvatar"
+      x:Title="KITABLET">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="*" />
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+ 
+  <StackLayout x:Name="layout" Orientation="Vertical" Spacing="0" VerticalOptions="Start" HorizontalOptions="Start" Grid.Row="0" Grid.Column="0">
+    <Label Text="Hi User" Style="{DynamicResource LabelNormalBold}"  x:Name="UserTitle" FontAttributes="Bold" FontSize="20" Margin="0,0,0,5" ></Label>
+    <Label Text="Select a cool looking avatar to keep you company" Style="{DynamicResource LabelNormalRegular}"  x:Name="Line" FontSize="20"></Label>
+    <Grid x:Name="changeAvatarGrid" ColumnSpacing="20" RowSpacing="0" Margin="0,25,0,0" HorizontalOptions="Center">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="90" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="90" />
+        <ColumnDefinition Width="90" />
+        <ColumnDefinition Width="90" />
+        <ColumnDefinition Width="90" />
+        <ColumnDefinition Width="90" />
+      </Grid.ColumnDefinitions>
+      <controls:CircleImage Grid.Row="0" Grid.Column="0" Source="{DynamicResource AvatarImage}" Aspect="Fill" ></controls:CircleImage>
+      <controls:CircleImage Grid.Row="0" Grid.Column="1" Source="{DynamicResource AvatarImage}" Aspect="Fill" ></controls:CircleImage>
+      <controls:CircleImage Grid.Row="0" Grid.Column="2" Source="{DynamicResource AvatarImage}" Aspect="Fill" ></controls:CircleImage>
+      <controls:CircleImage Grid.Row="0" Grid.Column="3" Source="{DynamicResource AvatarImage}" Aspect="Fill" ></controls:CircleImage>
+      <controls:CircleImage Grid.Row="0" Grid.Column="4" Source="{DynamicResource AvatarImage}" Aspect="Fill" ></controls:CircleImage>
+    </Grid>
+    <Grid RowSpacing="0" ColumnSpacing="0" x:Name="ChangeAvatarBtn" Margin="0,40,0,0" WidthRequest="95" HorizontalOptions="Start">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="8" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="8" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="8" />
+        <ColumnDefinition Width="*" />
+        <ColumnDefinition Width="8" />
+      </Grid.ColumnDefinitions>
+      <Image Source="{DynamicResource TopLeftGrayCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+      <Image Source="{DynamicResource TopRightGrayCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+      <Image Source="{DynamicResource BottomRightGrayCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+      <Image Source="{DynamicResource BottomLeftGrayCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+      <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+      <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+      <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+      <BoxView Color="{DynamicResource ActiveBorderColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+      <Label Text="DONE" Style="{DynamicResource LabelNormalBold}"  TextColor="{DynamicResource TextNormalColor}" VerticalTextAlignment="Center" FontSize="16" FontAttributes="Bold" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1" Margin="15,0"></Label>
+      <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+    </Grid>
+  </StackLayout>
+
+  
+</Grid>

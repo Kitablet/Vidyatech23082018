@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Grid RowSpacing="0" ColumnSpacing="0"
+  xmlns="http://xamarin.com/schemas/2014/forms"
+  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+  xmlns:local="clr-namespace:Kitablet;assembly=Kitablet" 
+  xmlns:extScroll="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+  x:Class="Kitablet.Setting">
+  <Grid.RowDefinitions>
+    <RowDefinition Height="160"/>
+    <RowDefinition Height="*"/>
+  </Grid.RowDefinitions>
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition Width="*" />
+  </Grid.ColumnDefinitions>
+  <extScroll:ExtendedScrollView Grid.Row="0" Grid.Column="0" BackgroundColor="{DynamicResource Secondary1Color}" HeightRequest="160"><!--Use ScrollView For Android & IOS-->
+      <StackLayout Orientation="Horizontal" Spacing="0">
+        <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="releasebook" StyleId="releasebook">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Image Source="{DynamicResource ReleaseBooksImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+          <Label Grid.Row="1" Grid.Column="0" Text="RELEASE&#10;BOOKS" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="16" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+          <BoxView Grid.Row="2" Grid.Column="0" x:Name="releasebookl" Color="{DynamicResource ActiveBorderColor}"/>
+          <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+        </Grid>
+        <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0"  VerticalOptions="End"  x:Name="help" StyleId="help">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Image Source="{DynamicResource HelpImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+          <Label Grid.Row="1" Grid.Column="0" Text="HELP" TextColor="{DynamicResource TextNormalColor}" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="16" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+          <BoxView Grid.Row="2" Grid.Column="0" x:Name="helpl"/>
+          <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+        </Grid>
+        <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" Margin="20,0,0,0" VerticalOptions="End"  x:Name="privacy" StyleId="privacy">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="2"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <Image Source="{DynamicResource PrivacyPolicyImage}" Grid.Row="0" Grid.Column="0"  HorizontalOptions="Center"></Image>
+          <Label Grid.Row="1" Grid.Column="0" Text="PRIVACY&#10;POLICY" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="16" TextColor="{DynamicResource TextNormalColor}" WidthRequest="120" HeightRequest="60" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+          <BoxView Grid.Row="2" Grid.Column="0" x:Name="privacyl"/>
+          <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"></Label>
+        </Grid>
+      </StackLayout>
+
+    </extScroll:ExtendedScrollView>
+    <Grid x:Name="noreleaseBookGrid" RowSpacing="0" ColumnSpacing="50" IsVisible="false" Grid.Row="1" Grid.Column="0">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+    <Image Source="{DynamicResource NoBookImage}" HorizontalOptions="Center" VerticalOptions="Center" Grid.Row="0" Grid.Column="0"></Image>
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Padding="120, 20, 0, 0" Orientation="Vertical" Grid.Row="0" Grid.Column="0">
+      <Label Text="N o o o o o" Style="{DynamicResource LabelNormal2}" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+      <Label Text="No books here!" Style="{DynamicResource LabelNormal2}" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"></Label>
+    </StackLayout>
+  </Grid>
+    <Grid x:Name="releaseBookGrid" RowSpacing="0" ColumnSpacing="50" IsVisible="false" Grid.Row="1" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <Grid Padding="30">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="50"/>
+          <RowDefinition Height="*"/>
+          <RowDefinition Height="80"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" VerticalOptions="Start">
+          <BoxView HeightRequest="1" Color="{DynamicResource PrimaryColor}" Opacity="0.5"></BoxView>
+          <Grid>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="5*" />
+              <ColumnDefinition Width="2.5*" />
+              <ColumnDefinition Width="2.5*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+              <Image Source="{DynamicResource CheckBoxImage}" VerticalOptions="Center" HorizontalOptions="Start" x:Name="SelectAllCheckbox" StyleId="0" HeightRequest = "18" WidthRequest="18"></Image>
+              <Label Text="SELECT ALL" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14" VerticalOptions="Center"></Label>
+              <Label Text="Showing 0-0 of 0 books on this device" Style="{DynamicResource LabelNormalRegular}" FontAttributes="None" VerticalOptions="Center" FontSize="12" x:Name="ShowCountLabel"></Label>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" x:Name="DateLastAccessedStack" StyleId="0" ClassId="date">
+              <Label Text="DATE LAST ACCESSED" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14" VerticalOptions="Center" ></Label>
+              <Image Source="{DynamicResource ReleaseArrowDescending}" VerticalOptions="Center" HorizontalOptions="Start" x:Name="DateLastAccessedStackArrow"></Image>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="2" x:Name="SizeStack" StyleId="0" ClassId="size">
+              <Label Text="SIZE" VerticalOptions="Center" Style="{DynamicResource LabelNormalBold}" FontAttributes="Bold" FontSize="14" ></Label>
+              <Image Source="{DynamicResource ReleaseArrowDescending}" VerticalOptions="Center" HorizontalOptions="Start" x:Name="SizeStackArrow"></Image>
+            </StackLayout>
+          </Grid>
+          <BoxView HeightRequest="1" Color="{DynamicResource PrimaryColor}" Opacity="0.5"></BoxView>
+        </StackLayout>
+        <Grid Grid.Row="1" Grid.Column="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+             <ColumnDefinition Width="5*" />
+              <ColumnDefinition Width="2.5*" />
+              <ColumnDefinition Width="2.5*" />
+          </Grid.ColumnDefinitions>
+          <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="0" x:Name="BookNameList" >
+            <Label Text="" VerticalOptions="Center"></Label>
+          </StackLayout>
+          <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1" x:Name="LastDateAccessedList" >
+            <Label Text="" VerticalOptions="Center" ></Label>
+          </StackLayout>
+          <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="2" x:Name="SizeList">
+            <Label Text="" VerticalOptions="Center" ></Label>
+          </StackLayout>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+          </Grid.ColumnDefinitions>
+          <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="0" HorizontalOptions="Start">
+            
+          <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Start" VerticalOptions="End" Margin="0,0,0,0" WidthRequest="95" Grid.Row="1" Grid.Column="0" x:Name="ReleaseBtn" Padding="5" Opacity="0.5">
+            <Grid.HeightRequest>
+              <local:OnPlatform2 x:TypeArguments="x:Double" Android="52" Windows="50" Win8X="50" iOS="50" />
+            </Grid.HeightRequest>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="8" />
+              <RowDefinition Height="*" />
+              <RowDefinition Height="8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="8" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+            <Image Source="{DynamicResource TopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource TopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource BottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+            <Image Source="{DynamicResource BottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+            <Label Text="RELEASE"  Style="{DynamicResource LabelNormal3}" VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+            <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+          </Grid>
+          </StackLayout>
+          <StackLayout Orientation="Horizontal" Grid.Row="0" Grid.Column="1" HorizontalOptions="End">
+            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="End" Grid.Row="1" Grid.Column="0" x:Name="PrevBtn" Padding="5">
+              <Grid.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="52" Windows="50" Win8X="50" iOS="50" />
+              </Grid.HeightRequest>
+              <Grid.WidthRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="122" Windows="120" Win8X="120" iOS="120" />
+              </Grid.WidthRequest>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="8" />
+              <RowDefinition Height="*" />
+              <RowDefinition Height="8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="8" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+              <Image Source="{DynamicResource TopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource TopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource BottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource BottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+            <Label Text="PREVIOUS" Style="{DynamicResource LabelNormal3}"  VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+              <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+            </Grid>
+            
+            <Grid RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="End" WidthRequest="95" Grid.Row="1" Grid.Column="0" x:Name="NextBtn" Padding="5">
+              <Grid.HeightRequest>
+                <local:OnPlatform2 x:TypeArguments="x:Double" Android="52" Windows="50" Win8X="50" iOS="50" />
+              </Grid.HeightRequest>
+            <Grid.RowDefinitions>
+              <RowDefinition Height="8" />
+              <RowDefinition Height="*" />
+              <RowDefinition Height="8" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="8" />
+              <ColumnDefinition Width="*" />
+              <ColumnDefinition Width="8" />
+            </Grid.ColumnDefinitions>
+              <Image Source="{DynamicResource TopLeftCorner}" Grid.Row="0" Grid.Column="0" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource TopRightCorner}" Grid.Row="0" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource BottomRightCorner}" Grid.Row="2" Grid.Column="2" Aspect="AspectFit"></Image>
+              <Image Source="{DynamicResource BottomLeftCorner}" Grid.Row="2" Grid.Column="0" Aspect="AspectFit"></Image>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="0" Grid.Column="1" HeightRequest="2" VerticalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="0" WidthRequest="2" HorizontalOptions="Start"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="1" Grid.Column="2" WidthRequest="2" HorizontalOptions="End"></BoxView>
+            <BoxView Color="{DynamicResource PrimaryColor}" Grid.Row="2" Grid.Column="1" HeightRequest="2" VerticalOptions="End"></BoxView>
+            <Label Text="NEXT" Style="{DynamicResource LabelNormal3}"  VerticalTextAlignment="Center" FontSize="15" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="1"></Label>
+              <Label VerticalOptions="Fill" HorizontalOptions="Fill" BackgroundColor="Transparent" Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="3"></Label>
+            </Grid>
+          </StackLayout>
+        </Grid>
+      </Grid>
+    </Grid>
+    <Grid x:Name="helpSectionGrid" Padding="20,20,20,20" RowSpacing="0" ColumnSpacing="0" IsVisible="false" Grid.Row="1" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <!--<extScroll:ExtendedScrollView Grid.Row="0" Grid.Column="0" Orientation="Vertical">--><!--Use ScrollView For Android & IOS-->
+        <local:HybridWebView x:Name="HelpWebView"> </local:HybridWebView>
+      <!--</extScroll:ExtendedScrollView>-->
+    </Grid>
+    <Grid x:Name="privacyPolicySection" Padding="20, 20, 20, 20" RowSpacing="0" ColumnSpacing="0" IsVisible="false" Grid.Row="1" Grid.Column="0">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <!--<extScroll:ExtendedScrollView Grid.Row="0" Grid.Column="0" Orientation="Vertical">--><!--Use ScrollView For Android & IOS-->
+        <WebView x:Name="PrivacyWebView"></WebView>
+      <!--</extScroll:ExtendedScrollView>-->
+    </Grid>
+</Grid>

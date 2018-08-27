@@ -1,0 +1,2 @@
+D:\Upendra\FISE - Xaml\FISE\FISE.WinPhone\FISE.WinPhone.csproj;neutral
+D:\Upendra\FISE - Xaml\FISE\FISE\FISE.csproj;neutral

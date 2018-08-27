@@ -1,0 +1,147 @@
+﻿@using FISE_Cloud.Models.School;
+@using FISE_Cloud.Models;
+@model Report7Model
+
+@{
+    ViewBag.Title = "Student List";
+}
+<div id="filter_result" class="row">
+
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            @Html.RenderBootstrapTabHeader("tab-Overall", @TabOverallHeader(), true)
+            @Html.RenderBootstrapTabHeader("tab-CityWise", @TabCityWiseHeader())
+            @Html.RenderBootstrapTabHeader("tab-SchoolWise", @TabSchoolWiseHeader())
+        </ul>
+        <div class="tab-content">
+            @Html.RenderBootstrapTabContent("tab-Overall", @TabOverall(), true)
+            @Html.RenderBootstrapTabContent("tab-CityWise", @TabCityWise())
+            @Html.RenderBootstrapTabContent("tab-SchoolWise", @TabSchoolWise())
+        </div>
+    </div>
+    @helper TabOverallHeader()
+    {
+    <div>
+        <span>@Resource.Tab_Title_OVERALL</span>
+    </div>
+}
+
+    @helper TabCityWiseHeader()
+    {
+    <div>
+        <span>@Resource.Tab_Title_CityWise</span>
+    </div>
+}
+    @helper TabSchoolWiseHeader()
+    {
+    <div>
+        <span>@Resource.Tab_Title_SchoolWise</span>
+    </div>
+}
+
+    @helper TabOverall()
+    {
+    <div id="OverallContainer">
+        @Html.Partial("_Report7Usage", Model.UsageModel)
+    </div>
+}
+
+    @helper TabCityWise()
+    {
+    <div id="CityWiseContainer">
+        @if (Model.Cities.Count() > 0)
+        {
+
+            <div class="row reportfilter-row">
+                <div class="col-xs-2"><p class="report_subtitle">@Resource.Reports_SelectACity</p></div>
+                <div class="col-xs-2">
+
+                    @Html.DropDownList("CityWise",
+                                     Model.Cities.
+                                     Select(i => new SelectListItem { Value = i.ToString().Trim(), Text = i.ToString().Trim() }),
+                                              "Select A City", new { onchange = "CityWiseCityChange(this);" })
+                </div>
+            </div>
+        }
+        <div id="divCityWise">
+            @Html.Partial("_Report7Usage", Model.UsageModel)
+        </div>
+    </div>
+}
+    @helper TabSchoolWise()
+    {
+    <div id="SchoolWiseContainer">
+        @if (Model.Cities.Count() > 0)
+        {
+
+            <div class="row reportfilter-row">
+                <div class="col-xs-12">
+                    <div class="col-xs-2"><p class="report_subtitle">@Resource.Reports_SelectACity</p></div>
+                    <div class="col-xs-2">
+                        @{
+                            List<SelectListItem> listLocation = new List<SelectListItem>();
+                            listLocation.Add(new SelectListItem { Text = "Female", Value = "Female" });
+                            listLocation.Add(new SelectListItem { Text = "Male", Value = "Male" });
+                        }
+                        @Html.DropDownList("SchoolWiseCity",
+                                     Model.Cities.
+                               Select(i => new SelectListItem { Value = i.ToString().Trim(), Text = i.ToString().Trim() }),
+                                                                "Select A City", new { onchange = "return SchoolWiseCityChange();" })
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="col-xs-2"><p class="report_subtitle">@Resource.Reports_SelectASchool</p></div>
+                    <div class="col-xs-2">
+                        <select id="SchoolWiseSchool" disabled="disabled" onchange="SchoolWiseSchoolChange(this);">
+                            <option>Select a school</option>
+                            @foreach (var item in Model.Schools)
+                            {
+                                <option value="@item.SchoolId" city="@item.City.Trim()">@item.SchoolName</option>
+                            }
+
+                        </select>
+                    </div>
+                </div>
+            </div>
+                            }
+        <div id="divSchoolWise">
+            @Html.Partial("_Report7Usage", Model.UsageModel)
+        </div>
+    </div>
+}
+</div>
+
+@section scripts {
+    <script type="text/javascript">
+
+        $(function () {
+            // Javascript to enable link to tab
+            var hash = GetTab();
+            if (hash) {
+                $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+            }
+            // Change hash for page-reload
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                // window.location.hash = e.target.hash;
+            });
+        });
+        function GetTab() {
+            var hash = document.location.hash;
+            if (hash.indexOf("tab-students") >= 0) {
+                return "tab-students";
+            }
+            else if (hash.indexOf("tab-admins") >= 0) {
+                return "tab-admins";
+            }
+            else {
+                return "";
+            }
+        }
+
+    </script>
+}
+
+
+
+
+

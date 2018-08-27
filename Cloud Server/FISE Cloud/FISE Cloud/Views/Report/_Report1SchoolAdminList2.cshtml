@@ -1,0 +1,85 @@
+﻿@using FISE_Cloud.Models;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<StudentRegistrationModel>
+
+@{
+    var SchoolUId = ViewContext.RouteData.Values["schooluid"];
+}
+@{
+    var l1 = ((Model.CurrentPageIndex - 1) * Model.PageSize) + 1;
+    var l2 = (Model.CurrentPageIndex * Model.PageSize);
+    if (l2 > @Model.TotalItemCount)
+    {
+        l2 = @Model.TotalItemCount;
+    }
+    var final = l1 + " - " + l2;
+    if (l1 == l2)
+    {
+        final = l1.ToString();
+    }
+    if (@Model.TotalItemCount == 0)
+    {
+        final = (0).ToString();
+    }
+    var container = ViewBag.Container;
+    var Page = ViewBag.Page;
+    var Type = ViewBag.Type;
+}
+<div class="row blue-pager-item tab">
+    <div class="col-xs-8">
+        <select class="pagesize_Dropdown" id="Report2PageSize" name="registered">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+        <span class="">Entries Per Page | Showing @final of (@Model.TotalItemCount) student(s)</span>
+    </div>
+    <div class="col-xs-4">
+        @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "rpageno", PageSizeBoxId = "Report2PageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }).Options(o => o.AddRouteValue("target", "registered")).AjaxOptions(a => a.SetUpdateTargetId("RegisteredContainer").SetDataFormId("filterForm2").SetHttpMethod("POST"))
+    </div>
+</div>
+@foreach (StudentRegistrationModel student in Model)
+{
+    <div class="row list-item">
+        <div class="col-xs-12 list-item-name">@student.FirstName @student.LastName</div>
+        <div class="col-xs-12">
+            <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Studentlist_ParentEmail</span><span>@student.Email</span></span>
+            <span class="list-item-subcontent">
+                <span class="list_content_subdiv_bold">@Resource.School_Studentlist_SubStarts</span><span>
+                    @(string.IsNullOrWhiteSpace(student.SubscriptionStartDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", student.SubscriptionStartDate))
+                </span>
+            </span>
+            <span class="list-item-subcontent">
+                <span class="list_content_subdiv_bold">@Resource.School_Studentlist_SubEnds</span><span>
+                    @(string.IsNullOrWhiteSpace(student.SubscriptionEndDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", student.SubscriptionEndDate))
+                </span>
+            </span>
+            <span class="float-right list_content_subdiv_bold">
+                @if (!(@student.Status) && @student.IsTrashed)
+                {
+                    @Html.Raw(Resource.Status_Disabled);
+                }
+                else if (@student.Status && !(@student.IsTrashed) && @student.LastLoginDate != null)
+                {
+                    @Html.Raw(Resource.Status_Active);
+                }
+                else if (@student.Status && !(@student.IsTrashed) && @student.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Registered);
+                }
+                else if (!@student.Status && !@student.IsTrashed && @student.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+            </span>
+
+        </div>
+    </div>
+}
+@if (Model.Count.Equals(0))
+{ <div>@Resource.NoResultsFound</div>}
+
+<div class="row pager-item">
+    @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "rpageno", PageSizeBoxId = "Report2PageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }).Options(o => o.AddRouteValue("target", "registered")).AjaxOptions(a => a.SetUpdateTargetId("RegisteredContainer").SetDataFormId("filterForm2").SetHttpMethod("POST"))
+</div>
+

@@ -1,0 +1,652 @@
+﻿@{
+    Layout = null; 
+    int subsection1 = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection1 = userobj != null ? userobj.SubSectionId : subsection1;
+}
+
+<!DOCTYPE html>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/utils.js"></script>
+<script>
+
+    function ThumbnailSetup() {
+        winheight = window.innerHeight ? window.innerHeight : $(window).height();
+        var viewmode = '@Model.ViewMode';
+        if (viewmode.toLowerCase() == 'portrait') {
+            if (winheight < 768) {
+                $('.BookIcon').css({ 'height': '490px', 'width': '376px' });
+                $('.BookButtonContainer').css('width', '376px');
+            }
+            else {
+                $('.BookIcon').css({ 'height': '585px', 'width': '445px' });
+                $('.BookButtonContainer').css('width', '445px');
+            }
+        }
+        else {
+            $('.BookIcon').css({ 'height': '230px', 'width': '445px' });
+            $('.BookButtonContainer').css('width', '445px');
+        }
+    }
+
+    $(document).ready(function () {
+        checkIsLogout();
+        $('#loading').hide();
+        ////Disable mouse right click
+        //$("body").on("contextmenu", function (e) {
+        //    return false;
+        //});
+        //$('body').css('user-select', 'none');
+        //document.onkeydown = function (e) {
+        //    if (event.keyCode == 123) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //}
+
+
+        $(window).on('resize', (function () {
+            ThumbnailSetup();
+        }));
+
+        ThumbnailSetup();
+        $('#open-rating-lbl').on('click', function (e) {
+            e.stopPropagation();
+            $('#rating-details-container').toggleClass('displayFlex');
+        });
+
+        $('.BookIcon').click(function () {
+            $('#loading').show();
+            syncbeforeunload = false;
+            window.location = '@Url.RouteUrl("BookDisplay", new { id = Model.BookId })';
+        });
+
+        $('#readLaterButton').on('click', function () {
+            IsSessionTimeOut();
+            if (IsSessionTimeOut1 == 1) {
+                var obj = $(this);
+                $.ajax({
+                    url: '@Url.Action("SetReadLater", "Book")',
+                    type: 'Post',
+                    data: { 'BookId': '@Model.BookId' },
+                    dataType: 'json',
+                    error: function () {
+                        alert('error');
+                    },
+                    success: function (data) {
+                        if (data == "logout")
+                            window.location.href = '@Url.RouteUrl("LoginPage")';
+                        else if (!$(obj).hasClass('full-disable')) {
+                            $(obj).toggleClass('disable');
+                        }
+                    }
+                });
+            }
+            else if (IsSessionTimeOut1 == 2)
+                Logout();
+
+        });
+
+        $("body").on("click", function (e) {
+            if ($("#rating-details-container").hasClass('displayFlex')) {
+                $("#rating-details-container").toggleClass('displayFlex');
+            }
+        });
+
+        $(".BookRead_CloseBtnContainer").on("click", function () {
+            var fromUrl = localStorage.getItem("from");
+            //if(urlReferer.toLowerCase().indexOf("search")>-1)
+            //    window.location = urlReferer;
+            //else if(urlReferer.toLowerCase().indexOf("profile")>-1)
+            //    window.location = urlReferer;
+            //else
+            //    window.location.href="/Main/Home";
+            syncbeforeunload = false;
+            window.location.href = fromUrl;
+        });
+        $("#ratvalContainer").on("click", function () {
+            if ($(this).hasClass("Done") || $(this).hasClass("Read")) {
+                $('#loading').show();
+                syncbeforeunload = false;
+                window.location = '@Url.RouteUrl("BookCompleted", new { id = Model.BookId })';
+            }
+        })
+        $('#actContainer.Done').on('click', (function () {
+            //$('.commonmodal').show();
+            showCommonPopup('@Resource.ActivityReviewMessage', 'activitymessage');
+        }));
+        $('#Okbtn,#actContainer.Read').click(function () {
+            $('#loading').show();
+            syncbeforeunload = false;
+            window.location.href = '@Url.RouteUrl("Activity", new { id = Model.BookId })';
+        });
+        $('#Closebtn').click(function () {
+            $('.commonmodal').hide();
+        });
+    });
+
+    var IsSessionTimeOut1 = 2;
+    function IsSessionTimeOut() {
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("IsSessionTimeOut", "User")',
+                type: 'Get',
+                dataType: 'json',
+                async: false,
+                success: function (data) {
+                    if (data == true)
+                        IsSessionTimeOut1 = 2;
+                    else
+                        IsSessionTimeOut1 = 1;
+                },
+                error: function (xhr, status, error) {
+                    if (xhr.readyState == 0)
+                        showCommonPopup('@Resource.NoInternet', 'nointernet');
+                    IsSessionTimeOut1 = 0;
+                }
+            });
+        }
+        else {
+            showCommonPopup('@Resource.NoInternet', 'nointernet');
+            IsSessionTimeOut1 = 0;
+        }
+        return IsSessionTimeOut1;
+    }
+    function Logout() {
+        window.location.href = '@Url.RouteUrl("LoginPage")';
+    }
+    function showCommonPopup(text,tab)
+    {
+        if (tab == 'nointernet') {
+            $('#Okbtn').hide();
+            $('#Closebtn').val('OK');
+        }
+        else {
+            $('#Okbtn').show();
+            $('#Closebtn').val('NO');
+        }
+        $('#Poptext').text(text);
+        $('.commonmodal').show();
+    }
+
+    window.addEventListener('beforeunload', function () {
+        if (syncbeforeunload) {
+            $.ajax({
+                url: '@Url.Action("FocusOut", "Main")',
+                type: 'Get',
+                dataType: 'json',
+                async: true,
+                success: function (data) {
+                },
+                error: function (xhr, status, error) {
+                }
+            });
+        }
+    });
+
+    $(window).on("blur focus", function (e) {
+        var prevType = $(this).data("prevType");
+
+        if (prevType != e.type) {   //  reduce double fire issues
+            switch (e.type) {
+                case "blur":
+                    console.log("!!blur!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusOut", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+
+                    break;
+                case "focus":
+                    console.log("!!focus!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusIn", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+                    break;
+            }
+        }
+
+        $(this).data("prevType", e.type);
+    });
+</script>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Description</title>
+    @if (subsection1 == 1)
+    {
+        <link href="~/Css/bookread1.css" rel="stylesheet" />
+    }
+    else if (subsection1 == 2)
+    {
+        <link href="~/Css/bookread2.css" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="~/Css/bookread3.css" rel="stylesheet" />
+    }
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/linq.js"></script>
+</head>
+<body>
+
+    <div id="Main_Content" style="width:100%;height:100%;min-height:768px;min-width:1024px">
+        <div class="commonmodal">
+            <div class="modal-content">
+                <p id="Poptext"></p>
+                <div id="modelbtn">
+                    <input type="button" value="YES" id="Okbtn" />
+                    <input type="button" value="NO" id="Closebtn" />
+                </div>
+            </div>
+        </div>
+        <div id="bkRead_Header" class="BookRead_Header">
+            <div style="padding:10px 20px">
+                <div class="BookRead_HeaderText">
+                    <img alt="" src="~/Content/Images/kitablet_logo.png" />
+                </div>
+                <div class="BookRead_CloseBtnContainer">
+                    <img alt="Close" src="~/Content/Images/close.png" />
+                </div>
+            </div>
+        </div>
+        <div id="bkRead_Container" class="BookRead_Container">
+            <div id="bkDetailsDiv" class="BookDetail_Container">
+                <div id="ratingContainer" class="Rating_Container">
+                    <div id="ratingImages" class="Rating_Images">
+                        @{
+                            int totalrating = 5;
+                            int avgrating = Int32.Parse(Model.Rating.AverageRating);
+                            int ratingDiff = totalrating - avgrating;
+                            if (ratingDiff == 0)
+                            {
+                                for (int i = 0; i < avgrating; i++)
+                                {
+                                    <div class="Completed"></div>
+                                }
+                            }
+                            else
+                            {
+                                for (int i = 0; i < avgrating; i++)
+                                {
+                                    <div class="Completed"></div>
+                                }
+
+                                for (int i = 0; i < ratingDiff; i++)
+                                {
+                                    <div></div>
+                                }
+                            }
+                        }
+                    </div>
+                    <div id="openRating" class="OpenRating">
+                        <span id="open-rating-lbl">RATING BREAK-UP</span>
+                    </div>
+                    <div id="rating-details-container">
+                        <img src="~/Content/Images/top_arrow_filled.png" />
+                        <div class="rating-items-stars">
+                            <div class="star-wrapper">
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating.png" />
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                            </div>
+                            <div class="star-wrapper">
+                                <img src="~/Content/Images/rating_complete.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                                <img src="~/Content/Images/rating.png" />
+                            </div>
+                        </div>
+
+                        @{
+
+                            int totalUserRated = Convert.ToInt32(Model.Rating.TotalUserRatedThisBook);
+                            int FiveStarRating = string.IsNullOrEmpty(Model.Rating.FiveStarRating) ? 0 : Convert.ToInt32(Model.Rating.FiveStarRating);
+                            int FourStarRating = string.IsNullOrEmpty(Model.Rating.FourStarRating) ? 0 : Convert.ToInt32(Model.Rating.FourStarRating);
+                            int ThreeStarRating = string.IsNullOrEmpty(Model.Rating.ThreeStarRating) ? 0 : Convert.ToInt32(Model.Rating.ThreeStarRating);
+                            int TwoStarRating = string.IsNullOrEmpty(Model.Rating.TwoStarRating) ? 0 : Convert.ToInt32(Model.Rating.TwoStarRating);
+                            int OneStarRating = string.IsNullOrEmpty(Model.Rating.OneStarRating) ? 0 : Convert.ToInt32(Model.Rating.OneStarRating);
+
+                            if (totalUserRated == 0)
+                            {
+                                totalUserRated = (FiveStarRating + FourStarRating + ThreeStarRating + TwoStarRating + OneStarRating) == 0 ? 1 : (FiveStarRating + FourStarRating + ThreeStarRating + TwoStarRating + OneStarRating);
+                            }
+
+                            <div class="rating-items-progress">
+                                <div class="progress-wrapper">
+                                    <div class="progress-bar">
+                                        <div style="width: @(((float)FiveStarRating / totalUserRated) * 100)%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-wrapper">
+                                    <div class="progress-bar">
+                                        <div style="width: @(((float)FourStarRating / totalUserRated) * 100)%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-wrapper">
+                                    <div class="progress-bar">
+                                        <div style="width: @(((float)ThreeStarRating / totalUserRated) * 100)%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-wrapper">
+                                    <div class="progress-bar">
+                                        <div style="width: @(((float)TwoStarRating / totalUserRated) * 100)%"></div>
+                                    </div>
+                                </div>
+                                <div class="progress-wrapper">
+                                    <div class="progress-bar">
+                                        <div style="width: @(((float)OneStarRating / totalUserRated) * 100)%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rating-items-progress-text">
+                                <div class="progress-value">@FiveStarRating</div>
+                                <div class="progress-value">@FourStarRating</div>
+                                <div class="progress-value">@ThreeStarRating</div>
+                                <div class="progress-value">@TwoStarRating</div>
+                                <div class="progress-value">@OneStarRating</div>
+                            </div>
+
+                        }
+                    </div>
+                </div>
+
+                <div id="bkTitle" class="Book_Title">
+                    @Html.Raw((Model.Title).ToString())                 
+                </div>
+                <div id="bkInformation" class="Book_Information">
+                    @{
+                        if (!string.IsNullOrEmpty(Model.Author))
+                        {
+                            <div>AUTHOR:&nbsp;<span>@Model.Author.ToUpper()</span></div>
+                        }
+                        if (!string.IsNullOrEmpty(Model.Illustrator))
+                        {
+                            <div>ILLUSTRATOR:&nbsp;<span>@Model.Illustrator.ToUpper()</span></div>
+                        }
+                        if (!string.IsNullOrEmpty(Model.Translator))
+                        {
+                            <div>TRANSLATOR:&nbsp;<span>@Model.Translator.ToUpper()</span></div>
+                        }
+                        if (!string.IsNullOrEmpty(Model.Publisher))
+                        {
+                            <div>PUBLISHER:&nbsp;<span>@Model.Publisher.ToUpper()</span></div>
+                        }
+                    }
+                </div>
+                <div id="bkDescription" class="Book_Description">
+                    @Html.Raw(Model.ShortDescription)
+                </div>
+                <div id="bkBtns" class="Book_Buttons">
+                    @{
+                        string isBookRead = "UnRead";
+                        if (Model != null)
+                        {
+                            if (Model.IsRead == true)
+                            {
+                                isBookRead = "Read";
+                            }
+                            if (isBookRead == "Read")
+                            {
+                                if (Model.IsReviewDone == true && Model.UserRating > 0)
+                                {
+                                    <div id="ratvalContainer" class="Done">
+                                        <div id="ratval">@Model.UserRating</div>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="ratvalContainer" class="@isBookRead">
+                                        <div id="ratval"></div>
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                <div id="ratvalContainer" class="@isBookRead">
+                                    <div id="ratval"></div>
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            <div id="ratvalContainer" class="@isBookRead">
+                                <div id="ratval"></div>
+                            </div>
+                        }
+                    }
+                    @{
+                        string isBookRead1 = "UnRead";
+                        if (Model != null && Model.HasActivity)
+                        {
+                            if (Model.IsRead == true)
+                            {
+                                isBookRead1 = "Read";
+                            }
+                            if (isBookRead1 == "Read")
+                            {
+                                if (Model.IsActivityDone == true)
+                                {
+                                    <div id="actContainer" class="Activity_Container Done">
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="actContainer" class="Activity_Container @isBookRead1">
+                                    </div>
+                                }
+                            }
+                            else
+                            {
+                                if (Model.HasActivity == true)
+                                {
+                                    <div id="actContainer" class="Activity_Container @isBookRead1">
+                                    </div>
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (Model.HasActivity == true)
+                            {
+                                <div id="actContainer" class="Activity_Container @isBookRead1">
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+            </div>
+            <div id="bkActionDiv" class="BookAction_Container">
+                <div class="parentContainer">
+                    <div class="verticalCenter">
+                        <div class="ReadLaterContainer">
+                            @{
+                                bool IsRead = false, IsReadLater = false;
+                                int currentPage = 0;
+
+                                if (Model != null)
+                                {
+                                    IsRead = Model.IsRead;// string.IsNullOrEmpty(Model.IsRead) ? false : Convert.ToBoolean(Model.IsRead);
+                                    IsReadLater = Model.IsReadLater;// string.IsNullOrEmpty(Model.IsReadLater) ? false : Convert.ToBoolean(Model.IsReadLater);
+                                    currentPage = Model.CurrentPage; //Model.Bookmark != null && !string.IsNullOrEmpty(Model.UserBook.Bookmark.CurrentPage) ? Convert.ToInt32(Model.UserBook.Bookmark.CurrentPage) : 0;
+                                }
+
+                                if (IsRead || currentPage > 0)
+                                {
+                                    <div id="readLaterButton" class="ReadLaterButton full-disable" style="display:none">READ LATER</div>
+                                }
+                                else if (IsReadLater)
+                                {
+                                    <div id="readLaterButton" class="ReadLaterButton disable">READ LATER</div>
+                                }
+                                else
+                                {
+                                    <div id="readLaterButton" class="ReadLaterButton">READ LATER</div>
+                                }
+                            }
+                            @*<div id="releaseBookButton" class="ReleaseBookButton"><u>RELEASE THIS BOOK</u></div>*@
+                        </div>
+                        <div class="BookIcon_Wrapper">
+                            @{
+                                int subsection = Int32.Parse(Model.SubSection);
+                                string subsectionClass = string.Empty;
+                                string defaultImage = string.Empty;
+                                switch (subsection)
+                                {
+                                    case 1:
+                                        subsectionClass = "J1";
+                                        break;
+                                    case 2:
+                                        subsectionClass = "J2";
+                                        break;
+                                    case 3:
+                                        subsectionClass = "M";
+                                        break;
+                                    default:
+                                        subsectionClass = "M";
+                                        break;
+                                };
+                                if (Model.ViewMode == "Landscape")
+                                {
+                                    defaultImage = "Book_Landscape_3.png";
+                                }
+                                else
+                                {
+                                    defaultImage = "Book_Portrait_3.png";
+                                }
+                                <div class="BookIcon_Container @subsectionClass @Model.ViewMode">
+                                    <div class="BookIcon_Border">
+                                        <div class="BookIcon @Model.ViewMode @subsectionClass">
+                                            <img alt="" src="@Model.Thumbnail3" />
+                                        </div>
+                                    </div>
+                                    <div style="transform: rotate(-90deg);transform-origin: left top 0;position: absolute;top: calc(50% + 44px);width:88px;text-align:center; left: 4px;font-family:Quicksand-Bold;font-size:14px;color:white">@Model.SubSectionName.ToUpper()</div>
+                                </div>
+                            }
+                            <div class="BookButtonContainer">
+                                @{
+                                    if (Model.HasReadAloud)
+                                    {
+
+                                        <div class="readAllwedIcon"><img src="~/Content/Images/read_aloud.png" /></div>
+                                    }
+                                    else
+                                    {
+                                        <div class="readAllwedIcon"><img src="~/Content/Images/read_aloud.png" style="visibility:hidden" /></div>
+                                    }
+                                }
+                                @{
+                                    if (Model.HasAnimation)
+                                    {
+
+                                        <div class="animationIcon"><img src="~/Content/Images/animation.png" /></div>
+                                    }
+                                    else
+                                    {
+                                        <div class="animationIcon"><img src="~/Content/Images/animation.png" style="visibility:hidden" /></div>
+                                    }
+                                }
+                                @{
+                                    if (Model.HasActivity)
+                                    {
+
+
+                                        if (Model.IsActivityDone)
+                                        {
+                                            <div class="activityIcon"><img src="~/Content/Images/activity_complete.png" /></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="activityIcon"><img src="~/Content/Images/activity.png" /></div>
+                                        }
+
+                                    }
+                                }
+                                @{
+                                    if (Int32.Parse(Model.Rating.AverageRating) != 0)
+                                    {
+                                        <div class="ratingIcon" style="display: flex;align-items:center;">
+                                            <div>@Model.Rating.AverageRating</div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="ratingIcon blank"><img src="~/Content/Images/rating.png" /></div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="loading">
+        <div style="margin:auto;color:#fff;width:100px;height:20px;"> Please Wait...</div>
+    </div>
+</body>
+
+</html>
+<style>
+    #loading {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 9999;
+        background: rgba(0,0,0,.5);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        font-family: 'Quicksand-Regular';
+        font-size: 14px;
+    }
+</style>

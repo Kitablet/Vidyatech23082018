@@ -1,0 +1,283 @@
+﻿@using FISE_Cloud.Models;
+@using Webdiyer.WebControls.Mvc;
+@model SearchResult
+
+@{
+    ViewBag.Title = "Search";
+    ViewBag.HeaderPageTitle = "Search";
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+    var query = Request.QueryString["query"] == null ? "" : Request.QueryString["query"].ToString();
+}
+<style>
+    #BooksContainer .row .col-xs-2 {
+        width: 20.666667%;
+        margin-right: 5px;
+    }
+
+    #BooksContainer .row div.col-xs-2:nth-child(5n) {
+        width: 14.666667%;
+    }
+
+        #BooksContainer .row div.col-xs-2:nth-child(5n) > .book_div_landscape {
+            margin-right: 0px;
+        }
+
+    .nav-justified > li > a {
+        text-align: left !important;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        border-radius: 7px 7px 0px 0px;
+    }
+
+    .nav-tabs.nav-justified > li > a {
+        margin-right: 1px;
+    }
+</style>
+<div class="row title-section">
+    <div class="col-xs-12 search">
+        <div class="col-xs-11">
+            @if (_Userdata != null && (_Userdata.Role == "superadmin" || _Userdata.Role == "elibadmin"))
+            {
+                <input type="text" placeholder="Search for Schools, Librarians, Students/Parents and Books" name="search" id="search" value="@query" />
+            }
+            @if (_Userdata != null && (_Userdata.Role == "schooladmin"))
+            {
+                <input type="text" placeholder="Search for Students and Parents" name="search" id="search" value="@query" />
+            }
+        </div>
+
+        <div class="col-xs-1">
+            <input type="button" value="@Resource.Btn_Search" class="btn btn-default btn-rect" id="searchbtn" accesskey="S" name="advanced-search-students" />
+        </div>
+    </div>
+</div>
+<div class="col-xs-12">
+    <label id="search-error" class="error" for="search" style="display:none;position:absolute;padding-top:10px;">@Resource.Search_Length</label>
+</div>
+    <div class="float-right">
+    </div>
+    <hr />
+
+
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs nav-justified">
+            @if (Model.Status.ToString() == "Sucess")
+            {
+                bool IsDisplayed = false;
+                if (@Model.School.TotalItemCount != 0)
+                {
+
+                    @Html.RenderBootstrapTabHeader("tab-schools", @TabSchoolsHeader(), !IsDisplayed)
+
+                    IsDisplayed = true;
+                }
+                if (@Model.SchoolAdmin.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabHeader("tab-admins", @TabSchoolAdminsHeader(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (@Model.Student.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabHeader("tab-students", @TabStudentsHeader(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (@Model.Book.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabHeader("tab-books", @TabBooksHeader(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+            }
+        </ul>
+        <div class="tab-content">
+            @if (Model.Status.ToString() == "Sucess")
+            {
+                bool IsDisplayed = false;
+                if (@Model.School.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabContent("tab-schools", @TabSchools(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (@Model.SchoolAdmin.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabContent("tab-admins", @TabSchoolAdmins(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (@Model.Student.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabContent("tab-students", @TabStudents(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (@Model.Book.TotalItemCount != 0)
+                {
+                    @Html.RenderBootstrapTabContent("tab-books", @TabBooks(), !IsDisplayed)
+                    IsDisplayed = true;
+                }
+                if (!IsDisplayed)
+                {
+                    <div>@Resource.NoResultsFound</div>
+                }
+            }
+        </div>
+    </div>
+
+    @helper TabSchoolsHeader()
+{
+    <div>
+        <span>@Resource.Search_Tab_SCHOOLS (@Model.School.TotalItemCount)</span>
+    </div>
+}
+
+    @helper TabSchoolAdminsHeader()
+{
+    <div>
+        <span>@Resource.Search_Tab_LIBRARIANS (@Model.SchoolAdmin.TotalItemCount)</span>
+    </div>
+}
+
+    @helper TabStudentsHeader()
+{
+    <div>
+        <span>@Resource.Search_Tab_STUDENTS (@Model.Student.TotalItemCount)</span>
+
+    </div>
+}
+
+    @helper TabBooksHeader()
+{
+    <div>
+        <span>@Resource.Search_Tab_BOOKS (@Model.Book.TotalItemCount)</span>
+
+    </div>
+}
+
+    @helper TabSchools()
+{
+    <div id="SchoolContainer">
+        @Html.Partial("_SearchSchoolListPost", Model.School, new ViewDataDictionary { { "route", "search" }, { "search", ViewBag.search } })
+    </div>
+}
+
+    @helper TabSchoolAdmins()
+{
+    <div id="SchoolAdminContainer">
+        @Html.Partial("_SearchSchoolAdminListPost", Model.SchoolAdmin)
+    </div>
+}
+
+    @helper TabStudents()
+{
+    <div id="StudentContainer">
+        @Html.Partial("_SearchStudentListPost", Model.Student)
+    </div>
+}
+
+    @helper TabBooks()
+{
+    <div id="BooksContainer">
+        @Html.Partial("_SearchBooksListPost", Model.Book)
+    </div>
+}
+
+
+    @section scripts {
+        <script src="~/Scripts/jquery.validate.js?v=1"></script>
+        <script src="~/Scripts/MvcPager.js?v=1"></script>
+        <script type="text/javascript">
+            $(function () {
+                // Javascript to enable link to tab
+                var hash = GetTab();
+                if (hash) {
+                    $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+                }
+                // Change hash for page-reload
+                $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                    //window.location.hash = e.target.hash;
+                });
+                $('#searchbtn').click(function () {
+                    var query = $.trim($("#search").val());
+                    if (query.length > 255) {
+                        $('label[for=' + $(this).attr('id') + ']').show();
+                        return false;
+                    }
+                    else {
+                        window.location = '@Url.RouteUrl("Search")' + "?query=" + query;
+                    }
+                });
+                $('#search').keypress(function (e) {
+                    if (e.which == 13) {//Enter key pressed
+                        $('#searchbtn').click();//Trigger search button click event
+                    }
+                });
+            });
+            function GetTab() {
+                var hash = document.location.hash;
+                if (hash.indexOf("tab-students") >= 0) {
+                    return "tab-students";
+                }
+                else if (hash.indexOf("tab-admins") >= 0) {
+                    return "tab-admins";
+                }
+                else if (hash.indexOf("tab-schools") >= 0) {
+                    return "tab-schools";
+                }
+                else if (hash.indexOf("tab-books") >= 0) {
+                    return "tab-books";
+                }
+                else {
+                    return "";
+                }
+            }
+
+            $(document).ready(function () {
+                $('#search').on('keyup change paste', function () {
+                    if ($.trim($(this).val()).length > 255) {
+                        $('label[for=' + $(this).attr('id') + ']').show();
+                    }
+                    else
+                        $('label[for=' + $(this).attr('id') + ']').hide();
+                });
+                if ($('.nav-tabs li').length == 1)
+                    $('.nav-tabs li').css({ 'width': '25%', 'float': 'left' });
+            });
+
+            $("form").validate({
+                rules: {
+                    search: {
+                        rangelength: [0, 255],
+                    }
+                },
+
+                messages: {
+                    search: {
+                        rangelength: "@Resource.Search_Length"
+                    }
+                },
+                submitHandler: function (form) {
+                    $(form).find("input[type='submit']").attr('disabled', true);
+                    $(form).find("input[type='button']").attr('disabled', true);
+                    form.submit();
+                },
+                invalidHandler: function (event, validator) {
+                }
+            });
+        </script>
+    }
+
+
+
+    <style>
+        .error {
+            color: #FC654C;
+            font-size: 12px;
+        }
+
+        label.error {
+            text-transform: none;
+        }
+    </style>

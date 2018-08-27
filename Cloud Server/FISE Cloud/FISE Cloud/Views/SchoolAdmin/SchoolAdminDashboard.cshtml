@@ -1,0 +1,149 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model SchoolDetails
+
+@{
+
+    var controllerName = HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("controller");
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+@{
+    ViewBag.Title = "School Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row title-section">
+    <div class="title-section-subcontent">
+        @Resource.Welcome @_Userdata.DisplayName
+    </div>
+    <div class="col-xs-8">
+        <h4 class="page-title">@Model.SchoolDetail.SchoolName</h4>
+    </div>
+    <style>
+        .grade {
+            background: transparent;
+            border: 0;
+            color: white;
+        }
+
+        .grade-active {
+            border-bottom: solid black;
+            COLOR: BLACK;
+        }
+    </style>
+</div>
+<hr />
+
+<div class="row">
+    @Html.Hidden("SchoolUId", Model.SchoolDetail.SchoolUId)
+
+    <div class="col-xs-12 info-section">
+        @Html.Raw(Model.SchoolDetail.AddressLine1 + (String.IsNullOrEmpty(Model.SchoolDetail.AddressLine2) ? "" : ", " + Model.SchoolDetail.AddressLine2))
+        @Html.Raw(String.IsNullOrEmpty(Model.SchoolDetail.City) ? "" : ", " + Model.SchoolDetail.City) @Html.Raw(String.IsNullOrEmpty(Model.SchoolDetail.State) ? "" : ", " + Model.SchoolDetail.State) @Html.Raw(Model.SchoolDetail.PinCode <= 0 ? "" : ", " + Model.SchoolDetail.PinCode)
+    </div>
+    <div class="row">
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_Principal</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalName</span>
+        </span>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_Email</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PrincipalEmail</span>
+        </span>
+        <span class="info-section">
+            <label class="">@Resource.School_SchoolHomepage_SchoolPhone</label>
+            <span class="list-item-sub">@Model.SchoolDetail.PhoneNumber</span>
+        </span>
+    </div>
+</div>
+
+<div class="space-bottom">
+
+</div>
+@using (Html.BeginForm("ExportSchoolStudentstoExcel", "SchoolAdmin", FormMethod.Post, new { id = "export-schoolstudents-toexcel-form" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" id="schooluid_ofstudents" name="schooluid_ofstudents" value="" />
+}
+
+@using (Html.BeginForm("SchoolAdminDashboard", "SchoolAdmin", null, FormMethod.Post, new { id = "searchForm" }))
+{
+    <input type="hidden" value="0" id="hdnGrade" name="Grade" />
+    <div id="product-edit" class="nav-tabs-custom">
+        <ul class="nav nav-tabs">
+            @Html.RenderBootstrapTabHeader("tab-students", @TabStudentsHeader(), true)
+        </ul>
+        <div class="tab-content">
+            @Html.RenderBootstrapTabContent("tab-students", @TabStudents(), true)
+        </div>
+    </div>
+
+
+    @helper TabStudentsHeader()
+    {
+        <div>
+            <span>@Resource.Tab_Title_STUDENTS (@Model.SchoolDetail.StudentCount)</span>
+            <input type="button" id="exportschoolstudents" class="exporttoexcel_white" title="@Resource.Export_ExportSchoolStudents" />
+        </div>
+}
+    @helper TabStudents()
+    {
+        <div class="grade-selector">
+            <span class="grade-selector-title">@Resource.Selector_GRADE</span>
+            @foreach (Grade grade in Model.Grades)
+            {
+                <input type="submit" value="@grade.Name" class="grade" />
+            }
+        </div>
+        <div id="SchoolStudentsContainer">
+            @Html.Partial("_SchoolAdminStudentsPost", Model.Students)
+        </div>
+}
+
+    @section scripts {
+        <script src="~/Scripts/MvcPager.js?v=1"></script>
+        <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+        <script type="text/javascript">
+
+
+
+            $('.grade:first').addClass('grade-active')
+            $('.grade').click(function () {
+                $('.grade-active').removeClass('grade-active');
+                $(this).addClass('grade-active');
+                $('#hdnGrade').val($(this).val());
+            });
+            $(function () {
+                // Javascript to enable link to tab
+                var hash = GetTab();
+                if (hash) {
+                    $('.nav-tabs a[data-tab-name=' + hash + ']').tab('show');
+                }
+                // Change hash for page-reload
+                $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                    // window.location.hash = e.target.hash;
+                });
+            });
+            function GetTab() {
+                var hash = document.location.hash;
+                if (hash.indexOf("tab-students") >= 0) {
+                    return "tab-students";
+                }
+                else {
+                    return "";
+                }
+            }
+
+            $('#exportschoolstudents').on('click', function () {
+                $('#schooluid_ofstudents').val($('#SchoolUId').val())
+                $('#export-schoolstudents-toexcel-form').submit();
+
+            });
+        </script>
+    }
+}

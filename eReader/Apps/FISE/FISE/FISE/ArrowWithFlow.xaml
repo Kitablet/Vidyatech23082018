@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<StackLayout Spacing="7" Orientation="Vertical" xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kitablet.ArrowWithFlow" BackgroundColor="Transparent">
+
+  <Image x:Name="img1" Source="nav_dot_anim.png" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center"></Image>
+  <Image x:Name="img2" Source="nav_dot_anim.png" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center"></Image>
+  <Image x:Name="img3" Source="nav_dot_anim.png" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center"></Image>
+  <Image x:Name="arrow" Source="down.png" Aspect="AspectFit" VerticalOptions="Start" HorizontalOptions="Center"></Image>
+
+</StackLayout>

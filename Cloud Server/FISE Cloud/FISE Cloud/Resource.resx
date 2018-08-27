@@ -1,0 +1,1646 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ChangePasswordValidator_ConfirmPwdReq" xml:space="preserve">
+    <value>Re-enter password</value>
+  </data>
+  <data name="ChangePasswordValidator_NewPwdReq" xml:space="preserve">
+    <value>Enter New Password</value>
+  </data>
+  <data name="ChangePasswordValidator_New_Confirm_Match" xml:space="preserve">
+    <value>The new password and re-entered password do not match</value>
+  </data>
+  <data name="ChangePasswordValidator_OldPwdReq" xml:space="preserve">
+    <value>Enter Current Password</value>
+  </data>
+  <data name="ChangePasswordValidator_PwdLeastValidator" xml:space="preserve">
+    <value>Password must have at least 6 characters</value>
+  </data>
+  <data name="ChangePasswordValidator_PwdMostValidator" xml:space="preserve">
+    <value>Password can not be more than 100 characters</value>
+  </data>
+  <data name="ChangePassword_pageTitle" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassword_submit" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePassword_Title" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Customer_ChangePassword_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_ChangePassword_oldPwdIncorrect" xml:space="preserve">
+    <value>Incorrect Password</value>
+  </data>
+  <data name="Customer_ChangePassword_success" xml:space="preserve">
+    <value>Password has been changed successfully</value>
+  </data>
+  <data name="Customer_CustomerInfo_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_CustomerInfo_success" xml:space="preserve">
+    <value>Profile has been updated successfully</value>
+  </data>
+  <data name="Customer_CustomerInfo_updationError" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_login_accNotexist" xml:space="preserve">
+    <value>You do not seem to have an account - if interested to get one, drop us an email at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_login_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_login_netwrkError" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Customer_login_wrngCredential" xml:space="preserve">
+    <value>You seem to have incorrect user name &amp; password - please check again</value>
+  </data>
+  <data name="LoginValidator_PwdReq" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="LoginValidator_UserNameReq" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="Login_fieldTitle" xml:space="preserve">
+    <value>Returning Customer</value>
+  </data>
+  <data name="Login_pageTitle" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_signIn" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
+  <data name="Login_Title" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="PasswordRecoveryConfirmValidator_ConfirmPwdReq" xml:space="preserve">
+    <value>Re-enter the password</value>
+  </data>
+  <data name="PasswordRecoveryConfirmValidator_NewPwdReq" xml:space="preserve">
+    <value>Enter the new password</value>
+  </data>
+  <data name="PasswordRecoveryConfirmValidator_New_Confirm_Match" xml:space="preserve">
+    <value>Passwords do not match</value>
+  </data>
+  <data name="PasswordRecoveryConfirmValidator_PwdLeastValidator" xml:space="preserve">
+    <value>Password must have at least 8 characters</value>
+  </data>
+  <data name="PasswordRecoveryConfirmValidator_PwdMostValidator" xml:space="preserve">
+    <value>Password can not be more than 100 characters</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_btnvalue" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_invalidtoken" xml:space="preserve">
+    <value>This link is no longer valid - go to &lt;a href="%SITEURL%"&gt;password recovery&lt;/a&gt; to reset password again.</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_noaccount" xml:space="preserve">
+    <value>I cannot find your account - please check username and password entered</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_PageTitle" xml:space="preserve">
+    <value>Password Recovery</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_successmsg" xml:space="preserve">
+    <value>Password has been changed successfully</value>
+  </data>
+  <data name="PasswordRecoveryValidator_UserNameReq" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="PasswordRecoveryValidator_UserNameValidator" xml:space="preserve">
+    <value>Username must be less than or equal to 25 characters</value>
+  </data>
+  <data name="PasswordRecovery_btnvalue" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="PasswordRecovery_msgnoemail" xml:space="preserve">
+    <value>There is no account associated with this email address - enter another email id or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="PasswordRecovery_msgnouser" xml:space="preserve">
+    <value>You do not seem to have an account - if interested to get one, drop us an email at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="PasswordRecovery_PageTitle" xml:space="preserve">
+    <value>Forgot Password</value>
+  </data>
+  <data name="PasswordRecovery_successmsg" xml:space="preserve">
+    <value>Please check your registered Email ID for the link to reset password.</value>
+  </data>
+  <data name="PasswordRecovery_unknownerror" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="PopUpLogin_btnSignin" xml:space="preserve">
+    <value>Sign in</value>
+  </data>
+  <data name="PopUpLogin_forgotpassword" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="PopUpLogin_InvalidEmail" xml:space="preserve">
+    <value>Email address is incorrect - enter again</value>
+  </data>
+  <data name="PopUpLogin_NetError" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="PopupLogin_NoAccountError" xml:space="preserve">
+    <value>You do not seem to have an account - if interested to get one, drop us an email at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;</value>
+  </data>
+  <data name="PopUpLogin_PasswordMinError" xml:space="preserve">
+    <value>Your password must be at least 255 characters long ruchika</value>
+  </data>
+  <data name="PopupLogin_PasswordReqError" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="PopUpLogin_title" xml:space="preserve">
+    <value>Sign in to your account</value>
+  </data>
+  <data name="PopUpLogin_unknownError" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="PopupLogin_UsernameReqError" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="PopUpLogin_wrongCredentials" xml:space="preserve">
+    <value>You seem to have incorrect user name &amp; password - please check again</value>
+  </data>
+  <data name="UserCreationFormConfirm_successmsg" xml:space="preserve">
+    <value>%USERTYPE% account has been created successfully - a registration link has been sent to %USERTYPE%'s email address.</value>
+  </data>
+  <data name="UserCreation_btnCreateuser" xml:space="preserve">
+    <value>Create User</value>
+  </data>
+  <data name="UserCreation_EmailReqError" xml:space="preserve">
+    <value>Enter email address</value>
+  </data>
+  <data name="UserCreation_InvalidEmail" xml:space="preserve">
+    <value>Email address is incorrect - enter again</value>
+  </data>
+  <data name="UserCreation_InvalidMobileNo" xml:space="preserve">
+    <value>Invalid mobile number - enter a number with 10 digits</value>
+  </data>
+  <data name="UserCreation_MobileNoReqError" xml:space="preserve">
+    <value>Enter mobile number</value>
+  </data>
+  <data name="UserCreation_title" xml:space="preserve">
+    <value>User Creation</value>
+  </data>
+  <data name="UserCreation_tooltip" xml:space="preserve">
+    <value>Please enter your email address below. You will receive a link at the email provided for registration.</value>
+  </data>
+  <data name="UserRegistration_title" xml:space="preserve">
+    <value>New User Activation</value>
+  </data>
+  <data name="UserRegistration_AddressReqError" xml:space="preserve">
+    <value>Enter Address</value>
+  </data>
+  <data name="UserRegistration_DoBReqError" xml:space="preserve">
+    <value>Enter Date of Birth in DD Month YYYY. E.g. 20 February 2017</value>
+  </data>
+  <data name="UserRegistration_FirstnameReqError" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="UserRegistration_LastnameReqError" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="UserRegistration_MobileNoReqError" xml:space="preserve">
+    <value>Enter mobile number</value>
+  </data>
+  <data name="UserRegistration_PasswordReqError" xml:space="preserve">
+    <value>Enter Password</value>
+  </data>
+  <data name="UserRegistration_UsernameReqError" xml:space="preserve">
+    <value>Enter Username</value>
+  </data>
+  <data name="UserRegistration_CountryReqError" xml:space="preserve">
+    <value>Enter Country</value>
+  </data>
+  <data name="UserRegistration_NationalityReqError" xml:space="preserve">
+    <value>Enter Nationality</value>
+  </data>
+  <data name="UserRegistration_PincodeReqError" xml:space="preserve">
+    <value>Enter Pin code</value>
+  </data>
+  <data name="UserRegistration_StateReqError" xml:space="preserve">
+    <value>Enter State</value>
+  </data>
+  <data name="UserRegistration_Validator_PwdLeastValidator" xml:space="preserve">
+    <value>Password must have at least 8 characters</value>
+  </data>
+  <data name="UserRegistration_Validator_PwdMostValidator" xml:space="preserve">
+    <value>Password can not be more than 100 characters</value>
+  </data>
+  <data name="CreateSchool_btnvalue" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="CreateSchool_title" xml:space="preserve">
+    <value>ADD SCHOOL</value>
+  </data>
+  <data name="CreateSchool_PhoneNoReqError" xml:space="preserve">
+    <value>Enter School Phone number</value>
+  </data>
+  <data name="EditSchool_btnSave" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="EditSchool_title" xml:space="preserve">
+    <value>Edit School</value>
+  </data>
+  <data name="CreateSchool_createschool_success" xml:space="preserve">
+    <value>School has been created successfully - an email has been sent to the Principal's email address for her to verify her email address</value>
+  </data>
+  <data name="CreateSchool_SchoolAlreadyExists" xml:space="preserve">
+    <value>School with this name at the given pincode already exists - try with a different school name</value>
+  </data>
+  <data name="EditSchool_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="EditSchool_existMsg" xml:space="preserve">
+    <value>School with this name at the given pincode already exists - try with a different school name</value>
+  </data>
+  <data name="EditSchool_noSchoolFound" xml:space="preserve">
+    <value>Sorry, we could not find this school. Please try again.</value>
+  </data>
+  <data name="EditSchool_success" xml:space="preserve">
+    <value>School details were edited successfully</value>
+  </data>
+  <data name="ManageSchoolAdmin_btnAddnewAdmin" xml:space="preserve">
+    <value>Add New</value>
+  </data>
+  <data name="UserRegistration_ConfirmPasswordReqError" xml:space="preserve">
+    <value>Re-enter password</value>
+  </data>
+  <data name="UserRegistration_Password_Confirm_Match" xml:space="preserve">
+    <value>The new password and re-entered password do not match</value>
+  </data>
+  <data name="StudentList_btnAddnewStudents" xml:space="preserve">
+    <value>Add new students</value>
+  </data>
+  <data name="Student_EditStudent_DateofBirthReqError" xml:space="preserve">
+    <value>Enter Date of Birth</value>
+  </data>
+  <data name="Student_EditStudent_FirstNameReqError" xml:space="preserve">
+    <value>Enter First Name</value>
+  </data>
+  <data name="Student_EditStudent_GenderReqError" xml:space="preserve">
+    <value>Enter Gender</value>
+  </data>
+  <data name="Student_EditStudent_GradeReqError" xml:space="preserve">
+    <value>Enter Grade</value>
+  </data>
+  <data name="Student_EditStudent_LastNameReqError" xml:space="preserve">
+    <value>Enter Last Name</value>
+  </data>
+  <data name="Student_EditStudent_ParentEmailReqError" xml:space="preserve">
+    <value>Enter Parent Email</value>
+  </data>
+  <data name="Student_EditStudent_ParentMobileNoReqError" xml:space="preserve">
+    <value>Enter Parent mobile number</value>
+  </data>
+  <data name="Student_EditStudent_RollNoReqError" xml:space="preserve">
+    <value>Enter Roll No</value>
+  </data>
+  <data name="Student_EditStudent_SectionReqError" xml:space="preserve">
+    <value>Enter Section</value>
+  </data>
+  <data name="Student_EditStudent_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Student_EditStudent_success" xml:space="preserve">
+    <value>Student details were edited successfully</value>
+  </data>
+  <data name="StudentList_btnUpdateStudents" xml:space="preserve">
+    <value>Update Students</value>
+  </data>
+  <data name="StudentList_btnExportStudentsToExcel" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="EditBook_error" xml:space="preserve">
+    <value>Sorry, an error occurred. Please try again.</value>
+  </data>
+  <data name="EditBook_ISBNReqError" xml:space="preserve">
+    <value>ISBN is required</value>
+  </data>
+  <data name="EditBook_PriceReqerror" xml:space="preserve">
+    <value>Price is required</value>
+  </data>
+  <data name="EditBook_success" xml:space="preserve">
+    <value>Book was edited successfully</value>
+  </data>
+  <data name="EditBook_TitleReqError" xml:space="preserve">
+    <value>Enter Title</value>
+  </data>
+  <data name="ElibraryAdminList_btnAddNewAdmin" xml:space="preserve">
+    <value>Add New Admin</value>
+  </data>
+  <data name="ElibraryAdminList_SchoolNameReqError" xml:space="preserve">
+    <value>Enter School Name</value>
+  </data>
+  <data name="UserCreationForm_failuremsg" xml:space="preserve">
+    <value>Sorry - I was unable to create user account - please try again</value>
+  </data>
+  <data name="UserRegistration_PrincipalNameReqError" xml:space="preserve">
+    <value>Enter the name of the Principal</value>
+  </data>
+  <data name="UserCreationForm_title" xml:space="preserve">
+    <value>New User Creation Form</value>
+  </data>
+  <data name="StudentList_btnRemoveSelectedStudents" xml:space="preserve">
+    <value>Remove Selected Students</value>
+  </data>
+  <data name="StudentList_RemoveStudents_error" xml:space="preserve">
+    <value>There was an error while performing deletion</value>
+  </data>
+  <data name="StudentList_RemoveStudents_success" xml:space="preserve">
+    <value>Students were removed successfully.</value>
+  </data>
+  <data name="ElibraryAdminList_btnRemoveSelectedElibraryAdmins" xml:space="preserve">
+    <value>Remove Elib Admins</value>
+  </data>
+  <data name="ElibraryAdminsList_RemoveAdmins_error" xml:space="preserve">
+    <value>Removal faced some error.</value>
+  </data>
+  <data name="ElibraryAdminsList_RemoveAdmins_success" xml:space="preserve">
+    <value>Successfully removed.</value>
+  </data>
+  <data name="BookList_btnRemoveSelectedBooks" xml:space="preserve">
+    <value>Remove Selected Books</value>
+  </data>
+  <data name="ElibraryAdminsList_btnRemoveSelectedElibAdmins" xml:space="preserve">
+    <value>Remove Selected Elibrary Admins</value>
+  </data>
+  <data name="SchoolAdminsList_btnRemoveSelectedSchoolAdmins" xml:space="preserve">
+    <value>Remove Selected Admins</value>
+  </data>
+  <data name="SchoolList_btnRemoveSelectedSchools" xml:space="preserve">
+    <value>Remove Selected Schools</value>
+  </data>
+  <data name="UserCreationForm_unknownerror" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UserCreation_UserAlreadyRegistered" xml:space="preserve">
+    <value>A user already exists with this email address - use a different email address</value>
+  </data>
+  <data name="UserCreation_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UserCreation_success" xml:space="preserve">
+    <value>User </value>
+  </data>
+  <data name="UserValidation_title" xml:space="preserve">
+    <value>New User Activation</value>
+  </data>
+  <data name="CreateSchool_InvalidPhoneNo" xml:space="preserve">
+    <value>Invalid Phone No. Phone no. should have 10 digits</value>
+  </data>
+  <data name="UserCreation_InvalidPincodeError" xml:space="preserve">
+    <value>Invalid pincode - pincode should have 6 to 9 digits</value>
+  </data>
+  <data name="UserCreation_PrincipalEmailReqError" xml:space="preserve">
+    <value>Enter Principal email address.</value>
+  </data>
+  <data name="UserRegistration_CityReqError" xml:space="preserve">
+    <value>Enter City</value>
+  </data>
+  <data name="UserRegistration_Validator_PwdValidator" xml:space="preserve">
+    <value>Password should be between 8 and 100 characters</value>
+  </data>
+  <data name="StudentCreation_createstudent_success" xml:space="preserve">
+    <value>Student has been registered successfully</value>
+  </data>
+  <data name="StudentCreation_StudentAlreadyExists" xml:space="preserve">
+    <value>Student is already registered</value>
+  </data>
+  <data name="StudentCreation_unknownerror" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Student_EditStudent_SubscriptionEndDateReqError" xml:space="preserve">
+    <value>Enter Subscription End Date in DD Month YYYY. E.g. 20 February 2017</value>
+  </data>
+  <data name="Student_EditStudent_SubscriptionStartDateReqError" xml:space="preserve">
+    <value>Enter Subscription Start Date in DD Month YYYY. E.g. 20 February 2017</value>
+  </data>
+  <data name="EditBook_AuthorReqError" xml:space="preserve">
+    <value>Enter Author</value>
+  </data>
+  <data name="BooksList_RemoveBooks_error" xml:space="preserve">
+    <value>Unknown error. Removal was not successfull.</value>
+  </data>
+  <data name="BooksList_RemoveBooks_success" xml:space="preserve">
+    <value>Book(s) removed successfully.</value>
+  </data>
+  <data name="UserValidation_Mobileno_6digit_Error" xml:space="preserve">
+    <value>Enter first # digits of the associated mobile number</value>
+  </data>
+  <data name="UserRegistrationdate" xml:space="preserve">
+    <value>Enter Day</value>
+  </data>
+  <data name="UserRegistrationmonth" xml:space="preserve">
+    <value>Enter Month</value>
+  </data>
+  <data name="UserRegistrationyear" xml:space="preserve">
+    <value>Enter Year</value>
+  </data>
+  <data name="InvalidToken" xml:space="preserve">
+    <value>Sorry, it’s an invalid token.</value>
+  </data>
+  <data name="EditBook_CategoryReqerror" xml:space="preserve">
+    <value>Select Category</value>
+  </data>
+  <data name="EditBook_IllustratorReqerror" xml:space="preserve">
+    <value>Enter Illustrator</value>
+  </data>
+  <data name="EditBook_PublisherReqerror" xml:space="preserve">
+    <value>Enter Publisher</value>
+  </data>
+  <data name="EditBook_ShortDescriptionReqerror" xml:space="preserve">
+    <value>Enter Synopsis</value>
+  </data>
+  <data name="EditBook_TranslatorReqerror" xml:space="preserve">
+    <value>Enter Translator</value>
+  </data>
+  <data name="EditBook_YearOfPublicationReqerror" xml:space="preserve">
+    <value>Year of publication is required</value>
+  </data>
+  <data name="EditBook_BookTypeReqerror" xml:space="preserve">
+    <value>Select Book-type</value>
+  </data>
+  <data name="EditBook_LanguageReqerror" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="EditBook_SpecialsReqerror" xml:space="preserve">
+    <value>Select Specials</value>
+  </data>
+  <data name="EditBook_SubsectionReqerror" xml:space="preserve">
+    <value>Select Sub-section</value>
+  </data>
+  <data name="Btn_done" xml:space="preserve">
+    <value>DONE</value>
+  </data>
+  <data name="Login_RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="EditUserProfile_btnSave" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="UsernameRecovery_PageTitle" xml:space="preserve">
+    <value>Forgot Username</value>
+  </data>
+  <data name="UsernameRecovery_tooltip" xml:space="preserve">
+    <value>Enter username or email address to get an email to recover username</value>
+  </data>
+  <data name="CaptchaReqError" xml:space="preserve">
+    <value>Please enter Captcha.</value>
+  </data>
+  <data name="EditUserProfile_Notfound" xml:space="preserve">
+    <value>Sorry, we could not find the profile.</value>
+  </data>
+  <data name="EditUserProfile_Success" xml:space="preserve">
+    <value>Updated successfully</value>
+  </data>
+  <data name="EditUserProfile_UnknownErr" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UsernameRecovery_msgnouser" xml:space="preserve">
+    <value>There is no account associated with this email address - enter another email id or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UsernameRecovery_successmsg" xml:space="preserve">
+    <value>Check your email for instructions to recover username</value>
+  </data>
+  <data name="UsernameRecovery_unknownerror" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="EditParent_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="EditParent_success" xml:space="preserve">
+    <value>Details were edited successfully.</value>
+  </data>
+  <data name="Edit_error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Edit_success" xml:space="preserve">
+    <value>Details updated successfully</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>PROFILE</value>
+  </data>
+  <data name="Elibraryadmin_elibadmin" xml:space="preserve">
+    <value>ELIBRARY ADMIN</value>
+  </data>
+  <data name="Schooladmin_schooladmin" xml:space="preserve">
+    <value>LIBRARIAN</value>
+  </data>
+  <data name="Studentandparentinfo_parent" xml:space="preserve">
+    <value>PARENT</value>
+  </data>
+  <data name="Studentandparentinfo_student" xml:space="preserve">
+    <value>STUDENT</value>
+  </data>
+  <data name="Student_Importstudent_SubscriptionEndDate" xml:space="preserve">
+    <value>Invalid input - Subscription End Date must be greater than Subscription Start Date</value>
+  </data>
+  <data name="UserCreation_GenderReqError" xml:space="preserve">
+    <value>Enter Gender</value>
+  </data>
+  <data name="StudentImport_Excelduplicate_Error" xml:space="preserve">
+    <value>Upload error - Duplicate data</value>
+  </data>
+  <data name="StudentImport_InvalidGrade_Error" xml:space="preserve">
+    <value>Invalid grade - values allowed (1-8)</value>
+  </data>
+  <data name="StudentImport_InvalidSubSection" xml:space="preserve">
+    <value>Invalid section - value allowed (string of 255 characters)</value>
+  </data>
+  <data name="StudentImport_FileExtension_Error" xml:space="preserve">
+    <value>Invalid file - please upload a .xlsx file - you can download a template</value>
+  </data>
+  <data name="UserCreation_InvalidToken" xml:space="preserve">
+    <value>This link is no longer valid - contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UserCreation_UserAccNotExist" xml:space="preserve">
+    <value>Sorry, this user account does not exist.</value>
+  </data>
+  <data name="NewPassword_PageTitle" xml:space="preserve">
+    <value>New Password</value>
+  </data>
+  <data name="Elibadmin_elibadmin" xml:space="preserve">
+    <value>E-library Admin</value>
+  </data>
+  <data name="UserRegistration_PwdValidator" xml:space="preserve">
+    <value>Password must have at least 8 characters, including at least one alphabet, at least one number &amp; at least one special character [any one out of !@#$%^&amp;)(* set].</value>
+  </data>
+  <data name="UserRegistration_UsernameLength" xml:space="preserve">
+    <value>Username must have 5 to 25 characters. You can enter only (! # $ % &amp; ' * + - / = ? ^ _ ` { | } ~) as special characters.</value>
+  </data>
+  <data name="Importstudent_StartDate" xml:space="preserve">
+    <value>Enter valid date. The subscription start date should be today, or later</value>
+  </data>
+  <data name="UserRegistration_PwdValidator_Msg" xml:space="preserve">
+    <value>Password must have at least 8 characters, including at least one alphabet, at least one number &amp; at least one special character [any one out of !@#$%^&amp;)(* set].</value>
+  </data>
+  <data name="CreateSchool_SchoolUIdAlreadyExists" xml:space="preserve">
+    <value>School ID already exists</value>
+  </data>
+  <data name="CreateSchool_SchoolUId_10Char_Error" xml:space="preserve">
+    <value>School ID must have 8 characters</value>
+  </data>
+  <data name="CreateSchool_SchoolUIdReqError" xml:space="preserve">
+    <value>Enter School ID</value>
+  </data>
+  <data name="Disable_ConfirmMsg" xml:space="preserve">
+    <value>Are you sure you want to disable this?</value>
+  </data>
+  <data name="Enable_ConfirmMsg" xml:space="preserve">
+    <value>Are you sure you want to enable this?</value>
+  </data>
+  <data name="RegistrationMail_ErrorMailNotSent" xml:space="preserve">
+    <value>Sorry, the email could not be sent due to an error. Please try again.</value>
+  </data>
+  <data name="RegistrationMail_NoUser" xml:space="preserve">
+    <value>Sorry, this user account does not exist.</value>
+  </data>
+  <data name="RegistrationMail_Success" xml:space="preserve">
+    <value>Registration email has been sent successfully</value>
+  </data>
+  <data name="SchoolAdminInfo_LastAdminDelNotAllowed" xml:space="preserve">
+    <value>Last Admin cannot be disabled</value>
+  </data>
+  <data name="VerificationMail_ErrorMailNotSent" xml:space="preserve">
+    <value>Sorry - email could not be sent due to an error - please try again.</value>
+  </data>
+  <data name="VerificationMail_NoSchool" xml:space="preserve">
+    <value>Sorry, this school does not exist.</value>
+  </data>
+  <data name="VerificationMail_Success" xml:space="preserve">
+    <value>Verification email has been sent successfully</value>
+  </data>
+  <data name="Report_MonthReq_Error" xml:space="preserve">
+    <value>Enter Month</value>
+  </data>
+  <data name="Report_YearReq_Error" xml:space="preserve">
+    <value>Enter Year</value>
+  </data>
+  <data name="Reports_Report1_Title" xml:space="preserve">
+    <value>Report 1: Registrations and Logins</value>
+  </data>
+  <data name="Reports_Report2_Title" xml:space="preserve">
+    <value>Report 2: School wise usage of kitablet by students</value>
+  </data>
+  <data name="Reports_Report3_Title" xml:space="preserve">
+    <value>Report 3: Book wise usage of kitablet by students</value>
+  </data>
+  <data name="Reports_Report4_Title" xml:space="preserve">
+    <value>Report 4: Book wise usage of kitablet by students for Publishers</value>
+  </data>
+  <data name="Reports_Report5_Title" xml:space="preserve">
+    <value>Report 5: An Individual School vs. All School Average</value>
+  </data>
+  <data name="Reports_Report6_Title" xml:space="preserve">
+    <value>Report 6: Active books in kitablet</value>
+  </data>
+  <data name="Reports_Report7_Title" xml:space="preserve">
+    <value>Report 7: Kitablet usage across platforms and environments</value>
+  </data>
+  <data name="Reports_ListingPage_Title" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Reports_Ayeartodate" xml:space="preserve">
+    <value>A year to date</value>
+  </data>
+  <data name="Parent_Reports_Report1_Title" xml:space="preserve">
+    <value>Report 1: Usage of Kitablet by your children</value>
+  </data>
+  <data name="StudentRegistration_PwdValidator_Msg" xml:space="preserve">
+    <value>Password must have at least 6 characters.</value>
+  </data>
+  <data name="Parent_Report1_ActivitiesCompleted" xml:space="preserve">
+    <value>Activities Completed</value>
+  </data>
+  <data name="Parent_Report1_BooksRated" xml:space="preserve">
+    <value>Books Rated</value>
+  </data>
+  <data name="Parent_Report1_Tip_Toseebooknames" xml:space="preserve">
+    <value>Tip: Roll over on the green bands above to see book names and time spent on each book.</value>
+  </data>
+  <data name="Parent_Report1_BooksRead" xml:space="preserve">
+    <value>Books Read</value>
+  </data>
+  <data name="Report4_AvgTimeSpentReading" xml:space="preserve">
+    <value>Average time spent reading this book</value>
+  </data>
+  <data name="Report4_StudentsWhoStartedReadingThisBookReadItTillTheEnd" xml:space="preserve">
+    <value>Student who started reading this book read it till the end.</value>
+  </data>
+  <data name="Reports_btn_GenerateReport" xml:space="preserve">
+    <value>Generate Report</value>
+  </data>
+  <data name="Reports_ModifyFiltersandRegenerateReport" xml:space="preserve">
+    <value>Modify Filters and Regenerate Report</value>
+  </data>
+  <data name="Reports_AvgNumberofBooksRead" xml:space="preserve">
+    <value>Average number of books read</value>
+  </data>
+  <data name="Reports_Report3_AvgTimeSpentDoing" xml:space="preserve">
+    <value>Average time spent doing the activity</value>
+  </data>
+  <data name="Reports_SelectACity" xml:space="preserve">
+    <value>Select A City:</value>
+  </data>
+  <data name="Reports_SelectASchool" xml:space="preserve">
+    <value>Select A School:</value>
+  </data>
+  <data name="Reports_SelectBooks" xml:space="preserve">
+    <value>Select Books:</value>
+  </data>
+  <data name="Reports_SelectChildren" xml:space="preserve">
+    <value>Select Children:</value>
+  </data>
+  <data name="Reports_SelectDuration" xml:space="preserve">
+    <value>Select Duration:</value>
+  </data>
+  <data name="Reports_SelectDuration_Amonth" xml:space="preserve">
+    <value>A Month</value>
+  </data>
+  <data name="Reports_SelectDuration_Aquarter" xml:space="preserve">
+    <value>A Quarter</value>
+  </data>
+  <data name="Reports_SelectDuration_Ayear" xml:space="preserve">
+    <value>A Year</value>
+  </data>
+  <data name="Reports_SelectDuration_Ayeartodate" xml:space="preserve">
+    <value>Year To Date</value>
+  </data>
+  <data name="Reports_SelectGrades" xml:space="preserve">
+    <value>Select Grades:</value>
+  </data>
+  <data name="Reports_SelectLanguages" xml:space="preserve">
+    <value>Select Languages:</value>
+  </data>
+  <data name="Reports_SelectLibrarySubsections" xml:space="preserve">
+    <value>Select Library Sub-Sections:</value>
+  </data>
+  <data name="Reports_SelectLocation" xml:space="preserve">
+    <value>Select Location:</value>
+  </data>
+  <data name="Reports_SelectPublishers" xml:space="preserve">
+    <value>Select Publishers:</value>
+  </data>
+  <data name="Reports_SelectSchool" xml:space="preserve">
+    <value>Select School:</value>
+  </data>
+  <data name="Reports_SelectSchools" xml:space="preserve">
+    <value>Select Schools:</value>
+  </data>
+  <data name="Reports_SelectStudent" xml:space="preserve">
+    <value>Select Student:</value>
+  </data>
+  <data name="Reports_SelectUserType" xml:space="preserve">
+    <value>Select User Type:</value>
+  </data>
+  <data name="Elibadmin_Elibadminlist_Email" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="Elibadmin_Elibadminlist_Mobile" xml:space="preserve">
+    <value>Mobile:</value>
+  </data>
+  <data name="Schooladmin_Schooladminlist_Email" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="Schooladmin_Schooladminlist_Mobile" xml:space="preserve">
+    <value>Mobile:</value>
+  </data>
+  <data name="School_Schoollist_ID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="School_Schoollist_Librarians" xml:space="preserve">
+    <value>Librarians:</value>
+  </data>
+  <data name="School_Schoollist_Students" xml:space="preserve">
+    <value>Students:</value>
+  </data>
+  <data name="School_Studentlist_ParentEmail" xml:space="preserve">
+    <value>Parent Email:</value>
+  </data>
+  <data name="School_Studentlist_SubEnds" xml:space="preserve">
+    <value>Sub. Ends:</value>
+  </data>
+  <data name="School_Studentlist_SubStarts" xml:space="preserve">
+    <value>Sub. Starts:</value>
+  </data>
+  <data name="Btn_Modify" xml:space="preserve">
+    <value>MODIFY</value>
+  </data>
+  <data name="School_SchoolHomepage_Email" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="School_SchoolHomepage_ID" xml:space="preserve">
+    <value>ID:</value>
+  </data>
+  <data name="School_SchoolHomepage_Principal" xml:space="preserve">
+    <value>Principal:</value>
+  </data>
+  <data name="School_SchoolHomepage_SchoolPhone" xml:space="preserve">
+    <value>School Phone:</value>
+  </data>
+  <data name="School_SchoolHomepage_Status" xml:space="preserve">
+    <value>Status:</value>
+  </data>
+  <data name="School_SchoolHomepage_IsEmailVerified" xml:space="preserve">
+    <value>Principal Email Verified:</value>
+  </data>
+  <data name="Btn_Cancel" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="Btn_ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="Parent_Dash_StudentList_SchoolName" xml:space="preserve">
+    <value>School:</value>
+  </data>
+  <data name="Parent_Dash_StudentList_SubEnds" xml:space="preserve">
+    <value>Sub. Ends:</value>
+  </data>
+  <data name="Parent_Dash_StudentList_SubStarts" xml:space="preserve">
+    <value>Sub. Starts:</value>
+  </data>
+  <data name="Schooldisable_Error" xml:space="preserve">
+    <value>Sorry! Something seems broken - try again after a while or contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Schooldisable_NoSchool" xml:space="preserve">
+    <value>Sorry, this school does not exist.</value>
+  </data>
+  <data name="Schooldisable_NotAllowed" xml:space="preserve">
+    <value>School cannot be disabled as active students/school librarians exist</value>
+  </data>
+  <data name="Report_School_Req" xml:space="preserve">
+    <value>Please select a school.</value>
+  </data>
+  <data name="Reports_Schooladmin_Report4_Title" xml:space="preserve">
+    <value>Report 4: Your School vs. All School Average</value>
+  </data>
+  <data name="Reports_Schooladmin_Report5_Title" xml:space="preserve">
+    <value>Report 5: Active books in Kitablet</value>
+  </data>
+  <data name="EmailVerificationConfirmMsg" xml:space="preserve">
+    <value>Thanks for the email verification.</value>
+  </data>
+  <data name="Login_Accdisabled" xml:space="preserve">
+    <value>Your account at Kitablet is not enabled - you can drop us an email at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Login_Accnotactive" xml:space="preserve">
+    <value>Your account at Kitablet is not active - you can drop us an email at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="Login_StudentsNotAllowedlogin" xml:space="preserve">
+    <value>You do not have a login here - you can log-in to the &lt;a href="http://www.kitablet.in/download"&gt;eReader App&lt;/a&gt; or eReader Website.</value>
+  </data>
+  <data name="Registrationcompleted_successmsg" xml:space="preserve">
+    <value>Your registration has been completed successfully</value>
+  </data>
+  <data name="Student_BulkUpdate_Pleaseuploadexcelfile" xml:space="preserve">
+    <value>Only .xlsx format is accepted - please upload a .xlsx</value>
+  </data>
+  <data name="Student_ImportStudent_Invalidexceluploaded" xml:space="preserve">
+    <value>Uploaded .xlsx has invalid data - please upload file with valid data</value>
+  </data>
+  <data name="Student_ImportStudent_Pleaseuploadxlsxfile" xml:space="preserve">
+    <value>Only .xlsx format is accepted - please upload a .xlsx</value>
+  </data>
+  <data name="UsernameRecovery_msguseraccdisabled" xml:space="preserve">
+    <value>The account is no longer active - contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UsernameRecovery_msguseraccnotactive" xml:space="preserve">
+    <value>The account is no longer active - contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="UserRegistration_EnterOnly6digits" xml:space="preserve">
+    <value>You can enter only # digits</value>
+  </data>
+  <data name="UserValidation_MobileNoMismatch" xml:space="preserve">
+    <value>This does not seem to be the associated mobile number - try again</value>
+  </data>
+  <data name="Reports_Report5_Title_SchoolAdmin" xml:space="preserve">
+    <value>Report 4: Your School vs. All School Average</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorOccurredWhileProcessingRequest" xml:space="preserve">
+    <value>Error occurred while processing your request</value>
+  </data>
+  <data name="Export_ExportBooks" xml:space="preserve">
+    <value>Export Books</value>
+  </data>
+  <data name="Export_ExportSchoolDetails" xml:space="preserve">
+    <value>Export School Details</value>
+  </data>
+  <data name="Export_ExportSchoolLibrarians" xml:space="preserve">
+    <value>Export Librarians</value>
+  </data>
+  <data name="Export_ExportSchools" xml:space="preserve">
+    <value>Export Schools</value>
+  </data>
+  <data name="Export_ExportSchoolStudents" xml:space="preserve">
+    <value>Export Students</value>
+  </data>
+  <data name="Login_DescriptionText" xml:space="preserve">
+    <value>Welcome to Kitablet! Please enter the Username and Password to proceed ahead.</value>
+  </data>
+  <data name="PageNotFound" xml:space="preserve">
+    <value>Page Not Found</value>
+  </data>
+  <data name="RecordYouAreLookingforNotFound" xml:space="preserve">
+    <value>Sorry - this page doesn’t exist</value>
+  </data>
+  <data name="UnauthorizedAccess" xml:space="preserve">
+    <value>Unauthorized Access</value>
+  </data>
+  <data name="UnauthorizedAccess_YouAreNotAuthorisedToAccessPage" xml:space="preserve">
+    <value>Sorry - you do not seem to have the rights to access this page - contact &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt; if you need assistance.</value>
+  </data>
+  <data name="Export_ExportElibAdmins" xml:space="preserve">
+    <value>Export E-library Admins</value>
+  </data>
+  <data name="Export_Reports_Report1" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report1_ActiveUsers" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report1_CreatedButYetToReg" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report1_RegedButYetToLogin" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report2" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report3" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report4" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report5" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report6" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report7" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="Export_Reports_Report8" xml:space="preserve">
+    <value>Export Report Data</value>
+  </data>
+  <data name="btn_Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CreateSchool_SchoolNameLength" xml:space="preserve">
+    <value>School name can contain a maximum of 255 characters. You can enter alphabets, digits, and only _ &amp; .  , '  - as special characters.</value>
+  </data>
+  <data name="CreateSchool_SchoolNameReqError" xml:space="preserve">
+    <value>Enter School Name</value>
+  </data>
+  <data name="EmailVerification_Title" xml:space="preserve">
+    <value>Email Verification</value>
+  </data>
+  <data name="StudentImport_UserAlreadyReg_Error" xml:space="preserve">
+    <value>This user is already registered.</value>
+  </data>
+  <data name="CreateSchool_PhoneNoMinMaxLength" xml:space="preserve">
+    <value>Phone number can be between 5 and 15 digits</value>
+  </data>
+  <data name="NoResultsFound" xml:space="preserve">
+    <value>No results found</value>
+  </data>
+  <data name="ChangePasswordValidator_OldandNew_CannotMatch" xml:space="preserve">
+    <value>New password cannot be same as old password - try again</value>
+  </data>
+  <data name="Btn_Activate" xml:space="preserve">
+    <value>Activate</value>
+  </data>
+  <data name="Btn_ADDLIBRARIAN" xml:space="preserve">
+    <value>ADD LIBRARIAN</value>
+  </data>
+  <data name="Btn_ADDSCHOOL" xml:space="preserve">
+    <value>ADD SCHOOL</value>
+  </data>
+  <data name="Btn_ADDSTUDENTS" xml:space="preserve">
+    <value>ADD STUDENTS</value>
+  </data>
+  <data name="Btn_Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="Btn_Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Btn_ResendRegistrationMail" xml:space="preserve">
+    <value>RESEND REGISTRATION MAIL</value>
+  </data>
+  <data name="Btn_ResendVerificationMail" xml:space="preserve">
+    <value>Resend Verification Mail </value>
+  </data>
+  <data name="Btn_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Btn_Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Btn_Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="Elibadmin_btn_AddElibAdmin" xml:space="preserve">
+    <value>ADD E-LIBRARY ADMIN</value>
+  </data>
+  <data name="Elibadmin_elibadminsList_Title" xml:space="preserve">
+    <value>E-library Admins</value>
+  </data>
+  <data name="Note_ParentAccountAssocWithStudentAccount" xml:space="preserve">
+    <value>NOTE: The above parent account is associated with the following student accounts.</value>
+  </data>
+  <data name="PasswordRecovery_DescriptiveText" xml:space="preserve">
+    <value>Please enter the user name which you created for registration to Kitablet. If you have forgotten that too, please click on the 'Forgot Username' link here or at Home page and proceed. </value>
+  </data>
+  <data name="Search_Tab_BOOKS" xml:space="preserve">
+    <value>BOOKS</value>
+  </data>
+  <data name="Search_Tab_LIBRARIANS" xml:space="preserve">
+    <value>LIBRARIANS</value>
+  </data>
+  <data name="Search_Tab_SCHOOLS" xml:space="preserve">
+    <value>Schools</value>
+  </data>
+  <data name="Search_Tab_STUDENTS" xml:space="preserve">
+    <value>STUDENTS</value>
+  </data>
+  <data name="Selector_GRADE" xml:space="preserve">
+    <value>GRADE</value>
+  </data>
+  <data name="Selector_SECTION" xml:space="preserve">
+    <value>SECTION</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_BILINGUALBOOKS" xml:space="preserve">
+    <value>Bilingual Books</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_BOOKS" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_CITIES" xml:space="preserve">
+    <value>CITIES</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_EnglishBOOKS" xml:space="preserve">
+    <value>English Books</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_HINDIBOOKS" xml:space="preserve">
+    <value>Hindi Books</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_LIBRARIANS" xml:space="preserve">
+    <value>Librarians</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_SCHOOLS" xml:space="preserve">
+    <value>Schools</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_SchoolsLastAdded" xml:space="preserve">
+    <value>Schools last added to the system:</value>
+  </data>
+  <data name="SuperAdmin_Dashboard_STUDENTS" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="Tab_Title_LIBRARIANS" xml:space="preserve">
+    <value>Librarians</value>
+  </data>
+  <data name="Tab_Title_SCHOOLS" xml:space="preserve">
+    <value>Schools</value>
+  </data>
+  <data name="Tab_Title_STUDENTS" xml:space="preserve">
+    <value>Students</value>
+  </data>
+  <data name="UsernameRecovery_DescriptiveText" xml:space="preserve">
+    <value>Please enter the email id which you have for registration to Kitablet to get an email to recover username. If you have forgotten that too, please drop us an email about this at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt; with your name and associated school so that we can check it for you.</value>
+  </data>
+  <data name="UserRegistration_DescriptiveText" xml:space="preserve">
+    <value>Great! Please enter the details below to complete the registration process. Once the registration process is completed successfully, you will be able to login to Kitablet using the username and password you choose below.</value>
+  </data>
+  <data name="UserValidation_DescriptiveText" xml:space="preserve">
+    <value>Welcome to the Kitablet community! Please enter the mobile number given for registration for us to set you up as a user. If you need assistance, contact &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;</value>
+  </data>
+  <data name="Welcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="Filter_Title_LANGUAGE" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Filter_Title_LIBRARYSUBSECTION" xml:space="preserve">
+    <value>LIBRARY SUB-SECTION</value>
+  </data>
+  <data name="Filter_Title_SPECIALS" xml:space="preserve">
+    <value>SPECIALS</value>
+  </data>
+  <data name="Filter_Title_TYPE" xml:space="preserve">
+    <value>TYPE</value>
+  </data>
+  <data name="Tab_Title_BOOKS" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="Btn_ImportNow" xml:space="preserve">
+    <value>Import Now</value>
+  </data>
+  <data name="Btn_Ok" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="Btn_UploadNew" xml:space="preserve">
+    <value>Upload New</value>
+  </data>
+  <data name="Downloadtemplate_link" xml:space="preserve">
+    <value>Download template</value>
+  </data>
+  <data name="Student_ImportStudent_ErrorDetails" xml:space="preserve">
+    <value>Error Details</value>
+  </data>
+  <data name="Student_ImportStudent_ErrorMsg_ProcessErr" xml:space="preserve">
+    <value>Sorry, an error occurred while processing your request.</value>
+  </data>
+  <data name="Student_ImportStudent_FollowingErrReportedintheFile" xml:space="preserve">
+    <value>errors reported in the File.</value>
+  </data>
+  <data name="Student_ImportStudent_NoerrorreportedFileSuccessfullyUploaded" xml:space="preserve">
+    <value>No error reported. File successfully uploaded.</value>
+  </data>
+  <data name="Student_ImportStudent_NoofStudentsAdded" xml:space="preserve">
+    <value>No of students added</value>
+  </data>
+  <data name="Student_ImportStudent_NoRecordinExcel" xml:space="preserve">
+    <value>Sorry, no record was found in the Excel file.</value>
+  </data>
+  <data name="Student_ImportStudent_PleaseuploadtheExcelfile" xml:space="preserve">
+    <value>Please upload the Excel file:</value>
+  </data>
+  <data name="Student_ImportStudent_Popup_DescriptiveText" xml:space="preserve">
+    <value>Upload the excel file with student data in the required format. If you need a copy of the template, you can download it from here.</value>
+  </data>
+  <data name="Student_ImportStudent_ProgressUploading" xml:space="preserve">
+    <value>Uploading</value>
+  </data>
+  <data name="Student_ImportStudent_RowNo" xml:space="preserve">
+    <value>Row No</value>
+  </data>
+  <data name="Student_ImportStudent_SubSection" xml:space="preserve">
+    <value>Sub-Section</value>
+  </data>
+  <data name="Student_ImportStudent_SuccessMsg_Recordssuccessfullyupdated" xml:space="preserve">
+    <value>Records successfully updated.</value>
+  </data>
+  <data name="books_FILTERBY" xml:space="preserve">
+    <value>FILTER BY:</value>
+  </data>
+  <data name="books_filter_checkbox_SelectActivities" xml:space="preserve">
+    <value>Activities</value>
+  </data>
+  <data name="books_filter_checkbox_SelectAnimations" xml:space="preserve">
+    <value>Animations</value>
+  </data>
+  <data name="books_filter_checkbox_SelectRead_aloud" xml:space="preserve">
+    <value>Read-aloud</value>
+  </data>
+  <data name="books_NoRating" xml:space="preserve">
+    <value>Awaiting reader rating</value>
+  </data>
+  <data name="Btn_Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Btn_Upload" xml:space="preserve">
+    <value>Upload</value>
+  </data>
+  <data name="checkbox_SelectAll" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="NoRecordFound" xml:space="preserve">
+    <value>Sorry, no data found.</value>
+  </data>
+  <data name="Parent_Dashboard_ActivationPending" xml:space="preserve">
+    <value>Click Below to Activate</value>
+  </data>
+  <data name="Parent_Dashboard_ActiveStudents" xml:space="preserve">
+    <value>Active Students</value>
+  </data>
+  <data name="Parent_Dashboard_ActivitiesCompleted" xml:space="preserve">
+    <value>Activities Completed</value>
+  </data>
+  <data name="Parent_Dashboard_BooksRated" xml:space="preserve">
+    <value>Books Rated</value>
+  </data>
+  <data name="Parent_Dashboard_BooksRead" xml:space="preserve">
+    <value>Books Read</value>
+  </data>
+  <data name="Parent_Dashboard_HoursSpentDoingActivities" xml:space="preserve">
+    <value>Hours Spent Doing Activities</value>
+  </data>
+  <data name="Reports_footnotes_NOTE" xml:space="preserve">
+    <value>NOTE:</value>
+  </data>
+  <data name="Reports_footnotes_NOTE_note1" xml:space="preserve">
+    <value>&lt;li&gt;Hours spent reading is the number of hours spent reading books on Kitablet.&lt;/li&gt; 
+&lt;li&gt;Hours spent doing activities specifies the time spent doing activities that are there at the end of some of the books.&lt;/li&gt;  
+&lt;li&gt;Hours spent browsing Kitablet captures the time spent on Kitablet besides reading a book or doing activities.&lt;/li&gt; 
+&lt;li&gt;This report is for the specific filters chosen by you before generating the report. The filters can be modified from the 'Modify filters' section above the report.&lt;/li&gt;</value>
+  </data>
+  <data name="Reports_footnotes_NOTE_note2" xml:space="preserve">
+    <value>&lt;li&gt;Number of books read by a student is the average calculated across the set of relevant students.&lt;/li&gt;
+&lt;li&gt;Time spent in a week by a student is the average time spent by the set of relevant students using Kitablet in a week.&lt;/li&gt;
+&lt;li&gt;This report is for the specific filters chosen by you before generating the report. The filters can be modified from the 'Modify filters' section above the report.&lt;/li&gt;</value>
+  </data>
+  <data name="Reports_footnotes_NOTE_note3" xml:space="preserve">
+    <value>Aenan vitae suscipit massa. Sed ac lorem vitae dolor fermentum dignissim.</value>
+  </data>
+  <data name="Reports_link_Seeallbooks" xml:space="preserve">
+    <value>See all Books</value>
+  </data>
+  <data name="Reports_link_Seeallpublishers" xml:space="preserve">
+    <value>See all Publishers</value>
+  </data>
+  <data name="Reports_link_Seeallschools" xml:space="preserve">
+    <value>See all Schools</value>
+  </data>
+  <data name="Reports_mins" xml:space="preserve">
+    <value>mins.</value>
+  </data>
+  <data name="Reports_Report1_DescriptiveText" xml:space="preserve">
+    <value>Listing of users according to status - created but not registered, registered but havent logged in and active users. Users include School Teachers and Students. Can choose to see a particular user type/both and a particular school/all.</value>
+  </data>
+  <data name="Reports_Report2_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet by students - lets you choose the duration, location, school or grade for which you want to see the report. In the generated report, you can see usage grade wise, sub-section wise or student wise.</value>
+  </data>
+  <data name="Reports_Report3_DescriptiveText" xml:space="preserve">
+    <value>Usage of a particular book on Kitablet - lets you choose the duration, location and the particular book for which you want to see the report. In the generated report, you can see average time spent reading the book and %age of children who completed the book out of those who started reading it.</value>
+  </data>
+  <data name="Reports_Report4_DescriptiveText" xml:space="preserve">
+    <value>Usage of books on Kitablet at a publisher level - lets you choose the duration, location and the particular book for which you want to see the report. In the generated report, you can see average time spent reading the book and %age of children who completed the book out of those who started reading it.</value>
+  </data>
+  <data name="Reports_Report5_AllSchoolAverage" xml:space="preserve">
+    <value>All School Average</value>
+  </data>
+  <data name="Reports_Report5_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet at a particular school compared to all schools  - lets you choose the duration, location, school or grade for which you want to see the report. In the generated report, you can compare usage on number of books read and time spent in a week.</value>
+  </data>
+  <data name="Reports_Report5_Noofbooksreadbyastudent" xml:space="preserve">
+    <value>Number of books read by a student</value>
+  </data>
+  <data name="Reports_Report5_SelectedSchool" xml:space="preserve">
+    <value>Selected School</value>
+  </data>
+  <data name="Reports_Report5_TimeSpentinweekbyastudent" xml:space="preserve">
+    <value>Time spent in a week by a student</value>
+  </data>
+  <data name="Reports_Report5_YourSchool" xml:space="preserve">
+    <value>Your School</value>
+  </data>
+  <data name="Reports_Report6_DescriptiveText" xml:space="preserve">
+    <value>Listing of books active in Kitablet - lets you narrow down the list 1st by sub-section and language. Gives all the basic details of a particular book.</value>
+  </data>
+  <data name="Reports_Report7_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet across platforms and environments - lets you choose the duration, location or school for which you want to see the report. In the generated report, you can see the usage overall, city wise or school wise.</value>
+  </data>
+  <data name="Reports_Report7_UsageofKitabletinvariousenvironments" xml:space="preserve">
+    <value>Usage of Kitablet in various environments</value>
+  </data>
+  <data name="Reports_Report7_UsageofKitabletonvariousplatforms" xml:space="preserve">
+    <value>Usage of Kitablet on various platforms</value>
+  </data>
+  <data name="Reports_Report8_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet by your children - lets you choose the duration and children for which you want to see the report. In the generated report, you can see usage student wise.</value>
+  </data>
+  <data name="Reports_tooltip_TIMESPENT" xml:space="preserve">
+    <value>TIME SPENT:</value>
+  </data>
+  <data name="Status_Active" xml:space="preserve">
+    <value>Active</value>
+  </data>
+  <data name="Status_Created" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="Status_Disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="Student_BulkUpdate_DescriptiveText" xml:space="preserve">
+    <value>First, please download the student data through 'Export' button. Update the data as needed. Ensure that you do not make any changes to 'UniqueID' field. After updating data, upload the new excel using 'Upload' button. </value>
+  </data>
+  <data name="Student_BulkUpdate_NoofStudentsUpdated" xml:space="preserve">
+    <value>No. of Students Updated</value>
+  </data>
+  <data name="Student_BulkUpdate_RenewSubscriptions" xml:space="preserve">
+    <value>Renew Subscriptions</value>
+  </data>
+  <data name="Student_BulkUpdate_UserId" xml:space="preserve">
+    <value>UserId</value>
+  </data>
+  <data name="Student_BulkUpdate_xlsxSuccessfullyexported" xml:space="preserve">
+    <value>students.xlsx successfully exported.</value>
+  </data>
+  <data name="UpdateProfile_EmailDup_Error" xml:space="preserve">
+    <value>Sorry, this Email is already registered. Try another.</value>
+  </data>
+  <data name="Tab_Title_CityWise" xml:space="preserve">
+    <value>City Wise</value>
+  </data>
+  <data name="Tab_Title_GradeWise" xml:space="preserve">
+    <value>Grade Wise</value>
+  </data>
+  <data name="Tab_Title_OVERALL" xml:space="preserve">
+    <value>Overall</value>
+  </data>
+  <data name="Tab_Title_SchoolWise" xml:space="preserve">
+    <value>School Wise</value>
+  </data>
+  <data name="Tab_Title_STUDENTWISE" xml:space="preserve">
+    <value>Student Wise</value>
+  </data>
+  <data name="Tab_Title_SUBSECTIONWISE" xml:space="preserve">
+    <value>Sub-Section Wise</value>
+  </data>
+  <data name="Btn_NEXT" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="Reports_SelectDuration_ValidationErrMsg" xml:space="preserve">
+    <value>Select Duration</value>
+  </data>
+  <data name="Reports_NoDataMsg_NoBookReadingDataFound" xml:space="preserve">
+    <value>Sorry, no book reading data found.</value>
+  </data>
+  <data name="Report5_hours" xml:space="preserve">
+    <value>hours</value>
+  </data>
+  <data name="Reports_Report1_Tab_title_ACTIVEUSERS" xml:space="preserve">
+    <value>Active Users</value>
+  </data>
+  <data name="Reports_Report1_Tab_title_CREATEDBUTYETTOREGISTER" xml:space="preserve">
+    <value>CREATED BUT YET TO REGISTER</value>
+  </data>
+  <data name="Reports_Report1_Tab_title_REGISTEREDBUTYETTOLOGIN" xml:space="preserve">
+    <value>REGISTERED BUT YET TO LOG-IN</value>
+  </data>
+  <data name="Report_NoBookRatingData" xml:space="preserve">
+    <value>No book rating data found</value>
+  </data>
+  <data name="Report_NoBookReadData" xml:space="preserve">
+    <value>No book read data found</value>
+  </data>
+  <data name="Report5_Nodata" xml:space="preserve">
+    <value>Sorry, no data found.</value>
+  </data>
+  <data name="Report7_Nodata" xml:space="preserve">
+    <value>Sorry, no data found.</value>
+  </data>
+  <data name="Reports_NoDataFound" xml:space="preserve">
+    <value>Sorry, no data found.</value>
+  </data>
+  <data name="Reports_NoDataMsg_NoBookRatingDataFound" xml:space="preserve">
+    <value>Sorry, no book rating data found.</value>
+  </data>
+  <data name="Principal_Email_Verification" xml:space="preserve">
+    <value>Principal email verification</value>
+  </data>
+  <data name="User_Email_Verification" xml:space="preserve">
+    <value>User email verification</value>
+  </data>
+  <data name="CreateSchool_SchoolID_SystemGenerated" xml:space="preserve">
+    <value>System Generated</value>
+  </data>
+  <data name="Firstname_LengthandnospecialcharValidation" xml:space="preserve">
+    <value>This can contain maximum 50 characters - no special characters are allowed except .  '</value>
+  </data>
+  <data name="Lastname_LengthandnospecialcharValidation" xml:space="preserve">
+    <value>This can contain maximum 50 characters - no special characters are allowed except .  ' </value>
+  </data>
+  <data name="UserRegistration_PrincipalName_LengthandnospecialcharValidation" xml:space="preserve">
+    <value>Principal name can contain a maximum of 50 characters. You can enter only  . '  as special characters.</value>
+  </data>
+  <data name="UserValidation_title_ElibadminActivation" xml:space="preserve">
+    <value>E-library Admin Activation</value>
+  </data>
+  <data name="UserValidation_title_ParentActivation" xml:space="preserve">
+    <value>Parent Activation</value>
+  </data>
+  <data name="UserValidation_title_SchooladminActivation" xml:space="preserve">
+    <value>School Admin Activation</value>
+  </data>
+  <data name="Address_Length" xml:space="preserve">
+    <value>Address can contain a maximum of 255 characters. You can enter only @ :/ . - , ' #&amp; as special characters.</value>
+  </data>
+  <data name="Book_AuthorLength" xml:space="preserve">
+    <value>Author can contain maximum 255 characters</value>
+  </data>
+  <data name="Book_IllustratorLength" xml:space="preserve">
+    <value>Illustrator can contain maximum 255 characters</value>
+  </data>
+  <data name="Book_PublisherLength" xml:space="preserve">
+    <value>Publisher can contain maximum 255 characters</value>
+  </data>
+  <data name="Book_ShorDesc" xml:space="preserve">
+    <value>Short  description can contain maximum 1000 characters</value>
+  </data>
+  <data name="Book_TitleLength" xml:space="preserve">
+    <value>Title can contain maximum 255 characters</value>
+  </data>
+  <data name="Book_TranslatorLength" xml:space="preserve">
+    <value>Translator can contain maximum 255 characters</value>
+  </data>
+  <data name="User_EmailLength" xml:space="preserve">
+    <value>Email can contain a maximum of 100 characters.</value>
+  </data>
+  <data name="Importstudent_DobValidation" xml:space="preserve">
+    <value>The Date of Birth should be a past date.</value>
+  </data>
+  <data name="UserValidation_InvalidorExpiredToken_ErrMsg" xml:space="preserve">
+    <value>This link is no longer valid - contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.</value>
+  </data>
+  <data name="BulkUpdate_NoData" xml:space="preserve">
+    <value>Sorry, no data available for renewal.</value>
+  </data>
+  <data name="Section_Validation" xml:space="preserve">
+    <value>Please enter a valid section. Section value can contain 0 to 255 characters. You can enter only . ' as special characters.</value>
+  </data>
+  <data name="Search_Length" xml:space="preserve">
+    <value>Search text can contain a maximum of 255 characters.</value>
+  </data>
+  <data name="StudentRegistration_RegistrationSuccess_Title" xml:space="preserve">
+    <value>Registration Successful</value>
+  </data>
+  <data name="IsRenew_Required" xml:space="preserve">
+    <value>IsRenew should contain only Yes or No.</value>
+  </data>
+  <data name="UniqueId_Required" xml:space="preserve">
+    <value>Please enter Student Unique ID.</value>
+  </data>
+  <data name="SNO_Required" xml:space="preserve">
+    <value>Please enter a valid SNO. The SNO should be in digits only.</value>
+  </data>
+  <data name="StudentImport_UserAccountNotExists" xml:space="preserve">
+    <value>Sorry, this student account does not exist.</value>
+  </data>
+  <data name="UniqueId_Length" xml:space="preserve">
+    <value>Unique ID can contain a maximum of 36 characters.</value>
+  </data>
+  <data name="ResendEmailMessage1" xml:space="preserve">
+    <value>Last email sent on</value>
+  </data>
+  <data name="ResendEmailMessage2" xml:space="preserve">
+    <value>Do you want to  </value>
+  </data>
+  <data name="Login_Passwordlength" xml:space="preserve">
+    <value>Password can contain a maximum of 100 characters.</value>
+  </data>
+  <data name="Login_UsernameLength" xml:space="preserve">
+    <value>Username can contain a maximum 25 characters.</value>
+  </data>
+  <data name="CaptchaInvalid" xml:space="preserve">
+    <value>Sorry, this Captcha is not valid. Try again.</value>
+  </data>
+  <data name="CaptchaLable" xml:space="preserve">
+    <value>Enter the result you see above:</value>
+  </data>
+  <data name="CaptchaTryAnother" xml:space="preserve">
+    <value>Try another</value>
+  </data>
+  <data name="RollNo_Validation" xml:space="preserve">
+    <value>Roll no. can contain a maximum of 255 characters. No special characters are allowed.</value>
+  </data>
+  <data name="Student_GenderValidation" xml:space="preserve">
+    <value>Please enter Male or Female.</value>
+  </data>
+  <data name="Captcha_Req" xml:space="preserve">
+    <value>Please enter Captcha.</value>
+  </data>
+  <data name="StudentRenew_WrongSchool" xml:space="preserve">
+    <value>Sorry, this student does not belong to the current school.</value>
+  </data>
+  <data name="PasswordRecoveryConfirm_DescriptiveText" xml:space="preserve">
+    <value>Please specify the new password</value>
+  </data>
+  <data name="UserCreation_UserNameAlreadyRegistered" xml:space="preserve">
+    <value>A user already exists with this username - use a different username</value>
+  </data>
+  <data name="Reports_Schooladmin_Report1_DescriptiveText" xml:space="preserve">
+    <value>Listing of users according to status - created but not registered, registered but havent logged in and active users. Users include Students of your school. Can choose to see a particular user type/both.</value>
+  </data>
+  <data name="Reports_Schooladmin_Report2_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet by students - lets you choose the duration or grade for which you want to see the report. In the generated report, you can see usage grade wise, sub-section wise or student wise.</value>
+  </data>
+  <data name="Reports_Schooladmin_Report3_DescriptiveText" xml:space="preserve">
+    <value>Usage of a particular book on Kitablet - lets you choose the duration, sub-section, language and the particular book for which you want to see the report. In the generated report, you can see average time spent reading the book and %age of children who completed the book out of those who started reading it.</value>
+  </data>
+  <data name="Reports_Schooladmin_Report4_DescriptiveText" xml:space="preserve">
+    <value>Usage of Kitablet at your school compared to all schools  - lets you choose the duration or grade for which you want to see the report. In the generated report, you can compare usage on number of books read and time spent in a week.</value>
+  </data>
+  <data name="PasswordRecoveryValidator_UsernameLength" xml:space="preserve">
+    <value>Username must be less than or equal to 25 characters</value>
+  </data>
+  <data name="Editstudent_Duplicate" xml:space="preserve">
+    <value>Sorry, the student already exists. Please try again with unique first name, last name, and date of birth.</value>
+  </data>
+  <data name="ActivationTermsAndCondition" xml:space="preserve">
+    <value>I agree to the &lt;a href="https://www.kitablet.in/usage-terms" target="_blank"&gt;Terms &amp; Conditions&lt;/a&gt; of usage.</value>
+  </data>
+  <data name="FooterTermsAndCondition" xml:space="preserve">
+    <value>A copy of the &lt;a href="https://www.kitablet.in/usage-terms" target="_blank"&gt;Terms &amp; Conditions&lt;/a&gt; for usage is referenced here.</value>
+  </data>
+  <data name="TermAndConditionError" xml:space="preserve">
+    <value>Please accept the Terms &amp; Conditions.</value>
+  </data>
+  <data name="Student_ImportStudent_SomeRecordFailed" xml:space="preserve">
+    <value>Sorry, we could not import the details of #FailedCount# students out of the total #AllCount# students. Please click below to download the report for more details.</value>
+  </data>
+  <data name="Student_ImportUpdateStudent_DownloadReport" xml:space="preserve">
+    <value>Download Report</value>
+  </data>
+  <data name="Student_UpdateStudent_SomeRecordFailed" xml:space="preserve">
+    <value>Sorry, we could not update the details of #FailedCount# students out of the total #AllCount# students. Please click below to download the report for more details.</value>
+  </data>
+  <data name="Student_ImportStudents_Failed" xml:space="preserve">
+    <value>Sorry, we could not import the details of students. Please try again.</value>
+  </data>
+  <data name="Student_UpdateStudents_Failed" xml:space="preserve">
+    <value>Sorry, we could not update the details of students. Please try again.</value>
+  </data>
+  <data name="Student_ImportUpdate_Progress" xml:space="preserve">
+    <value>Data for &lt;span id="current"&gt;0&lt;/span&gt; out of &lt;span id="total"&gt;&lt;/span&gt; students has been processed.</value>
+  </data>
+  <data name="UniqueUserName" xml:space="preserve">
+    <value>Sorry, this username is already in use. Please try a different one.</value>
+  </data>
+  <data name="Status_Registered" xml:space="preserve">
+    <value>Registered</value>
+  </data>
+  <data name="Btn_ADDCHILDREN" xml:space="preserve">
+    <value>GENERATE</value>
+  </data>
+  <data name="Parent_Import_FirstNameReqError" xml:space="preserve">
+    <value>Enter Parent's First Name.</value>
+  </data>
+  <data name="Parent_Import_LastNameReqError" xml:space="preserve">
+    <value>Enter Parent's Last Name.</value>
+  </data>
+  <data name="Student_Import_FirstNameReqError" xml:space="preserve">
+    <value>Enter Child's First Name.</value>
+  </data>
+  <data name="Student_Import_LastNameReqError" xml:space="preserve">
+    <value>Enter Child's Last Name.</value>
+  </data>
+  <data name="Header_GenerateStudents" xml:space="preserve">
+    <value>GENERATE</value>
+  </data>
+</root>

@@ -1,0 +1,173 @@
+﻿@using FISE_Cloud.Models;
+@model List<Report8>
+
+    @{
+        var i = 0;
+    }
+
+    <div id="filter_result" class="row " >
+        @if (Model != null && Model.Count() > 0 && Model[0].FirstName != null)
+{
+    int cid = 0;
+    string[] colors = new string[] { "#fb654c", "#14b4b4", "#9da502", "#f3bc1b", "#51cea4", "#538dbb", "#cc76a7", "#ffd4db", "#adcdef" };
+    Dictionary<string, string> activity = new Dictionary<string, string>();
+    activity.Add("activity", "Hours spent/doing activities");
+    activity.Add("bookreading", "Hours spent/reading");
+    activity.Add("browsing", "Hours spent/browsing");
+    foreach (var item in Model)
+    {
+        i = 0;
+        <div class="report-child-section row" id="studentchart-@item.UserId">
+            <div class="col-xs-12" style="height:28px;text-align:center;"><span class="books-read-name"> @item.FirstName @item.LastName</span></div>
+            <div class="col-xs-12 NoChartRendered" data-parent="#studentchart-@item.UserId" select-parent="studentchart-@item.UserId" style="height:500px;">
+                <div class="col-xs-6 books-read-section" style="height:100%">
+                    <div class="col-xs-12 books-read-section-title">
+                        <div class="books-read-count">@item.Books.Count()</div>
+                        <div class="books-read-title">@Resource.Parent_Report1_BooksRead</div>
+                    </div>
+                    <div class="col-xs-12">
+
+                        @foreach (var item1 in item.Books)
+                        {
+
+                            if (item1.IsRated && item1.IsActivityDone)
+                            {
+                                <div class="common-bookspine-class bookspine-rated-activities">
+                                    <div class="mytooltip">
+                                        <div class="tooltiptext">
+                                            <div class="arrow-side"></div>
+                                            <p class="tooltip-booktitle">@item1.Title</p>
+                                            <p>@Resource.Reports_tooltip_TIMESPENT&nbsp;<div class="tooltip-timespent">@item1.TimeSpent</div></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else if (item1.IsRated)
+                            {
+                                <div class="common-bookspine-class bookspine-rated">
+                                    <div class="mytooltip">
+                                        <div class="tooltiptext">
+                                            <div class="arrow-side"></div>
+                                            <p class="tooltip-booktitle">@item1.Title</p>
+                                            <p>@Resource.Reports_tooltip_TIMESPENT&nbsp;<div class="tooltip-timespent">@item1.TimeSpent</div></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else if (item1.IsActivityDone)
+                            {
+                                <div class="common-bookspine-class bookspine-activities">
+                                    <div class="mytooltip">
+                                        <div class="tooltiptext">
+                                            <div class="arrow-side"></div>
+                                            <p class="tooltip-booktitle">@item1.Title</p>
+                                            <p>@Resource.Reports_tooltip_TIMESPENT&nbsp;<div class="tooltip-timespent">@item1.TimeSpent</div></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="common-bookspine-class bookspine">
+                                    <div class="mytooltip">
+                                        <div class="tooltiptext">
+                                            <div class="arrow-side"></div>
+                                            <p class="tooltip-booktitle">@item1.Title</p>
+                                            <p>@Resource.Reports_tooltip_TIMESPENT&nbsp;<div class="tooltip-timespent">@item1.TimeSpent</div></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            i++;
+                        }
+                        @if ((i % 29) != 0)
+                        {
+                            for (; (i % 29) != 0; i++)
+                            {
+                                <div class="common-bookspine-class"></div>
+                            }
+                        }
+
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-5">
+                            <div class="books-count">@item.TotalBookRated</div>
+                            <div class="books-section"><div class="legend_booksrated"></div>@Resource.Parent_Report1_BooksRated</div>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="books-count"> @item.TotalActivityCompleted</div>
+                            <div class="books-section"><div class="legend_booksactivities"></div>@Resource.Parent_Report1_ActivitiesCompleted</div>
+                        </div>
+                        <div class="col-xs-12 books-tip">
+                            @Resource.Parent_Report1_Tip_Toseebooknames
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-6">
+                    @if (item.Activities != null && item.Activities.Count() > 0)
+                    {
+                        <div id="student_@item.UserId" class="chart chartforrender"></div>
+                    }
+                    else
+                    {
+                        <div class="nodata-chart">@Resource.NoRecordFound</div>
+                    }
+                    <script>
+                        function CreateTableStudent() {
+                            @{
+                                float sum4 = 0; cid = 0;
+                                List<ChartModel> model = new List<ChartModel>();
+                                foreach (var chart in item.Activities)
+                                {
+                                    sum4 += (float)Math.Round(((double)chart.Count / 60), 1);
+                                    model.Add(new ChartModel() { label =activity[chart.Name.ToLower()], value = (float)Math.Round(((double)chart.Count / 60), 1), color = colors[cid] });
+                                    cid++;
+                                }
+                            }
+                            return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model }));
+                        }
+
+                        var model = CreateTableStudent();
+                        var FinalContent = {};
+                        FinalContent.Content = model.model;
+                        FinalContent.HeadTitile = '@sum4';
+                        FinalContent.SubTitile = 'Hours/spent on/Kitablet';
+                        if (model.model.length > 0)
+                            localStorage.setItem("student_@item.UserId", JSON.stringify(FinalContent));
+                    </script>
+                </div>
+            </div>
+
+        </div>
+    }
+
+}
+        else
+        {
+            <div class="nodata">@Resource.NoRecordFound</div>
+        }
+        <div class="row footnotes" style="">
+            <div class="" style="padding-bottom:16px;">@Resource.Reports_footnotes_NOTE</div>
+            <ul>@Html.Raw(HttpUtility.HtmlDecode(@Resource.Reports_footnotes_NOTE_note1))</ul>
+        </div>
+    </div>
+    <style>
+        .nodata {
+            padding: 10px 0;
+        }
+
+        .nodata-chart {
+            text-align: center;
+            height: 100%;
+            padding-top: 20%;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('[id*=studentchart]').each(function () {
+                ChartCheck($('[select-parent=' + $(this).attr('id') + ']'));
+            });
+        });
+    </script>

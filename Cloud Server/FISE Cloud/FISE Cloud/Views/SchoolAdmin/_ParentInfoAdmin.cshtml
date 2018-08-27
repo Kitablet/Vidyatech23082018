@@ -1,0 +1,113 @@
+﻿@using FISE_Cloud.Models.School
+@model StudentandParentInfo
+
+<div class="row subtitle-section">
+    <h4 class="page-title">@Model.ParentDetails.FirstName @Model.ParentDetails.LastName</h4>
+    <div class="float-right"><h4 class="role-title">@Resource.Studentandparentinfo_parent</h4></div>
+</div>
+<hr />
+
+<div class="form-horizontal">
+
+    @Html.HiddenFor(model => model.UserId)
+    @if (string.IsNullOrWhiteSpace(Model.ParentDetails.RegistrationDate.ToString()))
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.MobileNumber, "Mobile:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @Html.DisplayFor(model => model.ParentDetails.MobileNumber)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.Email, "Email:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @Html.DisplayFor(model => model.ParentDetails.Email)
+            </span>
+        </div>
+            <div class="form-group">
+                @Html.LabelFor(model => model.ParentDetails.CreationDate, "Creation Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 control-label ">
+                    @Model.ParentDetails.CreationDate.ToString("dd.MM.yyyy")
+                </span>
+            </div>
+    }
+
+    else
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.FirstName, "First Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.ParentDetails.FirstName) ? "NA" : Model.ParentDetails.FirstName)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.LastName, "Last Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.ParentDetails.LastName) ? "NA" : Model.ParentDetails.LastName)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.MobileNumber, "Mobile:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.ParentDetails.MobileNumber) ? "NA" : Model.ParentDetails.MobileNumber)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.Email, "Email:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.ParentDetails.Email) ? "NA" : Model.ParentDetails.Email)
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.Gender, "Gender:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.ParentDetails.Gender)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.CreationDate, "Creation Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @Model.ParentDetails.CreationDate.ToString("dd.MM.yyyy")
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.RegistrationDate, "Registration Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @(string.IsNullOrWhiteSpace(Model.ParentDetails.RegistrationDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.ParentDetails.RegistrationDate))
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.Status, "Status:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @if (!(Model.ParentDetails.Status) && Model.ParentDetails.IsTrashed)
+                {
+                    @Html.Raw(Resource.Status_Disabled);
+                }
+                else if (Model.ParentDetails.Status && !(Model.ParentDetails.IsTrashed) && Model.ParentDetails.LastLoginDate != null)
+                {
+                    @Html.Raw(Resource.Status_Active);
+                }
+                else if (Model.ParentDetails.Status && !(Model.ParentDetails.IsTrashed) && Model.ParentDetails.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Registered);
+                }
+                else if (!(Model.ParentDetails.Status) && !(Model.ParentDetails.IsTrashed) && Model.ParentDetails.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ParentDetails.Username, "UserName:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label ">
+                @Html.DisplayFor(model => model.ParentDetails.Username)
+
+            </span>
+        </div>
+    }
+</div>
+
+
+

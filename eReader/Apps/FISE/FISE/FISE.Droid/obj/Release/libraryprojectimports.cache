@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\DeviceInfo.Plugin\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\MR.Gestures.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\PCLCrypto\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Plugin.Settings\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\DeviceInfo.Plugin\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\ImageCircle.Forms.Plugin.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\MR.Gestures.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\PCLCrypto\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Plugin.Settings\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\assets</ResolvedAssetDirectory>
+    <ResolvedAssetDirectory>obj\Release\__library_projects__\Xamarin.Forms.Platform\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\DeviceInfo.Plugin.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\ImageCircle.Forms.Plugin.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\MR.Gestures.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\PCLCrypto.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Plugin.Settings.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Release\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

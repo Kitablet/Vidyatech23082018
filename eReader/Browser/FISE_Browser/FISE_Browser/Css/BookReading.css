@@ -1,0 +1,129 @@
+﻿
+#header {
+    padding: 5px 30px;
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    width: calc(100% - 60px);
+    z-index: 1;
+}
+
+#footer {
+    padding: 5px 30px;
+    background: rgba(255,255,255,.5);
+    position: absolute;
+    width: calc(100% - 60px);
+    bottom: 0px;
+}
+
+.pageno {
+    text-align: center;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+#header > div {
+    padding: 5px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.active {
+    /*border: solid 2px transparent;*/
+}
+
+.action {
+    margin-left: 30px;
+}
+
+#body {
+    text-align: left;
+    margin: 0 auto;
+    min-height: 768px;
+    min-width: 1024px;
+}
+
+#previous {
+    position: fixed;
+    top: calc(50% - 5px);
+    left: 0;
+    border: none;
+    background: transparent;
+}
+
+#next {
+    position: fixed;
+    top: calc(50% - 5px);
+    right: 0;
+    border: none;
+    background: transparent;
+}
+
+#displayarea {
+    margin: auto;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#page1 {
+    border: 0 none;
+    /*float: left;*/
+    overflow: hidden;
+    position:absolute;
+    left:0px;
+    top:0px;
+}
+
+#page2 {
+    display: none;
+    border: 0 none;
+    /*float: right;*/
+    overflow: hidden;
+    position:absolute;
+    right:0px;
+    top:0px;
+}
+
+#pageno1 {
+    float: left;
+}
+
+#pageno2 {
+    float: right;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#next, #previous, .action {
+    cursor: pointer;
+}
+
+#iframecover {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+}
+.ui-loader {
+    display:none;
+}

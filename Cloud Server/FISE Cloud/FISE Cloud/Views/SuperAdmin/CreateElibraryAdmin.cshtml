@@ -1,0 +1,21 @@
+﻿@model FISE_Cloud.Models.UserCreationModel
+@{
+    ViewBag.Title = "Create Elibrary Admin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "E-library Admins";
+}
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+    <h4 class="page-title">@Resource.Elibadmin_btn_AddElibAdmin</h4>
+</div>
+    @using (Html.BeginForm())
+    {
+        <div id="divPartial">
+            @Html.Partial("~/Views/User/UserCreationForm.cshtml")
+        </div>
+    }

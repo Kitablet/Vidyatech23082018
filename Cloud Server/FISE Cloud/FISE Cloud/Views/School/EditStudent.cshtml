@@ -1,0 +1,345 @@
+﻿@using FISE_Cloud.Models
+@model StudentProfile
+@{
+    ViewBag.Title = "Edit Student";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+@{
+    var SchoolUId = ViewContext.RouteData.Values["schooluid"];
+}
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row title-section">
+        <div>
+            @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+            {
+                @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+            }
+        </div>
+        <h4 class="page-title">@Model.FirstName @Model.LastName</h4>
+        <div class="float-right"><h4 class="role-title">@Resource.Studentandparentinfo_student</h4></div>
+    </div>
+    <hr />
+
+    <div class="form-horizontal">
+        @if (!ViewData.ModelState.IsValid)
+        {
+            <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+        }
+        @Html.Hidden("SchoolName", Model.SchoolName)
+        @Html.Hidden("UserId", Model.UserId)
+        <div class="form-group col-xs-12">
+
+            @Html.LabelFor(model => model.FirstName, "First Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2 reposition-validationerr">
+                @Html.EditorFor(model => model.FirstName, new { htmlAttributes = new { @class = "" } })
+
+                @Html.ValidationMessageFor(model => model.FirstName, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+
+            @Html.LabelFor(model => model.LastName,"Last Name (OPTIONAL):", htmlAttributes: new { @class = "control-label col-xs-3" }) 
+            <span class="col-xs-9 inline2 reposition-validationerr">
+                @Html.EditorFor(model => model.LastName, new { htmlAttributes = new { @class = "" } })
+
+                @Html.ValidationMessageFor(model => model.LastName, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+
+            @Html.LabelFor(model => model.Grade, "Grade:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 inline2 reposition-validationerr">                
+                @Html.DropDownListFor(model => model.Grade,
+                                     Model.Grades.Split(',').
+                                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                                     "--Grade--", new { @class = "inpselect" })
+                @Html.HiddenFor(model => model.Grades)
+                @Html.ValidationMessageFor(model => model.Grade, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+
+            @Html.LabelFor(model => model.SubSection, "Section (OPTIONAL):", htmlAttributes: new { @class = "control-label col-xs-3" }) 
+            <span class="col-xs-9 inline2">
+                @Html.EditorFor(model => model.SubSection, new { htmlAttributes = new { @class = "" } })
+
+                @Html.ValidationMessageFor(model => model.SubSection, "", new { @class = "" })
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.Gender, "Gender (OPTIONAL):", htmlAttributes: new { @class = "control-label col-xs-3" }) 
+            <span class="col-xs-9 control-label gender_radio">
+                @Html.RadioButtonFor(model => model.Gender, "Male", Model.Gender == "Male" ? new { Checked = "checked", @class = "" } : null) <span class="">Male</span>
+                @Html.RadioButtonFor(model => model.Gender, "Female", Model.Gender == "Female" ? new { Checked = "checked" } : null) <span>Female</span>
+            </span>
+        </div>
+
+        <div class="form-group col-xs-12">
+            @Html.LabelFor(model => model.DateOfBirth, "Date of Birth (OPTIONAL):", htmlAttributes: new { @class = "control-label col-xs-3" }) 
+            <span class="col-xs-9 inline2">
+                <span class="col-xs-3 reposition-validationerr">                  
+                    @Html.DropDownListFor(model => model.DobDate,
+                                     Enumerable.Range(1, 31).
+                                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                                     "--Day--", new { @class = "inpselect" })
+                    @Html.ValidationMessageFor(model => model.DobDate)
+                </span>
+                <span class="col-xs-offset-1 col-xs-4 reposition-validationerr">
+                    @Html.DropDownListFor(model => model.DobMonth,
+                                     Enumerable.Range(1, 12).
+                                     Select(r => new SelectListItem { Text = new DateTime(2000, r, 1).ToString("MMMMMMMM"), Value = r.ToString() }),
+                                  "--Month--", Model.DobMonth)
+                    @Html.ValidationMessageFor(model => model.DobMonth)
+                </span>
+                <span class="col-xs-offset-1 col-xs-3 dob reposition-validationerr">                   
+                    @Html.DropDownListFor(model => model.DobYear,
+                                     Enumerable.Range(1900, DateTime.Now.Year + 1 - 1900).
+                                     Select(i => new SelectListItem { Value = i.ToString(), Text = i.ToString() }),
+                                     "--Year--")
+                    @Html.ValidationMessageFor(model => model.DobYear)
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.CreationDate, "Creation Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Model.CreationDate.ToString("dd.MM.yyyy")
+            </span>
+            @Html.HiddenFor(model => model.CreationDate)
+        </div>
+
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.RegistrationDate, "Registration Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.RegistrationDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.RegistrationDate))
+            </span>
+            @Html.HiddenFor(model => model.RegistrationDate)
+        </div>
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.Status, "Status:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.HiddenFor(model => model.Status)
+
+                @if (!(Model.Status) && Model.IsTrashed)
+                {
+                    @Html.Raw(Resource.Status_Disabled);
+                }
+                else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate != null)
+                {
+                    @Html.Raw(Resource.Status_Active);
+                }
+                else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Registered);
+                }
+                else if (!(Model.Status) && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+                @*@if (Model.Status)
+                {
+                    @Html.Raw("Active");
+                }
+                else
+                {
+                    @Html.Raw("Inactive");
+                }*@
+            </span>
+        </div>
+
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.SubscriptionStartDate, "Subscription Starts:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionStartDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionStartDate))
+            </span>
+            @Html.HiddenFor(model => model.SubscriptionStartDate)
+        </div>
+
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.SubscriptionEndDate, "Subscription Ends", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionEndDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionEndDate))
+            </span>
+            @Html.HiddenFor(model => model.SubscriptionEndDate)
+        </div>
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.Username, "UserName:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.Username)
+                @Html.HiddenFor(model => model.Username)
+            </span>
+        </div>
+        <div class="form-group prefilled_text">
+            @Html.LabelFor(model => model.HomeDevices, "Active Home Devices:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.HomeDevices)
+            </span>
+            @Html.HiddenFor(model => model.HomeDevices)
+        </div>
+        <div class="col-xs-offset-3 buttons">
+            <input type="submit" value="@Resource.Btn_Save" class="btn btn-default btn-rect" id="btnsubmit" disabled />
+            <a class="btn btn-default btn-rect" href="@Url.RouteUrl("StudentandParentInfo", new { schooluid = TempData["schooluID"], studentid = Model.UserId })">@Resource.Btn_Cancel</a>
+
+        </div>
+        @{
+    TempData.Keep("schooluID");
+        }
+    </div>
+}
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+</style>
+<script src="~/Scripts/jquery.validate.js?v=1"></script>
+<script>
+    $(document).ready(function () {
+        $("input[name=Gender]").change(function () {
+            if ($('input.error').length > 0)
+                $('#btnsubmit').attr('disabled', true);
+            else
+                $('#btnsubmit').attr('disabled', false);
+        });
+        $('#FirstName_,#LastName_').keypress(function () {
+            var regex = new RegExp("^[a-zA-Z0-9]+$");
+            var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+            if (!regex.test(key) && event.charCode != 46 && event.charCode != 39 && event.charCode != 32) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                event.preventDefault();
+                return false;
+            }
+        });
+        $.validator.addMethod('validatefirstname', function (value, element) {
+            var expr = /^[ A-Za-z0-9.']{1,50}$/;
+            return expr.test(value);
+        }, '@Resource.Firstname_LengthandnospecialcharValidation');
+
+        $.validator.addMethod('validatelastname', function (value, element) {
+            var expr = /^[ A-Za-z0-9.']{0,50}$/;
+            return expr.test(value);
+        }, '@Resource.Lastname_LengthandnospecialcharValidation');
+
+        $.validator.addMethod('validatesection', function (value, element) {
+            var expr = /^[ A-Za-z0-9.']{0,255}$/;
+            return expr.test(value);
+        }, '@Resource.Section_Validation');
+
+        var thevalidator = $.data($('form')[0], 'validator');
+        $("input").on("input blur change keyup", function () {
+            $(this).valid();
+            if ($('input.error').length > 0 || $('select.error').length > 0)
+                $('#btnsubmit').attr('disabled', true);
+            else
+                $('#btnsubmit').attr('disabled', false);
+        });
+
+        $("select").on("change", function () {
+            $(this).valid();
+            $('#DobDate,#DobMonth,#DobYear').valid();
+            if ($('input.error').length > 0 || $('select.error').length > 0)
+                $('#btnsubmit').attr('disabled', true);
+            else
+                $('#btnsubmit').attr('disabled', false);
+        });
+
+
+    });
+    $("form").validate({
+        rules: {
+            FirstName: {
+                required: true,
+                rangelength: [1, 50],
+                validatefirstname: true
+            },
+            LastName: {
+                //required: true,
+                rangelength: [0, 50],
+                validatelastname: true
+            },
+            Grade: {
+                required: true
+            },
+            SubSection: {
+                // required: true,
+                rangelength: [0, 255],
+                validatesection: true
+            },
+            DobDate: {
+                required: {
+                    depends: function (element) {
+                        if ($('#DobMonth').val() != '' || $('#DobYear').val() != '') {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            },
+            DobMonth: {
+                required: {
+                    depends: function (element) {
+                        if ($('#DobDate').val() != '' || $('#DobYear').val() != '') {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            },
+            DobYear: {
+                required: {
+                    depends: function (element) {
+                        if ($('#DobMonth').val() != '' || $('#DobDate').val() != '') {
+                            return true;
+                        } else {
+                            return false;
+                        }
+                    }
+                }
+            }
+        },
+
+        messages: {
+            FirstName: {
+                required: "@Resource.UserRegistration_FirstnameReqError",
+                rangelength: "@Resource.Firstname_LengthandnospecialcharValidation",
+            },
+            LastName: {
+                @*required: "@Resource.UserRegistration_LastnameReqError",*@
+                rangelength: "@Resource.Lastname_LengthandnospecialcharValidation",
+            },
+            Grade:
+                {
+                    required: "@Resource.Student_EditStudent_GradeReqError"
+                },
+            SubSection: {
+                //required: "@Resource.Student_EditStudent_SectionReqError",
+                rangelength: "@Resource.Section_Validation"
+            },
+            DobDate: '@Resource.UserRegistrationdate',
+            DobMonth: '@Resource.UserRegistrationmonth',
+            DobYear: '@Resource.UserRegistrationyear'
+        },
+        submitHandler: function (form) {
+            $(form).find("input[type='submit']").attr('disabled', true);
+            $(form).find("input[type='button']").attr('disabled', true);
+            form.submit();
+        },
+        invalidHandler: function (event, validator) {
+          
+        }
+    });
+</script>

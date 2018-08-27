@@ -1,0 +1,39 @@
+﻿
+@using FISE_Cloud.Models;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<UserRegistrationModel>
+@{
+    ViewBag.Title = "Elibrary Admin List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "E-library Admins";
+}
+
+<div class="row title-section">
+    <h4 class="page-title">
+        @Resource.Elibadmin_elibadminsList_Title (@Model.TotalItemCount)
+        <a id="exportelibadmins" class="exporttoexcel" title="@Resource.Export_ExportElibAdmins"></a>
+    </h4>
+    <input type="button" name="add-new-admin" class="btn btn-default btn-rect remove-btn-space float-right" value="@Resource.Elibadmin_btn_AddElibAdmin" onclick="window.location.href = '@Url.RouteUrl("CreateElibraryAdmin")'" />
+
+</div>
+<hr />
+
+@using (Html.BeginForm("ExportElibraryAdminstoExcel", "SuperAdmin", FormMethod.Post, new { id = "export-elibadmins-toexcel-form" }))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" id="exportitemstoexcel" name="exportitemstoexcel" value="" />
+}
+<div id="ElibraryAdminsContainer">
+    @Html.Partial("_ElibraryAdminListPost", Model)
+</div>
+
+
+@section scripts {
+    <script src="~/Scripts/MvcPager.js?v=1"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script type="text/javascript">
+        $('#exportelibadmins').on('click', function () {
+            $('#export-elibadmins-toexcel-form').submit();
+        });
+    </script>
+}

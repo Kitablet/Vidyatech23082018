@@ -1,0 +1,22 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xam.plugin.deviceinfo.1.0.0.2\lib\wpa81\deviceinfo.plugin.abstractions.dll" HashGuid="973c9857-0455-e0db-103c-4393d60a6c80" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xam.plugin.deviceinfo.1.0.0.2\lib\wpa81\deviceinfo.plugin.dll" HashGuid="c1c83efa-1bb3-b6be-6a96-693aa001bdc4" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\fise\fise\bin\release\fise.dll" HashGuid="abf9156f-61df-20b5-9320-8df58b483c05" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\mr.gestures.1.4.2\lib\wpa81\mr.gestures.dll" HashGuid="f8531199-05de-3990-2195-c31116764670" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\mr.gestures.1.4.2\lib\wpa81\mr.gestures.winrt.dll" HashGuid="8c642375-f89c-751e-d29a-3df47e865504" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\mr.gestures.1.4.2\lib\wpa81\mr.gestures.winrt.phone.dll" HashGuid="c961891e-6226-9914-81e8-c2b3a7980773" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\newtonsoft.json.10.0.2\lib\portable-net45+win8+wpa81+wp8\newtonsoft.json.dll" HashGuid="dc6b12dd-6e29-692e-3aab-9db010480a7e" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\pclcrypto.2.0.147\lib\portable-win81+wpa81\pclcrypto.dll" HashGuid="7f5747d3-190f-2816-2f99-598f61e9ac14" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\pinvoke.bcrypt.0.3.2\lib\portable-net45+win+wpa81+monoandroid10+xamarinios10+monotouch10\pinvoke.bcrypt.dll" HashGuid="a7871029-9cc4-65f0-a2f8-1d587110ebf2" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\pinvoke.kernel32.0.3.2\lib\portable-net45+win+wpa81+monoandroid10+xamarinios10+monotouch10\pinvoke.kernel32.dll" HashGuid="6068377b-cf90-d698-b7c8-3327f16952c9" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\pinvoke.ncrypt.0.3.2\lib\portable-net45+win+wpa81+monoandroid10+xamarinios10+monotouch10\pinvoke.ncrypt.dll" HashGuid="a3e35b11-c9e0-4e89-4c6d-8f7f7400e60f" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\pinvoke.windows.core.0.3.2\lib\portable-net45+win+wpa81+monoandroid10+xamarinios10+monotouch10\pinvoke.windows.core.dll" HashGuid="1640fc05-bfb9-b488-84ff-26d41810cd9b" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\validation.2.2.8\lib\dotnet\validation.dll" HashGuid="f7eff8c2-9a3d-f4fc-6fe4-78f849043e26" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xamarin.forms.2.3.4.231\lib\wpa81\xamarin.forms.core.dll" HashGuid="819b85c3-f6b1-e32c-2830-7206104fccc4" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xamarin.forms.2.3.4.231\lib\wpa81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xamarin.forms.2.3.4.231\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="a861a807-c05d-0f84-2d21-93f0c7e733ae" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xamarin.forms.2.3.4.231\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="4381a56f-41e7-7872-51a4-d23109c536cd" />
+    <ReferenceAssembly PathName="d:\tata\fise digital library\main branch\ereader\apps\fise\packages\xamarin.forms.2.3.4.231\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="df61c4ca-47c1-60a5-1f80-e826bb936aad" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

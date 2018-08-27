@@ -1,0 +1,1690 @@
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.apk
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid-Signed.apk
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\bin\FISE.Droid.apk
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\icon.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\field.jpg
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\a1.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\a2.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\book.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\books_read.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\favourite.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home_select.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\minus.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\notification.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\plus.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\power.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\setting.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\search_select.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\rated.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\timespent.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\user.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\user_select.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select.png
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.apk
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid-Signed.apk
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\bin\FISE.Droid.apk
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\icon.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\field.jpg
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\a1.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\a2.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\book.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\books_read.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\favourite.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home_select.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\minus.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\notification.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\plus.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\power.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\setting.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\search_select.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\rated.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\timespent.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\user.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\user_select.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\close.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\next.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\play.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\previous.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout.png
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\com.fise.droid.apk
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\com.fise.droid-Signed.apk
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\bin\com.fise.droid.apk
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\icon.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\field.jpg
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a1.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a2.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\favourite.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_select.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\minus.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\plus.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\power.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_select.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rated.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\timespent.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_select.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\play.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checked.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked.png
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ObjectModel.dll
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\Upendra\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\com.fise.droid.apk
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\com.fise.droid-Signed.apk
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Plugin.Settings.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.ObjectModel.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Plugin.Settings.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\bin\com.fise.droid.apk
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a1_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a1_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a1_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a2_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a2_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\a2_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\animation_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\animation_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\animation_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\book_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\book_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\book_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\checked_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\checked_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\checked_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\close_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\close_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\close_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\icon_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\icon_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\icon_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\minus_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\minus_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\minus_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\next_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\next_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\next_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\play_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\play_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\play_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\plus_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\plus_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\plus_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\power_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\power_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\power_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\previous_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\previous_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\previous_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\rated_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\rated_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\rated_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_3.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_1.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_2.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_details.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_small.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\res\drawable\activity_dis.png
+D:\FISE\FISE 19-12-16\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\com.fise.droid.apk
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\com.fise.droid-Signed.apk
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.ObjectModel.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\bin\com.fise.droid.apk
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a1_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a1_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a1_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a2_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a2_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a2_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checked_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checked_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checked_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\favourite_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_select_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\icon_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\icon_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\icon_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\minus_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\minus_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\minus_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\play_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\play_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\play_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\plus_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\plus_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\plus_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\power_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\power_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\power_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rated_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rated_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rated_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_select_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\timespent_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_select_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_details.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_small.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_dis.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\star_big_dis.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\a2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_incomplete.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_4.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_5.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\booksread_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\booksread_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\booksread_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checked.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\curled_corner.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discoverbook_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discoverbook_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discoverbook_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\dot_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\favourite.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\icon.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\leftbottomcorner_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\lefttopcorner_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout_active.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout_select.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\minus.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\myprofile_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\myprofile_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\myprofile_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\no_books.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\notification.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\play.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\plus.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\power.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rated.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\readlater_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\readlater_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\right_arrow.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rightbottomcorner_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\righttopcorner_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\readlater_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchbook_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchbook_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_unhappy.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedleft_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedleft_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\setting.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedright_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedright_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedright_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\timespent.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unchecked.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedleft_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unrated.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedleft_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedleft_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedright_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedright_2.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedright_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\user.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomin.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoomout.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedleft_1.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchbook_3.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_happy.png
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\21-12\23-12-16_Start_Sonali\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\com.kitablet.droid.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\com.kitablet.droid-Signed.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PCLCrypto.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.BCrypt.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Kernel32.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.NCrypt.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Windows.Core.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ObjectModel.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Validation.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PCLCrypto.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.BCrypt.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Kernel32.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.NCrypt.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Windows.Core.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Validation.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\bin\com.kitablet.droid.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\announcements.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\announcements_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\app_logo.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_large.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_medium.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_thumbnail.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_black.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_black_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\curled_corner_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\no_books.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\releasearrow_asc.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\releasearrow_desc.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_happy.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_unhappy.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\settings.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\settings_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_bottom_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_bottom_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_top_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_top_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\downarrowimage.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\curled_corner_big.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot_selected_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_arrow_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\arrow_right.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.config
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\com.kitablet.droid.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\com.kitablet.droid-Signed.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PCLCrypto.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.BCrypt.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Kernel32.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.NCrypt.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Windows.Core.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\System.ObjectModel.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Validation.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FormsViewGroup.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\ImageCircle.Forms.Plugin.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Newtonsoft.Json.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PCLCrypto.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.BCrypt.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Kernel32.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.NCrypt.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\PInvoke.Windows.Core.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Plugin.Settings.Abstractions.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Validation.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Primitives.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.pdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\android\bin\com.kitablet.droid.apk
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-hdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xhdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable-xxhdpi\icon.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\splashscreen.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\layout\tabbar.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\layout\toolbar.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\values\styles.xml
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_big_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\all_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\animation_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\announcements.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\announcements_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\app_logo.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\available_offline_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_large.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_medium.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\avatar_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bgimage_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_thumbnail.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\books_read_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_black.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_black_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\checkbox_selected_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\close_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\collapsebtn_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\coming_soon_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover1_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover10_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover2_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover3_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover4_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover5_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover6_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover7_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover8_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_details.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\cover9_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\curled_corner_small.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\discover_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\double_pager_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\expandbtn_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\help_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_env.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\home_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\logout_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\my_profile_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\new_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\next_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\no_books.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\previous_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\privacy_policy_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\profile_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_big_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rating_complete_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_mute_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_aloud_sound_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\read_later_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\recommended_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\release_books_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\releasearrow_asc.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\releasearrow_desc.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\rounded_transparent_button_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\school_env.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\search_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_happy.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\searchdiscover_unhappy.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\selectedbutton_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\settings.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\settings_selected.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\single_pager_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\unselectedbutton_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_bottom_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_bottom_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_top_left_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\white_top_right_corner.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_in_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\zoom_out_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\downarrowimage.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\activity_complete.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\book_subsection_left_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_right_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bottom_left_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\curled_corner_big.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot_selected_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_left_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_arrow_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\top_right_corner_filled.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\kitablet_logo_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_1.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_2.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\bookmark_3.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\arrow_right.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\res\drawable\nav_dot.png
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\R.cs.flag
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\uploadflags.txt
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\Backups_\FISE_25Jan\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\FISE.Droid.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Java.Interop.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Microsoft.CSharp.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.Android.Export.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\Mono.CSharp.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\mscorlib.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Core.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Net.Http.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Numerics.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\DeviceInfo.Plugin.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FISE.Droid.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Abstractions.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\ImageCircle.Forms.Plugin.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.Android.Export.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Mono.CSharp.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Numerics.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+D:\21-12\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.dll.mdb
+obj\Debug\designtime\Resource.Designer.cs
+D:\Satish\Code - 14Aug18\Main Branch\EReader\Apps\From Upender\FISE\FISE\FISE.Droid\obj\Debug\FISE.Droid.csprojResolveAssemblyReference.cache
+obj\Debug\designtime\Resource.Designer.cs

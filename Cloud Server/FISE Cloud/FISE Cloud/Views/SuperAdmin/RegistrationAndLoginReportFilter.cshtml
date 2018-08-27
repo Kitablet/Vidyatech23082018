@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "RegistrationAndLoginReportFilter";
+}
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+    <div class="col-xs-8">
+        <h4 class="page-title">Report 1 : Registrations and Logins</h4>
+    </div>
+</div>
+<hr />
+
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select User Type:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel2">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Librarians</span>
+        </div>
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Students</span>
+        </div>
+    </div>
+</div>
+<div class="row reportfilter-row">
+    <div class="col-xs-12"><p class="report_subtitle">Select Schools:</p></div>
+    <div class="col-xs-12">
+        <div class="col-xs-12">
+            <input type="checkbox" id="" value="All" />
+            <span class="filter_checkboxlabel2">All</span>
+        </div>
+        <hr class="hr_report" />
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Lorem ipsum dolor sit amet School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Consectetur adipiscing eli School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Quisque elementum tellus massa School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Conidmentum school</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Curabitur quam purus School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Cras sit amet School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Vestibulum sapien School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Curabitur quam purus School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Librarians" />
+            <span class="filter_checkboxlabel2">Cras sit amet School</span>
+        </div>
+        <div class="col-xs-12 reportfilter_check">
+            <input type="checkbox" id="" value="Students" />
+            <span class="filter_checkboxlabel2">Vestibulum sapien School</span>
+        </div>
+    </div>
+    <div class="col-xs-12 seeallschools">
+        <a href="#">See all schools</a>
+    </div>
+</div>
+
+<div class="buttons">
+    <input type="button" class="btn btn-default btn-rect" value="Generate Report" />
+</div>

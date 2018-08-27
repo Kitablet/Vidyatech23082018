@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mvcSiteMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xmlns="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0"
+            xsi:schemaLocation="http://mvcsitemap.codeplex.com/schemas/MvcSiteMap-File-4.0 MvcSiteMapSchema.xsd">
+
+  <mvcSiteMapNode title="Home" controller="Home" action="Index">
+    <mvcSiteMapNode title="Home" controller="Home" action="Index">
+      <mvcSiteMapNode title="Student Name" controller="User" action="StudentRegistration" route="StudentRegistration" preservedRouteParameters="schooluid,studentid"/>
+    </mvcSiteMapNode>
+    
+    <mvcSiteMapNode title="Schools" controller="School" action="SchoolList" route="SchoolList" preservedRouteParameters="pagesize,pageindex">
+
+        <mvcSiteMapNode title="Add School" controller="School" action="CreateSchool"/>
+        <mvcSiteMapNode title="School" controller="School" action="SchoolHomePage" route="SchoolHomePage" preservedRouteParameters="schooluid,pagesize,pageindex">
+            <mvcSiteMapNode title="Modify" controller="School" action="EditSchool" route="EditSchool" preservedRouteParameters="schooluid" />
+
+            <mvcSiteMapNode title="Student &amp; Parent" controller="School" action="StudentandParentInfo" route="StudentandParentInfo" preservedRouteParameters="schooluid,studentid">
+              <mvcSiteMapNode title="Modify" controller="School" action="EditStudent" route="EditStudent" preservedRouteParameters="schooluid,studentid"/>
+              <mvcSiteMapNode title="Modify" controller="School" action="EditParent" route="EditParent" preservedRouteParameters="schooluid,userid,studentid"/>
+            </mvcSiteMapNode>
+          
+            <mvcSiteMapNode title="Librarian" controller="School" action="SchoolAdminInfo" route="SchoolAdminInfo" preservedRouteParameters="schooluid,adminid">
+              <mvcSiteMapNode title="Modify" controller="School" action="EditSchoolAdmin" route="EditSchoolAdmin" preservedRouteParameters="schooluid,adminid"/>
+            </mvcSiteMapNode>
+
+            <mvcSiteMapNode title="Add Librarian" controller="School" action="CreateSchoolAdmin" route="CreateSchoolAdmin" preservedRouteParameters="schooluid"/>
+
+        </mvcSiteMapNode>
+    
+    </mvcSiteMapNode>
+
+    
+    <mvcSiteMapNode title="Profile" controller="User" action="UserProfileInfo">
+      <mvcSiteMapNode title="Modify" controller="User" action="EditUserProfileInfo"/>
+      <mvcSiteMapNode title="Change Password" controller="User" action="ChangePassword"/>
+    </mvcSiteMapNode>
+    
+    <mvcSiteMapNode title="E-library Admins" controller="SuperAdmin" action="ElibraryAdminList" route="ElibraryAdminList" preservedRouteParameters="pagesize,pageindex">
+      <mvcSiteMapNode title="Add E-library Admin" controller ="SuperAdmin" action="CreateElibraryAdmin" />
+      
+      <mvcSiteMapNode title="E-library Admin" controller="SuperAdmin" action="ElibraryAdminInfo" route="ElibraryAdminInfo" preservedRouteParameters="elibadminid">
+        <mvcSiteMapNode title="Modify" controller="SuperAdmin" action="EditElibraryAdmin" route="EditElibraryAdmin" preservedRouteParameters="elibadminid"/>
+      </mvcSiteMapNode>
+    </mvcSiteMapNode>
+    
+    <mvcSiteMapNode title="Books" controller="Books" action="Bookslist" route="BooksList" preservedRouteParameters="pagesize,pageindex">
+      <mvcSiteMapNode title="Book" controller="Books" action="BookInfo" route="BookInfo" preservedRouteParameters="bookid">
+        <mvcSiteMapNode title="Modify" controller="Books" action="EditBooksMetadata" route="EditBooksMetadata" preservedRouteParameters="bookid"/>
+      </mvcSiteMapNode>
+    </mvcSiteMapNode>
+
+    <mvcSiteMapNode title="Reports" controller="Report" action="Reports">
+      <mvcSiteMapNode title="Report 1: Registrations and Logins" controller="Report" action="Report1SchoolAdmin" />
+      <mvcSiteMapNode title="Report 1: Registrations and Logins" controller="Report" action="Report1" />
+      <mvcSiteMapNode title="Report 2: School Wise Usage Of Kitablet by Students" controller="Report" action="Report2" />
+      <mvcSiteMapNode title="Report 3: Book Wise Usage Of Kitablet by Students" controller="Report" action="Report3" />
+      <mvcSiteMapNode title="Report 4: Book Wise Usage Of Kitablet by Students For Publishers" controller="Report" action="Report4" />
+      <mvcSiteMapNode title="Report 5: An Individual School vs. All School Average" controller="Report" action="Report5" />
+      <mvcSiteMapNode title="Report 6: Active Books in Kitablet" controller="Report" action="Report6" />
+      <mvcSiteMapNode title="Report 7: Kitablet Usage Across Platforms and Environments" controller="Report" action="Report7" />
+      <mvcSiteMapNode title="Report 1: Usage of Kitablet by your children" controller="Report" action="Report8" />
+    </mvcSiteMapNode>
+
+    <mvcSiteMapNode title="Home" controller="Parent" action="Parent_Home" route="HomePage">
+        <mvcSiteMapNode title="Student Name" controller="Parent" action="StudentRegistration" preservedRouteParameters="schooluid,studentid"/>
+    </mvcSiteMapNode>
+    <mvcSiteMapNode title="Home" controller="SchoolAdmin" action="SchoolAdminDashboard" route="SchoolAdmin" preservedRouteParameters="schooluid">
+      <mvcSiteMapNode title="Student Name" controller="SchoolAdmin" action="StudentandParentInfoAdmin" preservedRouteParameters="schooluid,studentid"/>
+    </mvcSiteMapNode>
+  </mvcSiteMapNode>
+</mvcSiteMap>

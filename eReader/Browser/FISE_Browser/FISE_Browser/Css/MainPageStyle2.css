@@ -1,0 +1,516 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+html,
+body {
+    font-family: Quicksand-Regular;
+    font-size: 1em;
+    min-height: 768px;
+    min-width: 1024px;
+    width:100%;
+    height:100%;
+}
+.closeButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+input[type="button"] {
+    /*color: #333333;*/
+    
+    background-color: transparent;
+    cursor: pointer;
+}
+.J1Border {
+    border-left: 6px solid #FC654C;
+}
+.J2Border {
+    border-left: 6px solid #9DA503;
+}
+.MBorder {
+    border-left: 6px solid #14B4B4;
+}
+input[type="button"].theme {
+    color: #9DA503;
+    border: 1px solid #9DA503;
+}
+.disable {
+    opacity: 0.5;
+    cursor: default;
+}
+#Main_Header {
+    height: 80px;
+    background-color: #9DA503;
+}
+#Main_Header_Info {
+    display: inline-block;
+    position: relative;
+}
+#Main_Header_Info img {
+    position: absolute;
+    bottom: -75px;
+    left: 0px;
+}
+#header_title {
+    display: inline-block;
+    height: 34px;
+    color: #fff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: Quicksand-Bold;
+    font-size: 18px;
+    top: 30px;
+}
+#SubSection_Dropdown,
+#header_title {
+    display: inline-block;
+    margin-left: 330px;
+    position: absolute;
+}
+#SubSection_Dropdown {
+    margin-top: 15px;
+}
+.siteLogo {
+    display: inline-block;
+    position: absolute;
+    left: 25px;
+    z-index: 1;
+    top: 8px;
+    background: url(/Content/Images/kitablet_logo_2.png);
+    height: 98px;
+    width: 285px;
+}
+#SubSection_Dropdown select {
+    background: url(../Content/Images/DownArrowImage.png) no-repeat right center;
+    height: 34px;
+    width: 150px;
+    color: #333;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: Quicksand-Bold;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #fff;
+    margin-top: 20px;
+}
+#SubSection_Dropdown select:first-child {
+    color: #ffffff;
+}
+#SubSection_Dropdown option {
+    background-color: #9DA503;
+    color: black;
+}
+#SubSection_Dropdown option::selection {
+    color: white;
+}
+#Main_Header_Nav {
+    float: right;
+}
+#Main_Header_Nav > .Main_Header_Nav_Items {
+    display: inline-block;
+    padding: 25px 15px;
+    list-style-type: none;
+}
+#Main_Header_Nav > .Main_Header_Nav_Items > a {
+    line-height: normal !important;
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('Fonts/Quicksand-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('Fonts/Quicksand-Bold.otf') format('opentype');
+}
+#AnnouncementCount {
+      /*position: absolute;*/
+    right: -7px;
+    top: -15px;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Quicksand-Bold;
+    margin-top: -37px;
+    margin-right: -4px;
+    float:right;
+}
+#UserActivityComponent {
+    padding-top: 15px;
+    height: 160px;
+    background-color: #53562D;
+    width: 284px;
+    position: absolute;
+    z-index: 1;
+    right: 0px;
+    border-left: 6px solid rgba(51, 51, 51, 0.3);
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    color: #ffffff;
+    -moz-transition: height 0.3s linear;
+    -o-transition: height 0.3s linear;
+    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+    overflow-y:hidden;
+}
+.smallImages {
+    height: 24px;
+    width: 22px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+}
+.readaloud {
+    background-image: url(../Content/Images/read_aloud_2.png);
+}
+.activitynotdone {
+    background-image: url(../Content/Images/activity_2.png);
+}
+.activitydone {
+    background-image: url(../Content/Images/activity_complete_2.png);
+}
+.animation {
+    background-image: url(../Content/Images/animation_2.png);
+}
+.rated {
+    background-image: url(../Content/Images/rating_complete_2.png);
+}
+.ratingStar {
+    position: absolute;
+    right: 0;
+    text-align: center;
+    padding-top: 3px;
+}
+.ratingStar p {
+    color: #53562D;
+    font-family: Quicksand-Regular;
+    font-size:12px;
+    padding-top:2px;
+}
+.unrated {
+    background-image: url(../Content/Images/rating_2.png);
+}
+.currentlyReadingBook {
+    display: inline-block;
+    cursor: pointer;
+}
+.landscape {
+    height: 130px;
+    width: 198px;
+}
+.portrait {
+    height: 260px;
+    width: 198px;
+}
+.cell {
+    display: inline-block;
+    padding: 5px;
+    vertical-align: middle;
+}
+.count {
+    text-align: left;
+    font-size: 36px;
+    font-family: Quicksand-Regular;
+}
+.countText {
+    font-size: 16px;
+    font-family: Quicksand-Regular;
+    text-align: left;
+}
+#FirstName,
+#LastName {
+    font-size: 16px;
+    font-family: Quicksand-Regular;
+    text-align: left;
+}
+#AvatarImage {
+    height: 63px;
+    width: 63px;
+}
+.row {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+}
+.bookmark {
+    height: 20px;
+    width: 18px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+}
+.bookmark1 {
+    background-image: url(../Content/Images/bookmark_1.png);
+}
+.bookmark2 {
+    background-image: url(../Content/Images/bookmark_2.png);
+}
+.bookmark3 {
+    background-image: url(../Content/Images/bookmark_3.png);
+}
+.CountsGrid .row .cell {
+    padding: 0 10px;
+    width: 100px;
+    vertical-align: top;
+}
+.UserBook,
+.AvatarRow {
+    position: relative;
+    width: 200px;  
+}
+.UserBook {
+    margin-left: 32px;
+}
+.AvatarRow {
+    margin-left: 29px;
+}
+.UserBook .row {
+    text-align: left;
+}
+.AvatarRow .cell {
+    float: left;
+}
+.AvatarRow .cell:first-child {
+    padding: 0px; 
+}
+.UserBook {
+    margin-top: -12px;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.CountsGrid {
+    padding-left: 10px;
+}
+.CountsGrid .row {
+    text-align: left;
+}
+#ExpandButton {
+    display: block;
+    top: 160px;
+    z-index: 2;
+    background-image: url(../Content/Images/expandBtn_2.png);
+}
+#CollapseButton {
+    display: none;
+    z-index: 2;
+    bottom: 0px;
+    background-image: url(../Content/Images/collapseBtn_2.png);
+}
+.expandCollapse {
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 142px;
+    height: 17px;
+    width: 46px;
+    margin-right: -23px;
+    -webkit-transition: height 1s;
+    -moz-transition: height 1s;
+    -ms-transition: height 1s;
+    -o-transition: height 1s;
+    transition: height 1s;
+}
+.modal,
+.commonmodal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.commonmodal .modal-content {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: #9DA503;
+    padding: 20px;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    width: 400px;
+}
+.commonmodal p {
+    color: #fff;
+    font-size: 18px;
+    padding: 0 10px 15px 10px;
+    text-align: center;
+}
+.modal .modal-content {
+    background-color: #14B4B4;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    width: 400px;
+    min-height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -100px;
+    margin-left: -200px;
+    position: relative;
+}
+#SelectMore {
+    padding-top: 35px;
+    background-color: #FFF;
+    margin-left: -405px;
+    margin-top: -230px;
+    width: 810px;
+    /*height: 460px;*/
+    border-radius: 12px;
+}
+.selectMoreButtonDiv {
+    width: 150px;
+    display: inline-block;
+    vertical-align: top;
+}
+.SelectMoreText {
+    text-align: center;
+    font-family: Quicksand-Bold;
+}
+#donebtn,
+#Okbtn {
+    outline: none;
+    padding: 16px 22px;
+    background-color: transparent;
+    color: #9DA503;
+    font-size: 16px;
+    border: 2px solid #9DA503;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 35px;
+    font-family: Quicksand-Bold;
+    margin: 0 auto;
+    display: block;
+}
+#Okbtn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+#donebtn.disable {
+    pointer-events: none;
+    opacity: 0.5;
+}
+#donebtn.enable {
+    cursor: pointer;
+    pointer-events: all;
+    opacity: 1;
+}
+.actualImage,
+.defaultImage {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.actualImage.show-actual-image {
+    opacity: 1;
+    z-index: 999;
+}
+.actualImage {
+    opacity: 0;
+}
+/*Start of Dropdown*/
+
+.dropdown {
+    position: relative;
+    -moz-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    padding-left: 6px;
+    width: 160px;
+    background-color: #9DA503;
+    font-size: 16px;
+    font-family: Quicksand-Bold;
+    border-left: 6px solid transparent;
+    cursor: pointer;
+    z-index: 1;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.dropdown.active {
+    border-left: 6px solid rgba(0, 0, 0, 0.2);
+}
+.dropdown.active .dropdown-element {
+    display: block;
+}
+.dropdown.active .dropdown-arrow {
+    opacity: 1;
+}
+.dropdown-element {
+    padding: 8px 5px;
+    width: 125px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: none;
+}
+.dropdown-element span {
+    letter-spacing: 3px;
+    margin: 0 5px;
+}
+.dropdown > div:first-of-type {
+    color: #fff;
+    display: block;
+}
+.dropdown > div:last-of-type {
+    border: none;
+}
+.dropdown-arrow {
+    margin-top: 18px;
+    margin-right: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+/*End of Dropdown*/
+
+.actualImage,.defaultImage {
+    position:absolute;      
+    left:0;
+    top:0; 
+}
+.actualImage.show-actual-image {
+    opacity: 1;
+     z-index: 999;
+}
+.actualImage{
+      opacity: 0;
+}
+.dropdown-element {
+letter-spacing:3px;
+}
+
+.dropdown-element sup {
+margin-left:-3px;
+margin-right:3px;
+}

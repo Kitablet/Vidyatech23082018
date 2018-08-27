@@ -1,0 +1,340 @@
+﻿@model FISE_Cloud.Models.School.ChildImportExportInput
+@using FISE_Cloud.Models.School;
+@using System.Configuration;
+@using System.Data;
+@{
+    int _chunkSize = int.Parse(System.Configuration.ConfigurationManager.AppSettings["StudentImportUpdateChunkSize"]);
+}
+<script>
+
+    function ClosePoUp() {
+        $('#partialview').hide();
+        $('.popup_background').css('display', 'none');
+        return false;
+    }
+
+    (function () {
+        var bar = $('.bar');
+        var percent = $('.percent');
+        $('#ImportForm').submit(function () {
+            if ($('#dataFile').val() != '') {
+                var file = $('#dataFile')[0].files[0];
+                var fileName = file.name;
+                var fileExt = '.' + fileName.split('.').pop();
+                $('#schooluidupload').val($('#SchoolUId').val());
+                if (fileExt.toLowerCase() == '.xlsx') {
+                    $('#filename').text(fileName);
+                    $('#uploadcontrol').hide();
+                    $('#progress').show();
+                    // submit the form
+                    $(this).ajaxSubmit({
+                        beforeSend: function () {
+                            var percentVal = '0%';
+                            bar.width(percentVal)
+                            percent.html(percentVal);
+                        },
+                        uploadProgress: function (event, position, total, percentComplete) {
+                            var percentVal = percentComplete + '%';
+                            bar.width(percentVal)
+                            percent.html(percentVal);
+                            if (percentComplete == 100) {
+                                $('#processing').show();
+                                $('#progress').hide();
+                            }
+                        },
+                        success: function (result) {
+                            var percentVal = '100%';
+                            bar.width(percentVal)
+                            percent.html(percentVal);
+                            $('#partialview').html(result);
+                        },
+                        complete: function (xhr) {
+                        },
+                        error: function (jqXHR, textStatus, err) {
+                            alert(textStatus);
+                            alert(err);
+                            if (jqXHR.status == 401) {
+                                //refresh the page, as we are not longer authorized
+                                location.reload();
+                            }
+                        }
+
+                    });
+                } else {
+                    alert("@Resource.Student_ImportStudent_Pleaseuploadxlsxfile");
+                }
+            }
+            else {
+                $('#dataFile').css('border', 'solid 1px red');
+            }
+            // return false to prevent normal browser submit and page navigation
+            return false;
+        });
+        $('#ImportValidatedForm').submit(function (e) {
+            $('#processing').show();
+            $('#ImportValidatedForm').find("input[type='submit']").attr('disabled', true);
+            $('#ImportValidatedForm').find(".row").css('display', 'none');
+            $('#ImportFileName').css('display', 'none');
+
+            var url = "@Url.Action("AddNewChildren", "School")";
+            var arrays = [], size = @_chunkSize;
+
+            var outputdata = {};
+            outputdata.FailedCount = 0;
+            outputdata.ProcessedStudents = [];
+            outputdata.Students = [];
+            //alert($('#ImportValidatedForm').find('input[name="importeddata"]').val());
+            var importdata = jQuery.parseJSON($('#ImportValidatedForm').find('input[name="importeddata"]').val());
+            var SchoolUId = $('#ImportValidatedForm').find('input[name="model.SchoolUId"]').val();
+            var TolalStudents=importdata.length;
+            $('#importStatus #total').html(TolalStudents);
+            $('#importStatus').show();
+            while (importdata.length > 0)
+                arrays.push(importdata.splice(0, size));
+
+            var ImportStudents=function(index){
+                var studentdata = {};
+                studentdata.SchoolUId = SchoolUId;
+                studentdata.Students = arrays[index];
+                $.ajax({
+                    type: "POST",
+                    url: url,
+                    async: true,
+                    data: studentdata, // serializes the form's elements.
+                    timeout: 1500000,
+                    success: function (result) {
+                        outputdata.FailedCount += result.Result.FailedCount;
+                        outputdata.ProcessedStudents = outputdata.ProcessedStudents.concat(result.Result.ProcessedStudents);
+                        outputdata.Students = outputdata.Students.concat(result.Result.Students);
+                        $('#importStatus #current').html(outputdata.ProcessedStudents.length);
+                        if(index<arrays.length-1){
+                            ImportStudents(index+1);
+                        }
+                        else{
+                            $('#importStatus').html("Creating summary...");
+                            $.ajax({
+                                type: "POST",
+                                url: "@Url.Action("GetChildImportSummery", "School")",
+                                async: true,
+                                data: outputdata, // serializes the form's elements.
+                                timeout: 1500000,
+                                success: function (result) {
+                                    $('#partialview').html(result);
+                                },
+                                error: function (data) {
+                                    console.log(data);
+                                }
+                            });
+                            e.preventDefault();
+                        }
+                    },
+                    error: function (data) {
+                        if(index<arrays.length-1){
+                            ImportStudents(index+1);
+                        }
+                    }
+                });
+            };
+            ImportStudents(0);
+            return false;
+        });
+    })();
+
+
+</script>
+<style>
+    #processing {
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    #importStatus {
+        display: none;
+        text-align: center;
+    }
+</style>
+<div class="form-group">
+    <div id="divclose" onclick="return ClosePoUp();">X</div>
+</div>
+<h5 class="page-title">@Resource.Header_GenerateStudents</h5>
+<hr />
+@if (Model.ModalStatus == ImportExportModalstatus.Upload)
+{
+
+    <div id="uploadcontrol">
+        <div class="popup-desc">@Resource.Student_ImportStudent_Popup_DescriptiveText</div>
+        <h5>@Resource.Student_ImportStudent_PleaseuploadtheExcelfile</h5>
+        <form action="@Url.Action("UploadChildren", "School")" method="post" enctype="multipart/form-data" id="ImportForm">
+            <input type="hidden" name="schooluidupload" id="schooluidupload" />
+            <div class="form-group">
+                <input type="file" accept=".xls,.xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel" id="dataFile" name="upload" class="btn btn-default" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Upload" class="btn btn-default btn-rect" name="Command" id="btnUpload" />
+                <a href="~/Content/Importtemplate/GenerateCredentials.xlsx" target="_blank">@Resource.Downloadtemplate_link</a>
+            </div>
+        </form>
+    </div>
+
+    <div id="processing" style="display:none;"><img src="~/Content/Images/loading.gif" /></div>
+    <div id="progress" style="display:none">
+        @Resource.Student_ImportStudent_ProgressUploading <span id="filename"></span>
+        <div class="progress">
+            <div class="bar"></div>
+            <div class="percent">0%</div>
+        </div>
+        <input type="button" value="@Resource.Btn_Cancel" class="btn btn-default btn-rect" onclick="return ClosePoUp();" />
+    </div>
+}
+
+else if (Model.ModalStatus == ImportExportModalstatus.Import)
+{
+    <form action="@Url.Action("AddNewChildren", "School")" method="post" enctype="multipart/form-data" id="ImportValidatedForm">
+        <div id="processing" style="display:none;"><img src="~/Content/Images/loading.gif" /></div>
+        @Html.Hidden("model.SchoolUId", Model.SchoolUId)
+        @if (Model.Students != null)
+        {
+            <div class="row">
+                @Resource.Student_ImportStudent_NoerrorreportedFileSuccessfullyUploaded
+            </div>
+            @Html.Hidden("importeddata", Newtonsoft.Json.JsonConvert.SerializeObject(Model.Students))
+
+            <div id="ImportFileName" class="form-group" style="padding-top:28px;padding-bottom:20px;">
+                <img src="~/Content/Images/FiseIconsAssets/Excel-doc.png" /><span id="file-name">@ViewBag.FileName</span>
+            </div>
+            <div id="importStatus">@Html.Raw(HttpUtility.HtmlDecode(@Resource.Student_ImportUpdate_Progress))</div>
+            <div class="form-group" style="margin-top:15px;">
+                <input type="submit" value="@Resource.Btn_ImportNow" class="btn btn-default btn-rect" name="Command" />
+            </div>
+        }
+    </form>
+}
+else if (Model.ModalStatus == ImportExportModalstatus.Error)
+{
+    if (Model.Students.Count > 0)
+    {
+        <div id="errortable">
+            <div>@Model.Students.Count  @Resource.Student_ImportStudent_FollowingErrReportedintheFile</div>
+            <table class="addnewstudents">
+                <tr><th>@Resource.Student_ImportStudent_RowNo</th><th>@Resource.Student_ImportStudent_ErrorDetails</th></tr>
+                @foreach (ChildImport student in Model.Students)
+                {
+                    <tr>
+                        <td>
+                            @student.SNO
+                        </td>
+                        <td>
+                            @student.Error.Trim(',')
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    }
+    else
+    {
+        <div>@Resource.Student_ImportStudent_NoRecordinExcel</div>
+    }
+    <div class="form-group" style="margin-top:15px;">
+        <input type="button" value="@Resource.Btn_Cancel" class="btn btn-default btn-rect" onclick="return ClosePoUp();" />
+        <input type="button" value="@Resource.Btn_UploadNew" class="btn btn-default btn-rect" onclick="return AddNewChildren();" />
+    </div>
+    <div class="form-group">
+
+    </div>
+}
+
+else if (Model.ModalStatus == ImportExportModalstatus.Summery)
+{
+    if (Model.FailedCount > 0)
+    {
+        if (Model.FailedCount == Model.ProcessedStudents.Count)
+        {
+            <div class="row">
+                @Resource.Student_ImportStudents_Failed
+            </div>
+            <div class="form-group" style="margin-top:15px;">
+                <input type="button" value="@Resource.Btn_Ok" class="btn btn-default btn-rect" onclick="javascript:window.location.href=window.location.href;" />
+            </div>
+        }
+        else
+        {
+            using (Html.BeginForm("ExportExcelFaliedToImportChildren", "School", FormMethod.Post, new { id = "export-form-failedimportstudent" }))
+            {
+                <div class="row">
+                    @Resource.Student_ImportStudent_SomeRecordFailed.Replace("#FailedCount#", Model.FailedCount.ToString()).Replace("#AllCount#", Model.ProcessedStudents.Count.ToString())
+                </div>
+                int i = 0;
+                foreach (ChildImport student in Model.ProcessedStudents)
+                {
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].SNO", @student.SNO)
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].ChildFirstName", @student.ChildFirstName)
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].ChildLastName", @student.ChildLastName)                    
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].ParentEmailID", @student.ParentEmailID)
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].Grade", @student.Grade)
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].SubSection", @student.SubSection)
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].SubscriptionStartDate", @student.SubscriptionStartDate)
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].SubscriptionEndDate", @student.SubscriptionEndDate)
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].Status", @student.Status)
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].ParentFirstName", @student.ParentFirstName)
+
+                    @Html.Hidden("model.ProcessedStudents[" + i + "].ParentLastName", @student.ParentLastName)
+                    i++;
+                }
+                <div class="form-group" style="margin-top:15px;">
+                    <input type="submit" value="@Resource.Student_ImportUpdateStudent_DownloadReport" class="btn btn-default btn-rect" name="Command" />
+                </div>
+            }
+        }
+    }
+    else
+    {
+        <div>@Resource.Student_ImportStudent_SuccessMsg_Recordssuccessfullyupdated</div>
+        <table class="addnewstudents">
+            <tr><th>@Resource.Student_ImportStudent_SubSection</th><th>@Resource.Student_ImportStudent_NoofStudentsAdded</th></tr>
+
+            @foreach (ChildImport student in Model.Students)
+            {
+                <tr>
+                    <td>
+                        @student.SubSection
+                    </td>
+                    <td>
+                        @student.TotalSuccess
+                    </td>
+
+                </tr>
+            }
+        </table>
+        <div class="form-group" style="margin-top:15px;">
+            <input type="button" value="@Resource.Btn_Ok" class="btn btn-default btn-rect" onclick="javascript:window.location.href=window.location.href;" />
+        </div>
+    }
+}
+
+
+else if (Model.ModalStatus == ImportExportModalstatus.InvalidExcel)
+{
+    <div>@Resource.Student_ImportStudent_Invalidexceluploaded</div>
+
+    <div class="form-group" style="margin-top:15px;">
+        <input type="button" value="@Resource.Btn_Cancel" class="btn btn-default btn-rect" onclick="return ClosePoUp();" />
+        <input type="button" value="@Resource.Btn_UploadNew" class="btn btn-default btn-rect" onclick="return AddNewChildren();" />
+    </div>
+}
+
+else if (Model.ModalStatus == ImportExportModalstatus.ProcessError)
+{
+    <div>@Resource.Student_ImportStudent_ErrorMsg_ProcessErr</div>
+
+    <div class="form-group" style="margin-top:15px;">
+        <input type="button" value="@Resource.Btn_Cancel" class="btn btn-default btn-rect" onclick="return ClosePoUp();" />
+    </div>
+
+}

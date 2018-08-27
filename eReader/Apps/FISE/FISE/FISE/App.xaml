@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kitablet.App">
+  <Application.Resources>
+
+    <ResourceDictionary>
+
+      <!--///////////////////////////////////////Application Color////////////////////////////////////////////-->
+
+      <Color x:Key="PrimaryColor">#FC654C</Color>
+      <Color x:Key="Secondary1Color">#D5D5D5</Color>
+      <Color x:Key="HeaderColor">#FFFFFF</Color>
+      <Color x:Key="Secondary2Color">#B32811</Color>
+      <Color x:Key="ActiveBorderColor">#333333</Color>
+      <Color x:Key="DeactiveBorderColor">#999999</Color>
+      <Color x:Key="TransparentBorderColor">#00000000</Color>
+      <Color x:Key="BaseBackgroundColor">#D5D5D5</Color>
+      <Color x:Key="SeparatorColor">#FFFFFF</Color>
+      <Color x:Key="ButtonTextColor">#FC654C</Color>
+      <Color x:Key="ButtonTextSelectedColor">#FFFFFF</Color>
+      <Color x:Key="ThemePickerBGColor">#00000000</Color>
+      <Color x:Key="ThemePickerTextColor">#FFFFFF</Color>
+      <Color x:Key="TabTitleColor">#FFFFFF</Color>
+      <Color x:Key="TextNormalColor">#333333</Color>
+      <Color x:Key="TextBlackColor">#000000</Color>
+      <Color x:Key="TextWhiteColor">#FFFFFF</Color>
+      <Color x:Key="LoginBGColor">#FFCC33</Color>
+      <Color x:Key="AvatarBoaderColor">#666666</Color>
+      <Color x:Key="SmallMediumBookBG">#E5E5E5</Color>
+
+      <!--/////////////////////////////////////Application Font Sizes//////////////////////////////////////////-->
+      <x:String x:Key="TitleFontSize">32</x:String>
+      <x:String x:Key="HeaderFontSize">28</x:String>
+      <x:String x:Key="NormalFontSize">20</x:String>
+      <x:String x:Key="SmallFontSize">16</x:String>
+
+      <!--/////////////////////////////////////Application Constraint/////////////////////////////////////////-->
+
+      <x:String x:Key="BaseThemePath">_3</x:String>
+
+      <x:String x:Key="AppImage">kitablet_logo_3.png</x:String>
+      <x:String x:Key="AppTextImage">kitablet_logo.png</x:String>
+      <x:String x:Key="AppLink">www.kitablet.in</x:String>
+      <x:String x:Key="AppOrganization">A Parag Initiative</x:String>
+      <x:String x:Key="AppCopyRight">Copyright © 2017 Parag</x:String>
+
+      <x:String x:Key="SchoolEnvImage">school_env.png</x:String>
+      <x:String x:Key="HomeEnvImage">home_env.png</x:String>
+      <x:String x:Key="ArrowRightGray">arrow_right.png</x:String>
+      <x:String x:Key="AvatarImage">avatar_medium.png</x:String>
+      <x:String x:Key="AvatarBigImage">avatar_large.png</x:String>
+      <x:String x:Key="AvatarSmallImage">avatar_small.png</x:String>
+      <x:String x:Key="RememberMeImage">checkbox_black.png</x:String>
+      <x:String x:Key="RememberMeSelectedImage">checkbox_black_selected.png</x:String>
+      <x:String x:Key="HomeImage">home.png</x:String>
+      <x:String x:Key="HomeSelectedImage">home_selected.png</x:String>
+      <x:String x:Key="SearchImage">search.png</x:String>
+      <x:String x:Key="SearchSelectedImage">search_selected.png</x:String>
+      <x:String x:Key="ProfileImage">profile.png</x:String>
+      <x:String x:Key="ProfileSelectedImage">profile_selected.png</x:String>
+      <x:String x:Key="AnnouncementImage">announcements.png</x:String>
+      <x:String x:Key="AnnouncementSelectedImage">announcements_selected.png</x:String>
+      <x:String x:Key="SettingImage">settings.png</x:String>
+      <x:String x:Key="SettingSelectedImage">settings_selected.png</x:String>
+      <x:String x:Key="LogoutImage">logout.png</x:String>
+      <x:String x:Key="LogoutSelectedImage">logout_selected.png</x:String>
+      <x:String x:Key="BookThumbnailImage">book_thumbnail.png</x:String>
+      <x:String x:Key="BookThumbnailSmallImage">book_thumbnail.png</x:String>
+      <x:String x:Key="BookThumbnailBigImage">book_thumbnail.png</x:String>
+      <x:String x:Key="ActivityGrayImage">activity.png</x:String>
+      <x:String x:Key="ActivityGrayCompletedImage">activity_complete.png</x:String>
+      <x:String x:Key="ActivityImage">activity_3.png</x:String>
+      <x:String x:Key="ActivityCompletedImage">activity_complete_3.png</x:String>
+      <x:String x:Key="AnimationGrayImage">animation.png</x:String>
+      <x:String x:Key="AnimationImage">animation_3.png</x:String>
+      <x:String x:Key="RatingGrayImage">rating.png</x:String>
+      <x:String x:Key="RatingGrayCompletedImage">rating_complete.png</x:String>
+      <x:String x:Key="RatingImage">rating_3.png</x:String>
+      <x:String x:Key="RatingCompletedImage">rating_complete_3.png</x:String>
+      <x:String x:Key="ReadAloudGrayImage">read_aloud.png</x:String>
+      <x:String x:Key="ReadAloudImage">read_aloud_3.png</x:String>
+      <x:String x:Key="ActivityBigCompletedImage">activity_big_complete_3.png</x:String>
+      <x:String x:Key="ActivityBigIncompletedImage">activity_big_3.png</x:String>
+      <x:String x:Key="RatingBigCompletedImage">rating_big_complete_3.png</x:String>
+      <x:String x:Key="RatingBigIncompletedImage">rating_big_3.png</x:String>
+      <x:String x:Key="CloseImage">close.png</x:String>
+      <x:String x:Key="CloseActiveImage">close_3.png</x:String>
+      <x:String x:Key="SinglePagerImage">single_pager.png</x:String>
+      <x:String x:Key="SinglePagerActiveImage">single_pager_3.png</x:String>
+      <x:String x:Key="SinglePagerDeactiveImage">single_pager_disable.png</x:String>
+      <x:String x:Key="DoublePagerImage">double_pager.png</x:String>
+      <x:String x:Key="DoublePagerActiveImage">double_pager_3.png</x:String>
+      <x:String x:Key="DoublePagerDeactiveImage">double_pager_disable.png</x:String>
+      <x:String x:Key="ReadAloudMuteImage">read_aloud_mute_3.png</x:String>
+      <x:String x:Key="ReadAloudSoundImage">read_aloud_sound_3.png</x:String>
+      <x:String x:Key="ReadAloudMuteImageBlack">read_aloud_mute.png</x:String>
+      <x:String x:Key="ReadAloudSoundImageBlack">read_aloud_sound.png</x:String>
+      <x:String x:Key="NextImage">next.png</x:String>
+      <x:String x:Key="NextActiveImage">next_3.png</x:String>
+      <x:String x:Key="PreviousImage">previous.png</x:String>
+      <x:String x:Key="PreviousActiveImage">previous_3.png</x:String>
+      <x:String x:Key="ZoomInImage">zoom_in.png</x:String>
+      <x:String x:Key="ZoomInActiveImage">zoom_in_3.png</x:String>
+      <x:String x:Key="ZoomInDeactiveImage">zoom_in_disable.png</x:String>
+      <x:String x:Key="ZoomOutImage">zoom_out.png</x:String>
+      <x:String x:Key="ZoomOutActiveImage">zoom_out_3.png</x:String>
+      <x:String x:Key="ZoomOutDeactiveImage">zoom_out_disable.png</x:String>
+      <x:String x:Key="AllBooksImage">all_books_3.png</x:String>
+      <x:String x:Key="NewBooksImage">new_books_3.png</x:String>
+      <x:String x:Key="AvailableOfflineBooksImage">available_offline_3.png</x:String>
+      <x:String x:Key="RecommendedBooksImage">recommended_books_3.png</x:String>
+      <x:String x:Key="ComingSoonBooksImage">coming_soon_3.png</x:String>
+      <x:String x:Key="ReleaseBooksImage">release_books_3.png</x:String>
+      <x:String x:Key="ReadBooksImage">books_read_3.png</x:String>
+      <x:String x:Key="ReadLaterBooksImage">read_later_3.png</x:String>
+      <x:String x:Key="DiscoverBooksImage">discover_3.png</x:String>
+      <x:String x:Key="SearchIconImage">search_3.png</x:String>
+      <x:String x:Key="HelpImage">help_3.png</x:String>
+      <x:String x:Key="MyProfileImage">my_profile_3.png</x:String>
+      <x:String x:Key="PrivacyPolicyImage">privacy_policy_3.png</x:String>
+      <x:String x:Key="ExpandButton">expandBtn_3.png</x:String>
+      <x:String x:Key="CollapseButton">collapseBtn_3.png</x:String>
+      <x:String x:Key="BottomLeftCorner">bottom_left_corner_3.png</x:String>
+      <x:String x:Key="BottomRightCorner">bottom_right_corner_3.png</x:String>
+      <x:String x:Key="TopLeftCorner">top_left_corner_3.png</x:String>
+      <x:String x:Key="TopRightCorner">top_right_corner_3.png</x:String>
+      <x:String x:Key="BottomLeftGrayCorner">bottom_left_corner.png</x:String>
+      <x:String x:Key="BottomRightGrayCorner">bottom_right_corner.png</x:String>
+      <x:String x:Key="TopLeftGrayCorner">top_left_corner.png</x:String>
+      <x:String x:Key="TopRightGrayCorner">top_right_corner.png</x:String>
+      <x:String x:Key="CheckBoxImage">checkbox_3.png</x:String>
+      <x:String x:Key="CheckBoxSelectedImage">checkbox_selected_3.png</x:String>
+      <x:String x:Key="RoundedTransparentButton">rounded_transparent_button_3.png</x:String>
+      <x:String x:Key="BookSubSectionLeft">book_subsection_left_3.png</x:String>
+      <x:String x:Key="SearchDiscoverHappyImage">searchdiscover_happy.png</x:String>
+      <x:String x:Key="SearchDiscoverUnhappyImage">searchdiscover_unhappy.png</x:String>
+      <x:String x:Key="SelectedFilledButton">selectedButton_3.png</x:String>
+      <x:String x:Key="UnselectedFilledButton">unselectedButton_3.png</x:String>
+      <x:String x:Key="CurledCornerSmall">curled_corner_small.png</x:String>
+      <x:String x:Key="CurledCornerGig">curled_corner_big.png</x:String>
+      <x:String x:Key="NoBookImage">no_books.png</x:String>
+      <x:String x:Key="SelectedLeft">SelectedLeft.png</x:String>
+      <x:String x:Key="SelectedRight">SelectedRight.png</x:String>
+      <x:String x:Key="UnselectedLeft">UnSelectedLeft.png</x:String>
+      <x:String x:Key="UnselectedRight">UnSelectedRight.png</x:String>
+      <x:String x:Key="ReleaseArrowAscending">releaseArrow_asc.png</x:String>
+      <x:String x:Key="ReleaseArrowDescending">releaseArrow_desc.png</x:String>
+      <x:String x:Key="MyProfileBackgroundImage">bgImage_3.png</x:String>
+      <x:String x:Key="BottomLeftCornerFilled">bottom_left_corner_filled_3.png</x:String>
+      <x:String x:Key="BottomRightCornerFilled">bottom_right_corner_filled_3.png</x:String>
+      <x:String x:Key="TopLeftCornerFilled">top_left_corner_filled_3.png</x:String>
+      <x:String x:Key="TopRightCornerFilled">top_right_corner_filled_3.png</x:String>
+      <x:String x:Key="BottomLeftWhiteCornerFilled">bottom_left_corner_filled.png</x:String>
+      <x:String x:Key="BottomRightWhiteCornerFilled">bottom_right_corner_filled.png</x:String>
+      <x:String x:Key="TopLeftWhiteCornerFilled">top_left_corner_filled.png</x:String>
+      <x:String x:Key="TopRightWhiteCornerFilled">top_right_corner_filled.png</x:String>
+      <x:String x:Key="TopArrowFilled">top_arrow_filled_3.png</x:String>
+      <x:String x:Key="TopArrowWhiteFilled">top_arrow_filled.png</x:String>
+      <x:String x:Key="DownArrowImage">DownArrowImage.png</x:String>
+      <x:String x:Key="WhiteBottomLeftCorner">white_bottom_left_corner.png</x:String>
+      <x:String x:Key="WhiteBottomRightCorner">white_bottom_right_corner.png</x:String>
+      <x:String x:Key="WhiteTopLeftCorner">white_top_left_corner.png</x:String>
+      <x:String x:Key="WhiteTopRightCorner">white_top_right_corner.png</x:String>
+      <x:String x:Key="NavDotImage">nav_dot.png</x:String>
+      <x:String x:Key="BookmarkRibbon">bookmark_3.png</x:String>
+      <!--///////////////////////////////////////Application Styles///////////////////////////////////////////-->
+
+      <Style x:Key="backgroundPrimaryStyle" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+      </Style>
+
+      <Style x:Key="backgroundSecondary1Style" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{DynamicResource Secondary1Color}" />
+      </Style>
+
+      <Style x:Key="backgroundSecondary2Style" TargetType="VisualElement">
+        <Setter Property="BackgroundColor" Value="{DynamicResource Secondary2Color}" />
+      </Style>
+
+      <Style TargetType="Button" x:Key="buttonStyle1">
+        <Setter Property="BackgroundColor" Value="#FFFFFF" />
+        <Setter Property="BorderColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="TextColor" Value="{DynamicResource ButtonTextColor}" />
+      </Style>
+
+      <Style TargetType="Button" x:Key="buttonStyle2">
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="BorderColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="TextColor" Value="{DynamicResource ButtonTextColor}" />
+        <Setter Property="WidthRequest" Value="85" />
+        <Setter Property="HeightRequest" Value="45" />
+      </Style>
+
+      <Style TargetType="Button" x:Key="buttonStyle1Selected">
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="BorderColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="BorderWidth" Value="2" />
+        <Setter Property="TextColor" Value="{DynamicResource ButtonTextColorSelected}" />
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelStyle1Selected">
+        <Setter Property="BackgroundColor" Value="{DynamicResource TransparentColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource TextWhiteColor}" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+
+      </Style>
+      <Style TargetType="Label" x:Key="LabelStyle1">
+        <Setter Property="BackgroundColor" Value="{DynamicResource TransparentColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="FontSize" Value="14" />
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+
+      </Style>
+
+      <Style x:Key="themePicker" TargetType="Picker">
+        <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+        <Setter Property="TextColor" Value="{DynamicResource ThemePickerTextColor}" />
+      </Style>
+
+      <Style x:Key="TextHeader" TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource TextNormalColor}" />
+        <Setter Property="FontSize" Value="28" />
+      </Style>
+
+      <Style TargetType="StackLayout" x:Key="hiUserPopup">
+        <Setter Property="WidthRequest" Value="400" />
+        <Setter Property="Padding" Value="6" />
+      </Style>
+
+      <Style TargetType="StackLayout" x:Key="ReleasePopup">
+        <Setter Property="WidthRequest" Value="600" />
+        <Setter Property="Padding" Value="6" />
+      </Style>
+
+
+      <Style TargetType="StackLayout" x:Key="unselectedtabImage">
+        <Setter Property="Opacity" Value="0.5" />
+      </Style>
+
+      <Style TargetType="StackLayout" x:Key="selectedtabImage">
+        <Setter Property="Opacity" Value="1" />
+      </Style>
+
+      <Style TargetType="Button" x:Key="searchButton">
+        <Setter Property="Opacity" Value="0.5" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="HorizontalOptions" Value="Start" />
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormalRegular">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Regular</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Regular.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Regular.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#333333"></Setter>
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormalBold">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#333333"></Setter>
+      </Style>
+      <Style TargetType="Label" x:Key="LabelNormal312">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="#D5D5D5" />
+      </Style>
+
+
+      <Style TargetType="Label" x:Key="LabelNormal1Regular">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Regular</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Regular.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Regular.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormal1Bold">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#FFFFFF"></Setter>
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormal2">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#999999"></Setter>
+        <Setter Property="FontSize" Value="24" />
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormal6">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="TextColor" Value="#333333"></Setter>
+        <Setter Property="FontSize" Value="12" />
+        <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+
+      <Style TargetType="Label" x:Key="LabelNormal3">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Bold</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Bold.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Bold.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="FontSize" Value="16" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+      </Style>
+
+      <Style TargetType="Entry" x:Key="LabelNormal4">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Regular</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Regular.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Regular.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="FontAttributes" Value="None" />
+      </Style>
+
+      <Style TargetType="Editor" x:Key="EditorNormalRegular">
+        <Setter Property="FontFamily">
+          <OnPlatform x:TypeArguments="x:String">
+            <OnPlatform.iOS>Quicksand-Regular</OnPlatform.iOS>
+            <OnPlatform.Android>Quicksand-Regular.otf#Quicksand</OnPlatform.Android>
+            <OnPlatform.WinPhone>/Assets/Fonts/Quicksand-Regular.otf#Quicksand</OnPlatform.WinPhone>
+          </OnPlatform>
+        </Setter>
+        <Setter Property="FontAttributes" Value="None" />
+      </Style>
+      
+      
+
+    </ResourceDictionary>
+
+  </Application.Resources>
+</Application>

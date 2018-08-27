@@ -1,0 +1,141 @@
+﻿*{
+    padding:0;
+    margin:0;
+    outline:0 !important;
+}
+.mainContainer {
+    max-width: 635px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+.kitabletText {
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+    font-family: Quicksand-Bold;
+}
+html,
+body {
+    font-family: Quicksand-Regular;
+    font-size: 1em;
+}
+.avatarImg {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0px 15px;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+.active {
+    border: 3px solid #999999;
+}
+.usernameLabel,
+.labelText {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+.avatarImages {
+    margin: 15px 0;
+}
+.donebtn {
+    padding: 15px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border: 2px solid #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-family: Quicksand-Bold;
+}
+.inputField {
+    width: 100%;
+    margin-top:15px;
+    background-color: #fff;
+    color: #333;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid #333;
+    display: block;
+    padding: 10px;
+    font-family: Quicksand-Regular;
+}
+#AdminLoginEnv {
+    width: 65%;
+}
+a {
+    display: block;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 12px 0;
+}
+a:hover,
+a:visited {
+    color: #333;
+    text-decoration:none !important;
+}
+.errorLabel {
+    height: 20px;
+    text-align: right;
+    font-size: 12px;
+    display: block;
+}
+.InputFieldDiv {
+    width: 50%;
+    display: block;
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../Css/Fonts/Quicksand-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../Css/Fonts/Quicksand-Bold.otf') format('opentype');
+}
+.links {
+    font-family: Quicksand-Bold;
+    font-size: 14px;
+    color: #333;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #333333;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color:#333333;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #333333;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #333333;
+}
+
+#forgotIdInput, #passwordIdInput
+{
+    color:#fff;
+    border-bottom:2px solid #fff;
+}
+
+#forgotIdInput::-webkit-input-placeholder, #passwordIdInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #fff;
+}
+#forgotIdInput::-moz-placeholder,#passwordIdInput::-moz-placeholder { /* Firefox 19+ */
+  color:#fff;
+}
+#forgotIdInput:-ms-input-placeholder,#passwordIdInput:-ms-input-placeholder { /* IE 10+ */
+  color: #fff;
+}
+#forgotIdInput:-moz-placeholder,#passwordIdInput:-moz-placeholder { /* Firefox 18- */
+  color: #fff;
+}
+
+
+#RecoverId,#RecoverIdCancel1,#Recoverpassword,#RecoverIdCancel2
+{
+color:#fff;
+border:2px solid #fff;
+}

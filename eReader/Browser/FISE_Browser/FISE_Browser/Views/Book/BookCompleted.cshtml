@@ -1,0 +1,494 @@
+﻿@model FISE_Browser.Models.BookRead
+@{
+    Layout = null;
+    var backcoverpath = System.Configuration.ConfigurationManager.AppSettings["proxypath"].ToString().Replace("#kitabletid#", Model.KitabletID).Replace("EPUB/", "backcover.png");
+    int subsection1 = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection1 = userobj != null ? userobj.SubSectionId : subsection1;
+    int UserId = userobj.UserId;
+    int sessiontime = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["sessiontimeout"]) * 60 * 1000;
+}
+
+
+
+<!DOCTYPE html>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/bookcompleted.js"></script>
+<script>
+    var IsBackgroundSync = false;
+    var close=false;
+    BookCompletedModel = @Html.Raw(Json.Encode(Model));
+    var starttime='@DateTime.UtcNow';
+    var UserId = '@UserId';
+    var SessionOutTime =parseInt('@sessiontime');
+    var IsDataSync = false;
+    var interval;
+    var IsSessionOut = false;
+    function ThumbnailSetup() {
+        winheight = window.innerHeight ? window.innerHeight : $(window).height();
+        var viewmode = '@Model.ViewMode';
+        if (viewmode.toLowerCase() == 'portrait') {
+            if (winheight < 768) {
+                $('.BookIcon').css({ 'height': '490px', 'width': '376px' });
+                $('.BookButtonContainer').css('width', '376px');
+            }
+            else {
+                $('.BookIcon').css({ 'height': '585px', 'width': '445px' });
+                $('.BookButtonContainer').css('width', '445px');
+            }
+        }
+        else {
+            $('.BookIcon').css({ 'height': '230px', 'width': '445px' });
+            $('.BookButtonContainer').css('width', '445px');
+        }
+    }
+
+
+    $(document).ready(function () {
+        window.history.forward();
+        ThumbnailSetup();
+        $(window).on('resize', (function () {
+            ThumbnailSetup();
+        }));
+
+
+        setTimeout(function(){
+            RotateBookCover();
+        },2000,false);
+        setTimeout(function(){
+            PaintQuestions();
+        },2700,false);
+
+        $("#btn_Back").on("click",function(){
+            var QuestionType="";
+            try{
+                QuestionType = ReviewJson.Questions.Question[CurrentQuestion].Type;
+                if (QuestionType.toLowerCase() == "mcq") {
+                    //ResponseforMCQ = $(".mcqOption").find("img.selected").attr("id");
+                }
+                else if (QuestionType.toLowerCase() == "tq") {
+                    ResponseForTQ = $("#textArea").val();
+                }
+            }
+            catch(ex){}
+
+            CurrentQuestion--;
+            DrawQuestion();
+        });
+        $("#btn_Next").on("click",function(){
+            var QuestionType="";
+            try{
+                QuestionType = ReviewJson.Questions.Question[CurrentQuestion].Type;
+                if (QuestionType.toLowerCase() == "mcq") {
+                    //ResponseforMCQ = $(".mcqOption").find("img.selected").attr("id");
+                    if($(".mcqOption").find("label.selected").length<1)
+                    {
+                        showCommonPopup(QuestionType.toLowerCase());
+                    }
+                    else
+                    {
+                        CurrentQuestion++;
+                        DrawQuestion();
+                    }
+                }
+                else if (QuestionType.toLowerCase() == "tq") {
+                    ResponseForTQ = $("#textArea").val();
+                    ReviewJson.Questions.Question[CurrentQuestion].Value=ResponseForTQ;
+                    //console.log( ReviewJson.Questions.Question[CurrentQuestion]);
+                    if(!ResponseForTQ)
+                    {
+                        showCommonPopup(QuestionType.toLowerCase());
+                    }
+                    else
+                    {
+                        if(parseInt($('#textArea').val().length) <= maxchar)//parseInt($("#word_Count").text()) <= parseInt(ReviewJson.Questions.Question[CurrentQuestion].MaxWord))
+                        {
+                            CurrentQuestion++;
+                            DrawQuestion();
+                        }
+                    }
+                }
+            }
+            catch(ex){}
+
+        });
+        $("#btn_Done").on("click", function(){
+            if(!currentRating)
+            {
+                showCommonPopup("rating");
+            }
+            else
+            {
+                //goto activity page;
+                SubmitReview();
+                //alert("goto activity page");
+            }
+        });
+        $(".Ratings").on("click", function(e){
+            var ratingDivId = $(this).parent("div").attr("id");
+            currentRating = ratingDivId.substr(ratingDivId.indexOf("_") + 1,1);
+            $(".Ratings").each(function(){
+                $(this).removeClass("Done");
+            });
+            $(this).addClass("Done");
+        });
+        $(".SkipText").on("click", function(){
+            if(BookCompletedModel.HasActivity===true){
+                if(BookCompletedModel.IsActivityDone===true){
+                    showCommonPopup("activity");
+                }
+                else{
+                    GoToActivity();
+                }
+            }
+            else{
+                GoToBookRead();
+            }
+        })
+
+        $('#close').click(function(){
+            close=true;
+            SubmitReview();
+        });
+
+        ////Disable mouse right click
+        //$("body").on("contextmenu", function (e) {
+        //    return false;
+        //});
+        //$('body').css('user-select', 'none');
+        //document.onkeydown = function (e) {
+        //    if (event.keyCode == 123) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //    if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+        //        return false;
+        //    }
+        //}
+        OnSessionOut();
+    });
+    function GoToActivity()
+    {
+        window.location.href='@Url.RouteUrl("Activity",new{id=Model.BookId})';
+    }
+    function GoToBookRead()
+    {
+        window.location.href='@Url.RouteUrl("BookRead", new { id = Model.BookId })';
+    }
+    function SubmitReview()
+    {
+        if(!close){
+            $.each( ReviewJson.Questions.Question ,function(index,value){
+
+                if(value.Type=='TQ')
+                {
+                    ReviewJson.Questions.Question[index].Value=ResponseForTQ.replace(/\"/g,"!**!quot!**!").replace(/\\/g,"!**!slash!**!");
+                    //ReviewJson.Questions.Question[index].Value=ResponseForTQ;
+                }
+                else if(value.Type=='MCQ')
+                {
+                    $.each(value.Options.Option,function(ind,val){
+                        if(val.ID==  ResponseforMCQ)
+                            ReviewJson.Questions.Question[index].Options.Option[ind].Value="true";
+
+                        else
+                            ReviewJson.Questions.Question[index].Options.Option[ind].Value="";
+                    });
+                }
+            });
+        }
+        var data={ 'bookid': '@Model.BookId','isattempted':close?false: true, 'json': JSON.stringify(ReviewJson), 'starttime': starttime,'rating':currentRating==''?0:currentRating,'IsautoSync': IsBackgroundSync, 'UserId': UserId,'IsSessionOut':IsSessionOut };
+        //console.log(data);
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.Action("SetBookReview","Book")',
+                type: 'Post',
+                data: data,
+                dataType: 'json',
+                async: false,
+                error: function (xhr, status, error) {
+                    if (xhr.readyState == 0)
+                        showCommonPopup('nointernet');
+                },
+                success: function (data) {
+                    if(!IsBackgroundSync){
+                        if(close)
+                            window.location.href='@Url.RouteUrl("BookRead", new { id=Model.BookId})';
+                        else if(data=="logout")
+                            window.location.href = '@Url.RouteUrl("LoginPage")';
+                        else if(BookCompletedModel.HasActivity===true){
+                            if(BookCompletedModel.IsActivityDone===true){
+                                showCommonPopup("activity");
+                            }
+                            else{
+                                GoToActivity();
+                            }
+                        }
+                        else{
+                            GoToBookRead();
+                        }
+                    }
+                    else{
+                        starttime=data;
+                        IsDataSync = true;
+                        close=false;
+                    }
+                    IsBackgroundSync=false;
+                    syncbeforeunload=false;
+                }
+            });
+        }
+        else
+        {
+            showCommonPopup('nointernet');
+        }
+
+    }
+    window.addEventListener('beforeunload', function () {
+        if (syncbeforeunload) {
+            if (IsDataSync == false) {
+                close=true;
+                IsBackgroundSync = true;
+                SubmitReview();
+            }
+        }
+    });
+
+    $(window).on("blur focus", function (e) {
+        var prevType = $(this).data("prevType");
+
+        if (prevType != e.type) {   //  reduce double fire issues
+            switch (e.type) {
+                case "blur":
+                    if (IsDataSync == false) {
+                        close=true;
+                        IsBackgroundSync = true;
+                        SubmitReview();
+                    }
+                    break;
+                case "focus":
+                    console.log("!!focus!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusIn", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                            console.log(data);
+                            starttime = data;
+                            OnSessionOut();
+                            IsSessionOut=false;
+                            syncbeforeunload = true;
+                            IsDataSync = false;
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+                    break;
+            }
+        }
+
+        $(this).data("prevType", e.type);
+    });
+
+    function OnSessionOut() {
+        clearTimeout(interval);
+        interval = setTimeout(function () {
+            if (IsDataSync == false) {
+                close=true;
+                IsBackgroundSync = true;
+                SubmitReview();
+                IsSessionOut = true;
+            }
+        }, SessionOutTime);
+    }
+</script>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Review and Rating</title>
+    @if (subsection1 == 1)
+    {
+        <link href="~/Css/bookcompleted1.css" rel="stylesheet" />
+    }
+    else if (subsection1 == 2)
+    {
+        <link href="~/Css/bookcompleted2.css" rel="stylesheet" />
+    }
+    else
+    {
+        <link href="~/Css/bookcompleted3.css" rel="stylesheet" />
+    }
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/linq.js"></script>
+</head>
+<body>
+    <div id="Main_Content" style="width:100%;height:100%;min-height:768px;min-width:1024px">
+        <div id="bkRead_Header" class="BookRead_Header">
+            <div style="padding:10px 20px">
+                <div class="BookRead_HeaderText">
+                    <img alt="" src="~/Content/Images/kitablet_logo.png" />
+                </div>
+                <div class="BookRead_CloseBtnContainer">
+                    <a id="close" style="cursor:pointer"><img alt="Close" src="~/Content/Images/close.png" /></a>
+                </div>
+            </div>
+        </div>
+        <div id="bkRead_Container" class="BookRead_Container">
+            <div id="bkActionDiv" class="BookAction_Container">
+                <div class="parentContainer">
+                    <div class="verticalCenter">
+                        @{
+                            int subsection = Int32.Parse(Model.SubSection);
+                            string subsectionClass = string.Empty;
+                            string defaultImage = Model.ViewMode;
+                            switch (subsection)
+                            {
+                                case 1:
+                                    subsectionClass = "J1";
+                                    break;
+                                case 2:
+                                    subsectionClass = "J2";
+                                    break;
+                                case 3:
+                                    subsectionClass = "M";
+                                    break;
+                                default:
+                                    subsectionClass = "M";
+                                    break;
+                            };
+                        }
+                        <div class="BookIcon_Wrapper">
+                            <div class="BookIcon_Container @Model.ViewMode @subsectionClass">
+                                <div class="BookIcon_Border">
+                                    <div class="BookIcon @subsectionClass @defaultImage">
+                                        <img alt="" src="@Model.Thumbnail3" style="visibility:hidden;" />
+                                        <img alt="" src="@backcoverpath" />
+                                    </div>
+                                </div>
+                                <div style="transform: rotate(-90deg);transform-origin: left top 0;position: absolute;top: calc(50% + 44px);width:88px;text-align:center; left: 4px;font-family:Quicksand-Bold;font-size:14px;color:white">@Model.SubSectionName.ToUpper()</div>
+                            </div>
+                            <div class="BookButtonContainer">
+                                @{
+
+                                    if (Model.HasReadAloud)
+                                    {
+                                        <div class="readAllwedIcon"><img src="~/Content/Images/read_aloud.png" /></div>
+                                    }
+                                    else
+                                    {
+                                        <div class="readAllwedIcon"><img src="~/Content/Images/read_aloud.png" style="visibility:hidden" /></div>
+                                    }
+                                }
+                                @{
+
+                                    if (Model.HasAnimation)
+                                    {
+                                        <div class="animationIcon"><img src="~/Content/Images/animation.png" /></div>
+                                    }
+                                    else
+                                    {
+                                        <div class="animationIcon"><img src="~/Content/Images/animation.png" style="visibility:hidden" /></div>
+                                    }
+                                }
+                                @{
+
+                                    if (Model.HasActivity)
+                                    {
+                                        if (Model.IsActivityDone)
+                                        {
+                                            <div class="activityIcon"><img src="~/Content/Images/activity_complete.png" /></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="activityIcon"><img src="~/Content/Images/activity.png" /></div>
+                                        }
+                                    }
+
+                                }
+                                @{
+                                    if (Int32.Parse(Model.Rating.AverageRating) != 0)
+                                    {
+                                        <div class="ratingIcon" style="display: flex;align-items:center;">
+                                            <div>@Model.Rating.AverageRating</div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="ratingIcon blank"><img src="~/Content/Images/rating.png" /></div>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="BookReview_Container" style="display:none">
+                <div>
+                    <div class="BookCompletedMsg_Container"><div id="revCompletedMsg">Yay! You finished a book!</div></div>
+                    <div class="BookReviewQuestion_Wrapper" id="questionWrapper">
+                        <div id="questionContainer">
+                            <div id="questionArea">
+
+                            </div>
+                            <div id="question_description" class="QuestionDescription">
+                                <div id="WordCountWrapper">Current Letter Count: <span id="word_Count"></span></div>
+                                <div id="WordLimitWrapper">Maximum Letter Limit: <span id="word_Limit">1000</span></div>
+                            </div>
+                        </div>
+                        <div id="ratingContainer" style="display:none">
+                            @*<div id="rating_HeaderText">How much will you rate this book?</div>*@
+                            @*<div id="rating_Box">*@
+                            <div id="rating_5">
+                                <div class="Ratings"><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div></div>
+                                <div class="RatingsText">It's one of the best book I've read!</div>
+                            </div>
+                            <div id="rating_4">
+                                <div class="Ratings"><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div><div></div></div>
+                                <div class="RatingsText">I loved the book</div>
+                            </div>
+                            <div id="rating_3">
+                                <div class="Ratings"><div class="Completed"></div><div class="Completed"></div><div class="Completed"></div><div></div><div></div></div>
+                                <div class="RatingsText">I liked the book</div>
+                            </div>
+                            <div id="rating_2">
+                                <div class="Ratings"><div class="Completed"></div><div class="Completed"></div><div></div><div></div><div></div></div>
+                                <div class="RatingsText">I found the book okay</div>
+                            </div>
+                            <div id="rating_1">
+                                <div class="Ratings"><div class="Completed"></div><div></div><div></div><div></div><div></div></div>
+                                <div class="RatingsText">I didn't like the book</div>
+                            </div>
+                            @*</div>*@
+                        </div>
+                    </div>
+                    <div class="BookReview_Footer" style="display:flex;align-items:center">
+                        <div style="width:50%"><div id="skip_Text" class="SkipText">SKIP, I'LL DO THIS LATER</div><div id="btn_Back" class="BookReviewButton">BACK</div></div>
+                        <div style="width:50%;text-align:right"><button id="btn_Next" class="BookReviewButton">NEXT</button><div id="btn_Done" class="BookReviewButton">DONE</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="commonmodal">
+        <div class="modal-content">
+            <p id="Poptext"></p>
+            <div id="popupbuttoncontainer">
+                <input type="button" value="" id="NotOkbtn" class="Okbtn" />
+                <input type="button" value="" id="Okbtn" class="Okbtn" onclick="closeCommonPopup();" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>

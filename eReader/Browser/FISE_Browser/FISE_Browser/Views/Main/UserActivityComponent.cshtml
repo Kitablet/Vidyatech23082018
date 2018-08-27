@@ -1,0 +1,181 @@
+﻿@model FISE_Browser.Models.UACViewModel
+@{
+    string avatarImage = Model.UserData.AvatarImage;
+    avatarImage = avatarImage.Replace("#size#", "63X63");
+    string totalhour = string.IsNullOrEmpty(Model.UserData.UserDetails.TotalHourSpentOnReading) ? Model.UserData.UserDetails.TotalHourSpentOnReading.Trim() : Model.UserData.UserDetails.TotalHourSpentOnReading;
+    string time = string.Empty;
+    if (!string.IsNullOrEmpty(totalhour))
+    {
+        string[] Time = totalhour.Split(':');
+        if (Time.Length == 3)
+        {
+            time = String.Format("{0:00}", Time[0]) + ":" + String.Format("{0:00}", Time[1]);
+        }
+        else
+        {
+            if (Time.Length == 1)
+            {
+                int minutes = Int32.Parse(Time[0]);
+                time = String.Format("{0:00}", ((int)minutes / 60)) + ":" + String.Format("{0:00}", ((int)minutes % 60));
+            }
+            else
+            {
+                time = "00:00";
+            }
+        }
+    }
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script>
+    $(document).ready(function () {
+        //var imgElement = document.getElementsByClassName("actualImage")[0];
+        //if (imgElement.complete) {
+        //    imgElement.className += " show-actual-image";
+        //}
+    });
+</script>
+<div id="UserActivityComponent" class="collapsed">
+
+    <div class="AvatarRow row">
+        <div class="cell">
+            <img src="@avatarImage" id="AvatarImage" />
+        </div>
+        <div class="cell" style="padding: 15px 5px;">
+            <p id="FirstName">@Model.UserData.FirstName</p>
+            <p id="LastName">@Model.UserData.LastName</p>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+        
+            @if (Model.ComponentData.currentBookId != 0)
+            {
+                string className = string.Empty;
+                string classNameForBookmark = string.Empty;
+                string classNameForViewMode = string.Empty;
+                string defaultImage = string.Empty;
+                switch (Model.ComponentData.subsectionId)
+                {
+                    case 1:
+                        classNameForBookmark = "bookmark1";
+                        className = "J1Border";
+                        break;
+                    case 2:
+                        classNameForBookmark = "bookmark2";
+                        className = "J2Border";
+                        break;
+                    case 3:
+                        classNameForBookmark = "bookmark3";
+                        className = "MBorder";
+                        break;
+                    default:
+                        classNameForBookmark = "bookmark3";
+                        className = "MBorder";
+                        break;
+                };
+                if (Model.ComponentData.IsLandscape)
+                { classNameForViewMode = "Landscape"; defaultImage = "Book_landscape_2.png"; }
+                else
+                { classNameForViewMode = "Portrait"; defaultImage = "Book_portrait_2.png"; }
+                <div class="UserBook row">
+                    <div class="bookmark @classNameForBookmark"></div>
+                    <div class="@classNameForViewMode" style="position: relative;">
+                        @if (string.IsNullOrEmpty(Model.ComponentData.imagePath))
+                        {
+                            <img src="~/Content/Images/@defaultImage" class="currentlyReadingBook @classNameForViewMode @className " onclick="OpenBookRead(@Model.ComponentData.currentBookId)" />
+                        }
+                        else
+                        {
+                            <img src="@Model.ComponentData.imagePath" class="currentlyReadingBook @classNameForViewMode @className " onclick="OpenBookRead(@Model.ComponentData.currentBookId)" />
+                        }
+                    </div>
+
+                    <div class="row">
+                        @{
+                            if (Model.ComponentData.hasReadAloud)
+                            {
+                                <div class="smallImages readaloud"></div>
+                            }
+                            else
+                            {
+                                <div class="smallImages readaloud" style="visibility:hidden"></div>
+                            }
+                            if (Model.ComponentData.hasAnimation)
+                            {
+                                <div class="smallImages animation"></div>
+                            }
+                            else
+                            {
+                                <div class="smallImages animation" style="visibility:hidden"></div>
+                            }
+                            if (Model.ComponentData.hasActivity)
+                            {
+                                if (Model.ComponentData.hasActivityDone)
+                                {
+                                    <div class="smallImages activitydone"></div>
+                                }
+                                else
+                                {
+                                    <div class="smallImages activitynotdone"></div>
+                                }
+                            }
+                            else
+                            {
+                                <div class="smallImages activitydone" style="visibility:hidden"></div>
+                            }
+                            if (Model.ComponentData.ratingGiven)
+                            {
+                                <div class="smallImages rated ratingStar">
+                                    <p>@Model.ComponentData.givenRating</p>
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="smallImages unrated ratingStar"></div>
+                            }
+                        }
+                    </div>
+                </div>
+                            }
+                            else
+                            {
+                <div class="UserBook row">
+                    <img src="~/Content/Images/Book_portrait_2.png" />
+                </div>
+                <div style="padding-top: 48px;padding-bottom: 10px;margin-left: 27px;margin-right: 5px;text-align: left;">@Resource.UACBookReadText</div>                          
+            }                        
+                            
+
+    <div class="CountsGrid">
+
+        <div class="row">
+            <div class="cell">
+                <p class="count">@Model.UserData.UserDetails.TotalBookRead</p>
+                <p class="countText">Books<br />Read</p>
+            </div>
+
+            <div class="cell">
+                <p class="count">@Model.UserData.UserDetails.TotalBookRated</p>
+                <p class="countText">Books<br />Rated</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="cell">
+                <p class="count">@Model.UserData.UserDetails.TotalActivitiesCompleted</p>
+                <p class="countText">Activities<br />Completed</p>
+            </div>
+
+            <div class="cell">
+                <p class="count" id="Totalhrspent">@time</p>
+                <p class="countText">Time<br />Spent<br />Reading</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div id="ExpandButton" class="expandCollapse">
+</div>
+<div id="CollapseButton" class="expandCollapse">
+</div>

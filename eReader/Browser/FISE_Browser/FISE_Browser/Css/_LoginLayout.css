@@ -1,0 +1,215 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+    outline: 0 !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+html,
+body {
+    font-family: Quicksand-Regular;
+    min-height: 768px;
+    min-width: 1024px;
+}
+a {
+    display: inline-block;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+a:hover,
+a:visited {
+    color: #333;
+}
+@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('../Css/Fonts/Quicksand-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('../Css/Fonts/Quicksand-Bold.otf') format('opentype');
+}
+.mainContainer {
+    /*max-width: 635px;*/
+    margin: 0 auto;
+    padding: 70px 0;
+    padding-left:300px;
+}
+.kitabletText {
+    font-size: 14px;
+    padding: 20px 0px 0px 0px;
+    font-family: Quicksand-Bold;
+}
+.avatarImg {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-left: 7px;
+    cursor: pointer;
+    border: 3px solid #fff;
+}
+.avatarImg:first-child{
+    margin-left: 0px;
+}
+.active {
+    border: 3px solid #999999;
+}
+.usernameLabel,
+.labelText {
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #333;
+}
+.enterbtn {
+    padding: 17px 22px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border: 2px solid #333;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 33px 0 10px 0;
+    font-family: Quicksand-Bold;
+    cursor:pointer;
+    /*min-width: 97px;*/
+}
+.inputField {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #333;
+    display: block;
+    padding: 10px;
+    font-family: Quicksand-Regular;
+}
+#LoginEnvironment {
+    width: 420px;
+    position: absolute;
+    left: 300px;
+}
+.errorLabel {
+    height: 20px;
+    text-align: right;
+    font-size: 14px;
+    display: block;
+}
+.InputFieldDiv {
+    width: 50%;
+    display: block;
+}
+.links {
+    font-family: Quicksand-Bold;
+    font-size: 14px;
+    color: #333;
+    margin: 5px 0;
+}
+::-webkit-input-placeholder {
+    color: #333333;
+}
+::-moz-placeholder {
+    color: #333333;
+}
+:-ms-input-placeholder {
+    color: #333333;
+}
+:-moz-placeholder {
+    color: #333333;
+}
+
+
+
+
+/***************************************/
+/* CommonPopup, Forgot Password Popup  */
+/*         Forgot Username Popup       */
+/***************************************/
+
+/*Popup Black Overlay*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*For Popup*/
+.flex {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+.modal-content {
+    background-color: #14B4B4;
+    margin: auto;
+    padding: 20px;
+    border: none;
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 10px;
+    z-index: 3;
+}
+.modal-content .inputField {
+    background-color: transparent;
+}
+.forgotPassword.modal-content,
+.forgotId.modal-content {
+    height: 200px;
+}
+.commonpopup.modal-content {
+    height: 150px;
+}
+/*Ok button of common popup*/
+#OkayBtn {
+    color: #fff;
+    border: 2px solid #fff;
+}
+/*Text of common popup*/
+#CommonPopupText {
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+#forgotIdInput,
+#passwordIdInput {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+#forgotIdInput::-webkit-input-placeholder,
+#passwordIdInput::-webkit-input-placeholder {
+    color: #fff;
+}
+#forgotIdInput::-moz-placeholder,
+#passwordIdInput::-moz-placeholder {
+    color: #fff;
+}
+#forgotIdInput:-ms-input-placeholder,
+#passwordIdInput:-ms-input-placeholder {
+    color: #fff;
+}
+#forgotIdInput:-moz-placeholder,
+#passwordIdInput:-moz-placeholder {
+    color: #fff;
+}
+#RecoverId,
+#RecoverIdCancel1,
+#Recoverpassword,
+#RecoverIdCancel2 {
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+/***************************************/
+/* CommonPopup, Forgot Password Popup  */
+/*         Forgot Username Popup       */
+/***************************************/

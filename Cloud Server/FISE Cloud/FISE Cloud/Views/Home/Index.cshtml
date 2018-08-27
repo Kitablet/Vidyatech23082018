@@ -1,0 +1,49 @@
+﻿@model FISE_Cloud.Models.School.Dashboards
+@{
+    ViewBag.Title = "Home Page";
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+    ViewBag.HeaderPageTitle = "Home";
+}
+
+@if (Html.MvcSiteMap().SiteMap.CurrentNode == Html.MvcSiteMap().SiteMap.RootNode)
+{
+    @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+}
+<div class="row">
+
+    @if (_Userdata != null && _Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <div id="divPartial">
+            @Html.Action("SuperAdminDashboard", "SuperAdmin")
+        </div>
+    }
+
+    else if (_Userdata != null && _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <div id="divPartial">
+            @Html.Action("SuperAdminDashboard", "SuperAdmin")
+        </div>
+    }
+    else if (_Userdata != null && _Userdata.Role.Equals("parent", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <div id="divPartial">
+            @Html.Action("Parentdashboard", "Parent", new { pageindex = 1, pagesize = 10 })
+        </div>
+    }
+    else if (_Userdata != null && _Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <div id="divPartial">
+        </div>
+    }
+    else
+    {
+       
+    }
+
+</div>

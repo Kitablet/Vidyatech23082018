@@ -1,0 +1,415 @@
+﻿@using FISE_Cloud.Models.School
+@model School
+
+@{
+    ViewBag.Title = "Create School";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.HeaderPageTitle = "Schools";
+}
+<link href="~/Content/select2.min.css?v=1" rel="stylesheet" />
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="row title-section">
+        <div>
+            @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+            {
+                @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+            }
+
+        </div>
+
+
+        <h4 class="page-title">@Resource.CreateSchool_title</h4>
+
+    </div>
+    <hr />
+    if (!ViewData.ModelState.IsValid)
+    {
+        <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+    }
+    <div class="form-horizontal">
+        @if (!String.IsNullOrEmpty(Model.Result))
+        {
+            @Model.Result
+            <br />
+                <br />
+                <a class="btn btn-default btn-rect" href="@Url.RouteUrl("SchoolList")">@Resource.btn_Continue</a>
+        }
+
+        else
+        {
+            <div class="form-group col-xs-12" style="display:none">
+                @Html.LabelFor(model => model.SchoolId, "ID:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.Label("System generated", new { @class = "control-label prefilled_text", @style = "text-transform: capitalize;" })
+
+                </span>
+            </div>
+
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.SchoolName, "School Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.SchoolName, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.SchoolName, "", new { @class = "" })
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.AddressLine1, "Address:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.AddressLine1, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.AddressLine1, "", new { @class = "" })
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+                @Html.LabelFor(model => model.AddressLine2, "Address (optional):", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.AddressLine2, new { htmlAttributes = new { @class = "" } })
+                    @Html.ValidationMessageFor(model => model.AddressLine2, "", new { @class = "" })
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.City, "City:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.DropDownListFor(model => model.City, Enumerable.Empty<SelectListItem>(), "City")
+                    <label id="City-error" class="error" for="City" style="display:none">@Resource.UserRegistration_CityReqError</label>
+                    @Html.ValidationMessageFor(model => model.City)
+                </span>
+            </div>
+
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.State, "State:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr" style="padding-top: 7px;">
+                    <span id="spnState">
+                        @Html.DisplayFor(model => model.State)
+                    </span>
+                    @Html.ValidationMessageFor(model => model.State)
+                    @Html.HiddenFor(model => model.State)
+                </span>
+            </div>
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.Country, "Country:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr" style="padding-top: 7px;">
+                    <span id="spnCountry">
+                        @Html.DisplayFor(model => model.Country)
+                    </span>
+                    @Html.ValidationMessageFor(model => model.Country)
+                    @Html.HiddenFor(model => model.Country)
+                </span>
+            </div>
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.PinCode, "Pin:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @if (Model.PinCode == 0)
+                    {
+                        @Html.TextBoxFor(model => model.PinCode, new { @class = "", @Value = "" })
+                    }
+                    else
+                    {
+                        @Html.EditorFor(model => model.PinCode, new { htmlAttributes = new { @class = "" } })
+                    }
+                    @Html.ValidationMessageFor(model => model.PinCode)
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.PrincipalName, "Principal name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2 reposition-validationerr">
+                    @Html.EditorFor(model => model.PrincipalName, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.PrincipalName, "", new { @class = "" })
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.PrincipalEmail, "Principal Email ID:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.EditorFor(model => model.PrincipalEmail, new { htmlAttributes = new { @class = "" } })
+
+                    @Html.ValidationMessageFor(model => model.PrincipalEmail, "", new { @class = "" })
+                </span>
+            </div>
+
+            <div class="form-group col-xs-12">
+
+                @Html.LabelFor(model => model.PhoneNumber, "School Phone:", htmlAttributes: new { @class = "control-label col-xs-3" })
+                <span class="col-xs-9 inline2">
+                    @Html.TextBoxFor(model => model.PhoneNumber, new { @class = "" })
+
+                    @Html.ValidationMessageFor(model => model.PhoneNumber, "", new { @class = "" })
+                </span>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-xs-offset-3 buttons">
+                    <input type="submit" class="btn btn-default btn-rect" name="send-email" value="@Resource.Btn_Save" id="btnsubmit" disabled />
+                    <input type="button" class="btn btn-default btn-rect" name="cancel" value="@Resource.Btn_Cancel" onclick="window.location='@Url.RouteUrl("SchoolList")'" />
+                </div>
+            </div>
+
+        }
+    </div>
+
+}
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+
+    #City-error {
+        position: absolute;
+        top: 32px;
+    }
+</style>
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.js?v=1"></script>
+    <script src="~/Scripts/Cities.js?v=1"></script>
+    <script src="~/Scripts/select2.min.js?v=1"></script>
+    <script>
+        function fnLoadCities(city_id, selecteditem) {
+            var cities = getcities();
+            var select_cities = document.getElementById(city_id);
+            select_cities.length = 0;
+            select_cities.selectedIndex = 0;
+            select_cities.options[0] = new Option('--Select City--', '');
+            var citytemp = cities;
+            var citieskeys = getSortedKeys(citytemp);
+            $(citieskeys).each(function (keyindex) {
+                var node = document.createElement("optgroup");
+                node.setAttribute("label", citieskeys[keyindex]);
+                var options = "";
+                $(cities[citieskeys[keyindex]]).each(function (index) {
+                    options += "<option value='" + cities[citieskeys[keyindex]][index].city + "' data-state='" + cities[citieskeys[keyindex]][index].state + "' data-country='" + cities[citieskeys[keyindex]][index].country + "'";
+                    if (selecteditem == cities[citieskeys[keyindex]][index].city) {
+                        options += "selected=true";
+                        $("#@Html.FieldIdFor(model => model.Country)").val(cities[citieskeys[keyindex]][index].country)
+                        $("#@Html.FieldIdFor(model => model.State)").val(cities[citieskeys[keyindex]][index].state)
+                        $("#spnState").html(cities[citieskeys[keyindex]][index].state);
+                        $("#spnCountry").html(cities[citieskeys[keyindex]][index].country);
+                    }
+                    options += ">" + cities[citieskeys[keyindex]][index].city + "</option>"
+                });
+                node.innerHTML = options;
+                select_cities.appendChild(node);
+            });
+        }
+        $('#@Html.FieldIdFor(model => model.City)').on('select2:select', function (evt) {
+            $("#spnState").html("");
+            $("#spnCountry").html("");
+            //$("#City-error").css("display", "none");
+            var state = $('#@Html.FieldIdFor(model => model.City)').find(":selected").attr("data-state");
+            var country = $('#@Html.FieldIdFor(model => model.City)').find(":selected").attr("data-country");
+            $("#@Html.FieldIdFor(model => model.State)").val(state);
+            $("#@Html.FieldIdFor(model => model.Country)").val(country);
+            $("#spnState").html(state);
+            $("#spnCountry").html(country);
+            var len = $('#AddressLine2').val().trim().length > 0 ? 7 : 6;
+            if (($('.valid').length > 0 && $('.valid').length < len) || $('input.error').length > 0 || $('#City').val() == '')
+                $('#btnsubmit').attr('disabled', true);
+            else
+                $('#btnsubmit').attr('disabled', false);
+        });
+        function getSortedKeys(obj) {
+            var keys = []; for (var key in obj) keys.push(key);
+            return keys.sort();
+        }
+        $(document).ready(function () {
+            fnLoadCities("@Html.FieldIdFor(model => model.City)", "@Model.City");
+            $("#@Html.FieldIdFor(model => model.City)").select2();
+
+            $('#PinCode_,#PhoneNumber_').on('keypress', function (event) {
+
+                var _element = $(this), keyCode = event.keyCode || event.which, keysAllowed = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 0];
+
+                if (event.charCode == 8 || event.charCode == 0) {
+                    return true;
+                }
+                else if ($.inArray(keyCode, keysAllowed) === -1 && event.ctrlKey === false)
+                { event.preventDefault(); }
+            });
+
+            $('#SchoolName_').keypress(function () {
+                var regex = new RegExp("^[a-zA-Z0-9]+$");
+                var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                if (!regex.test(key) && event.charCode != 46 && event.charCode != 44 && event.charCode != 39 && event.charCode != 45 && event.charCode != 95 && event.charCode != 32 && event.charCode != 38) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+
+            $('#PrincipalName_').keypress(function () {
+                var regex = new RegExp("^[a-zA-Z0-9]+$");
+                var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                if (!regex.test(key) && event.charCode != 46 && event.charCode != 39 && event.charCode != 32) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+
+            $('#AddressLine1_,#AddressLine2_').keypress(function () {
+                var regex = new RegExp("^[a-zA-Z0-9]+$");
+                var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+
+                if (!regex.test(key) && event.charCode != 46 && event.charCode != 44 && event.charCode != 39 && event.charCode != 45 && event.charCode != 95 && event.charCode != 64 && event.charCode != 58 && event.charCode != 32 && event.charCode != 47 && event.charCode != 35 && event.charCode != 38) {//event.charCode != 13 && event.charCode != 46 && event.charCode != 0 && event.which != 95 && event.which != 64) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+
+            $.validator.addMethod('validateemail', function (value, element) {
+                var expr = /^[a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+([.][a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                return expr.test(value);
+            }, '@Resource.UserCreation_InvalidEmail');
+
+            $.validator.addMethod('validateschoolname', function (value, element) {
+                var expr = /^[ A-Za-z0-9-._',&]{1,255}$/;
+                return expr.test(value);
+            }, '@Resource.CreateSchool_SchoolNameLength');
+
+            $.validator.addMethod('validateprincipalname', function (value, element) {
+                var expr = /^[ A-Za-z0-9.']{1,50}$/;
+                return expr.test(value);
+            }, '@Resource.UserRegistration_PrincipalName_LengthandnospecialcharValidation');
+
+            $.validator.addMethod('validateaddress', function (value, element) {
+                var expr = /^[ A-Za-z0-9-._@@:',#/&]{1,255}$/;
+                return expr.test(value);
+            }, '@Resource.Address_Length');
+            $.validator.addMethod('validateaddress1', function (value, element) {
+                var expr = /^[ A-Za-z0-9-._@@:',#/&]{0,255}$/;
+                return expr.test(value);
+            }, '@Resource.Address_Length');
+
+            var thevalidator = $.data($('form')[0], 'validator');
+            $("input").on("input blur change keyup", function () {
+                $(this).valid();
+                var len = $('#AddressLine2').val().trim().length > 0 ? 7 : 6;
+                if (($('.valid').length > 0 && $('.valid').length < len) || $('input.error').length > 0 || $('#City').val() == '')
+                    $('#btnsubmit').attr('disabled', true);
+                else
+                    $('#btnsubmit').attr('disabled', false);
+            });
+
+            $(".select2,select").on("blur change keyup", function () {
+                var len = $('#AddressLine2').val().trim().length > 0 ? 7 : 6;
+                if ($('#City').val().trim() == '')
+                    $('#City-error').show();
+                else
+                { $('#City-error').hide(); }
+
+                if (($('.valid').length > 0 && $('.valid').length < len) || $('input.error').length > 0 || $('#City').val() == '')
+                    $('#btnsubmit').attr('disabled', true);
+                else
+                    $('#btnsubmit').attr('disabled', false);
+            });
+        });
+        $("form").validate({
+            rules: {
+                SchoolName: {
+                    required: true,
+                    rangelength: [1, 255],
+                    validateschoolname: true
+                },
+                AddressLine1: {
+                    required: true,
+                    rangelength: [1, 255],
+                    validateaddress: true
+                },
+                AddressLine2: {
+                    rangelength: [0, 255],
+                    validateaddress1: true
+                },
+                City: {
+                    required: true
+                },
+                PinCode: {
+                    required: true,
+                    digits: true,
+                    rangelength: [6, 9]
+                },
+                PrincipalEmail: {
+                    rangelength: [1, 100],
+                    required: true,
+                    validateemail: true
+                },
+                PrincipalName: {
+                    rangelength: [1, 50],
+                    required: true,
+                    validateprincipalname: true
+                },
+                PhoneNumber: {
+                    rangelength: [5, 15],
+                    required: true,
+                    digits: true
+                }
+            },
+
+            messages: {
+                SchoolName: {
+                    required: "@Resource.CreateSchool_SchoolNameReqError",
+                    rangelength: "@Resource.CreateSchool_SchoolNameLength"
+                },
+                AddressLine1: {
+                    required: "@Resource.UserRegistration_AddressReqError",
+                    rangelength: "@Resource.Address_Length"
+                },
+                City: {
+                    required: "@Resource.UserRegistration_CityReqError"
+                },
+                PinCode: {
+                    required: "@Resource.UserRegistration_PincodeReqError",
+                    rangelength: "@Resource.UserCreation_InvalidPincodeError"
+                },
+                Email: {
+                    required: "@Resource.UserCreation_EmailReqError",
+                    rangelength: "@Resource.User_EmailLength"
+                },
+                PrincipalName: {
+                    required: "@Resource.UserRegistration_PrincipalNameReqError",
+                    rangelength: "@Resource.UserRegistration_PrincipalName_LengthandnospecialcharValidation"
+                },
+                PrincipalEmail: {
+                    required: "@Resource.UserCreation_PrincipalEmailReqError",
+                    rangelength: "@Resource.User_EmailLength"
+                },
+                PhoneNumber:
+                    {
+                        required: "@Resource.CreateSchool_PhoneNoReqError",
+                        rangelength: "@Resource.CreateSchool_PhoneNoMinMaxLength"
+                    }
+            },
+            submitHandler: function (form) {
+                $(form).find("input[type='submit']").attr('disabled', true);
+                $(form).find("input[type='button']").attr('disabled', true);
+                form.submit();
+            },
+            invalidHandler: function (event, validator) {
+
+            }
+        });
+    </script>
+
+}

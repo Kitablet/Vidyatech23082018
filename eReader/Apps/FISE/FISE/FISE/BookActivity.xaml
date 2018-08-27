@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Kitablet;assembly=Kitablet"
+             xmlns:button="clr-namespace:Kitablet.ViewModels;assembly=Kitablet"
+             x:Class="Kitablet.BookActivity">
+  <ContentPage.Content>
+    <Grid x:Name="ActivityPageLayout" RowSpacing="0" ColumnSpacing="0" HorizontalOptions="Fill" VerticalOptions="Fill">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+
+      <local:ActivityHybridWebView x:Name="HelpWebView" Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill"> </local:ActivityHybridWebView>
+      
+      <button:MyButton HorizontalOptions="End" VerticalOptions="Start" Margin="20,15" Image="{DynamicResource CloseImage}" x:Name="closeBtn" BackgroundColor="Transparent" Clicked="closeBtn_Clicked">
+        <button:MyButton.WidthRequest>
+          <local:OnPlatform2 x:TypeArguments="x:Double" Android="46" Windows="46" Win8X="61" iOS="46"/>
+        </button:MyButton.WidthRequest>
+        <button:MyButton.HeightRequest>
+          <local:OnPlatform2 x:TypeArguments="x:Double" Android="37" Windows="37" Win8X="52" iOS="37"/>
+        </button:MyButton.HeightRequest>
+        <button:MyButton.BorderColor>
+          <local:OnPlatform2 x:TypeArguments="Color" Win8X="Transparent"/>
+        </button:MyButton.BorderColor>
+      </button:MyButton>
+
+      <local:PageLoader Grid.Row="0" Grid.Column="0" x:Name="Page_Loader" IsVisible="False"></local:PageLoader>
+    </Grid>    
+  </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,58 @@
+﻿@model FISE_Cloud.Models.School.ElibraryAdminDashboard
+@{
+    ViewBag.Title = "Elibrary Admin Dashboard";
+}
+<style>
+    .circle {
+        background: url('/Images/img_school.png') no-repeat;
+        height:230px;
+    }
+    .count{
+        padding-top: 13%;
+        text-align: center;
+    }
+    .align-centre {
+        text-align:center;
+    }
+</style>
+<h4>Elibrary Admin Dashboard</h4>
+<hr />
+
+    <div class="row">
+        <div class="col-xs-12 col-md-4 circle">
+            <div class="row">
+                <a href="@Url.Action("BooksList","Books")">
+                    <div class="col-xs-12 count">
+                        @Model.TotalBookCount
+                    </div>
+                    <div class="col-xs-12 align-centre">
+                        Books
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 circle">
+            <div class="row">
+                <a href="@Url.Action("SchoolList","School")">
+                    <div class="col-xs-12 count">
+                        @Model.TotalSchoolCount
+                    </div>
+                    <div class="col-xs-12 align-centre">
+                        Schools
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4 circle">
+            <div class="row">
+                <a href="@Url.Action("StudentList","School")">
+                    <div class="col-xs-12 count">
+                        @Model.TotalStudentCount
+                    </div>
+                    <div class="col-xs-12 align-centre">
+                        Students
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>

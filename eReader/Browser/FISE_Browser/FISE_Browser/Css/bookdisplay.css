@@ -1,0 +1,237 @@
+﻿@font-face {
+    font-family: 'Quicksand-Regular';
+    src: url('Fonts/Quicksand-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Quicksand-Bold';
+    src: url('Fonts/Quicksand-Bold.otf') format('opentype');
+}
+
+* {
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#header {
+    padding: 5px 30px;
+    background-color: rgba(255,255,255,.5);
+    position: absolute;
+    width: calc(100% - 60px);
+    z-index: 1;
+}
+
+#footer {
+    padding: 5px 30px;
+    background-color: rgba(255,255,255,.5);
+    position: absolute;
+    width: calc(100% - 60px);
+    bottom: 0px;
+    font-family: 'Quicksand-Regular';
+    font-size: 20px;
+    /*height: 30px;*/
+    display:table;
+    text-align:center;
+}
+
+.pageno {
+    text-align: center;
+    float: left;
+    max-height:24px;
+    min-height:24px;
+    /*height: 30px;
+    line-height: 30px;*/
+}
+
+#header > div {
+    padding: 5px 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.disabled {
+    opacity: .5;
+}
+
+.active {
+    /*border: solid 2px transparent;*/
+}
+
+.action {
+    margin-left: 30px;
+}
+
+#body {
+    text-align: left;
+    margin: 0 auto;
+    min-height: 768px;
+    min-width: 1024px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(204,204,204);
+}
+
+#previous {
+    position: fixed;
+    top: calc(50% - 5px);
+    left: 0;
+    border: none;
+    background: transparent;
+    z-index: 999;
+}
+
+#next {
+    position: fixed;
+    top: calc(50% - 5px);
+    right: 0;
+    border: none;
+    background: transparent;
+    z-index: 999;
+}
+
+#displayarea {
+    margin: 0 auto;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#page1 {
+    border: 0 none;
+    /*float: left;*/
+    overflow: hidden;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+#page2 {
+    display: none;
+    border: 0 none;
+    /*float: right;*/
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+#pageno1 {
+    float: left;
+}
+
+#pageno2 {
+    float: right;
+}
+
+#loading {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Quicksand-Regular';
+    font-size: 14px;
+}
+
+#next, #previous, .action {
+    cursor: pointer;
+}
+
+#iframecover {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    z-index:9;
+}
+
+.ui-loader {
+    display: none;
+}
+
+#container1 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    margin: 0px auto;
+    padding: 0px;
+    position:relative;
+    
+}
+#pageno {
+margin:auto;
+}
+
+ .commonmodal {
+        display: none;
+        position: fixed;
+        z-index: 10;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: 'Quicksand-Regular';
+    }
+
+        .commonmodal .modal-content {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            background-color: #FC654C;
+            padding: 20px;
+            height: auto;
+            border: none;
+            border-radius: 8px;
+            width: 350px;
+        }
+
+        .commonmodal p {
+            color: #fff;
+            font-size: 18px;
+            padding: 15px 0px;
+            text-align: left;
+            margin: 0;
+        }
+
+    #Closebtn,
+    #Okbtn {
+        outline: none;
+        padding: 18px 22px;
+        background-color: transparent;
+        font-size: 14px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        margin-top: 35px;
+        font-family: Quicksand-Bold;
+        margin: 0 auto;
+        /*display: block;*/
+        color: #fff;
+        border: 2px solid #fff;
+        /*display: table-cell;*/
+        margin: 0 10px;
+    }
+
+    #modelbtn {
+        /*display: table;*/
+        /*width: 56%;*/
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-align: center;
+    }

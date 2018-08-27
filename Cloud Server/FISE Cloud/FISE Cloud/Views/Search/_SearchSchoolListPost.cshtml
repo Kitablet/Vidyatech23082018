@@ -1,0 +1,77 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<School>
+@{
+    var l1 = ((Model.CurrentPageIndex - 1) * Model.PageSize) + 1;
+    var l2 = (Model.CurrentPageIndex * Model.PageSize);
+    if (l2 > @Model.TotalItemCount)
+    {
+        l2 = @Model.TotalItemCount;
+    }
+    var final = l1 + " - " + l2;
+    if (l1 == l2)
+    {
+        final = l1.ToString();
+    }
+    if (@Model.TotalItemCount == 0)
+    {
+        final = (0).ToString();
+    }
+}
+
+<div class="row pager-item">
+    <div class="col-xs-8">
+
+        <select class="pagesize_Dropdown" id="SchoolPageSize">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+        </select>
+        <span class="">Entries Per Page | Showing @final of (@Model.TotalItemCount) school(s)</span>
+
+    </div>
+
+    <div class="col-xs-4">
+
+        @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "spageno", PageSizeBoxId = "SchoolPageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }, new MvcAjaxOptions { UpdateTargetId = "SchoolContainer", HttpMethod = "Post", DataFormId = "searchForm" }).Options(o => o.AddRouteValue("target", "schoollist")).Options(o => o.AddRouteValue("search", ViewBag.search))
+
+    </div>
+</div>
+@foreach (School school in Model)
+{
+    <a class="a_link_list-item" href="@Url.RouteUrl("SchoolHomePage",new { schooluid=school.SchoolUId,pagesize = string.Empty, pageindex = string.Empty })">
+        <div class="row list-item">
+
+
+            <div class="col-xs-12 list-item-name">@school.SchoolName</div>
+            <div class="col-xs-12">
+                <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_ID</span><span>@school.SchoolUId</span></span>
+                <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_Librarians</span><span>@school.SchoolAdminCount </span></span>
+                <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Schoollist_Students</span><span>@school.StudentCount</span></span>
+                <span class="float-right list_content_subdiv_bold">
+                    @if (@school.IsTrashed)
+                    {
+                        @Html.Raw(Resource.Status_Disabled);
+                    }
+                    else if (@school.IsEmailVerified && !@school.IsTrashed)
+                    {
+                        @Html.Raw(Resource.Status_Active);
+                    }
+                    else if (!@school.IsActive)
+                    {
+                        @Html.Raw(Resource.Status_Created);
+                    }
+                    else
+                    {
+                        @Html.Raw(Resource.Status_Created);
+                    }
+                </span>
+            </div>
+        </div>
+    </a>
+}
+
+<div class="row pager-item">
+    @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "spageno", PageSizeBoxId = "SchoolPageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }, new MvcAjaxOptions { UpdateTargetId = "SchoolContainer", HttpMethod = "Post", DataFormId = "searchForm" }).Options(o => o.AddRouteValue("target", "schoollist")).Options(o => o.AddRouteValue("search", ViewBag.search))
+</div>
+

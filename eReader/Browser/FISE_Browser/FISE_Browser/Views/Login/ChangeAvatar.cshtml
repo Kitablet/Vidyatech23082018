@@ -1,0 +1,51 @@
+﻿@model FISE_Browser.Models.AvatarsModel
+@{
+    ViewBag.Title = "Select avatar";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+<link href="~/Css/Login.css" rel="stylesheet" />
+<link href="~/Css/_LoginLayout.css" rel="stylesheet" />
+<div class="mainContainer">
+    <form action="AddEditAvatar">
+
+        <label class="usernameLabel" style="font-family: Quicksand-Bold;padding-bottom: 5px;">@Resource.HiText @ViewData["UserName"]</label>
+        <label class="labelText" style="padding-top: 0px;padding-bottom: 25px;">@Resource.AvatarCompanyLine</label>
+        <div class="avatarImages">
+            @{
+                foreach (var item in Model.Avatars)
+                {
+                    <img src="@item.ImagePath" id="avatar_@item.AvatarId" class="avatarImg" alt="Avatar" onclick="selectAvatar(@item.AvatarId)" />
+                }
+            }
+        </div>
+        <input type="button" value="@Resource.DoneButtonText" id="DoneButton" class="donebtn enterbtn" onclick="ChangeAvatarDoneBtn()" />
+        <input type="hidden" name="AvatarId" id="AvatarId" />
+        <input type="hidden" name="AvatarUrl" id="AvatarUrl" />
+
+    </form>
+</div>
+<script>
+    function selectAvatar(id)
+    {
+        $(".avatarImages").children('img').removeClass("active");
+        $("#avatar_" + id).addClass("active");
+        $('#AvatarId').val(id);
+        $('#AvatarUrl').val($("#avatar_" + id).attr('src'));
+    }
+
+    function ChangeAvatarDoneBtn()
+    {
+        if($('#AvatarId').val().trim() == "" || $('#AvatarId').val().trim() == undefined)
+        {
+            OpenCommonPopup("Select an avatar!");
+        }
+        else {
+            IsSessionTimeOut();
+            if (IsSessionTimeOut1 ==1) {
+                $("form").submit();
+            }
+            else if(IsSessionTimeOut1 ==2)
+                Logout();
+        }
+    }
+</script>

@@ -1,0 +1,47 @@
+﻿
+@using FISE_Cloud.Models.School;
+
+@using Webdiyer.WebControls.Mvc;
+
+@model PagedList<Student>
+<div class="row list_tableHeader">
+    <div class="col-xs-1 col-sm-1">
+        <input type="checkbox" id="chk_select_all" name="select_all" />
+    </div>
+    <div class="col-xs-3 col-sm-3">
+        Student Name
+    </div>
+    <div class="col-xs-3 col-sm-3">
+        SubSection
+    </div>
+    <div class="col-xs-2 col-sm-2">
+        Grade
+    </div>
+    <div class="col-xs-3 col-sm-3">
+        Action
+    </div>
+</div>
+@foreach (Student student in Model)
+{
+    <div class="row list_tableBody">
+        <div class="col-xs-1 col-sm-1">
+            <input class="chkbox" type="checkbox" id="chk_@student.UserId" value="@student.UserId" onclick="StudentsToExport.selectStudent(this, event)" />
+        </div>
+        <div class="col-xs-3 col-sm-3">
+            @student.FirstName
+        </div>
+        <div class="col-xs-3 col-sm-3">
+            @student.SubSection
+        </div>
+        <div class="col-xs-2 col-sm-2">
+            @student.Grade
+        </div>
+        <div class="col-xs-3 col-sm-3">
+            <p><a href="*">Some Link???</a></p>
+        </div>
+
+    </div>
+}
+<div class="pager">
+    @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "pageno", HtmlAttributes = new Dictionary<string, object> { { "style", "float:right" } }, PagerItemTemplate = "&nbsp;{0}" }, new MvcAjaxOptions { UpdateTargetId = "StudentsContainer", HttpMethod = "Post", DataFormId = "searchForm" })
+</div>

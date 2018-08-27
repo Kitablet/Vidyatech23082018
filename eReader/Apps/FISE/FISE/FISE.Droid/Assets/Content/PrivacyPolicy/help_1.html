@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+<body>
+    <div class="accordion">
+        <div class="mainHeading J1Color">
+            Contact Us
+        </div>
+        <div class="accordion-section">
+            <a class="accordion-section-title J1 active" href="#accordion-5">Directly</a>
+            <div id="accordion-5" class="accordion-section-content open">
+                <p>
+					Please write your question here and hit send. Our Support team will respond soon by sending an email to the email id given for this account.
+				</p>
+				<textarea class="contactusText J1ColorBorder"></textarea>
+				<input type="button" class="sendBtn J1ColorButton" value="SEND" onclick="javascript: invokeCSCode(this);" />
+            </div>
+        </div>
+        <div class="accordion-section">
+            <a class="accordion-section-title J1" href="#accordion-4">Through email</a>
+            <div id="accordion-4" class="accordion-section-content">
+                <p>
+					If you would like to send your question over an email, you can write to us at <a href="mailto:support@kitablet.in" target="_top">support@kitablet.in</a>
+				</p>
+				<!-- <textarea class="contactusText J1ColorBorder"></textarea> -->
+				<!-- <input type="button" class="sendBtn J1ColorButton" value="SEND" onclick="javascript: invokeCSCode(this);" /> -->
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="Scripts/jquery-1.11.3.js"></script>
+    <script src="Scripts/script.js"></script>
+    <script>
+        function invokeCSCode(sender) {
+            try {
+				var data = $(sender).prev().val();
+                if (!isEmpty(data.trim())) {
+                    invokeCSharpAction(data.trim());
+                    $(sender).prev().val('');
+                    $(sender).prev().css('height', '32px');
+                    $(sender).css('opacity', '0.5');
+                }
+            }
+            catch (err) { }
+        }
+    </script>
+</body>
+
+</html>

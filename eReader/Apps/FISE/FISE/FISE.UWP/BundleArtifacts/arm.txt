@@ -1,0 +1,5 @@
+MainPackage=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\ARM\Debug\Kitablet.UWP_1.1.9.0_ARM_Debug.appx
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\ARM\Debug\Kitablet.UWP_1.1.9.0_scale-100.appx
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\ARM\Debug\Kitablet.UWP_1.1.9.0_scale-125.appx
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\ARM\Debug\Kitablet.UWP_1.1.9.0_scale-150.appx
+ResourcePack=D:\Tata\FISE Digital Library\Main Branch\EReader\Apps\FISE\FISE\FISE.UWP\bin\ARM\Debug\Kitablet.UWP_1.1.9.0_scale-400.appx

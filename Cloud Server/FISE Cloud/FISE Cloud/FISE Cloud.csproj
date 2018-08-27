@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC2952B1-508C-49B2-AD9A-E0AA09A97906}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FISE_Cloud</RootNamespace>
+    <AssemblyName>FISE_Cloud</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>default</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CaptchaMvc">
+      <HintPath>..\packages\CaptchaMvc.Mvc5.1.5.0\lib\net45-full\CaptchaMvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.1.0.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.1.0\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentValidation, Version=6.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentValidation.6.2.1.0\lib\Net45\FluentValidation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MvcSiteMapProvider, Version=4.6.22.0, Culture=neutral, PublicKeyToken=1923abe4657913cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcSiteMapProvider.MVC5.Core.4.6.22\lib\net45\MvcSiteMapProvider.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MvcSiteMapProvider.WebActivator, Version=4.6.22.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvcSiteMapProvider.MVC5.4.6.22\lib\net45\MvcSiteMapProvider.WebActivator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.0.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Http, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.0.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0.1\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Webdiyer.MvcPager, Version=3.0.2015.802, Culture=neutral, PublicKeyToken=f6872c5a09aed72c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MvcPager\lib\Webdiyer.MvcPager.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease, Version=1.6.5135.21930, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Caching\CacheKey.cs" />
+    <Compile Include="Caching\CacheManager.cs" />
+    <Compile Include="Caching\Extensions.cs" />
+    <Compile Include="Caching\ICacheManager.cs" />
+    <Compile Include="Controllers\BooksController.cs" />
+    <Compile Include="Controllers\CommonController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ParentController.cs" />
+    <Compile Include="Controllers\ReportController.cs" />
+    <Compile Include="Controllers\SchoolAdminController.cs" />
+    <Compile Include="Controllers\SchoolController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
+    <Compile Include="Controllers\SuperAdminController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="CustomResult\FiseHttpUnauthorisedResult.cs" />
+    <Compile Include="Extensions\HtmlExtensions.cs" />
+    <Compile Include="Filters\FISEAuthorizeAttribute.cs" />
+    <Compile Include="Filters\FormValueRequiredAttribute.cs" />
+    <Compile Include="Filters\NoCacheAttribute.cs" />
+    <Compile Include="Filters\RecaptchaFilter.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AddressFields.cs" />
+    <Compile Include="Models\ChangePasswordModel.cs" />
+    <Compile Include="Models\HeaderLinksModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
+    <Compile Include="Models\PagedList.cs" />
+    <Compile Include="Models\PasswordRecoveryConfirmModel.cs" />
+    <Compile Include="Models\PasswordRecoveryModel.cs" />
+    <Compile Include="Models\Reports.cs" />
+    <Compile Include="Models\ReturnStatus.cs" />
+    <Compile Include="Models\School\Book.cs" />
+    <Compile Include="Models\School\EditSchoolModel.cs" />
+    <Compile Include="Models\School\ElibraryAdminDashboard.cs" />
+    <Compile Include="Models\School\School.cs" />
+    <Compile Include="Models\School\StudentandParentInfo.cs" />
+    <Compile Include="Models\School\StudentImportExport.cs" />
+    <Compile Include="Models\SearchResult.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserCreationModel.cs" />
+    <Compile Include="Models\UsernameRecoveryModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\Authentication\FormsAuthenticationService.cs" />
+    <Compile Include="Services\Authentication\IAuthenticationService.cs" />
+    <Compile Include="Services\Authentication\AuthPrincipal.cs" />
+    <Compile Include="Services\ExportImport\ExportManager.cs" />
+    <Compile Include="Services\ExportImport\Help\PropertyByName.cs" />
+    <Compile Include="Services\ExportImport\Help\PropertyManager.cs" />
+    <Compile Include="Services\ExportImport\ImportManager.cs" />
+    <Compile Include="TWebClients\ApiResultEnum.cs" />
+    <Compile Include="TWebClients\ITWebClient.cs" />
+    <Compile Include="TWebClients\Results\ApiResult.cs" />
+    <Compile Include="TWebClients\Results\UserApiResult.cs" />
+    <Compile Include="TWebClients\TWebClient.cs" />
+    <Compile Include="Validators\BaseValidator.cs" />
+    <Compile Include="Validators\School\CreateSchoolValidator.cs" />
+    <Compile Include="Validators\School\EditBookValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\School\EditSchoolValidator.cs" />
+    <Compile Include="Validators\School\ElibraryAdminValidator.cs" />
+    <Compile Include="Validators\School\SchoolAdminValidator.cs" />
+    <Compile Include="Validators\Student\BulkUpdateStudentsValidator.cs" />
+    <Compile Include="Validators\Student\EditStudentValidator.cs" />
+    <Compile Include="Validators\Student\ImportStudentValidator.cs" />
+    <Compile Include="Validators\User\ChangePasswordValidator.cs" />
+    <Compile Include="Validators\User\EditParentValidator.cs" />
+    <Compile Include="Validators\User\EditUserProfileValidator.cs" />
+    <Compile Include="Validators\User\LoginValidator.cs" />
+    <Compile Include="Validators\User\PasswordRecoveryConfirmValidator.cs" />
+    <Compile Include="Validators\User\PasswordRecoveryValidator.cs" />
+    <Compile Include="Validators\User\StudentRegistrationValidator.cs" />
+    <Compile Include="Validators\User\UserCreationValidator.cs" />
+    <Compile Include="Validators\User\UsernameRecoveryValidator.cs" />
+    <Compile Include="Validators\User\UserRegistrationValidator.cs" />
+    <Compile Include="ViewEngines\WebViewPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\custom.css" />
+    <Content Include="Content\Images\accordion_minus.jpg" />
+    <Content Include="Content\Images\accordion_plus.jpg" />
+    <Content Include="Content\Images\arrow-side.png" />
+    <Content Include="Content\Images\book_placeimg.png" />
+    <Content Include="Content\Images\cross_red.png" />
+    <Content Include="Content\Images\export_icon.jpg" />
+    <Content Include="Content\Images\FiseIconsAssets\Blue-tab-corner-top-left.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Blue-tab-corner-top-right.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Book-spine-activities.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Book-spine-rated-activities.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Book-spine-rated.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Book-spine.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Books-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Books-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Breadcrumb-arrow.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Bullet-selected.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Bullet-unselected.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Download-on-colored-bg.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Download-on-white-bg.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Drop-down-arrow-black.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Drop-down-arrow-red.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Drop-down-arrow-white.png" />
+    <Content Include="Content\Images\FiseIconsAssets\E-lib-admins-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\E-lin-admins-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Excel-doc.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Grey-tab-corner-top-left.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Grey-tab-corner-top-right.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Home-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Home-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Logout-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Logout-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Profile-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Profile-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Reports-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Reports-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Schools-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Schools-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Search-active.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Search-inactive.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Star-1.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Star-2.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Star-3.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Star-4.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Star-5.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Tablet.png" />
+    <Content Include="Content\Images\FiseIconsAssets\Tick.png" />
+    <Content Include="Content\Images\FiseIconsAssets\White-tick-box-empty.png" />
+    <Content Include="Content\Images\FiseIconsAssets\White-tick-box-ticked.png" />
+    <Content Include="Content\Images\Grey_star.png" />
+    <Content Include="Content\Images\home.png" />
+    <Content Include="Content\Images\home_selected.png" />
+    <Content Include="Content\Images\icon2.png" />
+    <Content Include="Content\Images\icon2_selected.png" />
+    <Content Include="Content\Images\icon3.png" />
+    <Content Include="Content\Images\icon4.png" />
+    <Content Include="Content\Images\icon4_selected.png" />
+    <Content Include="Content\Images\icon_add.png" />
+    <Content Include="Content\Images\icon_add2.png" />
+    <Content Include="Content\Images\icon_audio.png" />
+    <Content Include="Content\Images\icon_edit.png" />
+    <Content Include="Content\Images\icon_play.png" />
+    <Content Include="Content\Images\img_school.png" />
+    <Content Include="Content\Images\KitabletSignature.jpg" />
+    <Content Include="Content\Images\kitablet_logo_2.png" />
+    <Content Include="Content\Images\Line.png" />
+    <Content Include="Content\Images\loading.gif" />
+    <Content Include="Content\Images\logout.png" />
+    <Content Include="Content\Images\logout_selected.png" />
+    <Content Include="Content\Images\Nonunique.png" />
+    <Content Include="Content\Images\profile.png" />
+    <Content Include="Content\Images\profile_selected.png" />
+    <Content Include="Content\Images\questionmark.png" />
+    <Content Include="Content\Images\search.png" />
+    <Content Include="Content\Images\search_selected.png" />
+    <Content Include="Content\Images\selectArrow.png" />
+    <Content Include="Content\Images\selectedArrow_book.png" />
+    <Content Include="Content\Images\Unique.png" />
+    <Content Include="Content\select2.min.css" />
+    <Content Include="Content\selectArrow_Red1.png" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Mvc.sitemap" />
+    <Content Include="Content\Importtemplate\students.xlsx" />
+    <Content Include="fonts\Quicksand-Bold.otf" />
+    <Content Include="fonts\Quicksand-Regular.otf" />
+    <Content Include="fonts\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto-Bold.ttf" />
+    <Content Include="fonts\Roboto-Light.ttf" />
+    <Content Include="fonts\Roboto-Medium.ttf" />
+    <Content Include="fonts\Roboto-Regular.ttf" />
+    <Content Include="fonts\Roboto-Thin.ttf" />
+    <Content Include="Content\Importtemplate\GenerateCredentials.xlsx" />
+    <None Include="MvcSiteMapSchema.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\PublishProfiles\FISECloud.pubxml" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Chart.bundle.min.js" />
+    <Content Include="Scripts\charts_loader.js" />
+    <Content Include="Scripts\Cities.js" />
+    <Content Include="Scripts\countries.js" />
+    <Content Include="Scripts\CreateDonut.js" />
+    <Content Include="Scripts\d3.min.js" />
+    <Content Include="Scripts\d3.v3.min.js" />
+    <Content Include="Scripts\d3pie.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.form.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\MvcPager.js" />
+    <Content Include="Scripts\publiclist.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.js" />
+    <Content Include="Scripts\respond.matchmedia.addListener.min.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\select2.min.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\User\ChangePassword.cshtml" />
+    <Content Include="Views\User\PasswordRecovery.cshtml" />
+    <Content Include="Views\User\PasswordRecoveryConfirm.cshtml" />
+    <Content Include="Views\User\UserRegistration.cshtml" />
+    <Content Include="Views\School\CreateSchool.cshtml" />
+    <Content Include="Views\School\EditSchool.cshtml" />
+    <Content Include="Views\User\UserValidation.cshtml" />
+    <Content Include="Views\User\UserRegistrationForm.cshtml" />
+    <Content Include="Views\User\RegisterResult.cshtml" />
+    <Content Include="Views\User\StudentRegistration.cshtml" />
+    <Content Include="Views\User\UserCreationForm.cshtml" />
+    <Content Include="Views\School\EditStudent.cshtml" />
+    <Content Include="Views\School\AddNewStudents.cshtml" />
+    <Content Include="Views\Books\BooksList.cshtml" />
+    <Content Include="Views\SuperAdmin\ElibraryAdminList.cshtml" />
+    <Content Include="Views\Books\EditBooksMetadata.cshtml" />
+    <Content Include="Views\SuperAdmin\EditElibraryAdmin.cshtml" />
+    <Content Include="Views\SuperAdmin\_ElibraryAdminDashboard.cshtml" />
+    <Content Include="Views\SuperAdmin\_SuperAdminDashboard.cshtml" />
+    <Content Include="Views\Parent\_ParentDashboard.cshtml" />
+    <Content Include="Views\Parent\Parent_StudentList.cshtml" />
+    <Content Include="Views\Common\HeaderLinks.cshtml" />
+    <Content Include="Views\School\CreateSchoolAdmin.cshtml" />
+    <Content Include="Views\Parent\_StudentListOfParent.cshtml" />
+    <Content Include="Views\School\_StudentListPost.cshtml" />
+    <Content Include="Views\School\_SchoolListPost.cshtml" />
+    <Content Include="Views\Books\_BooksListPost.cshtml" />
+    <Content Include="Views\SuperAdmin\_ElibraryAdminListPost.cshtml" />
+    <Content Include="Views\School\_SchoolAdminListPost.cshtml" />
+    <Content Include="Views\School\SchoolHomePage.cshtml" />
+    <Content Include="Views\School\StudentandParentInfo.cshtml" />
+    <Content Include="Views\School\SchoolAdminInfo.cshtml" />
+    <Content Include="Views\School\_ParentInfo.cshtml" />
+    <Content Include="Views\SuperAdmin\CreateElibraryAdmin.cshtml" />
+    <Content Include="Views\Common\UnauthorizedAccess.cshtml" />
+    <Content Include="Views\User\UserProfileInfo.cshtml" />
+    <Content Include="Views\Student\_StudentDashboard.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\BootstrapSiteMapPathHelperModel.cshtml" />
+    <Content Include="Views\Books\BookInfo.cshtml" />
+    <Content Include="Views\Search\Search.cshtml" />
+    <Content Include="Views\Search\_SearchStudentListPost.cshtml" />
+    <Content Include="Views\Search\_SearchSchoolAdminListPost.cshtml" />
+    <Content Include="Views\School\SchoolList.cshtml" />
+    <Content Include="Views\User\EditUserProfileInfo.cshtml" />
+    <Content Include="Views\User\UsernameRecovery.cshtml" />
+    <Content Include="Views\School\EditParent.cshtml" />
+    <Content Include="Views\SuperAdmin\ElibraryAdminInfo.cshtml" />
+    <Content Include="Views\School\EditSchoolAdmin.cshtml" />
+    <Content Include="Views\School\_ImportExportStudents.cshtml" />
+    <Content Include="Views\Books\_ExportBooksToExcel.cshtml" />
+    <Content Include="Views\User\_EmailVerificationConfirmation.cshtml" />
+    <Content Include="Views\Search\_SearchBooksListPost.cshtml" />
+    <Content Include="Views\SchoolAdmin\_SchoolAdminStudentsPost.cshtml" />
+    <Content Include="Views\SchoolAdmin\SchoolAdminDashboard.cshtml" />
+    <Content Include="Views\Common\PageNotFound.cshtml" />
+    <Content Include="Views\SchoolAdmin\StudentandParentInfoAdmin.cshtml" />
+    <Content Include="Views\SchoolAdmin\_ParentInfoAdmin.cshtml" />
+    <Content Include="Views\Search\_SearchSchoolListPost.cshtml" />
+    <Content Include="Views\SuperAdmin\RegistrationAndLoginReportFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report2aFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report3aFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report4aFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report5aFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report6aFilter.cshtml" />
+    <Content Include="Views\SuperAdmin\Report7aFilter.cshtml" />
+    <Content Include="Views\Report\ReportsListing.cshtml" />
+    <Content Include="Views\Books\_BookInfo.cshtml" />
+    <Content Include="Views\Report\Report6.cshtml" />
+    <Content Include="Views\Report\_Report6.cshtml" />
+    <Content Include="Views\Report\Report1.cshtml" />
+    <Content Include="Views\Report\_Report1.cshtml" />
+    <Content Include="Views\Report\_Report1ListPost.cshtml" />
+    <Content Include="Views\School\_BulkUpdate.cshtml" />
+    <Content Include="Views\SuperAdmin\_partialReport7b.cshtml" />
+    <Content Include="Views\SuperAdmin\Report7b.cshtml" />
+    <Content Include="Views\Report\Report7.cshtml" />
+    <Content Include="Views\Report\_Report7.cshtml" />
+    <Content Include="Views\Report\_Report7Usage.cshtml" />
+    <Content Include="Views\Report\Report2.cshtml" />
+    <Content Include="Views\Report\Report3.cshtml" />
+    <Content Include="Views\Report\Report4.cshtml" />
+    <Content Include="Views\Report\_Report2.cshtml" />
+    <Content Include="Views\Report\_Report3.cshtml" />
+    <Content Include="Views\Report\Report5.cshtml" />
+    <Content Include="Views\Report\Report8.cshtml" />
+    <Content Include="Views\Report\_Report8.cshtml" />
+    <Content Include="Views\Report\_Report4.cshtml" />
+    <Content Include="Views\Report\_Report2StudentWise.cshtml" />
+    <Content Include="Views\Report\_Report2StudentWise1.cshtml" />
+    <Content Include="Views\Report\_Report5.cshtml" />
+    <Content Include="Views\Report\_Report1ListPost2.cshtml" />
+    <Content Include="Views\Report\_Report1ListPost3.cshtml" />
+    <Content Include="Views\Report\Report1SchoolAdmin.cshtml" />
+    <Content Include="Views\Report\_Report1SchoolAdminList1.cshtml" />
+    <Content Include="Views\Report\_Report1SchoolAdminList2.cshtml" />
+    <Content Include="Views\Report\_Report1SchoolAdminList3.cshtml" />
+    <Content Include="Views\Parent\StudentRegistration.cshtml" />
+    <Content Include="Views\User\PasswordRecoveryConfirmStudent.cshtml" />
+    <Content Include="Views\School\_ImportExportChildren.cshtml" />
+    <Content Include="Views\School\AddNewChildren.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53602</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:53602/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.3.2\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.2\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

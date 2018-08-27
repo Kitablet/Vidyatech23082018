@@ -1,0 +1,329 @@
+﻿@using FISE_Cloud.Models;
+@model Report3
+
+
+@{ var i = 0;
+    var j = 0;
+    var k = 0;
+    int cid = 0;
+    string[] colors = new string[] { "#fb654c", "#14b4b4", "#9da502", "#f3bc1b", "#51cea4", "#538dbb", "#cc76a7", "#ffd4db", "#adcdef" };
+}
+<script src="~/Scripts/d3.min.js?v=1"></script>
+<script src="~/Scripts/d3pie.js?v=1"></script>
+<script src="~/Scripts/CreateDonut.js?v=1"></script>
+<div class="row" id="accordion_group">
+
+    <div class="panel-group" id="filter-result">
+
+        @foreach (var item in Model.SubSection)
+        {
+            i++;
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#@item.Name.GetNormalized()@i" data-parent="#filter-result" class="level-subsection" aria-expanded="@(i==1 ? "true" : "false")">@item.Name</a>
+                </div>
+
+                <div class="panel-collapse @(i == 1 ? "collapse in" : "collapse")" id="@item.Name.GetNormalized()@i" aria-expanded="@(i==1 ? "true" : "false")">
+
+                    <div class="panel-group" id="@item.Name.GetNormalized()@i-Subsection">
+                        @foreach (var item1 in item.Language)
+                        {
+                            k++;
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#@item.Name.GetNormalized()@i-Subsection" href="#@item1.Name.GetNormalized()@i" class="level-language" aria-expanded="@(i==1 && k==1 ? "true" : "false")">@item1.Name</a>
+                                </div>
+                                <div id="@item1.Name.GetNormalized()@i" class="panel-collapse @(i == 1 && k==1 ? "collapse in" : "collapse")" aria-expanded="@(i==1 && k==1 && j==1 ? "true" : "false")">
+                                    <div class="panel-group" id="@item1.Name.GetNormalized()@i-Languagegp">
+                                        @foreach (var item2 in item1.ReportBook)
+                                        {
+                                            j++;
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <a href="#@item2.BookId@j" data-parent="#@item1.Name.GetNormalized()@i-Languagegp" data-toggle="collapse" class="level-booktitle NoChartRendered" onclick="ChartCheck(this);" aria-expanded="@(i==1 && k==1 && j==1 ? "true" : "false")">@item2.Title</a>
+                                                </div>
+                                                <div id="@item2.BookId@j" class="panel-collapse @(i==1 && k==1 && j==1 ? "collapse in" : "collapse") NoChartRendered openchart" data-parent="#@item1.Name.GetNormalized()@i-Languagegp" aria-expanded="@(i==1 && k==1 && j==1 ? "true" : "false")">
+
+                                                    <div class="report-stats-section-double-border row">
+
+                                                        @if (item2.ViewMode.ToLower() == "portrait")
+                                                        {
+                                                            <div class="col-xs-offset-5 col-xs-2 reports_book_img">
+                                                                @if (item2.SubSection.Trim() == "J1")
+                                                                { <div class="book_subsection_colorband colorband_Subsection_Junior1"></div>}
+                                                                else if (item2.SubSection.Trim() == "J2")
+                                                                { <div class="book_subsection_colorband colorband_Subsection_Junior2"></div>}
+                                                                else if (item2.SubSection.Trim() == "M")
+                                                                { <div class="book_subsection_colorband colorband_Subsection_Middle"></div>}
+                                                                <img src="@item2.Thumbnail" alt="@item2.Title" />
+                                                                <div class="row rating_row">
+                                                                    <div>
+
+                                                                        @if (item2.AvgRating == 0)
+                                                                        {
+                                                                            <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(item2.AvgRating, 1).ToString()</span>
+                                                                        }
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="col-xs-offset-5 col-xs-2 reports_book_img_landscape">
+                                                                @*<div>*@
+                                                                @if (item2.SubSection.Trim() == "J1")
+                                                                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior1"></div>}
+                                                                else if (item2.SubSection.Trim() == "J2")
+                                                                { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior2"></div>}
+                                                                else if (item2.SubSection.Trim() == "M")
+                                                                { <div class="book_subsection_colorband_landscape colorband_Subsection_Middle"></div>}
+                                                                <img src="@item2.Thumbnail" alt="@item2.Title" />
+                                                                @*</div>*@
+                                                                <div class="row rating_row">
+                                                                    <div>
+
+                                                                        @if (item2.AvgRating == 0)
+                                                                        {
+                                                                            <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                                                                        }
+                                                                        else
+                                                                        {
+                                                                            <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(item2.AvgRating, 1).ToString()</span>
+                                                                        }
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        }
+                                                        <div class="col-xs-12"><div class="report-stats-count">@Math.Round((double)item2.AvgReadingTime, 1) <span class="mins">@Resource.Reports_mins</span></div></div>
+                                                        <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Report4_AvgTimeSpentReading</div></div>
+                                                        <div class="col-xs-12">
+                                                            @if (item2.Reading.Count() > 0)
+                                                            {
+
+                                                                <div class="col-xs-6 books-read-section">
+                                                                    <div id="bookread_@item2.BookId@item1.Name.GetNormalized()" class="chart chartforrender"></div>
+                                                                </div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="col-xs-6 class_reports_nographdata books-read-section">
+                                                                    <div>@Resource.Reports_NoDataMsg_NoBookReadingDataFound</div>
+                                                                </div>
+                                                            }
+                                                            @if (item2.Rating.Count() > 0)
+                                                            {
+                                                                <div class="col-xs-6">
+                                                                    <div id="bookrating_@item2.BookId@item1.Name.GetNormalized()" class="chart chartforrender"></div>
+                                                                </div>
+                                                            }
+                                                            else
+                                                            {<div class="col-xs-6 class_reports_nographdata">
+                                                                <div>@Resource.Reports_NoDataMsg_NoBookRatingDataFound</div>
+                                                            </div>
+                                                            }
+
+                                                        </div>
+                                                        @if (item2.Activity.Count() > 0)
+                                                        {
+                                                            <div class="col-xs-12"><div class="report-stats-count">@Math.Round((double)item2.AvgActivityTime, 1) <span class="mins">@Resource.Reports_mins</span></div></div>
+                                                            <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Reports_Report3_AvgTimeSpentDoing</div></div>
+                                                            <div class="col-xs-12"><div id="bookactivity_@item2.BookId@item1.Name.GetNormalized()" class="chart chartforrender" style="margin :auto;"></div></div>
+                                                        }
+
+                                                        <script>
+                                                            function CreateTableBookRead() {
+                                                                @{cid = 0;
+                                                                    List<ChartModel> model = new List<ChartModel>();
+                                                                    foreach (var chart in item2.Reading)
+                                                                    {
+                                                                        cid = int.Parse(chart.Name);
+                                                                        cid = cid - 1;
+                                                                        model.Add(new ChartModel() { label = "Gr. "+ chart.Name, value = chart.Count,color=colors[cid] });
+                                                                        //cid++;
+                                                                    }
+                                                        }
+                                                                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model }));
+                                                            }
+
+                                                            function CreateTableBookActivity() {
+                                                                @{
+                                                                    cid = 0;
+                                                                    List<ChartModel> model1 = new List<ChartModel>();
+                                                                    foreach (var chart in item2.Activity)
+                                                                    {
+                                                                        cid = int.Parse(chart.Name);
+                                                                        cid = cid - 1;
+                                                                        model1.Add(new ChartModel() { label = "Gr. " + chart.Name, value = chart.Count, color = colors[cid] });
+                                                                        //cid++;
+                                                                    }
+                                                            }
+                                                                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model1 }));
+                                                            }
+
+                                                            function CreateTableBookRating() {
+                                                                @{cid = 0;
+                                                                    List<ChartModel> model2 = new List<ChartModel>();
+                                                                    foreach (var chart in item2.Rating)
+                                                                    {
+                                                                        model2.Add(new ChartModel() { label = chart.Name+" star", value = chart.Count,color=colors[cid] });
+                                                                        cid++;
+                                                                }
+                                                            }
+                                                                return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  model2 }));
+                                                            }
+
+                                                            var model = CreateTableBookRead();
+                                                            var model1 = CreateTableBookActivity();
+                                                            var model2 = CreateTableBookRating();
+                                                            var FinalContent = {};
+                                                            FinalContent.Content = model.model;
+                                                            FinalContent.HeadTitile = '@item2.ReadComplete';
+                                                            FinalContent.SubTitile = 'Students/read this/book';
+                                                            localStorage.removeItem('bookread_@item2.BookId@item1.Name.GetNormalized()');
+                                                            if (model.model.length > 0)
+                                                                localStorage.setItem("bookread_@item2.BookId@item1.Name.GetNormalized()", JSON.stringify(FinalContent));
+
+                                                            var FinalContent1 = {};
+                                                            FinalContent1.Content = model1.model1;
+                                                            FinalContent1.HeadTitile = '@item2.TotalActivity';
+                                                            FinalContent1.SubTitile = 'Students/completed the/activity';
+                                                            localStorage.removeItem('bookactivity_@item2.BookId@item1.Name.GetNormalized()');
+                                                            if (model1.model1.length > 0)
+                                                                localStorage.setItem("bookactivity_@item2.BookId@item1.Name.GetNormalized()", JSON.stringify(FinalContent1));
+
+                                                            var FinalContent2 = {};
+                                                            FinalContent2.Content = model2.model2;
+                                                            FinalContent2.HeadTitile = '@item2.TotalRating';
+                                                            FinalContent2.SubTitile = 'Ratings/received for/this book';
+                                                            localStorage.removeItem('bookrating_@item2.BookId@item1.Name.GetNormalized()');
+                                                            if (model2.model2.length > 0)
+                                                                localStorage.setItem("bookrating_@item2.BookId@item1.Name.GetNormalized()", JSON.stringify(FinalContent2));
+
+                                                        </script>
+                                                        <div>
+                                                            @if (item2.TotalRead > 0)
+                                                            {
+                                                                <div class="col-xs-12" style="height: 150px;width:300px;position: relative;left: 34%;">
+                                                                    <div style="height:100%;">
+                                                                        <canvas id="halgpi_@item2.BookId@item1.Name.GetNormalized()"></canvas>
+                                                                    </div>
+
+                                                                    <img src='~/Content/Images/Line.png' style="width: 300px; float: left; position: absolute; bottom: -92px; left: 0;" />
+
+                                                                </div>
+                                                                    <script>
+                                                                        var data = {
+                                                                            @{
+                                                                int read = item2.TotalRead - item2.ReadComplete;
+                                                                        }
+                                                                            labels: [
+                                                                "Completed",
+                                                                "Not Completed"
+                                                                            ],
+                                                                            datasets: [
+                                                                                {
+                                                                                    data: [@item2.ReadComplete, @read],
+                                                                                    backgroundColor: [
+                                                                                        "#14B4B4",
+                                                                                        "#CCCCCC",
+                                                                                    ]
+                                                                                }]
+                                                                        };
+                                                                        RenderHalfPi('halgpi_@item2.BookId@item1.Name.GetNormalized()', data);
+
+                                                                    </script>
+
+                                                                    <div class="col-xs-12" style="margin-top:85px;"><div class="report-stats-count">@Html.Raw(@item2.ReadComplete * 100 / (@item2.TotalRead == 0 ? 1 : @item2.TotalRead)) <span>%</span></div></div>
+
+                                                                    <div class="col-xs-12">
+                                                                        @Resource.Report4_StudentsWhoStartedReadingThisBookReadItTillTheEnd
+                                                                    </div>
+
+                                                                    <div class="col-xs-12">
+                                                                        <div class="col-xs-2" style="line-height:25px;">
+                                                                            <div style="width: 10px; height: 10px; background-color: #14B4B4; margin-top: 7px; float: left; "></div>
+                                                                            Completed
+                                                                        </div>
+                                                                        <div class="col-xs-2" style="line-height:25px;">
+                                                                            <div style="width: 10px; height: 10px; background-color: #CCCCCC; margin-top: 7px; float: left; "></div>
+                                                                            Not Completed
+                                                                        </div>
+                                                                    </div>
+    }
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="report-stats-section-double-border row" style="display:none">
+                                                        <div class="book_img">
+
+                                                            <img src="~/Content/Images/book_placeimg.png" alt="@item2.Title" />
+                                                            <div class="row">
+                                                                <div class="col-xs-offset-5 col-xs-2">
+                                                                    @if (@item2.AvgRating == 0)
+                                                                    {
+                                                                        @Html.Raw(Resource.books_NoRating);
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <img class="book_controlicon" src="~/Content/Images/Grey_star.png" />@item2.AvgRating
+                                                                    }
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12"><div class="report-stats-count">54 <span class="mins">@Resource.Reports_mins</span></div></div>
+                                                        <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Report4_AvgTimeSpentReading</div></div>
+
+                                                        <div class="col-xs-12"><div class="report-stats-count">14 <span class="mins">@Resource.Reports_mins</span></div></div>
+                                                        <div class="col-xs-12"><div class="report-stats-count-title">@Resource.Reports_Report3_AvgTimeSpentDoing</div></div>
+
+
+                                                        @Resource.Report4_StudentsWhoStartedReadingThisBookReadItTillTheEnd
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+    }
+                                    </div>
+                                </div>
+                            </div>
+    }
+                    </div>
+                </div>
+            </div>
+    }
+    </div>
+    @if (Model.SubSection.Count.Equals(0))
+    { <div>@Resource.Reports_NoDataFound</div>}
+</div>
+<script>
+    function ChartCheck(e) {
+        setTimeout(function () {
+            var isDone = false;
+            if ($(e).hasClass("NoChartRendered")) {
+                isDone = ReadyCharts(e);
+                if (isDone)
+                    $(this).removeClass('NoChartRendered');
+            }
+        }, 300);
+    }
+
+    function ReadyCharts(e) {
+        var parentid = $(e).attr("data-parent");
+        $(parentid).find('.chartforrender').each(function () {
+            var id = $(this).attr("id");
+            $("#" + id).html("");
+            var content = JSON.parse(localStorage.getItem(id));
+
+            RenderDonutChart(id, content.Content, content.HeadTitile, content.SubTitile);
+        });
+        return true;
+    }
+</script>

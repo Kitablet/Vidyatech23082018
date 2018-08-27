@@ -1,0 +1,199 @@
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\App.xbf
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\MainPage.xbf
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.xr.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.exe
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.pdb
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\resources.pri
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\AppxManifest.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.build.appxrecipe
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\FISE.pdb
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.csprojResolveAssemblyReference.cache
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\App.g.i.cs
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\App.g.cs
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.i.cs
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.cs
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\App.xaml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xaml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\App.xbf
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xbf
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.exe
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.pdb
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.csproj.GenerateResource.Cache
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\priconfig.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\priconfig.xml.intermediate
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\layout.resfiles
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\layout.resfiles.intermediate
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\resources.resfiles
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\resources.resfiles.intermediate
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\pri.resfiles
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\pri.resfiles.intermediate
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\qualifiers.txt
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\qualifiers.txt.intermediate
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
+D:\Xamarin\FISE\FISE\FISE\FISE.Windows\obj\Debug\ProjectArchitectures.txt
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\App.xbf
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\MainPage.xbf
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.xr.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.exe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.pdb
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\resources.pri
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\AppxManifest.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.build.appxrecipe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\FISE.pdb
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.csprojResolveAssemblyReference.cache
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\App.g.i.cs
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\App.g.cs
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.i.cs
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.cs
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\App.xaml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xaml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\App.xbf
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xbf
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.exe
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.pdb
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.csproj.GenerateResource.Cache
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\priconfig.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\priconfig.xml.intermediate
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\layout.resfiles
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\layout.resfiles.intermediate
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\resources.resfiles
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\resources.resfiles.intermediate
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\pri.resfiles
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\pri.resfiles.intermediate
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\qualifiers.txt
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\qualifiers.txt.intermediate
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.pri.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri.xml
+D:\Data_Back\Data\Work\__Tata_Etrust\__Code\Sonali\FISE\FISE\FISE.Windows\obj\Debug\ProjectArchitectures.txt
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.csprojResolveAssemblyReference.cache
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\App.g.i.cs
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\App.g.cs
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.i.cs
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\MainPage.g.cs
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\App.xaml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xaml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\App.xbf
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\MainPage.xbf
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\App.xbf
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\MainPage.xbf
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.xr.xml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.exe
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\FISE.Windows.pdb
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\FISE.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.dll
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\FISE.pdb
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.xml
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.exe
+D:\Code\FISE EReader\FISE\FISE\FISE.Windows\obj\Debug\FISE.Windows.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\App.xbf
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\MainPage.xbf
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.xr.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.exe
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.dll
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.csprojResolveAssemblyReference.cache
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.g.i.cs
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.g.cs
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.g.i.cs
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.g.cs
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.xaml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.xaml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.xbf
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.xbf
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.exe
+D:\Code\FISE EReader\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\App.xbf
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\MainPage.xbf
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.xr.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.exe
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.Windows.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.dll
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\FISE.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.pdb
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\DeviceInfo.Plugin.Abstractions.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Core.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.pri
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Platform.WinRT.Tablet.pri
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Xamarin.Forms.Xaml.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\bin\Debug\Newtonsoft.Json.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.csprojResolveAssemblyReference.cache
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.g.i.cs
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.g.cs
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.g.i.cs
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.g.cs
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\XamlTypeInfo.g.cs
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.xaml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.xaml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\App.xbf
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\MainPage.xbf
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\XamlSaveStateFile.xml
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.exe
+D:\Upendra\FISE - Xaml\FISE\FISE.Windows\obj\Debug\FISE.Windows.pdb

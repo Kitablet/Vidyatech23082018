@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" /> 
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="application/xhtml+xml;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitablet</title>
+    <!--<link rel="stylesheet" href="css/style.css?v=2" />-->
+    <!--<link rel="stylesheet" href="css/responsive.css?v=2" />-->
+    <!--<link rel="stylesheet" href="css/navbar.css?v=2" />-->
+    <!--<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css?v=2" />-->
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <!--<script type="text/javascript" src="js/navbar.js?v=2"></script>-->
+    <script src="Scripts/utils.js"></script>
+    <script>
+        $(document).ready(function () {
+            var OSName = getOSName();
+           // var browserName = getBrowserName();
+            if (OSName == "Windows") {
+                $('.safari').hide();
+            }
+            else if (OSName == "MacOS") {
+                $('.firefox').hide();
+            }
+        });
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Quicksand-Regular';
+            src: url('css/Fonts/Quicksand-Regular.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'Quicksand-Bold';
+            src: url('css/Fonts/Quicksand-Bold.otf') format('opentype');
+        }
+        body {
+            /*background: url("images/login-form-bg.jpg") no-repeat scroll 0 0 / cover rgba(0, 0, 0, 0);*/
+            font-family: Quicksand-Regular;
+            margin-bottom: 0;
+        }
+        .upgrade-container {
+    background: none repeat scroll 0 0 #000000;
+    margin: 150px auto 0;
+    position: relative;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+}
+        .upgrade-container .header {
+    color: #ffffff;
+    padding-top: 20px;
+}
+.upgrade-container .header h2 {
+    font-size: 30px;
+}
+.upgrade-container .browser-list::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+}
+        .upgrade-container .browser-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 20px 0;
+}
+ .upgrade-container .browser-list li {
+    /*float: left;*/
+    display:inline-block;
+    text-align: center;
+    width: 33.33%;
+}
+ .upgrade-container .browser-list li a{
+   text-decoration:none;
+}
+ .upgrade-container .browser-list li a img{
+   border:none;
+}
+        .upgrade-container .browser-list li p {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+  
+          
+    </style>
+    <script type="text/javascript">
+        
+    </script>
+</head>
+<body style="min-width:1024px;">
+    <div id="intro">        
+        <section>
+            <div class="row main-section" style="padding:0"> 
+               <div class="upgrade-container">
+                  <div class="header">
+                    <h3>Sorry, we don't support this browser. Please use one of the following browsers:</h3>
+                  </div>
+                  <div class="body">
+                    <ul class="browser-list">
+                      <li class="chrome">
+                        <a title="Google Chrome" href="http://www.google.com/chrome" target="_blank">
+                          <p>Chrome</p>
+                            <img alt="Chrome" src="Content/Images/upgrade-chrome.png" />
+                        </a>
+                      </li>
+                      <li class="firefox">
+                        <a title="Mozilla Firefox" href="http://www.firefox.com/" target="_blank">
+                          <p>Firefox</p>
+                            <img alt="Firefox" src="Content/Images/upgrade-firefox.png" />
+                       </a>
+                      </li>
+                      <li class="safari">
+                        <a title="Apple Safari" href="http://www.apple.com/safari/" target="_blank">
+                          <p>Safari</p>
+                            <img alt="Safari" src="Content/Images/upgrade-safari.png" />
+                        </a>
+                      </li>
+                      <!--<li class="ie">
+                        <a title="Microsoft Internet Explorer" href="http://windows.microsoft.com/ie" target="_blank">
+                          <p>Internet Explorer</p>
+                          <img alt="Internet Explorer" src="images/upgrade-ie.png" />
+                        </a>
+                      </li>-->
+                    </ul>
+                  </div>
+                </div>                
+            </div>           
+        </section>
+    </div>
+</body>
+</html>

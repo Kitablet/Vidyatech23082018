@@ -1,0 +1,181 @@
+﻿@using FISE_Cloud.Models.School
+@using FISE_Cloud.Models
+@model StudentandParentInfo
+@{
+    ViewBag.Title = "Student and Parent Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    var SchoolUId = ViewContext.RouteData.Values["schooluid"];
+}
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+    <h4 class="page-title">@Model.FirstName @Model.LastName</h4>
+    <div class="float-right"><h4 class="role-title">@Resource.Studentandparentinfo_student</h4></div>
+</div>
+    <hr />
+    <div class="form-horizontal">
+        @Html.HiddenFor(model => model.UserId)
+        <div class="form-group">
+
+            @Html.LabelFor(model => model.FirstName, "First Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.FirstName)
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.LastName, "Last Name:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.LastName)
+
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Grade, "Grade:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.Grade)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SubSection,"Section:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.SubSection)
+            </span>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gender, "Gender:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.Gender)
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.DateOfBirth, "Date Of Birth:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.DateOfBirth.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.DateOfBirth))
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.CreationDate, "Creation Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Model.CreationDate.ToString("dd.MM.yyyy")
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.RegistrationDate, "Registration Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.RegistrationDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.RegistrationDate))
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, "Status:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @if (!(Model.Status) && Model.IsTrashed)
+                {
+                    @Html.Raw(Resource.Status_Disabled);
+                }
+                else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate != null)
+                {
+                    @Html.Raw(Resource.Status_Active);
+                }
+                else if (Model.Status && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Registered);
+                }
+                else if (!(Model.Status) && !(Model.IsTrashed) && Model.LastLoginDate == null)
+                {
+                    @Html.Raw(Resource.Status_Created);
+                }
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.SubscriptionStartDate, "Subscription Start Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionStartDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionStartDate))
+            </span>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.SubscriptionEndDate, "Subscription End Date:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @(string.IsNullOrWhiteSpace(Model.SubscriptionEndDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", Model.SubscriptionEndDate))
+
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Username, "UserName:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.Username)
+
+            </span>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.HomeDevices, "Active Home Devices:", htmlAttributes: new { @class = "control-label col-xs-3" })
+            <span class="col-xs-9 control-label">
+                @Html.DisplayFor(model => model.HomeDevices)
+            </span>
+        </div>
+        
+    </div>
+    <div id="divPartial">
+        @Html.Partial("_ParentInfoAdmin", Model)
+    </div>
+    @if (Model.Students != null && Model.Students.Count>0)
+    {
+        <div class="space-bottom">
+                <span> &nbsp;@Resource.Note_ParentAccountAssocWithStudentAccount @*@(Model.Students.Count) more student(s).*@</span>
+        </div>
+        <div class="row">
+        @foreach (StudentRegistrationModel student in Model.Students)
+        {
+            <a class="a_link_list-item" href="@Url.RouteUrl("StudentandParentInfoAdmin", new { schooluid = SchoolUId, studentid = student.UserId })">
+                <div class="row list-item">
+                    <div class="col-xs-12 list-item-name">@student.FirstName @student.LastName</div>
+
+                    <div class="col-xs-12">
+                        <span class="list-item-subcontent"><span class="list_content_subdiv_bold">@Resource.School_Studentlist_ParentEmail</span><span>@student.Email</span></span>
+                        <span class="list-item-subcontent">
+                            <span class="list_content_subdiv_bold">@Resource.School_Studentlist_SubStarts</span><span>
+                                @(string.IsNullOrWhiteSpace(student.SubscriptionStartDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", student.SubscriptionStartDate))
+                            </span>
+                        </span>
+                        <span class="list-item-subcontent">
+                            <span class="list_content_subdiv_bold">@Resource.School_Studentlist_SubEnds</span><span>
+                                @(string.IsNullOrWhiteSpace(student.SubscriptionEndDate.ToString()) ? "--" : string.Format("{0:dd.MM.yyyy}", student.SubscriptionEndDate))
+                            </span>
+                        </span>
+                        <span class="float-right list_content_subdiv_bold">
+                            @if (!(@student.Status) && @student.IsTrashed)
+                            {
+                                @Html.Raw(Resource.Status_Disabled);
+                            }
+                            else if (@student.Status && !(@student.IsTrashed) && (@student.LastLoginDate) != null)
+                            {
+                                @Html.Raw(Resource.Status_Active);
+                            }
+                            else if (@student.Status && !(@student.IsTrashed) && (@student.LastLoginDate) == null)
+                            {
+                                @Html.Raw(Resource.Status_Registered);
+                            }
+                            else if (!@student.Status && !@student.IsTrashed && (@student.LastLoginDate) == null)
+                            {
+                                @Html.Raw(Resource.Status_Created);
+                            }                            
+                        </span>
+
+                    </div>
+
+
+                </div>
+            </a>
+        }
+        </div>
+    }

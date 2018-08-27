@@ -1,0 +1,62 @@
+﻿@using FISE_Cloud.Models.School
+@model BooksListResult
+@{
+    ViewBag.Title = "ExportBooksToExcel";
+}
+
+<div class="row popup_content">
+    <div class="col-xs-12 popup_title">FILTER BOOKLIST FOR DOWNLOAD:</div>
+    <div class="row pop_filter">
+        <input type="hidden" id="selectedSubSectionIds_export" name="selectedSubSectionIds_export" value="" />
+        <input type="hidden" id="selectedLanguageIds_export" name="selectedLanguageIds_export" value="" />
+        <input type="hidden" id="selectedBookTypeIds_export" name="selectedBookTypeIds_export" value="" />
+
+        <div class="col-xs-3">
+            <div class="filter_title">SUBSECTION </div>
+            <div class="filters">
+                <input type="checkbox" id="subsection_all_export" value="" onclick="FilterItems.selectSubSectionAll_export(this, event)" /><span class="filter_checkboxlabel">All</span><br />
+                @foreach (var subsection in Model.SubSection)
+                {
+                    <input type="checkbox" class="subsec_chkbx_export" id="@subsection.Id" value="@subsection.Id" onclick="FilterItems.selectSubSection_export(this, event)" /><span class="filter_checkboxlabel">@subsection.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_title">LANGUAGE </div>
+            <div class="filters">
+                <input type="checkbox" id="language_all_export" value="" onclick="FilterItems.selectLanguageAll_export(this, event)" /><span class="filter_checkboxlabel">All</span><br />
+                @foreach (var language in Model.Language)
+                {
+                    <input type="checkbox" class="lang_chkbx_export" id="@language.Id" value="@language.Id" onclick="FilterItems.selectLanguage_export(this, event)" /><span class="filter_checkboxlabel">@language.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_title">TYPE</div>
+            <div class="filters">
+                <input type="checkbox" id="type_all_export" value="" onclick="FilterItems.selectBookTypeAll_export(this, event)" /><span class="filter_checkboxlabel">All</span><br />
+                @foreach (var booktype in Model.BookType)
+                {
+                    <input type="checkbox" class="booktype_chkbx_export" id="@booktype.Id" value="@booktype.Id" onclick="FilterItems.selectBookType_export(this, event)" /><span class="filter_checkboxlabel">@booktype.Name</span><br />
+                }
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <div class="filter_title">SPECIALS</div>
+            <div class="filters">
+
+                @Html.CheckBox("specials_HasAll_export", new { @id = "specials_HasAll_export", @onclick = "FilterItems.selectSpecialsAll_export(this, event)" })
+                <span class="filter_checkboxlabel">All</span><br />
+                @Html.CheckBox("HasActivity_export", new { @class = "specials_chkbx_export", @onclick = "FilterItems.selectSpecial_export(this, event)" })
+                <span class="filter_checkboxlabel">Activities</span><br />
+                @Html.CheckBox("HasAnimation_export", new { @class = "specials_chkbx_export", @onclick = "FilterItems.selectSpecial_export(this, event)" })
+                <span class="filter_checkboxlabel">Animations</span><br />
+                @Html.CheckBox("HasReadAloud_export", new { @class = "specials_chkbx_export", @onclick = "FilterItems.selectSpecial_export(this, event)" })
+                <span class="filter_checkboxlabel">Read-aloud</span><br />
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <input type="submit" value="DOWNLOAD" class="btn btn-default btn-rect" onclick="FilterItems.exportItems()" />
+    </div>
+</div>

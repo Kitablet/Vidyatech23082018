@@ -1,0 +1,215 @@
+﻿@model IEnumerable<FISE_Cloud.Models.School.StudentImportExport>
+@using FISE_Cloud.Models.School;
+@{
+    ViewBag.Title = "Update Students in Bulk";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts {
+    <script type="text/javascript">
+        function submitForm() {
+            jsonObj = [];
+            $("tbody tr").each(function () {
+                var row = {};
+                $("td").each(function () {
+                    var id = $(this).attr("id");
+                    var value = $(this).html();
+                    row[id] = value;
+                });
+                jsonObj.push(row);
+            });
+
+            var tmp = 0;
+
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                type: 'POST',
+                url: '/School/AddNewStudents',
+                data: JSON.stringify(jsonObj)
+            });
+            return false;
+        }
+
+    </script>
+}
+<h2>Update Students (inBulk)</h2>
+<h4>Please upload the CSV file:</h4>
+
+@using (Html.BeginForm("UpdateStudentsinBulk", "School", null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    if (!ViewData.ModelState.IsValid)
+    {
+        <div> @Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString())) </div>
+    }
+    if (Model == null)
+    {
+        <div class="form-group">
+            <input type="file" id="dataFile" name="upload" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Upload" class="btn btn-default" name="Command" />
+        </div>
+    }
+    else
+    {
+        var i = 1;
+        var AnyError = false;
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>S.No.</th>
+                    <th>Student Id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>Parent Email</th>
+                    <th>Parent Mobile No.</th>
+                    <th>Grade</th>
+                    <th>SubSection</th>
+                    <th>Roll No.</th>
+                    <th>Date of Birth</th>
+                    <th>Subscription Start Date</th>
+                    <th>Subscription End Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (StudentImportExport student in Model)
+                    {
+                    <tr>
+                        <td>@i</td>
+                        @if (student.ErrorInfo.ContainsKey("StudentId") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="StudentId">@student.StudentId - @student.ErrorInfo["StudentId"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="StudentId">@student.StudentId</td>
+                        }
+                        @if (student.ErrorInfo.ContainsKey("FirstName") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="FirstName">@student.FirstName - @student.ErrorInfo["FirstName"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="FirstName">@student.FirstName</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("LastName") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="LastName">@student.LastName - @student.ErrorInfo["LastName"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="LastName">@student.LastName</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("Gender") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="Gender">@student.Gender - @student.ErrorInfo["Gender"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="Gender">@student.Gender</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("ParentEmail") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="ParentEmail">@student.ParentEmail - @student.ErrorInfo["ParentEmail"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="ParentEmail">@student.ParentEmail</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("ParentMobileNumber") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="ParentMobileNumber">@student.ParentMobileNumber - @student.ErrorInfo["ParentMobileNumber"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="ParentMobileNumber">@student.ParentMobileNumber</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("Grade") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="Grade">@student.Grade - @student.ErrorInfo["Grade"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="Grade">@student.Grade</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("SubSection") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="SubSection">@student.SubSection - @student.ErrorInfo["SubSection"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="SubSection">@student.SubSection</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("RollNo") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="RollNo">@student.RollNo - @student.ErrorInfo["RollNo"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="RollNo">@student.RollNo</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("DateOfBirth") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="DateOfBirth">@student.DateOfBirth - @student.ErrorInfo["DateOfBirth"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="DateOfBirth">@student.DateOfBirth</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("SubscriptionStartDate") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="SubscriptionStartDate">@student.SubscriptionStartDate - @student.ErrorInfo["SubscriptionStartDate"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="SubscriptionStartDate">@student.SubscriptionStartDate</td>
+                        }
+
+                        @if (student.ErrorInfo.ContainsKey("SubscriptionEndDate") == true)
+                        {
+                            AnyError = true;
+                            <td style="border-color:red; color:red" id="SubscriptionEndDate">@student.SubscriptionEndDate - @student.ErrorInfo["SubscriptionEndDate"].ToString()</td>
+                        }
+                        else
+                        {
+                            <td id="SubscriptionEndDate">@student.SubscriptionEndDate</td>
+                        }
+                    </tr>
+
+                }
+
+            </tbody>
+        </table>
+        <div class="form-group">
+            @if (!AnyError)
+            {
+                <input type="button" value="Update" class="btn btn-default" name="Command" />
+            }
+        </div>
+    }
+}
+

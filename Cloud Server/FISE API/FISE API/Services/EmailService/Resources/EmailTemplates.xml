@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <EmailAccounts>
+    <EmailAccount>
+      <Id>1</Id>
+      <Email>vidyatech.noreply@gmail.com</Email>
+      <DisplayName>vidyatech.noreply@gmail.com</DisplayName>
+      <Host>smtp.gmail.com</Host>
+      <Port>587</Port>
+      <EnableSsl>true</EnableSsl>
+      <Username>vidyatech.noreply@gmail.com</Username>
+      <Password>1qaz2wsx@WSX</Password>
+      <UseDefaultCredentials>false</UseDefaultCredentials>
+    </EmailAccount>
+  </EmailAccounts>
+  <MessageTemplates>
+    <MessageTemplate>
+      <Name>SchoolAdmin.Registration.Email</Name>
+      <Description>SchoolAdmin.Registration.Email</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Request to register as School Teacher</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Welcome to the Kitablet community as a school teacher! &lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;Please follow this link to complete your registration: &lt;/p&gt;
+        &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>ElibAdmin.Registration.Email</Name>
+      <Description>ElibAdmin.Registration.Email</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: E-library Admin Registration</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Welcome to the Kitablet community as an eLibrary Admin! &lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;Please follow this link to complete your registration: &lt;/p&gt;
+        &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>User.Password.Recovery</Name>
+      <Description>User.Password.Recovery</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Password Recovery</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Greetings from Team Kitablet! &lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;Please follow this link to recover your password for your User Account on Kitablet server: &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;&lt;/p&gt;        
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    <MessageTemplate>
+      <Name>Parent.Registration.Email</Name>
+      <Description>Mail for new parent import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Request for registration and activation</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear Parent,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We are happy to welcome you and your child to  &lt;a href="http://www.kitablet.in/"&gt;Kitablet&lt;/a&gt;, the e-Library of best of Indian children's literature.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have created an account for you and your child. You are required to activate the same.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;You will be able to activate your child's account from your active parent account on Kitablet. If you haven't activated your account, you can do it here:&lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have an active parent account, please go to the following link to complete the activation process for your child:&lt;a href="%SITEURL%"&gt;%SITEURL%&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;After you have activated your child's account, he/she will be able to access Kitablet through the Kitablet App for laptops/desktops and tablets. It works on Windows, Android and Apple devices. The app can be downloaded from the respective store - links for the same are mentioned &lt;a href="http://www.kitablet.in/applinks"&gt;here&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;You can continue accessing your parent account on Kitablet at &lt;a href="%SITEURL%"&gt;%SITEURL%&lt;/a&gt; to stay up-to-date with your child's usage of Kitablet. Please note that you will be able to manage accounts for all of your children from your single parent account as long as the specified parent email id for them is the same.&lt;/p&gt;
+        
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>Username.Recovery.Email</Name>
+      <Description>Mail for User name recover</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet:Username recovery</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px;line-height:16px;"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Greetings from Team Kitablet! &lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;This is in response to your request to retreive your user name on Kitablet. The user name registered with us at the specified email id is: %TOKENURL%&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;In case you do not have the website open, you can access it here: &lt;a href="%SITEURL%"&gt;%SITEURL%&lt;/a&gt; &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>ParentUsername.Recovery.Email</Name>
+      <Description>Mail for new parent import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Request for User name</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Greetings from Team Kitablet!&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have received a request for username for Kitablet accounts associated with your email id to be resent. &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;%TOKENURL%&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Children's accounts can be accessed through the eReader app and parent's accounts can be accessed through the Kitablet Server here.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>School.Registration.Email</Name>
+      <Description>Mail for new parent import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: School in-charge email id verification</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear School in-charge,&lt;br&gt;&lt;br&gt;
+        Greetings from Team Kitablet!.&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We are glad to have your school as a member school.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Your email id has been specified as the school in-charge email id during registration. &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;You need to verify the email id by clicking on the link below:&lt;/p&gt;
+        &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>Student.Added.Email</Name>
+      <Description>Mail for new parent import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>New student added</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Welcome to the KITABLET family.&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;The new student has been added successfully. Please activate.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>StudentParent.Acknowledgement.Email</Name>
+      <Description>Mail for new parent import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Parent acknowledge for activation</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Welcome to the KITABLET family.&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;The new student has been added successfully. Please complete your registration by verifying your email :&lt;/p&gt;
+        &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    <MessageTemplate>
+      <Name>Help.Acknowledgement.Student.Email</Name>
+      <Description>Mail for sending acknowledgement of help item for user</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Query submitted through the App</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear Parent,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;Greetings from Team Kitablet!&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have received a query from your child, %STUDENTFIRSTNAME% %STUDENTLASTNAME%, through the 'Contact us' section of the eReader.&lt;/p&gt; 
+        &lt;p style="padding: 5px 0px"&gt;The query is specified below. Our Support Team will respond to it soon&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;The Reference ID for the query is :%REFERENCEID%. You may need it for future reference.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;You have received this email as this email id is specified as the parent email id for the abovementioned child. If you have any questions, do write to us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;       
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Query Text: &lt;br&gt; %QUERY%&lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    <MessageTemplate>
+      <Name>Help.Acknowledgement.OtherUser.Email</Name>
+      <Description>Mail for sending acknowledgement of help item for user</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Query submitted through the App</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear User,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;Greetings from Team Kitablet!&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have received a query from you through the 'Contact us' section of the eReader.&lt;/p&gt; 
+        &lt;p style="padding: 5px 0px"&gt;The query is specified below. Our Support Team will respond to it soon&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;The Reference ID for the query is :%REFERENCEID%. You may need it for future reference.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any questions, do write to us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;       
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Query Text: &lt;br&gt; %QUERY%&lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    <MessageTemplate>
+      <Name>Help.Acknowledgement.AdminEmail</Name>
+      <Description>Mail for sending acknowledgement of help item for site admin</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Query submitted through the App</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear Admin,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;A user has submitted a query through the 'Contact us' section on the eReader. Details are below. Please respond ASAP.&lt;/p&gt;
+        
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        
+        &lt;p style="padding: 5px 0px"&gt; Email ID: &lt;a&gt;%USEREMAIL%&lt;/a&gt; &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Query date: %QUERYDATE% &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt; Query text:  %QUERY% &lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt; Reference ID: %REFERENCEID% &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>User.EmailVerification.Email</Name>
+      <Description>Mail for user email verification</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Verify new email</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We appreciate and value your membership. Please follow this link to verify your new email address: &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+
+    <MessageTemplate>
+      <Name>SchoolStudent.Password.Recovery</Name>
+      <Description>SchoolStudent.Password.Recovery</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Password Recovery</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear %FIRSTNAME%,&lt;br&gt;&lt;br&gt;
+        Greetings from Team Kitablet! &lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have received your request to change password. Please click the link below to change password: &lt;a href="%TOKENURL%"&gt;%TOKENURL%&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    
+    <MessageTemplate>
+      <Name>Student.Registration.Email</Name>
+      <Description>Mail for new student import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Request for activation</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br&gt;Dear Parent,&lt;br&gt;&lt;br&gt;
+        &lt;p style="padding: 5px 0px"&gt;We are happy to welcome your child to  &lt;a href="http://www.kitablet.in/"&gt;Kitablet&lt;/a&gt;, the e-Library of best of Indian children's literature.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;We have created an account for your child. Please go to the following link to complete the activation process for your child:&lt;a href="%SITEURL%"&gt;%SITEURL%&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;After you have activated your child's account, he/she will be able to access Kitablet through the Kitablet App for laptops/desktops and tablets. It works on Windows, Android and Apple devices. The app can be downloaded from the respective store - links for the same are mentioned &lt;a href="http://www.kitablet.in/applinks"&gt;here&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;You can continue accessing your parent account on Kitablet at &lt;a href="%SITEURL%"&gt;%SITEURL%&lt;/a&gt; to stay up-to-date with your child's usage of Kitablet. Please note that you will be able to manage accounts for all of your children from your single parent account as long as the specified parent email id for them is the same.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;If you have any query, contact us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Thanks,&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Team Kitablet&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;www.kitablet.in&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;&lt;a href="http://www.kitablet.in"&gt;&lt;img border="0" width="115" height="112" src="%SITEURL%content/images/KitabletSignature.jpg"/&gt;&lt;/a&gt; &lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+  
+  
+    <MessageTemplate>
+      <Name>Parent.Import.Email</Name>
+      <Description>Mail for new parent and children import from excel</Description>
+      <IsActive>true</IsActive>
+      <EmailAccountId>1</EmailAccountId>
+      <Subject>Kitablet: Login details for your account</Subject>
+      <Body>
+        &lt;div style="font-family:Verdana;font-size:12px"&gt;
+        &lt;br /&gt;Dear Parent, &lt;br /&gt;&lt;br /&gt;
+        &lt;p style="padding: 5px 0px"&gt;You can also see the report on usage of Kitablet by your child here:&lt;br /&gt;&lt;a href="%SITEURL%Report8"&gt;%SITEURL%Report8&lt;/a&gt;&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Please use these credentials to sign in:&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Username: %PARENTUSERNAME%&lt;br /&gt;Password: %PARENTPASSWORD%&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Please feel free to write back to us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt; for any queries.&lt;/p&gt;
+        &lt;p style="padding: 5px 0px"&gt;Cheers, &lt;br /&gt;Team Kitablet&lt;/p&gt;
+        &lt;/div&gt;
+      </Body>
+    </MessageTemplate>
+    <MessageTemplate>
+        <Name>Student.Import.Email</Name>
+        <Description>Mail for existing parent and children import from excel</Description>
+        <IsActive>true</IsActive>
+        <EmailAccountId>1</EmailAccountId>
+        <Subject>Kitablet: Login details for your child</Subject>
+        <Body>
+          &lt;div style="font-family:Verdana;font-size:12px"&gt;
+          &lt;br /&gt;Dear Parent, &lt;br /&gt;&lt;br /&gt;
+          &lt;p style="padding: 5px 0px"&gt;Welcome to Kitablet, an e-library of the best of Indian literature for children.&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Your child can log in to their account using the credentials given below:&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Username: %STUDENTUSERNAME%&lt;br /&gt;Password: %STUDENTPASSWORD%&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;(Do remind your child to set a new password by going to the "My Profile" section)&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Kitablet has a browser and an App version.&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Please &lt;a href="https://elibrary.kitablet.in/" target="_blank"&gt;click here&lt;/a&gt; to start reading on the browsers!&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;You can see details for the App version of Kitablet &lt;a href="https://www.kitablet.in/applinks" target="_blank"&gt;here&lt;/a&gt;.&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Presently, we are unavailable on smartphones.&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;For any queries, write to us at &lt;a href="mailto:support@kitablet.in"&gt;support@kitablet.in&lt;/a&gt;.&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Happy Reading!&lt;/p&gt;
+          &lt;p style="padding: 5px 0px"&gt;Cheers, &lt;br /&gt;Team Kitablet&lt;/p&gt;
+          &lt;/div&gt;
+        </Body>
+      </MessageTemplate>
+  </MessageTemplates>
+
+</Root>
+

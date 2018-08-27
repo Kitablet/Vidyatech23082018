@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5k-f2-b5h">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gAE-YM-kbH">
+            <objects>
+                <viewController id="X5k-f2-b5h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y8P-hJ-Z43"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ZL-r4-8FZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yd7-JS-zBw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="app_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="23" misplaced="YES">
+                                <rect key="frame" x="258" y="260" width="85" height="81"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="76"/>
+                                <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="23" firstAttribute="centerY" secondItem="yd7-JS-zBw" secondAttribute="centerY" priority="1" id="39"/>
+                            <constraint firstItem="23" firstAttribute="centerX" secondItem="yd7-JS-zBw" secondAttribute="centerX" priority="1" id="41"/>
+                        </constraints>
+                        <color key="tintColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                        <color key="backgroundColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XAI-xm-WK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60.png" width="60" height="60"/>
+        <image name="Content/PrivacyPolicy/Images/minus.png" width="18" height="18"/>
+        <image name="Content/PrivacyPolicy/Images/plus.png" width="18" height="18"/>
+        <image name="Content/XamarinLogo.png" width="114" height="114"/>
+        <image name="activity.png" width="22" height="24"/>
+        <image name="activity_1.png" width="22" height="24"/>
+        <image name="activity_2.png" width="22" height="24"/>
+        <image name="activity_3.png" width="22" height="24"/>
+        <image name="activity_big_1.png" width="52" height="52"/>
+        <image name="activity_big_2.png" width="52" height="52"/>
+        <image name="activity_big_3.png" width="52" height="52"/>
+        <image name="activity_big_complete_1.png" width="52" height="52"/>
+        <image name="activity_big_complete_2.png" width="52" height="52"/>
+        <image name="activity_big_complete_3.png" width="52" height="52"/>
+        <image name="activity_complete.png" width="22" height="24"/>
+        <image name="activity_complete_1.png" width="22" height="24"/>
+        <image name="activity_complete_2.png" width="22" height="24"/>
+        <image name="activity_complete_3.png" width="22" height="24"/>
+        <image name="all_books_1.png" width="122" height="38"/>
+        <image name="all_books_2.png" width="122" height="38"/>
+        <image name="all_books_3.png" width="122" height="38"/>
+        <image name="animation.png" width="22" height="24"/>
+        <image name="animation_1.png" width="22" height="24"/>
+        <image name="animation_2.png" width="22" height="24"/>
+        <image name="animation_3.png" width="22" height="24"/>
+        <image name="announcements.png" width="30" height="31"/>
+        <image name="announcements_selected.png" width="30" height="31"/>
+        <image name="arrow_right.png" width="7" height="12"/>
+        <image name="available_offline_1.png" width="122" height="38"/>
+        <image name="available_offline_2.png" width="122" height="38"/>
+        <image name="available_offline_3.png" width="122" height="38"/>
+        <image name="avatar_large.png" width="180" height="180"/>
+        <image name="avatar_medium.png" width="90" height="90"/>
+        <image name="avatar_small.png" width="64" height="64"/>
+        <image name="bgImage_1.png" width="475" height="310"/>
+        <image name="bgImage_2.png" width="475" height="310"/>
+        <image name="bgImage_3.png" width="475" height="310"/>
+        <image name="Book_landscape_1.png" width="136" height="87"/>
+        <image name="Book_portrait_1.png" width="136" height="173"/>
+        <image name="book_subsection_left_1.png" width="30" height="111"/>
+        <image name="book_subsection_left_2.png" width="30" height="111"/>
+        <image name="book_subsection_left_3.png" width="30" height="111"/>
+        <image name="book_thumbnail.png" width="58" height="58"/>
+        <image name="bookmark_1.png" width="18" height="20"/>
+        <image name="bookmark_2.png" width="18" height="20"/>
+        <image name="bookmark_3.png" width="18" height="20"/>
+        <image name="books_read_1.png" width="122" height="38"/>
+        <image name="books_read_2.png" width="122" height="38"/>
+        <image name="books_read_3.png" width="122" height="38"/>
+        <image name="bottom_left_corner.png" width="8" height="8"/>
+        <image name="bottom_left_corner_1.png" width="8" height="8"/>
+        <image name="bottom_left_corner_2.png" width="8" height="8"/>
+        <image name="bottom_left_corner_3.png" width="8" height="8"/>
+        <image name="bottom_left_corner_filled.png" width="16" height="16"/>
+        <image name="bottom_left_corner_filled_1.png" width="16" height="16"/>
+        <image name="bottom_left_corner_filled_2.png" width="16" height="16"/>
+        <image name="bottom_left_corner_filled_3.png" width="16" height="16"/>
+        <image name="bottom_right_corner.png" width="8" height="8"/>
+        <image name="bottom_right_corner_1.png" width="8" height="8"/>
+        <image name="bottom_right_corner_2.png" width="8" height="8"/>
+        <image name="bottom_right_corner_3.png" width="8" height="8"/>
+        <image name="bottom_right_corner_filled.png" width="16" height="16"/>
+        <image name="bottom_right_corner_filled_1.png" width="16" height="16"/>
+        <image name="bottom_right_corner_filled_2.png" width="16" height="16"/>
+        <image name="bottom_right_corner_filled_3.png" width="16" height="16"/>
+        <image name="change_avt_blank.png" width="171" height="52"/>
+        <image name="change_pass.png" width="205" height="52"/>
+        <image name="change_pass_blank.png" width="205" height="52"/>
+        <image name="checkbox_1.png" width="18" height="18"/>
+        <image name="checkbox_2.png" width="18" height="18"/>
+        <image name="checkbox_3.png" width="18" height="18"/>
+        <image name="checkbox_black.png" width="18" height="18"/>
+        <image name="checkbox_black_selected.png" width="18" height="18"/>
+        <image name="checkbox_selected_1.png" width="18" height="18"/>
+        <image name="checkbox_selected_2.png" width="18" height="18"/>
+        <image name="checkbox_selected_3.png" width="18" height="18"/>
+        <image name="close.png" width="26" height="27"/>
+        <image name="close_1.png" width="26" height="27"/>
+        <image name="close_2.png" width="26" height="27"/>
+        <image name="close_3.png" width="26" height="27"/>
+        <image name="collapseBtn_1.png" width="46" height="17"/>
+        <image name="collapseBtn_2.png" width="46" height="17"/>
+        <image name="collapseBtn_3.png" width="46" height="17"/>
+        <image name="coming_soon_1.png" width="122" height="38"/>
+        <image name="coming_soon_2.png" width="122" height="38"/>
+        <image name="coming_soon_3.png" width="122" height="38"/>
+        <image name="curled_corner_big.png" width="62" height="62"/>
+        <image name="curled_corner_small.png" width="25" height="25"/>
+        <image name="Default-568h.png" width="320" height="568"/>
+        <image name="Default-Landscape.png" width="1024" height="748"/>
+        <image name="Default-Portrait.png" width="768" height="1004"/>
+        <image name="Default.png" width="320" height="480"/>
+        <image name="discover_1.png" width="50" height="50"/>
+        <image name="discover_2.png" width="50" height="50"/>
+        <image name="discover_3.png" width="50" height="50"/>
+        <image name="double_pager.png" width="46" height="27"/>
+        <image name="double_pager_1.png" width="46" height="27"/>
+        <image name="double_pager_2.png" width="46" height="27"/>
+        <image name="double_pager_3.png" width="46" height="27"/>
+        <image name="DownArrowImage.png" width="16" height="9"/>
+        <image name="expandBtn_1.png" width="46" height="17"/>
+        <image name="expandBtn_2.png" width="46" height="17"/>
+        <image name="expandBtn_3.png" width="46" height="17"/>
+        <image name="help_1.png" width="122" height="38"/>
+        <image name="help_2.png" width="122" height="38"/>
+        <image name="help_3.png" width="122" height="38"/>
+        <image name="home.png" width="30" height="31"/>
+        <image name="home_env.png" width="24" height="25"/>
+        <image name="home_selected.png" width="30" height="31"/>
+        <image name="Icon-72.png" width="72" height="72"/>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="Icon-Small-40.png" width="40" height="40"/>
+        <image name="Icon-Small-50.png" width="50" height="50"/>
+        <image name="Icon-Small.png" width="29" height="29"/>
+        <image name="img_button1.png" width="171" height="52"/>
+        <image name="img_button2.png" width="205" height="52"/>
+        <image name="kitablet_logo.png" width="158" height="27"/>
+        <image name="kitablet_logo_1.png" width="285" height="98"/>
+        <image name="kitablet_logo_2.png" width="285" height="98"/>
+        <image name="kitablet_logo_3.png" width="285" height="98"/>
+        <image name="logout.png" width="30" height="31"/>
+        <image name="logout_selected.png" width="30" height="31"/>
+        <image name="my_profile_1.png" width="122" height="38"/>
+        <image name="my_profile_2.png" width="122" height="38"/>
+        <image name="my_profile_3.png" width="122" height="38"/>
+        <image name="nav_dot.png" width="10" height="10"/>
+        <image name="nav_dot_1.png" width="14" height="14"/>
+        <image name="nav_dot_selected_1.png" width="14" height="14"/>
+        <image name="new_books_1.png" width="122" height="38"/>
+        <image name="new_books_2.png" width="122" height="38"/>
+        <image name="new_books_3.png" width="122" height="38"/>
+        <image name="next.png" width="26" height="27"/>
+        <image name="next_1.png" width="26" height="27"/>
+        <image name="next_2.png" width="26" height="27"/>
+        <image name="next_3.png" width="26" height="27"/>
+        <image name="no_books.png" width="1024" height="528"/>
+        <image name="previous.png" width="26" height="27"/>
+        <image name="previous_1.png" width="26" height="27"/>
+        <image name="previous_2.png" width="26" height="27"/>
+        <image name="previous_3.png" width="26" height="27"/>
+        <image name="privacy_policy_1.png" width="122" height="38"/>
+        <image name="privacy_policy_2.png" width="122" height="38"/>
+        <image name="privacy_policy_3.png" width="122" height="38"/>
+        <image name="profile.png" width="30" height="31"/>
+        <image name="profile_1.png" width="122" height="38"/>
+        <image name="profile_2.png" width="122" height="38"/>
+        <image name="profile_3.png" width="122" height="38"/>
+        <image name="profile_selected.png" width="30" height="31"/>
+        <image name="progress_done.png" width="136" height="136"/>
+        <image name="progress_pending.png" width="136" height="136"/>
+        <image name="rating.png" width="22" height="24"/>
+        <image name="rating_1.png" width="22" height="24"/>
+        <image name="rating_2.png" width="22" height="24"/>
+        <image name="rating_3.png" width="22" height="24"/>
+        <image name="rating_big_1.png" width="52" height="52"/>
+        <image name="rating_big_2.png" width="52" height="52"/>
+        <image name="rating_big_3.png" width="52" height="52"/>
+        <image name="rating_big_complete_1.png" width="52" height="52"/>
+        <image name="rating_big_complete_2.png" width="52" height="52"/>
+        <image name="rating_big_complete_3.png" width="52" height="52"/>
+        <image name="rating_complete.png" width="22" height="24"/>
+        <image name="rating_complete_1.png" width="22" height="24"/>
+        <image name="rating_complete_2.png" width="22" height="24"/>
+        <image name="rating_complete_3.png" width="22" height="24"/>
+        <image name="read_aloud.png" width="22" height="24"/>
+        <image name="read_aloud_1.png" width="22" height="24"/>
+        <image name="read_aloud_2.png" width="22" height="24"/>
+        <image name="read_aloud_3.png" width="22" height="24"/>
+        <image name="read_aloud_mute_1.png" width="26" height="27"/>
+        <image name="read_aloud_mute_2.png" width="26" height="27"/>
+        <image name="read_aloud_mute_3.png" width="26" height="27"/>
+        <image name="read_aloud_sound_1.png" width="26" height="27"/>
+        <image name="read_aloud_sound_2.png" width="26" height="27"/>
+        <image name="read_aloud_sound_3.png" width="26" height="27"/>
+        <image name="read_later_1.png" width="122" height="38"/>
+        <image name="read_later_2.png" width="122" height="38"/>
+        <image name="read_later_3.png" width="122" height="38"/>
+        <image name="recommended_books_1.png" width="122" height="38"/>
+        <image name="recommended_books_2.png" width="122" height="38"/>
+        <image name="recommended_books_3.png" width="122" height="38"/>
+        <image name="release_books_1.png" width="122" height="38"/>
+        <image name="release_books_2.png" width="122" height="38"/>
+        <image name="release_books_3.png" width="122" height="38"/>
+        <image name="releaseArrow_asc.png" width="12" height="14"/>
+        <image name="releaseArrow_desc.png" width="12" height="14"/>
+        <image name="rounded_transparent_button_1.png" width="136" height="32"/>
+        <image name="rounded_transparent_button_2.png" width="136" height="32"/>
+        <image name="rounded_transparent_button_3.png" width="136" height="32"/>
+        <image name="school_env.png" width="24" height="25"/>
+        <image name="search.png" width="30" height="31"/>
+        <image name="search_1.png" width="50" height="50"/>
+        <image name="search_2.png" width="50" height="50"/>
+        <image name="search_3.png" width="50" height="50"/>
+        <image name="search_selected.png" width="30" height="31"/>
+        <image name="searchdiscover_happy.png" width="1024" height="528"/>
+        <image name="searchdiscover_unhappy.png" width="1024" height="528"/>
+        <image name="selectedButton_1.png" width="136" height="32"/>
+        <image name="selectedButton_2.png" width="136" height="32"/>
+        <image name="selectedButton_3.png" width="136" height="32"/>
+        <image name="settings.png" width="30" height="31"/>
+        <image name="settings_selected.png" width="30" height="31"/>
+        <image name="single_pager.png" width="26" height="27"/>
+        <image name="single_pager_1.png" width="26" height="27"/>
+        <image name="single_pager_2.png" width="26" height="27"/>
+        <image name="single_pager_3.png" width="26" height="27"/>
+        <image name="top_arrow_filled.png" width="18" height="12"/>
+        <image name="top_left_corner.png" width="8" height="8"/>
+        <image name="top_left_corner_1.png" width="8" height="8"/>
+        <image name="top_left_corner_2.png" width="8" height="8"/>
+        <image name="top_left_corner_3.png" width="8" height="8"/>
+        <image name="top_left_corner_filled.png" width="16" height="16"/>
+        <image name="top_left_corner_filled_1.png" width="16" height="16"/>
+        <image name="top_left_corner_filled_2.png" width="16" height="16"/>
+        <image name="top_left_corner_filled_3.png" width="16" height="16"/>
+        <image name="top_right_corner.png" width="8" height="8"/>
+        <image name="top_right_corner_1.png" width="8" height="8"/>
+        <image name="top_right_corner_2.png" width="8" height="8"/>
+        <image name="top_right_corner_3.png" width="8" height="8"/>
+        <image name="top_right_corner_filled.png" width="16" height="16"/>
+        <image name="top_right_corner_filled_1.png" width="16" height="16"/>
+        <image name="top_right_corner_filled_2.png" width="16" height="16"/>
+        <image name="top_right_corner_filled_3.png" width="16" height="16"/>
+        <image name="unselectedButton_1.png" width="136" height="32"/>
+        <image name="unselectedButton_2.png" width="136" height="32"/>
+        <image name="unselectedButton_3.png" width="136" height="32"/>
+        <image name="white_bottom_left_corner.png" width="9" height="9"/>
+        <image name="white_bottom_right_corner.png" width="9" height="9"/>
+        <image name="white_top_left_corner.png" width="9" height="9"/>
+        <image name="white_top_right_corner.png" width="9" height="9"/>
+        <image name="zoom_in.png" width="26" height="27"/>
+        <image name="zoom_in_1.png" width="26" height="27"/>
+        <image name="zoom_in_2.png" width="26" height="27"/>
+        <image name="zoom_in_3.png" width="26" height="27"/>
+        <image name="zoom_out.png" width="26" height="27"/>
+        <image name="zoom_out_1.png" width="26" height="27"/>
+        <image name="zoom_out_2.png" width="26" height="27"/>
+        <image name="zoom_out_3.png" width="26" height="27"/>
+        <image name="Content/Activities/images/143.png" width="136" height="87"/>
+        <image name="Content/Activities/images/164.png" width="136" height="173"/>
+        <image name="Content/Activities/images/185.png" width="136" height="87"/>
+        <image name="Content/Activities/images/210.png" width="136" height="87"/>
+        <image name="Content/Activities/images/220.png" width="136" height="87"/>
+        <image name="Content/Activities/images/234.png" width="136" height="173"/>
+        <image name="Content/Activities/images/240.png" width="136" height="173"/>
+        <image name="Content/Activities/images/249.png" width="136" height="173"/>
+        <image name="Content/Activities/images/Activity-grey-complete.png" width="37" height="44"/>
+        <image name="Content/Activities/images/Activity-white-complete.png" width="22" height="24"/>
+        <image name="Content/Activities/images/Activity-white-incomplete.png" width="22" height="24"/>
+        <image name="Content/Activities/images/amrita_dupe.jpg" width="207" height="243"/>
+        <image name="Content/Activities/images/Animation-grey.png" width="37" height="44"/>
+        <image name="Content/Activities/images/Animation-white.png" width="22" height="24"/>
+        <image name="Content/Activities/images/BestMatch1.PNG" width="71" height="70"/>
+        <image name="Content/Activities/images/BestMatch2.PNG" width="77" height="68"/>
+        <image name="Content/Activities/images/BestMatch3.PNG" width="73" height="76"/>
+        <image name="Content/Activities/images/boink1.png" width="145" height="147"/>
+        <image name="Content/Activities/images/boink2.png" width="145" height="146"/>
+        <image name="Content/Activities/images/boink3.png" width="143" height="145"/>
+        <image name="Content/Activities/images/boink4.png" width="145" height="146"/>
+        <image name="Content/Activities/images/boink5.png" width="145" height="146"/>
+        <image name="Content/Activities/images/boink6.png" width="145" height="145"/>
+        <image name="Content/Activities/images/boink7.png" width="146" height="145"/>
+        <image name="Content/Activities/images/boink8.png" width="145" height="148"/>
+        <image name="Content/Activities/images/boink9.png" width="146" height="146"/>
+        <image name="Content/Activities/images/charimage1.jpg" width="207" height="243"/>
+        <image name="Content/Activities/images/charimage2.jpg" width="182" height="277"/>
+        <image name="Content/Activities/images/charimage3.jpg" width="193" height="262"/>
+        <image name="Content/Activities/images/charimage4.PNG" width="145" height="146"/>
+        <image name="Content/Activities/images/close-button-white.png" width="22" height="22"/>
+        <image name="Content/Activities/images/correct-answer-image.png" width="60" height="60"/>
+        <image name="Content/Activities/images/correct-answer-text.png" width="19" height="15"/>
+        <image name="Content/Activities/images/correct_tick.PNG" width="22" height="19"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option1.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option2.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option3.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option4.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option5.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option6.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option7.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option8.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/cycle_ka_sapna_option9.jpg" width="161" height="161"/>
+        <image name="Content/Activities/images/drag-&amp;-drop-banner.png" width="104" height="21"/>
+        <image name="Content/Activities/images/drag-&amp;-drop-icon.png" width="108" height="92"/>
+        <image name="Content/Activities/images/Ffsegirl.PNG" width="120" height="117"/>
+        <image name="Content/Activities/images/FiseGirl.PNG" width="120" height="117"/>
+        <image name="Content/Activities/images/icon_add.png" width="23" height="23"/>
+        <image name="Content/Activities/images/img_school.png" width="230" height="230"/>
+        <image name="Content/Activities/images/incorrect.PNG" width="23" height="24"/>
+        <image name="Content/Activities/images/logo.PNG" width="158" height="26"/>
+        <image name="Content/Activities/images/message-badge.png" width="256" height="253"/>
+        <image name="Content/Activities/images/Nonunique.png" width="17" height="17"/>
+        <image name="Content/Activities/images/ohno.png" width="135" height="44"/>
+        <image name="Content/Activities/images/pic1.png" width="156" height="155"/>
+        <image name="Content/Activities/images/pic2.png" width="156" height="155"/>
+        <image name="Content/Activities/images/pic3.png" width="154" height="153"/>
+        <image name="Content/Activities/images/pic4.png" width="157" height="155"/>
+        <image name="Content/Activities/images/radio-button-white-ticked.png" width="18" height="18"/>
+        <image name="Content/Activities/images/radio-button-white-unticked.png" width="18" height="18"/>
+        <image name="Content/Activities/images/Rating-grey-complete.png" width="37" height="44"/>
+        <image name="Content/Activities/images/Rating-white-complete.png" width="22" height="24"/>
+        <image name="Content/Activities/images/Rating-white-incomplete.png" width="22" height="24"/>
+        <image name="Content/Activities/images/Read-aloud-grey.png" width="37" height="44"/>
+        <image name="Content/Activities/images/Read-aloud-white.png" width="22" height="24"/>
+        <image name="Content/Activities/images/ThumbNail.png" width="130" height="95"/>
+        <image name="Content/Activities/images/tryagain.png" width="107" height="63"/>
+        <image name="Content/Activities/images/Unique.png" width="18" height="17"/>
+        <image name="Content/Activities/images/Welldone.png" width="110" height="70"/>
+        <image name="Content/Activities/images/wrong-answer-image.png" width="60" height="60"/>
+        <image name="Content/Activities/images/wrong-answer-text.png" width="18" height="18"/>
+        <image name="app_logo.png" width="144" height="144"/>
+        <image name="Book_landscape_2.png" width="198" height="130"/>
+        <image name="Book_landscape_3.png" width="445" height="293"/>
+        <image name="Book_portrait_2.png" width="198" height="260"/>
+        <image name="Book_portrait_3.png" width="445" height="585"/>
+        <image name="double_pager_disable.png" width="46" height="27"/>
+        <image name="read_aloud_mute.png" width="26" height="27"/>
+        <image name="read_aloud_sound.png" width="26" height="27"/>
+        <image name="single_pager_disable.png" width="26" height="27"/>
+        <image name="zoom_in_disable.png" width="26" height="27"/>
+        <image name="zoom_out_disable.png" width="26" height="27"/>
+    </resources>
+</document>

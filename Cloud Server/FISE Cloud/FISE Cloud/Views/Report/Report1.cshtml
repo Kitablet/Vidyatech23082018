@@ -1,0 +1,245 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model List<School>
+@{
+    ViewBag.Title = Resource.Reports_Report1_Title;
+    ViewBag.HeaderPageTitle = "Reports";
+    FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+    var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+    if (IsUserAuthenticated)
+    {
+        _Userdata = FISEAuthenticationService.CurrentUserData;
+    }
+}
+
+<style>
+    .nav-tabs > li {
+        width: 33.33334%!important;
+    }
+    div#tab1.report1 {
+        width: 59%;
+    }
+    div#tab2.report1 {
+        width: 61%;
+    }
+    div#tab3.report1 {
+        width: 61%;
+    }
+    .nav.nav-tabs > li > a {
+        height:53px!important;
+    }
+  
+   
+    
+</style>
+
+<div class="row title-section">
+    <div>
+        @if (Html.MvcSiteMap().SiteMap.CurrentNode != Html.MvcSiteMap().SiteMap.RootNode)
+        {
+            @Html.MvcSiteMap().SiteMapPath("BootstrapSiteMapPathHelperModel")
+        }
+    </div>
+
+        <div class="col-xs-12">
+            <h4 class="page-title">@Resource.Reports_Report1_Title</h4>
+            <a class="exporttoexcel" id="report1_exptoexcel" onclick="return ExportStudents('all');" title="@Resource.Export_Reports_Report1"></a>
+    </div>
+</div>
+<hr />
+@using (Html.BeginForm("ExportReport1", "Report", FormMethod.Post, new { id = "filter-selected-items-toexport-form" }))
+{
+    <input type="hidden" id="UserTypesExport" name="UserTypesExport" value="" />
+    <input type="hidden" id="SchoolIdsExport" name="SchoolIdsExport" value="" />
+    <input type="hidden" id="type" name="type" value="" />
+}
+@using (Ajax.BeginForm("Report1", "Report", null, new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "data", OnBegin = "onBegin", OnComplete = "onComplete" }, new { id = "filterForm" }))
+{
+    if (_Userdata != null && _Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+    {
+        <div id="filter_accordion" class="collapse in">
+            @foreach (School item in Model)
+            {
+                <div class="col-xs-12 reportfilter_check school">
+                    <input type="checkbox" id="SchoolIds" name="SchoolIds" value="@item.SchoolId" style="display:none;" checked />
+                </div>
+            }
+            <div class="col-xs-12">
+                <input type="checkbox" name="UserTypes" value="student" style="display:none" checked />
+            </div>
+            <div class="buttons" style="display:none;">
+                <input type="submit" class="btn btn-default btn-rect" value="@Resource.Reports_btn_GenerateReport" data-toggle="collapse" data-target="#filter_accordion" id="btn_GenerateReport" />
+            </div>
+        </div>
+    <script>
+        $(document).ready(function () {
+            $('#btn_GenerateReport').click();
+        });
+    </script>
+    }
+    else
+    {
+        <span id="modifyfilter_link" class="accordion_plus">@Resource.Reports_ModifyFiltersandRegenerateReport</span>
+        <div id="filter_accordion" class="collapse in">
+            <div class="row reportfilter-row">
+                <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectUserType</p></div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="selectall_user" value="All" checked />
+                        <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+                    </div>
+                    <hr class="hr_report" />
+                    <div class="col-xs-12 reportfilter_check user">
+                        <input type="checkbox" name="UserTypes" value="schooladmin" />
+                        <span class="filter_checkboxlabel2">@Resource.Tab_Title_LIBRARIANS</span>
+                    </div>
+                    <div class="col-xs-12">
+                        <input type="checkbox" name="UserTypes" value="student" />
+                        <span class="filter_checkboxlabel2">@Resource.Tab_Title_STUDENTS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row reportfilter-row">
+                <div class="col-xs-12"><p class="report_subtitle">@Resource.Reports_SelectSchools</p></div>
+                <div class="col-xs-12">
+                    <div class="col-xs-12">
+                        <input type="checkbox" id="selectall_school" value="All" checked />
+                        <span class="filter_checkboxlabel2">@Resource.checkbox_SelectAll</span>
+                    </div>
+                    <hr class="hr_report" />
+                    @foreach (School item in Model)
+                    {
+                        <div class="col-xs-12 reportfilter_check school">
+                            <input type="checkbox" id="SchoolIds" name="SchoolIds" value="@item.SchoolId" />
+                            <span class="filter_checkboxlabel2">@item.SchoolName</span>
+                        </div>
+                    }
+
+                </div>
+                <div class="col-xs-12 seeallschools">
+                    <a id="seeall_school">@Resource.Reports_link_Seeallschools</a>
+                </div>
+            </div>
+            <div class="buttons">
+                <input type="submit" class="btn btn-default btn-rect" value="@Resource.Reports_btn_GenerateReport" data-toggle="collapse" data-target="#filter_accordion" id="btn_GenerateReport" />
+            </div>
+        </div>
+    }
+
+    <div id="data"></div>
+
+}
+
+
+@section scripts
+{
+    <script src="~/Scripts/MvcPager.js?v=1"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js?v=1"></script>
+    <script>
+
+        $(document).ready(function () {
+         
+           
+            $('#data').hide();
+            $('.school').slice(10, $('.school').length).hide();
+            $('#seeall_school').click(function () { 
+                $('.school').show();
+                $(this).hide();
+            });
+        });
+
+
+        $('#selectall_user').click(function () {
+            //if ($(this).prop('checked')) {
+                $('[name=UserTypes]').prop('checked', false);
+                $(this).prop('checked', true);
+            //}
+        });
+        $('#selectall_school').click(function () {
+           // if ($(this).prop('checked')) {
+                $('[name=SchoolIds]').prop('checked', false);
+                $(this).prop('checked', true);
+            //}
+        });
+        $('[name=UserTypes]').click(function () {
+            // console.log($('[name=languages]').length + '==' + $('[name=languages]:checked').length);
+            if ($('[name=UserTypes]').length == $('[name=UserTypes]:checked').length) {
+                $('[name=UserTypes]').prop('checked', false);
+                $('#selectall_user').prop('checked', true);
+            }
+            else if ($('[name=UserTypes]:checked').length == 0)
+                $('#selectall_user').prop('checked', true);
+            else {
+                $('#selectall_user').prop('checked', false);
+            }
+        });
+
+        $('[name=SchoolIds]').click(
+           function () {
+               if ($('[name=SchoolIds]').length == $('[name=SchoolIds]:checked').length) {
+                   $('[name=SchoolIds]').prop('checked', false);
+                   $('#selectall_school').prop('checked', true);
+               }
+               else if ($('[name=SchoolIds]:checked').length == 0)
+                   $('#selectall_school').prop('checked', true);
+               else {
+                   $('#selectall_school').prop('checked', false);
+               }
+           });
+
+        function ExportStudents(type) {
+            if ($('#selectall_user').prop('checked'))
+                $('#UserTypesExport').val('');
+            else {
+                var ids = [];
+                $('[name=UserTypes]:checked').each(function () {
+                    ids.push($(this).val());
+                });
+                $('#UserTypesExport').val(ids.join(','));
+            }
+
+            if ($('#selectall_school').prop('checked'))
+                $('#SchoolIdsExport').val('');
+            else {
+                var ids = [];
+                $('[name=SchoolIds]:checked').each(function () {
+                    ids.push($(this).val());
+                });
+                $('#SchoolIdsExport').val(ids.join(','));
+            }
+            $('#type').val(type);
+            $('#filter-selected-items-toexport-form').submit();
+            return false;
+        }
+
+                    $('#filter_accordion').on('hidden.bs.collapse', function () {
+                        $('span#modifyfilter_link').show();
+                        //$('#data').addClass("in");
+                        $('#data').show();
+                        $('#filter_result').show();
+                        $('#report1_exptoexcel').css('display', 'inline-flex');
+                    });
+
+                    $('span#modifyfilter_link').click(function () {
+                        $('span#modifyfilter_link').hide();
+                        //$('#report1_exptoexcel').css('display', 'none');
+                        $('#filter_accordion').addClass("in");
+                        $('#filter_accordion').css('height', 'auto');
+                        //$('#data').hide();
+                        //$('#filter_result').hide();
+                    });
+
+                    function onBegin() {
+                        displayAjaxLoading(true);
+                    }
+                    function onComplete(jqXHR, textStatus, err) {
+                        $('html, body').animate({ scrollTop: 0 }, 500);
+                            if (jqXHR.status == 401) {
+                                //refresh the page, as we are not longer authorized
+                                location.reload();
+                            }
+                        displayAjaxLoading(false);
+                        $("[data-pagerid='Webdiyer.MvcPager']").initMvcPagers(); 
+                    }
+                </script>
+}

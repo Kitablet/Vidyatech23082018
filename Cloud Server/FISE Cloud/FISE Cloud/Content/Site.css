@@ -1,0 +1,254 @@
+﻿@font-face {
+                font-family: Roboto-Black;
+                 src: url('../fonts/Roboto-Black.ttf');
+         } 
+@font-face {
+                font-family: Roboto-Bold;
+                 src: url('../fonts/Roboto-Bold.ttf');
+         } 
+@font-face {
+                font-family: Roboto-Light;
+                 src: url('../fonts/Roboto-Light.ttf');
+         } 
+@font-face {
+                font-family: Roboto-Medium;
+                 src: url('../fonts/Roboto-Medium.ttf');
+         }
+@font-face {
+                font-family: Roboto-Regular;
+                 src: url('../fonts/Roboto-Regular.ttf');
+         }
+@font-face {
+                font-family: Roboto-Thin;
+                 src: url('../fonts/Roboto-Thin.ttf');
+         } 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.container {
+  padding-right: 40px;
+  padding-left: 40px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container .container.body-content {
+    padding-right: 80px;
+    padding-left: 0px;
+}
+.ajax-loading-block-window {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	width: 32px;
+	height: 32px;
+	margin: -16px 0 0 -16px;
+	background: url('Images/loading.gif') center no-repeat;
+}
+/* Set padding to keep content from hitting the edges */
+
+@media (min-width: 1024px) {
+
+    .body-content {
+        xpadding-left: 0px;
+        xpadding-right: 0px;
+    }
+
+    .container {
+        xpadding-right: 0px;
+        xpadding-left: 0px;
+    }
+
+    .container {
+        width: 1024px;
+        /* padding-left: 200px; */
+        /* position: relative; */
+    }
+
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+    left:0;
+}
+
+.maincontainer {
+    padding-left: 210px;
+    padding-top: 10px;
+}
+
+.navbar-inverse {
+    background-color: #FFF;
+    border: none;
+}
+
+    .navbar-inverse .container {
+        /*background-color: #CCCCCC;*/
+        background-color: #14B4B4;
+        border: none;
+        height: 80px;
+        padding-right: 32px;
+        padding-left: 16px;
+    }
+
+.navbar-fixed-left {
+    width: 200px;
+    border-radius: 0;
+    height: 100%;
+    background-color: #B2B2B2;
+    position: fixed;
+    margin-left: -15px;
+}
+
+
+    .navbar-fixed-left .navbar-nav {
+        width: 100%;
+    }
+
+        .navbar-fixed-left .navbar-nav > li {
+            float: none; /* Cancel default li float: left */
+            width: 100%;
+            color: #000;
+            font-weight: bold;
+            border-bottom: 1px solid #FFF;
+        }
+
+            .navbar-fixed-left .navbar-nav > li > a {
+                color: #000;
+                padding-top: 25px;
+                padding-bottom: 25px;
+            }
+
+        .navbar-fixed-left .navbar-nav > .active > a,
+        .navbar-fixed-left .navbar-nav > .active > a:hover,
+        .navbar-fixed-left .navbar-nav > .active > a:focus {
+            color: #000;
+            background-color: #8E8E8E;
+        }
+
+    .navbar-fixed-left + .container {
+        padding-left: 160px;
+    }
+
+
+.navbar-fixed-top {
+    height: 105px;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #000;
+}
+
+.navbar-brand {
+    padding: 15px 15px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #000;
+}
+
+/* To customize the tabs in SchoolHomepage*/
+.nav-tabs > li {
+    width: 50%;
+}
+.nav-tabs > li > a {
+    margin-right: 1px;
+    border-radius: 8px 8px 0 0;
+    background-color: #e5e5e5;
+    color: #333333;
+    font-size:20px;
+    font-family:Roboto-Regular;
+    text-transform:uppercase;
+}
+
+.nav.nav-tabs > li > a {
+    /*padding: 15px 15px!important;*/
+    padding: 15px 15px 8px 19px!important;
+}
+
+.nav-tabs {
+   border-bottom: none;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+/* breadcrumb*/
+.breadcrumb {
+    /*font-weight:bold;*/
+    padding: 0px;
+    margin-bottom:0px;
+    background-color: white;
+    border-radius: 0px;
+    /*margin-top: -33px;*/
+    /*margin-bottom: 7px;*/
+    /*position: absolute;
+    top: 113px;*/
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    position: absolute;
+    top: 32px;
+}
+.breadcrumb > li + li:before {
+    padding: 0;
+    color: #FC654C;
+    content: "";
+    /*text-transform:capitalize;*/
+}
+.breadcrumb > li{
+    color: #333333;
+    /*text-transform:capitalize;*/
+}
+    
+.breadcrumb > li > a{
+    color: #FC654C;
+    border-bottom:1px solid;
+    text-decoration:none;
+}
+.breadcrumb > li.divider {
+        padding: 0px 5px;
+        font-weight:bold;
+        background:url('Images/FiseIconsAssets/Breadcrumb-arrow.png') no-repeat center;
+        color: transparent;
+    }
+.breadcrumb > .active {
+    color: #333333;
+}
+
+.breadcrumb > li.link {
+}
+

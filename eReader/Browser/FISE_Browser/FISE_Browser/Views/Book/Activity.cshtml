@@ -1,0 +1,169 @@
+﻿@using System.Web.Mvc;
+@using System.Web.Routing;
+@model FISE_Browser.Models.BookActivity
+
+@{
+    Layout = null;
+    var activitybasepath = System.Configuration.ConfigurationManager.AppSettings["activityproxypath"].ToString().Replace("#kitabletid#", Model.KitabletId);
+    var activityjson = Model.Json;
+    int subsection1 = 3;
+    FISE_Browser.Models.User userobj = (FISE_Browser.Models.User)Session["UserObject"];
+    subsection1 = userobj != null ? userobj.SubSectionId : subsection1;
+    int UserId = userobj.UserId;
+    int sessiontime = Convert.ToInt32(System.Configuration.ConfigurationManager.AppSettings["sessiontimeout"]) * 60 * 1000;
+}
+<!DOCTYPE html>
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/utils.js"></script>
+<script>
+    var IsBackgroundSync = false;
+    var subsection = '@subsection1';
+    var starttime = '@DateTime.UtcNow';
+    var UserId = '@UserId';
+    var SessionOutTime =parseInt('@sessiontime');
+    var IsDataSync = false;
+    var interval;
+    var IsSessionOut = false;
+    $(document).ready(function () {
+        checkIsLogout();
+        $('.commonmodal').hide();
+        if (subsection == '1')
+            $('.commonmodal .modal-content').css('background-color', '#FC654C');
+        else if (subsection == '2')
+            $('.commonmodal .modal-content').css('background-color', '#9DA503');
+        else
+            $('.commonmodal .modal-content').css('background-color', '#14B4B4');
+        $('#Closebtn').click(function () {
+            $('.commonmodal').hide();
+        });
+
+        height = window.innerHeight ? window.innerHeight : $(window).height();
+        width = window.innerWidth ? window.innerWidth : $(window).width();
+        $('body,#Main_Content').css({ 'height': height, 'width': width, 'background-color': '#ccc', 'margin': '0px auto', 'padding': '0px' });
+
+        var json = CreateJson();
+        $('#activityiframe').load(function () {
+            document.getElementById('activityiframe').contentWindow.ActivityStart(json.Model.Json);
+            $('#activityiframe').contents().find('.header').css({ 'padding-top': '10px', 'padding-bottom': '54px' });
+            $('#activityiframe').contents().find('.headerCloseIcon').css({ 'padding-top': '3px', 'cursor': 'pointer', 'display': 'block' });
+            $('#activityiframe').contents().find('#actionbuttoncontainer').css({ 'padding-bottom': '0px' });
+            $('#activityiframe').contents().find('#rating').css({ 'margin-right': '5px' });
+        });
+
+        OnSessionOut();
+    });
+    function CreateJson() {
+        return @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(new {  Model }));
+    }
+
+    function Skip() {
+        SubmitActivity('', true);
+    }
+    function SubmitActivity(json, attempted) {
+        if (navigator.onLine) {
+            $.ajax({
+                url: '@Url.RouteUrl("SetBookActivity")',
+                type: 'Post',
+                data: { 'bookid': '@Model.BookId', 'isattempted': !attempted, 'json': JSON.stringify(json), 'starttime': starttime, 'IsautoSync': IsBackgroundSync, 'UserId': UserId, 'IsSessionOut': IsSessionOut },
+                dataType: 'json',
+                async: false,
+                error: function () {
+                    // alert('error');
+                },
+                success: function (data) {
+                    if (!IsBackgroundSync) {
+                        if (data == "logout")
+                            window.location.href = '@Url.RouteUrl("LoginPage")';
+                        window.location.href = '@Url.RouteUrl("BookRead", new { id = Model.BookId })';
+                    }
+                    else {
+                        IsDataSync = true;
+                        starttime = data;
+                    }
+                    IsBackgroundSync = false;
+                    console.log(data);
+                    syncbeforeunload = false;
+                }
+            });
+        }
+        else {
+            $('.commonmodal').show();
+        }
+    }
+    window.addEventListener('beforeunload', function () {
+        if (syncbeforeunload) {
+            if (IsDataSync == false) {
+                IsBackgroundSync = true;
+                SubmitActivity('', true);
+            }
+        }
+    });
+
+    $(window).on("blur focus", function (e) {
+        var prevType = $(this).data("prevType");
+
+        if (prevType != e.type) {   //  reduce double fire issues
+            switch (e.type) {
+                case "blur":
+                    if (IsDataSync == false) {
+                        IsBackgroundSync = true;
+                        SubmitActivity('', true);
+                    }
+                    break;
+                case "focus":
+                    console.log("!!focus!!");
+                    $.ajax({
+                        url: '@Url.Action("FocusIn", "Main")',
+                        type: 'Get',
+                        dataType: 'json',
+                        async: false,
+                        success: function (data) {
+                            console.log(data);
+                            starttime = data;
+                            IsDataSync = false;
+                            IsSessionOut = false;
+                            syncbeforeunload = true;
+                            OnSessionOut();
+                        },
+                        error: function (xhr, status, error) {
+                        }
+                    });
+                    break;
+            }
+        }
+
+        $(this).data("prevType", e.type);
+    });
+
+    function OnSessionOut() {
+        clearTimeout(interval);
+        interval = setTimeout(function () {
+            if (IsDataSync == false) {
+                IsBackgroundSync = true;
+                SubmitActivity('', true);
+                IsSessionOut = true;
+            }
+        }, SessionOutTime);
+    }
+
+</script>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity</title>
+    <link href="~/Css/Activity.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="Main_Content" style="height:100%; min-height:768px;min-width:1024px;overflow:hidden">
+        <div class="commonmodal">
+            <div class="modal-content">
+                <p id="Poptext">@Resource.NoInternet</p>
+                <div id="modelbtn">
+                    <input type="button" value="OK" id="Closebtn" />
+                </div>
+            </div>
+        </div>
+        <iframe id="activityiframe" src="@activitybasepath" style="width:100%;height:100%;border:0 none"></iframe>
+    </div>
+</body>
+</html>

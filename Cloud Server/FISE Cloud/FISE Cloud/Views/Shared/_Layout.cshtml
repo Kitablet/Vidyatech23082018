@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE" /> 
+    <link rel="stylesheet" type="text/css" href="~/Content/custom.css?v=1">
+    <title>@ViewBag.Title - KITABLET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</head>
+<body>
+    @{  var controllerName = HttpContext.Current.Request.RequestContext.RouteData.GetRequiredString("controller");
+        FISE_Cloud.Services.Authentication.UserData _Userdata = null;
+        var IsUserAuthenticated = FISEAuthenticationService.IsUserAuthenticated;
+        if (IsUserAuthenticated)
+        {
+            _Userdata = FISEAuthenticationService.CurrentUserData;
+        }
+    }
+    <div class="ajax-loading-block-window" style="display: none"></div>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">               
+                <a class="navbar-brand" href="@Url.Action("Index","Home")">
+                    <img src="~/Content/Images/kitablet_logo_2.png" />
+                </a>
+                <div class="headerpagetitle">@ViewBag.HeaderPageTitle</div>
+            </div>         
+            @if (IsUserAuthenticated)
+                {
+            <ul class="nav navbar-nav navbar-right" style="list-style:none">
+                @if (controllerName.Equals("home", StringComparison.InvariantCultureIgnoreCase) || controllerName.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase))
+                        {
+                    <li class="active"><a href="@Url.RouteUrl("HomePage")" title="Home"><img src="~/Content/Images/FiseIconsAssets/Home-active.png" /></a></li>
+                        }
+                        else
+                        {
+                    <li><a href="@Url.RouteUrl("HomePage")" id="home_icon" class="navbar_icon" title="Home"></a></li>
+                        }
+                @if (_Userdata != null && _Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase))
+        {
+            if (controllerName.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase))
+            {
+                    <li class="active">
+                        <a title="E-library Admins" href="@Url.RouteUrl("ElibraryAdminList",new { pagesize = string.Empty, pageindex = string.Empty })">
+                            <img src="~/Content/Images/FiseIconsAssets/E-lin-admins-active.png" />
+                        </a>
+                    </li>
+            }
+            else
+            {
+                    <li><a title="E-library Admins" href="@Url.RouteUrl("ElibraryAdminList",new { pagesize = string.Empty, pageindex = string.Empty })" id="elibadmin_icon" class="navbar_icon"></a></li>
+            }
+        }
+                @if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase)))
+                        {
+                            if (controllerName.Equals("school", StringComparison.InvariantCultureIgnoreCase))
+                            {
+                    <li class="active">
+                        <a title="Schools" href="@Url.RouteUrl("SchoolList", new { pagesize = string.Empty, pageindex = string.Empty })">
+                            <img src="~/Content/Images/FiseIconsAssets/Schools-active.png" />
+                        </a>
+                    </li>
+                            }
+                            else
+                            {
+                    <li><a title="Schools" id="schoollist_icon" class="navbar_icon" href="@Url.RouteUrl("SchoolList", new { pagesize = string.Empty, pageindex = string.Empty })"></a></li>
+                            }
+                        }
+
+                @if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase)) || _Userdata.Role.Equals("schooladmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("parent", StringComparison.InvariantCultureIgnoreCase))
+{
+    if (controllerName.Equals("report", StringComparison.InvariantCultureIgnoreCase))
+    {
+                    <li class="active"><a title="Reports" href="@Url.RouteUrl("ReportsListing")"><img src="~/Content/Images/FiseIconsAssets/Reports-active.png" /></a></li>
+    }
+    else
+    {
+                    <li><a title="Reports" id="report_icon" class="navbar_icon" href="@Url.RouteUrl("ReportsListing")"></a></li>
+                        }
+                      }
+                @if (_Userdata != null && (_Userdata.Role.Equals("superadmin", StringComparison.InvariantCultureIgnoreCase) || _Userdata.Role.Equals("elibadmin", StringComparison.InvariantCultureIgnoreCase)))
+                        {
+                            if (controllerName.Equals("books", StringComparison.InvariantCultureIgnoreCase))
+                            {
+                    <li class="active"><a title="Books" href="@Url.RouteUrl("BooksList", new { pagesize = string.Empty, pageindex = string.Empty })"><img src="~/Content/Images/FiseIconsAssets/Books-active.png" /></a></li>
+                            }
+                            else
+                            {
+                    <li><a title="Books" class="navbar_icon" id="bookslist_icon" href="@Url.RouteUrl("BooksList", new { pagesize = string.Empty, pageindex = string.Empty })"></a></li>
+                            }
+                        }
+
+                @if (_Userdata != null && !_Userdata.Role.Equals("parent", StringComparison.InvariantCultureIgnoreCase) )
+                      {
+                          if (controllerName.Equals("search", StringComparison.InvariantCultureIgnoreCase))
+                          {
+                    <li class="active"><a title="Search" href="@Url.RouteUrl("search")"><img src="~/Content/Images/search_selected.png" /></a></li>
+                          }
+                          else
+                          {
+                    <li><a title="Search" id="search_icon" class="navbar_icon" href="@Url.RouteUrl("search")"></a></li>
+                          }
+                      }
+
+
+
+
+                @if (_Userdata != null)
+                        {
+                            if (controllerName.Equals("user", StringComparison.InvariantCultureIgnoreCase))
+                            {
+                    <li class="active"><a title="My Profile" href="@Url.RouteUrl("UserProfileInfo")"><img src="~/Content/Images/FiseIconsAssets/Profile-active.png" /></a></li>
+                            }
+                            else
+                            {
+                    <li><a title="My Profile" id="profile_icon" class="navbar_icon" href="@Url.RouteUrl("UserProfileInfo")"></a></li>
+                            }
+                        }
+
+
+
+                <li><a id="logout_icon" title="Logout" class="navbar_icon" href="@Url.Action("Logout", "User")"></a></li>
+            </ul>
+                }
+                else
+            {
+                if (ViewBag.HideHomeIcon != "true") { 
+            <ul class="nav navbar-nav navbar-right" style="list-style:none">
+                <li><a id="login_icon" title="Login" class="navbar_icon" href="@Url.Action("Login", "User")"></a></li>
+            </ul>
+            }
+                }
+            @*</div>*@
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+    <footer>
+        <div class="container">
+            <hr />
+            <p>@Html.Raw(HttpUtility.HtmlDecode(@Resource.FooterTermsAndCondition))</p>
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function displayAjaxLoading(display) {
+            if (display) {
+                $('.ajax-loading-block-window').show();
+            }
+            else {
+                $('.ajax-loading-block-window').hide('slow');
+            }
+        }
+        $('input[type=text]').keyup(function () {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+        $('input[type=number]').keyup(function (ev) {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+        $('input[type=radio]').keyup(function () {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+        $('input[type=checkbox]').keyup(function () {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+        $('select').change(function () {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).siblings('span.report-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+        $("input[type=number]").on("keypress keyup blur", function (event) {
+            $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+        $('input[type=password]').keyup(function (ev) {
+            $(this).siblings('span.field-validation-error').hide();
+            $(this).removeClass('input-validation-error');
+        })
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

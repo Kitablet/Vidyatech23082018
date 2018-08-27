@@ -1,0 +1,1435 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="FoundationforInnovationSo.Kitablet" version="1.0" primary="true">
+		<Qualifiers>
+			<Scale>80, 100</Scale>
+			<TargetSize>48, 32, 256, 16</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="a1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/a1.png">
+				<Candidate type="Path">
+					<Value>a1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="a2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/a2.png">
+				<Candidate type="Path">
+					<Value>a2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity.png">
+				<Candidate type="Path">
+					<Value>activity.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_1.png">
+				<Candidate type="Path">
+					<Value>activity_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_2.png">
+				<Candidate type="Path">
+					<Value>activity_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_3.png">
+				<Candidate type="Path">
+					<Value>activity_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_1.png">
+				<Candidate type="Path">
+					<Value>activity_big_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_2.png">
+				<Candidate type="Path">
+					<Value>activity_big_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_3.png">
+				<Candidate type="Path">
+					<Value>activity_big_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_complete_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_complete_1.png">
+				<Candidate type="Path">
+					<Value>activity_big_complete_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_complete_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_complete_2.png">
+				<Candidate type="Path">
+					<Value>activity_big_complete_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_big_complete_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_big_complete_3.png">
+				<Candidate type="Path">
+					<Value>activity_big_complete_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_complete.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_complete.png">
+				<Candidate type="Path">
+					<Value>activity_complete.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_complete_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_complete_1.png">
+				<Candidate type="Path">
+					<Value>activity_complete_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_complete_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_complete_2.png">
+				<Candidate type="Path">
+					<Value>activity_complete_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="activity_complete_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/activity_complete_3.png">
+				<Candidate type="Path">
+					<Value>activity_complete_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="all_books_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/all_books_1.png">
+				<Candidate type="Path">
+					<Value>all_books_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="all_books_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/all_books_2.png">
+				<Candidate type="Path">
+					<Value>all_books_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="all_books_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/all_books_3.png">
+				<Candidate type="Path">
+					<Value>all_books_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="animation.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/animation.png">
+				<Candidate type="Path">
+					<Value>animation.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="animation_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/animation_1.png">
+				<Candidate type="Path">
+					<Value>animation_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="animation_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/animation_2.png">
+				<Candidate type="Path">
+					<Value>animation_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="animation_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/animation_3.png">
+				<Candidate type="Path">
+					<Value>animation_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="announcements.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/announcements.png">
+				<Candidate type="Path">
+					<Value>announcements.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="announcements_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/announcements_selected.png">
+				<Candidate type="Path">
+					<Value>announcements_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="App.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="available_offline_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/available_offline_1.png">
+				<Candidate type="Path">
+					<Value>available_offline_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="available_offline_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/available_offline_2.png">
+				<Candidate type="Path">
+					<Value>available_offline_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="available_offline_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/available_offline_3.png">
+				<Candidate type="Path">
+					<Value>available_offline_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="avatar_large.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/avatar_large.png">
+				<Candidate type="Path">
+					<Value>avatar_large.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="avatar_medium.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/avatar_medium.png">
+				<Candidate type="Path">
+					<Value>avatar_medium.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="avatar_small.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/avatar_small.png">
+				<Candidate type="Path">
+					<Value>avatar_small.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bgImage_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bgImage_1.png">
+				<Candidate type="Path">
+					<Value>bgImage_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bgImage_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bgImage_2.png">
+				<Candidate type="Path">
+					<Value>bgImage_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bgImage_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bgImage_3.png">
+				<Candidate type="Path">
+					<Value>bgImage_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bookmark_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bookmark_1.png">
+				<Candidate type="Path">
+					<Value>bookmark_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bookmark_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bookmark_2.png">
+				<Candidate type="Path">
+					<Value>bookmark_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bookmark_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bookmark_3.png">
+				<Candidate type="Path">
+					<Value>bookmark_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="books_read_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/books_read_1.png">
+				<Candidate type="Path">
+					<Value>books_read_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="books_read_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/books_read_2.png">
+				<Candidate type="Path">
+					<Value>books_read_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="books_read_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/books_read_3.png">
+				<Candidate type="Path">
+					<Value>books_read_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_landscape_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_landscape_1.png">
+				<Candidate type="Path">
+					<Value>Book_landscape_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_landscape_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_landscape_2.png">
+				<Candidate type="Path">
+					<Value>Book_landscape_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_landscape_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_landscape_3.png">
+				<Candidate type="Path">
+					<Value>Book_landscape_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_portrait_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_portrait_1.png">
+				<Candidate type="Path">
+					<Value>Book_portrait_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_portrait_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_portrait_2.png">
+				<Candidate type="Path">
+					<Value>Book_portrait_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Book_portrait_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Book_portrait_3.png">
+				<Candidate type="Path">
+					<Value>Book_portrait_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="book_subsection_left_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/book_subsection_left_1.png">
+				<Candidate type="Path">
+					<Value>book_subsection_left_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="book_subsection_left_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/book_subsection_left_2.png">
+				<Candidate type="Path">
+					<Value>book_subsection_left_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="book_subsection_left_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/book_subsection_left_3.png">
+				<Candidate type="Path">
+					<Value>book_subsection_left_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="book_thumbnail.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/book_thumbnail.png">
+				<Candidate type="Path">
+					<Value>book_thumbnail.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_1.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_2.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_3.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_filled.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_filled.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_filled.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_filled_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_filled_1.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_filled_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_filled_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_filled_2.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_filled_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_left_corner_filled_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_left_corner_filled_3.png">
+				<Candidate type="Path">
+					<Value>bottom_left_corner_filled_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_1.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_2.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_3.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_filled.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_filled.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_filled.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_filled_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_filled_1.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_filled_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_filled_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_filled_2.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_filled_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="bottom_right_corner_filled_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/bottom_right_corner_filled_3.png">
+				<Candidate type="Path">
+					<Value>bottom_right_corner_filled_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_1.png">
+				<Candidate type="Path">
+					<Value>checkbox_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_2.png">
+				<Candidate type="Path">
+					<Value>checkbox_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_3.png">
+				<Candidate type="Path">
+					<Value>checkbox_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_black.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_black.png">
+				<Candidate type="Path">
+					<Value>checkbox_black.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_black_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_black_selected.png">
+				<Candidate type="Path">
+					<Value>checkbox_black_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_selected_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_selected_1.png">
+				<Candidate type="Path">
+					<Value>checkbox_selected_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_selected_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_selected_2.png">
+				<Candidate type="Path">
+					<Value>checkbox_selected_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="checkbox_selected_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/checkbox_selected_3.png">
+				<Candidate type="Path">
+					<Value>checkbox_selected_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="close.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/close.png">
+				<Candidate type="Path">
+					<Value>close.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="close_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/close_1.png">
+				<Candidate type="Path">
+					<Value>close_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="close_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/close_2.png">
+				<Candidate type="Path">
+					<Value>close_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="close_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/close_3.png">
+				<Candidate type="Path">
+					<Value>close_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="collapseBtn_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/collapseBtn_1.png">
+				<Candidate type="Path">
+					<Value>collapseBtn_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="collapseBtn_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/collapseBtn_2.png">
+				<Candidate type="Path">
+					<Value>collapseBtn_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="collapseBtn_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/collapseBtn_3.png">
+				<Candidate type="Path">
+					<Value>collapseBtn_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="coming_soon_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/coming_soon_1.png">
+				<Candidate type="Path">
+					<Value>coming_soon_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="coming_soon_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/coming_soon_2.png">
+				<Candidate type="Path">
+					<Value>coming_soon_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="coming_soon_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/coming_soon_3.png">
+				<Candidate type="Path">
+					<Value>coming_soon_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="curled_corner_big.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/curled_corner_big.png">
+				<Candidate type="Path">
+					<Value>curled_corner_big.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="curled_corner_small.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/curled_corner_small.png">
+				<Candidate type="Path">
+					<Value>curled_corner_small.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DeviceInfoReadme.txt" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/DeviceInfoReadme.txt">
+				<Candidate type="Path">
+					<Value>DeviceInfoReadme.txt</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="discover_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/discover_1.png">
+				<Candidate type="Path">
+					<Value>discover_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="discover_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/discover_2.png">
+				<Candidate type="Path">
+					<Value>discover_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="discover_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/discover_3.png">
+				<Candidate type="Path">
+					<Value>discover_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="double_pager.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/double_pager.png">
+				<Candidate type="Path">
+					<Value>double_pager.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="double_pager_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/double_pager_1.png">
+				<Candidate type="Path">
+					<Value>double_pager_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="double_pager_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/double_pager_2.png">
+				<Candidate type="Path">
+					<Value>double_pager_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="double_pager_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/double_pager_3.png">
+				<Candidate type="Path">
+					<Value>double_pager_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="double_pager_disable.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/double_pager_disable.png">
+				<Candidate type="Path">
+					<Value>double_pager_disable.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="down.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/down.png">
+				<Candidate type="Path">
+					<Value>down.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="DownArrowImage.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/DownArrowImage.png">
+				<Candidate type="Path">
+					<Value>DownArrowImage.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="expandBtn_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/expandBtn_1.png">
+				<Candidate type="Path">
+					<Value>expandBtn_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="expandBtn_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/expandBtn_2.png">
+				<Candidate type="Path">
+					<Value>expandBtn_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="expandBtn_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/expandBtn_3.png">
+				<Candidate type="Path">
+					<Value>expandBtn_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="help_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/help_1.png">
+				<Candidate type="Path">
+					<Value>help_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="help_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/help_2.png">
+				<Candidate type="Path">
+					<Value>help_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="help_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/help_3.png">
+				<Candidate type="Path">
+					<Value>help_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="home.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/home.png">
+				<Candidate type="Path">
+					<Value>home.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="home_env.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/home_env.png">
+				<Candidate type="Path">
+					<Value>home_env.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="home_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/home_selected.png">
+				<Candidate type="Path">
+					<Value>home_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="Kitablet.Windows.xr.xml" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Kitablet.Windows.xr.xml">
+				<Candidate type="Path">
+					<Value>Kitablet.Windows.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="kitablet_logo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/kitablet_logo.png">
+				<Candidate type="Path">
+					<Value>kitablet_logo.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="kitablet_logo_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/kitablet_logo_1.png">
+				<Candidate type="Path">
+					<Value>kitablet_logo_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="kitablet_logo_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/kitablet_logo_2.png">
+				<Candidate type="Path">
+					<Value>kitablet_logo_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="kitablet_logo_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/kitablet_logo_3.png">
+				<Candidate type="Path">
+					<Value>kitablet_logo_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="logout.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/logout.png">
+				<Candidate type="Path">
+					<Value>logout.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="logout_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/logout_selected.png">
+				<Candidate type="Path">
+					<Value>logout_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/MainPage.xbf">
+				<Candidate type="Path">
+					<Value>MainPage.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="my_profile_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/my_profile_1.png">
+				<Candidate type="Path">
+					<Value>my_profile_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="my_profile_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/my_profile_2.png">
+				<Candidate type="Path">
+					<Value>my_profile_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="my_profile_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/my_profile_3.png">
+				<Candidate type="Path">
+					<Value>my_profile_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="nav_dot.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/nav_dot.png">
+				<Candidate type="Path">
+					<Value>nav_dot.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="nav_dot_anim.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/nav_dot_anim.png">
+				<Candidate type="Path">
+					<Value>nav_dot_anim.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="new_books_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/new_books_1.png">
+				<Candidate type="Path">
+					<Value>new_books_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="new_books_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/new_books_2.png">
+				<Candidate type="Path">
+					<Value>new_books_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="new_books_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/new_books_3.png">
+				<Candidate type="Path">
+					<Value>new_books_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="next.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/next.png">
+				<Candidate type="Path">
+					<Value>next.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="next_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/next_1.png">
+				<Candidate type="Path">
+					<Value>next_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="next_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/next_2.png">
+				<Candidate type="Path">
+					<Value>next_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="next_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/next_3.png">
+				<Candidate type="Path">
+					<Value>next_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="no_books.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/no_books.png">
+				<Candidate type="Path">
+					<Value>no_books.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="previous.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/previous.png">
+				<Candidate type="Path">
+					<Value>previous.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="previous_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/previous_1.png">
+				<Candidate type="Path">
+					<Value>previous_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="previous_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/previous_2.png">
+				<Candidate type="Path">
+					<Value>previous_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="previous_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/previous_3.png">
+				<Candidate type="Path">
+					<Value>previous_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="privacy_policy_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/privacy_policy_1.png">
+				<Candidate type="Path">
+					<Value>privacy_policy_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="privacy_policy_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/privacy_policy_2.png">
+				<Candidate type="Path">
+					<Value>privacy_policy_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="privacy_policy_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/privacy_policy_3.png">
+				<Candidate type="Path">
+					<Value>privacy_policy_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="profile.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/profile.png">
+				<Candidate type="Path">
+					<Value>profile.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="profile_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/profile_1.png">
+				<Candidate type="Path">
+					<Value>profile_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="profile_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/profile_2.png">
+				<Candidate type="Path">
+					<Value>profile_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="profile_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/profile_3.png">
+				<Candidate type="Path">
+					<Value>profile_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="profile_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/profile_selected.png">
+				<Candidate type="Path">
+					<Value>profile_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="progress_done.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/progress_done.png">
+				<Candidate type="Path">
+					<Value>progress_done.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="progress_pending.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/progress_pending.png">
+				<Candidate type="Path">
+					<Value>progress_pending.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating.png">
+				<Candidate type="Path">
+					<Value>rating.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_1.png">
+				<Candidate type="Path">
+					<Value>rating_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_2.png">
+				<Candidate type="Path">
+					<Value>rating_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_3.png">
+				<Candidate type="Path">
+					<Value>rating_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_1.png">
+				<Candidate type="Path">
+					<Value>rating_big_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_2.png">
+				<Candidate type="Path">
+					<Value>rating_big_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_3.png">
+				<Candidate type="Path">
+					<Value>rating_big_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_complete_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_complete_1.png">
+				<Candidate type="Path">
+					<Value>rating_big_complete_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_complete_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_complete_2.png">
+				<Candidate type="Path">
+					<Value>rating_big_complete_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_big_complete_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_big_complete_3.png">
+				<Candidate type="Path">
+					<Value>rating_big_complete_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_complete.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_complete.png">
+				<Candidate type="Path">
+					<Value>rating_complete.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_complete_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_complete_1.png">
+				<Candidate type="Path">
+					<Value>rating_complete_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_complete_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_complete_2.png">
+				<Candidate type="Path">
+					<Value>rating_complete_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rating_complete_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rating_complete_3.png">
+				<Candidate type="Path">
+					<Value>rating_complete_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud.png">
+				<Candidate type="Path">
+					<Value>read_aloud.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_1.png">
+				<Candidate type="Path">
+					<Value>read_aloud_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_2.png">
+				<Candidate type="Path">
+					<Value>read_aloud_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_3.png">
+				<Candidate type="Path">
+					<Value>read_aloud_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_mute.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_mute.png">
+				<Candidate type="Path">
+					<Value>read_aloud_mute.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_mute_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_mute_1.png">
+				<Candidate type="Path">
+					<Value>read_aloud_mute_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_mute_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_mute_2.png">
+				<Candidate type="Path">
+					<Value>read_aloud_mute_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_mute_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_mute_3.png">
+				<Candidate type="Path">
+					<Value>read_aloud_mute_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_sound.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_sound.png">
+				<Candidate type="Path">
+					<Value>read_aloud_sound.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_sound_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_sound_1.png">
+				<Candidate type="Path">
+					<Value>read_aloud_sound_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_sound_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_sound_2.png">
+				<Candidate type="Path">
+					<Value>read_aloud_sound_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_aloud_sound_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_aloud_sound_3.png">
+				<Candidate type="Path">
+					<Value>read_aloud_sound_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_later_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_later_1.png">
+				<Candidate type="Path">
+					<Value>read_later_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_later_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_later_2.png">
+				<Candidate type="Path">
+					<Value>read_later_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="read_later_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/read_later_3.png">
+				<Candidate type="Path">
+					<Value>read_later_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="recommended_books_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/recommended_books_1.png">
+				<Candidate type="Path">
+					<Value>recommended_books_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="recommended_books_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/recommended_books_2.png">
+				<Candidate type="Path">
+					<Value>recommended_books_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="recommended_books_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/recommended_books_3.png">
+				<Candidate type="Path">
+					<Value>recommended_books_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="releaseArrow_asc.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/releaseArrow_asc.png">
+				<Candidate type="Path">
+					<Value>releaseArrow_asc.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="releaseArrow_desc.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/releaseArrow_desc.png">
+				<Candidate type="Path">
+					<Value>releaseArrow_desc.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="release_books_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/release_books_1.png">
+				<Candidate type="Path">
+					<Value>release_books_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="release_books_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/release_books_2.png">
+				<Candidate type="Path">
+					<Value>release_books_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="release_books_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/release_books_3.png">
+				<Candidate type="Path">
+					<Value>release_books_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rounded_transparent_button_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rounded_transparent_button_1.png">
+				<Candidate type="Path">
+					<Value>rounded_transparent_button_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rounded_transparent_button_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rounded_transparent_button_2.png">
+				<Candidate type="Path">
+					<Value>rounded_transparent_button_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="rounded_transparent_button_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/rounded_transparent_button_3.png">
+				<Candidate type="Path">
+					<Value>rounded_transparent_button_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="school_env.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/school_env.png">
+				<Candidate type="Path">
+					<Value>school_env.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="search.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/search.png">
+				<Candidate type="Path">
+					<Value>search.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="searchdiscover_happy.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/searchdiscover_happy.png">
+				<Candidate type="Path">
+					<Value>searchdiscover_happy.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="searchdiscover_unhappy.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/searchdiscover_unhappy.png">
+				<Candidate type="Path">
+					<Value>searchdiscover_unhappy.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="search_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/search_1.png">
+				<Candidate type="Path">
+					<Value>search_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="search_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/search_2.png">
+				<Candidate type="Path">
+					<Value>search_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="search_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/search_3.png">
+				<Candidate type="Path">
+					<Value>search_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="search_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/search_selected.png">
+				<Candidate type="Path">
+					<Value>search_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="selectedButton_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/selectedButton_1.png">
+				<Candidate type="Path">
+					<Value>selectedButton_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="selectedButton_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/selectedButton_2.png">
+				<Candidate type="Path">
+					<Value>selectedButton_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="selectedButton_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/selectedButton_3.png">
+				<Candidate type="Path">
+					<Value>selectedButton_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="settings.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/settings.png">
+				<Candidate type="Path">
+					<Value>settings.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="settings_selected.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/settings_selected.png">
+				<Candidate type="Path">
+					<Value>settings_selected.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="single_pager.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/single_pager.png">
+				<Candidate type="Path">
+					<Value>single_pager.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="single_pager_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/single_pager_1.png">
+				<Candidate type="Path">
+					<Value>single_pager_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="single_pager_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/single_pager_2.png">
+				<Candidate type="Path">
+					<Value>single_pager_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="single_pager_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/single_pager_3.png">
+				<Candidate type="Path">
+					<Value>single_pager_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="single_pager_disable.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/single_pager_disable.png">
+				<Candidate type="Path">
+					<Value>single_pager_disable.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_arrow_filled.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_arrow_filled.png">
+				<Candidate type="Path">
+					<Value>top_arrow_filled.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner.png">
+				<Candidate type="Path">
+					<Value>top_left_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_1.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_2.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_3.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_filled.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_filled.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_filled.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_filled_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_filled_1.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_filled_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_filled_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_filled_2.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_filled_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_left_corner_filled_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_left_corner_filled_3.png">
+				<Candidate type="Path">
+					<Value>top_left_corner_filled_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner.png">
+				<Candidate type="Path">
+					<Value>top_right_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_1.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_2.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_3.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_filled.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_filled.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_filled.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_filled_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_filled_1.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_filled_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_filled_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_filled_2.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_filled_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="top_right_corner_filled_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/top_right_corner_filled_3.png">
+				<Candidate type="Path">
+					<Value>top_right_corner_filled_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="unselectedButton_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/unselectedButton_1.png">
+				<Candidate type="Path">
+					<Value>unselectedButton_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="unselectedButton_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/unselectedButton_2.png">
+				<Candidate type="Path">
+					<Value>unselectedButton_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="unselectedButton_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/unselectedButton_3.png">
+				<Candidate type="Path">
+					<Value>unselectedButton_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="up.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/up.png">
+				<Candidate type="Path">
+					<Value>up.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="white_bottom_left_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/white_bottom_left_corner.png">
+				<Candidate type="Path">
+					<Value>white_bottom_left_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="white_bottom_right_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/white_bottom_right_corner.png">
+				<Candidate type="Path">
+					<Value>white_bottom_right_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="white_top_left_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/white_top_left_corner.png">
+				<Candidate type="Path">
+					<Value>white_top_left_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="white_top_right_corner.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/white_top_right_corner.png">
+				<Candidate type="Path">
+					<Value>white_top_right_corner.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_in.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_in.png">
+				<Candidate type="Path">
+					<Value>zoom_in.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_in_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_in_1.png">
+				<Candidate type="Path">
+					<Value>zoom_in_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_in_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_in_2.png">
+				<Candidate type="Path">
+					<Value>zoom_in_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_in_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_in_3.png">
+				<Candidate type="Path">
+					<Value>zoom_in_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_in_disable.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_in_disable.png">
+				<Candidate type="Path">
+					<Value>zoom_in_disable.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_out.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_out.png">
+				<Candidate type="Path">
+					<Value>zoom_out.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_out_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_out_1.png">
+				<Candidate type="Path">
+					<Value>zoom_out_1.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_out_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_out_2.png">
+				<Candidate type="Path">
+					<Value>zoom_out_2.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_out_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_out_3.png">
+				<Candidate type="Path">
+					<Value>zoom_out_3.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="zoom_out_disable.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/zoom_out_disable.png">
+				<Candidate type="Path">
+					<Value>zoom_out_disable.png</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="1116x540.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/1116x540.png">
+					<Candidate type="Path">
+						<Value>Assets\1116x540.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="620x300.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/620x300.png">
+					<Candidate type="Path">
+						<Value>Assets\620x300.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="868x420.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/868x420.png">
+					<Candidate type="Path">
+						<Value>Assets\868x420.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/BadgeLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\BadgeLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square70x70Logo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Square70x70Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Square70x70Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Square70x70Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-80" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-80.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-100" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-100.png</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Fonts">
+					<NamedResource name="Quicksand-Bold.otf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Fonts/Quicksand-Bold.otf">
+						<Candidate type="Path">
+							<Value>Assets\Fonts\Quicksand-Bold.otf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="Quicksand-Regular.otf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Assets/Fonts/Quicksand-Regular.otf">
+						<Candidate type="Path">
+							<Value>Assets\Fonts\Quicksand-Regular.otf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Content">
+				<ResourceMapSubtree name="PrivacyPolicy">
+					<NamedResource name="help_1.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/help_1.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\help_1.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="help_2.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/help_2.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\help_2.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="help_3.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/help_3.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\help_3.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="privacy_1.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/privacy_1.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\privacy_1.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="privacy_2.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/privacy_2.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\privacy_2.html</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="privacy_3.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/privacy_3.html">
+						<Candidate type="Path">
+							<Value>Content\PrivacyPolicy\privacy_3.html</Value>
+						</Candidate>
+					</NamedResource>
+					<ResourceMapSubtree name="Fonts">
+						<NamedResource name="Quicksand-Bold.otf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Fonts/Quicksand-Bold.otf">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Fonts\Quicksand-Bold.otf</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="Quicksand-Regular.otf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Fonts/Quicksand-Regular.otf">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Fonts\Quicksand-Regular.otf</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Images">
+						<NamedResource name="minus_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/minus_1.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\minus_1.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="minus_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/minus_2.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\minus_2.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="minus_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/minus_3.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\minus_3.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="plus_1.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/plus_1.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\plus_1.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="plus_2.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/plus_2.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\plus_2.png</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="plus_3.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Images/plus_3.png">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Images\plus_3.png</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Scripts">
+						<NamedResource name="jquery-1.11.3.js" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Scripts/jquery-1.11.3.js">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Scripts\jquery-1.11.3.js</Value>
+							</Candidate>
+						</NamedResource>
+						<NamedResource name="script.js" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/Scripts/script.js">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\Scripts\script.js</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="style">
+						<NamedResource name="style.css" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Content/PrivacyPolicy/style/style.css">
+							<Candidate type="Path">
+								<Value>Content\PrivacyPolicy\style\style.css</Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="HTMLContent">
+				<NamedResource name="default.css" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/HTMLContent/default.css">
+					<Candidate type="Path">
+						<Value>HTMLContent\default.css</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="local.html" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/HTMLContent/local.html">
+					<Candidate type="Path">
+						<Value>HTMLContent\local.html</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="XamarinLogo.png" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/HTMLContent/XamarinLogo.png">
+					<Candidate type="Path">
+						<Value>HTMLContent\XamarinLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Xamarin.Forms.Platform.WinRT">
+				<NamedResource name="PageControl.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT/PageControl.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT\PageControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StepperControl.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT/StepperControl.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Xamarin.Forms.Platform.WinRT.xr.xml" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT/Xamarin.Forms.Platform.WinRT.xr.xml">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Xamarin.Forms.Platform.WinRT.Tablet">
+				<NamedResource name="FormsTextBoxStyle.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Resources.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TabletResources.xbf" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Xamarin.Forms.Platform.WinRT.Tablet.xr.xml" uri="ms-resource://FoundationforInnovationSo.Kitablet/Files/Xamarin.Forms.Platform.WinRT.Tablet/Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+					<Candidate type="Path">
+						<Value>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

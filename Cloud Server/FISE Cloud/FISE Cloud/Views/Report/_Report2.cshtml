@@ -1,0 +1,71 @@
+﻿@using FISE_Cloud.Models;
+@model Report2
+@{ var i = 0;
+    var j = 0;  }
+
+<div class="row" id="accordion_group">
+    <div class="panel-group" id="filter-result">
+        @foreach (var item in Model.City)
+        {
+            i++;
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" href="#@item.Name.GetNormalized()@i" data-parent="#filter-result" class="level-subsection" aria-expanded="@(i==1 ? "true" : "false")">@item.Name</a>
+                </div>
+                <div class="panel-collapse @(i == 1 ? "collapse in" : "collapse")" id="@item.Name.GetNormalized()@i" aria-expanded="@(i==1 ? "true" : "false")">
+                    <div class="panel-group" id="@item.Name.GetNormalized()-school">
+                        @foreach (var item1 in item.School)
+                        {
+                            j++;
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" href="#@item1.SchoolId.ToString()@i-school" data-parent="#@item.Name.GetNormalized()-school" class="level-language NoChartRendered" onclick="ChartCheck(this);" aria-expanded="@(j == 1 && i == 1 ? "true" : "false")">@item1.SchoolName</a>
+                                </div>
+                                <div class="panel-collapse @(j == 1 && i==1 ? "collapse in" : "collapse")" id="@item1.SchoolId.ToString()@i-school" aria-expanded="@(j == 1 && i == 1 ? "true" : "false")">
+                                    @{
+                                        var model1 = item1;
+                                        model1.Grade = item1.Grade; //Model.Grade;
+                                        model1.Section =item1.Section; //Model.Section;
+                                    }
+
+                                    @Html.Partial("_Report2StudentWise", model1)
+                                </div>
+                            </div>
+
+
+                                        }
+                    </div>
+
+                </div>
+            </div>
+                                        }
+    </div>
+
+    @if (Model.City.Count.Equals(0))
+    { <div>@Resource.Reports_NoDataFound</div>}
+</div>
+
+<script>
+    function ChartCheck(e) {
+        setTimeout(function () {
+            var isDone = false;
+            if ($(e).hasClass("NoChartRendered")) {
+                isDone = ReadyCharts(e);
+                if (isDone)
+                    $(this).removeClass('NoChartRendered');
+            }
+        }, 500);
+    }
+
+    function ReadyCharts(e) {
+        var parentid = $(e).attr("data-parent");
+        $(parentid).find('.chartforrender').each(function () {
+            var id = $(this).attr("id");
+            $("#" + id).html("");
+            var content = JSON.parse(localStorage.getItem(id));
+            RenderDonutChart(id, content.Content, content.HeadTitile, content.SubTitile);
+        });
+        return true;
+    }
+</script>

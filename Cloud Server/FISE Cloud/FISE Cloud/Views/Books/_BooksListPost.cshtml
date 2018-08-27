@@ -1,0 +1,113 @@
+﻿@using FISE_Cloud.Models.School;
+@using Webdiyer.WebControls.Mvc;
+@model PagedList<Book>
+
+@{
+    var l1 = ((Model.CurrentPageIndex - 1) * Model.PageSize) + 1;
+    var l2 = (Model.CurrentPageIndex * Model.PageSize);
+    if (l2 > @Model.TotalItemCount)
+    {
+        l2 = @Model.TotalItemCount;
+    }
+    var final = l1 + " - " + l2;
+    if (l1 == l2)
+    {
+        final = l1.ToString();
+    }
+    if (@Model.TotalItemCount == 0)
+    {
+        final = (0).ToString();
+    }
+}
+
+<div class="row pager-item books_pager">
+    <div class="col-xs-8">
+        <div class="">
+
+            <select class="pagesize_Dropdown" id="BookPageSize">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+
+            <span class="">Entries Per Page | Showing @final of @Model.TotalItemCount book(s)</span>
+        </div>
+    </div>
+    <div class="col-xs-4">
+        <div class="remove_padding">
+            @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "bpageno", PageSizeBoxId = "BookPageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }, new MvcAjaxOptions { UpdateTargetId = "BooksContainer", HttpMethod = "Post", DataFormId = "filterForm" })
+        </div>
+    </div>
+</div>
+<div class="row">
+
+    @foreach (Book book in Model)
+    {
+        <div class="col-xs-2">
+            @if (book.ViewMode.ToLower() == "portrait")
+            {
+                <div class="book_div">
+                    <a href="@Url.RouteUrl("BookInfo", new { bookid = book.BookId })">
+                        @if (book.SubSection.Trim().ToLower() == "j1")
+                    { <div class="book_subsection_colorband colorband_Subsection_Junior1"></div>}
+                    else if (book.SubSection.Trim().ToLower() == "j2")
+                    { <div class="book_subsection_colorband colorband_Subsection_Junior2"></div>}
+                    else if (book.SubSection.Trim().ToLower() == "m")
+                    { <div class="book_subsection_colorband colorband_Subsection_Middle"></div>}
+                        <img class="book_thumbnail" src="@book.Thumbnail1" id="book_@book.BookId" alt="@book.Title" />
+                    </a>
+                    <div class="row rating_row">
+                        <div>
+
+                            @if (book.Rating == 0)
+                            {
+                                <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                            }
+                            else
+                            {
+                                <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /><span class="books_rating">@Math.Round(book.Rating, 1).ToString()</span>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="book_div_landscape">
+                    <a href="@Url.RouteUrl("BookInfo", new { bookid = book.BookId })">
+                        @if (book.SubSection.Trim().ToLower() == "j1")
+                        { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior1"></div>}
+                        else if (book.SubSection.Trim().ToLower() == "j2")
+                        { <div class="book_subsection_colorband_landscape colorband_Subsection_Junior2"></div>}
+                        else if (book.SubSection.Trim().ToLower() == "m")
+                        { <div class="book_subsection_colorband_landscape colorband_Subsection_Middle"></div>}
+
+                        <img class="book_thumbnail_landscape" src="@book.Thumbnail1" id="book_@book.BookId" alt="@book.Title" />
+                    </a>
+                    <div class="row rating_row">
+                        <div>
+
+                            @if (book.Rating == 0)
+                            {
+                                <span class="books_rating">@Html.Raw(Resource.books_NoRating)</span>
+                            }
+                            else
+                            {
+                                <img class="book_controlicon" src="~/Content/Images/Grey_star.png" /> <span class="books_rating">@Math.Round(book.Rating, 1).ToString()</span>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+@if (Model.Count.Equals(0))
+{ <div>@Resource.NoResultsFound</div>}
+<div class="row pager-item">
+
+    @Ajax.Pager(Model, new PagerOptions { PageIndexParameterName = "bpageno", PageSizeBoxId = "BookPageSize", PageSizeParameterName = "pagesize", ShowFirstLast = false, AlwaysShowFirstLastPageNumber = true, NumericPagerItemCount = 3, PrevPageText = "Previous", CurrentPagerItemTemplate = "<span class=\"current\">{0}</span>", DisabledPagerItemTemplate = "<span class=\"disabled\">{0}</span>", HtmlAttributes = new Dictionary<string, object> { { "class", "ajaxpager" } }, PagerItemTemplate = "&nbsp;{0}" }, new MvcAjaxOptions { UpdateTargetId = "BooksContainer", HttpMethod = "Post", DataFormId = "filterForm" })
+</div>
+

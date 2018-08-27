@@ -1,0 +1,116 @@
+﻿@using FISE_Cloud.Models;
+@using CaptchaMvc.HtmlHelpers
+@model UsernameRecoveryModel
+@{
+    ViewBag.Title = "Username Recovery";
+    ViewBag.HeaderPageTitle = "Forgot Username?";
+    var captcha = Html.Captcha(Resource.CaptchaTryAnother, Resource.CaptchaLable, 5, Resource.CaptchaReqError, true);
+}
+
+<div class="row title-section">
+    <div class="desc">
+        @Html.Raw(@HttpUtility.HtmlDecode(@Resource.UsernameRecovery_DescriptiveText))
+    </div>
+    <h4 class="page-title">@Resource.UsernameRecovery_PageTitle</h4>
+</div>
+<hr />
+
+<div class="col-xs-12 remove_padding">
+    @if (!String.IsNullOrEmpty(Model.Result))
+    {
+        <div class="result">
+            @Model.Result
+            <br />
+            <br />
+            <input type="button" class="btn btn-default btn-rect" onclick="location.href = '@Url.RouteUrl("HomePage")'" value="@Resource.btn_Continue" />
+        </div>
+    }
+    else
+    {
+        using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+            <div class="message-error">
+                @if (!ViewData.ModelState.IsValid)
+                    {
+                    <div>@Html.Raw(HttpUtility.HtmlDecode(@Html.ValidationSummary(true).ToHtmlString()))</div>
+                }
+            </div>
+                <p class="tooltip">@Resource.UsernameRecovery_tooltip</p>
+
+                <div class="form-group col-xs-12">
+                    <div class="col-xs-3">
+
+                        @Html.LabelFor(model => model.Email, new { }, ":")
+                    </div>
+                    <span class="col-xs-9 inline2">
+                        @Html.TextBoxFor(model => model.Email)
+
+                        @Html.ValidationMessageFor(model => model.Email)
+                    </span>
+
+                </div>
+
+                <div class="form-group col-xs-12">
+                    <div class="col-xs-offset-3 captcha">
+                        @captcha
+                        @Html.ValidationMessage(@captcha.BuildInfo.InputElementId)
+                    </div>
+                </div>
+                    <div class="col-xs-12">
+                        <div class="col-xs-offset-3 buttons">
+                            <input type="submit" value="@Resource.Btn_Submit" class="btn btn-default btn-rect" name="send-email" />
+                            <input type="button" value="@Resource.Btn_Cancel" class="btn btn-default btn-rect" onclick="window.location.href = '@Url.RouteUrl("Login")';" />
+                        </div>
+                    </div>
+        }
+    }
+</div>
+<style>
+    .error {
+        color: #FC654C;
+        font-size: 12px;
+    }
+
+    label.error {
+        text-transform: none;
+    }
+</style>
+<script src="~/Scripts/jquery.validate.js?v=1"></script>
+
+<script>
+    $(document).ready(function () {
+        $.validator.addMethod('validateemail', function (value, element) {
+            var expr = /^[a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+([.][a-zA-Z0-9!#$%&'*+\-\/=?^_`{|}~]+)*@@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+            return expr.test(value);
+        }, '@Resource.UserCreation_InvalidEmail');
+        var thevalidator = $.data($('form')[0], 'validator');
+        thevalidator.settings.onfocusout = function (element) { $(element).valid(); };
+    });
+    $("form").validate({
+        rules: {
+            Email: {
+                rangelength: [1, 100],
+                required: true,
+                validateemail: true
+            }
+        },
+
+        messages: {
+
+            Email: {
+                required: "@Resource.UserCreation_EmailReqError",
+                rangelength: "@Resource.User_EmailLength"
+            }
+        },
+        submitHandler: function (form) {
+            $(form).find("input[type='submit']").attr('disabled', true);
+            $(form).find("input[type='button']").attr('disabled', true);
+            form.submit();
+        },
+        invalidHandler: function (event, validator) {
+
+        }
+    });
+</script>
+

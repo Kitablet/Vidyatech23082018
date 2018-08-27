@@ -1,0 +1,255 @@
+﻿.secondaryNavigation {
+    height:160px;
+    background-color:#D5D5D5;
+    position: relative;
+    margin-bottom:10px;
+}
+.CategoryFilter {
+    padding-left:20px;
+    padding-right:284px;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+}
+.Category {
+    display:inline-block;
+    opacity: 0.5;
+    cursor:pointer;
+}
+.Category.Selected {
+    border-bottom:2px solid black;
+    opacity: 1;
+}
+.fullOpacity{
+    opacity:1;
+}
+.partialOpacity{
+    opacity:0.5;
+}
+.GenerItem 
+{
+    width: 100%;
+    cursor: pointer;
+    border: 2px solid #9DA503;
+    border-radius: 20px;
+    text-align: center;
+    margin: 7px 0;
+    padding: 7px;
+    color:#9DA503;
+    font-size:14px;
+    font-family: Quicksand-Bold;
+}
+.GenerItem.Selected {
+    background-color:#9DA503;
+    color:white;
+}
+.SelectMoreGener {
+    text-align: center;
+    margin: 7px;
+    padding: 7px;
+    text-transform:uppercase;
+    font-size:14px;
+    font-family: Quicksand-Bold;
+    cursor:pointer;
+}
+.bookElement {
+    height:100%;
+    padding:20px;
+    display:inline-block;
+}
+.bookIcons {
+    width:100%;
+    height:40px;
+}
+.bookIcons div {
+    width:25%;
+    height:100%;
+    display:inline-block;
+    text-align: center;
+}
+.bookImage {
+    width:100%;
+    height:calc(100% - 40px);
+    height:-webkit-calc(100% - 40px);
+    height:-moz-calc(100% - 40px);
+}
+.bookImage.Portrait {
+    /*background-image: url(../Content/Images/Book_portrait_3.png);*/
+}
+.bookImage.Landscape{
+/*background-image:url(../Content/Images/Book_landscape_3.png);*/
+}
+#ratingComplete {
+    position:relative;
+}
+#ratingComplete span{
+    position: absolute;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    top: 5px;
+}
+#NoResultDiv {
+    background-image:url("../Content/Images/searchdiscover_unhappy.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    height:528px;
+    width:1024px;
+    margin:0 auto;
+    position: relative;
+}
+.NoResultText {
+    width:250px;
+    height:auto;
+    position: absolute;
+    top: 245px;
+     left: 560px;
+}
+
+#searchStartDiv {
+    background-image:url("../Content/Images/searchdiscover_happy.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    height:528px;
+    width:1024px;
+    margin:0 auto;
+    position: relative;
+}
+.SearchStartText {
+    width:260px;
+    height:auto;
+    position: absolute;
+    top: 245px;
+    left: 512px;
+}
+
+.SearchStartText p,.NoResultText p{
+    font-family: Quicksand-Bold;
+    font-size: 24px;
+    color: #999;
+    letter-spacing: 1.6px;
+}
+#SearchButton {
+       border: 2px solid #9DA503;
+    padding: 15px 22px;
+    border-radius: 5px;
+    font-family: Quicksand-Bold;
+    color: #9DA503;
+    background-color: #fff;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    background-color: transparent;
+    float: left;
+    margin-left: 55px;
+    pointer-events: none;
+}
+
+.SearchInput{
+    height: 52px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9DA503;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Quicksand-Regular;
+    color: #333;
+    margin-left: 45px;
+}
+
+.TabText{
+    width: 150px;
+    text-align: center;
+    padding-top: 10px;
+    line-height: 1.3;
+    font-family: Quicksand-Bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+
+.J1Border{
+    border-left:6px solid #FC654C;
+}
+
+.J2Border{
+     border-left:6px solid #9DA503;
+}
+
+.MBorder{
+     border-left:6px solid #14B4B4;
+}
+
+.SearchLable{
+    border-bottom:2px solid black;width:160px;float:left;padding-top:40px;
+}
+
+.SearchNavigation{
+    background-color: #d5d5d5;height:160px;position: relative; padding-left:30px;padding-right:0px;
+}
+
+.SearchText{
+    width:calc(100% - 310px);float:left;height:50px;padding-top:39px;
+}
+
+
+.SearchLabel{
+    height:50px;padding-top:16px;font-family: Quicksand-Bold;font-size: 16px;word-spacing: 30px;
+}
+
+.GenerLable{
+    text-align:center;
+    font-family:Quicksand-Bold;
+    font-size:16px;
+    padding:10px 0;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) and (min-width: 1080px) {
+  .SearchText{
+    width:72%;
+    }
+}
+
+@media screen and (max-width: 1080px) and (min-width: 1024px) {
+  .SearchText{
+    width:70%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .SearchText{
+    width:68%;
+    }
+}
+#img-allbooks >div{
+background:url(../Content/Images/all_books_2.png);
+height:38px;
+width:122px;
+margin: auto;
+}
+#searchicon {
+    background:url(../Content/Images/search_2.png);
+height:50px;
+width:50px;
+
+}
+#BooksContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#BooksContainer::-webkit-scrollbar:vertical {
+    /*width: 11px;*/
+}
+
+#BooksContainer::-webkit-scrollbar:horizontal {
+    height: 17px;
+}
+
+#BooksContainer::-webkit-scrollbar-thumb {
+    /*border-radius: 8px;*/
+    border: 2px solid white; /* should match background, can't be transparent */
+    background-color: rgba(0, 0, 0, .5);
+}

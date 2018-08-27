@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+    line-height: 20px;
+}
+.mainHeading {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 0;
+    font-family: Quicksand-Bold;
+}
+.subHeading {
+    color: #333333;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 0;
+    font-family: Quicksand-Bold;
+}
+ul.radioBtn li {
+    margin-left: 25px;
+    color: #333333;
+    font-weight: lighter;
+}
+ul.radioBtn {
+    font-family: Quicksand-Regular;
+    padding: 10px 0;
+}
+.desc {
+    color: #333333;
+    font-weight: lighter;
+    font-family: Quicksand-Regular;
+    padding:10px;
+}
+.topic {
+    color: #333333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@font-face {
+    font-family: Quicksand-Bold;
+    src: url('../Fonts/Quicksand-Bold.otf');
+}
+.accordion .accordion-section-title.J1.active {
+    background-image: url(../Images/minus_1.png);
+}
+.accordion .accordion-section-title.J2.active {
+    background-image: url(../Images/minus_2.png);
+}
+.accordion .accordion-section-title.M.active {
+    background-image: url(../Images/minus_3.png);
+}
+@font-face {
+    font-family: Quicksand-Regular;
+    src: url('../Fonts/Quicksand-Regular.otf');
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.accordion-section-title {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-family: Quicksand-Bold;    
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 28px;
+}
+.BoldText{
+font-family: Quicksand-Bold;
+color: #333;
+}
+.accordion-section-title.J1 {
+	background-image: url(../Images/plus_1.png);
+}
+.accordion-section-title.J2 {
+	background-image: url(../Images/plus_2.png);
+}
+.accordion-section-title.M {
+	background-image: url(../Images/plus_3.png);
+}
+.accordion-section-content {
+    background: #fff;
+    padding: 10px;
+    display: none;
+    font-family: Quicksand-Regular;
+}
+.open {
+    display: block;
+}
+
+.contactusText {
+	display: block;
+	width: 90%;
+	resize: none;
+	overflow: hidden;
+	height: 32px;
+	padding: 5px;
+	color: #333;
+	font-family: Quicksand-Regular;
+} 
+      
+.sendBtn {
+	display: block;
+	padding: 15px;
+    padding-left:15px;
+    padding-bottom:15px;
+    padding-right:15px;
+    padding-top:15px;
+	border-radius: 5px;
+	font-family: Quicksand-Bold;
+	background-color: #fff;
+	margin: 10px 0px;
+	opacity: 0.5;
+    height: 55px;
+    width: 88px;
+    background-color:#fff;
+    -webkit-appearance:none;
+}
+        
+p {
+margin: 10px 0;
+}
+
+.J1Color{
+	color: #FC654C;
+}
+
+.J2Color{
+	color: #9DA503;
+}
+
+.MColor{
+	color: #14B4B4;
+}
+
+.J1ColorBorder{
+	border: 0;
+	border-bottom: 2px solid #FC654C;
+}
+
+.J2ColorBorder{
+	border: 0;
+	border-bottom: 2px solid #9DA503;
+}
+
+.MColorBorder{
+	border: 0;
+	border-bottom: 2px solid #14B4B4;
+}
+
+.J1ColorButton{
+	border: 2px solid #FC654C;
+	color: #FC654C;
+}
+
+.J2ColorButton{
+	border: 2px solid #9DA503;
+	color: #9DA503;
+}
+
+.MColorButton{
+	border: 2px solid #14B4B4;
+	color: #14B4B4;
+}
