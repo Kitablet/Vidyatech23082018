@@ -10,11 +10,7 @@ namespace Kitablet
 
         public static readonly string justexploringlink = "http://www.kitablet.in/";
 
-        public static readonly string baseUri = "http://loginapistagging.azurewebsites.net/";
-        //public static readonly string baseUri = "https://loginapi.Kitablet.in/";
-        //public static readonly string baseUri = "http://192.168.16.51:8989/api/";
-        //public static readonly string baseUri = "http://192.168.16.106:8989/";
-        //public static readonly string baseUri = "http://192.168.16.106:7419/";
+        public static readonly string baseUri = "http://SERVERNAME/";
 
         public static readonly string relativePath = "api/FISEAPI/";
 
