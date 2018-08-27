@@ -5,6 +5,7 @@ Folder Structure
 
 Cloud Server - Contains the code for Cloud Server and API
 eReader - Contains the code of Kitablet App and Browser Version
+Database - Contains the backup of a clean database
 
 ----------------------------------------------------------------------------
 
