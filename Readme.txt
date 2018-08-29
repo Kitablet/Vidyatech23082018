@@ -28,3 +28,12 @@ Edit Following files:
 Value: replace SERVERNAME with Hosted Server Name for API
 
 -----------------------------------------------------------------------------
+
+Accessing Cloud Server website
+------------------------------
+
+Use the following details to connect to Cloud Server:
+Username: superadmin
+Password: Kitablet@123
+Email ID:  superadm.kitablet@gmail.com
+
